@@ -20,44 +20,37 @@
 <body>
   <div class="container">
 
-    <!-- ==================== OVERVIEW PANEL ==================== -->
-    <div id="overview" class="view-panel active">
-      <div class="overview-grid">
-        
-        <!-- Row 1: Navigation -->
-        <nav class="nav-container grid-overview-btn">
-          <button class="hamburger-btn" id="menuBtn">
-            <div class="hamburger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-          <div class="dropdown-menu" id="dropdownMenu">
-            <button class="dropdown-item active" data-view="overview">Overview</button>
-            <button class="dropdown-item" data-view="hours">T2T Log</button>
-            <button class="dropdown-item" data-view="calendar">This Week</button>
-            <button class="dropdown-item" data-view="semester">Full Semester</button>
-            <button class="dropdown-item" data-view="deadlines">Deadlines</button>
-            <button class="dropdown-item" data-view="bandwidth">Bandwidth</button>
+    <!-- ==================== GLOBAL NAV (always visible) ==================== -->
+    <div class="global-nav">
+      <nav class="nav-container">
+        <button class="hamburger-btn" id="menuBtn">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </nav>
-
-        <!-- Row 1: Header -->
-        <div class="grid-header-info">
-          <div class="header-title">Spring Semester 2026</div>
+        </button>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <button class="dropdown-item active" data-view="overview">Overview</button>
+          <button class="dropdown-item" data-view="hours">T2T Log</button>
+          <button class="dropdown-item" data-view="calendar">This Week</button>
+          <button class="dropdown-item" data-view="semester">Full Semester</button>
+          <button class="dropdown-item" data-view="deadlines">Deadlines</button>
+          <button class="dropdown-item" data-view="bandwidth">Bandwidth</button>
         </div>
+      </nav>
 
-        <!-- Row 1: Quick Links -->
-        <div class="quick-links-container grid-quick-links">
-          <button class="quick-links-btn" id="quickLinksBtn">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-          </button>
-          <div class="quick-links-dropdown" id="quickLinksDropdown">
-            <a href="https://app.time2track.com/" target="_blank" class="quick-link-item">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              Time2Track
-            </a>
+      <div class="header-title">Spring Semester 2026</div>
+
+      <div class="quick-links-container">
+        <button class="quick-links-btn" id="quickLinksBtn">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+        </button>
+        <div class="quick-links-dropdown" id="quickLinksDropdown">
+          <a href="https://app.time2track.com/" target="_blank" class="quick-link-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Time2Track
+          </a>
             <a href="https://valt.ac.nau.edu/login" target="_blank" class="quick-link-item">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
               Valt
@@ -72,6 +65,12 @@
             </a>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- ==================== OVERVIEW PANEL ==================== -->
+    <div id="overview" class="view-panel active">
+      <div class="overview-grid">
 
         <!-- Row 2: True Priorities Label -->
         <div class="grid-priorities-label">

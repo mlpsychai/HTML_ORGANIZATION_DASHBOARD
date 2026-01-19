@@ -34,6 +34,33 @@ body {
   display: block;
 }
 
+/* Global Navigation Bar */
+.global-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.global-nav .nav-container {
+  position: relative;
+}
+
+.global-nav .header-title {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+}
+
+.global-nav .quick-links-container {
+  position: relative;
+}
+
 /* Two Column Layout */
 .two-column {
   display: grid;
