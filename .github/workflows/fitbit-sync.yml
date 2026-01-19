@@ -39,26 +39,26 @@ jobs:
           # Save new refresh token for later step
           echo "new_refresh_token=$NEW_REFRESH_TOKEN" >> $GITHUB_OUTPUT
           
-          # ============ FETCH ALL DATA ============
+          # ============ FETCH ALL DATA (INCLUDING RAW/INTRADAY) ============
           
-          # Sleep (includes stages, score, efficiency)
+          # Sleep (includes stages, score, efficiency, levels timeline)
           SLEEP=$(curl -s -X GET "https://api.fitbit.com/1.2/user/-/sleep/date/${TODAY}.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
-          # Activity (steps, calories, distance, floors, active minutes)
+          # Activity summary
           ACTIVITY=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/date/${TODAY}.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
-          # Heart rate (resting HR, zones)
-          HEART=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/heart/date/${TODAY}/1d.json" \
+          # Heart rate with intraday (1-minute resolution)
+          HEART=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/heart/date/${TODAY}/1d/1min.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
-          # HRV (heart rate variability)
-          HRV=$(curl -s -X GET "https://api.fitbit.com/1/user/-/hrv/date/${TODAY}.json" \
+          # HRV with all intervals
+          HRV=$(curl -s -X GET "https://api.fitbit.com/1/user/-/hrv/date/${TODAY}/all.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
-          # SpO2 (blood oxygen)
-          SPO2=$(curl -s -X GET "https://api.fitbit.com/1/user/-/spo2/date/${TODAY}.json" \
+          # SpO2 with intraday readings
+          SPO2=$(curl -s -X GET "https://api.fitbit.com/1/user/-/spo2/date/${TODAY}/all.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
           # Breathing rate
@@ -81,9 +81,13 @@ jobs:
           AZM=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/active-zone-minutes/date/${TODAY}/1d.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
+          # Steps intraday (1-minute resolution)
+          STEPS_INTRADAY=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/steps/date/${TODAY}/1d/1min.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
           # ============ EXTRACT METRICS ============
           
-          # Sleep metrics
+          # Sleep metrics (summary)
           SLEEP_DURATION=$(echo $SLEEP | jq '.summary.totalMinutesAsleep // 0')
           SLEEP_EFFICIENCY=$(echo $SLEEP | jq '.summary.efficiency // 0')
           SLEEP_DEEP=$(echo $SLEEP | jq '.summary.stages.deep // 0')
@@ -94,7 +98,10 @@ jobs:
           SLEEP_START=$(echo $SLEEP | jq -r '.sleep[0].startTime // ""')
           SLEEP_END=$(echo $SLEEP | jq -r '.sleep[0].endTime // ""')
           
-          # Activity metrics
+          # Sleep levels timeline (raw data for hypnogram)
+          SLEEP_LEVELS=$(echo $SLEEP | jq '.sleep[0].levels.data // []')
+          
+          # Activity metrics (summary)
           STEPS=$(echo $ACTIVITY | jq '.summary.steps // 0')
           DISTANCE=$(echo $ACTIVITY | jq '.summary.distances[0].distance // 0')
           FLOORS=$(echo $ACTIVITY | jq '.summary.floors // 0')
@@ -107,18 +114,30 @@ jobs:
           FAIRLY_ACTIVE=$(echo $ACTIVITY | jq '.summary.fairlyActiveMinutes // 0')
           VERY_ACTIVE=$(echo $ACTIVITY | jq '.summary.veryActiveMinutes // 0')
           
-          # Heart metrics
+          # Steps intraday (raw data)
+          STEPS_RAW=$(echo $STEPS_INTRADAY | jq '.["activities-steps-intraday"].dataset // []')
+          
+          # Heart metrics (summary)
           RESTING_HR=$(echo $HEART | jq '.["activities-heart"][0].value.restingHeartRate // 0')
           HR_ZONES=$(echo $HEART | jq '.["activities-heart"][0].value.heartRateZones // []')
           
-          # HRV metrics
+          # Heart rate intraday (raw data - 1-minute resolution)
+          HR_INTRADAY=$(echo $HEART | jq '.["activities-heart-intraday"].dataset // []')
+          
+          # HRV metrics (summary)
           HRV_DAILY=$(echo $HRV | jq '.hrv[0].value.dailyRmssd // 0')
           HRV_DEEP=$(echo $HRV | jq '.hrv[0].value.deepRmssd // 0')
           
-          # SpO2
-          SPO2_AVG=$(echo $SPO2 | jq '.value.avg // 0')
-          SPO2_MIN=$(echo $SPO2 | jq '.value.min // 0')
-          SPO2_MAX=$(echo $SPO2 | jq '.value.max // 0')
+          # HRV intraday (raw data - 5-minute intervals)
+          HRV_INTRADAY=$(echo $HRV | jq '.hrv // []')
+          
+          # SpO2 (summary)
+          SPO2_AVG=$(echo $SPO2 | jq '.value.avg // 0' 2>/dev/null || echo "0")
+          SPO2_MIN=$(echo $SPO2 | jq '.value.min // 0' 2>/dev/null || echo "0")
+          SPO2_MAX=$(echo $SPO2 | jq '.value.max // 0' 2>/dev/null || echo "0")
+          
+          # SpO2 intraday (raw data)
+          SPO2_INTRADAY=$(echo $SPO2 | jq '. // []')
           
           # Breathing rate
           BREATHING_RATE=$(echo $BREATHING | jq '.br[0].value.breathingRate // 0')
@@ -141,71 +160,133 @@ jobs:
           # ============ CREATE JSON FILE ============
           mkdir -p data
           
-          cat > data/fitbit-latest.json << EOF
-          {
-            "date": "$TODAY",
-            "updated_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-            "sleep": {
-              "duration_minutes": $SLEEP_DURATION,
-              "efficiency": $SLEEP_EFFICIENCY,
-              "score": $SLEEP_SCORE,
-              "start_time": "$SLEEP_START",
-              "end_time": "$SLEEP_END",
-              "stages": {
-                "deep": $SLEEP_DEEP,
-                "light": $SLEEP_LIGHT,
-                "rem": $SLEEP_REM,
-                "wake": $SLEEP_WAKE
-              }
-            },
-            "activity": {
-              "steps": $STEPS,
-              "distance_miles": $DISTANCE,
-              "floors": $FLOORS,
-              "elevation": $ELEVATION,
-              "calories": {
-                "total": $CALORIES_TOTAL,
-                "bmr": $CALORIES_BMR,
-                "active": $CALORIES_ACTIVE
+          # Use jq to properly construct JSON with all arrays
+          jq -n \
+            --arg date "$TODAY" \
+            --arg updated "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --argjson sleep_duration "$SLEEP_DURATION" \
+            --argjson sleep_efficiency "$SLEEP_EFFICIENCY" \
+            --argjson sleep_score "$SLEEP_SCORE" \
+            --arg sleep_start "$SLEEP_START" \
+            --arg sleep_end "$SLEEP_END" \
+            --argjson sleep_deep "$SLEEP_DEEP" \
+            --argjson sleep_light "$SLEEP_LIGHT" \
+            --argjson sleep_rem "$SLEEP_REM" \
+            --argjson sleep_wake "$SLEEP_WAKE" \
+            --argjson sleep_levels "$SLEEP_LEVELS" \
+            --argjson steps "$STEPS" \
+            --argjson steps_intraday "$STEPS_RAW" \
+            --argjson distance "$DISTANCE" \
+            --argjson floors "$FLOORS" \
+            --argjson elevation "$ELEVATION" \
+            --argjson cal_total "$CALORIES_TOTAL" \
+            --argjson cal_bmr "$CALORIES_BMR" \
+            --argjson cal_active "$CALORIES_ACTIVE" \
+            --argjson min_sedentary "$SEDENTARY_MIN" \
+            --argjson min_light "$LIGHTLY_ACTIVE" \
+            --argjson min_fairly "$FAIRLY_ACTIVE" \
+            --argjson min_very "$VERY_ACTIVE" \
+            --argjson azm_total "$AZM_TOTAL" \
+            --argjson azm_fat "$AZM_FAT_BURN" \
+            --argjson azm_cardio "$AZM_CARDIO" \
+            --argjson azm_peak "$AZM_PEAK" \
+            --argjson resting_hr "$RESTING_HR" \
+            --argjson hr_zones "$HR_ZONES" \
+            --argjson hr_intraday "$HR_INTRADAY" \
+            --argjson hrv_daily "$HRV_DAILY" \
+            --argjson hrv_deep "$HRV_DEEP" \
+            --argjson hrv_intraday "$HRV_INTRADAY" \
+            --argjson spo2_avg "$SPO2_AVG" \
+            --argjson spo2_min "$SPO2_MIN" \
+            --argjson spo2_max "$SPO2_MAX" \
+            --argjson spo2_intraday "$SPO2_INTRADAY" \
+            --argjson breathing "$BREATHING_RATE" \
+            --argjson skin_temp "$SKIN_TEMP_VAL" \
+            --argjson core_temp "$CORE_TEMP_VAL" \
+            --argjson vo2_max "$VO2_MAX" \
+            '{
+              date: $date,
+              updated_at: $updated,
+              sleep: {
+                summary: {
+                  duration_minutes: $sleep_duration,
+                  efficiency: $sleep_efficiency,
+                  score: $sleep_score,
+                  start_time: $sleep_start,
+                  end_time: $sleep_end,
+                  stages: {
+                    deep: $sleep_deep,
+                    light: $sleep_light,
+                    rem: $sleep_rem,
+                    wake: $sleep_wake
+                  }
+                },
+                levels: $sleep_levels
               },
-              "minutes": {
-                "sedentary": $SEDENTARY_MIN,
-                "lightly_active": $LIGHTLY_ACTIVE,
-                "fairly_active": $FAIRLY_ACTIVE,
-                "very_active": $VERY_ACTIVE
+              activity: {
+                summary: {
+                  steps: $steps,
+                  distance_miles: $distance,
+                  floors: $floors,
+                  elevation: $elevation,
+                  calories: {
+                    total: $cal_total,
+                    bmr: $cal_bmr,
+                    active: $cal_active
+                  },
+                  minutes: {
+                    sedentary: $min_sedentary,
+                    lightly_active: $min_light,
+                    fairly_active: $min_fairly,
+                    very_active: $min_very
+                  },
+                  active_zone_minutes: {
+                    total: $azm_total,
+                    fat_burn: $azm_fat,
+                    cardio: $azm_cardio,
+                    peak: $azm_peak
+                  }
+                },
+                intraday: {
+                  steps: $steps_intraday
+                }
               },
-              "active_zone_minutes": {
-                "total": $AZM_TOTAL,
-                "fat_burn": $AZM_FAT_BURN,
-                "cardio": $AZM_CARDIO,
-                "peak": $AZM_PEAK
+              heart: {
+                summary: {
+                  resting_hr: $resting_hr,
+                  zones: $hr_zones
+                },
+                intraday: $hr_intraday
+              },
+              hrv: {
+                summary: {
+                  daily_rmssd: $hrv_daily,
+                  deep_rmssd: $hrv_deep
+                },
+                intraday: $hrv_intraday
+              },
+              respiratory: {
+                summary: {
+                  spo2_avg: $spo2_avg,
+                  spo2_min: $spo2_min,
+                  spo2_max: $spo2_max,
+                  breathing_rate: $breathing
+                },
+                intraday: {
+                  spo2: $spo2_intraday
+                }
+              },
+              temperature: {
+                skin_variation: $skin_temp,
+                core: $core_temp
+              },
+              cardio_fitness: {
+                vo2_max: $vo2_max
               }
-            },
-            "heart": {
-              "resting_hr": $RESTING_HR,
-              "zones": $HR_ZONES
-            },
-            "hrv": {
-              "daily_rmssd": $HRV_DAILY,
-              "deep_rmssd": $HRV_DEEP
-            },
-            "respiratory": {
-              "spo2_avg": $SPO2_AVG,
-              "spo2_min": $SPO2_MIN,
-              "spo2_max": $SPO2_MAX,
-              "breathing_rate": $BREATHING_RATE
-            },
-            "temperature": {
-              "skin_variation": $SKIN_TEMP_VAL,
-              "core": $CORE_TEMP_VAL
-            },
-            "cardio_fitness": {
-              "vo2_max": $VO2_MAX
-            }
-          }
-          EOF
+            }' > data/fitbit-latest.json
           
           echo "Data saved for $TODAY"
+          echo "File size: $(wc -c < data/fitbit-latest.json) bytes"
           cat data/fitbit-latest.json
 
       - name: Update refresh token secret
