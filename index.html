@@ -56,30 +56,30 @@
     /* ============================================
        MASTER GRID LAYOUT - OVERVIEW PANEL
        ============================================
-       12 columns × auto rows
+       12 columns Ã— auto rows
        Gap: 12px horizontal, 16px vertical
        
        CURRENT LAYOUT (locked 2026-01-16):
-       ┌───────────────┬─────────────────────────────────────┬───────────────┐
-       │ Row 1:        │ Header Info                         │ Quick Links   │
-       │ Overview Btn  │ (cols 3-11)                         │ (col 12)      │
-       │ (cols 1-2)    │                                     │               │
-       ├───────────────┴─────────────────────────────────────┼───────────────┤
-       │ Row 2: True Priorities Label (cols 1-8)             │ Calendar      │
-       ├─────────────────────────────────────────────────────┤ (cols 9-12)   │
-       │ Row 3: True Priorities Cards (cols 1-8, 4 cards)    │ (cols 9-12)   │
-       ├─────────────────────────────────────────────────────┤ spans         │
-       │ Row 4: Semester Hours Label (cols 1-8)              │ rows 3-8      │
-       ├─────────────────────────────────────────────────────┤               │
-       │ Row 5: Semester Hours Cards (cols 1-8, 4 cards)     │               │
-       ├───────────────────────┬─────────────────────────────┤               │
-       │ Row 6: PRIORITIES Label (cols 1-8)                  │               │
-       ├───────────────────────┼─────────────────────────────┤               │
-       │ Row 7: Today's        │ Upcoming Assignments        │               │
-       │ Priorities (cols 1-4) │ (cols 5-8)                  │               │
-       ├───────────────────────┴─────────────────────────────┼───────────────┤
-       │ Row 8: Weekly Priorities (cols 1-8)                                 │
-       └─────────────────────────────────────────────────────────────────────┘
+       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+       â”‚ Row 1:        â”‚ Header Info                         â”‚ Quick Links   â”‚
+       â”‚ Overview Btn  â”‚ (cols 3-11)                         â”‚ (col 12)      â”‚
+       â”‚ (cols 1-2)    â”‚                                     â”‚               â”‚
+       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+       â”‚ Row 2: True Priorities Label (cols 1-8)             â”‚ Calendar      â”‚
+       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤ (cols 9-12)   â”‚
+       â”‚ Row 3: True Priorities Cards (cols 1-8, 4 cards)    â”‚ (cols 9-12)   â”‚
+       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤ spans         â”‚
+       â”‚ Row 4: Semester Hours Label (cols 1-8)              â”‚ rows 3-8      â”‚
+       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤               â”‚
+       â”‚ Row 5: Semester Hours Cards (cols 1-8, 4 cards)     â”‚               â”‚
+       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤               â”‚
+       â”‚ Row 6: PRIORITIES Label (cols 1-8)                  â”‚               â”‚
+       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤               â”‚
+       â”‚ Row 7: Today's        â”‚ Upcoming Assignments        â”‚               â”‚
+       â”‚ Priorities (cols 1-4) â”‚ (cols 5-8)                  â”‚               â”‚
+       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+       â”‚ Row 8: Weekly Priorities (cols 1-8)                                 â”‚
+       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
        
        TO MOVE ELEMENTS: Change grid-column and grid-row values below
        Example: grid-column: 1 / 9 means columns 1-8
@@ -617,18 +617,6 @@
     .schedule-event.class { border-left-color: var(--text-muted); }
     .schedule-event.fellowship { border-left-color: var(--accent-purple); }
     .schedule-event.meeting { border-left-color: var(--accent-gold); }
-    .schedule-event.clinical { border-left-color: var(--accent-teal); }
-    .schedule-event.personal { border-left-color: var(--accent-sage); }
-    .schedule-event.default { border-left-color: var(--text-secondary); }
-    
-    .time-indicator {
-      animation: pulse 2s infinite;
-    }
-    
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.6; }
-    }
 
     .event-time {
       font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -1365,7 +1353,346 @@
       opacity: 1;
     }
 
-    /* Bandwidth View */
+    /* ============ BANDWIDTH VIEW - SLEEP PANEL ============ */
+    .bandwidth-dashboard {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .bandwidth-section-label {
+      font-size: 10px;
+      color: var(--accent-gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .bandwidth-section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+      overflow: hidden;
+    }
+
+    /* Day circles row */
+    .day-circles {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .days-row {
+      display: flex;
+      justify-content: space-between;
+      width: 690px;
+      margin-left: 34px;
+    }
+
+    .wk-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .day-circle, .wk-circle {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+      max-width: 40px;
+      max-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .day-circle-bg, .wk-circle-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: var(--bg-tertiary);
+    }
+    .day-circle-progress {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .day-circle-inner, .wk-circle-inner {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+    }
+    .day-letter, .wk-letter {
+      position: relative;
+      z-index: 1;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+    .wk-letter {
+      font-size: 12px;
+      letter-spacing: -0.5px;
+    }
+    .day-circle.today .day-letter { color: var(--accent-teal); }
+
+    .wk-circle {
+      cursor: pointer;
+    }
+    .wk-circle:hover .wk-letter {
+      color: var(--accent-teal);
+    }
+
+    /* Sleep content layout */
+    .sleep-content {
+      display: grid;
+      grid-template-columns: 1fr 144px;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .sleep-graph-wrapper {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      grid-template-rows: 1fr auto;
+      gap: 0;
+      height: 100%;
+    }
+
+    .graph-y-labels {
+      grid-column: 1;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 8px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .y-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-align: right;
+      line-height: 1;
+    }
+
+    .sleep-graph-container {
+      grid-column: 2;
+      grid-row: 1;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .sleep-graph {
+      width: 100%;
+      height: 100%;
+    }
+    .sleep-graph svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .graph-line {
+      fill: none;
+      stroke: var(--accent-teal);
+      stroke-width: 2;
+    }
+    .graph-area {
+      fill: var(--accent-teal);
+      opacity: 0.15;
+    }
+
+    .graph-time-labels {
+      grid-column: 2;
+      grid-row: 2;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--text-muted);
+      padding: 4px 0 0;
+    }
+
+    /* Sleep stats - right side */
+    .sleep-stats-wrapper {
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .quality-circle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 8px;
+    }
+
+    .quality-gauge {
+      position: relative;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: conic-gradient(
+        var(--accent-teal) 0deg,
+        var(--accent-teal) 338deg,
+        var(--bg-secondary) 338deg
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .quality-gauge::before {
+      content: '';
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-tertiary);
+    }
+    .quality-value {
+      position: relative;
+      z-index: 1;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--accent-teal);
+    }
+
+    .sleep-stat-card {
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      padding: 6px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .sleep-stat-card .stat-label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+      text-align: center;
+    }
+    .sleep-stat-card .stat-value {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .sleep-heart-row {
+      margin-top: 16px;
+    }
+
+    /* Cards grid */
+    .bandwidth-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .bandwidth-card {
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      padding: 14px 12px;
+      text-align: center;
+    }
+    .bandwidth-card .card-value {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+    .card-unit {
+      font-size: 10px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+    .bandwidth-card .card-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .heart-card .card-value { color: var(--accent-coral); }
+    .activity-card .card-value { color: var(--accent-sage); }
+    .sleep-stage-card .card-value { color: #ffffff; }
+
+    /* Readiness */
+    .readiness-display {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .readiness-gauge {
+      position: relative;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: conic-gradient(
+        var(--accent-sage) 0deg,
+        var(--accent-sage) 252deg,
+        var(--bg-tertiary) 252deg
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .readiness-gauge::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+    }
+    .readiness-value {
+      position: relative;
+      z-index: 1;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--accent-sage);
+    }
+
+    .readiness-factors {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .factor {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
+    .factor-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+    .sleep-dot { background: var(--accent-teal); }
+    .hrv-dot { background: var(--accent-purple); }
+    .rhr-dot { background: var(--accent-coral); }
+
+    /* Old bandwidth styles kept for compatibility */
     .bandwidth-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1865,7 +2192,7 @@
 
         <!-- Date Label (col 12, row 2) -->
         <div class="grid-date-label">
-          <div class="priorities-label" data-date-label>Loading...</div>
+          <div class="priorities-label">Date: 01/16</div>
         </div>
 
         <!-- Calendar (cols 9-12, spans rows 3-9) -->
@@ -1887,7 +2214,14 @@
             <div class="time-slot" style="top: 83.2%;"><span class="time-label">6 PM</span><div class="time-tick"></div></div>
             <div class="time-slot major" style="top: 89.6%;"><span class="time-label">7 PM</span><div class="time-tick"></div></div>
             <div class="time-slot" style="top: 96%;"><span class="time-label">8 PM</span><div class="time-tick"></div></div>
-            <!-- Events will be dynamically injected here -->
+            <div class="schedule-event class" style="top: 25.6%; height: 16%;">
+              <div class="event-time">9:00 AM - 11:30 AM</div>
+              <div class="event-title">EPS 609 - Cognition & Affect</div>
+            </div>
+            <div class="schedule-event class" style="top: 70.4%; height: 16%;">
+              <div class="event-time">4:00 PM - 6:30 PM</div>
+              <div class="event-title">EPS 706 - History & Systems</div>
+            </div>
           </div>
         </div>
 
@@ -1901,23 +2235,23 @@
           <div class="stat-card">
             <div class="stat-label">Direct Hours</div>
             <div class="stat-content">
-              <div class="stat-value" data-hours="direct">-/-</div>
+              <div class="stat-value">5/100</div>
             </div>
-            <div class="stat-subtext" data-hours-pct="direct">-% complete</div>
+            <div class="stat-subtext">5% complete</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Total Hours</div>
             <div class="stat-content">
-              <div class="stat-value" data-hours="total">-/-</div>
+              <div class="stat-value">16/500</div>
             </div>
-            <div class="stat-subtext" data-hours-pct="total">-% complete</div>
+            <div class="stat-subtext">3.2% complete</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Master's Supervision</div>
             <div class="stat-content">
-              <div class="stat-value" data-hours="supervision">-/-</div>
+              <div class="stat-value">0/40</div>
             </div>
-            <div class="stat-subtext" data-hours-pct="supervision">-% complete</div>
+            <div class="stat-subtext">0% complete</div>
           </div>
         </div>
 
@@ -2032,7 +2366,7 @@
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">Time2Track Hours Log</h2>
-          <a href="https://app.time2track.com/" target="_blank" class="section-action">Open Time2Track â†’</a>
+          <a href="https://app.time2track.com/" target="_blank" class="section-action">Open Time2Track Ã¢â€ â€™</a>
         </div>
 
         <!-- Summary Stats -->
@@ -2258,7 +2592,7 @@
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">Spring 2026 Full Semester</h2>
-          <a href="https://calendar.google.com/calendar/u/0/r" target="_blank" class="section-action">Open Google Calendar â†’</a>
+          <a href="https://calendar.google.com/calendar/u/0/r" target="_blank" class="section-action">Open Google Calendar Ã¢â€ â€™</a>
         </div>
         <div class="semester-calendar">
           
@@ -2371,7 +2705,7 @@
               <span class="week-dates">Mar 8-14</span>
             </div>
             <div class="week-events">
-              <div class="event-chip break">• NAU SPRING BREAK •</div>
+              <div class="event-chip break">â€¢ NAU SPRING BREAK â€¢</div>
               <div class="event-chip meeting">Wed 11: James & Team Meeting 9-10a</div>
             </div>
           </div>
@@ -2567,207 +2901,353 @@
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">Self-Care & Bandwidth</h2>
+          <span id="fitbit-updated" style="font-size: 10px; color: var(--text-muted); letter-spacing: 1px;">LOADING...</span>
         </div>
-        <div class="bandwidth-grid">
-          <div class="gauge-container">
-            <div class="gauge">
-              <div class="gauge-value">
-                <div class="gauge-number">-</div>
-                <div class="gauge-label">of 10</div>
+        
+        <div class="bandwidth-dashboard">
+          <!-- Sleep Section -->
+          <div class="bandwidth-section-label">Sleep</div>
+          <div class="bandwidth-section">
+            <div class="day-circles">
+              <div class="days-row">
+                <div class="day-circle today">
+                  <div class="day-circle-bg"></div>
+                  <svg class="day-circle-progress" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="16" fill="none" stroke="#7eb8c9" stroke-width="3" 
+                            stroke-dasharray="75 101" stroke-linecap="round"
+                            transform="rotate(-90 20 20)"/>
+                  </svg>
+                  <div class="day-circle-inner"></div>
+                  <span class="day-letter">S</span>
+                </div>
+                <div class="day-circle">
+                  <div class="day-circle-bg"></div>
+                  <div class="day-circle-inner"></div>
+                  <span class="day-letter">M</span>
+                </div>
+                <div class="day-circle">
+                  <div class="day-circle-bg"></div>
+                  <div class="day-circle-inner"></div>
+                  <span class="day-letter">T</span>
+                </div>
+                <div class="day-circle">
+                  <div class="day-circle-bg"></div>
+                  <div class="day-circle-inner"></div>
+                  <span class="day-letter">W</span>
+                </div>
+                <div class="day-circle">
+                  <div class="day-circle-bg"></div>
+                  <div class="day-circle-inner"></div>
+                  <span class="day-letter">T</span>
+                </div>
+                <div class="day-circle">
+                  <div class="day-circle-bg"></div>
+                  <div class="day-circle-inner"></div>
+                  <span class="day-letter">F</span>
+                </div>
+                <div class="day-circle">
+                  <div class="day-circle-bg"></div>
+                  <div class="day-circle-inner"></div>
+                  <span class="day-letter">S</span>
+                </div>
+              </div>
+              <div class="wk-wrapper">
+                <div class="wk-circle">
+                  <div class="wk-circle-bg"></div>
+                  <div class="wk-circle-inner"></div>
+                  <span class="wk-letter">WK</span>
+                </div>
               </div>
             </div>
-            <div class="gauge-title">Current Bandwidth</div>
+
+            <div class="sleep-content">
+              <div class="sleep-graph-wrapper">
+                <div class="graph-y-labels">
+                  <span class="y-label">Wake</span>
+                  <span class="y-label">Light</span>
+                  <span class="y-label">REM</span>
+                  <span class="y-label">Deep</span>
+                </div>
+                <div class="sleep-graph-container">
+                  <div class="sleep-graph">
+                    <svg id="hypnogram" viewBox="0 0 400 160" preserveAspectRatio="none">
+                      <path id="hypnogram-area" class="graph-area"/>
+                      <path id="hypnogram-line" class="graph-line"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="graph-time-labels" id="time-labels"></div>
+              </div>
+
+              <div class="sleep-stats-wrapper">
+                <div class="quality-circle">
+                  <div class="quality-gauge" id="sleep-quality-gauge">
+                    <span class="quality-value" id="sleep-score">--%</span>
+                  </div>
+                </div>
+                <div class="sleep-stat-card">
+                  <span class="stat-label">Total Sleep</span>
+                  <span class="stat-value" id="sleep-duration">--</span>
+                </div>
+                <div class="sleep-stat-card">
+                  <span class="stat-label">Wake Time</span>
+                  <span class="stat-value" id="sleep-end">--</span>
+                </div>
+                <div class="sleep-stat-card">
+                  <span class="stat-label">Sleep Time</span>
+                  <span class="stat-value" id="sleep-start">--</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sleep stages row -->
+            <div class="sleep-heart-row">
+              <div class="bandwidth-cards">
+                <div class="bandwidth-card sleep-stage-card">
+                  <div class="card-value"><span id="sleep-deep">--</span> <span class="card-unit">min</span></div>
+                  <div class="card-label">Deep</div>
+                </div>
+                <div class="bandwidth-card sleep-stage-card">
+                  <div class="card-value"><span id="sleep-light">--</span> <span class="card-unit">min</span></div>
+                  <div class="card-label">Light</div>
+                </div>
+                <div class="bandwidth-card sleep-stage-card">
+                  <div class="card-value"><span id="sleep-rem">--</span> <span class="card-unit">min</span></div>
+                  <div class="card-label">REM</div>
+                </div>
+                <div class="bandwidth-card sleep-stage-card">
+                  <div class="card-value"><span id="sleep-wake">--</span> <span class="card-unit">min</span></div>
+                  <div class="card-label">Wake</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="metrics-list">
-            <div class="metric-row">
-              <div class="metric-label">
-                <div class="metric-icon">•</div>
-                <span>Avg Sleep</span>
+
+          <!-- Heart & Recovery -->
+          <div class="bandwidth-section-label">Heart & Recovery</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="resting-hr">--</span> <span class="card-unit">bpm</span></div>
+                <div class="card-label">Resting HR</div>
               </div>
-              <div class="metric-value" style="color: var(--accent-teal);">- hrs</div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="hrv-display">--</span> <span class="card-unit">ms</span></div>
+                <div class="card-label">HRV</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="spo2-display">--</span></div>
+                <div class="card-label">SpO2</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="breathing-display">--</span></div>
+                <div class="card-label">Breathing</div>
+              </div>
             </div>
-            <div class="metric-row">
-              <div class="metric-label">
-                <div class="metric-icon">•</div>
-                <span>Exercise Days</span>
+          </div>
+
+          <!-- Activity -->
+          <div class="bandwidth-section-label">Activity</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="steps">--</span></div>
+                <div class="card-label">Steps</div>
               </div>
-              <div class="metric-value" style="color: var(--accent-sage);">- / 7</div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="distance">--</span> <span class="card-unit">mi</span></div>
+                <div class="card-label">Distance</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="floors">--</span></div>
+                <div class="card-label">Floors</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="elevation">--</span> <span class="card-unit">ft</span></div>
+                <div class="card-label">Elevation</div>
+              </div>
             </div>
-            <div class="metric-row">
-              <div class="metric-label">
-                <div class="metric-icon">•</div>
-                <span>Social Time</span>
+          </div>
+
+          <!-- Calories -->
+          <div class="bandwidth-section-label">Calories</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="cal-total">--</span></div>
+                <div class="card-label">Total</div>
               </div>
-              <div class="metric-value" style="color: var(--accent-gold);">- hrs</div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="cal-bmr">--</span></div>
+                <div class="card-label">BMR</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="cal-active">--</span></div>
+                <div class="card-label">Active</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value">--</div>
+                <div class="card-label">--</div>
+              </div>
             </div>
-            <div class="metric-row">
-              <div class="metric-label">
-                <div class="metric-icon">•</div>
-                <span>Morning Mandatories</span>
+          </div>
+
+          <!-- Active Minutes -->
+          <div class="bandwidth-section-label">Active Minutes</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="min-sedentary">--</span> <span class="card-unit">min</span></div>
+                <div class="card-label">Sedentary</div>
               </div>
-              <div class="metric-value" style="color: var(--accent-coral);">- / 7</div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="min-lightly">--</span> <span class="card-unit">min</span></div>
+                <div class="card-label">Lightly Active</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="min-fairly">--</span> <span class="card-unit">min</span></div>
+                <div class="card-label">Fairly Active</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="min-very">--</span> <span class="card-unit">min</span></div>
+                <div class="card-label">Very Active</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Zone Minutes -->
+          <div class="bandwidth-section-label">Active Zone Minutes</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="azm-total">--</span> <span class="card-unit">min</span></div>
+                <div class="card-label">Total</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="azm-fat">--</span> <span class="card-unit">min</span></div>
+                <div class="card-label">Fat Burn</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="azm-cardio">--</span> <span class="card-unit">min</span></div>
+                <div class="card-label">Cardio</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="azm-peak">--</span> <span class="card-unit">min</span></div>
+                <div class="card-label">Peak</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HRV -->
+          <div class="bandwidth-section-label">HRV</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="hrv-daily">--</span> <span class="card-unit">ms</span></div>
+                <div class="card-label">Daily RMSSD</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="hrv-deep">--</span> <span class="card-unit">ms</span></div>
+                <div class="card-label">Deep RMSSD</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value">--</div>
+                <div class="card-label">--</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value">--</div>
+                <div class="card-label">--</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Respiratory -->
+          <div class="bandwidth-section-label">Respiratory</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="spo2-avg">--</span> <span class="card-unit">%</span></div>
+                <div class="card-label">SpO2 Avg</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="spo2-min">--</span> <span class="card-unit">%</span></div>
+                <div class="card-label">SpO2 Min</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="spo2-max">--</span> <span class="card-unit">%</span></div>
+                <div class="card-label">SpO2 Max</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="breathing-rate">--</span></div>
+                <div class="card-label">Breathing Rate</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Temperature -->
+          <div class="bandwidth-section-label">Temperature</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="temp-skin">--</span> <span class="card-unit">°</span></div>
+                <div class="card-label">Skin Variation</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value"><span id="temp-core">--</span> <span class="card-unit">°</span></div>
+                <div class="card-label">Core</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value">--</div>
+                <div class="card-label">--</div>
+              </div>
+              <div class="bandwidth-card heart-card">
+                <div class="card-value">--</div>
+                <div class="card-label">--</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cardio Fitness -->
+          <div class="bandwidth-section-label">Cardio Fitness</div>
+          <div class="bandwidth-section">
+            <div class="bandwidth-cards">
+              <div class="bandwidth-card activity-card">
+                <div class="card-value"><span id="vo2max">--</span></div>
+                <div class="card-label">VO2 Max</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value">--</div>
+                <div class="card-label">--</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value">--</div>
+                <div class="card-label">--</div>
+              </div>
+              <div class="bandwidth-card activity-card">
+                <div class="card-value">--</div>
+                <div class="card-label">--</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Readiness -->
+          <div class="bandwidth-section-label">Readiness</div>
+          <div class="bandwidth-section">
+            <div class="readiness-display">
+              <div class="readiness-gauge">
+                <div class="readiness-value">70</div>
+              </div>
+              <div class="readiness-factors">
+                <div class="factor"><span class="factor-dot sleep-dot"></span>Sleep quality</div>
+                <div class="factor"><span class="factor-dot hrv-dot"></span>HRV recovery</div>
+                <div class="factor"><span class="factor-dot rhr-dot"></span>Resting HR</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
   </div>
-
-  <!-- Calendar & Hours Integration -->
-  <script>
-    // ============================================
-    // LIVE DATA INTEGRATION
-    // ============================================
-    
-    const DashboardData = {
-      calendar: null,
-      hours: null,
-      
-      // Fetch calendar data
-      async loadCalendar() {
-        try {
-          const res = await fetch('./data/calendar_data.json?_=' + Date.now());
-          if (!res.ok) throw new Error('Not found');
-          this.calendar = await res.json();
-          this.updateCalendarUI();
-          console.log('📅 Calendar loaded:', this.calendar.meta.total_events, 'events');
-        } catch (e) {
-          console.warn('Calendar data not available:', e.message);
-        }
-      },
-      
-      // Fetch hours data (when available)
-      async loadHours() {
-        try {
-          const res = await fetch('./data/time2track_data.json?_=' + Date.now());
-          if (!res.ok) throw new Error('Not found');
-          this.hours = await res.json();
-          this.updateHoursUI();
-          console.log('📊 Hours loaded:', this.hours.summary?.total_hours, 'total');
-        } catch (e) {
-          console.warn('Hours data not available:', e.message);
-        }
-      },
-      
-      // Update calendar UI elements
-      updateCalendarUI() {
-        if (!this.calendar) return;
-        
-        // Update date label
-        const dateLabel = document.querySelector('[data-date-label]');
-        if (dateLabel && this.calendar.today) {
-          const d = new Date(this.calendar.today.date + 'T12:00:00');
-          dateLabel.textContent = d.toLocaleDateString('en-US', { 
-            month: 'numeric', 
-            day: 'numeric',
-            weekday: 'short'
-          });
-        }
-        
-        // Update timeline events
-        const timeline = document.querySelector('.timeline');
-        if (timeline && this.calendar.today?.events) {
-          // Remove existing events
-          timeline.querySelectorAll('.schedule-event').forEach(el => el.remove());
-          
-          // Add today's events
-          this.calendar.today.events.forEach(event => {
-            const div = document.createElement('div');
-            div.className = `schedule-event ${event.category || 'default'}`;
-            div.style.cssText = `top: ${event.top_percent}%; height: ${Math.max(event.height_percent, 4)}%;`;
-            div.innerHTML = `
-              <div class="event-time">${this.escapeHtml(event.start_time)} - ${this.escapeHtml(event.end_time)}</div>
-              <div class="event-title">${this.escapeHtml(event.title)}</div>
-            `;
-            timeline.appendChild(div);
-          });
-          
-          // Add current time indicator
-          this.updateTimeIndicator(timeline);
-        }
-      },
-      
-      // Update time indicator
-      updateTimeIndicator(timeline) {
-        timeline.querySelector('.time-indicator')?.remove();
-        
-        const now = new Date();
-        const hour = now.getHours() + now.getMinutes() / 60;
-        
-        if (hour < 5 || hour > 20) return;
-        
-        const pct = ((hour - 5) / 15) * 100;
-        
-        const indicator = document.createElement('div');
-        indicator.className = 'time-indicator';
-        indicator.style.cssText = `
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: ${pct}%;
-          height: 2px;
-          background: var(--accent-coral);
-          z-index: 10;
-        `;
-        indicator.innerHTML = `<div style="
-          position: absolute;
-          left: 50px;
-          top: -4px;
-          width: 10px;
-          height: 10px;
-          background: var(--accent-coral);
-          border-radius: 50%;
-        "></div>`;
-        timeline.appendChild(indicator);
-      },
-      
-      // Update hours UI elements
-      updateHoursUI() {
-        if (!this.hours) return;
-        
-        const reqs = { direct: 100, total: 500, supervision: 40 };
-        
-        ['direct', 'total', 'supervision'].forEach(type => {
-          const current = this.hours.summary?.[type + '_hours'] || 0;
-          const required = reqs[type];
-          const pct = Math.round((current / required) * 100);
-          
-          const valueEl = document.querySelector(`[data-hours="${type}"]`);
-          if (valueEl) valueEl.textContent = `${current}/${required}`;
-          
-          const pctEl = document.querySelector(`[data-hours-pct="${type}"]`);
-          if (pctEl) pctEl.textContent = `${pct}% complete`;
-        });
-      },
-      
-      escapeHtml(str) {
-        if (!str) return '';
-        return str.replace(/[&<>"']/g, c => ({
-          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-        }[c]));
-      },
-      
-      // Initialize
-      async init() {
-        await Promise.all([
-          this.loadCalendar(),
-          this.loadHours()
-        ]);
-        
-        // Refresh every 5 minutes
-        setInterval(() => this.loadCalendar(), 5 * 60 * 1000);
-        
-        // Update time indicator every minute
-        setInterval(() => {
-          const timeline = document.querySelector('.timeline');
-          if (timeline) this.updateTimeIndicator(timeline);
-        }, 60 * 1000);
-      }
-    };
-    
-    // Start loading data
-    document.addEventListener('DOMContentLoaded', () => DashboardData.init());
-  </script>
 
   <script>
     const menuBtn = document.getElementById('menuBtn');
@@ -2824,6 +3304,365 @@
         dropdownMenu.classList.remove('open');
       });
     });
+
+    // ============ HYPNOGRAM RENDERING ============
+    const sleepData = {
+      start_time: "2026-01-17T23:27:00.000",
+      end_time: "2026-01-18T06:37:30.000",
+      levels: [
+        {"dateTime": "2026-01-17T23:27:00.000", "level": "light", "seconds": 420},
+        {"dateTime": "2026-01-17T23:34:00.000", "level": "deep", "seconds": 1350},
+        {"dateTime": "2026-01-17T23:56:30.000", "level": "light", "seconds": 30},
+        {"dateTime": "2026-01-17T23:57:00.000", "level": "deep", "seconds": 150},
+        {"dateTime": "2026-01-17T23:59:30.000", "level": "light", "seconds": 1050},
+        {"dateTime": "2026-01-18T00:17:00.000", "level": "deep", "seconds": 30},
+        {"dateTime": "2026-01-18T00:17:30.000", "level": "light", "seconds": 30},
+        {"dateTime": "2026-01-18T00:18:00.000", "level": "deep", "seconds": 660},
+        {"dateTime": "2026-01-18T00:29:00.000", "level": "light", "seconds": 30},
+        {"dateTime": "2026-01-18T00:29:30.000", "level": "deep", "seconds": 60},
+        {"dateTime": "2026-01-18T00:30:30.000", "level": "light", "seconds": 60},
+        {"dateTime": "2026-01-18T00:31:30.000", "level": "deep", "seconds": 90},
+        {"dateTime": "2026-01-18T00:33:00.000", "level": "light", "seconds": 30},
+        {"dateTime": "2026-01-18T00:33:30.000", "level": "deep", "seconds": 60},
+        {"dateTime": "2026-01-18T00:34:30.000", "level": "light", "seconds": 1560},
+        {"dateTime": "2026-01-18T01:00:30.000", "level": "deep", "seconds": 30},
+        {"dateTime": "2026-01-18T01:01:00.000", "level": "light", "seconds": 60},
+        {"dateTime": "2026-01-18T01:02:00.000", "level": "deep", "seconds": 60},
+        {"dateTime": "2026-01-18T01:03:00.000", "level": "light", "seconds": 30},
+        {"dateTime": "2026-01-18T01:03:30.000", "level": "deep", "seconds": 90},
+        {"dateTime": "2026-01-18T01:05:00.000", "level": "light", "seconds": 690},
+        {"dateTime": "2026-01-18T01:16:30.000", "level": "deep", "seconds": 390},
+        {"dateTime": "2026-01-18T01:23:00.000", "level": "light", "seconds": 60},
+        {"dateTime": "2026-01-18T01:24:00.000", "level": "deep", "seconds": 1230},
+        {"dateTime": "2026-01-18T01:44:30.000", "level": "light", "seconds": 120},
+        {"dateTime": "2026-01-18T01:46:30.000", "level": "deep", "seconds": 30},
+        {"dateTime": "2026-01-18T01:47:00.000", "level": "light", "seconds": 30},
+        {"dateTime": "2026-01-18T01:47:30.000", "level": "deep", "seconds": 30},
+        {"dateTime": "2026-01-18T01:48:00.000", "level": "light", "seconds": 390},
+        {"dateTime": "2026-01-18T01:54:30.000", "level": "deep", "seconds": 90},
+        {"dateTime": "2026-01-18T01:56:00.000", "level": "light", "seconds": 1740},
+        {"dateTime": "2026-01-18T02:25:00.000", "level": "deep", "seconds": 60},
+        {"dateTime": "2026-01-18T02:26:00.000", "level": "light", "seconds": 60},
+        {"dateTime": "2026-01-18T02:27:00.000", "level": "deep", "seconds": 30},
+        {"dateTime": "2026-01-18T02:27:30.000", "level": "light", "seconds": 30},
+        {"dateTime": "2026-01-18T02:28:00.000", "level": "deep", "seconds": 450},
+        {"dateTime": "2026-01-18T02:35:30.000", "level": "light", "seconds": 30},
+        {"dateTime": "2026-01-18T02:36:00.000", "level": "deep", "seconds": 420},
+        {"dateTime": "2026-01-18T02:43:00.000", "level": "light", "seconds": 90},
+        {"dateTime": "2026-01-18T02:44:30.000", "level": "deep", "seconds": 30},
+        {"dateTime": "2026-01-18T02:45:00.000", "level": "light", "seconds": 750},
+        {"dateTime": "2026-01-18T02:57:30.000", "level": "rem", "seconds": 4080},
+        {"dateTime": "2026-01-18T04:05:30.000", "level": "light", "seconds": 1590},
+        {"dateTime": "2026-01-18T04:32:00.000", "level": "deep", "seconds": 1530},
+        {"dateTime": "2026-01-18T04:57:30.000", "level": "light", "seconds": 2250},
+        {"dateTime": "2026-01-18T05:35:00.000", "level": "rem", "seconds": 2730},
+        {"dateTime": "2026-01-18T06:20:30.000", "level": "light", "seconds": 510},
+        {"dateTime": "2026-01-18T06:29:00.000", "level": "wake", "seconds": 510}
+      ]
+    };
+
+    function renderHypnogram() {
+      const svg = document.getElementById('hypnogram');
+      const areaPath = document.getElementById('hypnogram-area');
+      const linePath = document.getElementById('hypnogram-line');
+      const timeLabels = document.getElementById('time-labels');
+      
+      if (!svg || !areaPath || !linePath) return;
+      
+      const padding = 10;
+      const width = 400 - (padding * 2);
+      const height = 160;
+      
+      const levelY = {
+        'wake': 15,
+        'light': 55,
+        'rem': 95,
+        'deep': 135
+      };
+      
+      const startTime = new Date(sleepData.start_time).getTime();
+      const endTime = new Date(sleepData.end_time).getTime();
+      const totalDuration = endTime - startTime;
+      
+      function timeToX(dateTime) {
+        const time = new Date(dateTime).getTime();
+        const ratio = (time - startTime) / totalDuration;
+        return padding + (ratio * width);
+      }
+      
+      let pathD = '';
+      let areaD = '';
+      
+      sleepData.levels.forEach((level, i) => {
+        const x = timeToX(level.dateTime);
+        const y = levelY[level.level];
+        const endX = timeToX(new Date(new Date(level.dateTime).getTime() + (level.seconds * 1000)).toISOString());
+        
+        if (i === 0) {
+          pathD = `M${x},${y}`;
+          areaD = `M${x},${y}`;
+        } else {
+          pathD += ` L${x},${y}`;
+          areaD += ` L${x},${y}`;
+        }
+        
+        pathD += ` L${endX},${y}`;
+        areaD += ` L${endX},${y}`;
+      });
+      
+      const lastX = timeToX(sleepData.end_time);
+      areaD += ` L${lastX},150 L${padding},150 Z`;
+      
+      linePath.setAttribute('d', pathD);
+      areaPath.setAttribute('d', areaD);
+      
+      const gridLines = [80, 160, 240, 320];
+      gridLines.forEach(x => {
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', x);
+        line.setAttribute('y1', 10);
+        line.setAttribute('x2', x);
+        line.setAttribute('y2', 150);
+        line.setAttribute('stroke', '#3a3a38');
+        line.setAttribute('stroke-width', '1');
+        svg.insertBefore(line, areaPath);
+      });
+      
+      if (timeLabels) {
+        timeLabels.innerHTML = '<span>11 PM</span><span>1 AM</span><span>3 AM</span><span>5 AM</span><span>7 AM</span>';
+      }
+    }
+    
+    document.addEventListener('DOMContentLoaded', renderHypnogram);
+
+    // ============ FITBIT DATA FETCH ============
+    // UPDATE THIS URL with your GitHub raw URL
+    const FITBIT_DATA_URL = 'https://raw.githubusercontent.com/seanmapoles/spring-2026-dashboard/main/data/fitbit-latest.json';
+
+    async function fetchFitbitData() {
+      try {
+        const response = await fetch(FITBIT_DATA_URL);
+        if (!response.ok) throw new Error('Failed to fetch');
+        const data = await response.json();
+        populateDashboard(data);
+      } catch (error) {
+        console.error('Error fetching Fitbit data:', error);
+        document.getElementById('fitbit-updated').textContent = 'OFFLINE - Using cached data';
+      }
+    }
+
+    function formatTime(isoString) {
+      if (!isoString) return '--';
+      const date = new Date(isoString);
+      let hours = date.getHours();
+      const minutes = date.getMinutes();
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12 || 12;
+      const minStr = minutes > 0 ? `:${minutes.toString().padStart(2, '0')}` : '';
+      return `${hours}${minStr} ${ampm}`;
+    }
+
+    function formatDuration(minutes) {
+      if (!minutes) return '--';
+      const hrs = Math.floor(minutes / 60);
+      const mins = minutes % 60;
+      return `${hrs}h ${mins}m`;
+    }
+
+    function formatNumber(num) {
+      if (num === undefined || num === null) return '--';
+      return num.toLocaleString();
+    }
+
+    function safeSet(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value;
+    }
+
+    function populateDashboard(data) {
+      // Update timestamp
+      if (data.updated_at) {
+        const updated = new Date(data.updated_at);
+        safeSet('fitbit-updated', `UPDATED: ${data.date || updated.toLocaleDateString()}`);
+      }
+
+      // Sleep data
+      const sleep = data.sleep?.summary || {};
+      safeSet('sleep-score', sleep.score ? `${sleep.score}%` : '--%');
+      safeSet('sleep-duration', formatDuration(sleep.duration_minutes));
+      safeSet('sleep-start', formatTime(sleep.start_time));
+      safeSet('sleep-end', formatTime(sleep.end_time));
+      
+      // Update sleep quality gauge
+      const gauge = document.getElementById('sleep-quality-gauge');
+      if (gauge && sleep.score) {
+        const deg = (sleep.score / 100) * 360;
+        gauge.style.background = `conic-gradient(var(--accent-teal) 0deg, var(--accent-teal) ${deg}deg, var(--bg-secondary) ${deg}deg)`;
+      }
+
+      // Sleep stages
+      const stages = sleep.stages || {};
+      safeSet('sleep-deep', stages.deep ?? '--');
+      safeSet('sleep-light', stages.light ?? '--');
+      safeSet('sleep-rem', stages.rem ?? '--');
+      safeSet('sleep-wake', stages.wake ?? '--');
+
+      // Heart
+      const heart = data.heart?.summary || {};
+      safeSet('resting-hr', heart.resting_hr || '--');
+      
+      // HRV
+      const hrv = data.hrv?.summary || {};
+      safeSet('hrv-display', hrv.daily_rmssd || '--');
+      safeSet('hrv-daily', hrv.daily_rmssd || '--');
+      safeSet('hrv-deep', hrv.deep_rmssd || '--');
+
+      // Respiratory
+      const resp = data.respiratory?.summary || {};
+      safeSet('spo2-display', resp.spo2_avg || '--');
+      safeSet('spo2-avg', resp.spo2_avg || '--');
+      safeSet('spo2-min', resp.spo2_min || '--');
+      safeSet('spo2-max', resp.spo2_max || '--');
+      safeSet('breathing-display', resp.breathing_rate || '--');
+      safeSet('breathing-rate', resp.breathing_rate || '--');
+
+      // Activity
+      const activity = data.activity?.summary || {};
+      safeSet('steps', formatNumber(activity.steps));
+      safeSet('distance', activity.distance_miles?.toFixed(1) ?? '--');
+      safeSet('floors', activity.floors ?? '--');
+      safeSet('elevation', activity.elevation?.toFixed(1) ?? '--');
+
+      // Calories
+      const calories = activity.calories || {};
+      safeSet('cal-total', formatNumber(calories.total));
+      safeSet('cal-bmr', formatNumber(calories.bmr));
+      safeSet('cal-active', formatNumber(calories.active));
+
+      // Active Minutes
+      const minutes = activity.minutes || {};
+      safeSet('min-sedentary', minutes.sedentary ?? '--');
+      safeSet('min-lightly', minutes.lightly_active ?? '--');
+      safeSet('min-fairly', minutes.fairly_active ?? '--');
+      safeSet('min-very', minutes.very_active ?? '--');
+
+      // Active Zone Minutes
+      const azm = activity.active_zone_minutes || {};
+      safeSet('azm-total', azm.total ?? '--');
+      safeSet('azm-fat', azm.fat_burn ?? '--');
+      safeSet('azm-cardio', azm.cardio ?? '--');
+      safeSet('azm-peak', azm.peak ?? '--');
+
+      // Temperature
+      const temp = data.temperature || {};
+      safeSet('temp-skin', temp.skin_variation || '--');
+      safeSet('temp-core', temp.core || '--');
+
+      // Cardio Fitness
+      const cardio = data.cardio_fitness || {};
+      safeSet('vo2max', cardio.vo2_max || '--');
+
+      // Update hypnogram with new data
+      if (data.sleep?.levels && data.sleep.levels.length > 0) {
+        renderHypnogramFromData(data.sleep.summary, data.sleep.levels);
+      }
+    }
+
+    function renderHypnogramFromData(summary, levels) {
+      const svg = document.getElementById('hypnogram');
+      const areaPath = document.getElementById('hypnogram-area');
+      const linePath = document.getElementById('hypnogram-line');
+      const timeLabels = document.getElementById('time-labels');
+      
+      if (!svg || !areaPath || !linePath || !levels || levels.length === 0) return;
+      
+      // Clear existing grid lines
+      svg.querySelectorAll('line').forEach(l => l.remove());
+      
+      const padding = 10;
+      const width = 400 - (padding * 2);
+      
+      const levelY = {
+        'wake': 15,
+        'light': 55,
+        'rem': 95,
+        'deep': 135
+      };
+      
+      const startTime = new Date(summary.start_time).getTime();
+      const endTime = new Date(summary.end_time).getTime();
+      const totalDuration = endTime - startTime;
+      
+      function timeToX(dateTime) {
+        const time = new Date(dateTime).getTime();
+        const ratio = (time - startTime) / totalDuration;
+        return padding + (ratio * width);
+      }
+      
+      let pathD = '';
+      let areaD = '';
+      
+      levels.forEach((level, i) => {
+        const x = timeToX(level.dateTime);
+        const y = levelY[level.level];
+        const endX = timeToX(new Date(new Date(level.dateTime).getTime() + (level.seconds * 1000)).toISOString());
+        
+        if (i === 0) {
+          pathD = `M${x},${y}`;
+          areaD = `M${x},${y}`;
+        } else {
+          pathD += ` L${x},${y}`;
+          areaD += ` L${x},${y}`;
+        }
+        
+        pathD += ` L${endX},${y}`;
+        areaD += ` L${endX},${y}`;
+      });
+      
+      const lastX = timeToX(summary.end_time);
+      areaD += ` L${lastX},150 L${padding},150 Z`;
+      
+      linePath.setAttribute('d', pathD);
+      areaPath.setAttribute('d', areaD);
+      
+      // Add grid lines
+      const gridLines = [80, 160, 240, 320];
+      gridLines.forEach(x => {
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', x);
+        line.setAttribute('y1', 10);
+        line.setAttribute('x2', x);
+        line.setAttribute('y2', 150);
+        line.setAttribute('stroke', '#3a3a38');
+        line.setAttribute('stroke-width', '1');
+        svg.insertBefore(line, areaPath);
+      });
+      
+      // Generate time labels based on actual sleep window
+      if (timeLabels) {
+        const startHour = new Date(summary.start_time).getHours();
+        const endHour = new Date(summary.end_time).getHours();
+        let labels = [];
+        
+        // Round start down to nearest odd hour for cleaner labels
+        let h = Math.floor(startHour);
+        if (h % 2 === 0) h--;
+        
+        while (h <= endHour + 24) {
+          const displayH = ((h % 24) + 24) % 24;
+          const hour12 = displayH === 0 ? 12 : (displayH > 12 ? displayH - 12 : displayH);
+          const ampm = displayH >= 12 ? 'PM' : 'AM';
+          labels.push(`${hour12} ${ampm}`);
+          h += 2;
+          if (labels.length >= 5) break;
+        }
+        
+        timeLabels.innerHTML = labels.map(l => `<span>${l}</span>`).join('');
+      }
+    }
+
+    // Fetch data on load
+    document.addEventListener('DOMContentLoaded', fetchFitbitData);
   </script>
 </body>
 </html>
