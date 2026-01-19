@@ -18,7 +18,7 @@ jobs:
         id: fitbit
         run: |
           # Get current date
-          TODAY=$(date +%Y-%m-%d)
+          TODAY=$(TZ='America/Phoenix' date +%Y-%m-%d)
           
           # Exchange refresh token for new access token
           TOKEN_RESPONSE=$(curl -s -X POST https://api.fitbit.com/oauth2/token \
