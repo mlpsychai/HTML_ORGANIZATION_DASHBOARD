@@ -1,0 +1,2668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring 2026 Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Warm, low-contrast dark theme */
+      --bg-primary: #1a1a1a;
+      --bg-secondary: #242424;
+      --bg-tertiary: #2e2e2e;
+      --bg-hover: #383838;
+      
+      /* Muted, warm accent colors */
+      --accent-teal: #7eb8c9;
+      --accent-sage: #8cb88c;
+      --accent-gold: #c9b87e;
+      --accent-coral: #c99b8c;
+      --accent-purple: #b0a0c9;
+      
+      /* Softer text - cream instead of white */
+      --text-primary: #d8d4cc;
+      --text-secondary: #9a9890;
+      --text-muted: #6b6860;
+      
+      --border-color: #3a3a38;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 24px 40px;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* ============================================
+       MASTER GRID LAYOUT - OVERVIEW PANEL
+       ============================================
+       12 columns × auto rows
+       Gap: 12px horizontal, 16px vertical
+       
+       CURRENT LAYOUT (locked 2026-01-16):
+       ┌───────────────┬─────────────────────────────────────┬───────────────┐
+       │ Row 1:        │ Header Info                         │ Quick Links   │
+       │ Overview Btn  │ (cols 3-11)                         │ (col 12)      │
+       │ (cols 1-2)    │                                     │               │
+       ├───────────────┴─────────────────────────────────────┼───────────────┤
+       │ Row 2: True Priorities Label (cols 1-8)             │ Calendar      │
+       ├─────────────────────────────────────────────────────┤ (cols 9-12)   │
+       │ Row 3: True Priorities Cards (cols 1-8, 4 cards)    │ (cols 9-12)   │
+       ├─────────────────────────────────────────────────────┤ spans         │
+       │ Row 4: Semester Hours Label (cols 1-8)              │ rows 3-8      │
+       ├─────────────────────────────────────────────────────┤               │
+       │ Row 5: Semester Hours Cards (cols 1-8, 4 cards)     │               │
+       ├───────────────────────┬─────────────────────────────┤               │
+       │ Row 6: PRIORITIES Label (cols 1-8)                  │               │
+       ├───────────────────────┼─────────────────────────────┤               │
+       │ Row 7: Today's        │ Upcoming Assignments        │               │
+       │ Priorities (cols 1-4) │ (cols 5-8)                  │               │
+       ├───────────────────────┴─────────────────────────────┼───────────────┤
+       │ Row 8: Weekly Priorities (cols 1-8)                                 │
+       └─────────────────────────────────────────────────────────────────────┘
+       
+       TO MOVE ELEMENTS: Change grid-column and grid-row values below
+       Example: grid-column: 1 / 9 means columns 1-8
+                grid-row: 2 / 8 means rows 2-7
+       ============================================ */
+    
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto auto auto auto auto auto auto auto;
+      gap: 12px;
+      row-gap: 16px;
+    }
+
+    /* Grid Area Assignments - LOCKED POSITIONS */
+    
+    /* ROW 1: Navigation bar */
+    /* NAV: Overview button - cols 1-2, row 1 */
+    .grid-overview-btn { 
+      grid-column: 1 / 3; 
+      grid-row: 1;
+      align-self: center;
+    }
+    
+    /* Header info - cols 5-8, row 1 */
+    .grid-header-info {
+      grid-column: 5 / 9;
+      grid-row: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+    
+    /* NAV: Quick Links - col 12, row 1 */
+    .grid-quick-links { 
+      grid-column: 12 / 13; 
+      grid-row: 1;
+      justify-self: end;
+      align-self: center;
+    }
+    
+    /* ROW 2: True Priorities */
+    .grid-priorities-label { grid-column: 1 / 4; grid-row: 2; align-self: start; }
+    .grid-priorities-cards { grid-column: 1 / 4; grid-row: 3; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    
+    /* ROW 3: Semester Hours (cols 5-7) */
+    .grid-hours-label { grid-column: 5 / 8; grid-row: 2; align-self: start; }
+    .grid-hours-cards { grid-column: 5 / 8; grid-row: 3; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    
+    /* CALENDAR - cols 9-12, rows 3-9 (LOCKED) */
+    .grid-calendar-label { grid-column: 9 / 12; grid-row: 2; align-self: start; }
+    .grid-date-label { grid-column: 12 / 13; grid-row: 2; align-self: start; justify-self: end; }
+    .grid-today-schedule { 
+      grid-column: 9 / 13; 
+      grid-row: 3 / 10;
+    }
+    
+    /* ROW 6: Priorities Section Label */
+    .grid-priorities-section-label { grid-column: 1 / 4; grid-row: 6; align-self: start; margin-top: -8px; }
+    
+    /* ROW 7: Today's Priorities + Upcoming */
+    .grid-today-priorities { grid-column: 1 / 4; grid-row: 7; margin-top: -8px; }
+    .grid-upcoming { grid-column: 5 / 8; grid-row: 7 / 9; margin-top: -8px; }
+    
+    /* ROW 8: Weekly */
+    .grid-weekly { grid-column: 1 / 4; grid-row: 8; }
+
+    /* Header Info (inline in grid) */
+    .header-title {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-primary);
+    }
+    
+    .header-meta-inline {
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 32px 0 24px;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 28px;
+    }
+
+    .header-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--accent-teal);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .header-meta {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    /* Hamburger Menu */
+    .nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .nav-container {
+      position: relative;
+    }
+
+    .hamburger-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger-btn:hover {
+      background: var(--bg-tertiary);
+      border-color: var(--accent-teal);
+    }
+
+    .hamburger-icon {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 18px;
+    }
+
+    .hamburger-icon span {
+      display: block;
+      height: 1px;
+      background: var(--text-primary);
+      border-radius: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger-btn.open .hamburger-icon span:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    .hamburger-btn.open .hamburger-icon span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-btn.open .hamburger-icon span:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -4px);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      min-width: 220px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.2s ease;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown-menu.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    /* Quick Links Dropdown */
+    .quick-links-container {
+      position: relative;
+    }
+
+    .quick-links-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .quick-links-btn:hover {
+      background: var(--bg-tertiary);
+      border-color: var(--accent-sage);
+      color: var(--text-primary);
+    }
+
+    .quick-links-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke-width: 1.5;
+    }
+
+    .quick-links-dropdown {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      min-width: 180px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.2s ease;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .quick-links-dropdown.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .quick-link-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .quick-link-item:hover {
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+    }
+
+    .quick-link-item svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .dropdown-item {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      background: transparent;
+      border: none;
+      border-radius: 6px;
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 700;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .dropdown-item:hover {
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+    }
+
+    .dropdown-item.active {
+      background: var(--accent-teal);
+      color: var(--bg-primary);
+    }
+
+    /* View Panels */
+    .view-panel {
+      display: none;
+    }
+
+    .view-panel.active {
+      display: block;
+    }
+
+    /* True Priorities Section */
+    .priorities-section {
+      margin-bottom: 12px;
+    }
+
+    .priorities-label, .hours-label, .priorities-section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--accent-gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .priorities-section-label {
+      padding-left: 12px;
+    }
+
+    .priorities-label::before {
+      content: '';
+    }
+
+    .hours-label::before {
+      content: '';
+    }
+
+    /* Hours Gantt Section */
+    .hours-gantt-section {
+      margin-bottom: 16px;
+    }
+
+    /* Stats Bar */
+    .stat-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px 12px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      min-height: 125px;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .stat-card:hover {
+      background: var(--bg-tertiary);
+    }
+
+    .stat-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      line-height: 1.3;
+      min-height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stat-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 24px;
+    }
+
+    .stat-value {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-primary);
+    }
+
+    .stat-subtext {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
+
+    /* Bandwidth Donut */
+    .bandwidth-donut-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .bandwidth-donut {
+      position: relative;
+      width: 28px;
+      height: 28px;
+    }
+
+    .bandwidth-donut svg {
+      transform: rotate(-90deg);
+      width: 28px;
+      height: 28px;
+    }
+
+    .bandwidth-donut .donut-bg {
+      fill: none;
+      stroke: var(--border-color);
+      stroke-width: 6;
+    }
+
+    .bandwidth-donut .donut-fill {
+      fill: none;
+      stroke-width: 6;
+      stroke-linecap: round;
+      transition: stroke-dasharray 0.5s ease;
+    }
+
+    .bandwidth-donut .donut-fill.low {
+      stroke: var(--accent-sage);
+    }
+
+    .bandwidth-donut .donut-fill.medium {
+      stroke: var(--accent-gold);
+    }
+
+    .bandwidth-donut .donut-fill.high {
+      stroke: var(--accent-coral);
+    }
+
+    .bandwidth-donut .donut-tick-yellow {
+      stroke: var(--accent-gold);
+      stroke-width: 1.5;
+    }
+
+    .bandwidth-donut .donut-tick-red {
+      stroke: var(--accent-coral);
+      stroke-width: 1.5;
+    }
+
+    .bandwidth-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bandwidth-status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .bandwidth-status.low { color: var(--accent-sage); }
+    .bandwidth-status.medium { color: var(--accent-gold); }
+    .bandwidth-status.high { color: var(--accent-coral); }
+
+    /* Calendar */
+    .today-schedule {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px;
+      height: fit-content;
+    }
+
+    .schedule-header {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .timeline {
+      position: relative;
+      height: 350px;
+      border-left: 2px solid var(--border-color);
+      margin-left: 40px;
+    }
+
+    .time-slot {
+      position: absolute;
+      left: -45px;
+      display: flex;
+      align-items: flex-start;
+      width: calc(100% + 45px);
+    }
+
+    .time-label {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 10px;
+      color: var(--text-muted);
+      width: 40px;
+      text-align: right;
+      padding-right: 8px;
+    }
+
+    .time-tick {
+      width: 8px;
+      height: 1px;
+      background: var(--border-color);
+      margin-top: 6px;
+    }
+
+    .time-slot.major .time-tick {
+      width: 12px;
+      background: var(--text-muted);
+    }
+
+    .schedule-event {
+      position: absolute;
+      left: 20px;
+      right: 10px;
+      background: var(--bg-tertiary);
+      border-left: 3px solid var(--text-muted);
+      border-radius: 4px;
+      padding: 6px 10px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .schedule-event.class { border-left-color: var(--text-muted); }
+    .schedule-event.fellowship { border-left-color: var(--accent-purple); }
+    .schedule-event.meeting { border-left-color: var(--accent-gold); }
+
+    .event-time {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
+
+    .event-title {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-primary);
+    }
+
+    /* Priorities Card */
+    .priority-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .priority-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      padding: 10px 12px 10px 16px;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      border-left: 3px solid var(--accent-sage);
+      text-align: left;
+    }
+
+    .priority-item.completed {
+      opacity: 0.5;
+      border-left-color: var(--accent-sage);
+    }
+
+    .priority-checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--accent-sage);
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .priority-item.completed .priority-checkbox {
+      background: var(--accent-sage);
+      border-color: var(--accent-sage);
+    }
+
+    .priority-item.weekly {
+      border-left-color: var(--accent-sage);
+    }
+
+    .priority-checkbox.weekly {
+      border-color: var(--accent-sage);
+    }
+
+    .priority-text {
+      font-size: 9px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-primary);
+      line-height: 1.4;
+    }
+
+    .priority-item.completed .priority-text {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    /* Assignments Table */
+    .assignments-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .assignments-table th {
+      text-align: left;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      padding: 8px 6px 8px 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-weight: 400;
+    }
+
+    .assignments-table td {
+      padding: 10px 6px 10px 16px;
+      font-size: 9px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.4;
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    .assignments-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .assignment-class {
+      font-size: 9px;
+      font-weight: 400;
+      color: var(--text-primary);
+    }
+
+    .assignment-name {
+      font-weight: 400;
+      color: var(--text-primary);
+    }
+
+    .assignment-due {
+      font-size: 9px;
+      font-weight: 400;
+      color: var(--accent-sage);
+    }
+
+    .assignment-points {
+      font-size: 9px;
+      font-weight: 400;
+      color: var(--text-primary);
+    }
+
+    /* Weekly Priorities */
+    .weekly-priority-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 12px;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      margin-bottom: 8px;
+      border-left: 3px solid var(--accent-purple);
+    }
+
+    .weekly-priority-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .weekly-number {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent-purple);
+      width: 20px;
+      flex-shrink: 0;
+    }
+
+    .weekly-text {
+      font-size: 13px;
+      color: var(--text-primary);
+      line-height: 1.4;
+    }
+
+    /* Cup Graphic */
+    .cup-container {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    .cup-graphic {
+      position: relative;
+      width: 22px;
+      height: 28px;
+      background: var(--bg-tertiary);
+      border: none;
+      border-radius: 0 0 5px 5px;
+      overflow: hidden;
+    }
+
+    .cup-graphic::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -2px;
+      right: -2px;
+      height: 2px;
+      background: var(--bg-tertiary);
+      border-radius: 1px;
+    }
+
+    .cup-fill {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, var(--accent-teal), var(--accent-sage));
+      transition: height 0.5s ease;
+      border-radius: 0 0 5px 5px;
+    }
+
+    .cup-fill.low { 
+      background: linear-gradient(to top, var(--accent-coral), #d4a574);
+      height: 25%;
+    }
+    .cup-fill.medium { 
+      background: linear-gradient(to top, var(--accent-gold), var(--accent-sage));
+      height: 55%;
+    }
+    .cup-fill.high { 
+      background: linear-gradient(to top, var(--accent-teal), var(--accent-sage));
+      height: 85%;
+    }
+
+    .cup-steam {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 3px;
+    }
+
+    .steam-line {
+      width: 2px;
+      height: 12px;
+      background: var(--text-muted);
+      border-radius: 2px;
+      opacity: 0.5;
+      animation: steam 2s ease-in-out infinite;
+    }
+
+    .steam-line:nth-child(2) { animation-delay: 0.3s; height: 10px; }
+    .steam-line:nth-child(3) { animation-delay: 0.6s; height: 8px; }
+
+    @keyframes steam {
+      0%, 100% { transform: translateY(0); opacity: 0.5; }
+      50% { transform: translateY(-4px); opacity: 0.2; }
+    }
+
+    .cup-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Bandwidth Gauge */
+    .bandwidth-gauge {
+      position: relative;
+      width: 22px;
+      height: 28px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .gauge-fill {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: height 0.5s ease;
+      border-radius: 0 0 2px 2px;
+    }
+
+    .gauge-fill.low { 
+      background: linear-gradient(to top, var(--accent-coral), #d4a574);
+      height: 25%;
+    }
+    .gauge-fill.medium { 
+      background: linear-gradient(to top, var(--accent-gold), var(--accent-sage));
+      height: 55%;
+    }
+    .gauge-fill.high { 
+      background: linear-gradient(to top, var(--accent-teal), var(--accent-sage));
+      height: 75%;
+    }
+
+    /* Pulse Line */
+    .pulse-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pulse-line {
+      width: 50px;
+      height: 24px;
+    }
+
+    .pulse-path {
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .pulse-line.calm .pulse-path {
+      stroke: var(--accent-sage);
+    }
+
+    .pulse-line.stretched .pulse-path {
+      stroke: var(--accent-gold);
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    .pulse-line.stressed .pulse-path {
+      stroke: var(--accent-coral);
+      animation: pulse-shake 0.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes pulse-shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-1px); }
+      75% { transform: translateX(1px); }
+    }
+
+    /* Sanity Graphic (old) */
+    .sanity-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .sanity-face {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--bg-primary);
+      border: 2px solid var(--text-muted);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sanity-face.stretched {
+      border-color: var(--accent-gold);
+    }
+
+    .sanity-face.struggling {
+      border-color: var(--accent-coral);
+    }
+
+    .sanity-face.good {
+      border-color: var(--accent-sage);
+    }
+
+    .face-eyes {
+      position: absolute;
+      top: 8px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .eye {
+      width: 3px;
+      height: 3px;
+      background: var(--text-primary);
+      border-radius: 50%;
+    }
+
+    .face-mouth {
+      position: absolute;
+      bottom: 7px;
+      width: 10px;
+      height: 4px;
+      border: 2px solid var(--text-primary);
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+    }
+
+    /* Sanity states */
+    .sanity-face.struggling .face-mouth {
+      border-radius: 10px 10px 0 0;
+      border: 2px solid var(--accent-coral);
+      border-bottom: none;
+      bottom: 8px;
+    }
+
+    .sanity-face.stretched .face-mouth {
+      height: 2px;
+      width: 8px;
+      border-radius: 0;
+      border: none;
+      background: var(--accent-gold);
+      bottom: 9px;
+    }
+
+    .sanity-face.good .face-mouth {
+      border-color: var(--accent-sage);
+    }
+
+    .sanity-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sanity-status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .sanity-status.good { color: var(--accent-sage); }
+    .sanity-status.stretched { color: var(--accent-gold); }
+    .sanity-status.struggling { color: var(--accent-coral); }
+
+    /* Two Column Layout */
+    .two-column {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+
+    /* Section */
+    .section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 12px 16px 16px 16px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section-title {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-primary);
+    }
+
+    .section-action {
+      font-size: 13px;
+      color: var(--accent-teal);
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    .section-action:hover {
+      color: var(--accent-sage);
+    }
+
+    /* Course/Fellowship Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .card {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 16px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+    }
+
+    .card:nth-child(1)::before { background: var(--accent-teal); }
+    .card:nth-child(2)::before { background: var(--accent-coral); }
+    .card:nth-child(3)::before { background: var(--accent-gold); }
+    .card:nth-child(4)::before { background: var(--accent-sage); }
+    .card:nth-child(5)::before { background: var(--accent-purple); }
+
+    .card:hover {
+      background: var(--bg-hover);
+      border-color: var(--accent-teal);
+    }
+
+    .card-code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .card-name {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .card-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* Fellowship cards - different accent colors */
+    .fellowship-grid .card:nth-child(1)::before { background: var(--accent-purple); }
+    .fellowship-grid .card:nth-child(2)::before { background: var(--accent-gold); }
+    .fellowship-grid .card:nth-child(3)::before { background: var(--accent-coral); }
+
+    /* Weekly Schedule */
+    .schedule-week {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .schedule-day {
+      text-align: center;
+    }
+
+    .day-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      padding: 8px;
+      border-bottom: 2px solid var(--border-color);
+      margin-bottom: 8px;
+    }
+
+    .day-label.today {
+      color: var(--accent-teal);
+      border-bottom-color: var(--accent-teal);
+    }
+
+    .schedule-item {
+      background: var(--bg-tertiary);
+      border-radius: 6px;
+      padding: 8px 6px;
+      margin-bottom: 6px;
+      font-size: 11px;
+      border-left: 3px solid var(--accent-teal);
+      text-align: left;
+    }
+
+    .schedule-item.clinical { border-left-color: var(--accent-coral); }
+    .schedule-item.meeting { border-left-color: var(--accent-gold); }
+    .schedule-item.fellowship { border-left-color: var(--accent-purple); }
+
+    .schedule-item-time {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .schedule-item-title {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* Hours Tracker */
+    .tracker-item {
+      margin-bottom: 18px;
+    }
+
+    .tracker-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .tracker-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .tracker-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    .tracker-value {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: var(--bg-primary);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .progress-fill.teal { background: var(--accent-teal); }
+    .progress-fill.coral { background: var(--accent-coral); }
+    .progress-fill.gold { background: var(--accent-gold); }
+    .progress-fill.sage { background: var(--accent-sage); }
+
+    /* Deadlines */
+    .deadline-item {
+      display: flex;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .deadline-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .deadline-item:first-child {
+      padding-top: 0;
+    }
+
+    .deadline-date {
+      text-align: center;
+      min-width: 48px;
+    }
+
+    .deadline-day {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent-coral);
+      line-height: 1;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .deadline-month {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
+
+    .deadline-info {
+      flex: 1;
+    }
+
+    .deadline-title {
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+      font-size: 14px;
+    }
+
+    .deadline-course {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* Quick Links */
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .quick-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+
+    .quick-link:hover {
+      background: var(--accent-teal);
+      color: var(--bg-primary);
+      border-color: var(--accent-teal);
+    }
+
+    .quick-link svg {
+      width: 18px;
+      height: 18px;
+      opacity: 0.7;
+    }
+
+    .quick-link:hover svg {
+      opacity: 1;
+    }
+
+    /* Bandwidth View */
+    .bandwidth-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .gauge-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .gauge {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: conic-gradient(
+        var(--accent-sage) 0deg 216deg,
+        var(--bg-tertiary) 216deg 360deg
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .gauge::before {
+      content: '';
+      width: 140px;
+      height: 140px;
+      background: var(--bg-secondary);
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .gauge-value {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .gauge-number {
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1;
+    }
+
+    .gauge-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .gauge-title {
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .metrics-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+    }
+
+    .metric-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .metric-icon {
+      font-size: 18px;
+    }
+
+    .metric-value {
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1000px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+      
+      .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      
+      .sidebar > .section {
+        flex: 1;
+        min-width: 280px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 16px;
+      }
+      
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .schedule-week {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .tabs {
+        flex-wrap: wrap;
+      }
+
+      .bandwidth-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Semester Calendar Styles */
+    .semester-calendar {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .semester-week {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px 18px;
+      transition: all 0.3s ease;
+    }
+
+    .semester-week:hover {
+      border-color: var(--accent-teal);
+    }
+
+    .semester-week.special {
+      border-left: 4px solid var(--accent-gold);
+    }
+
+    .semester-week.break {
+      border-left: 4px solid var(--accent-sage);
+      background: rgba(140, 184, 140, 0.1);
+    }
+
+    .week-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .week-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-teal);
+    }
+
+    .week-dates {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .week-events {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .event-chip {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .event-chip.clinical {
+      border-left: 3px solid var(--accent-coral);
+    }
+
+    .event-chip.fellowship {
+      border-left: 3px solid var(--accent-purple);
+    }
+
+    .event-chip.presentation {
+      border-left: 3px solid var(--accent-teal);
+      background: rgba(126, 184, 201, 0.15);
+    }
+
+    .event-chip.meeting {
+      border-left: 3px solid var(--accent-gold);
+    }
+
+    .event-chip.deadline {
+      border-left: 3px solid var(--accent-coral);
+      background: rgba(201, 155, 140, 0.15);
+      font-weight: 700;
+    }
+
+    .event-chip.break {
+      border-left: 3px solid var(--accent-sage);
+      background: rgba(140, 184, 140, 0.2);
+      font-weight: 700;
+    }
+
+    /* Hours Tracking Styles */
+    .hours-summary {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hours-stat {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 16px 20px;
+      text-align: center;
+      flex: 1;
+      min-width: 100px;
+    }
+
+    .hours-stat-value {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--accent-teal);
+    }
+
+    .hours-stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .hours-table-section {
+      margin-bottom: 24px;
+    }
+
+    .hours-table-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .hours-table th,
+    .hours-table td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hours-table th {
+      background: var(--bg-tertiary);
+      color: var(--text-muted);
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hours-table td {
+      color: var(--text-secondary);
+    }
+
+    .hours-table td:first-child {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .hours-table .totals-row {
+      background: var(--bg-tertiary);
+      font-weight: 700;
+    }
+
+    .hours-table .totals-row td {
+      color: var(--text-primary);
+    }
+
+    .hours-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .hours-detail-card {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .hours-detail-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+
+    .hours-detail-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hours-detail-card li {
+      font-size: 13px;
+      color: var(--text-secondary);
+      padding: 4px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hours-detail-card li:last-child {
+      border-bottom: none;
+    }
+
+    .hours-tags {
+      margin-top: 16px;
+    }
+
+    .tag-chips {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tag-chip {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--accent-teal);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 12px;
+      color: var(--accent-teal);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .hours-detail-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .hours-summary {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Debug Grid Overlay -->
+    <!-- OVERVIEW PANEL -->
+    <div id="overview" class="view-panel active">
+      <div class="overview-grid">
+        
+        <!-- Row 1: Overview Button (cols 1-2) -->
+        <nav class="nav-container grid-overview-btn">
+          <button class="hamburger-btn" id="menuBtn">
+            <div class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <button class="dropdown-item active" data-view="overview" data-label="Overview">Overview</button>
+            <button class="dropdown-item" data-view="hours" data-label="T2T Log">T2T Log</button>
+            <button class="dropdown-item" data-view="calendar" data-label="This Week">This Week</button>
+            <button class="dropdown-item" data-view="semester" data-label="Full Semester">Full Semester</button>
+            <button class="dropdown-item" data-view="deadlines" data-label="Deadlines">Deadlines</button>
+            <button class="dropdown-item" data-view="bandwidth" data-label="Bandwidth">Bandwidth</button>
+          </div>
+        </nav>
+
+        <!-- Row 1: Header Info (cols 3-11) -->
+        <div class="grid-header-info">
+          <div class="header-title">Spring Semester 2026</div>
+        </div>
+
+        <!-- Row 1: Quick Links (col 12) -->
+        <div class="quick-links-container grid-quick-links">
+          <button class="quick-links-btn" id="quickLinksBtn">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+          </button>
+          <div class="quick-links-dropdown" id="quickLinksDropdown">
+            <a href="https://app.time2track.com/" target="_blank" class="quick-link-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              Time2Track
+            </a>
+            <a href="https://valt.ac.nau.edu/login" target="_blank" class="quick-link-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              Valt
+            </a>
+            <a href="https://in.nau.edu/lms/" target="_blank" class="quick-link-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+              Canvas
+            </a>
+            <a href="https://calendar.google.com/calendar/u/0/r" target="_blank" class="quick-link-item">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              Calendar
+            </a>
+          </div>
+        </div>
+
+        <!-- Row 2: True Priorities Label (cols 1-8) -->
+        <div class="grid-priorities-label">
+          <div class="priorities-label">True Priorities</div>
+        </div>
+
+        <!-- Row 3: True Priorities Cards (cols 1-3) -->
+        <div class="grid-priorities-cards">
+          <div class="stat-card">
+            <div class="stat-label">Bandwidth</div>
+            <div class="stat-content">
+              <div class="bandwidth-donut">
+                <svg viewBox="0 0 36 36">
+                  <circle class="donut-bg" cx="18" cy="18" r="15"></circle>
+                  <circle class="donut-fill low" cx="18" cy="18" r="15" stroke-dasharray="25, 100"></circle>
+                  <!-- Hash marks at 75% and 90% -->
+                  <line class="donut-tick-yellow" x1="18" y1="1" x2="18" y2="5" transform="rotate(0, 18, 18)"></line>
+                  <line class="donut-tick-red" x1="18" y1="1" x2="18" y2="5" transform="rotate(54, 18, 18)"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="stat-subtext">Protect energy</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Cup Status</div>
+            <div class="stat-content">
+              <div class="cup-container">
+                <div class="cup-graphic">
+                  <div class="cup-steam">
+                    <div class="steam-line"></div>
+                    <div class="steam-line"></div>
+                    <div class="steam-line"></div>
+                  </div>
+                  <div class="cup-fill medium"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-subtext">Half full</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Sanity Check</div>
+            <div class="stat-content">
+              <div class="pulse-container">
+                <svg class="pulse-line stretched" viewBox="0 0 60 24">
+                  <polyline class="pulse-path" points="0,12 10,12 15,12 18,4 21,20 24,8 27,16 30,12 35,12 40,12 43,6 46,18 49,10 52,14 55,12 60,12"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="stat-subtext">Manageable</div>
+          </div>
+        </div>
+
+        <!-- Calendar Label (cols 9-11, row 2) -->
+        <div class="grid-calendar-label">
+          <div class="priorities-label">Calendar</div>
+        </div>
+
+        <!-- Date Label (col 12, row 2) -->
+        <div class="grid-date-label">
+          <div class="priorities-label">Date: 01/16</div>
+        </div>
+
+        <!-- Calendar (cols 9-12, spans rows 3-9) -->
+        <div class="grid-today-schedule today-schedule">
+          <div class="timeline">
+            <div class="time-slot major" style="top: 0%;"><span class="time-label">5 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 6.4%;"><span class="time-label">6 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 12.8%;"><span class="time-label">7 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 19.2%;"><span class="time-label">8 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 25.6%;"><span class="time-label">9 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 32%;"><span class="time-label">10 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 38.4%;"><span class="time-label">11 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 44.8%;"><span class="time-label">12 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 51.2%;"><span class="time-label">1 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 57.6%;"><span class="time-label">2 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 64%;"><span class="time-label">3 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 70.4%;"><span class="time-label">4 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 76.8%;"><span class="time-label">5 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 83.2%;"><span class="time-label">6 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 89.6%;"><span class="time-label">7 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 96%;"><span class="time-label">8 PM</span><div class="time-tick"></div></div>
+            <div class="schedule-event class" style="top: 25.6%; height: 16%;">
+              <div class="event-time">9:00 AM - 11:30 AM</div>
+              <div class="event-title">EPS 609 - Cognition & Affect</div>
+            </div>
+            <div class="schedule-event class" style="top: 70.4%; height: 16%;">
+              <div class="event-time">4:00 PM - 6:30 PM</div>
+              <div class="event-title">EPS 706 - History & Systems</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Semester Hours Label -->
+        <div class="grid-hours-label">
+          <div class="hours-label">Semester Hours</div>
+        </div>
+
+        <!-- Row 4: Semester Hours Cards (cols 1-8) -->
+        <div class="grid-hours-cards">
+          <div class="stat-card">
+            <div class="stat-label">Direct Hours</div>
+            <div class="stat-content">
+              <div class="stat-value">5/100</div>
+            </div>
+            <div class="stat-subtext">5% complete</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Total Hours</div>
+            <div class="stat-content">
+              <div class="stat-value">16/500</div>
+            </div>
+            <div class="stat-subtext">3.2% complete</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Master's Supervision</div>
+            <div class="stat-content">
+              <div class="stat-value">0/40</div>
+            </div>
+            <div class="stat-subtext">0% complete</div>
+          </div>
+        </div>
+
+        <!-- Row 6: Priorities Section Label -->
+        <div class="grid-priorities-section-label">
+          <div class="priorities-section-label">PRIORITIES</div>
+        </div>
+
+        <!-- Row 7: Today's Priorities (cols 1-4) + Upcoming Assignments (cols 5-8) -->
+        <div class="grid-today-priorities">
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Today's Priorities</h2>
+            </div>
+            <div class="priority-list">
+              <div class="priority-item">
+                <div class="priority-checkbox"></div>
+                <div class="priority-text">Review EPS 609 readings before class</div>
+              </div>
+              <div class="priority-item">
+                <div class="priority-checkbox"></div>
+                <div class="priority-text">Finalize History & Systems presentation slides</div>
+              </div>
+              <div class="priority-item completed">
+                <div class="priority-checkbox"></div>
+                <div class="priority-text">Morning routine + breakfast</div>
+              </div>
+              <div class="priority-item">
+                <div class="priority-checkbox"></div>
+                <div class="priority-text">Log T2T hours from Monday</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="grid-upcoming">
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Upcoming Assignments</h2>
+            </div>
+            <table class="assignments-table">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Assignment</th>
+                  <th>Due</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="assignment-class">EPS 706</span></td>
+                  <td><span class="assignment-name">Presentation #1</span></td>
+                  <td><span class="assignment-due">Jan 21</span></td>
+                  <td><span class="assignment-points">50</span></td>
+                </tr>
+                <tr>
+                  <td><span class="assignment-class">EPS 607</span></td>
+                  <td><span class="assignment-name">Weekly Reflection</span></td>
+                  <td><span class="assignment-due">Jan 24</span></td>
+                  <td><span class="assignment-points">10</span></td>
+                </tr>
+                <tr>
+                  <td><span class="assignment-class">EPS 609</span></td>
+                  <td><span class="assignment-name">Reading Response</span></td>
+                  <td><span class="assignment-due">Jan 27</span></td>
+                  <td><span class="assignment-points">15</span></td>
+                </tr>
+                <tr>
+                  <td><span class="assignment-class">EPS 737</span></td>
+                  <td><span class="assignment-name">Practice Assessment</span></td>
+                  <td><span class="assignment-due">Jan 28</span></td>
+                  <td><span class="assignment-points">25</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+
+        <!-- Row 6: Weekly Priorities (cols 1-8) -->
+        <div class="grid-weekly">
+          <section class="section">
+            <div class="section-header">
+              <h2 class="section-title">Weekly Priorities</h2>
+            </div>
+            <div class="priority-list">
+              <div class="priority-item weekly">
+                <div class="priority-checkbox weekly"></div>
+                <div class="priority-text">Complete all EPS 706 presentation prep</div>
+              </div>
+              <div class="priority-item weekly">
+                <div class="priority-checkbox weekly"></div>
+                <div class="priority-text">LEND Tucson clinic - review ADOS materials</div>
+              </div>
+              <div class="priority-item weekly">
+                <div class="priority-checkbox weekly"></div>
+                <div class="priority-text">Schedule GAship observation with James</div>
+              </div>
+              <div class="priority-item weekly">
+                <div class="priority-checkbox weekly"></div>
+                <div class="priority-text">Maintain sleep schedule (7+ hrs)</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- HOURS PANEL -->
+    <div id="hours" class="view-panel">
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Time2Track Hours Log</h2>
+          <a href="https://app.time2track.com/" target="_blank" class="section-action">Open Time2Track â†’</a>
+        </div>
+
+        <!-- Summary Stats -->
+        <div class="hours-summary">
+          <div class="hours-stat">
+            <div class="hours-stat-value">13.00</div>
+            <div class="hours-stat-label">Total Hours</div>
+          </div>
+          <div class="hours-stat">
+            <div class="hours-stat-value">1.00</div>
+            <div class="hours-stat-label">Intervention</div>
+          </div>
+          <div class="hours-stat">
+            <div class="hours-stat-value">7.00</div>
+            <div class="hours-stat-label">Support</div>
+          </div>
+          <div class="hours-stat">
+            <div class="hours-stat-value">4.00</div>
+            <div class="hours-stat-label">Assessment</div>
+          </div>
+          <div class="hours-stat">
+            <div class="hours-stat-value">1.00</div>
+            <div class="hours-stat-label">Supervision Received</div>
+          </div>
+        </div>
+
+        <!-- Hours by Treatment Setting -->
+        <div class="hours-table-section">
+          <h3 class="hours-table-title">By Treatment Setting</h3>
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>Setting</th>
+                <th>Intervention</th>
+                <th>Support</th>
+                <th>Assessment</th>
+                <th>Supervision</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Private Practice</td>
+                <td>1.00</td>
+                <td>1.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>2.00</td>
+              </tr>
+              <tr>
+                <td>IHD, NAU</td>
+                <td>0.00</td>
+                <td>6.00</td>
+                <td>4.00</td>
+                <td>1.00</td>
+                <td>11.00</td>
+              </tr>
+              <tr class="totals-row">
+                <td>Totals</td>
+                <td>1.00</td>
+                <td>7.00</td>
+                <td>4.00</td>
+                <td>1.00</td>
+                <td>13.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Hours by Placement -->
+        <div class="hours-table-section">
+          <h3 class="hours-table-title">By Placement</h3>
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>Placement</th>
+                <th>Intervention</th>
+                <th>Support</th>
+                <th>Assessment</th>
+                <th>Supervision</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>EPS 740 @ Wellness PSI</td>
+                <td>1.00</td>
+                <td>1.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>2.00</td>
+              </tr>
+              <tr>
+                <td>EPS 608 @ IHD</td>
+                <td>0.00</td>
+                <td>6.00</td>
+                <td>4.00</td>
+                <td>1.00</td>
+                <td>11.00</td>
+              </tr>
+              <tr class="totals-row">
+                <td>Totals</td>
+                <td>1.00</td>
+                <td>7.00</td>
+                <td>4.00</td>
+                <td>1.00</td>
+                <td>13.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Hours by Type Detail -->
+        <div class="hours-detail-grid">
+          <div class="hours-detail-card">
+            <h4>Intervention (1.00 hrs)</h4>
+            <ul>
+              <li>Individual Therapy: 1.00</li>
+            </ul>
+          </div>
+          <div class="hours-detail-card">
+            <h4>Support (7.00 hrs)</h4>
+            <ul>
+              <li>Clinical Writing/Progress Notes: 0.50</li>
+              <li>Psych Assessment Scoring/Interp: 4.00</li>
+              <li>Reading/Research/Preparation: 2.50</li>
+            </ul>
+          </div>
+          <div class="hours-detail-card">
+            <h4>Assessment (4.00 hrs)</h4>
+            <ul>
+              <li>Psychodiagnostic Test Admin: 4.00</li>
+            </ul>
+          </div>
+          <div class="hours-detail-card">
+            <h4>Supervision Received (1.00 hrs)</h4>
+            <ul>
+              <li>Individual - Licensed Psychologist: 1.00</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="hours-tags">
+          <h3 class="hours-table-title">Hours by Tag</h3>
+          <div class="tag-chips">
+            <span class="tag-chip">Bayley-4: 1.00 hrs</span>
+            <span class="tag-chip">ADOS-2: 2.00 hrs</span>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- CALENDAR PANEL -->
+    <div id="calendar" class="view-panel">
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Typical Week</h2>
+        </div>
+        <div class="schedule-week">
+          <div class="schedule-day">
+            <div class="day-label">Mon</div>
+            <div class="schedule-item clinical">
+              <div class="schedule-item-time">8:30a-1:30p</div>
+              <div class="schedule-item-title">CHC w/ Sherri</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-item-time">4-6:30p</div>
+              <div class="schedule-item-title">EPS 607</div>
+            </div>
+          </div>
+          <div class="schedule-day">
+            <div class="day-label">Tue</div>
+            <div class="schedule-item">
+              <div class="schedule-item-time">12:45-3:15p</div>
+              <div class="schedule-item-title">EPS 737</div>
+            </div>
+            <div class="schedule-item clinical">
+              <div class="schedule-item-time">4-5p</div>
+              <div class="schedule-item-title">Client Session</div>
+            </div>
+          </div>
+          <div class="schedule-day">
+            <div class="day-label">Wed</div>
+            <div class="schedule-item">
+              <div class="schedule-item-time">9-11:30a</div>
+              <div class="schedule-item-title">EPS 609</div>
+            </div>
+            <div class="schedule-item clinical">
+              <div class="schedule-item-time">11:30a-1p</div>
+              <div class="schedule-item-title">CHC w/ Sherri</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-item-time">4-6:30p</div>
+              <div class="schedule-item-title">EPS 706</div>
+            </div>
+          </div>
+          <div class="schedule-day">
+            <div class="day-label">Thu</div>
+            <div class="schedule-item clinical">
+              <div class="schedule-item-time">2-5p</div>
+              <div class="schedule-item-title">Private Clients Hold</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-item-time">5:30-8p</div>
+              <div class="schedule-item-title">EPS 740</div>
+            </div>
+          </div>
+          <div class="schedule-day">
+            <div class="day-label">Fri</div>
+            <div class="schedule-item fellowship">
+              <div class="schedule-item-time">1-4p</div>
+              <div class="schedule-item-title">Arizona LEND</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FULL SEMESTER PANEL -->
+    <div id="semester" class="view-panel">
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Spring 2026 Full Semester</h2>
+          <a href="https://calendar.google.com/calendar/u/0/r" target="_blank" class="section-action">Open Google Calendar â†’</a>
+        </div>
+        <div class="semester-calendar">
+          
+          <!-- Week 1: Jan 12-17 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 1</span>
+              <span class="week-dates">Jan 12-17</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip">First week of classes</div>
+            </div>
+          </div>
+
+          <!-- Week 2: Jan 19-24 -->
+          <div class="semester-week special">
+            <div class="week-header">
+              <span class="week-label">Week 2</span>
+              <span class="week-dates">Jan 19-24</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip clinical">Mon: EPS 308 w/ James 6:30p</div>
+              <div class="event-chip meeting">Tue 20: Hold for supervisees 8a-12:30p</div>
+              <div class="event-chip presentation">Wed 21: Presenting in History & Systems</div>
+              <div class="event-chip clinical">Wed 21: Drive to Tucson 6:30p</div>
+              <div class="event-chip fellowship">Thu 22: ASD COE Tucson 8a-12p</div>
+              <div class="event-chip fellowship">Thu 22: Down Syndrome Clinic 1-5p</div>
+              <div class="event-chip fellowship">Fri 23: Neonatal Clinic Tucson 10a-12p</div>
+              <div class="event-chip fellowship">Sat 24: LEND Mandatory Clinic Tucson 8a-4p</div>
+            </div>
+          </div>
+
+          <!-- Week 3: Jan 26-31 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 3</span>
+              <span class="week-dates">Jan 26-31</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip meeting">Mon 26: GAship Observation w/ James 12:25-1:25p</div>
+            </div>
+          </div>
+
+          <!-- Week 4: Feb 2-7 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 4</span>
+              <span class="week-dates">Feb 2-7</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip presentation">Wed 4: Presenting in History & Systems 8a</div>
+              <div class="event-chip meeting">Wed 4: Meeting w/ James & Team 10-11a</div>
+            </div>
+          </div>
+
+          <!-- Week 5: Feb 9-14 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 5</span>
+              <span class="week-dates">Feb 9-14</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip fellowship">Mon 9: ADOS-2 Evaluation @ IHD 8:30a-3:45p</div>
+              <div class="event-chip presentation">Wed 11: Presenting in EPS 609 8-9a</div>
+            </div>
+          </div>
+
+          <!-- Week 6: Feb 16-21 -->
+          <div class="semester-week special">
+            <div class="week-header">
+              <span class="week-label">Week 6</span>
+              <span class="week-dates">Feb 16-21</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip clinical">Sun 15: BLOCK for MAEMAE 8a-5p</div>
+              <div class="event-chip meeting">Thu 19: GA Praxis Student Supervision 8a"1p</div>
+              <div class="event-chip meeting">Fri 20: GA Praxis Student Supervision 8a"1p</div>
+            </div>
+          </div>
+
+          <!-- Week 7: Feb 23-28 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 7</span>
+              <span class="week-dates">Feb 23-28</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip">Regular week</div>
+            </div>
+          </div>
+
+          <!-- Week 8: Mar 2-7 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 8</span>
+              <span class="week-dates">Mar 2-7</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip fellowship">Mon 2: ADOS-2 Evaluation @ IHD 8:30a-3:45p</div>
+              <div class="event-chip presentation">Wed 4: Presenting in History & Systems 8a</div>
+              <div class="event-chip">Wed 4: No Class (609)</div>
+              <div class="event-chip break">Fri 6: SPRING BREAK BEGINS</div>
+            </div>
+          </div>
+
+          <!-- Week 9: Mar 8-14 - SPRING BREAK -->
+          <div class="semester-week break">
+            <div class="week-header">
+              <span class="week-label">Week 9</span>
+              <span class="week-dates">Mar 8-14</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip break">• NAU SPRING BREAK •</div>
+              <div class="event-chip meeting">Wed 11: James & Team Meeting 9-10a</div>
+            </div>
+          </div>
+
+          <!-- Week 10: Mar 16-21 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 10</span>
+              <span class="week-dates">Mar 16-21</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip">Classes resume</div>
+            </div>
+          </div>
+
+          <!-- Week 11: Mar 23-28 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 11</span>
+              <span class="week-dates">Mar 23-28</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip">Regular week</div>
+            </div>
+          </div>
+
+          <!-- Week 12: Mar 30 - Apr 4 -->
+          <div class="semester-week special">
+            <div class="week-header">
+              <span class="week-label">Week 12</span>
+              <span class="week-dates">Mar 30 " Apr 4</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip fellowship">Tue 31: POTENTIAL Day @ Capital (Phoenix) 8a-5p</div>
+            </div>
+          </div>
+
+          <!-- Week 13: Apr 6-11 -->
+          <div class="semester-week special">
+            <div class="week-header">
+              <span class="week-label">Week 13</span>
+              <span class="week-dates">Apr 6-11</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip fellowship">Mon 6: ADOS-2 Evaluation @ IHD 8:30a-3:45p</div>
+              <div class="event-chip fellowship">Tue 7: POTENTIAL Day @ Capital (Phoenix) 8a-5p</div>
+              <div class="event-chip">Wed 8: No Class (609)</div>
+            </div>
+          </div>
+
+          <!-- Week 14: Apr 13-18 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 14</span>
+              <span class="week-dates">Apr 13-18</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip">Regular week</div>
+            </div>
+          </div>
+
+          <!-- Week 15: Apr 20-25 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 15</span>
+              <span class="week-dates">Apr 20-25</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip deadline">Tue 21: EPS 737 Comprehensive Report DUE</div>
+              <div class="event-chip deadline">Tue 21: EPS 737 Oral Feedback Video DUE</div>
+            </div>
+          </div>
+
+          <!-- Week 16: Apr 27 - May 2 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 16</span>
+              <span class="week-dates">Apr 27 " May 2</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip">Last week of regular classes</div>
+            </div>
+          </div>
+
+          <!-- Week 17: May 4-9 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 17</span>
+              <span class="week-dates">May 4-9</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip fellowship">Mon 4: ADOS-2 Evaluation @ IHD + Block IHD</div>
+              <div class="event-chip">Finals week</div>
+            </div>
+          </div>
+
+          <!-- Week 18: May 11-16 -->
+          <div class="semester-week">
+            <div class="week-header">
+              <span class="week-label">Week 18</span>
+              <span class="week-dates">May 11-16</span>
+            </div>
+            <div class="week-events">
+              <div class="event-chip">Final exams / Semester ends May 8</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- DEADLINES PANEL -->
+    <div id="deadlines" class="view-panel">
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Upcoming Deadlines & Key Dates</h2>
+        </div>
+        <div class="deadline-item">
+          <div class="deadline-date">
+            <div class="deadline-day">21</div>
+            <div class="deadline-month">JAN</div>
+          </div>
+          <div class="deadline-info">
+            <div class="deadline-title">Presenting in History & Systems</div>
+            <div class="deadline-course">EPS 706</div>
+          </div>
+        </div>
+        <div class="deadline-item">
+          <div class="deadline-date">
+            <div class="deadline-day">24</div>
+            <div class="deadline-month">JAN</div>
+          </div>
+          <div class="deadline-info">
+            <div class="deadline-title">LEND Mandatory Clinic - Tucson</div>
+            <div class="deadline-course">Arizona LEND</div>
+          </div>
+        </div>
+        <div class="deadline-item">
+          <div class="deadline-date">
+            <div class="deadline-day">26</div>
+            <div class="deadline-month">JAN</div>
+          </div>
+          <div class="deadline-info">
+            <div class="deadline-title">GAship Observation w/ James</div>
+            <div class="deadline-course">GA Position</div>
+          </div>
+        </div>
+        <div class="deadline-item">
+          <div class="deadline-date">
+            <div class="deadline-day">4</div>
+            <div class="deadline-month">FEB</div>
+          </div>
+          <div class="deadline-info">
+            <div class="deadline-title">Presenting in History & Systems</div>
+            <div class="deadline-course">EPS 706</div>
+          </div>
+        </div>
+        <div class="deadline-item">
+          <div class="deadline-date">
+            <div class="deadline-day">11</div>
+            <div class="deadline-month">FEB</div>
+          </div>
+          <div class="deadline-info">
+            <div class="deadline-title">Presenting in Cognition & Affect</div>
+            <div class="deadline-course">EPS 609</div>
+          </div>
+        </div>
+        <div class="deadline-item">
+          <div class="deadline-date">
+            <div class="deadline-day">4</div>
+            <div class="deadline-month">MAR</div>
+          </div>
+          <div class="deadline-info">
+            <div class="deadline-title">Presenting in History & Systems</div>
+            <div class="deadline-course">EPS 706</div>
+          </div>
+        </div>
+        <div class="deadline-item">
+          <div class="deadline-date">
+            <div class="deadline-day">21</div>
+            <div class="deadline-month">APR</div>
+          </div>
+          <div class="deadline-info">
+            <div class="deadline-title">Comprehensive Report + Oral Feedback Video</div>
+            <div class="deadline-course">EPS 737</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- BANDWIDTH PANEL -->
+    <div id="bandwidth" class="view-panel">
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Self-Care & Bandwidth</h2>
+        </div>
+        <div class="bandwidth-grid">
+          <div class="gauge-container">
+            <div class="gauge">
+              <div class="gauge-value">
+                <div class="gauge-number">-</div>
+                <div class="gauge-label">of 10</div>
+              </div>
+            </div>
+            <div class="gauge-title">Current Bandwidth</div>
+          </div>
+          <div class="metrics-list">
+            <div class="metric-row">
+              <div class="metric-label">
+                <div class="metric-icon">•</div>
+                <span>Avg Sleep</span>
+              </div>
+              <div class="metric-value" style="color: var(--accent-teal);">- hrs</div>
+            </div>
+            <div class="metric-row">
+              <div class="metric-label">
+                <div class="metric-icon">•</div>
+                <span>Exercise Days</span>
+              </div>
+              <div class="metric-value" style="color: var(--accent-sage);">- / 7</div>
+            </div>
+            <div class="metric-row">
+              <div class="metric-label">
+                <div class="metric-icon">•</div>
+                <span>Social Time</span>
+              </div>
+              <div class="metric-value" style="color: var(--accent-gold);">- hrs</div>
+            </div>
+            <div class="metric-row">
+              <div class="metric-label">
+                <div class="metric-icon">•</div>
+                <span>Morning Mandatories</span>
+              </div>
+              <div class="metric-value" style="color: var(--accent-coral);">- / 7</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const panels = document.querySelectorAll('.view-panel');
+
+    // Quick Links
+    const quickLinksBtn = document.getElementById('quickLinksBtn');
+    const quickLinksDropdown = document.getElementById('quickLinksDropdown');
+
+    // Toggle main dropdown
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      menuBtn.classList.toggle('open');
+      dropdownMenu.classList.toggle('open');
+      // Close quick links if open
+      quickLinksDropdown.classList.remove('open');
+    });
+
+    // Toggle quick links dropdown
+    quickLinksBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      quickLinksDropdown.classList.toggle('open');
+      // Close main menu if open
+      menuBtn.classList.remove('open');
+      dropdownMenu.classList.remove('open');
+    });
+
+    // Close all dropdowns when clicking outside
+    document.addEventListener('click', () => {
+      menuBtn.classList.remove('open');
+      dropdownMenu.classList.remove('open');
+      quickLinksDropdown.classList.remove('open');
+    });
+
+    // Handle menu item selection
+    dropdownItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.stopPropagation();
+        
+        // Update active states
+        dropdownItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        
+        // Switch panels
+        panels.forEach(panel => {
+          panel.classList.remove('active');
+          if (panel.id === item.dataset.view) panel.classList.add('active');
+        });
+        
+        // Close dropdown
+        menuBtn.classList.remove('open');
+        dropdownMenu.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
