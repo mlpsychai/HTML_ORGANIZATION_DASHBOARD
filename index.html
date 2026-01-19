@@ -636,6 +636,30 @@
       color: var(--text-primary);
     }
 
+    /* Current Time Indicator */
+    .current-time-indicator {
+      position: absolute;
+      left: -6px;
+      right: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+    }
+
+    .time-indicator-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent-coral);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .time-indicator-line {
+      height: 2px;
+      background: var(--accent-coral);
+      flex-grow: 1;
+    }
+
     /* Priorities Card */
     .priority-list {
       display: flex;
@@ -2192,36 +2216,35 @@
 
         <!-- Date Label (col 12, row 2) -->
         <div class="grid-date-label">
-          <div class="priorities-label">Date: 01/16</div>
+          <div class="priorities-label" id="currentDateLabel">Date: --/--</div>
         </div>
 
         <!-- Calendar (cols 9-12, spans rows 3-9) -->
         <div class="grid-today-schedule today-schedule">
-          <div class="timeline">
+          <div class="timeline" id="calendarTimeline">
             <div class="time-slot major" style="top: 0%;"><span class="time-label">5 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 6.4%;"><span class="time-label">6 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 12.8%;"><span class="time-label">7 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 19.2%;"><span class="time-label">8 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 25.6%;"><span class="time-label">9 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 32%;"><span class="time-label">10 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 38.4%;"><span class="time-label">11 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 44.8%;"><span class="time-label">12 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 51.2%;"><span class="time-label">1 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 57.6%;"><span class="time-label">2 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 64%;"><span class="time-label">3 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 70.4%;"><span class="time-label">4 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 76.8%;"><span class="time-label">5 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 83.2%;"><span class="time-label">6 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 89.6%;"><span class="time-label">7 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 96%;"><span class="time-label">8 PM</span><div class="time-tick"></div></div>
-            <div class="schedule-event class" style="top: 25.6%; height: 16%;">
-              <div class="event-time">9:00 AM - 11:30 AM</div>
-              <div class="event-title">EPS 609 - Cognition & Affect</div>
+            <div class="time-slot" style="top: 6.67%;"><span class="time-label">6 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 13.33%;"><span class="time-label">7 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 20%;"><span class="time-label">8 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 26.67%;"><span class="time-label">9 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 33.33%;"><span class="time-label">10 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 40%;"><span class="time-label">11 AM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 46.67%;"><span class="time-label">12 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 53.33%;"><span class="time-label">1 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 60%;"><span class="time-label">2 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 66.67%;"><span class="time-label">3 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 73.33%;"><span class="time-label">4 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 80%;"><span class="time-label">5 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 86.67%;"><span class="time-label">6 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot major" style="top: 93.33%;"><span class="time-label">7 PM</span><div class="time-tick"></div></div>
+            <div class="time-slot" style="top: 100%;"><span class="time-label">8 PM</span><div class="time-tick"></div></div>
+            <!-- Current time indicator -->
+            <div class="current-time-indicator" id="currentTimeIndicator" style="display: none;">
+              <div class="time-indicator-dot"></div>
+              <div class="time-indicator-line"></div>
             </div>
-            <div class="schedule-event class" style="top: 70.4%; height: 16%;">
-              <div class="event-time">4:00 PM - 6:30 PM</div>
-              <div class="event-title">EPS 706 - History & Systems</div>
-            </div>
+            <!-- Events rendered dynamically -->
+            <div id="calendarEvents"></div>
           </div>
         </div>
 
