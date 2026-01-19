@@ -474,7 +474,7 @@
           <div class="sleep-stats-wrapper">
             <div class="quality-circle">
               <div class="quality-gauge" id="quality-gauge">
-                <span class="quality-value" id="sleep-efficiency">--%</span>
+                <span class="quality-value" id="sleep-score">--%</span>
               </div>
             </div>
             <div class="sleep-stat-card">
@@ -608,57 +608,65 @@
         const response = await fetch(FITBIT_DATA_URL + '?t=' + Date.now());
         const data = await response.json();
         
+        console.log('Fitbit data loaded:', data);
+        
         // Update timestamp
-        if (data.fetched_at) {
-          const fetchDate = new Date(data.fetched_at);
+        if (data.updated_at) {
+          const fetchDate = new Date(data.updated_at);
           document.getElementById('last-updated').textContent = 
             `UPDATED: ${fetchDate.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' })}`;
         }
 
         // ============ SLEEP DATA ============
-        if (data.sleep) {
-          const sleep = data.sleep;
+        if (data.sleep && data.sleep.summary) {
+          const summary = data.sleep.summary;
           
-          const efficiency = sleep.efficiency || 0;
-          document.getElementById('sleep-efficiency').textContent = `${efficiency}%`;
-          const qualityDeg = (efficiency / 100) * 360;
+          // Use score (efficiency seems to be 0)
+          const score = summary.score || summary.efficiency || 0;
+          document.getElementById('sleep-score').textContent = `${score}%`;
+          const qualityDeg = (score / 100) * 360;
           document.getElementById('quality-gauge').style.background = 
             `conic-gradient(var(--accent-teal) 0deg, var(--accent-teal) ${qualityDeg}deg, var(--bg-secondary) ${qualityDeg}deg)`;
           
-          document.getElementById('total-sleep').textContent = formatDuration(sleep.totalMinutesAsleep);
-          document.getElementById('sleep-time').textContent = formatTime(sleep.startTime);
-          document.getElementById('wake-time').textContent = formatTime(sleep.endTime);
+          // Total sleep from duration_minutes
+          document.getElementById('total-sleep').textContent = formatDuration(summary.duration_minutes);
           
-          if (sleep.levels && sleep.levels.summary) {
-            const summary = sleep.levels.summary;
-            document.getElementById('deep-min').textContent = summary.deep?.minutes || 0;
-            document.getElementById('light-min').textContent = summary.light?.minutes || 0;
-            document.getElementById('rem-min').textContent = summary.rem?.minutes || 0;
-            document.getElementById('wake-min').textContent = summary.wake?.minutes || 0;
+          // Sleep/wake times
+          document.getElementById('sleep-time').textContent = formatTime(summary.start_time);
+          document.getElementById('wake-time').textContent = formatTime(summary.end_time);
+          
+          // Sleep stages from summary.stages
+          if (summary.stages) {
+            document.getElementById('deep-min').textContent = summary.stages.deep || 0;
+            document.getElementById('light-min').textContent = summary.stages.light || 0;
+            document.getElementById('rem-min').textContent = summary.stages.rem || 0;
+            document.getElementById('wake-min').textContent = summary.stages.wake || 0;
           }
           
-          if (sleep.levels && sleep.levels.data) {
-            renderHypnogram(sleep.startTime, sleep.endTime, sleep.levels.data);
+          // Render hypnogram from sleep.levels array
+          if (data.sleep.levels && data.sleep.levels.length > 0) {
+            renderHypnogram(summary.start_time, summary.end_time, data.sleep.levels);
           }
         }
 
         // ============ HEART DATA ============
         if (data.heart) {
-          document.getElementById('resting-hr').textContent = data.heart.restingHeartRate || '--';
+          document.getElementById('resting-hr').textContent = data.heart.resting_hr || data.heart.restingHeartRate || '--';
         }
         
-        if (data.hrv && data.hrv.hrv && data.hrv.hrv[0]) {
-          const hrvValue = data.hrv.hrv[0].value?.dailyRmssd || data.hrv.hrv[0].value?.deepRmssd;
-          document.getElementById('hrv').textContent = hrvValue ? hrvValue.toFixed(1) : '--';
+        if (data.hrv) {
+          const hrvValue = data.hrv.daily_rmssd || data.hrv.rmssd || (data.hrv.hrv && data.hrv.hrv[0]?.value?.dailyRmssd);
+          document.getElementById('hrv').textContent = hrvValue ? (typeof hrvValue === 'number' ? hrvValue.toFixed(1) : hrvValue) : '--';
         }
         
         if (data.spo2) {
-          const spo2Val = data.spo2.value?.avg || data.spo2.value;
+          const spo2Val = data.spo2.avg || data.spo2.value?.avg || data.spo2.value;
           document.getElementById('spo2').textContent = spo2Val ? `${spo2Val}%` : '--';
         }
         
-        if (data.breathing && data.breathing.breathingRate) {
-          document.getElementById('breathing').textContent = data.breathing.breathingRate.toFixed(1);
+        if (data.breathing) {
+          const breathVal = data.breathing.rate || data.breathing.breathingRate;
+          document.getElementById('breathing').textContent = breathVal ? breathVal.toFixed(1) : '--';
         }
 
         // ============ ACTIVITY DATA ============
@@ -667,10 +675,11 @@
           document.getElementById('distance').textContent = 
             data.activity.distance ? data.activity.distance.toFixed(1) : '--';
           
-          const activeMin = (data.activity.fairlyActiveMinutes || 0) + (data.activity.veryActiveMinutes || 0);
+          const activeMin = (data.activity.fairly_active_minutes || data.activity.fairlyActiveMinutes || 0) + 
+                           (data.activity.very_active_minutes || data.activity.veryActiveMinutes || 0);
           document.getElementById('active-min').textContent = activeMin;
           
-          document.getElementById('calories').textContent = formatNumber(data.activity.caloriesOut);
+          document.getElementById('calories').textContent = formatNumber(data.activity.calories || data.activity.caloriesOut);
         }
 
         // ============ READINESS SCORE ============
@@ -686,28 +695,31 @@
       let factors = 0;
       
       // Sleep quality factor (0-40 points)
-      if (data.sleep?.efficiency) {
-        score += (data.sleep.efficiency / 100) * 40;
+      if (data.sleep?.summary?.score) {
+        score += (data.sleep.summary.score / 100) * 40;
         factors++;
       }
       
       // HRV factor (0-30 points) - higher is better
-      if (data.hrv?.hrv?.[0]?.value) {
-        const hrvVal = data.hrv.hrv[0].value.dailyRmssd || data.hrv.hrv[0].value.deepRmssd || 0;
+      const hrvVal = data.hrv?.daily_rmssd || data.hrv?.rmssd || 0;
+      if (hrvVal > 0) {
         const hrvScore = Math.min(30, Math.max(0, ((hrvVal - 20) / 40) * 30));
         score += hrvScore;
         factors++;
       }
       
       // Resting HR factor (0-30 points) - lower is better
-      if (data.heart?.restingHeartRate) {
-        const rhr = data.heart.restingHeartRate;
+      const rhr = data.heart?.resting_hr || data.heart?.restingHeartRate || 0;
+      if (rhr > 0) {
         const rhrScore = Math.min(30, Math.max(0, ((80 - rhr) / 30) * 30));
         score += rhrScore;
         factors++;
       }
       
-      if (factors === 0) score = 70;
+      // Default if no factors
+      if (factors === 0) {
+        score = data.sleep?.summary?.score || 70;
+      }
       
       score = Math.round(Math.min(100, Math.max(0, score)));
       
