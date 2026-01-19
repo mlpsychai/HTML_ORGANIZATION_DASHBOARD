@@ -56,7 +56,7 @@ jobs:
           SLEEP_EFFICIENCY=$(echo $SLEEP | jq '.summary.efficiency // 0')
           STEPS=$(echo $ACTIVITY | jq '.summary.steps // 0')
           ACTIVE_MINUTES=$(echo $ACTIVITY | jq '(.summary.fairlyActiveMinutes // 0) + (.summary.veryActiveMinutes // 0)')
-          RESTING_HR=$(echo $HEART | jq '.activities-heart[0].value.restingHeartRate // 0')
+          RESTING_HR=$(echo $HEART | jq '.["activities-heart"][0].value.restingHeartRate // 0')
           
           # Create/update JSON data file
           mkdir -p data
