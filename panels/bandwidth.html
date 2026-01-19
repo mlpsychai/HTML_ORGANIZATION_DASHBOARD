@@ -1,822 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bandwidth Panel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-primary: #1a1a1a;
-      --bg-secondary: #242424;
-      --bg-tertiary: #2e2e2e;
-      --bg-hover: #383838;
-      --accent-teal: #7eb8c9;
-      --accent-sage: #8cb88c;
-      --accent-gold: #c9b87e;
-      --accent-coral: #c99b8c;
-      --accent-purple: #b0a0c9;
-      --text-primary: #d8d4cc;
-      --text-secondary: #9a9890;
-      --text-muted: #6b6860;
-      --border-color: #3a3a38;
-    }
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">Self-Care & Bandwidth</h2>
+    <span id="bandwidth-last-updated" style="font-size: 10px; color: var(--text-muted); letter-spacing: 1px;">UPDATED: --</span>
+  </div>
+  
+  <div class="bandwidth-dashboard">
+    <!-- Sleep Section -->
+    <div class="bandwidth-section-label">Sleep</div>
+    <div class="bandwidth-section">
+      <div class="day-circles">
+        <div class="days-row">
+          <div class="day-circle today">
+            <div class="day-circle-bg"></div>
+            <svg class="day-circle-progress" viewBox="0 0 40 40">
+              <circle cx="20" cy="20" r="16" fill="none" stroke="var(--accent-teal)" stroke-width="3" 
+                      stroke-dasharray="75 101" stroke-linecap="round"
+                      transform="rotate(-90 20 20)"/>
+            </svg>
+            <div class="day-circle-inner"></div>
+            <span class="day-letter">S</span>
+          </div>
+          <div class="day-circle"><div class="day-circle-bg"></div><div class="day-circle-inner"></div><span class="day-letter">M</span></div>
+          <div class="day-circle"><div class="day-circle-bg"></div><div class="day-circle-inner"></div><span class="day-letter">T</span></div>
+          <div class="day-circle"><div class="day-circle-bg"></div><div class="day-circle-inner"></div><span class="day-letter">W</span></div>
+          <div class="day-circle"><div class="day-circle-bg"></div><div class="day-circle-inner"></div><span class="day-letter">T</span></div>
+          <div class="day-circle"><div class="day-circle-bg"></div><div class="day-circle-inner"></div><span class="day-letter">F</span></div>
+          <div class="day-circle"><div class="day-circle-bg"></div><div class="day-circle-inner"></div><span class="day-letter">S</span></div>
+        </div>
+        <div class="wk-wrapper">
+          <div class="wk-circle">
+            <div class="wk-circle-bg"></div>
+            <div class="wk-circle-inner"></div>
+            <span class="wk-letter">WK</span>
+          </div>
+        </div>
+      </div>
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      min-height: 100vh;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    .section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .section-title {
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .bandwidth-dashboard {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .bandwidth-section-label {
-      font-size: 10px;
-      color: var(--accent-gold);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .bandwidth-section {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 16px;
-      overflow: hidden;
-    }
-
-    .day-circles {
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
-    }
-
-    .days-row {
-      display: flex;
-      justify-content: space-between;
-      width: 690px;
-      margin-left: 34px;
-    }
-
-    .wk-wrapper {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-    }
-
-    .day-circle, .wk-circle {
-      position: relative;
-      width: 40px;
-      height: 40px;
-      min-width: 40px;
-      min-height: 40px;
-      max-width: 40px;
-      max-height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .day-circle-bg, .wk-circle-bg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: var(--bg-tertiary);
-    }
-    .day-circle-progress {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
-    .day-circle-inner, .wk-circle-inner {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: var(--bg-secondary);
-    }
-    .day-letter, .wk-letter {
-      position: relative;
-      z-index: 1;
-      font-size: 13px;
-      font-weight: 400;
-      color: var(--text-muted);
-    }
-    .wk-letter {
-      font-size: 12px;
-      letter-spacing: -0.5px;
-    }
-    .day-circle.today .day-letter { color: var(--accent-teal); }
-
-    .wk-circle {
-      cursor: pointer;
-    }
-    .wk-circle:hover .wk-letter {
-      color: var(--accent-teal);
-    }
-
-    .sleep-content {
-      display: grid;
-      grid-template-columns: 1fr 144px;
-      gap: 24px;
-      align-items: stretch;
-    }
-
-    .sleep-graph-wrapper {
-      display: grid;
-      grid-template-columns: 40px 1fr;
-      grid-template-rows: 1fr auto;
-      gap: 0;
-      height: 100%;
-    }
-
-    .graph-y-labels {
-      grid-column: 1;
-      grid-row: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-right: 8px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    .y-label {
-      font-size: 10px;
-      color: var(--text-muted);
-      text-align: right;
-      line-height: 1;
-    }
-
-    .sleep-graph-container {
-      grid-column: 2;
-      grid-row: 1;
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      overflow: hidden;
-      height: 100%;
-    }
-
-    .sleep-graph {
-      width: 100%;
-      height: 100%;
-    }
-    .sleep-graph svg {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    .graph-line {
-      fill: none;
-      stroke: var(--accent-teal);
-      stroke-width: 2;
-    }
-    .graph-area {
-      fill: var(--accent-teal);
-      opacity: 0.15;
-    }
-
-    .graph-time-labels {
-      grid-column: 2;
-      grid-row: 2;
-      display: flex;
-      justify-content: space-between;
-      font-size: 10px;
-      color: var(--text-muted);
-      padding: 4px 0 0;
-    }
-
-    .sleep-stats-wrapper {
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      padding: 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .quality-circle {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 8px;
-    }
-
-    .quality-gauge {
-      position: relative;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: conic-gradient(
-        var(--accent-teal) 0deg,
-        var(--accent-teal) 338deg,
-        var(--bg-secondary) 338deg
-      );
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .quality-gauge::before {
-      content: '';
-      position: absolute;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--bg-tertiary);
-    }
-    .quality-value {
-      position: relative;
-      z-index: 1;
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--accent-teal);
-    }
-
-    .sleep-stat-card {
-      background: var(--bg-secondary);
-      border-radius: 6px;
-      padding: 6px 8px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .sleep-stat-card .stat-label {
-      font-size: 9px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--text-muted);
-      margin-bottom: 2px;
-      text-align: center;
-    }
-    .sleep-stat-card .stat-value {
-      font-size: 14px;
-      font-weight: 400;
-      text-align: center;
-    }
-
-    .sleep-heart-row {
-      margin-top: 16px;
-    }
-
-    .bandwidth-cards {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-
-    .bandwidth-card {
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      padding: 14px 12px;
-      text-align: center;
-    }
-    .bandwidth-card .card-value {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.2;
-    }
-    .card-unit {
-      font-size: 10px;
-      font-weight: 400;
-      color: var(--text-muted);
-    }
-    .bandwidth-card .card-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
-
-    .heart-card .card-value { color: var(--accent-coral); }
-    .activity-card .card-value { color: var(--accent-sage); }
-    .sleep-stage-card .card-value { color: #ffffff; }
-
-    .readiness-display {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .readiness-gauge {
-      position: relative;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: conic-gradient(
-        var(--accent-sage) 0deg,
-        var(--accent-sage) 252deg,
-        var(--bg-tertiary) 252deg
-      );
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .readiness-gauge::before {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: var(--bg-secondary);
-    }
-    .readiness-value {
-      position: relative;
-      z-index: 1;
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--accent-sage);
-    }
-
-    .readiness-factors {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .factor {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-    }
-    .factor-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-    }
-    .sleep-dot { background: var(--accent-teal); }
-    .hrv-dot { background: var(--accent-purple); }
-    .rhr-dot { background: var(--accent-coral); }
-  </style>
-</head>
-<body>
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Self-Care & Bandwidth</h2>
-      <span id="last-updated" style="font-size: 10px; color: var(--text-muted); letter-spacing: 1px;">UPDATED: --</span>
-    </div>
-    
-    <div class="bandwidth-dashboard">
-      <!-- Sleep Section -->
-      <div class="bandwidth-section-label">Sleep</div>
-      <div class="bandwidth-section">
-        <div class="day-circles">
-          <div class="days-row">
-            <div class="day-circle today">
-              <div class="day-circle-bg"></div>
-              <svg class="day-circle-progress" viewBox="0 0 40 40">
-                <circle cx="20" cy="20" r="16" fill="none" stroke="#7eb8c9" stroke-width="3" 
-                        stroke-dasharray="75 101" stroke-linecap="round"
-                        transform="rotate(-90 20 20)"/>
+      <div class="sleep-content">
+        <div class="sleep-graph-wrapper">
+          <div class="graph-y-labels">
+            <span class="y-label">Wake</span>
+            <span class="y-label">Light</span>
+            <span class="y-label">REM</span>
+            <span class="y-label">Deep</span>
+          </div>
+          <div class="sleep-graph-container">
+            <div class="sleep-graph">
+              <svg id="hypnogram" viewBox="0 0 400 160" preserveAspectRatio="none">
+                <path id="hypnogram-area" class="graph-area"/>
+                <path id="hypnogram-line" class="graph-line"/>
               </svg>
-              <div class="day-circle-inner"></div>
-              <span class="day-letter">S</span>
-            </div>
-            <div class="day-circle">
-              <div class="day-circle-bg"></div>
-              <div class="day-circle-inner"></div>
-              <span class="day-letter">M</span>
-            </div>
-            <div class="day-circle">
-              <div class="day-circle-bg"></div>
-              <div class="day-circle-inner"></div>
-              <span class="day-letter">T</span>
-            </div>
-            <div class="day-circle">
-              <div class="day-circle-bg"></div>
-              <div class="day-circle-inner"></div>
-              <span class="day-letter">W</span>
-            </div>
-            <div class="day-circle">
-              <div class="day-circle-bg"></div>
-              <div class="day-circle-inner"></div>
-              <span class="day-letter">T</span>
-            </div>
-            <div class="day-circle">
-              <div class="day-circle-bg"></div>
-              <div class="day-circle-inner"></div>
-              <span class="day-letter">F</span>
-            </div>
-            <div class="day-circle">
-              <div class="day-circle-bg"></div>
-              <div class="day-circle-inner"></div>
-              <span class="day-letter">S</span>
             </div>
           </div>
-          <div class="wk-wrapper">
-            <div class="wk-circle">
-              <div class="wk-circle-bg"></div>
-              <div class="wk-circle-inner"></div>
-              <span class="wk-letter">WK</span>
-            </div>
-          </div>
+          <div class="graph-time-labels" id="bandwidth-time-labels"></div>
         </div>
 
-        <div class="sleep-content">
-          <div class="sleep-graph-wrapper">
-            <div class="graph-y-labels">
-              <span class="y-label">Wake</span>
-              <span class="y-label">Light</span>
-              <span class="y-label">REM</span>
-              <span class="y-label">Deep</span>
-            </div>
-            <div class="sleep-graph-container">
-              <div class="sleep-graph">
-                <svg id="hypnogram" viewBox="0 0 400 160" preserveAspectRatio="none">
-                  <path id="hypnogram-area" class="graph-area"/>
-                  <path id="hypnogram-line" class="graph-line"/>
-                </svg>
-              </div>
-            </div>
-            <div class="graph-time-labels" id="time-labels"></div>
-          </div>
-
-          <div class="sleep-stats-wrapper">
-            <div class="quality-circle">
-              <div class="quality-gauge" id="quality-gauge">
-                <span class="quality-value" id="sleep-score">--%</span>
-              </div>
-            </div>
-            <div class="sleep-stat-card">
-              <span class="stat-label">Total Sleep</span>
-              <span class="stat-value" id="total-sleep">--</span>
-            </div>
-            <div class="sleep-stat-card">
-              <span class="stat-label">Wake Time</span>
-              <span class="stat-value" id="wake-time">--</span>
-            </div>
-            <div class="sleep-stat-card">
-              <span class="stat-label">Sleep Time</span>
-              <span class="stat-value" id="sleep-time">--</span>
+        <div class="sleep-stats-wrapper">
+          <div class="quality-circle">
+            <div class="quality-gauge" id="bandwidth-quality-gauge">
+              <span class="quality-value" id="bandwidth-sleep-score">--%</span>
             </div>
           </div>
-        </div>
-
-        <!-- Sleep stages row -->
-        <div class="sleep-heart-row">
-          <div class="bandwidth-cards">
-            <div class="bandwidth-card sleep-stage-card">
-              <div class="card-value"><span id="deep-min">--</span> <span class="card-unit">min</span></div>
-              <div class="card-label">Deep</div>
-            </div>
-            <div class="bandwidth-card sleep-stage-card">
-              <div class="card-value"><span id="light-min">--</span> <span class="card-unit">min</span></div>
-              <div class="card-label">Light</div>
-            </div>
-            <div class="bandwidth-card sleep-stage-card">
-              <div class="card-value"><span id="rem-min">--</span> <span class="card-unit">min</span></div>
-              <div class="card-label">REM</div>
-            </div>
-            <div class="bandwidth-card sleep-stage-card">
-              <div class="card-value"><span id="wake-min">--</span> <span class="card-unit">min</span></div>
-              <div class="card-label">Wake</div>
-            </div>
+          <div class="sleep-stat-card">
+            <span class="stat-label">Total Sleep</span>
+            <span class="stat-value" id="bandwidth-total-sleep">--</span>
+          </div>
+          <div class="sleep-stat-card">
+            <span class="stat-label">Wake Time</span>
+            <span class="stat-value" id="bandwidth-wake-time">--</span>
+          </div>
+          <div class="sleep-stat-card">
+            <span class="stat-label">Sleep Time</span>
+            <span class="stat-value" id="bandwidth-sleep-time">--</span>
           </div>
         </div>
       </div>
 
-      <!-- Heart & Recovery -->
-      <div class="bandwidth-section-label">Heart & Recovery</div>
-      <div class="bandwidth-section">
+      <!-- Sleep stages row -->
+      <div class="sleep-heart-row">
         <div class="bandwidth-cards">
-          <div class="bandwidth-card heart-card">
-            <div class="card-value"><span id="resting-hr">--</span> <span class="card-unit">bpm</span></div>
-            <div class="card-label">Resting HR</div>
+          <div class="bandwidth-card sleep-stage-card">
+            <div class="card-value"><span id="bandwidth-deep-min">--</span> <span class="card-unit">min</span></div>
+            <div class="card-label">Deep</div>
           </div>
-          <div class="bandwidth-card heart-card">
-            <div class="card-value"><span id="hrv">--</span> <span class="card-unit">ms</span></div>
-            <div class="card-label">HRV</div>
+          <div class="bandwidth-card sleep-stage-card">
+            <div class="card-value"><span id="bandwidth-light-min">--</span> <span class="card-unit">min</span></div>
+            <div class="card-label">Light</div>
           </div>
-          <div class="bandwidth-card heart-card">
-            <div class="card-value" id="spo2">--</div>
-            <div class="card-label">SpO2</div>
+          <div class="bandwidth-card sleep-stage-card">
+            <div class="card-value"><span id="bandwidth-rem-min">--</span> <span class="card-unit">min</span></div>
+            <div class="card-label">REM</div>
           </div>
-          <div class="bandwidth-card heart-card">
-            <div class="card-value" id="breathing">--</div>
-            <div class="card-label">Breathing</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Activity -->
-      <div class="bandwidth-section-label">Activity</div>
-      <div class="bandwidth-section">
-        <div class="bandwidth-cards">
-          <div class="bandwidth-card activity-card">
-            <div class="card-value" id="steps">--</div>
-            <div class="card-label">Steps</div>
-          </div>
-          <div class="bandwidth-card activity-card">
-            <div class="card-value"><span id="distance">--</span> <span class="card-unit">mi</span></div>
-            <div class="card-label">Distance</div>
-          </div>
-          <div class="bandwidth-card activity-card">
-            <div class="card-value"><span id="active-min">--</span> <span class="card-unit">min</span></div>
-            <div class="card-label">Active</div>
-          </div>
-          <div class="bandwidth-card activity-card">
-            <div class="card-value"><span id="calories">--</span> <span class="card-unit">cal</span></div>
-            <div class="card-label">Burned</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Readiness -->
-      <div class="bandwidth-section-label">Readiness</div>
-      <div class="bandwidth-section">
-        <div class="readiness-display">
-          <div class="readiness-gauge" id="readiness-gauge">
-            <div class="readiness-value" id="readiness-score">--</div>
-          </div>
-          <div class="readiness-factors">
-            <div class="factor"><span class="factor-dot sleep-dot"></span>Sleep quality</div>
-            <div class="factor"><span class="factor-dot hrv-dot"></span>HRV recovery</div>
-            <div class="factor"><span class="factor-dot rhr-dot"></span>Resting HR</div>
+          <div class="bandwidth-card sleep-stage-card">
+            <div class="card-value"><span id="bandwidth-wake-min">--</span> <span class="card-unit">min</span></div>
+            <div class="card-label">Wake</div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <script>
-    const FITBIT_DATA_URL = 'https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/fitbit-latest.json';
+    <!-- Heart & Recovery -->
+    <div class="bandwidth-section-label">Heart & Recovery</div>
+    <div class="bandwidth-section">
+      <div class="bandwidth-cards">
+        <div class="bandwidth-card heart-card">
+          <div class="card-value"><span id="bandwidth-resting-hr">--</span> <span class="card-unit">bpm</span></div>
+          <div class="card-label">Resting HR</div>
+        </div>
+        <div class="bandwidth-card heart-card">
+          <div class="card-value"><span id="bandwidth-hrv">--</span> <span class="card-unit">ms</span></div>
+          <div class="card-label">HRV</div>
+        </div>
+        <div class="bandwidth-card heart-card">
+          <div class="card-value" id="bandwidth-spo2">--</div>
+          <div class="card-label">SpO2</div>
+        </div>
+        <div class="bandwidth-card heart-card">
+          <div class="card-value" id="bandwidth-breathing">--</div>
+          <div class="card-label">Breathing</div>
+        </div>
+      </div>
+    </div>
 
-    function formatDuration(minutes) {
-      if (!minutes && minutes !== 0) return '--';
-      const h = Math.floor(minutes / 60);
-      const m = Math.round(minutes % 60);
-      return h > 0 ? `${h}h ${m}m` : `${m}m`;
-    }
+    <!-- Activity -->
+    <div class="bandwidth-section-label">Activity</div>
+    <div class="bandwidth-section">
+      <div class="bandwidth-cards">
+        <div class="bandwidth-card activity-card">
+          <div class="card-value" id="bandwidth-steps">--</div>
+          <div class="card-label">Steps</div>
+        </div>
+        <div class="bandwidth-card activity-card">
+          <div class="card-value"><span id="bandwidth-distance">--</span> <span class="card-unit">mi</span></div>
+          <div class="card-label">Distance</div>
+        </div>
+        <div class="bandwidth-card activity-card">
+          <div class="card-value"><span id="bandwidth-active-min">--</span> <span class="card-unit">min</span></div>
+          <div class="card-label">Active</div>
+        </div>
+        <div class="bandwidth-card activity-card">
+          <div class="card-value"><span id="bandwidth-calories">--</span> <span class="card-unit">cal</span></div>
+          <div class="card-label">Burned</div>
+        </div>
+      </div>
+    </div>
 
-    function formatTime(dateTimeStr) {
-      if (!dateTimeStr) return '--';
-      const date = new Date(dateTimeStr);
-      let hours = date.getHours();
-      const mins = date.getMinutes().toString().padStart(2, '0');
-      const ampm = hours >= 12 ? 'PM' : 'AM';
-      hours = hours % 12 || 12;
-      return `${hours}:${mins} ${ampm}`;
-    }
-
-    function formatNumber(num) {
-      if (!num && num !== 0) return '--';
-      return num.toLocaleString();
-    }
-
-    async function loadFitbitData() {
-      try {
-        const response = await fetch(FITBIT_DATA_URL + '?t=' + Date.now());
-        const data = await response.json();
-        
-        console.log('Fitbit data loaded:', data);
-        
-        // Update timestamp
-        if (data.updated_at) {
-          const fetchDate = new Date(data.updated_at);
-          document.getElementById('last-updated').textContent = 
-            `UPDATED: ${fetchDate.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' })}`;
-        }
-
-        // ============ SLEEP DATA ============
-        if (data.sleep && data.sleep.summary) {
-          const summary = data.sleep.summary;
-          
-          // Use score (efficiency seems to be 0)
-          const score = summary.score || summary.efficiency || 0;
-          document.getElementById('sleep-score').textContent = `${score}%`;
-          const qualityDeg = (score / 100) * 360;
-          document.getElementById('quality-gauge').style.background = 
-            `conic-gradient(var(--accent-teal) 0deg, var(--accent-teal) ${qualityDeg}deg, var(--bg-secondary) ${qualityDeg}deg)`;
-          
-          // Total sleep from duration_minutes
-          document.getElementById('total-sleep').textContent = formatDuration(summary.duration_minutes);
-          
-          // Sleep/wake times
-          document.getElementById('sleep-time').textContent = formatTime(summary.start_time);
-          document.getElementById('wake-time').textContent = formatTime(summary.end_time);
-          
-          // Sleep stages from summary.stages
-          if (summary.stages) {
-            document.getElementById('deep-min').textContent = summary.stages.deep || 0;
-            document.getElementById('light-min').textContent = summary.stages.light || 0;
-            document.getElementById('rem-min').textContent = summary.stages.rem || 0;
-            document.getElementById('wake-min').textContent = summary.stages.wake || 0;
-          }
-          
-          // Render hypnogram from sleep.levels array
-          if (data.sleep.levels && data.sleep.levels.length > 0) {
-            renderHypnogram(summary.start_time, summary.end_time, data.sleep.levels);
-          }
-        }
-
-        // ============ HEART DATA ============
-        if (data.heart) {
-          document.getElementById('resting-hr').textContent = data.heart.resting_hr || data.heart.restingHeartRate || '--';
-        }
-        
-        if (data.hrv) {
-          const hrvValue = data.hrv.daily_rmssd || data.hrv.rmssd || (data.hrv.hrv && data.hrv.hrv[0]?.value?.dailyRmssd);
-          document.getElementById('hrv').textContent = hrvValue ? (typeof hrvValue === 'number' ? hrvValue.toFixed(1) : hrvValue) : '--';
-        }
-        
-        if (data.spo2) {
-          const spo2Val = data.spo2.avg || data.spo2.value?.avg || data.spo2.value;
-          document.getElementById('spo2').textContent = spo2Val ? `${spo2Val}%` : '--';
-        }
-        
-        if (data.breathing) {
-          const breathVal = data.breathing.rate || data.breathing.breathingRate;
-          document.getElementById('breathing').textContent = breathVal ? breathVal.toFixed(1) : '--';
-        }
-
-        // ============ ACTIVITY DATA ============
-        if (data.activity) {
-          document.getElementById('steps').textContent = formatNumber(data.activity.steps);
-          document.getElementById('distance').textContent = 
-            data.activity.distance ? data.activity.distance.toFixed(1) : '--';
-          
-          const activeMin = (data.activity.fairly_active_minutes || data.activity.fairlyActiveMinutes || 0) + 
-                           (data.activity.very_active_minutes || data.activity.veryActiveMinutes || 0);
-          document.getElementById('active-min').textContent = activeMin;
-          
-          document.getElementById('calories').textContent = formatNumber(data.activity.calories || data.activity.caloriesOut);
-        }
-
-        // ============ READINESS SCORE ============
-        calculateReadiness(data);
-
-      } catch (error) {
-        console.error('Error loading Fitbit data:', error);
-      }
-    }
-
-    function calculateReadiness(data) {
-      let score = 0;
-      let factors = 0;
-      
-      // Sleep quality factor (0-40 points)
-      if (data.sleep?.summary?.score) {
-        score += (data.sleep.summary.score / 100) * 40;
-        factors++;
-      }
-      
-      // HRV factor (0-30 points) - higher is better
-      const hrvVal = data.hrv?.daily_rmssd || data.hrv?.rmssd || 0;
-      if (hrvVal > 0) {
-        const hrvScore = Math.min(30, Math.max(0, ((hrvVal - 20) / 40) * 30));
-        score += hrvScore;
-        factors++;
-      }
-      
-      // Resting HR factor (0-30 points) - lower is better
-      const rhr = data.heart?.resting_hr || data.heart?.restingHeartRate || 0;
-      if (rhr > 0) {
-        const rhrScore = Math.min(30, Math.max(0, ((80 - rhr) / 30) * 30));
-        score += rhrScore;
-        factors++;
-      }
-      
-      // Default if no factors
-      if (factors === 0) {
-        score = data.sleep?.summary?.score || 70;
-      }
-      
-      score = Math.round(Math.min(100, Math.max(0, score)));
-      
-      document.getElementById('readiness-score').textContent = score;
-      const readinessDeg = (score / 100) * 360;
-      document.getElementById('readiness-gauge').style.background = 
-        `conic-gradient(var(--accent-sage) 0deg, var(--accent-sage) ${readinessDeg}deg, var(--bg-tertiary) ${readinessDeg}deg)`;
-    }
-
-    function renderHypnogram(startTime, endTime, levels) {
-      const svg = document.getElementById('hypnogram');
-      const areaPath = document.getElementById('hypnogram-area');
-      const linePath = document.getElementById('hypnogram-line');
-      const timeLabels = document.getElementById('time-labels');
-      
-      if (!svg || !areaPath || !linePath || !levels || levels.length === 0) return;
-      
-      const padding = 10;
-      const width = 400 - (padding * 2);
-      
-      const levelY = {
-        'wake': 15,
-        'light': 55,
-        'rem': 95,
-        'deep': 135
-      };
-      
-      const start = new Date(startTime).getTime();
-      const end = new Date(endTime).getTime();
-      const totalDuration = end - start;
-      
-      function timeToX(dateTime) {
-        const time = new Date(dateTime).getTime();
-        const ratio = (time - start) / totalDuration;
-        return padding + (ratio * width);
-      }
-      
-      svg.querySelectorAll('line').forEach(l => l.remove());
-      
-      let pathD = '';
-      let areaD = '';
-      
-      levels.forEach((level, i) => {
-        const x = timeToX(level.dateTime);
-        const y = levelY[level.level] || 55;
-        const endX = timeToX(new Date(new Date(level.dateTime).getTime() + (level.seconds * 1000)).toISOString());
-        
-        if (i === 0) {
-          pathD = `M${x},${y}`;
-          areaD = `M${x},${y}`;
-        } else {
-          pathD += ` L${x},${y}`;
-          areaD += ` L${x},${y}`;
-        }
-        
-        pathD += ` L${endX},${y}`;
-        areaD += ` L${endX},${y}`;
-      });
-      
-      const lastX = timeToX(endTime);
-      areaD += ` L${lastX},150 L${padding},150 Z`;
-      
-      linePath.setAttribute('d', pathD);
-      areaPath.setAttribute('d', areaD);
-      
-      const gridLines = [80, 160, 240, 320];
-      gridLines.forEach(x => {
-        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line.setAttribute('x1', x);
-        line.setAttribute('y1', 10);
-        line.setAttribute('x2', x);
-        line.setAttribute('y2', 150);
-        line.setAttribute('stroke', '#3a3a38');
-        line.setAttribute('stroke-width', '1');
-        svg.insertBefore(line, areaPath);
-      });
-      
-      if (timeLabels) {
-        const startDate = new Date(startTime);
-        const endDate = new Date(endTime);
-        const durationHours = (endDate - startDate) / (1000 * 60 * 60);
-        const interval = Math.ceil(durationHours / 5);
-        const labels = [];
-        
-        for (let i = 0; i <= 4; i++) {
-          const labelTime = new Date(startDate.getTime() + (i * interval * 60 * 60 * 1000));
-          let h = labelTime.getHours();
-          const ampm = h >= 12 ? 'AM' : 'PM';
-          h = h % 12 || 12;
-          labels.push(`${h} ${ampm}`);
-        }
-        
-        timeLabels.innerHTML = labels.map(l => `<span>${l}</span>`).join('');
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', loadFitbitData);
-  </script>
-</body>
-</html>
+    <!-- Readiness -->
+    <div class="bandwidth-section-label">Readiness</div>
+    <div class="bandwidth-section">
+      <div class="readiness-display">
+        <div class="readiness-gauge" id="bandwidth-readiness-gauge">
+          <div class="readiness-value" id="bandwidth-readiness-score">--</div>
+        </div>
+        <div class="readiness-factors">
+          <div class="factor"><span class="factor-dot sleep-dot"></span>Sleep quality</div>
+          <div class="factor"><span class="factor-dot hrv-dot"></span>HRV recovery</div>
+          <div class="factor"><span class="factor-dot rhr-dot"></span>Resting HR</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
