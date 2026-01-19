@@ -85,77 +85,86 @@ jobs:
           STEPS_INTRADAY=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/steps/date/${TODAY}/1d/1min.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
-          # ============ EXTRACT METRICS ============
+          # ============ EXTRACT METRICS WITH ERROR HANDLING ============
+          
+          # Helper function for safe jq extraction
+          safe_jq() {
+            echo "$1" | jq "$2" 2>/dev/null || echo "$3"
+          }
+          
+          safe_jq_raw() {
+            echo "$1" | jq -r "$2" 2>/dev/null || echo "$3"
+          }
           
           # Sleep metrics (summary)
-          SLEEP_DURATION=$(echo $SLEEP | jq '.summary.totalMinutesAsleep // 0')
-          SLEEP_EFFICIENCY=$(echo $SLEEP | jq '.summary.efficiency // 0')
-          SLEEP_DEEP=$(echo $SLEEP | jq '.summary.stages.deep // 0')
-          SLEEP_LIGHT=$(echo $SLEEP | jq '.summary.stages.light // 0')
-          SLEEP_REM=$(echo $SLEEP | jq '.summary.stages.rem // 0')
-          SLEEP_WAKE=$(echo $SLEEP | jq '.summary.stages.wake // 0')
-          SLEEP_SCORE=$(echo $SLEEP | jq '.sleep[0].efficiency // 0')
-          SLEEP_START=$(echo $SLEEP | jq -r '.sleep[0].startTime // ""')
-          SLEEP_END=$(echo $SLEEP | jq -r '.sleep[0].endTime // ""')
+          SLEEP_DURATION=$(safe_jq "$SLEEP" '.summary.totalMinutesAsleep // 0' '0')
+          SLEEP_EFFICIENCY=$(safe_jq "$SLEEP" '.summary.efficiency // 0' '0')
+          SLEEP_DEEP=$(safe_jq "$SLEEP" '.summary.stages.deep // 0' '0')
+          SLEEP_LIGHT=$(safe_jq "$SLEEP" '.summary.stages.light // 0' '0')
+          SLEEP_REM=$(safe_jq "$SLEEP" '.summary.stages.rem // 0' '0')
+          SLEEP_WAKE=$(safe_jq "$SLEEP" '.summary.stages.wake // 0' '0')
+          SLEEP_SCORE=$(safe_jq "$SLEEP" '.sleep[0].efficiency // 0' '0')
+          SLEEP_START=$(safe_jq_raw "$SLEEP" '.sleep[0].startTime // ""' '')
+          SLEEP_END=$(safe_jq_raw "$SLEEP" '.sleep[0].endTime // ""' '')
           
           # Sleep levels timeline (raw data for hypnogram)
-          SLEEP_LEVELS=$(echo $SLEEP | jq '.sleep[0].levels.data // []')
+          SLEEP_LEVELS=$(safe_jq "$SLEEP" '.sleep[0].levels.data // []' '[]')
           
           # Activity metrics (summary)
-          STEPS=$(echo $ACTIVITY | jq '.summary.steps // 0')
-          DISTANCE=$(echo $ACTIVITY | jq '.summary.distances[0].distance // 0')
-          FLOORS=$(echo $ACTIVITY | jq '.summary.floors // 0')
-          ELEVATION=$(echo $ACTIVITY | jq '.summary.elevation // 0')
-          CALORIES_TOTAL=$(echo $ACTIVITY | jq '.summary.caloriesOut // 0')
-          CALORIES_BMR=$(echo $ACTIVITY | jq '.summary.caloriesBMR // 0')
-          CALORIES_ACTIVE=$(echo $ACTIVITY | jq '.summary.activityCalories // 0')
-          SEDENTARY_MIN=$(echo $ACTIVITY | jq '.summary.sedentaryMinutes // 0')
-          LIGHTLY_ACTIVE=$(echo $ACTIVITY | jq '.summary.lightlyActiveMinutes // 0')
-          FAIRLY_ACTIVE=$(echo $ACTIVITY | jq '.summary.fairlyActiveMinutes // 0')
-          VERY_ACTIVE=$(echo $ACTIVITY | jq '.summary.veryActiveMinutes // 0')
+          STEPS=$(safe_jq "$ACTIVITY" '.summary.steps // 0' '0')
+          DISTANCE=$(safe_jq "$ACTIVITY" '.summary.distances[0].distance // 0' '0')
+          FLOORS=$(safe_jq "$ACTIVITY" '.summary.floors // 0' '0')
+          ELEVATION=$(safe_jq "$ACTIVITY" '.summary.elevation // 0' '0')
+          CALORIES_TOTAL=$(safe_jq "$ACTIVITY" '.summary.caloriesOut // 0' '0')
+          CALORIES_BMR=$(safe_jq "$ACTIVITY" '.summary.caloriesBMR // 0' '0')
+          CALORIES_ACTIVE=$(safe_jq "$ACTIVITY" '.summary.activityCalories // 0' '0')
+          SEDENTARY_MIN=$(safe_jq "$ACTIVITY" '.summary.sedentaryMinutes // 0' '0')
+          LIGHTLY_ACTIVE=$(safe_jq "$ACTIVITY" '.summary.lightlyActiveMinutes // 0' '0')
+          FAIRLY_ACTIVE=$(safe_jq "$ACTIVITY" '.summary.fairlyActiveMinutes // 0' '0')
+          VERY_ACTIVE=$(safe_jq "$ACTIVITY" '.summary.veryActiveMinutes // 0' '0')
           
           # Steps intraday (raw data)
-          STEPS_RAW=$(echo $STEPS_INTRADAY | jq '.["activities-steps-intraday"].dataset // []')
+          STEPS_RAW=$(safe_jq "$STEPS_INTRADAY" '.["activities-steps-intraday"].dataset // []' '[]')
           
           # Heart metrics (summary)
-          RESTING_HR=$(echo $HEART | jq '.["activities-heart"][0].value.restingHeartRate // 0')
-          HR_ZONES=$(echo $HEART | jq '.["activities-heart"][0].value.heartRateZones // []')
+          RESTING_HR=$(safe_jq "$HEART" '.["activities-heart"][0].value.restingHeartRate // 0' '0')
+          HR_ZONES=$(safe_jq "$HEART" '.["activities-heart"][0].value.heartRateZones // []' '[]')
           
           # Heart rate intraday (raw data - 1-minute resolution)
-          HR_INTRADAY=$(echo $HEART | jq '.["activities-heart-intraday"].dataset // []')
+          HR_INTRADAY=$(safe_jq "$HEART" '.["activities-heart-intraday"].dataset // []' '[]')
           
           # HRV metrics (summary)
-          HRV_DAILY=$(echo $HRV | jq '.hrv[0].value.dailyRmssd // 0')
-          HRV_DEEP=$(echo $HRV | jq '.hrv[0].value.deepRmssd // 0')
+          HRV_DAILY=$(safe_jq "$HRV" '.hrv[0].value.dailyRmssd // 0' '0')
+          HRV_DEEP=$(safe_jq "$HRV" '.hrv[0].value.deepRmssd // 0' '0')
           
           # HRV intraday (raw data - 5-minute intervals)
-          HRV_INTRADAY=$(echo $HRV | jq '.hrv // []')
+          HRV_INTRADAY=$(safe_jq "$HRV" '.hrv // []' '[]')
           
-          # SpO2 (summary)
-          SPO2_AVG=$(echo $SPO2 | jq '.value.avg // 0' 2>/dev/null || echo "0")
-          SPO2_MIN=$(echo $SPO2 | jq '.value.min // 0' 2>/dev/null || echo "0")
-          SPO2_MAX=$(echo $SPO2 | jq '.value.max // 0' 2>/dev/null || echo "0")
+          # SpO2 (summary) - handle different response formats
+          SPO2_AVG=$(safe_jq "$SPO2" '.value.avg // 0' '0')
+          SPO2_MIN=$(safe_jq "$SPO2" '.value.min // 0' '0')
+          SPO2_MAX=$(safe_jq "$SPO2" '.value.max // 0' '0')
           
           # SpO2 intraday (raw data)
-          SPO2_INTRADAY=$(echo $SPO2 | jq '. // []')
+          SPO2_INTRADAY=$(safe_jq "$SPO2" '. // []' '[]')
           
           # Breathing rate
-          BREATHING_RATE=$(echo $BREATHING | jq '.br[0].value.breathingRate // 0')
+          BREATHING_RATE=$(safe_jq "$BREATHING" '.br[0].value.breathingRate // 0' '0')
           
           # Skin temp
-          SKIN_TEMP_VAL=$(echo $SKIN_TEMP | jq '.tempSkin[0].value.nightlyRelative // 0')
+          SKIN_TEMP_VAL=$(safe_jq "$SKIN_TEMP" '.tempSkin[0].value.nightlyRelative // 0' '0')
           
           # Core temp
-          CORE_TEMP_VAL=$(echo $CORE_TEMP | jq '.tempCore[0].value // 0')
+          CORE_TEMP_VAL=$(safe_jq "$CORE_TEMP" '.tempCore[0].value // 0' '0')
           
           # Cardio score (VO2 max)
-          VO2_MAX=$(echo $CARDIO | jq '.cardioScore[0].value.vo2Max // 0')
+          VO2_MAX=$(safe_jq "$CARDIO" '.cardioScore[0].value.vo2Max // 0' '0')
           
           # Active Zone Minutes
-          AZM_TOTAL=$(echo $AZM | jq '.["activities-active-zone-minutes"][0].value.activeZoneMinutes // 0')
-          AZM_FAT_BURN=$(echo $AZM | jq '.["activities-active-zone-minutes"][0].value.fatBurnActiveZoneMinutes // 0')
-          AZM_CARDIO=$(echo $AZM | jq '.["activities-active-zone-minutes"][0].value.cardioActiveZoneMinutes // 0')
-          AZM_PEAK=$(echo $AZM | jq '.["activities-active-zone-minutes"][0].value.peakActiveZoneMinutes // 0')
+          AZM_TOTAL=$(safe_jq "$AZM" '.["activities-active-zone-minutes"][0].value.activeZoneMinutes // 0' '0')
+          AZM_FAT_BURN=$(safe_jq "$AZM" '.["activities-active-zone-minutes"][0].value.fatBurnActiveZoneMinutes // 0' '0')
+          AZM_CARDIO=$(safe_jq "$AZM" '.["activities-active-zone-minutes"][0].value.cardioActiveZoneMinutes // 0' '0')
+          AZM_PEAK=$(safe_jq "$AZM" '.["activities-active-zone-minutes"][0].value.peakActiveZoneMinutes // 0' '0')
           
           # ============ CREATE JSON FILE ============
           mkdir -p data
@@ -164,46 +173,46 @@ jobs:
           jq -n \
             --arg date "$TODAY" \
             --arg updated "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
-            --argjson sleep_duration "$SLEEP_DURATION" \
-            --argjson sleep_efficiency "$SLEEP_EFFICIENCY" \
-            --argjson sleep_score "$SLEEP_SCORE" \
+            --argjson sleep_duration "${SLEEP_DURATION:-0}" \
+            --argjson sleep_efficiency "${SLEEP_EFFICIENCY:-0}" \
+            --argjson sleep_score "${SLEEP_SCORE:-0}" \
             --arg sleep_start "$SLEEP_START" \
             --arg sleep_end "$SLEEP_END" \
-            --argjson sleep_deep "$SLEEP_DEEP" \
-            --argjson sleep_light "$SLEEP_LIGHT" \
-            --argjson sleep_rem "$SLEEP_REM" \
-            --argjson sleep_wake "$SLEEP_WAKE" \
-            --argjson sleep_levels "$SLEEP_LEVELS" \
-            --argjson steps "$STEPS" \
-            --argjson steps_intraday "$STEPS_RAW" \
-            --argjson distance "$DISTANCE" \
-            --argjson floors "$FLOORS" \
-            --argjson elevation "$ELEVATION" \
-            --argjson cal_total "$CALORIES_TOTAL" \
-            --argjson cal_bmr "$CALORIES_BMR" \
-            --argjson cal_active "$CALORIES_ACTIVE" \
-            --argjson min_sedentary "$SEDENTARY_MIN" \
-            --argjson min_light "$LIGHTLY_ACTIVE" \
-            --argjson min_fairly "$FAIRLY_ACTIVE" \
-            --argjson min_very "$VERY_ACTIVE" \
-            --argjson azm_total "$AZM_TOTAL" \
-            --argjson azm_fat "$AZM_FAT_BURN" \
-            --argjson azm_cardio "$AZM_CARDIO" \
-            --argjson azm_peak "$AZM_PEAK" \
-            --argjson resting_hr "$RESTING_HR" \
-            --argjson hr_zones "$HR_ZONES" \
-            --argjson hr_intraday "$HR_INTRADAY" \
-            --argjson hrv_daily "$HRV_DAILY" \
-            --argjson hrv_deep "$HRV_DEEP" \
-            --argjson hrv_intraday "$HRV_INTRADAY" \
-            --argjson spo2_avg "$SPO2_AVG" \
-            --argjson spo2_min "$SPO2_MIN" \
-            --argjson spo2_max "$SPO2_MAX" \
-            --argjson spo2_intraday "$SPO2_INTRADAY" \
-            --argjson breathing "$BREATHING_RATE" \
-            --argjson skin_temp "$SKIN_TEMP_VAL" \
-            --argjson core_temp "$CORE_TEMP_VAL" \
-            --argjson vo2_max "$VO2_MAX" \
+            --argjson sleep_deep "${SLEEP_DEEP:-0}" \
+            --argjson sleep_light "${SLEEP_LIGHT:-0}" \
+            --argjson sleep_rem "${SLEEP_REM:-0}" \
+            --argjson sleep_wake "${SLEEP_WAKE:-0}" \
+            --argjson sleep_levels "${SLEEP_LEVELS:-[]}" \
+            --argjson steps "${STEPS:-0}" \
+            --argjson steps_intraday "${STEPS_RAW:-[]}" \
+            --argjson distance "${DISTANCE:-0}" \
+            --argjson floors "${FLOORS:-0}" \
+            --argjson elevation "${ELEVATION:-0}" \
+            --argjson cal_total "${CALORIES_TOTAL:-0}" \
+            --argjson cal_bmr "${CALORIES_BMR:-0}" \
+            --argjson cal_active "${CALORIES_ACTIVE:-0}" \
+            --argjson min_sedentary "${SEDENTARY_MIN:-0}" \
+            --argjson min_light "${LIGHTLY_ACTIVE:-0}" \
+            --argjson min_fairly "${FAIRLY_ACTIVE:-0}" \
+            --argjson min_very "${VERY_ACTIVE:-0}" \
+            --argjson azm_total "${AZM_TOTAL:-0}" \
+            --argjson azm_fat "${AZM_FAT_BURN:-0}" \
+            --argjson azm_cardio "${AZM_CARDIO:-0}" \
+            --argjson azm_peak "${AZM_PEAK:-0}" \
+            --argjson resting_hr "${RESTING_HR:-0}" \
+            --argjson hr_zones "${HR_ZONES:-[]}" \
+            --argjson hr_intraday "${HR_INTRADAY:-[]}" \
+            --argjson hrv_daily "${HRV_DAILY:-0}" \
+            --argjson hrv_deep "${HRV_DEEP:-0}" \
+            --argjson hrv_intraday "${HRV_INTRADAY:-[]}" \
+            --argjson spo2_avg "${SPO2_AVG:-0}" \
+            --argjson spo2_min "${SPO2_MIN:-0}" \
+            --argjson spo2_max "${SPO2_MAX:-0}" \
+            --argjson spo2_intraday "${SPO2_INTRADAY:-[]}" \
+            --argjson breathing "${BREATHING_RATE:-0}" \
+            --argjson skin_temp "${SKIN_TEMP_VAL:-0}" \
+            --argjson core_temp "${CORE_TEMP_VAL:-0}" \
+            --argjson vo2_max "${VO2_MAX:-0}" \
             '{
               date: $date,
               updated_at: $updated,
