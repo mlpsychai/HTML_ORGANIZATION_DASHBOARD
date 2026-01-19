@@ -39,26 +39,106 @@ jobs:
           # Save new refresh token for later step
           echo "new_refresh_token=$NEW_REFRESH_TOKEN" >> $GITHUB_OUTPUT
           
-          # Fetch sleep data
+          # ============ FETCH ALL DATA ============
+          
+          # Sleep (includes stages, score, efficiency)
           SLEEP=$(curl -s -X GET "https://api.fitbit.com/1.2/user/-/sleep/date/${TODAY}.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
-          # Fetch activity data (steps, etc.)
+          # Activity (steps, calories, distance, floors, active minutes)
           ACTIVITY=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/date/${TODAY}.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
-          # Fetch heart rate data
+          # Heart rate (resting HR, zones)
           HEART=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/heart/date/${TODAY}/1d.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
           
-          # Extract key metrics
+          # HRV (heart rate variability)
+          HRV=$(curl -s -X GET "https://api.fitbit.com/1/user/-/hrv/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # SpO2 (blood oxygen)
+          SPO2=$(curl -s -X GET "https://api.fitbit.com/1/user/-/spo2/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # Breathing rate
+          BREATHING=$(curl -s -X GET "https://api.fitbit.com/1/user/-/br/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # Skin temperature
+          SKIN_TEMP=$(curl -s -X GET "https://api.fitbit.com/1/user/-/temp/skin/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # Core temperature (if available)
+          CORE_TEMP=$(curl -s -X GET "https://api.fitbit.com/1/user/-/temp/core/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # Cardio fitness score (VO2 max)
+          CARDIO=$(curl -s -X GET "https://api.fitbit.com/1/user/-/cardioscore/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # Active Zone Minutes
+          AZM=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/active-zone-minutes/date/${TODAY}/1d.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # ============ EXTRACT METRICS ============
+          
+          # Sleep metrics
           SLEEP_DURATION=$(echo $SLEEP | jq '.summary.totalMinutesAsleep // 0')
           SLEEP_EFFICIENCY=$(echo $SLEEP | jq '.summary.efficiency // 0')
-          STEPS=$(echo $ACTIVITY | jq '.summary.steps // 0')
-          ACTIVE_MINUTES=$(echo $ACTIVITY | jq '(.summary.fairlyActiveMinutes // 0) + (.summary.veryActiveMinutes // 0)')
-          RESTING_HR=$(echo $HEART | jq '.["activities-heart"][0].value.restingHeartRate // 0')
+          SLEEP_DEEP=$(echo $SLEEP | jq '.summary.stages.deep // 0')
+          SLEEP_LIGHT=$(echo $SLEEP | jq '.summary.stages.light // 0')
+          SLEEP_REM=$(echo $SLEEP | jq '.summary.stages.rem // 0')
+          SLEEP_WAKE=$(echo $SLEEP | jq '.summary.stages.wake // 0')
+          SLEEP_SCORE=$(echo $SLEEP | jq '.sleep[0].efficiency // 0')
+          SLEEP_START=$(echo $SLEEP | jq -r '.sleep[0].startTime // ""')
+          SLEEP_END=$(echo $SLEEP | jq -r '.sleep[0].endTime // ""')
           
-          # Create/update JSON data file
+          # Activity metrics
+          STEPS=$(echo $ACTIVITY | jq '.summary.steps // 0')
+          DISTANCE=$(echo $ACTIVITY | jq '.summary.distances[0].distance // 0')
+          FLOORS=$(echo $ACTIVITY | jq '.summary.floors // 0')
+          ELEVATION=$(echo $ACTIVITY | jq '.summary.elevation // 0')
+          CALORIES_TOTAL=$(echo $ACTIVITY | jq '.summary.caloriesOut // 0')
+          CALORIES_BMR=$(echo $ACTIVITY | jq '.summary.caloriesBMR // 0')
+          CALORIES_ACTIVE=$(echo $ACTIVITY | jq '.summary.activityCalories // 0')
+          SEDENTARY_MIN=$(echo $ACTIVITY | jq '.summary.sedentaryMinutes // 0')
+          LIGHTLY_ACTIVE=$(echo $ACTIVITY | jq '.summary.lightlyActiveMinutes // 0')
+          FAIRLY_ACTIVE=$(echo $ACTIVITY | jq '.summary.fairlyActiveMinutes // 0')
+          VERY_ACTIVE=$(echo $ACTIVITY | jq '.summary.veryActiveMinutes // 0')
+          
+          # Heart metrics
+          RESTING_HR=$(echo $HEART | jq '.["activities-heart"][0].value.restingHeartRate // 0')
+          HR_ZONES=$(echo $HEART | jq '.["activities-heart"][0].value.heartRateZones // []')
+          
+          # HRV metrics
+          HRV_DAILY=$(echo $HRV | jq '.hrv[0].value.dailyRmssd // 0')
+          HRV_DEEP=$(echo $HRV | jq '.hrv[0].value.deepRmssd // 0')
+          
+          # SpO2
+          SPO2_AVG=$(echo $SPO2 | jq '.value.avg // 0')
+          SPO2_MIN=$(echo $SPO2 | jq '.value.min // 0')
+          SPO2_MAX=$(echo $SPO2 | jq '.value.max // 0')
+          
+          # Breathing rate
+          BREATHING_RATE=$(echo $BREATHING | jq '.br[0].value.breathingRate // 0')
+          
+          # Skin temp
+          SKIN_TEMP_VAL=$(echo $SKIN_TEMP | jq '.tempSkin[0].value.nightlyRelative // 0')
+          
+          # Core temp
+          CORE_TEMP_VAL=$(echo $CORE_TEMP | jq '.tempCore[0].value // 0')
+          
+          # Cardio score (VO2 max)
+          VO2_MAX=$(echo $CARDIO | jq '.cardioScore[0].value.vo2Max // 0')
+          
+          # Active Zone Minutes
+          AZM_TOTAL=$(echo $AZM | jq '.["activities-active-zone-minutes"][0].value.activeZoneMinutes // 0')
+          AZM_FAT_BURN=$(echo $AZM | jq '.["activities-active-zone-minutes"][0].value.fatBurnActiveZoneMinutes // 0')
+          AZM_CARDIO=$(echo $AZM | jq '.["activities-active-zone-minutes"][0].value.cardioActiveZoneMinutes // 0')
+          AZM_PEAK=$(echo $AZM | jq '.["activities-active-zone-minutes"][0].value.peakActiveZoneMinutes // 0')
+          
+          # ============ CREATE JSON FILE ============
           mkdir -p data
           
           cat > data/fitbit-latest.json << EOF
@@ -67,14 +147,60 @@ jobs:
             "updated_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
             "sleep": {
               "duration_minutes": $SLEEP_DURATION,
-              "efficiency": $SLEEP_EFFICIENCY
+              "efficiency": $SLEEP_EFFICIENCY,
+              "score": $SLEEP_SCORE,
+              "start_time": "$SLEEP_START",
+              "end_time": "$SLEEP_END",
+              "stages": {
+                "deep": $SLEEP_DEEP,
+                "light": $SLEEP_LIGHT,
+                "rem": $SLEEP_REM,
+                "wake": $SLEEP_WAKE
+              }
             },
             "activity": {
               "steps": $STEPS,
-              "active_minutes": $ACTIVE_MINUTES
+              "distance_miles": $DISTANCE,
+              "floors": $FLOORS,
+              "elevation": $ELEVATION,
+              "calories": {
+                "total": $CALORIES_TOTAL,
+                "bmr": $CALORIES_BMR,
+                "active": $CALORIES_ACTIVE
+              },
+              "minutes": {
+                "sedentary": $SEDENTARY_MIN,
+                "lightly_active": $LIGHTLY_ACTIVE,
+                "fairly_active": $FAIRLY_ACTIVE,
+                "very_active": $VERY_ACTIVE
+              },
+              "active_zone_minutes": {
+                "total": $AZM_TOTAL,
+                "fat_burn": $AZM_FAT_BURN,
+                "cardio": $AZM_CARDIO,
+                "peak": $AZM_PEAK
+              }
             },
             "heart": {
-              "resting_hr": $RESTING_HR
+              "resting_hr": $RESTING_HR,
+              "zones": $HR_ZONES
+            },
+            "hrv": {
+              "daily_rmssd": $HRV_DAILY,
+              "deep_rmssd": $HRV_DEEP
+            },
+            "respiratory": {
+              "spo2_avg": $SPO2_AVG,
+              "spo2_min": $SPO2_MIN,
+              "spo2_max": $SPO2_MAX,
+              "breathing_rate": $BREATHING_RATE
+            },
+            "temperature": {
+              "skin_variation": $SKIN_TEMP_VAL,
+              "core": $CORE_TEMP_VAL
+            },
+            "cardio_fitness": {
+              "vo2_max": $VO2_MAX
             }
           }
           EOF
