@@ -1,0 +1,97 @@
+name: Sync Fitbit Data
+
+on:
+  schedule:
+    # 6 AM Arizona time (MST = UTC-7, no daylight saving)
+    - cron: '0 13 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync-fitbit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Fitbit data
+        id: fitbit
+        run: |
+          # Get current date
+          TODAY=$(date +%Y-%m-%d)
+          
+          # Exchange refresh token for new access token
+          TOKEN_RESPONSE=$(curl -s -X POST https://api.fitbit.com/oauth2/token \
+            -H "Authorization: Basic $(echo -n '${{ secrets.FITBIT_CLIENT_ID }}:${{ secrets.FITBIT_CLIENT_SECRET }}' | base64 -w 0)" \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            -d "grant_type=refresh_token&refresh_token=${{ secrets.FITBIT_REFRESH_TOKEN }}")
+          
+          # Extract tokens
+          ACCESS_TOKEN=$(echo $TOKEN_RESPONSE | jq -r '.access_token')
+          NEW_REFRESH_TOKEN=$(echo $TOKEN_RESPONSE | jq -r '.refresh_token')
+          
+          if [ "$ACCESS_TOKEN" == "null" ] || [ -z "$ACCESS_TOKEN" ]; then
+            echo "Failed to get access token"
+            echo $TOKEN_RESPONSE
+            exit 1
+          fi
+          
+          # Save new refresh token for later step
+          echo "new_refresh_token=$NEW_REFRESH_TOKEN" >> $GITHUB_OUTPUT
+          
+          # Fetch sleep data
+          SLEEP=$(curl -s -X GET "https://api.fitbit.com/1.2/user/-/sleep/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # Fetch activity data (steps, etc.)
+          ACTIVITY=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # Fetch heart rate data
+          HEART=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/heart/date/${TODAY}/1d.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          
+          # Extract key metrics
+          SLEEP_DURATION=$(echo $SLEEP | jq '.summary.totalMinutesAsleep // 0')
+          SLEEP_EFFICIENCY=$(echo $SLEEP | jq '.summary.efficiency // 0')
+          STEPS=$(echo $ACTIVITY | jq '.summary.steps // 0')
+          ACTIVE_MINUTES=$(echo $ACTIVITY | jq '(.summary.fairlyActiveMinutes // 0) + (.summary.veryActiveMinutes // 0)')
+          RESTING_HR=$(echo $HEART | jq '.activities-heart[0].value.restingHeartRate // 0')
+          
+          # Create/update JSON data file
+          mkdir -p data
+          
+          cat > data/fitbit-latest.json << EOF
+          {
+            "date": "$TODAY",
+            "updated_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "sleep": {
+              "duration_minutes": $SLEEP_DURATION,
+              "efficiency": $SLEEP_EFFICIENCY
+            },
+            "activity": {
+              "steps": $STEPS,
+              "active_minutes": $ACTIVE_MINUTES
+            },
+            "heart": {
+              "resting_hr": $RESTING_HR
+            }
+          }
+          EOF
+          
+          echo "Data saved for $TODAY"
+          cat data/fitbit-latest.json
+
+      - name: Update refresh token secret
+        uses: hmanzur/actions-set-secret@v2.0.0
+        with:
+          name: 'FITBIT_REFRESH_TOKEN'
+          value: ${{ steps.fitbit.outputs.new_refresh_token }}
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Commit and push data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/fitbit-latest.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Fitbit data $(date +%Y-%m-%d)" && git push)
