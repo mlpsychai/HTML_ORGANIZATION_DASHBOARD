@@ -7,2109 +7,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      /* Warm, low-contrast dark theme */
-      --bg-primary: #1a1a1a;
-      --bg-secondary: #242424;
-      --bg-tertiary: #2e2e2e;
-      --bg-hover: #383838;
-      
-      /* Muted, warm accent colors */
-      --accent-teal: #7eb8c9;
-      --accent-sage: #8cb88c;
-      --accent-gold: #c9b87e;
-      --accent-coral: #c99b8c;
-      --accent-purple: #b0a0c9;
-      
-      /* Softer text - cream instead of white */
-      --text-primary: #d8d4cc;
-      --text-secondary: #9a9890;
-      --text-muted: #6b6860;
-      
-      --border-color: #3a3a38;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      min-height: 100vh;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    .container {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 24px 40px;
-      min-height: 100vh;
-      position: relative;
-    }
-
-    /* ============================================
-       MASTER GRID LAYOUT - OVERVIEW PANEL
-       ============================================
-       12 columns Ã— auto rows
-       Gap: 12px horizontal, 16px vertical
-       
-       CURRENT LAYOUT (locked 2026-01-16):
-       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-       â”‚ Row 1:        â”‚ Header Info                         â”‚ Quick Links   â”‚
-       â”‚ Overview Btn  â”‚ (cols 3-11)                         â”‚ (col 12)      â”‚
-       â”‚ (cols 1-2)    â”‚                                     â”‚               â”‚
-       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-       â”‚ Row 2: True Priorities Label (cols 1-8)             â”‚ Calendar      â”‚
-       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤ (cols 9-12)   â”‚
-       â”‚ Row 3: True Priorities Cards (cols 1-8, 4 cards)    â”‚ (cols 9-12)   â”‚
-       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤ spans         â”‚
-       â”‚ Row 4: Semester Hours Label (cols 1-8)              â”‚ rows 3-8      â”‚
-       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤               â”‚
-       â”‚ Row 5: Semester Hours Cards (cols 1-8, 4 cards)     â”‚               â”‚
-       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤               â”‚
-       â”‚ Row 6: PRIORITIES Label (cols 1-8)                  â”‚               â”‚
-       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤               â”‚
-       â”‚ Row 7: Today's        â”‚ Upcoming Assignments        â”‚               â”‚
-       â”‚ Priorities (cols 1-4) â”‚ (cols 5-8)                  â”‚               â”‚
-       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-       â”‚ Row 8: Weekly Priorities (cols 1-8)                                 â”‚
-       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-       
-       TO MOVE ELEMENTS: Change grid-column and grid-row values below
-       Example: grid-column: 1 / 9 means columns 1-8
-                grid-row: 2 / 8 means rows 2-7
-       ============================================ */
-    
-    .overview-grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: auto auto auto auto auto auto auto auto;
-      gap: 12px;
-      row-gap: 16px;
-    }
-
-    /* Grid Area Assignments - LOCKED POSITIONS */
-    
-    /* ROW 1: Navigation bar */
-    /* NAV: Overview button - cols 1-2, row 1 */
-    .grid-overview-btn { 
-      grid-column: 1 / 3; 
-      grid-row: 1;
-      align-self: center;
-    }
-    
-    /* Header info - cols 5-8, row 1 */
-    .grid-header-info {
-      grid-column: 5 / 9;
-      grid-row: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      white-space: nowrap;
-    }
-    
-    /* NAV: Quick Links - col 12, row 1 */
-    .grid-quick-links { 
-      grid-column: 12 / 13; 
-      grid-row: 1;
-      justify-self: end;
-      align-self: center;
-    }
-    
-    /* ROW 2: True Priorities */
-    .grid-priorities-label { grid-column: 1 / 4; grid-row: 2; align-self: start; }
-    .grid-priorities-cards { grid-column: 1 / 4; grid-row: 3; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    
-    /* ROW 3: Semester Hours (cols 5-7) */
-    .grid-hours-label { grid-column: 5 / 8; grid-row: 2; align-self: start; }
-    .grid-hours-cards { grid-column: 5 / 8; grid-row: 3; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    
-    /* CALENDAR - cols 9-12, rows 3-9 (LOCKED) */
-    .grid-calendar-label { grid-column: 9 / 12; grid-row: 2; align-self: start; }
-    .grid-date-label { grid-column: 12 / 13; grid-row: 2; align-self: start; justify-self: end; }
-    .grid-today-schedule { 
-      grid-column: 9 / 13; 
-      grid-row: 3 / 10;
-    }
-    
-    /* ROW 6: Priorities Section Label */
-    .grid-priorities-section-label { grid-column: 1 / 4; grid-row: 6; align-self: start; margin-top: -8px; }
-    
-    /* ROW 7: Today's Priorities + Upcoming */
-    .grid-today-priorities { grid-column: 1 / 4; grid-row: 7; margin-top: -8px; }
-    .grid-upcoming { grid-column: 5 / 8; grid-row: 7 / 9; margin-top: -8px; }
-    
-    /* ROW 8: Weekly */
-    .grid-weekly { grid-column: 1 / 4; grid-row: 8; }
-
-    /* Header Info (inline in grid) */
-    .header-title {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-primary);
-    }
-    
-    .header-meta-inline {
-      display: flex;
-      gap: 16px;
-      font-size: 12px;
-      color: var(--text-secondary);
-    }
-
-    /* Header */
-    .header {
-      text-align: center;
-      padding: 32px 0 24px;
-      border-bottom: 1px solid var(--border-color);
-      margin-bottom: 28px;
-    }
-
-    .header-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-      color: var(--accent-teal);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .header h1 {
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 12px;
-    }
-
-    .header-meta {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      color: var(--text-secondary);
-      font-size: 14px;
-    }
-
-    /* Hamburger Menu */
-    .nav-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-    }
-
-    .nav-container {
-      position: relative;
-    }
-
-    .hamburger-btn {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 10px 16px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      color: var(--text-primary);
-      font-size: 15px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .hamburger-btn:hover {
-      background: var(--bg-tertiary);
-      border-color: var(--accent-teal);
-    }
-
-    .hamburger-icon {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      width: 18px;
-    }
-
-    .hamburger-icon span {
-      display: block;
-      height: 1px;
-      background: var(--text-primary);
-      border-radius: 1px;
-      transition: all 0.3s ease;
-    }
-
-    .hamburger-btn.open .hamburger-icon span:nth-child(1) {
-      transform: rotate(45deg) translate(4px, 4px);
-    }
-
-    .hamburger-btn.open .hamburger-icon span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger-btn.open .hamburger-icon span:nth-child(3) {
-      transform: rotate(-45deg) translate(4px, -4px);
-    }
-
-    .dropdown-menu {
-      position: absolute;
-      top: calc(100% + 8px);
-      left: 0;
-      min-width: 220px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 8px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: all 0.2s ease;
-      z-index: 100;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    }
-
-    .dropdown-menu.open {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    /* Quick Links Dropdown */
-    .quick-links-container {
-      position: relative;
-    }
-
-    .quick-links-btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 16px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      color: var(--text-primary);
-      font-size: 14px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .quick-links-btn:hover {
-      background: var(--bg-tertiary);
-      border-color: var(--accent-sage);
-      color: var(--text-primary);
-    }
-
-    .quick-links-btn svg {
-      width: 18px;
-      height: 18px;
-      stroke-width: 1.5;
-    }
-
-    .quick-links-dropdown {
-      position: absolute;
-      top: calc(100% + 8px);
-      right: 0;
-      min-width: 180px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 8px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: all 0.2s ease;
-      z-index: 100;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    }
-
-    .quick-links-dropdown.open {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .quick-link-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
-      color: var(--text-secondary);
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
-
-    .quick-link-item:hover {
-      background: var(--bg-tertiary);
-      color: var(--text-primary);
-    }
-
-    .quick-link-item svg {
-      width: 16px;
-      height: 16px;
-      flex-shrink: 0;
-    }
-
-    .dropdown-item {
-      display: block;
-      width: 100%;
-      padding: 12px 16px;
-      background: transparent;
-      border: none;
-      border-radius: 6px;
-      color: var(--text-secondary);
-      font-size: 14px;
-      font-weight: 700;
-      text-align: left;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .dropdown-item:hover {
-      background: var(--bg-tertiary);
-      color: var(--text-primary);
-    }
-
-    .dropdown-item.active {
-      background: var(--accent-teal);
-      color: var(--bg-primary);
-    }
-
-    /* View Panels */
-    .view-panel {
-      display: none;
-    }
-
-    .view-panel.active {
-      display: block;
-    }
-
-    /* True Priorities Section */
-    .priorities-section {
-      margin-bottom: 12px;
-    }
-
-    .priorities-label, .hours-label, .priorities-section-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 10px;
-      color: var(--accent-gold);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-    .priorities-section-label {
-      padding-left: 12px;
-    }
-
-    .priorities-label::before {
-      content: '';
-    }
-
-    .hours-label::before {
-      content: '';
-    }
-
-    /* Hours Gantt Section */
-    .hours-gantt-section {
-      margin-bottom: 16px;
-    }
-
-    /* Stats Bar */
-    .stat-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 14px 12px;
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      text-align: center;
-      min-height: 125px;
-      min-width: 0;
-      overflow: hidden;
-    }
-
-    .stat-card:hover {
-      background: var(--bg-tertiary);
-    }
-
-    .stat-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      line-height: 1.3;
-      min-height: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .stat-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 24px;
-    }
-
-    .stat-value {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--text-primary);
-    }
-
-    .stat-subtext {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-    }
-
-    /* Bandwidth Donut */
-    .bandwidth-donut-container {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .bandwidth-donut {
-      position: relative;
-      width: 28px;
-      height: 28px;
-    }
-
-    .bandwidth-donut svg {
-      transform: rotate(-90deg);
-      width: 28px;
-      height: 28px;
-    }
-
-    .bandwidth-donut .donut-bg {
-      fill: none;
-      stroke: var(--border-color);
-      stroke-width: 6;
-    }
-
-    .bandwidth-donut .donut-fill {
-      fill: none;
-      stroke-width: 6;
-      stroke-linecap: round;
-      transition: stroke-dasharray 0.5s ease;
-    }
-
-    .bandwidth-donut .donut-fill.low {
-      stroke: var(--accent-sage);
-    }
-
-    .bandwidth-donut .donut-fill.medium {
-      stroke: var(--accent-gold);
-    }
-
-    .bandwidth-donut .donut-fill.high {
-      stroke: var(--accent-coral);
-    }
-
-    .bandwidth-donut .donut-tick-yellow {
-      stroke: var(--accent-gold);
-      stroke-width: 1.5;
-    }
-
-    .bandwidth-donut .donut-tick-red {
-      stroke: var(--accent-coral);
-      stroke-width: 1.5;
-    }
-
-    .bandwidth-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .bandwidth-status {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .bandwidth-status.low { color: var(--accent-sage); }
-    .bandwidth-status.medium { color: var(--accent-gold); }
-    .bandwidth-status.high { color: var(--accent-coral); }
-
-    /* Calendar */
-    .today-schedule {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 16px;
-      height: fit-content;
-    }
-
-    .schedule-header {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .timeline {
-      position: relative;
-      height: 350px;
-      border-left: 2px solid var(--border-color);
-      margin-left: 40px;
-    }
-
-    .time-slot {
-      position: absolute;
-      left: -45px;
-      display: flex;
-      align-items: flex-start;
-      width: calc(100% + 45px);
-    }
-
-    .time-label {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 10px;
-      color: var(--text-muted);
-      width: 40px;
-      text-align: right;
-      padding-right: 8px;
-    }
-
-    .time-tick {
-      width: 8px;
-      height: 1px;
-      background: var(--border-color);
-      margin-top: 6px;
-    }
-
-    .time-slot.major .time-tick {
-      width: 12px;
-      background: var(--text-muted);
-    }
-
-    .schedule-event {
-      position: absolute;
-      left: 20px;
-      right: 10px;
-      background: var(--bg-tertiary);
-      border-left: 3px solid var(--text-muted);
-      border-radius: 4px;
-      padding: 6px 10px;
-      font-size: 12px;
-      color: var(--text-secondary);
-    }
-
-    .schedule-event.class { border-left-color: var(--text-muted); }
-    .schedule-event.fellowship { border-left-color: var(--accent-purple); }
-    .schedule-event.meeting { border-left-color: var(--accent-gold); }
-
-    .event-time {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 10px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-    }
-
-    .event-title {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 10px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-primary);
-    }
-
-    /* Current Time Indicator */
-    .current-time-indicator {
-      position: absolute;
-      left: -6px;
-      right: 0;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-    }
-
-    .time-indicator-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--accent-coral);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .time-indicator-line {
-      height: 2px;
-      background: var(--accent-coral);
-      flex-grow: 1;
-    }
-
-    /* Priorities Card */
-    .priority-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .priority-item {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 10px;
-      padding: 10px 12px 10px 16px;
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      border-left: 3px solid var(--accent-sage);
-      text-align: left;
-    }
-
-    .priority-item.completed {
-      opacity: 0.5;
-      border-left-color: var(--accent-sage);
-    }
-
-    .priority-checkbox {
-      width: 18px;
-      height: 18px;
-      border: 2px solid var(--accent-sage);
-      border-radius: 4px;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    .priority-item.completed .priority-checkbox {
-      background: var(--accent-sage);
-      border-color: var(--accent-sage);
-    }
-
-    .priority-item.weekly {
-      border-left-color: var(--accent-sage);
-    }
-
-    .priority-checkbox.weekly {
-      border-color: var(--accent-sage);
-    }
-
-    .priority-text {
-      font-size: 9px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-primary);
-      line-height: 1.4;
-    }
-
-    .priority-item.completed .priority-text {
-      text-decoration: line-through;
-      color: var(--text-muted);
-    }
-
-    /* Assignments Table */
-    .assignments-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .assignments-table th {
-      text-align: left;
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 9px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      padding: 8px 6px 8px 16px;
-      border-bottom: 1px solid var(--border-color);
-      font-weight: 400;
-    }
-
-    .assignments-table td {
-      padding: 10px 6px 10px 16px;
-      font-size: 9px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      line-height: 1.4;
-      color: var(--text-primary);
-      border-bottom: 1px solid var(--border-color);
-      vertical-align: middle;
-      text-align: left;
-    }
-
-    .assignments-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .assignment-class {
-      font-size: 9px;
-      font-weight: 400;
-      color: var(--text-primary);
-    }
-
-    .assignment-name {
-      font-weight: 400;
-      color: var(--text-primary);
-    }
-
-    .assignment-due {
-      font-size: 9px;
-      font-weight: 400;
-      color: var(--accent-sage);
-    }
-
-    .assignment-points {
-      font-size: 9px;
-      font-weight: 400;
-      color: var(--text-primary);
-    }
-
-    /* Weekly Priorities */
-    .weekly-priority-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 10px 12px;
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      margin-bottom: 8px;
-      border-left: 3px solid var(--accent-purple);
-    }
-
-    .weekly-priority-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .weekly-number {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--accent-purple);
-      width: 20px;
-      flex-shrink: 0;
-    }
-
-    .weekly-text {
-      font-size: 13px;
-      color: var(--text-primary);
-      line-height: 1.4;
-    }
-
-    /* Cup Graphic */
-    .cup-container {
-      display: flex;
-      align-items: flex-end;
-      gap: 12px;
-    }
-
-    .cup-graphic {
-      position: relative;
-      width: 22px;
-      height: 28px;
-      background: var(--bg-tertiary);
-      border: none;
-      border-radius: 0 0 5px 5px;
-      overflow: hidden;
-    }
-
-    .cup-graphic::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -2px;
-      right: -2px;
-      height: 2px;
-      background: var(--bg-tertiary);
-      border-radius: 1px;
-    }
-
-    .cup-fill {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(to top, var(--accent-teal), var(--accent-sage));
-      transition: height 0.5s ease;
-      border-radius: 0 0 5px 5px;
-    }
-
-    .cup-fill.low { 
-      background: linear-gradient(to top, var(--accent-coral), #d4a574);
-      height: 25%;
-    }
-    .cup-fill.medium { 
-      background: linear-gradient(to top, var(--accent-gold), var(--accent-sage));
-      height: 55%;
-    }
-    .cup-fill.high { 
-      background: linear-gradient(to top, var(--accent-teal), var(--accent-sage));
-      height: 85%;
-    }
-
-    .cup-steam {
-      position: absolute;
-      top: -18px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 3px;
-    }
-
-    .steam-line {
-      width: 2px;
-      height: 12px;
-      background: var(--text-muted);
-      border-radius: 2px;
-      opacity: 0.5;
-      animation: steam 2s ease-in-out infinite;
-    }
-
-    .steam-line:nth-child(2) { animation-delay: 0.3s; height: 10px; }
-    .steam-line:nth-child(3) { animation-delay: 0.6s; height: 8px; }
-
-    @keyframes steam {
-      0%, 100% { transform: translateY(0); opacity: 0.5; }
-      50% { transform: translateY(-4px); opacity: 0.2; }
-    }
-
-    .cup-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Bandwidth Gauge */
-    .bandwidth-gauge {
-      position: relative;
-      width: 22px;
-      height: 28px;
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border-color);
-      border-radius: 3px;
-      overflow: hidden;
-    }
-
-    .gauge-fill {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: height 0.5s ease;
-      border-radius: 0 0 2px 2px;
-    }
-
-    .gauge-fill.low { 
-      background: linear-gradient(to top, var(--accent-coral), #d4a574);
-      height: 25%;
-    }
-    .gauge-fill.medium { 
-      background: linear-gradient(to top, var(--accent-gold), var(--accent-sage));
-      height: 55%;
-    }
-    .gauge-fill.high { 
-      background: linear-gradient(to top, var(--accent-teal), var(--accent-sage));
-      height: 75%;
-    }
-
-    /* Pulse Line */
-    .pulse-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .pulse-line {
-      width: 50px;
-      height: 24px;
-    }
-
-    .pulse-path {
-      fill: none;
-      stroke-width: 1.5;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .pulse-line.calm .pulse-path {
-      stroke: var(--accent-sage);
-    }
-
-    .pulse-line.stretched .pulse-path {
-      stroke: var(--accent-gold);
-      animation: pulse-glow 2s ease-in-out infinite;
-    }
-
-    .pulse-line.stressed .pulse-path {
-      stroke: var(--accent-coral);
-      animation: pulse-shake 0.5s ease-in-out infinite;
-    }
-
-    @keyframes pulse-glow {
-      0%, 100% { opacity: 0.7; }
-      50% { opacity: 1; }
-    }
-
-    @keyframes pulse-shake {
-      0%, 100% { transform: translateX(0); }
-      25% { transform: translateX(-1px); }
-      75% { transform: translateX(1px); }
-    }
-
-    /* Sanity Graphic (old) */
-    .sanity-container {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .sanity-face {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: var(--bg-primary);
-      border: 2px solid var(--text-muted);
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .sanity-face.stretched {
-      border-color: var(--accent-gold);
-    }
-
-    .sanity-face.struggling {
-      border-color: var(--accent-coral);
-    }
-
-    .sanity-face.good {
-      border-color: var(--accent-sage);
-    }
-
-    .face-eyes {
-      position: absolute;
-      top: 8px;
-      display: flex;
-      gap: 8px;
-    }
-
-    .eye {
-      width: 3px;
-      height: 3px;
-      background: var(--text-primary);
-      border-radius: 50%;
-    }
-
-    .face-mouth {
-      position: absolute;
-      bottom: 7px;
-      width: 10px;
-      height: 4px;
-      border: 2px solid var(--text-primary);
-      border-top: none;
-      border-radius: 0 0 5px 5px;
-    }
-
-    /* Sanity states */
-    .sanity-face.struggling .face-mouth {
-      border-radius: 10px 10px 0 0;
-      border: 2px solid var(--accent-coral);
-      border-bottom: none;
-      bottom: 8px;
-    }
-
-    .sanity-face.stretched .face-mouth {
-      height: 2px;
-      width: 8px;
-      border-radius: 0;
-      border: none;
-      background: var(--accent-gold);
-      bottom: 9px;
-    }
-
-    .sanity-face.good .face-mouth {
-      border-color: var(--accent-sage);
-    }
-
-    .sanity-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sanity-status {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .sanity-status.good { color: var(--accent-sage); }
-    .sanity-status.stretched { color: var(--accent-gold); }
-    .sanity-status.struggling { color: var(--accent-coral); }
-
-    /* Two Column Layout */
-    .two-column {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 24px;
-    }
-
-    /* Section */
-    .section {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 12px 16px 16px 16px;
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 8px;
-      padding-bottom: 8px;
-      padding-left: 16px;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .section-title {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 11px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-primary);
-    }
-
-    .section-action {
-      font-size: 13px;
-      color: var(--accent-teal);
-      text-decoration: none;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-
-    .section-action:hover {
-      color: var(--accent-sage);
-    }
-
-    /* Course/Fellowship Cards */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .card {
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 16px;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-    }
-
-    .card:nth-child(1)::before { background: var(--accent-teal); }
-    .card:nth-child(2)::before { background: var(--accent-coral); }
-    .card:nth-child(3)::before { background: var(--accent-gold); }
-    .card:nth-child(4)::before { background: var(--accent-sage); }
-    .card:nth-child(5)::before { background: var(--accent-purple); }
-
-    .card:hover {
-      background: var(--bg-hover);
-      border-color: var(--accent-teal);
-    }
-
-    .card-code {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 4px;
-    }
-
-    .card-name {
-      font-size: 13px;
-      color: var(--text-secondary);
-      margin-bottom: 10px;
-      line-height: 1.4;
-    }
-
-    .card-meta {
-      display: flex;
-      gap: 12px;
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    /* Fellowship cards - different accent colors */
-    .fellowship-grid .card:nth-child(1)::before { background: var(--accent-purple); }
-    .fellowship-grid .card:nth-child(2)::before { background: var(--accent-gold); }
-    .fellowship-grid .card:nth-child(3)::before { background: var(--accent-coral); }
-
-    /* Weekly Schedule */
-    .schedule-week {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-    }
-
-    .schedule-day {
-      text-align: center;
-    }
-
-    .day-label {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      padding: 8px;
-      border-bottom: 2px solid var(--border-color);
-      margin-bottom: 8px;
-    }
-
-    .day-label.today {
-      color: var(--accent-teal);
-      border-bottom-color: var(--accent-teal);
-    }
-
-    .schedule-item {
-      background: var(--bg-tertiary);
-      border-radius: 6px;
-      padding: 8px 6px;
-      margin-bottom: 6px;
-      font-size: 11px;
-      border-left: 3px solid var(--accent-teal);
-      text-align: left;
-    }
-
-    .schedule-item.clinical { border-left-color: var(--accent-coral); }
-    .schedule-item.meeting { border-left-color: var(--accent-gold); }
-    .schedule-item.fellowship { border-left-color: var(--accent-purple); }
-
-    .schedule-item-time {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 10px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      margin-bottom: 2px;
-    }
-
-    .schedule-item-title {
-      font-family: 'Atkinson Hyperlegible', sans-serif;
-      font-size: 12px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-primary);
-      line-height: 1.3;
-    }
-
-    /* Sidebar */
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    /* Hours Tracker */
-    .tracker-item {
-      margin-bottom: 18px;
-    }
-
-    .tracker-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .tracker-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 8px;
-    }
-
-    .tracker-label {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text-secondary);
-    }
-
-    .tracker-value {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text-primary);
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .progress-bar {
-      height: 8px;
-      background: var(--bg-primary);
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-    .progress-fill {
-      height: 100%;
-      border-radius: 4px;
-      transition: width 0.3s ease;
-    }
-
-    .progress-fill.teal { background: var(--accent-teal); }
-    .progress-fill.coral { background: var(--accent-coral); }
-    .progress-fill.gold { background: var(--accent-gold); }
-    .progress-fill.sage { background: var(--accent-sage); }
-
-    /* Deadlines */
-    .deadline-item {
-      display: flex;
-      gap: 14px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .deadline-item:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .deadline-item:first-child {
-      padding-top: 0;
-    }
-
-    .deadline-date {
-      text-align: center;
-      min-width: 48px;
-    }
-
-    .deadline-day {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--accent-coral);
-      line-height: 1;
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .deadline-month {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-    }
-
-    .deadline-info {
-      flex: 1;
-    }
-
-    .deadline-title {
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 2px;
-      font-size: 14px;
-    }
-
-    .deadline-course {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    /* Quick Links */
-    .link-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-
-    .quick-link {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px;
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      text-decoration: none;
-      color: var(--text-secondary);
-      font-size: 13px;
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-
-    .quick-link:hover {
-      background: var(--accent-teal);
-      color: var(--bg-primary);
-      border-color: var(--accent-teal);
-    }
-
-    .quick-link svg {
-      width: 18px;
-      height: 18px;
-      opacity: 0.7;
-    }
-
-    .quick-link:hover svg {
-      opacity: 1;
-    }
-
-    /* ============ BANDWIDTH VIEW - SLEEP PANEL ============ */
-    .bandwidth-dashboard {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .bandwidth-section-label {
-      font-size: 10px;
-      color: var(--accent-gold);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .bandwidth-section {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 16px;
-      overflow: hidden;
-    }
-
-    /* Day circles row */
-    .day-circles {
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
-    }
-
-    .days-row {
-      display: flex;
-      justify-content: space-between;
-      width: 690px;
-      margin-left: 34px;
-    }
-
-    .wk-wrapper {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-    }
-
-    .day-circle, .wk-circle {
-      position: relative;
-      width: 40px;
-      height: 40px;
-      min-width: 40px;
-      min-height: 40px;
-      max-width: 40px;
-      max-height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .day-circle-bg, .wk-circle-bg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: var(--bg-tertiary);
-    }
-    .day-circle-progress {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
-    .day-circle-inner, .wk-circle-inner {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: var(--bg-secondary);
-    }
-    .day-letter, .wk-letter {
-      position: relative;
-      z-index: 1;
-      font-size: 13px;
-      font-weight: 400;
-      color: var(--text-muted);
-    }
-    .wk-letter {
-      font-size: 12px;
-      letter-spacing: -0.5px;
-    }
-    .day-circle.today .day-letter { color: var(--accent-teal); }
-
-    .wk-circle {
-      cursor: pointer;
-    }
-    .wk-circle:hover .wk-letter {
-      color: var(--accent-teal);
-    }
-
-    /* Sleep content layout */
-    .sleep-content {
-      display: grid;
-      grid-template-columns: 1fr 144px;
-      gap: 24px;
-      align-items: stretch;
-    }
-
-    .sleep-graph-wrapper {
-      display: grid;
-      grid-template-columns: 40px 1fr;
-      grid-template-rows: 1fr auto;
-      gap: 0;
-      height: 100%;
-    }
-
-    .graph-y-labels {
-      grid-column: 1;
-      grid-row: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-right: 8px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    .y-label {
-      font-size: 10px;
-      color: var(--text-muted);
-      text-align: right;
-      line-height: 1;
-    }
-
-    .sleep-graph-container {
-      grid-column: 2;
-      grid-row: 1;
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      overflow: hidden;
-      height: 100%;
-    }
-
-    .sleep-graph {
-      width: 100%;
-      height: 100%;
-    }
-    .sleep-graph svg {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    .graph-line {
-      fill: none;
-      stroke: var(--accent-teal);
-      stroke-width: 2;
-    }
-    .graph-area {
-      fill: var(--accent-teal);
-      opacity: 0.15;
-    }
-
-    .graph-time-labels {
-      grid-column: 2;
-      grid-row: 2;
-      display: flex;
-      justify-content: space-between;
-      font-size: 10px;
-      color: var(--text-muted);
-      padding: 4px 0 0;
-    }
-
-    /* Sleep stats - right side */
-    .sleep-stats-wrapper {
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      padding: 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .quality-circle {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 8px;
-    }
-
-    .quality-gauge {
-      position: relative;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: conic-gradient(
-        var(--accent-teal) 0deg,
-        var(--accent-teal) 338deg,
-        var(--bg-secondary) 338deg
-      );
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .quality-gauge::before {
-      content: '';
-      position: absolute;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--bg-tertiary);
-    }
-    .quality-value {
-      position: relative;
-      z-index: 1;
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--accent-teal);
-    }
-
-    .sleep-stat-card {
-      background: var(--bg-secondary);
-      border-radius: 6px;
-      padding: 6px 8px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .sleep-stat-card .stat-label {
-      font-size: 9px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--text-muted);
-      margin-bottom: 2px;
-      text-align: center;
-    }
-    .sleep-stat-card .stat-value {
-      font-size: 14px;
-      font-weight: 400;
-      text-align: center;
-    }
-
-    .sleep-heart-row {
-      margin-top: 16px;
-    }
-
-    /* Cards grid */
-    .bandwidth-cards {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-
-    .bandwidth-card {
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      padding: 14px 12px;
-      text-align: center;
-    }
-    .bandwidth-card .card-value {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.2;
-    }
-    .card-unit {
-      font-size: 10px;
-      font-weight: 400;
-      color: var(--text-muted);
-    }
-    .bandwidth-card .card-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
-
-    .heart-card .card-value { color: var(--accent-coral); }
-    .activity-card .card-value { color: var(--accent-sage); }
-    .sleep-stage-card .card-value { color: #ffffff; }
-
-    /* Readiness */
-    .readiness-display {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .readiness-gauge {
-      position: relative;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: conic-gradient(
-        var(--accent-sage) 0deg,
-        var(--accent-sage) 252deg,
-        var(--bg-tertiary) 252deg
-      );
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .readiness-gauge::before {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: var(--bg-secondary);
-    }
-    .readiness-value {
-      position: relative;
-      z-index: 1;
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--accent-sage);
-    }
-
-    .readiness-factors {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .factor {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-    }
-    .factor-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-    }
-    .sleep-dot { background: var(--accent-teal); }
-    .hrv-dot { background: var(--accent-purple); }
-    .rhr-dot { background: var(--accent-coral); }
-
-    /* Old bandwidth styles kept for compatibility */
-    .bandwidth-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-    }
-
-    .gauge-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 24px;
-    }
-
-    .gauge {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: conic-gradient(
-        var(--accent-sage) 0deg 216deg,
-        var(--bg-tertiary) 216deg 360deg
-      );
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-
-    .gauge::before {
-      content: '';
-      width: 140px;
-      height: 140px;
-      background: var(--bg-secondary);
-      border-radius: 50%;
-      position: absolute;
-    }
-
-    .gauge-value {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-    }
-
-    .gauge-number {
-      font-size: 42px;
-      font-weight: 700;
-      color: var(--text-primary);
-      font-family: 'JetBrains Mono', monospace;
-      line-height: 1;
-    }
-
-    .gauge-label {
-      font-size: 12px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .gauge-title {
-      margin-top: 16px;
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .metrics-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .metric-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 16px;
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-    }
-
-    .metric-label {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--text-secondary);
-      font-size: 14px;
-    }
-
-    .metric-icon {
-      font-size: 18px;
-    }
-
-    .metric-value {
-      font-weight: 700;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 16px;
-    }
-
-    /* Responsive */
-    @media (max-width: 1000px) {
-      .two-column {
-        grid-template-columns: 1fr;
-      }
-      
-      .sidebar {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      
-      .sidebar > .section {
-        flex: 1;
-        min-width: 280px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 16px;
-      }
-      
-      .stats-bar {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      
-      .card-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .schedule-week {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .tabs {
-        flex-wrap: wrap;
-      }
-
-      .bandwidth-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Semester Calendar Styles */
-    .semester-calendar {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .semester-week {
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 14px 18px;
-      transition: all 0.3s ease;
-    }
-
-    .semester-week:hover {
-      border-color: var(--accent-teal);
-    }
-
-    .semester-week.special {
-      border-left: 4px solid var(--accent-gold);
-    }
-
-    .semester-week.break {
-      border-left: 4px solid var(--accent-sage);
-      background: rgba(140, 184, 140, 0.1);
-    }
-
-    .week-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .week-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--accent-teal);
-    }
-
-    .week-dates {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .week-events {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .event-chip {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      padding: 6px 10px;
-      font-size: 12px;
-      color: var(--text-secondary);
-    }
-
-    .event-chip.clinical {
-      border-left: 3px solid var(--accent-coral);
-    }
-
-    .event-chip.fellowship {
-      border-left: 3px solid var(--accent-purple);
-    }
-
-    .event-chip.presentation {
-      border-left: 3px solid var(--accent-teal);
-      background: rgba(126, 184, 201, 0.15);
-    }
-
-    .event-chip.meeting {
-      border-left: 3px solid var(--accent-gold);
-    }
-
-    .event-chip.deadline {
-      border-left: 3px solid var(--accent-coral);
-      background: rgba(201, 155, 140, 0.15);
-      font-weight: 700;
-    }
-
-    .event-chip.break {
-      border-left: 3px solid var(--accent-sage);
-      background: rgba(140, 184, 140, 0.2);
-      font-weight: 700;
-    }
-
-    /* Hours Tracking Styles */
-    .hours-summary {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 24px;
-      flex-wrap: wrap;
-    }
-
-    .hours-stat {
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 16px 20px;
-      text-align: center;
-      flex: 1;
-      min-width: 100px;
-    }
-
-    .hours-stat-value {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--accent-teal);
-    }
-
-    .hours-stat-label {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
-
-    .hours-table-section {
-      margin-bottom: 24px;
-    }
-
-    .hours-table-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-secondary);
-      margin-bottom: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .hours-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13px;
-    }
-
-    .hours-table th,
-    .hours-table td {
-      padding: 10px 12px;
-      text-align: left;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .hours-table th {
-      background: var(--bg-tertiary);
-      color: var(--text-muted);
-      font-weight: 700;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .hours-table td {
-      color: var(--text-secondary);
-    }
-
-    .hours-table td:first-child {
-      color: var(--text-primary);
-      font-weight: 500;
-    }
-
-    .hours-table .totals-row {
-      background: var(--bg-tertiary);
-      font-weight: 700;
-    }
-
-    .hours-table .totals-row td {
-      color: var(--text-primary);
-    }
-
-    .hours-detail-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-
-    .hours-detail-card {
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 16px;
-    }
-
-    .hours-detail-card h4 {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 10px;
-    }
-
-    .hours-detail-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .hours-detail-card li {
-      font-size: 13px;
-      color: var(--text-secondary);
-      padding: 4px 0;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .hours-detail-card li:last-child {
-      border-bottom: none;
-    }
-
-    .hours-tags {
-      margin-top: 16px;
-    }
-
-    .tag-chips {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .tag-chip {
-      background: var(--bg-tertiary);
-      border: 1px solid var(--accent-teal);
-      border-radius: 20px;
-      padding: 6px 14px;
-      font-size: 12px;
-      color: var(--accent-teal);
-      font-weight: 500;
-    }
-
-    @media (max-width: 768px) {
-      .hours-detail-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .hours-summary {
-        flex-direction: column;
-      }
-    }
-  </style>
+  
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/hours.css">
+  <link rel="stylesheet" href="css/bandwidth.css">
 </head>
 <body>
   <div class="container">
-    <!-- Debug Grid Overlay -->
-    <!-- OVERVIEW PANEL -->
+
+    <!-- ==================== OVERVIEW PANEL ==================== -->
     <div id="overview" class="view-panel active">
       <div class="overview-grid">
         
-        <!-- Row 1: Overview Button (cols 1-2) -->
+        <!-- Row 1: Navigation -->
         <nav class="nav-container grid-overview-btn">
           <button class="hamburger-btn" id="menuBtn">
             <div class="hamburger-icon">
@@ -2119,21 +34,21 @@
             </div>
           </button>
           <div class="dropdown-menu" id="dropdownMenu">
-            <button class="dropdown-item active" data-view="overview" data-label="Overview">Overview</button>
-            <button class="dropdown-item" data-view="hours" data-label="T2T Log">T2T Log</button>
-            <button class="dropdown-item" data-view="calendar" data-label="This Week">This Week</button>
-            <button class="dropdown-item" data-view="semester" data-label="Full Semester">Full Semester</button>
-            <button class="dropdown-item" data-view="deadlines" data-label="Deadlines">Deadlines</button>
-            <button class="dropdown-item" data-view="bandwidth" data-label="Bandwidth">Bandwidth</button>
+            <button class="dropdown-item active" data-view="overview">Overview</button>
+            <button class="dropdown-item" data-view="hours">T2T Log</button>
+            <button class="dropdown-item" data-view="calendar">This Week</button>
+            <button class="dropdown-item" data-view="semester">Full Semester</button>
+            <button class="dropdown-item" data-view="deadlines">Deadlines</button>
+            <button class="dropdown-item" data-view="bandwidth">Bandwidth</button>
           </div>
         </nav>
 
-        <!-- Row 1: Header Info (cols 3-11) -->
+        <!-- Row 1: Header -->
         <div class="grid-header-info">
           <div class="header-title">Spring Semester 2026</div>
         </div>
 
-        <!-- Row 1: Quick Links (col 12) -->
+        <!-- Row 1: Quick Links -->
         <div class="quick-links-container grid-quick-links">
           <button class="quick-links-btn" id="quickLinksBtn">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
@@ -2158,12 +73,12 @@
           </div>
         </div>
 
-        <!-- Row 2: True Priorities Label (cols 1-8) -->
+        <!-- Row 2: True Priorities Label -->
         <div class="grid-priorities-label">
           <div class="priorities-label">True Priorities</div>
         </div>
 
-        <!-- Row 3: True Priorities Cards (cols 1-3) -->
+        <!-- Row 3: True Priorities Cards -->
         <div class="grid-priorities-cards">
           <div class="stat-card">
             <div class="stat-label">Bandwidth</div>
@@ -2172,7 +87,6 @@
                 <svg viewBox="0 0 36 36">
                   <circle class="donut-bg" cx="18" cy="18" r="15"></circle>
                   <circle class="donut-fill low" cx="18" cy="18" r="15" stroke-dasharray="25, 100"></circle>
-                  <!-- Hash marks at 75% and 90% -->
                   <line class="donut-tick-yellow" x1="18" y1="1" x2="18" y2="5" transform="rotate(0, 18, 18)"></line>
                   <line class="donut-tick-red" x1="18" y1="1" x2="18" y2="5" transform="rotate(54, 18, 18)"></line>
                 </svg>
@@ -2209,17 +123,17 @@
           </div>
         </div>
 
-        <!-- Calendar Label (cols 9-11, row 2) -->
+        <!-- Calendar Label -->
         <div class="grid-calendar-label">
           <div class="priorities-label">Calendar</div>
         </div>
 
-        <!-- Date Label (col 12, row 2) -->
+        <!-- Date Label (dynamic) -->
         <div class="grid-date-label">
           <div class="priorities-label" id="currentDateLabel">Date: --/--</div>
         </div>
 
-        <!-- Calendar (cols 9-12, spans rows 3-9) -->
+        <!-- Calendar (dynamic events) -->
         <div class="grid-today-schedule today-schedule">
           <div class="timeline" id="calendarTimeline">
             <div class="time-slot major" style="top: 0%;"><span class="time-label">5 AM</span><div class="time-tick"></div></div>
@@ -2253,26 +167,26 @@
           <div class="hours-label">Semester Hours</div>
         </div>
 
-        <!-- Row 4: Semester Hours Cards (cols 1-8) -->
+        <!-- Row 4: Semester Hours Cards -->
         <div class="grid-hours-cards">
           <div class="stat-card">
             <div class="stat-label">Direct Hours</div>
             <div class="stat-content">
-              <div class="stat-value">5/100</div>
+              <div class="stat-value" id="directHoursValue">5/100</div>
             </div>
             <div class="stat-subtext">5% complete</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Total Hours</div>
             <div class="stat-content">
-              <div class="stat-value">16/500</div>
+              <div class="stat-value" id="totalHoursValue">16/500</div>
             </div>
             <div class="stat-subtext">3.2% complete</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Master's Supervision</div>
             <div class="stat-content">
-              <div class="stat-value">0/40</div>
+              <div class="stat-value" id="supervisionHoursValue">0/40</div>
             </div>
             <div class="stat-subtext">0% complete</div>
           </div>
@@ -2283,7 +197,7 @@
           <div class="priorities-section-label">PRIORITIES</div>
         </div>
 
-        <!-- Row 7: Today's Priorities (cols 1-4) + Upcoming Assignments (cols 5-8) -->
+        <!-- Row 7: Today's Priorities -->
         <div class="grid-today-priorities">
           <section class="section">
             <div class="section-header">
@@ -2310,6 +224,7 @@
           </section>
         </div>
 
+        <!-- Row 7: Upcoming Assignments -->
         <div class="grid-upcoming">
           <section class="section">
             <div class="section-header">
@@ -2354,7 +269,7 @@
           </section>
         </div>
 
-        <!-- Row 6: Weekly Priorities (cols 1-8) -->
+        <!-- Row 8: Weekly Priorities -->
         <div class="grid-weekly">
           <section class="section">
             <div class="section-header">
@@ -2384,15 +299,14 @@
       </div>
     </div>
 
-    <!-- HOURS PANEL -->
+    <!-- ==================== HOURS PANEL ==================== -->
     <div id="hours" class="view-panel">
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">Time2Track Hours Log</h2>
-          <a href="https://app.time2track.com/" target="_blank" class="section-action">Open Time2Track Ã¢â€ â€™</a>
+          <a href="https://app.time2track.com/" target="_blank" class="section-action">Open Time2Track →</a>
         </div>
 
-        <!-- Summary Stats -->
         <div class="hours-summary">
           <div class="hours-stat">
             <div class="hours-stat-value">13.00</div>
@@ -2416,7 +330,6 @@
           </div>
         </div>
 
-        <!-- Hours by Treatment Setting -->
         <div class="hours-table-section">
           <h3 class="hours-table-title">By Treatment Setting</h3>
           <table class="hours-table">
@@ -2459,7 +372,6 @@
           </table>
         </div>
 
-        <!-- Hours by Placement -->
         <div class="hours-table-section">
           <h3 class="hours-table-title">By Placement</h3>
           <table class="hours-table">
@@ -2502,7 +414,6 @@
           </table>
         </div>
 
-        <!-- Hours by Type Detail -->
         <div class="hours-detail-grid">
           <div class="hours-detail-card">
             <h4>Intervention (1.00 hrs)</h4>
@@ -2532,7 +443,6 @@
           </div>
         </div>
 
-        <!-- Tags -->
         <div class="hours-tags">
           <h3 class="hours-table-title">Hours by Tag</h3>
           <div class="tag-chips">
@@ -2540,11 +450,10 @@
             <span class="tag-chip">ADOS-2: 2.00 hrs</span>
           </div>
         </div>
-
       </section>
     </div>
 
-    <!-- CALENDAR PANEL -->
+    <!-- ==================== CALENDAR PANEL ==================== -->
     <div id="calendar" class="view-panel">
       <section class="section">
         <div class="section-header">
@@ -2610,16 +519,15 @@
       </section>
     </div>
 
-    <!-- FULL SEMESTER PANEL -->
+    <!-- ==================== SEMESTER PANEL ==================== -->
     <div id="semester" class="view-panel">
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">Spring 2026 Full Semester</h2>
-          <a href="https://calendar.google.com/calendar/u/0/r" target="_blank" class="section-action">Open Google Calendar Ã¢â€ â€™</a>
+          <a href="https://calendar.google.com/calendar/u/0/r" target="_blank" class="section-action">Open Google Calendar →</a>
         </div>
         <div class="semester-calendar">
           
-          <!-- Week 1: Jan 12-17 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 1</span>
@@ -2630,7 +538,6 @@
             </div>
           </div>
 
-          <!-- Week 2: Jan 19-24 -->
           <div class="semester-week special">
             <div class="week-header">
               <span class="week-label">Week 2</span>
@@ -2648,7 +555,6 @@
             </div>
           </div>
 
-          <!-- Week 3: Jan 26-31 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 3</span>
@@ -2659,7 +565,6 @@
             </div>
           </div>
 
-          <!-- Week 4: Feb 2-7 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 4</span>
@@ -2671,7 +576,6 @@
             </div>
           </div>
 
-          <!-- Week 5: Feb 9-14 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 5</span>
@@ -2683,7 +587,6 @@
             </div>
           </div>
 
-          <!-- Week 6: Feb 16-21 -->
           <div class="semester-week special">
             <div class="week-header">
               <span class="week-label">Week 6</span>
@@ -2691,12 +594,11 @@
             </div>
             <div class="week-events">
               <div class="event-chip clinical">Sun 15: BLOCK for MAEMAE 8a-5p</div>
-              <div class="event-chip meeting">Thu 19: GA Praxis Student Supervision 8a"1p</div>
-              <div class="event-chip meeting">Fri 20: GA Praxis Student Supervision 8a"1p</div>
+              <div class="event-chip meeting">Thu 19: GA Praxis Student Supervision 8a-1p</div>
+              <div class="event-chip meeting">Fri 20: GA Praxis Student Supervision 8a-1p</div>
             </div>
           </div>
 
-          <!-- Week 7: Feb 23-28 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 7</span>
@@ -2707,7 +609,6 @@
             </div>
           </div>
 
-          <!-- Week 8: Mar 2-7 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 8</span>
@@ -2721,19 +622,17 @@
             </div>
           </div>
 
-          <!-- Week 9: Mar 8-14 - SPRING BREAK -->
           <div class="semester-week break">
             <div class="week-header">
               <span class="week-label">Week 9</span>
               <span class="week-dates">Mar 8-14</span>
             </div>
             <div class="week-events">
-              <div class="event-chip break">â€¢ NAU SPRING BREAK â€¢</div>
+              <div class="event-chip break">• NAU SPRING BREAK •</div>
               <div class="event-chip meeting">Wed 11: James & Team Meeting 9-10a</div>
             </div>
           </div>
 
-          <!-- Week 10: Mar 16-21 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 10</span>
@@ -2744,7 +643,6 @@
             </div>
           </div>
 
-          <!-- Week 11: Mar 23-28 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 11</span>
@@ -2755,18 +653,16 @@
             </div>
           </div>
 
-          <!-- Week 12: Mar 30 - Apr 4 -->
           <div class="semester-week special">
             <div class="week-header">
               <span class="week-label">Week 12</span>
-              <span class="week-dates">Mar 30 " Apr 4</span>
+              <span class="week-dates">Mar 30 – Apr 4</span>
             </div>
             <div class="week-events">
               <div class="event-chip fellowship">Tue 31: POTENTIAL Day @ Capital (Phoenix) 8a-5p</div>
             </div>
           </div>
 
-          <!-- Week 13: Apr 6-11 -->
           <div class="semester-week special">
             <div class="week-header">
               <span class="week-label">Week 13</span>
@@ -2779,7 +675,6 @@
             </div>
           </div>
 
-          <!-- Week 14: Apr 13-18 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 14</span>
@@ -2790,7 +685,6 @@
             </div>
           </div>
 
-          <!-- Week 15: Apr 20-25 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 15</span>
@@ -2802,18 +696,16 @@
             </div>
           </div>
 
-          <!-- Week 16: Apr 27 - May 2 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 16</span>
-              <span class="week-dates">Apr 27 " May 2</span>
+              <span class="week-dates">Apr 27 – May 2</span>
             </div>
             <div class="week-events">
               <div class="event-chip">Last week of regular classes</div>
             </div>
           </div>
 
-          <!-- Week 17: May 4-9 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 17</span>
@@ -2825,7 +717,6 @@
             </div>
           </div>
 
-          <!-- Week 18: May 11-16 -->
           <div class="semester-week">
             <div class="week-header">
               <span class="week-label">Week 18</span>
@@ -2840,7 +731,7 @@
       </section>
     </div>
 
-    <!-- DEADLINES PANEL -->
+    <!-- ==================== DEADLINES PANEL ==================== -->
     <div id="deadlines" class="view-panel">
       <section class="section">
         <div class="section-header">
@@ -2919,772 +810,59 @@
       </section>
     </div>
 
-    <!-- BANDWIDTH PANEL -->
+    <!-- ==================== BANDWIDTH PANEL ==================== -->
     <div id="bandwidth" class="view-panel">
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">Self-Care & Bandwidth</h2>
-          <span id="fitbit-updated" style="font-size: 10px; color: var(--text-muted); letter-spacing: 1px;">LOADING...</span>
         </div>
-        
-        <div class="bandwidth-dashboard">
-          <!-- Sleep Section -->
-          <div class="bandwidth-section-label">Sleep</div>
-          <div class="bandwidth-section">
-            <div class="day-circles">
-              <div class="days-row">
-                <div class="day-circle today">
-                  <div class="day-circle-bg"></div>
-                  <svg class="day-circle-progress" viewBox="0 0 40 40">
-                    <circle cx="20" cy="20" r="16" fill="none" stroke="#7eb8c9" stroke-width="3" 
-                            stroke-dasharray="75 101" stroke-linecap="round"
-                            transform="rotate(-90 20 20)"/>
-                  </svg>
-                  <div class="day-circle-inner"></div>
-                  <span class="day-letter">S</span>
-                </div>
-                <div class="day-circle">
-                  <div class="day-circle-bg"></div>
-                  <div class="day-circle-inner"></div>
-                  <span class="day-letter">M</span>
-                </div>
-                <div class="day-circle">
-                  <div class="day-circle-bg"></div>
-                  <div class="day-circle-inner"></div>
-                  <span class="day-letter">T</span>
-                </div>
-                <div class="day-circle">
-                  <div class="day-circle-bg"></div>
-                  <div class="day-circle-inner"></div>
-                  <span class="day-letter">W</span>
-                </div>
-                <div class="day-circle">
-                  <div class="day-circle-bg"></div>
-                  <div class="day-circle-inner"></div>
-                  <span class="day-letter">T</span>
-                </div>
-                <div class="day-circle">
-                  <div class="day-circle-bg"></div>
-                  <div class="day-circle-inner"></div>
-                  <span class="day-letter">F</span>
-                </div>
-                <div class="day-circle">
-                  <div class="day-circle-bg"></div>
-                  <div class="day-circle-inner"></div>
-                  <span class="day-letter">S</span>
-                </div>
-              </div>
-              <div class="wk-wrapper">
-                <div class="wk-circle">
-                  <div class="wk-circle-bg"></div>
-                  <div class="wk-circle-inner"></div>
-                  <span class="wk-letter">WK</span>
-                </div>
+        <div class="bandwidth-grid">
+          <div class="gauge-container">
+            <div class="gauge">
+              <div class="gauge-value">
+                <div class="gauge-number" id="bandwidthScore">-</div>
+                <div class="gauge-label">of 10</div>
               </div>
             </div>
-
-            <div class="sleep-content">
-              <div class="sleep-graph-wrapper">
-                <div class="graph-y-labels">
-                  <span class="y-label">Wake</span>
-                  <span class="y-label">Light</span>
-                  <span class="y-label">REM</span>
-                  <span class="y-label">Deep</span>
-                </div>
-                <div class="sleep-graph-container">
-                  <div class="sleep-graph">
-                    <svg id="hypnogram" viewBox="0 0 400 160" preserveAspectRatio="none">
-                      <path id="hypnogram-area" class="graph-area"/>
-                      <path id="hypnogram-line" class="graph-line"/>
-                    </svg>
-                  </div>
-                </div>
-                <div class="graph-time-labels" id="time-labels"></div>
-              </div>
-
-              <div class="sleep-stats-wrapper">
-                <div class="quality-circle">
-                  <div class="quality-gauge" id="sleep-quality-gauge">
-                    <span class="quality-value" id="sleep-score">--%</span>
-                  </div>
-                </div>
-                <div class="sleep-stat-card">
-                  <span class="stat-label">Total Sleep</span>
-                  <span class="stat-value" id="sleep-duration">--</span>
-                </div>
-                <div class="sleep-stat-card">
-                  <span class="stat-label">Wake Time</span>
-                  <span class="stat-value" id="sleep-end">--</span>
-                </div>
-                <div class="sleep-stat-card">
-                  <span class="stat-label">Sleep Time</span>
-                  <span class="stat-value" id="sleep-start">--</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sleep stages row -->
-            <div class="sleep-heart-row">
-              <div class="bandwidth-cards">
-                <div class="bandwidth-card sleep-stage-card">
-                  <div class="card-value"><span id="sleep-deep">--</span> <span class="card-unit">min</span></div>
-                  <div class="card-label">Deep</div>
-                </div>
-                <div class="bandwidth-card sleep-stage-card">
-                  <div class="card-value"><span id="sleep-light">--</span> <span class="card-unit">min</span></div>
-                  <div class="card-label">Light</div>
-                </div>
-                <div class="bandwidth-card sleep-stage-card">
-                  <div class="card-value"><span id="sleep-rem">--</span> <span class="card-unit">min</span></div>
-                  <div class="card-label">REM</div>
-                </div>
-                <div class="bandwidth-card sleep-stage-card">
-                  <div class="card-value"><span id="sleep-wake">--</span> <span class="card-unit">min</span></div>
-                  <div class="card-label">Wake</div>
-                </div>
-              </div>
-            </div>
+            <div class="gauge-title">Current Bandwidth</div>
           </div>
-
-          <!-- Heart & Recovery -->
-          <div class="bandwidth-section-label">Heart & Recovery</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="resting-hr">--</span> <span class="card-unit">bpm</span></div>
-                <div class="card-label">Resting HR</div>
+          <div class="metrics-list">
+            <div class="metric-row">
+              <div class="metric-label">
+                <div class="metric-icon">•</div>
+                <span>Avg Sleep</span>
               </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="hrv-display">--</span> <span class="card-unit">ms</span></div>
-                <div class="card-label">HRV</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="spo2-display">--</span></div>
-                <div class="card-label">SpO2</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="breathing-display">--</span></div>
-                <div class="card-label">Breathing</div>
-              </div>
+              <div class="metric-value" id="avgSleepValue" style="color: var(--accent-teal);">- hrs</div>
             </div>
-          </div>
-
-          <!-- Activity -->
-          <div class="bandwidth-section-label">Activity</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="steps">--</span></div>
-                <div class="card-label">Steps</div>
+            <div class="metric-row">
+              <div class="metric-label">
+                <div class="metric-icon">•</div>
+                <span>Exercise Days</span>
               </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="distance">--</span> <span class="card-unit">mi</span></div>
-                <div class="card-label">Distance</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="floors">--</span></div>
-                <div class="card-label">Floors</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="elevation">--</span> <span class="card-unit">ft</span></div>
-                <div class="card-label">Elevation</div>
-              </div>
+              <div class="metric-value" id="exerciseDaysValue" style="color: var(--accent-sage);">- / 7</div>
             </div>
-          </div>
-
-          <!-- Calories -->
-          <div class="bandwidth-section-label">Calories</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="cal-total">--</span></div>
-                <div class="card-label">Total</div>
+            <div class="metric-row">
+              <div class="metric-label">
+                <div class="metric-icon">•</div>
+                <span>Social Time</span>
               </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="cal-bmr">--</span></div>
-                <div class="card-label">BMR</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="cal-active">--</span></div>
-                <div class="card-label">Active</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value">--</div>
-                <div class="card-label">--</div>
-              </div>
+              <div class="metric-value" style="color: var(--accent-gold);">- hrs</div>
             </div>
-          </div>
-
-          <!-- Active Minutes -->
-          <div class="bandwidth-section-label">Active Minutes</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="min-sedentary">--</span> <span class="card-unit">min</span></div>
-                <div class="card-label">Sedentary</div>
+            <div class="metric-row">
+              <div class="metric-label">
+                <div class="metric-icon">•</div>
+                <span>Morning Mandatories</span>
               </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="min-lightly">--</span> <span class="card-unit">min</span></div>
-                <div class="card-label">Lightly Active</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="min-fairly">--</span> <span class="card-unit">min</span></div>
-                <div class="card-label">Fairly Active</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="min-very">--</span> <span class="card-unit">min</span></div>
-                <div class="card-label">Very Active</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Active Zone Minutes -->
-          <div class="bandwidth-section-label">Active Zone Minutes</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="azm-total">--</span> <span class="card-unit">min</span></div>
-                <div class="card-label">Total</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="azm-fat">--</span> <span class="card-unit">min</span></div>
-                <div class="card-label">Fat Burn</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="azm-cardio">--</span> <span class="card-unit">min</span></div>
-                <div class="card-label">Cardio</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="azm-peak">--</span> <span class="card-unit">min</span></div>
-                <div class="card-label">Peak</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- HRV -->
-          <div class="bandwidth-section-label">HRV</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="hrv-daily">--</span> <span class="card-unit">ms</span></div>
-                <div class="card-label">Daily RMSSD</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="hrv-deep">--</span> <span class="card-unit">ms</span></div>
-                <div class="card-label">Deep RMSSD</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value">--</div>
-                <div class="card-label">--</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value">--</div>
-                <div class="card-label">--</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Respiratory -->
-          <div class="bandwidth-section-label">Respiratory</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="spo2-avg">--</span> <span class="card-unit">%</span></div>
-                <div class="card-label">SpO2 Avg</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="spo2-min">--</span> <span class="card-unit">%</span></div>
-                <div class="card-label">SpO2 Min</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="spo2-max">--</span> <span class="card-unit">%</span></div>
-                <div class="card-label">SpO2 Max</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="breathing-rate">--</span></div>
-                <div class="card-label">Breathing Rate</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Temperature -->
-          <div class="bandwidth-section-label">Temperature</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="temp-skin">--</span> <span class="card-unit">°</span></div>
-                <div class="card-label">Skin Variation</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value"><span id="temp-core">--</span> <span class="card-unit">°</span></div>
-                <div class="card-label">Core</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value">--</div>
-                <div class="card-label">--</div>
-              </div>
-              <div class="bandwidth-card heart-card">
-                <div class="card-value">--</div>
-                <div class="card-label">--</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cardio Fitness -->
-          <div class="bandwidth-section-label">Cardio Fitness</div>
-          <div class="bandwidth-section">
-            <div class="bandwidth-cards">
-              <div class="bandwidth-card activity-card">
-                <div class="card-value"><span id="vo2max">--</span></div>
-                <div class="card-label">VO2 Max</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value">--</div>
-                <div class="card-label">--</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value">--</div>
-                <div class="card-label">--</div>
-              </div>
-              <div class="bandwidth-card activity-card">
-                <div class="card-value">--</div>
-                <div class="card-label">--</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Readiness -->
-          <div class="bandwidth-section-label">Readiness</div>
-          <div class="bandwidth-section">
-            <div class="readiness-display">
-              <div class="readiness-gauge">
-                <div class="readiness-value">70</div>
-              </div>
-              <div class="readiness-factors">
-                <div class="factor"><span class="factor-dot sleep-dot"></span>Sleep quality</div>
-                <div class="factor"><span class="factor-dot hrv-dot"></span>HRV recovery</div>
-                <div class="factor"><span class="factor-dot rhr-dot"></span>Resting HR</div>
-              </div>
+              <div class="metric-value" style="color: var(--accent-coral);">- / 7</div>
             </div>
           </div>
         </div>
       </section>
     </div>
+
   </div>
 
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const dropdownMenu = document.getElementById('dropdownMenu');
-    const dropdownItems = document.querySelectorAll('.dropdown-item');
-    const panels = document.querySelectorAll('.view-panel');
-
-    // Quick Links
-    const quickLinksBtn = document.getElementById('quickLinksBtn');
-    const quickLinksDropdown = document.getElementById('quickLinksDropdown');
-
-    // Toggle main dropdown
-    menuBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      menuBtn.classList.toggle('open');
-      dropdownMenu.classList.toggle('open');
-      // Close quick links if open
-      quickLinksDropdown.classList.remove('open');
-    });
-
-    // Toggle quick links dropdown
-    quickLinksBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      quickLinksDropdown.classList.toggle('open');
-      // Close main menu if open
-      menuBtn.classList.remove('open');
-      dropdownMenu.classList.remove('open');
-    });
-
-    // Close all dropdowns when clicking outside
-    document.addEventListener('click', () => {
-      menuBtn.classList.remove('open');
-      dropdownMenu.classList.remove('open');
-      quickLinksDropdown.classList.remove('open');
-    });
-
-    // Handle menu item selection
-    dropdownItems.forEach(item => {
-      item.addEventListener('click', (e) => {
-        e.stopPropagation();
-        
-        // Update active states
-        dropdownItems.forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-        
-        // Switch panels
-        panels.forEach(panel => {
-          panel.classList.remove('active');
-          if (panel.id === item.dataset.view) panel.classList.add('active');
-        });
-        
-        // Close dropdown
-        menuBtn.classList.remove('open');
-        dropdownMenu.classList.remove('open');
-      });
-    });
-
-    // ============ HYPNOGRAM RENDERING ============
-    const sleepData = {
-      start_time: "2026-01-17T23:27:00.000",
-      end_time: "2026-01-18T06:37:30.000",
-      levels: [
-        {"dateTime": "2026-01-17T23:27:00.000", "level": "light", "seconds": 420},
-        {"dateTime": "2026-01-17T23:34:00.000", "level": "deep", "seconds": 1350},
-        {"dateTime": "2026-01-17T23:56:30.000", "level": "light", "seconds": 30},
-        {"dateTime": "2026-01-17T23:57:00.000", "level": "deep", "seconds": 150},
-        {"dateTime": "2026-01-17T23:59:30.000", "level": "light", "seconds": 1050},
-        {"dateTime": "2026-01-18T00:17:00.000", "level": "deep", "seconds": 30},
-        {"dateTime": "2026-01-18T00:17:30.000", "level": "light", "seconds": 30},
-        {"dateTime": "2026-01-18T00:18:00.000", "level": "deep", "seconds": 660},
-        {"dateTime": "2026-01-18T00:29:00.000", "level": "light", "seconds": 30},
-        {"dateTime": "2026-01-18T00:29:30.000", "level": "deep", "seconds": 60},
-        {"dateTime": "2026-01-18T00:30:30.000", "level": "light", "seconds": 60},
-        {"dateTime": "2026-01-18T00:31:30.000", "level": "deep", "seconds": 90},
-        {"dateTime": "2026-01-18T00:33:00.000", "level": "light", "seconds": 30},
-        {"dateTime": "2026-01-18T00:33:30.000", "level": "deep", "seconds": 60},
-        {"dateTime": "2026-01-18T00:34:30.000", "level": "light", "seconds": 1560},
-        {"dateTime": "2026-01-18T01:00:30.000", "level": "deep", "seconds": 30},
-        {"dateTime": "2026-01-18T01:01:00.000", "level": "light", "seconds": 60},
-        {"dateTime": "2026-01-18T01:02:00.000", "level": "deep", "seconds": 60},
-        {"dateTime": "2026-01-18T01:03:00.000", "level": "light", "seconds": 30},
-        {"dateTime": "2026-01-18T01:03:30.000", "level": "deep", "seconds": 90},
-        {"dateTime": "2026-01-18T01:05:00.000", "level": "light", "seconds": 690},
-        {"dateTime": "2026-01-18T01:16:30.000", "level": "deep", "seconds": 390},
-        {"dateTime": "2026-01-18T01:23:00.000", "level": "light", "seconds": 60},
-        {"dateTime": "2026-01-18T01:24:00.000", "level": "deep", "seconds": 1230},
-        {"dateTime": "2026-01-18T01:44:30.000", "level": "light", "seconds": 120},
-        {"dateTime": "2026-01-18T01:46:30.000", "level": "deep", "seconds": 30},
-        {"dateTime": "2026-01-18T01:47:00.000", "level": "light", "seconds": 30},
-        {"dateTime": "2026-01-18T01:47:30.000", "level": "deep", "seconds": 30},
-        {"dateTime": "2026-01-18T01:48:00.000", "level": "light", "seconds": 390},
-        {"dateTime": "2026-01-18T01:54:30.000", "level": "deep", "seconds": 90},
-        {"dateTime": "2026-01-18T01:56:00.000", "level": "light", "seconds": 1740},
-        {"dateTime": "2026-01-18T02:25:00.000", "level": "deep", "seconds": 60},
-        {"dateTime": "2026-01-18T02:26:00.000", "level": "light", "seconds": 60},
-        {"dateTime": "2026-01-18T02:27:00.000", "level": "deep", "seconds": 30},
-        {"dateTime": "2026-01-18T02:27:30.000", "level": "light", "seconds": 30},
-        {"dateTime": "2026-01-18T02:28:00.000", "level": "deep", "seconds": 450},
-        {"dateTime": "2026-01-18T02:35:30.000", "level": "light", "seconds": 30},
-        {"dateTime": "2026-01-18T02:36:00.000", "level": "deep", "seconds": 420},
-        {"dateTime": "2026-01-18T02:43:00.000", "level": "light", "seconds": 90},
-        {"dateTime": "2026-01-18T02:44:30.000", "level": "deep", "seconds": 30},
-        {"dateTime": "2026-01-18T02:45:00.000", "level": "light", "seconds": 750},
-        {"dateTime": "2026-01-18T02:57:30.000", "level": "rem", "seconds": 4080},
-        {"dateTime": "2026-01-18T04:05:30.000", "level": "light", "seconds": 1590},
-        {"dateTime": "2026-01-18T04:32:00.000", "level": "deep", "seconds": 1530},
-        {"dateTime": "2026-01-18T04:57:30.000", "level": "light", "seconds": 2250},
-        {"dateTime": "2026-01-18T05:35:00.000", "level": "rem", "seconds": 2730},
-        {"dateTime": "2026-01-18T06:20:30.000", "level": "light", "seconds": 510},
-        {"dateTime": "2026-01-18T06:29:00.000", "level": "wake", "seconds": 510}
-      ]
-    };
-
-    function renderHypnogram() {
-      const svg = document.getElementById('hypnogram');
-      const areaPath = document.getElementById('hypnogram-area');
-      const linePath = document.getElementById('hypnogram-line');
-      const timeLabels = document.getElementById('time-labels');
-      
-      if (!svg || !areaPath || !linePath) return;
-      
-      const padding = 10;
-      const width = 400 - (padding * 2);
-      const height = 160;
-      
-      const levelY = {
-        'wake': 15,
-        'light': 55,
-        'rem': 95,
-        'deep': 135
-      };
-      
-      const startTime = new Date(sleepData.start_time).getTime();
-      const endTime = new Date(sleepData.end_time).getTime();
-      const totalDuration = endTime - startTime;
-      
-      function timeToX(dateTime) {
-        const time = new Date(dateTime).getTime();
-        const ratio = (time - startTime) / totalDuration;
-        return padding + (ratio * width);
-      }
-      
-      let pathD = '';
-      let areaD = '';
-      
-      sleepData.levels.forEach((level, i) => {
-        const x = timeToX(level.dateTime);
-        const y = levelY[level.level];
-        const endX = timeToX(new Date(new Date(level.dateTime).getTime() + (level.seconds * 1000)).toISOString());
-        
-        if (i === 0) {
-          pathD = `M${x},${y}`;
-          areaD = `M${x},${y}`;
-        } else {
-          pathD += ` L${x},${y}`;
-          areaD += ` L${x},${y}`;
-        }
-        
-        pathD += ` L${endX},${y}`;
-        areaD += ` L${endX},${y}`;
-      });
-      
-      const lastX = timeToX(sleepData.end_time);
-      areaD += ` L${lastX},150 L${padding},150 Z`;
-      
-      linePath.setAttribute('d', pathD);
-      areaPath.setAttribute('d', areaD);
-      
-      const gridLines = [80, 160, 240, 320];
-      gridLines.forEach(x => {
-        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line.setAttribute('x1', x);
-        line.setAttribute('y1', 10);
-        line.setAttribute('x2', x);
-        line.setAttribute('y2', 150);
-        line.setAttribute('stroke', '#3a3a38');
-        line.setAttribute('stroke-width', '1');
-        svg.insertBefore(line, areaPath);
-      });
-      
-      if (timeLabels) {
-        timeLabels.innerHTML = '<span>11 PM</span><span>1 AM</span><span>3 AM</span><span>5 AM</span><span>7 AM</span>';
-      }
-    }
-    
-    document.addEventListener('DOMContentLoaded', renderHypnogram);
-
-    // ============ FITBIT DATA FETCH ============
-    const FITBIT_DATA_URL = 'https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/fitbit-latest.json';
-
-    async function fetchFitbitData() {
-      try {
-        const response = await fetch(FITBIT_DATA_URL);
-        if (!response.ok) throw new Error('Failed to fetch');
-        const data = await response.json();
-        populateDashboard(data);
-      } catch (error) {
-        console.error('Error fetching Fitbit data:', error);
-        document.getElementById('fitbit-updated').textContent = 'OFFLINE - Using cached data';
-      }
-    }
-
-    function formatTime(isoString) {
-      if (!isoString) return '--';
-      const date = new Date(isoString);
-      let hours = date.getHours();
-      const minutes = date.getMinutes();
-      const ampm = hours >= 12 ? 'PM' : 'AM';
-      hours = hours % 12 || 12;
-      const minStr = minutes > 0 ? `:${minutes.toString().padStart(2, '0')}` : '';
-      return `${hours}${minStr} ${ampm}`;
-    }
-
-    function formatDuration(minutes) {
-      if (!minutes) return '--';
-      const hrs = Math.floor(minutes / 60);
-      const mins = minutes % 60;
-      return `${hrs}h ${mins}m`;
-    }
-
-    function formatNumber(num) {
-      if (num === undefined || num === null) return '--';
-      return num.toLocaleString();
-    }
-
-    function safeSet(id, value) {
-      const el = document.getElementById(id);
-      if (el) el.textContent = value;
-    }
-
-    function populateDashboard(data) {
-      // Update timestamp
-      if (data.updated_at) {
-        const updated = new Date(data.updated_at);
-        safeSet('fitbit-updated', `UPDATED: ${data.date || updated.toLocaleDateString()}`);
-      }
-
-      // Sleep data
-      const sleep = data.sleep?.summary || {};
-      safeSet('sleep-score', sleep.score ? `${sleep.score}%` : '--%');
-      safeSet('sleep-duration', formatDuration(sleep.duration_minutes));
-      safeSet('sleep-start', formatTime(sleep.start_time));
-      safeSet('sleep-end', formatTime(sleep.end_time));
-      
-      // Update sleep quality gauge
-      const gauge = document.getElementById('sleep-quality-gauge');
-      if (gauge && sleep.score) {
-        const deg = (sleep.score / 100) * 360;
-        gauge.style.background = `conic-gradient(var(--accent-teal) 0deg, var(--accent-teal) ${deg}deg, var(--bg-secondary) ${deg}deg)`;
-      }
-
-      // Sleep stages
-      const stages = sleep.stages || {};
-      safeSet('sleep-deep', stages.deep ?? '--');
-      safeSet('sleep-light', stages.light ?? '--');
-      safeSet('sleep-rem', stages.rem ?? '--');
-      safeSet('sleep-wake', stages.wake ?? '--');
-
-      // Heart
-      const heart = data.heart?.summary || {};
-      safeSet('resting-hr', heart.resting_hr || '--');
-      
-      // HRV
-      const hrv = data.hrv?.summary || {};
-      safeSet('hrv-display', hrv.daily_rmssd || '--');
-      safeSet('hrv-daily', hrv.daily_rmssd || '--');
-      safeSet('hrv-deep', hrv.deep_rmssd || '--');
-
-      // Respiratory
-      const resp = data.respiratory?.summary || {};
-      safeSet('spo2-display', resp.spo2_avg || '--');
-      safeSet('spo2-avg', resp.spo2_avg || '--');
-      safeSet('spo2-min', resp.spo2_min || '--');
-      safeSet('spo2-max', resp.spo2_max || '--');
-      safeSet('breathing-display', resp.breathing_rate || '--');
-      safeSet('breathing-rate', resp.breathing_rate || '--');
-
-      // Activity
-      const activity = data.activity?.summary || {};
-      safeSet('steps', formatNumber(activity.steps));
-      safeSet('distance', activity.distance_miles?.toFixed(1) ?? '--');
-      safeSet('floors', activity.floors ?? '--');
-      safeSet('elevation', activity.elevation?.toFixed(1) ?? '--');
-
-      // Calories
-      const calories = activity.calories || {};
-      safeSet('cal-total', formatNumber(calories.total));
-      safeSet('cal-bmr', formatNumber(calories.bmr));
-      safeSet('cal-active', formatNumber(calories.active));
-
-      // Active Minutes
-      const minutes = activity.minutes || {};
-      safeSet('min-sedentary', minutes.sedentary ?? '--');
-      safeSet('min-lightly', minutes.lightly_active ?? '--');
-      safeSet('min-fairly', minutes.fairly_active ?? '--');
-      safeSet('min-very', minutes.very_active ?? '--');
-
-      // Active Zone Minutes
-      const azm = activity.active_zone_minutes || {};
-      safeSet('azm-total', azm.total ?? '--');
-      safeSet('azm-fat', azm.fat_burn ?? '--');
-      safeSet('azm-cardio', azm.cardio ?? '--');
-      safeSet('azm-peak', azm.peak ?? '--');
-
-      // Temperature
-      const temp = data.temperature || {};
-      safeSet('temp-skin', temp.skin_variation || '--');
-      safeSet('temp-core', temp.core || '--');
-
-      // Cardio Fitness
-      const cardio = data.cardio_fitness || {};
-      safeSet('vo2max', cardio.vo2_max || '--');
-
-      // Update hypnogram with new data
-      if (data.sleep?.levels && data.sleep.levels.length > 0) {
-        renderHypnogramFromData(data.sleep.summary, data.sleep.levels);
-      }
-    }
-
-    function renderHypnogramFromData(summary, levels) {
-      const svg = document.getElementById('hypnogram');
-      const areaPath = document.getElementById('hypnogram-area');
-      const linePath = document.getElementById('hypnogram-line');
-      const timeLabels = document.getElementById('time-labels');
-      
-      if (!svg || !areaPath || !linePath || !levels || levels.length === 0) return;
-      
-      // Clear existing grid lines
-      svg.querySelectorAll('line').forEach(l => l.remove());
-      
-      const padding = 10;
-      const width = 400 - (padding * 2);
-      
-      const levelY = {
-        'wake': 15,
-        'light': 55,
-        'rem': 95,
-        'deep': 135
-      };
-      
-      const startTime = new Date(summary.start_time).getTime();
-      const endTime = new Date(summary.end_time).getTime();
-      const totalDuration = endTime - startTime;
-      
-      function timeToX(dateTime) {
-        const time = new Date(dateTime).getTime();
-        const ratio = (time - startTime) / totalDuration;
-        return padding + (ratio * width);
-      }
-      
-      let pathD = '';
-      let areaD = '';
-      
-      levels.forEach((level, i) => {
-        const x = timeToX(level.dateTime);
-        const y = levelY[level.level];
-        const endX = timeToX(new Date(new Date(level.dateTime).getTime() + (level.seconds * 1000)).toISOString());
-        
-        if (i === 0) {
-          pathD = `M${x},${y}`;
-          areaD = `M${x},${y}`;
-        } else {
-          pathD += ` L${x},${y}`;
-          areaD += ` L${x},${y}`;
-        }
-        
-        pathD += ` L${endX},${y}`;
-        areaD += ` L${endX},${y}`;
-      });
-      
-      const lastX = timeToX(summary.end_time);
-      areaD += ` L${lastX},150 L${padding},150 Z`;
-      
-      linePath.setAttribute('d', pathD);
-      areaPath.setAttribute('d', areaD);
-      
-      // Add grid lines
-      const gridLines = [80, 160, 240, 320];
-      gridLines.forEach(x => {
-        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-        line.setAttribute('x1', x);
-        line.setAttribute('y1', 10);
-        line.setAttribute('x2', x);
-        line.setAttribute('y2', 150);
-        line.setAttribute('stroke', '#3a3a38');
-        line.setAttribute('stroke-width', '1');
-        svg.insertBefore(line, areaPath);
-      });
-      
-      // Generate time labels based on actual sleep window
-      if (timeLabels) {
-        const startHour = new Date(summary.start_time).getHours();
-        const endHour = new Date(summary.end_time).getHours();
-        let labels = [];
-        
-        // Round start down to nearest odd hour for cleaner labels
-        let h = Math.floor(startHour);
-        if (h % 2 === 0) h--;
-        
-        while (h <= endHour + 24) {
-          const displayH = ((h % 24) + 24) % 24;
-          const hour12 = displayH === 0 ? 12 : (displayH > 12 ? displayH - 12 : displayH);
-          const ampm = displayH >= 12 ? 'PM' : 'AM';
-          labels.push(`${hour12} ${ampm}`);
-          h += 2;
-          if (labels.length >= 5) break;
-        }
-        
-        timeLabels.innerHTML = labels.map(l => `<span>${l}</span>`).join('');
-      }
-    }
-
-    // Fetch data on load
-    document.addEventListener('DOMContentLoaded', fetchFitbitData);
-  </script>
+  <!-- Modular JS -->
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
