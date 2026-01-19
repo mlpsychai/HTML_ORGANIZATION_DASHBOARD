@@ -1,0 +1,136 @@
+/* ==============================================
+   GRID LAYOUT - 12-Column System
+   
+   LAYOUT DIAGRAM (locked 2026-01-19):
+   ┌───────────────┬─────────────────────────────────────────┬───────────────┐
+   │ Row 1:        │ Header Info                             │ Quick Links   │
+   │ Overview Btn  │ (cols 5-8)                              │ (col 12)      │
+   │ (cols 1-2)    │                                         │               │
+   ├───────────────┴─────────────────────────────────────────┼───────────────┤
+   │ Row 2: True Priorities Label (cols 1-3)                 │ Calendar      │
+   ├─────────────────────────────────────────────────────────┤ Label (9-11)  │
+   │ Row 3: True Priorities Cards (cols 1-3)                 │ Date (12)     │
+   ├─────────────────────────────────────────────────────────┼───────────────┤
+   │ Row 2: Semester Hours Label (cols 5-7)                  │ Calendar      │
+   ├─────────────────────────────────────────────────────────┤ (cols 9-12)   │
+   │ Row 3: Semester Hours Cards (cols 5-7)                  │ spans         │
+   ├───────────────────────────┬─────────────────────────────┤ rows 3-9      │
+   │ Row 6: PRIORITIES Label   │                             │               │
+   ├───────────────────────────┼─────────────────────────────┤               │
+   │ Row 7: Today's Priorities │ Upcoming Assignments        │               │
+   │ (cols 1-3)                │ (cols 5-7)                  │               │
+   ├───────────────────────────┴─────────────────────────────┼───────────────┤
+   │ Row 8: Weekly Priorities (cols 1-3)                     │               │
+   └─────────────────────────────────────────────────────────┴───────────────┘
+   
+   TO MOVE ELEMENTS: Change grid-column and grid-row values
+   Example: grid-column: 1 / 4 means columns 1-3
+            grid-row: 2 / 8 means rows 2-7
+   ============================================== */
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  gap: 12px;
+  row-gap: 16px;
+}
+
+/* ROW 1: Navigation bar */
+.grid-overview-btn { 
+  grid-column: 1 / 3; 
+  grid-row: 1;
+  align-self: center;
+}
+
+.grid-header-info {
+  grid-column: 5 / 9;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.grid-quick-links { 
+  grid-column: 12 / 13; 
+  grid-row: 1;
+  justify-self: end;
+  align-self: center;
+}
+
+/* ROW 2-3: True Priorities */
+.grid-priorities-label { 
+  grid-column: 1 / 4; 
+  grid-row: 2; 
+  align-self: start; 
+}
+
+.grid-priorities-cards { 
+  grid-column: 1 / 4; 
+  grid-row: 3; 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 12px; 
+}
+
+/* ROW 2-3: Semester Hours */
+.grid-hours-label { 
+  grid-column: 5 / 8; 
+  grid-row: 2; 
+  align-self: start; 
+}
+
+.grid-hours-cards { 
+  grid-column: 5 / 8; 
+  grid-row: 3; 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 12px; 
+}
+
+/* CALENDAR - cols 9-12, rows 2-9 */
+.grid-calendar-label { 
+  grid-column: 9 / 12; 
+  grid-row: 2; 
+  align-self: start; 
+}
+
+.grid-date-label { 
+  grid-column: 12 / 13; 
+  grid-row: 2; 
+  align-self: start; 
+  justify-self: end; 
+}
+
+.grid-today-schedule { 
+  grid-column: 9 / 13; 
+  grid-row: 3 / 10;
+}
+
+/* ROW 6: Priorities Section Label */
+.grid-priorities-section-label { 
+  grid-column: 1 / 4; 
+  grid-row: 6; 
+  align-self: start; 
+  margin-top: -8px; 
+}
+
+/* ROW 7: Today's Priorities + Upcoming */
+.grid-today-priorities { 
+  grid-column: 1 / 4; 
+  grid-row: 7; 
+  margin-top: -8px; 
+}
+
+.grid-upcoming { 
+  grid-column: 5 / 8; 
+  grid-row: 7 / 9; 
+  margin-top: -8px; 
+}
+
+/* ROW 8: Weekly */
+.grid-weekly { 
+  grid-column: 1 / 4; 
+  grid-row: 8; 
+}

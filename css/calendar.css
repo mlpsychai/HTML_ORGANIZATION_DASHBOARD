@@ -1,0 +1,280 @@
+/* ==============================================
+   CALENDAR - Timeline, Events, Time Indicator
+   ============================================== */
+
+.today-schedule {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 16px;
+  height: fit-content;
+}
+
+.schedule-header {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  height: 350px;
+  border-left: 2px solid var(--border-color);
+  margin-left: 40px;
+}
+
+.time-slot {
+  position: absolute;
+  left: -45px;
+  display: flex;
+  align-items: flex-start;
+  width: calc(100% + 45px);
+}
+
+.time-label {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  color: var(--text-muted);
+  width: 40px;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.time-tick {
+  width: 8px;
+  height: 1px;
+  background: var(--border-color);
+  margin-top: 6px;
+}
+
+.time-slot.major .time-tick {
+  width: 12px;
+  background: var(--text-muted);
+}
+
+/* Events */
+.schedule-event {
+  position: absolute;
+  left: 20px;
+  right: 10px;
+  background: var(--bg-tertiary);
+  border-left: 3px solid var(--text-muted);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  overflow: hidden;
+}
+
+.schedule-event.class { border-left-color: var(--text-muted); }
+.schedule-event.clinical { border-left-color: var(--accent-teal); }
+.schedule-event.fellowship { border-left-color: var(--accent-purple); }
+.schedule-event.meeting { border-left-color: var(--accent-gold); }
+.schedule-event.personal { border-left-color: var(--accent-sage); }
+.schedule-event.default { border-left-color: var(--text-secondary); }
+
+.event-time {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.event-title {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+}
+
+/* Current Time Indicator */
+.current-time-indicator {
+  position: absolute;
+  left: -6px;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.time-indicator-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-coral);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.time-indicator-line {
+  height: 2px;
+  background: var(--accent-coral);
+  flex-grow: 1;
+}
+
+/* Weekly Schedule View */
+.schedule-week {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.schedule-day {
+  text-align: center;
+}
+
+.day-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  padding: 8px;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 8px;
+}
+
+.day-label.today {
+  color: var(--accent-teal);
+  border-bottom-color: var(--accent-teal);
+}
+
+.schedule-item {
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  padding: 8px 6px;
+  margin-bottom: 6px;
+  font-size: 11px;
+  border-left: 3px solid var(--accent-teal);
+  text-align: left;
+}
+
+.schedule-item.clinical { border-left-color: var(--accent-coral); }
+.schedule-item.meeting { border-left-color: var(--accent-gold); }
+.schedule-item.fellowship { border-left-color: var(--accent-purple); }
+
+.schedule-item-time {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.schedule-item-title {
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+/* Semester Calendar */
+.semester-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.semester-week {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 14px 18px;
+  transition: all 0.3s ease;
+}
+
+.semester-week:hover {
+  border-color: var(--accent-teal);
+}
+
+.semester-week.special {
+  border-left: 4px solid var(--accent-gold);
+}
+
+.semester-week.break {
+  border-left: 4px solid var(--accent-sage);
+  background: rgba(140, 184, 140, 0.1);
+}
+
+.week-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.week-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-teal);
+}
+
+.week-dates {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.week-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.event-chip {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.event-chip.clinical {
+  border-left: 3px solid var(--accent-coral);
+}
+
+.event-chip.fellowship {
+  border-left: 3px solid var(--accent-purple);
+}
+
+.event-chip.presentation {
+  border-left: 3px solid var(--accent-teal);
+  background: rgba(126, 184, 201, 0.15);
+}
+
+.event-chip.meeting {
+  border-left: 3px solid var(--accent-gold);
+}
+
+.event-chip.deadline {
+  border-left: 3px solid var(--accent-coral);
+  background: rgba(201, 155, 140, 0.15);
+  font-weight: 700;
+}
+
+.event-chip.break {
+  border-left: 3px solid var(--accent-sage);
+  background: rgba(140, 184, 140, 0.2);
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .schedule-week {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

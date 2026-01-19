@@ -1,0 +1,211 @@
+/* ==============================================
+   HOURS TRACKING - T2T, Progress Bars, Tables
+   ============================================== */
+
+/* Hours Gantt Section */
+.hours-gantt-section {
+  margin-bottom: 16px;
+}
+
+/* Tracker Items */
+.tracker-item {
+  margin-bottom: 18px;
+}
+
+.tracker-item:last-child {
+  margin-bottom: 0;
+}
+
+.tracker-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.tracker-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.tracker-value {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 8px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  transition: width 0.3s ease;
+}
+
+.progress-fill.teal { background: var(--accent-teal); }
+.progress-fill.coral { background: var(--accent-coral); }
+.progress-fill.gold { background: var(--accent-gold); }
+.progress-fill.sage { background: var(--accent-sage); }
+
+/* Hours Summary */
+.hours-summary {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.hours-stat {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.hours-stat-value {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent-teal);
+}
+
+.hours-stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Hours Table */
+.hours-table-section {
+  margin-bottom: 24px;
+}
+
+.hours-table-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hours-table th {
+  background: var(--bg-tertiary);
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hours-table td {
+  color: var(--text-secondary);
+}
+
+.hours-table td:first-child {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.hours-table .totals-row {
+  background: var(--bg-tertiary);
+  font-weight: 700;
+}
+
+.hours-table .totals-row td {
+  color: var(--text-primary);
+}
+
+/* Hours Detail Grid */
+.hours-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.hours-detail-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}
+
+.hours-detail-card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.hours-detail-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-detail-card li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hours-detail-card li:last-child {
+  border-bottom: none;
+}
+
+/* Tags */
+.hours-tags {
+  margin-top: 16px;
+}
+
+.tag-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag-chip {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--accent-teal);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+  color: var(--accent-teal);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hours-detail-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hours-summary {
+    flex-direction: column;
+  }
+}

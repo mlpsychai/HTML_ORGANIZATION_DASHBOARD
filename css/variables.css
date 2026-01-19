@@ -1,0 +1,43 @@
+/* ==============================================
+   DESIGN TOKENS - Spring 2026 Dashboard
+   Last updated: 2026-01-19
+   ============================================== */
+
+:root {
+  /* Warm, low-contrast dark theme */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #242424;
+  --bg-tertiary: #2e2e2e;
+  --bg-hover: #383838;
+  
+  /* Muted, warm accent colors */
+  --accent-teal: #7eb8c9;
+  --accent-sage: #8cb88c;
+  --accent-gold: #c9b87e;
+  --accent-coral: #c99b8c;
+  --accent-purple: #b0a0c9;
+  
+  /* Softer text - cream instead of white */
+  --text-primary: #d8d4cc;
+  --text-secondary: #9a9890;
+  --text-muted: #6b6860;
+  
+  --border-color: #3a3a38;
+  
+  /* Typography */
+  --font-primary: 'Atkinson Hyperlegible', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+}
