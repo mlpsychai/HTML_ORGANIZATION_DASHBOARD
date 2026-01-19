@@ -617,6 +617,18 @@
     .schedule-event.class { border-left-color: var(--text-muted); }
     .schedule-event.fellowship { border-left-color: var(--accent-purple); }
     .schedule-event.meeting { border-left-color: var(--accent-gold); }
+    .schedule-event.clinical { border-left-color: var(--accent-teal); }
+    .schedule-event.personal { border-left-color: var(--accent-sage); }
+    .schedule-event.default { border-left-color: var(--text-secondary); }
+    
+    .time-indicator {
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
 
     .event-time {
       font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -1853,7 +1865,7 @@
 
         <!-- Date Label (col 12, row 2) -->
         <div class="grid-date-label">
-          <div class="priorities-label">Date: 01/16</div>
+          <div class="priorities-label" data-date-label>Loading...</div>
         </div>
 
         <!-- Calendar (cols 9-12, spans rows 3-9) -->
@@ -1875,14 +1887,7 @@
             <div class="time-slot" style="top: 83.2%;"><span class="time-label">6 PM</span><div class="time-tick"></div></div>
             <div class="time-slot major" style="top: 89.6%;"><span class="time-label">7 PM</span><div class="time-tick"></div></div>
             <div class="time-slot" style="top: 96%;"><span class="time-label">8 PM</span><div class="time-tick"></div></div>
-            <div class="schedule-event class" style="top: 25.6%; height: 16%;">
-              <div class="event-time">9:00 AM - 11:30 AM</div>
-              <div class="event-title">EPS 609 - Cognition & Affect</div>
-            </div>
-            <div class="schedule-event class" style="top: 70.4%; height: 16%;">
-              <div class="event-time">4:00 PM - 6:30 PM</div>
-              <div class="event-title">EPS 706 - History & Systems</div>
-            </div>
+            <!-- Events will be dynamically injected here -->
           </div>
         </div>
 
@@ -1896,23 +1901,23 @@
           <div class="stat-card">
             <div class="stat-label">Direct Hours</div>
             <div class="stat-content">
-              <div class="stat-value">5/100</div>
+              <div class="stat-value" data-hours="direct">-/-</div>
             </div>
-            <div class="stat-subtext">5% complete</div>
+            <div class="stat-subtext" data-hours-pct="direct">-% complete</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Total Hours</div>
             <div class="stat-content">
-              <div class="stat-value">16/500</div>
+              <div class="stat-value" data-hours="total">-/-</div>
             </div>
-            <div class="stat-subtext">3.2% complete</div>
+            <div class="stat-subtext" data-hours-pct="total">-% complete</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Master's Supervision</div>
             <div class="stat-content">
-              <div class="stat-value">0/40</div>
+              <div class="stat-value" data-hours="supervision">-/-</div>
             </div>
-            <div class="stat-subtext">0% complete</div>
+            <div class="stat-subtext" data-hours-pct="supervision">-% complete</div>
           </div>
         </div>
 
@@ -2607,6 +2612,162 @@
       </section>
     </div>
   </div>
+
+  <!-- Calendar & Hours Integration -->
+  <script>
+    // ============================================
+    // LIVE DATA INTEGRATION
+    // ============================================
+    
+    const DashboardData = {
+      calendar: null,
+      hours: null,
+      
+      // Fetch calendar data
+      async loadCalendar() {
+        try {
+          const res = await fetch('./data/calendar_data.json?_=' + Date.now());
+          if (!res.ok) throw new Error('Not found');
+          this.calendar = await res.json();
+          this.updateCalendarUI();
+          console.log('📅 Calendar loaded:', this.calendar.meta.total_events, 'events');
+        } catch (e) {
+          console.warn('Calendar data not available:', e.message);
+        }
+      },
+      
+      // Fetch hours data (when available)
+      async loadHours() {
+        try {
+          const res = await fetch('./data/time2track_data.json?_=' + Date.now());
+          if (!res.ok) throw new Error('Not found');
+          this.hours = await res.json();
+          this.updateHoursUI();
+          console.log('📊 Hours loaded:', this.hours.summary?.total_hours, 'total');
+        } catch (e) {
+          console.warn('Hours data not available:', e.message);
+        }
+      },
+      
+      // Update calendar UI elements
+      updateCalendarUI() {
+        if (!this.calendar) return;
+        
+        // Update date label
+        const dateLabel = document.querySelector('[data-date-label]');
+        if (dateLabel && this.calendar.today) {
+          const d = new Date(this.calendar.today.date + 'T12:00:00');
+          dateLabel.textContent = d.toLocaleDateString('en-US', { 
+            month: 'numeric', 
+            day: 'numeric',
+            weekday: 'short'
+          });
+        }
+        
+        // Update timeline events
+        const timeline = document.querySelector('.timeline');
+        if (timeline && this.calendar.today?.events) {
+          // Remove existing events
+          timeline.querySelectorAll('.schedule-event').forEach(el => el.remove());
+          
+          // Add today's events
+          this.calendar.today.events.forEach(event => {
+            const div = document.createElement('div');
+            div.className = `schedule-event ${event.category || 'default'}`;
+            div.style.cssText = `top: ${event.top_percent}%; height: ${Math.max(event.height_percent, 4)}%;`;
+            div.innerHTML = `
+              <div class="event-time">${this.escapeHtml(event.start_time)} - ${this.escapeHtml(event.end_time)}</div>
+              <div class="event-title">${this.escapeHtml(event.title)}</div>
+            `;
+            timeline.appendChild(div);
+          });
+          
+          // Add current time indicator
+          this.updateTimeIndicator(timeline);
+        }
+      },
+      
+      // Update time indicator
+      updateTimeIndicator(timeline) {
+        timeline.querySelector('.time-indicator')?.remove();
+        
+        const now = new Date();
+        const hour = now.getHours() + now.getMinutes() / 60;
+        
+        if (hour < 5 || hour > 20) return;
+        
+        const pct = ((hour - 5) / 15) * 100;
+        
+        const indicator = document.createElement('div');
+        indicator.className = 'time-indicator';
+        indicator.style.cssText = `
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: ${pct}%;
+          height: 2px;
+          background: var(--accent-coral);
+          z-index: 10;
+        `;
+        indicator.innerHTML = `<div style="
+          position: absolute;
+          left: 50px;
+          top: -4px;
+          width: 10px;
+          height: 10px;
+          background: var(--accent-coral);
+          border-radius: 50%;
+        "></div>`;
+        timeline.appendChild(indicator);
+      },
+      
+      // Update hours UI elements
+      updateHoursUI() {
+        if (!this.hours) return;
+        
+        const reqs = { direct: 100, total: 500, supervision: 40 };
+        
+        ['direct', 'total', 'supervision'].forEach(type => {
+          const current = this.hours.summary?.[type + '_hours'] || 0;
+          const required = reqs[type];
+          const pct = Math.round((current / required) * 100);
+          
+          const valueEl = document.querySelector(`[data-hours="${type}"]`);
+          if (valueEl) valueEl.textContent = `${current}/${required}`;
+          
+          const pctEl = document.querySelector(`[data-hours-pct="${type}"]`);
+          if (pctEl) pctEl.textContent = `${pct}% complete`;
+        });
+      },
+      
+      escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>"']/g, c => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[c]));
+      },
+      
+      // Initialize
+      async init() {
+        await Promise.all([
+          this.loadCalendar(),
+          this.loadHours()
+        ]);
+        
+        // Refresh every 5 minutes
+        setInterval(() => this.loadCalendar(), 5 * 60 * 1000);
+        
+        // Update time indicator every minute
+        setInterval(() => {
+          const timeline = document.querySelector('.timeline');
+          if (timeline) this.updateTimeIndicator(timeline);
+        }, 60 * 1000);
+      }
+    };
+    
+    // Start loading data
+    document.addEventListener('DOMContentLoaded', () => DashboardData.init());
+  </script>
 
   <script>
     const menuBtn = document.getElementById('menuBtn');
