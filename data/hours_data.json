@@ -1,0 +1,65 @@
+{
+  "updated_at": "2026-01-19T12:00:00Z",
+  "semester": {
+    "start": "2026-01-12",
+    "end": "2026-05-08"
+  },
+  "direct": {
+    "current": 12.0,
+    "goal": 100,
+    "label": "Direct Client Hours"
+  },
+  "total": {
+    "current": 14.15,
+    "goal": 500,
+    "label": "Total Hours"
+  },
+  "supervision": {
+    "received": {
+      "current": 2.15,
+      "goal": 50,
+      "label": "Supervision Received"
+    },
+    "provided": {
+      "current": 0,
+      "goal": 40,
+      "label": "Masters Supervision Provided"
+    }
+  },
+  "categories": {
+    "therapy": {
+      "current": 6.0,
+      "label": "Individual Therapy"
+    },
+    "assessment": {
+      "current": 4.0,
+      "label": "Psychological Assessment"
+    },
+    "consultation": {
+      "current": 2.0,
+      "label": "Consultation"
+    },
+    "supervision_received": {
+      "current": 2.15,
+      "label": "Supervision Received"
+    }
+  },
+  "sites": {
+    "chc": {
+      "label": "Children's Health Center",
+      "hours": 8.0
+    },
+    "private_practice": {
+      "label": "Private Practice",
+      "hours": 4.0
+    },
+    "middle_school": {
+      "label": "Middle School",
+      "hours": 0
+    },
+    "ihd": {
+      "label": "IHD - ADOS Evaluations",
+      "hours": 2.15
+    }
+  }
+}
