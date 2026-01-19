@@ -1,72 +1,11 @@
 /* ==============================================
    BANDWIDTH - Gauges, Metrics, Cup, Pulse
+   + Full Panel Styles
    ============================================== */
 
-/* Bandwidth View Grid */
-.bandwidth-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
-/* Large Gauge */
-.gauge-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px;
-}
-
-.gauge {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: conic-gradient(
-    var(--accent-sage) 0deg 216deg,
-    var(--bg-tertiary) 216deg 360deg
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.gauge::before {
-  content: '';
-  width: 140px;
-  height: 140px;
-  background: var(--bg-secondary);
-  border-radius: 50%;
-  position: absolute;
-}
-
-.gauge-value {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-
-.gauge-number {
-  font-size: 42px;
-  font-weight: 700;
-  color: var(--text-primary);
-  font-family: var(--font-mono);
-  line-height: 1;
-}
-
-.gauge-label {
-  font-size: 12px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.gauge-title {
-  margin-top: 16px;
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--text-primary);
-}
+/* ============================================
+   OVERVIEW COMPONENTS (small cards)
+   ============================================ */
 
 /* Bandwidth Donut (small) */
 .bandwidth-donut-container {
@@ -112,56 +51,6 @@
 .bandwidth-donut .donut-tick-red {
   stroke: var(--accent-coral);
   stroke-width: 1.5;
-}
-
-.bandwidth-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.bandwidth-status {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.bandwidth-status.low { color: var(--accent-sage); }
-.bandwidth-status.medium { color: var(--accent-gold); }
-.bandwidth-status.high { color: var(--accent-coral); }
-
-/* Bandwidth Gauge (vertical bar) */
-.bandwidth-gauge {
-  position: relative;
-  width: 22px;
-  height: 28px;
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.gauge-fill {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: height 0.5s ease;
-  border-radius: 0 0 2px 2px;
-}
-
-.gauge-fill.low { 
-  background: linear-gradient(to top, var(--accent-coral), #d4a574);
-  height: 25%;
-}
-
-.gauge-fill.medium { 
-  background: linear-gradient(to top, var(--accent-gold), var(--accent-sage));
-  height: 55%;
-}
-
-.gauge-fill.high { 
-  background: linear-gradient(to top, var(--accent-teal), var(--accent-sage));
-  height: 75%;
 }
 
 /* Cup Graphic */
@@ -243,11 +132,6 @@
   50% { transform: translateY(-4px); opacity: 0.2; }
 }
 
-.cup-info {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Pulse Line */
 .pulse-container {
   display: flex;
@@ -267,15 +151,11 @@
   stroke-linejoin: round;
 }
 
-.pulse-line.calm .pulse-path {
-  stroke: var(--accent-sage);
-}
-
+.pulse-line.calm .pulse-path { stroke: var(--accent-sage); }
 .pulse-line.stretched .pulse-path {
   stroke: var(--accent-gold);
   animation: pulse-glow 2s ease-in-out infinite;
 }
-
 .pulse-line.stressed .pulse-path {
   stroke: var(--accent-coral);
   animation: pulse-shake 0.5s ease-in-out infinite;
@@ -292,146 +172,382 @@
   75% { transform: translateX(1px); }
 }
 
-/* Sanity Graphic */
-.sanity-container {
+/* ============================================
+   FULL BANDWIDTH PANEL STYLES
+   ============================================ */
+
+.bandwidth-dashboard {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.sanity-face {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--bg-primary);
-  border: 2px solid var(--text-muted);
+.bandwidth-section-label {
+  font-size: 10px;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.bandwidth-section {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+/* Day Circles Row */
+.day-circles {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.days-row {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 690px;
+  margin-left: 34px;
+}
+
+.wk-wrapper {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+.day-circle, .wk-circle {
   position: relative;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
-.sanity-face.stretched { border-color: var(--accent-gold); }
-.sanity-face.struggling { border-color: var(--accent-coral); }
-.sanity-face.good { border-color: var(--accent-sage); }
-
-.face-eyes {
+.day-circle-bg, .wk-circle-bg {
   position: absolute;
-  top: 8px;
-  display: flex;
-  gap: 8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
 }
 
-.eye {
-  width: 3px;
-  height: 3px;
-  background: var(--text-primary);
+.day-circle-progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
-.face-mouth {
+.day-circle-inner, .wk-circle-inner {
   position: absolute;
-  bottom: 7px;
-  width: 10px;
-  height: 4px;
-  border: 2px solid var(--text-primary);
-  border-top: none;
-  border-radius: 0 0 5px 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
 }
 
-.sanity-face.struggling .face-mouth {
-  border-radius: 10px 10px 0 0;
-  border: 2px solid var(--accent-coral);
-  border-bottom: none;
-  bottom: 8px;
+.day-letter, .wk-letter {
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
 }
 
-.sanity-face.stretched .face-mouth {
-  height: 2px;
-  width: 8px;
-  border-radius: 0;
-  border: none;
-  background: var(--accent-gold);
-  bottom: 9px;
+.wk-letter {
+  font-size: 12px;
+  letter-spacing: -0.5px;
 }
 
-.sanity-face.good .face-mouth {
-  border-color: var(--accent-sage);
+.day-circle.today .day-letter { color: var(--accent-teal); }
+
+.wk-circle { cursor: pointer; }
+.wk-circle:hover .wk-letter { color: var(--accent-teal); }
+
+/* Sleep Content Grid */
+.sleep-content {
+  display: grid;
+  grid-template-columns: 1fr 144px;
+  gap: 24px;
+  align-items: stretch;
 }
 
-.sanity-info {
+.sleep-graph-wrapper {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 0;
+  height: 100%;
+}
+
+.graph-y-labels {
+  grid-column: 1;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.sanity-status {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-primary);
+.y-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-align: right;
+  line-height: 1;
 }
 
-.sanity-status.good { color: var(--accent-sage); }
-.sanity-status.stretched { color: var(--accent-gold); }
-.sanity-status.struggling { color: var(--accent-coral); }
-
-/* Metrics List */
-.metrics-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.sleep-graph-container {
+  grid-column: 2;
+  grid-row: 1;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 160px;
 }
 
-.metric-row {
+.sleep-graph {
+  width: 100%;
+  height: 100%;
+}
+
+.sleep-graph svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.graph-line {
+  fill: none;
+  stroke: var(--accent-teal);
+  stroke-width: 2;
+}
+
+.graph-area {
+  fill: var(--accent-teal);
+  opacity: 0.15;
+}
+
+.graph-time-labels {
+  grid-column: 2;
+  grid-row: 2;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
+  font-size: 10px;
+  color: var(--text-muted);
+  padding: 4px 0 0;
+}
+
+/* Sleep Stats Sidebar */
+.sleep-stats-wrapper {
   background: var(--bg-tertiary);
-  border-radius: var(--radius-md);
-}
-
-.metric-label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--text-secondary);
-  font-size: 14px;
-}
-
-.metric-icon {
-  font-size: 18px;
-}
-
-.metric-value {
-  font-weight: 700;
-  font-family: var(--font-mono);
-  font-size: 16px;
-}
-
-/* Sidebar */
-.sidebar {
+  border-radius: 8px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 8px;
 }
 
-/* Responsive */
-@media (max-width: 1000px) {
-  .sidebar {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-  .sidebar > .section {
-    flex: 1;
-    min-width: 280px;
-  }
+.quality-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8px;
 }
+
+.quality-gauge {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--accent-teal) 0deg,
+    var(--accent-teal) 338deg,
+    var(--bg-secondary) 338deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quality-gauge::before {
+  content: '';
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-tertiary);
+}
+
+.quality-value {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--accent-teal);
+}
+
+.sleep-stat-card {
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sleep-stat-card .stat-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.sleep-stat-card .stat-value {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Sleep Stages Row */
+.sleep-heart-row {
+  margin-top: 16px;
+}
+
+/* Bandwidth Cards Grid */
+.bandwidth-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.bandwidth-card {
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 14px 12px;
+  text-align: center;
+}
+
+.bandwidth-card .card-value {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card-unit {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.bandwidth-card .card-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.heart-card .card-value { color: var(--accent-coral); }
+.activity-card .card-value { color: var(--accent-sage); }
+.sleep-stage-card .card-value { color: var(--text-primary); }
+
+/* Readiness Section */
+.readiness-display {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.readiness-gauge {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--accent-sage) 0deg,
+    var(--accent-sage) 252deg,
+    var(--bg-tertiary) 252deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.readiness-gauge::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+}
+
+.readiness-value {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--accent-sage);
+}
+
+.readiness-factors {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.factor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.factor-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.sleep-dot { background: var(--accent-teal); }
+.hrv-dot { background: var(--accent-purple); }
+.rhr-dot { background: var(--accent-coral); }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
 
 @media (max-width: 768px) {
-  .bandwidth-grid {
+  .sleep-content {
     grid-template-columns: 1fr;
+  }
+  
+  .bandwidth-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .days-row {
+    margin-left: 0;
   }
 }
