@@ -6,7 +6,7 @@ const CONFIG = {
   // Data sources
   dataUrls: {
     calendar: 'https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/calendar_data.json',
-    fitbit: 'https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/fitbit_data.json',
+    fitbit: 'https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/fitbit-latest.json',
     hours: 'https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/hours_data.json'
   },
   
