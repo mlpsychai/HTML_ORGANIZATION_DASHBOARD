@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/calendar.css">
   <link rel="stylesheet" href="css/hours.css">
   <link rel="stylesheet" href="css/bandwidth.css">
+  <link rel="stylesheet" href="css/weekly-calendar.css">
 </head>
 <body>
   <div class="container">
@@ -84,135 +85,106 @@
                   <line class="donut-tick-yellow" x1="18" y1="1" x2="18" y2="5" transform="rotate(0, 18, 18)"></line>
                   <line class="donut-tick-red" x1="18" y1="1" x2="18" y2="5" transform="rotate(54, 18, 18)"></line>
                 </svg>
-              </div>
-            </div>
-            <div class="stat-subtext">Protect energy</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-label">Cup Status</div>
-            <div class="stat-content">
-              <div class="cup-container">
-                <div class="cup-graphic">
-                  <div class="cup-steam">
-                    <div class="steam-line"></div>
-                    <div class="steam-line"></div>
-                    <div class="steam-line"></div>
-                  </div>
-                  <div class="cup-fill medium"></div>
+                <div class="donut-center" id="bandwidthCenter">
+                  <span class="cup-icon">🥤</span>
+                  <span class="cup-status">HALF FULL</span>
                 </div>
               </div>
             </div>
-            <div class="stat-subtext">Half full</div>
+            <div class="stat-sublabel">Cup Status</div>
           </div>
+
           <div class="stat-card">
             <div class="stat-label">Sanity Check</div>
             <div class="stat-content">
-              <div class="pulse-container">
-                <svg class="pulse-line stretched" viewBox="0 0 60 24">
-                  <polyline class="pulse-path" points="0,12 10,12 15,12 18,4 21,20 24,8 27,16 30,12 35,12 40,12 43,6 46,18 49,10 52,14 55,12 60,12"></polyline>
+              <div class="sanity-visual" id="sanityVisual">
+                <svg viewBox="0 0 60 30" class="sanity-wave">
+                  <path class="wave-line" d="M0,15 Q15,5 30,15 T60,15" fill="none" stroke="var(--accent-sage)" stroke-width="2"/>
                 </svg>
               </div>
             </div>
-            <div class="stat-subtext">Manageable</div>
+            <div class="stat-sublabel" id="sanityStatus">Manageable</div>
           </div>
         </div>
 
-        <div class="grid-calendar-label">
-          <div class="priorities-label">Calendar</div>
+        <div class="grid-semester-hours-label">
+          <div class="semester-hours-label">Semester Hours</div>
         </div>
 
-        <div class="grid-date-label">
-          <div class="priorities-label" id="currentDateLabel">Date: --/--</div>
-        </div>
-
-        <div class="grid-today-schedule today-schedule">
-          <div class="timeline" id="calendarTimeline">
-            <div class="time-slot major" style="top: 0%;"><span class="time-label">5 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 6.67%;"><span class="time-label">6 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 13.33%;"><span class="time-label">7 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 20%;"><span class="time-label">8 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 26.67%;"><span class="time-label">9 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 33.33%;"><span class="time-label">10 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 40%;"><span class="time-label">11 AM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 46.67%;"><span class="time-label">12 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 53.33%;"><span class="time-label">1 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 60%;"><span class="time-label">2 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 66.67%;"><span class="time-label">3 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 73.33%;"><span class="time-label">4 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 80%;"><span class="time-label">5 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 86.67%;"><span class="time-label">6 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot major" style="top: 93.33%;"><span class="time-label">7 PM</span><div class="time-tick"></div></div>
-            <div class="time-slot" style="top: 100%;"><span class="time-label">8 PM</span><div class="time-tick"></div></div>
-            <div class="current-time-indicator" id="currentTimeIndicator" style="display: none;">
-              <div class="time-indicator-dot"></div>
-              <div class="time-indicator-line"></div>
-            </div>
-            <div id="calendarEvents"></div>
-          </div>
-        </div>
-
-        <div class="grid-hours-label">
-          <div class="hours-label">Semester Hours</div>
-        </div>
-
-        <div class="grid-hours-cards">
+        <div class="grid-semester-hours-cards">
           <div class="stat-card">
             <div class="stat-label">Direct Hours</div>
-            <div class="stat-content">
-              <div class="stat-value" id="directHoursValue">5/100</div>
-            </div>
-            <div class="stat-subtext">5% complete</div>
+            <div class="stat-value" id="directHoursValue">--/100</div>
+            <div class="stat-sublabel" id="directHoursPercent">--% Complete</div>
           </div>
+
           <div class="stat-card">
             <div class="stat-label">Total Hours</div>
-            <div class="stat-content">
-              <div class="stat-value" id="totalHoursValue">16/500</div>
-            </div>
-            <div class="stat-subtext">3.2% complete</div>
+            <div class="stat-value" id="totalHoursValue">--/500</div>
+            <div class="stat-sublabel" id="totalHoursPercent">--% Complete</div>
           </div>
+
           <div class="stat-card">
             <div class="stat-label">Master's Supervision</div>
-            <div class="stat-content">
-              <div class="stat-value" id="supervisionHoursValue">0/40</div>
-            </div>
-            <div class="stat-subtext">0% complete</div>
+            <div class="stat-value" id="supervisionValue">--/40</div>
+            <div class="stat-sublabel" id="supervisionPercent">--% Complete</div>
           </div>
         </div>
 
-        <div class="grid-priorities-section-label">
-          <div class="priorities-section-label">PRIORITIES</div>
-        </div>
-
-        <div class="grid-today-priorities">
-          <section class="section">
+        <div class="grid-priorities">
+          <div class="section today-priorities">
             <div class="section-header">
-              <h2 class="section-title">Today's Priorities</h2>
+              <span class="section-title">Today's Priorities</span>
             </div>
-            <div class="priority-list">
+            <div class="priorities-list">
               <div class="priority-item">
-                <div class="priority-checkbox"></div>
-                <div class="priority-text">Review EPS 609 readings before class</div>
+                <input type="checkbox" id="p1" class="priority-checkbox">
+                <label for="p1">Review EPS 609 readings before class</label>
               </div>
               <div class="priority-item">
-                <div class="priority-checkbox"></div>
-                <div class="priority-text">Finalize History & Systems presentation slides</div>
+                <input type="checkbox" id="p2" class="priority-checkbox">
+                <label for="p2">Finalize History & Systems presentation slides</label>
               </div>
               <div class="priority-item completed">
-                <div class="priority-checkbox"></div>
-                <div class="priority-text">Morning routine + breakfast</div>
+                <input type="checkbox" id="p3" class="priority-checkbox" checked>
+                <label for="p3">Morning routine + breakfast</label>
               </div>
               <div class="priority-item">
-                <div class="priority-checkbox"></div>
-                <div class="priority-text">Log T2T hours from Monday</div>
+                <input type="checkbox" id="p4" class="priority-checkbox">
+                <label for="p4">Log T2T hours from Monday</label>
               </div>
             </div>
-          </section>
+          </div>
+
+          <div class="section weekly-priorities">
+            <div class="section-header">
+              <span class="section-title">Weekly Priorities</span>
+            </div>
+            <div class="priorities-list">
+              <div class="priority-item">
+                <input type="checkbox" id="w1" class="priority-checkbox">
+                <label for="w1">Complete all EPS 706 presentation prep</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w2" class="priority-checkbox">
+                <label for="w2">LEND Tucson clinic - review ADOS materials</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w3" class="priority-checkbox">
+                <label for="w3">Schedule GAship observation with James</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w4" class="priority-checkbox">
+                <label for="w4">Maintain sleep schedule (7+ hrs)</label>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="grid-upcoming">
-          <section class="section">
+        <div class="grid-assignments">
+          <div class="section upcoming-assignments">
             <div class="section-header">
-              <h2 class="section-title">Upcoming Assignments</h2>
+              <span class="section-title">Upcoming Assignments</span>
             </div>
             <table class="assignments-table">
               <thead>
@@ -225,72 +197,84 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><span class="assignment-class">EPS 706</span></td>
-                  <td><span class="assignment-name">Presentation #1</span></td>
-                  <td><span class="assignment-due">Jan 21</span></td>
-                  <td><span class="assignment-points">50</span></td>
+                  <td>EPS 706</td>
+                  <td>Presentation #1</td>
+                  <td>Jan 21</td>
+                  <td>50</td>
                 </tr>
                 <tr>
-                  <td><span class="assignment-class">EPS 607</span></td>
-                  <td><span class="assignment-name">Weekly Reflection</span></td>
-                  <td><span class="assignment-due">Jan 24</span></td>
-                  <td><span class="assignment-points">10</span></td>
+                  <td>EPS 607</td>
+                  <td>Weekly Reflection</td>
+                  <td>Jan 24</td>
+                  <td>10</td>
                 </tr>
                 <tr>
-                  <td><span class="assignment-class">EPS 609</span></td>
-                  <td><span class="assignment-name">Reading Response</span></td>
-                  <td><span class="assignment-due">Jan 27</span></td>
-                  <td><span class="assignment-points">15</span></td>
+                  <td>EPS 609</td>
+                  <td>Reading Response</td>
+                  <td>Jan 27</td>
+                  <td>15</td>
                 </tr>
                 <tr>
-                  <td><span class="assignment-class">EPS 737</span></td>
-                  <td><span class="assignment-name">Practice Assessment</span></td>
-                  <td><span class="assignment-due">Jan 28</span></td>
-                  <td><span class="assignment-points">25</span></td>
+                  <td>EPS 737</td>
+                  <td>Practice Assessment</td>
+                  <td>Jan 28</td>
+                  <td>25</td>
                 </tr>
               </tbody>
             </table>
-          </section>
+          </div>
         </div>
 
-        <div class="grid-weekly">
-          <section class="section">
-            <div class="section-header">
-              <h2 class="section-title">Weekly Priorities</h2>
+        <div class="grid-calendar">
+          <div class="section today-schedule">
+            <div class="schedule-header">
+              <span class="section-title">Calendar</span>
+              <span class="current-date" id="currentDateLabel">Date: --/--</span>
             </div>
-            <div class="priority-list">
-              <div class="priority-item weekly">
-                <div class="priority-checkbox weekly"></div>
-                <div class="priority-text">Complete all EPS 706 presentation prep</div>
+            <div class="timeline" id="calendarTimeline">
+              <!-- Time slots -->
+              <div class="time-slot" style="top: 0%"><span class="time-label">5 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 6.67%"><span class="time-label">6 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 13.33%"><span class="time-label">7 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 20%"><span class="time-label">8 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 26.67%"><span class="time-label">9 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 33.33%"><span class="time-label">10 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 40%"><span class="time-label">11 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 46.67%"><span class="time-label">12 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 53.33%"><span class="time-label">1 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 60%"><span class="time-label">2 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 66.67%"><span class="time-label">3 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 73.33%"><span class="time-label">4 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 80%"><span class="time-label">5 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 86.67%"><span class="time-label">6 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 93.33%"><span class="time-label">7 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 100%"><span class="time-label">8 PM</span><span class="time-tick"></span></div>
+
+              <!-- Current time indicator -->
+              <div class="current-time-indicator" id="currentTimeIndicator">
+                <div class="time-dot"></div>
+                <div class="time-line"></div>
               </div>
-              <div class="priority-item weekly">
-                <div class="priority-checkbox weekly"></div>
-                <div class="priority-text">LEND Tucson clinic - review ADOS materials</div>
-              </div>
-              <div class="priority-item weekly">
-                <div class="priority-checkbox weekly"></div>
-                <div class="priority-text">Schedule GAship observation with James</div>
-              </div>
-              <div class="priority-item weekly">
-                <div class="priority-checkbox weekly"></div>
-                <div class="priority-text">Maintain sleep schedule (7+ hrs)</div>
-              </div>
+
+              <!-- Events container (populated by JS) -->
+              <div class="schedule-events" id="calendarEvents"></div>
             </div>
-          </section>
+          </div>
         </div>
 
       </div>
     </div>
 
-    <!-- Lazy-loaded panels -->
-    <div id="hours" class="view-panel"></div>
-    <div id="calendar" class="view-panel"></div>
-    <div id="semester" class="view-panel"></div>
-    <div id="deadlines" class="view-panel"></div>
-    <div id="bandwidth" class="view-panel"></div>
+    <!-- OTHER PANELS (lazy-loaded) -->
+    <div id="hours-panel" class="view-panel"></div>
+    <div id="calendar-panel" class="view-panel"></div>
+    <div id="semester-panel" class="view-panel"></div>
+    <div id="deadlines-panel" class="view-panel"></div>
+    <div id="bandwidth-panel" class="view-panel"></div>
 
   </div>
 
+  <!-- Modular JavaScript -->
   <script type="module" src="js/app.js"></script>
 </body>
 </html>

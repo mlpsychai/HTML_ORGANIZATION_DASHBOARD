@@ -7,6 +7,7 @@ import { initNavigation } from './navigation.js';
 import { initCalendar } from './calendar.js';
 import { initHours } from './hours.js';
 import { initBandwidth } from './bandwidth.js';
+import { initWeeklyCalendar } from './weekly-calendar.js';
 
 /**
  * Initialize dashboard when DOM is ready
@@ -21,6 +22,7 @@ function initDashboard() {
   initCalendar();
   initHours();
   initBandwidth();
+  initWeeklyCalendar();
   
   console.log('Dashboard initialized');
 }
