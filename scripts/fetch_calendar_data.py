@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch and parse ICS calendar data."""
+"""Fetch and parse ICS calendar data with proper timezone handling."""
 
 import json
 import os
@@ -7,6 +7,12 @@ import re
 import urllib.request
 from datetime import datetime, timedelta
 from collections import defaultdict
+from zoneinfo import ZoneInfo
+
+# Target timezone for all output
+TARGET_TZ = ZoneInfo('America/Phoenix')
+UTC_TZ = ZoneInfo('UTC')
+
 
 def fetch_ics(url):
     """Fetch ICS content from URL."""
@@ -16,6 +22,7 @@ def fetch_ics(url):
     except Exception as e:
         print(f"Error fetching {url}: {e}")
         return None
+
 
 def parse_ics(content):
     """Parse ICS content into events."""
@@ -30,36 +37,81 @@ def parse_ics(content):
         event_text = match.group(1)
         event = {}
         
-        # Parse fields
-        for line in event_text.split('\n'):
+        # Parse fields - handle line continuations first
+        lines = event_text.replace('\r\n ', '').replace('\n ', '').split('\n')
+        
+        for line in lines:
             line = line.strip()
             if ':' in line:
                 key, value = line.split(':', 1)
-                # Handle parameters like DTSTART;TZID=...
+                
+                # Extract TZID if present (e.g., DTSTART;TZID=America/Phoenix)
+                tzid = None
                 if ';' in key:
-                    key = key.split(';')[0]
+                    params = key.split(';')
+                    key = params[0]
+                    for param in params[1:]:
+                        if param.startswith('TZID='):
+                            tzid = param[5:]
+                
                 event[key] = value
+                if tzid:
+                    event[f'{key}_TZID'] = tzid
         
         if 'SUMMARY' in event:
             events.append(event)
     
     return events
 
-def parse_datetime(dt_str):
-    """Parse ICS datetime string."""
-    # Remove any trailing Z
+
+def parse_datetime(dt_str, tzid=None):
+    """Parse ICS datetime string with timezone awareness.
+    
+    Args:
+        dt_str: ICS datetime string (may end with Z for UTC)
+        tzid: Optional TZID from the ICS field parameters
+    
+    Returns:
+        datetime in America/Phoenix timezone
+    """
+    if not dt_str:
+        return None
+    
+    is_utc = dt_str.endswith('Z')
     dt_str = dt_str.rstrip('Z')
     
     # Try different formats
     formats = ['%Y%m%dT%H%M%S', '%Y%m%d']
+    dt = None
     
     for fmt in formats:
         try:
-            return datetime.strptime(dt_str, fmt)
+            dt = datetime.strptime(dt_str, fmt)
+            break
         except ValueError:
             continue
     
-    return None
+    if dt is None:
+        return None
+    
+    # Apply timezone
+    if is_utc:
+        # Time is in UTC - convert to Phoenix
+        dt = dt.replace(tzinfo=UTC_TZ).astimezone(TARGET_TZ)
+    elif tzid:
+        # Time has explicit timezone - convert to Phoenix
+        try:
+            source_tz = ZoneInfo(tzid)
+            dt = dt.replace(tzinfo=source_tz).astimezone(TARGET_TZ)
+        except Exception:
+            # If TZID parsing fails, assume it's already Phoenix
+            dt = dt.replace(tzinfo=TARGET_TZ)
+    else:
+        # No timezone info - assume already in Phoenix
+        dt = dt.replace(tzinfo=TARGET_TZ)
+    
+    return dt
+
 
 def categorize_event(title):
     """Categorize event by title keywords."""
@@ -77,6 +129,7 @@ def categorize_event(title):
         return 'personal', 'var(--accent-sage)'
     
     return 'default', 'var(--text-secondary)'
+
 
 def expand_recurring(event, start_date, end_date):
     """Expand recurring events within date range."""
@@ -106,9 +159,15 @@ def expand_recurring(event, start_date, end_date):
     day_map = {'MO': 0, 'TU': 1, 'WE': 2, 'TH': 3, 'FR': 4, 'SA': 5, 'SU': 6}
     target_days = [day_map.get(d, -1) for d in byday if d in day_map]
     
-    # Get original start time
-    orig_start = parse_datetime(event.get('DTSTART', ''))
-    orig_end = parse_datetime(event.get('DTEND', ''))
+    # Get original start time with timezone
+    orig_start = parse_datetime(
+        event.get('DTSTART', ''),
+        event.get('DTSTART_TZID')
+    )
+    orig_end = parse_datetime(
+        event.get('DTEND', ''),
+        event.get('DTEND_TZID')
+    )
     
     if not orig_start:
         return [event]
@@ -118,7 +177,7 @@ def expand_recurring(event, start_date, end_date):
     # Generate occurrences
     current = start_date
     while current <= end_date:
-        if until and current > until:
+        if until and current > until.replace(tzinfo=None):
             break
         
         if current.weekday() in target_days:
@@ -127,23 +186,28 @@ def expand_recurring(event, start_date, end_date):
                 minute=orig_start.minute,
                 second=0
             )
+            new_start = new_start.replace(tzinfo=TARGET_TZ)
             new_end = new_start + duration
             
             new_event = event.copy()
             new_event['DTSTART'] = new_start.strftime('%Y%m%dT%H%M%S')
             new_event['DTEND'] = new_end.strftime('%Y%m%dT%H%M%S')
             new_event['_expanded'] = True
+            new_event['_parsed_start'] = new_start
+            new_event['_parsed_end'] = new_end
             expanded.append(new_event)
         
         current += timedelta(days=1)
     
     return expanded if expanded else [event]
 
+
 def format_time(dt):
     """Format datetime to 12-hour time string."""
     if not dt:
         return ''
-    return dt.strftime('%-I:%M %p').replace(':00 ', ' ')
+    return dt.strftime('%-I:%M %p').replace(':00 ', ' ').lstrip('0')
+
 
 def calculate_position(dt, start_hour=5, end_hour=20):
     """Calculate timeline position as percentage."""
@@ -160,6 +224,7 @@ def calculate_position(dt, start_hour=5, end_hour=20):
     
     return ((hour - start_hour) / total_hours) * 100
 
+
 def main():
     # Get calendar URLs from environment
     urls_json = os.environ.get('CALENDAR_ICS_URLS', '[]')
@@ -173,10 +238,14 @@ def main():
         print("No calendar URLs configured")
         return
     
-    # Date range
-    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    # Date range - use Phoenix timezone for "today"
+    now_phoenix = datetime.now(TARGET_TZ)
+    today = now_phoenix.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=None)
     range_start = today - timedelta(days=today.weekday())  # Monday of this week
     range_end = today + timedelta(days=30)
+    
+    print(f"Phoenix time: {now_phoenix.strftime('%Y-%m-%d %H:%M:%S %Z')}")
+    print(f"Today: {today.strftime('%Y-%m-%d')}")
     
     # Fetch and parse all calendars
     all_events = []
@@ -198,8 +267,19 @@ def main():
     events_by_date = defaultdict(list)
     
     for event in expanded_events:
-        start_dt = parse_datetime(event.get('DTSTART', ''))
-        end_dt = parse_datetime(event.get('DTEND', ''))
+        # Use pre-parsed times for expanded events, otherwise parse now
+        if '_parsed_start' in event:
+            start_dt = event['_parsed_start']
+            end_dt = event.get('_parsed_end')
+        else:
+            start_dt = parse_datetime(
+                event.get('DTSTART', ''),
+                event.get('DTSTART_TZID')
+            )
+            end_dt = parse_datetime(
+                event.get('DTEND', ''),
+                event.get('DTEND_TZID')
+            )
         
         if not start_dt:
             continue
@@ -220,8 +300,8 @@ def main():
             'title': title,
             'start_time': format_time(start_dt),
             'end_time': format_time(end_dt) if end_dt else '',
-            'start_iso': start_dt.isoformat(),
-            'end_iso': end_dt.isoformat() if end_dt else '',
+            'start_iso': start_dt.replace(tzinfo=None).isoformat(),
+            'end_iso': end_dt.replace(tzinfo=None).isoformat() if end_dt else '',
             'location': event.get('LOCATION'),
             'category': category,
             'color': color,
@@ -270,7 +350,7 @@ def main():
     # Final output
     output = {
         'meta': {
-            'generated_at': datetime.now().isoformat(),
+            'generated_at': now_phoenix.isoformat(),
             'timezone': 'America/Phoenix',
             'range_start': range_start.strftime('%Y-%m-%d'),
             'range_end': range_end.strftime('%Y-%m-%d'),
@@ -294,6 +374,7 @@ def main():
     print(f"\n✅ Wrote data/calendar_data.json")
     print(f"   Today: {len(output['today']['events'])} events")
     print(f"   Upcoming: {len(upcoming)} events")
+
 
 if __name__ == '__main__':
     main()
