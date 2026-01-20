@@ -1,0 +1,14 @@
+{
+  "course_id": "EPS_607",
+  "required_materials": [
+    {"type": "textbook", "title": "RTI Applications Volume 1", "authors": ["Burns, M. K.", "Riley-Tillman, T. C.", "Van Der Heyden, A. M."], "year": 2012, "availability": "NAU Library e-book"},
+    {"type": "textbook", "title": "RTI Applications Volume 2", "authors": ["Riley-Tillman, T. C.", "Burns, M. K.", "Gibbons, K."], "year": 2013, "availability": "NAU Library e-book"}
+  ],
+  "grading": {
+    "scale": {"A": {"min": 90}, "B": {"min": 80}, "C": {"min": 70}, "D": {"min": 60}, "F": {"min": 0}},
+    "total_points": 300
+  },
+  "policies": {
+    "late_work": {"next_class": "50% reduction", "after_following_class": "Not accepted"}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "course_id": "EPS_740",
+  "syllabus_status": "adapted_from_f25_draft",
+  "schedule": [
+    {"week": 1, "date": "2026-01-15", "topics": ["Introduction, Orientation"], "due": []},
+    {"week": 2, "date": "2026-01-22", "topics": ["Supervision Models"], "due": []},
+    {"week": 3, "date": "2026-01-29", "topics": ["Case Presentations"], "due": ["740_case_presentation_1"]},
+    {"week": 4, "date": "2026-02-05", "topics": ["Case Presentations"], "due": []},
+    {"week": 5, "date": "2026-02-12", "topics": ["Case Presentations"], "due": []},
+    {"week": 6, "date": "2026-02-19", "topics": ["Case Presentations"], "due": []},
+    {"week": 7, "date": "2026-02-26", "topics": ["Individual Meetings"], "due": []},
+    {"week": 8, "date": "2026-03-05", "topics": ["Case Presentations"], "due": []},
+    {"week": 9, "date": "2026-03-12", "topics": [], "due": [], "notes": "Spring Break"},
+    {"week": 10, "date": "2026-03-19", "topics": ["Case Presentations"], "due": []},
+    {"week": 11, "date": "2026-03-26", "topics": ["Case Presentations"], "due": []},
+    {"week": 12, "date": "2026-04-02", "topics": ["Case Presentations"], "due": []},
+    {"week": 13, "date": "2026-04-09", "topics": ["Case Presentations"], "due": []},
+    {"week": 14, "date": "2026-04-16", "topics": ["Case Presentations"], "due": []},
+    {"week": 15, "date": "2026-04-23", "topics": ["Case Presentations"], "due": []},
+    {"week": 16, "date": "2026-04-30", "topics": ["Individual Meetings", "Wrap-up"], "due": ["740_practicum_hours", "740_supervision_log"]}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "course_id": "EPS_609",
+  "required_materials": [
+    {"type": "textbook", "title": "Human Learning", "authors": ["Ormrod, J. E."], "year": 2020, "edition": "8th"}
+  ],
+  "grading": {
+    "scale": {"A": {"min": 90}, "B": {"min": 80}, "C": {"min": 70}, "D": {"min": 60}, "F": {"min": 0}},
+    "total_points": 1130
+  },
+  "doctoral_requirements": {
+    "cognitive_basis": {"exams": ["Exam 1", "Exam 2"], "minimum_average": 80},
+    "affective_basis": {"exams": ["Exam 3", "Exam 4"], "minimum_average": 80}
+  },
+  "policies": {
+    "late_work": {"deduction": "10% per 24 hours"}
+  }
+}

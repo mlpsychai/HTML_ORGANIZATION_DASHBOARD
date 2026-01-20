@@ -1,0 +1,19 @@
+{
+  "course_id": "EPS_737",
+  "title": "Psychological Assessment",
+  "instructor": {
+    "name": "Melanie Whetstine, Ph.D.",
+    "email": "Melanie.Whetstine@nau.edu",
+    "office": "206i Eastburn Education",
+    "office_hours": "Mondays 10:30am-12:30pm"
+  },
+  "credits": 3,
+  "meeting": {
+    "day": "Tuesday",
+    "start": "12:45",
+    "end": "15:15",
+    "location": "Eastburn Education Room 205"
+  },
+  "semester": {"term": "Spring", "year": 2026, "start": "2026-01-12", "end": "2026-05-08"},
+  "description": "Psychological assessment for personality assessment. Students learn to select, administer, score, interpret tests and offer feedback."
+}

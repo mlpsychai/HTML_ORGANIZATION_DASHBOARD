@@ -1,0 +1,7 @@
+{
+  "course_id": "EPS_706",
+  "syllabus_status": "temp_syllabus",
+  "required_materials": [{"type": "canvas", "description": "Readings in Canvas"}],
+  "grading": {"total_points": null},
+  "format_requirements": {"paper_length": "25 pages"}
+}

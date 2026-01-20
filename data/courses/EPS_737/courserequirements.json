@@ -1,0 +1,19 @@
+{
+  "course_id": "EPS_737",
+  "required_materials": [
+    {"type": "textbook", "title": "Interpreting the MMPI-3", "authors": ["Ben-Porath, Y. S.", "Sellbom, M."], "year": 2024},
+    {"type": "textbook", "title": "Essentials of MCMI-IV Assessment", "authors": ["Grossman, S.", "Amendolace, B."], "year": 2017},
+    {"type": "textbook", "title": "Handbook of Psychological Assessment", "authors": ["Groth-Marnat, G.", "Wright, A. J."], "year": 2016, "edition": "6th"},
+    {"type": "textbook", "title": "Essentials of PAI Assessment", "authors": ["Morey, L. C."], "year": 2003}
+  ],
+  "grading": {
+    "scale": {"A": {"min": 90}, "B": {"min": 80}, "C": {"min": 70}, "D": {"min": 60}, "F": {"min": 0}},
+    "total_points": 475,
+    "completion_requirement": "All assignments must be completed to pass regardless of grade"
+  },
+  "policies": {
+    "attendance": {"allowed_absences": 1, "penalty": "Additional absences lower letter grade"},
+    "late_work": {"0_to_72hrs": "10% reduction", "4_to_7days": "50% reduction", "after_7days": "0"}
+  },
+  "format_requirements": {"style": "APA 7th", "file_format": ".docx", "spacing": "single-spaced", "signature_required": true}
+}

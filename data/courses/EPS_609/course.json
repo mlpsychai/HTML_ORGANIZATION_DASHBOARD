@@ -1,0 +1,25 @@
+{
+  "course_id": "EPS_609",
+  "title": "Cognition and Affect",
+  "instructor": {
+    "name": "Alana Kennedy, Ph.D.",
+    "email": "alana.kennedy@nau.edu",
+    "office": "Eastburn Education 209B",
+    "office_hours": "Wednesdays 11:30am-12:30pm at Scholars Corner or by appointment"
+  },
+  "credits": 3,
+  "meeting": {
+    "day": "Wednesday",
+    "start": "09:00",
+    "end": "11:30",
+    "location": "Eastburn Education Building, Room 124"
+  },
+  "semester": {
+    "term": "Spring",
+    "year": 2026,
+    "start": "2026-01-14",
+    "end": "2026-04-29"
+  },
+  "format": "Face-to-Face",
+  "description": "Cognitive and affective psychological theories to understand how learning, problem-solving and decision-making take place."
+}

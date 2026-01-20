@@ -1,0 +1,18 @@
+{
+  "course_id": "EPS_737",
+  "total_points": 475,
+  "assignments": [
+    {"id": "737_interview_mse_video", "title": "Clinical Interview/MSE Video", "type": "practicum", "due_date": "2026-02-03", "points": 50, "weight": 10.5, "project_group": "test_administration_project"},
+    {"id": "737_intake_report", "title": "Intake Report", "type": "paper", "due_date": "2026-02-03", "points": 50, "weight": 10.5, "project_group": "test_administration_project"},
+    {"id": "737_mmpi3_partner_report", "title": "MMPI-3 Interpretive Report (Partner)", "type": "paper", "due_date": "2026-03-17", "points": 50, "weight": 10.5, "project_group": "test_administration_project"},
+    {"id": "737_pai_partner_report", "title": "PAI Interpretive Report (Partner)", "type": "paper", "due_date": "2026-03-17", "points": 50, "weight": 10.5, "project_group": "test_administration_project"},
+    {"id": "737_mcmi4_partner_report", "title": "MCMI-IV Interpretive Report (Partner)", "type": "paper", "due_date": "2026-03-31", "points": 50, "weight": 10.5, "project_group": "test_administration_project"},
+    {"id": "737_feedback_session_video", "title": "Oral Feedback Session Video", "type": "practicum", "due_date": "2026-04-21", "points": 25, "weight": 5.0, "project_group": "test_administration_project"},
+    {"id": "737_comprehensive_report", "title": "Comprehensive Evaluation Report", "type": "paper", "due_date": "2026-04-21", "points": 50, "weight": 10.5, "project_group": "test_administration_project"},
+    {"id": "737_mmpi3_self_report", "title": "MMPI-3 Self-Assessment Report", "type": "paper", "due_date": "2026-03-17", "points": 25, "weight": 5.3, "project_group": "self_assessment_project"},
+    {"id": "737_pai_self_report", "title": "PAI Self-Assessment Report", "type": "paper", "due_date": "2026-03-17", "points": 25, "weight": 5.3, "project_group": "self_assessment_project"},
+    {"id": "737_mcmi4_self_report", "title": "MCMI-IV Self-Assessment Report", "type": "paper", "due_date": "2026-03-31", "points": 25, "weight": 5.3, "project_group": "self_assessment_project"},
+    {"id": "737_combination_self_report", "title": "Combination Self-Assessment Report", "type": "paper", "due_date": "2026-04-14", "points": 0, "project_group": "self_assessment_project"},
+    {"id": "737_case_presentation", "title": "Case Presentation", "type": "presentation", "due_date": null, "date_range": {"start": "2026-04-07", "end": "2026-04-28"}, "points": 75, "weight": 16.0}
+  ]
+}

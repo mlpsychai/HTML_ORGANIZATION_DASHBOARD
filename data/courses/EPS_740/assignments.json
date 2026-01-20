@@ -1,0 +1,12 @@
+{
+  "course_id": "EPS_740",
+  "total_points": null,
+  "syllabus_status": "adapted_from_f25_draft",
+  "clinical_hours_requirement": {"minimum_clock_hours": 150},
+  "assignments": [
+    {"id": "740_case_presentation_1", "title": "Case Presentation #1", "type": "presentation", "due_date": "2026-01-29", "points": null, "project_group": "case_presentations"},
+    {"id": "740_case_presentation_2", "title": "Case Presentation #2", "type": "presentation", "due_date": null, "points": null, "project_group": "case_presentations"},
+    {"id": "740_practicum_hours", "title": "Practicum Hours Documentation", "type": "practicum", "due_date": "2026-05-07", "points": null, "recurring": true},
+    {"id": "740_supervision_log", "title": "Supervision Hours Log", "type": "practicum", "due_date": "2026-05-07", "points": null, "recurring": true}
+  ]
+}

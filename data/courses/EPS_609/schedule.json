@@ -1,0 +1,21 @@
+{
+  "course_id": "EPS_609",
+  "schedule": [
+    {"week": 1, "date": "2026-01-14", "topics": ["Foundations of Cognition and Affect"], "due": []},
+    {"week": 2, "date": "2026-01-21", "topics": ["Memory: Information Processing"], "due": []},
+    {"week": 3, "date": "2026-01-28", "topics": ["Memory: Storage, Encoding, Retrieval"], "due": ["609_praxis_1"]},
+    {"week": 4, "date": "2026-02-04", "topics": ["Nature of Knowledge and Knowing"], "due": []},
+    {"week": 5, "date": "2026-02-11", "topics": ["Concepts, Conceptual Change"], "due": []},
+    {"week": 6, "date": "2026-02-18", "topics": ["Problem Solving, Critical Thinking"], "due": []},
+    {"week": 7, "date": "2026-02-25", "topics": ["Transfer"], "due": []},
+    {"week": 8, "date": "2026-03-04", "topics": ["Emotions and Learning"], "due": []},
+    {"week": 9, "date": "2026-03-11", "topics": [], "due": [], "notes": "Spring Break"},
+    {"week": 10, "date": "2026-03-18", "topics": ["Peer Review Workshop"], "due": ["609_lit_review_peer"]},
+    {"week": 11, "date": "2026-03-25", "topics": ["Motivation and Affect"], "due": []},
+    {"week": 12, "date": "2026-04-01", "topics": ["Self-Regulation"], "due": []},
+    {"week": 13, "date": "2026-04-08", "topics": ["Attributions and Achievement Goals"], "due": []},
+    {"week": 14, "date": "2026-04-15", "topics": ["Literature Review Presentations"], "due": ["609_lit_review_presentation"]},
+    {"week": 15, "date": "2026-04-22", "topics": ["Course Reflection Presentations"], "due": []},
+    {"week": 16, "date": "2026-04-29", "topics": ["Course Reflection Presentations"], "due": ["609_course_reflection"]}
+  ]
+}

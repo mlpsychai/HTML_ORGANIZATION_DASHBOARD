@@ -1,0 +1,21 @@
+{
+  "course_id": "EPS_737",
+  "schedule": [
+    {"week": 1, "date": "2026-01-13", "topics": ["Intro to Psychological Assessment"], "due": []},
+    {"week": 2, "date": "2026-01-20", "topics": ["Clinical Assessment Interview/MSE"], "due": []},
+    {"week": 3, "date": "2026-01-27", "topics": ["Personality Disorders Overview"], "due": []},
+    {"week": 4, "date": "2026-02-03", "topics": ["MMPI-3: History, Administration, Validity"], "due": ["737_interview_mse_video", "737_intake_report"]},
+    {"week": 5, "date": "2026-02-10", "topics": ["MMPI-3: Validity, Substantive Scales"], "due": []},
+    {"week": 6, "date": "2026-02-17", "topics": ["MMPI-3: Interpretation, Case Studies"], "due": []},
+    {"week": 7, "date": "2026-02-24", "topics": ["Report Writing", "PAI"], "due": []},
+    {"week": 8, "date": "2026-03-03", "topics": ["PAI", "Suicide Assessment"], "due": []},
+    {"week": 9, "date": "2026-03-10", "topics": [], "due": [], "notes": "Spring Break"},
+    {"week": 10, "date": "2026-03-17", "topics": ["MCMI-IV"], "due": ["737_mmpi3_partner_report", "737_pai_partner_report", "737_mmpi3_self_report", "737_pai_self_report"]},
+    {"week": 11, "date": "2026-03-24", "topics": ["MCMI-IV cont", "NEO", "TAT"], "due": []},
+    {"week": 12, "date": "2026-03-31", "topics": ["Rorschach"], "due": ["737_mcmi4_partner_report", "737_mcmi4_self_report"]},
+    {"week": 13, "date": "2026-04-07", "topics": ["Feedback", "Treatment Planning", "Case Presentations"], "due": []},
+    {"week": 14, "date": "2026-04-14", "topics": ["Diversity Issues", "Case Presentations"], "due": ["737_combination_self_report"]},
+    {"week": 15, "date": "2026-04-21", "topics": ["Case Presentations"], "due": ["737_comprehensive_report", "737_feedback_session_video"]},
+    {"week": 16, "date": "2026-04-28", "topics": ["Case Presentations"], "due": []}
+  ]
+}

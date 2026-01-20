@@ -1,0 +1,10 @@
+{
+  "course_id": "EPS_740",
+  "syllabus_status": "adapted_from_f25_draft",
+  "required_materials": [
+    {"type": "reference", "title": "Ethical Principles of Psychologists and Code of Conduct", "authors": ["APA"], "year": 2017}
+  ],
+  "grading": {"options": ["Pass-fail", "Letter grade"]},
+  "clinical_requirements": {"minimum_hours": 150, "components": ["Direct client contact", "Supervision received", "Supervision provided"]},
+  "case_presentation_requirements": {"printed_copies": 3}
+}

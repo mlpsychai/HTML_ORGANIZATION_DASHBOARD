@@ -1,0 +1,23 @@
+{
+  "course_id": "EPS_609",
+  "total_points": 1130,
+  "assignments": [
+    {"id": "609_praxis_1", "title": "Praxis Activity 1", "type": "practicum", "due_date": "2026-01-28", "points": 50, "weight": 5.0},
+    {"id": "609_exam_1", "title": "Exam 1", "type": "exam", "due_date": "2026-02-01", "points": 100, "weight": 7.5, "project_group": "cognitive_exams"},
+    {"id": "609_insight_1", "title": "Insight Paper 1", "type": "paper", "due_date": "2026-02-01", "points": 50, "weight": 5.0},
+    {"id": "609_lit_review_abstract", "title": "Literature Review Abstract", "type": "paper", "due_date": "2026-02-08", "points": 20, "project_group": "literature_review"},
+    {"id": "609_exam_2", "title": "Exam 2", "type": "exam", "due_date": "2026-02-15", "points": 100, "weight": 7.5, "project_group": "cognitive_exams"},
+    {"id": "609_insight_2", "title": "Insight Paper 2", "type": "paper", "due_date": "2026-02-15", "points": 50, "weight": 5.0},
+    {"id": "609_lit_review_outline", "title": "Literature Review Outline", "type": "paper", "due_date": "2026-02-22", "points": 20, "project_group": "literature_review"},
+    {"id": "609_lit_review_draft", "title": "Literature Review Draft", "type": "paper", "due_date": "2026-03-08", "points": 30, "project_group": "literature_review"},
+    {"id": "609_lit_review_peer", "title": "Literature Review Peer Feedback", "type": "participation", "due_date": "2026-03-18", "points": 30, "project_group": "literature_review"},
+    {"id": "609_exam_3", "title": "Exam 3", "type": "exam", "due_date": "2026-03-22", "points": 100, "weight": 7.5, "project_group": "affective_exams"},
+    {"id": "609_insight_3", "title": "Insight Paper 3", "type": "paper", "due_date": "2026-03-22", "points": 50, "weight": 5.0},
+    {"id": "609_exam_4", "title": "Exam 4", "type": "exam", "due_date": "2026-04-05", "points": 100, "weight": 7.5, "project_group": "affective_exams"},
+    {"id": "609_insight_4", "title": "Insight Paper 4", "type": "paper", "due_date": "2026-04-05", "points": 50, "weight": 5.0},
+    {"id": "609_lit_review_final", "title": "Literature Review - Final", "type": "paper", "due_date": "2026-04-12", "points": 250, "weight": 20.0},
+    {"id": "609_lit_review_presentation", "title": "Literature Review Presentation", "type": "presentation", "due_date": "2026-04-15", "points": 0},
+    {"id": "609_course_reflection", "title": "Course Reflection", "type": "paper", "due_date": "2026-04-29", "points": 100, "weight": 10.0},
+    {"id": "609_participation", "title": "In-Class Work and Participation", "type": "participation", "due_date": "2026-04-29", "points": 130, "weight": 15.0, "recurring": true}
+  ]
+}
