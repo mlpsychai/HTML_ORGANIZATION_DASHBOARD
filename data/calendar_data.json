@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-01-20T12:30:18.969628",
+    "generated_at": "2026-01-20T18:24:02.903048",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-19",
     "range_end": "2026-02-19",
-    "total_events": 600,
+    "total_events": 604,
     "calendars_synced": 2
   },
   "today": {
@@ -38,6 +38,19 @@
         "height_percent": 10.0
       },
       {
+        "id": "1tpf6l71j5bh0861ervt",
+        "title": "Hold for supervisees",
+        "start_time": "8 AM",
+        "end_time": "12:30 PM",
+        "start_iso": "2026-01-20T08:00:00",
+        "end_iso": "2026-01-20T12:30:00",
+        "location": null,
+        "category": "meeting",
+        "color": "var(--accent-gold)",
+        "top_percent": 20.0,
+        "height_percent": 30.0
+      },
+      {
         "id": "463uo7vspjvaq122625c",
         "title": "EPS 737 - COE - RM # 205",
         "start_time": "12:45 PM",
@@ -49,19 +62,6 @@
         "color": "var(--text-muted)",
         "top_percent": 51.7,
         "height_percent": 16.7
-      },
-      {
-        "id": "1tpf6l71j5bh0861ervt",
-        "title": "Hold for supervisees",
-        "start_time": "3 PM",
-        "end_time": "7:30 PM",
-        "start_iso": "2026-01-20T15:00:00",
-        "end_iso": "2026-01-20T19:30:00",
-        "location": null,
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 66.7,
-        "height_percent": 30.0
       },
       {
         "id": "4lm6ne5ijlfeumpbu4or",
@@ -157,6 +157,19 @@
           "height_percent": 10.0
         },
         {
+          "id": "1tpf6l71j5bh0861ervt",
+          "title": "Hold for supervisees",
+          "start_time": "8 AM",
+          "end_time": "12:30 PM",
+          "start_iso": "2026-01-20T08:00:00",
+          "end_iso": "2026-01-20T12:30:00",
+          "location": null,
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 20.0,
+          "height_percent": 30.0
+        },
+        {
           "id": "463uo7vspjvaq122625c",
           "title": "EPS 737 - COE - RM # 205",
           "start_time": "12:45 PM",
@@ -168,19 +181,6 @@
           "color": "var(--text-muted)",
           "top_percent": 51.7,
           "height_percent": 16.7
-        },
-        {
-          "id": "1tpf6l71j5bh0861ervt",
-          "title": "Hold for supervisees",
-          "start_time": "3 PM",
-          "end_time": "7:30 PM",
-          "start_iso": "2026-01-20T15:00:00",
-          "end_iso": "2026-01-20T19:30:00",
-          "location": null,
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 66.7,
-          "height_percent": 30.0
         },
         {
           "id": "4lm6ne5ijlfeumpbu4or",
