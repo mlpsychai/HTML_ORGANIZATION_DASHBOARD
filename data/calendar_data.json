@@ -1,23 +1,36 @@
 {
   "meta": {
-    "generated_at": "2026-01-19T18:20:30.050072",
+    "generated_at": "2026-01-20T01:02:56.821482",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-19",
-    "range_end": "2026-02-18",
-    "total_events": 596,
+    "range_end": "2026-02-19",
+    "total_events": 600,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-01-19",
-    "display_date": "Monday, January 19",
+    "date": "2026-01-20",
+    "display_date": "Tuesday, January 20",
     "events": [
+      {
+        "id": "7intoqimulsffrp9fmcd",
+        "title": "EPS 308 with James",
+        "start_time": "1:30 AM",
+        "end_time": "2:15 AM",
+        "start_iso": "2026-01-20T01:30:00",
+        "end_iso": "2026-01-20T02:15:00",
+        "location": null,
+        "category": "class",
+        "color": "var(--text-muted)",
+        "top_percent": 0,
+        "height_percent": 4
+      },
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-01-19T05:30:00",
-        "end_iso": "2026-01-19T07:00:00",
+        "start_iso": "2026-01-20T05:30:00",
+        "end_iso": "2026-01-20T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,30 +38,43 @@
         "height_percent": 10.0
       },
       {
-        "id": "4mnmm438hqjr864sutoq",
-        "title": "CHC with Sherri",
-        "start_time": "8:30 AM",
-        "end_time": "1:30 PM",
-        "start_iso": "2026-01-19T08:30:00",
-        "end_iso": "2026-01-19T13:30:00",
-        "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 23.3,
-        "height_percent": 33.3
-      },
-      {
-        "id": "171qf8kdau9qaj1s05iu",
-        "title": "EPS 607 - COE - RM #124",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-01-19T16:00:00",
-        "end_iso": "2026-01-19T18:30:00",
+        "id": "463uo7vspjvaq122625c",
+        "title": "EPS 737 - COE - RM # 205",
+        "start_time": "12:45 PM",
+        "end_time": "3:15 PM",
+        "start_iso": "2026-01-20T12:45:00",
+        "end_iso": "2026-01-20T15:15:00",
         "location": null,
         "category": "class",
         "color": "var(--text-muted)",
-        "top_percent": 73.3,
+        "top_percent": 51.7,
         "height_percent": 16.7
+      },
+      {
+        "id": "1tpf6l71j5bh0861ervt",
+        "title": "Hold for supervisees",
+        "start_time": "3 PM",
+        "end_time": "7:30 PM",
+        "start_iso": "2026-01-20T15:00:00",
+        "end_iso": "2026-01-20T19:30:00",
+        "location": null,
+        "category": "meeting",
+        "color": "var(--accent-gold)",
+        "top_percent": 66.7,
+        "height_percent": 30.0
+      },
+      {
+        "id": "4lm6ne5ijlfeumpbu4or",
+        "title": "CLIENT SESSION: ST",
+        "start_time": "4 PM",
+        "end_time": "5 PM",
+        "start_iso": "2026-01-20T16:00:00",
+        "end_iso": "2026-01-20T17:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 73.3,
+        "height_percent": 6.7
       }
     ]
   },
@@ -56,7 +82,7 @@
     "monday": {
       "date": "2026-01-19",
       "display_date": "Jan 19",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -102,7 +128,7 @@
     "tuesday": {
       "date": "2026-01-20",
       "display_date": "Jan 20",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "7intoqimulsffrp9fmcd",
@@ -360,19 +386,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "1b7o1rog5qjt07hen9sc",
-          "title": "Arizona LEND Weekly Meeting",
-          "start_time": "1 PM",
-          "end_time": "4 PM",
-          "start_iso": "2026-01-23T13:00:00",
-          "end_iso": "2026-01-23T16:00:00",
-          "location": "https://zoom.us/j/6021215414",
-          "category": "fellowship",
-          "color": "var(--accent-purple)",
-          "top_percent": 53.3,
-          "height_percent": 20.0
-        },
-        {
           "id": "38fgqtuht6ae3devmhq4",
           "title": "Update AZLend Hours",
           "start_time": "1 PM",
@@ -384,6 +397,19 @@
           "color": "var(--accent-purple)",
           "top_percent": 53.3,
           "height_percent": 4
+        },
+        {
+          "id": "1b7o1rog5qjt07hen9sc",
+          "title": "Arizona LEND Weekly Meeting",
+          "start_time": "1 PM",
+          "end_time": "4 PM",
+          "start_iso": "2026-01-23T13:00:00",
+          "end_iso": "2026-01-23T16:00:00",
+          "location": "https://zoom.us/j/6021215414",
+          "category": "fellowship",
+          "color": "var(--accent-purple)",
+          "top_percent": 53.3,
+          "height_percent": 20.0
         },
         {
           "id": "2dgeo1ct6s9aukn4j5mh",
@@ -429,86 +455,6 @@
   },
   "upcoming": [
     {
-      "id": "7intoqimulsffrp9fmcd",
-      "title": "EPS 308 with James",
-      "start_time": "1:30 AM",
-      "end_time": "2:15 AM",
-      "start_iso": "2026-01-20T01:30:00",
-      "end_iso": "2026-01-20T02:15:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 0,
-      "height_percent": 4,
-      "date": "2026-01-20",
-      "display_date": "Tue, Jan 20",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-01-20T05:30:00",
-      "end_iso": "2026-01-20T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-01-20",
-      "display_date": "Tue, Jan 20",
-      "days_until": 1
-    },
-    {
-      "id": "463uo7vspjvaq122625c",
-      "title": "EPS 737 - COE - RM # 205",
-      "start_time": "12:45 PM",
-      "end_time": "3:15 PM",
-      "start_iso": "2026-01-20T12:45:00",
-      "end_iso": "2026-01-20T15:15:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 51.7,
-      "height_percent": 16.7,
-      "date": "2026-01-20",
-      "display_date": "Tue, Jan 20",
-      "days_until": 1
-    },
-    {
-      "id": "1tpf6l71j5bh0861ervt",
-      "title": "Hold for supervisees",
-      "start_time": "3 PM",
-      "end_time": "7:30 PM",
-      "start_iso": "2026-01-20T15:00:00",
-      "end_iso": "2026-01-20T19:30:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 66.7,
-      "height_percent": 30.0,
-      "date": "2026-01-20",
-      "display_date": "Tue, Jan 20",
-      "days_until": 1
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-01-20T16:00:00",
-      "end_iso": "2026-01-20T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-01-20",
-      "display_date": "Tue, Jan 20",
-      "days_until": 1
-    },
-    {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
@@ -522,7 +468,7 @@
       "height_percent": 10.0,
       "date": "2026-01-21",
       "display_date": "Wed, Jan 21",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "54nnsab6bbcus3bbporn",
@@ -538,7 +484,7 @@
       "height_percent": 16.7,
       "date": "2026-01-21",
       "display_date": "Wed, Jan 21",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -554,7 +500,7 @@
       "height_percent": 6.7,
       "date": "2026-01-21",
       "display_date": "Wed, Jan 21",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "cpij2e1n6go38b9kc4s6",
@@ -570,7 +516,7 @@
       "height_percent": 6.7,
       "date": "2026-01-21",
       "display_date": "Wed, Jan 21",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "27jbh1eq2u3hnbrra5tb",
@@ -586,6 +532,86 @@
       "height_percent": 16.7,
       "date": "2026-01-21",
       "display_date": "Wed, Jan 21",
+      "days_until": 1
+    },
+    {
+      "id": "62nv8rmad05ctglgibj1",
+      "title": "Drive to Tucson",
+      "start_time": "1:30 AM",
+      "end_time": "6 AM",
+      "start_iso": "2026-01-22T01:30:00",
+      "end_iso": "2026-01-22T06:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 0,
+      "height_percent": 6.7,
+      "date": "2026-01-22",
+      "display_date": "Thu, Jan 22",
+      "days_until": 2
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-01-22T05:30:00",
+      "end_iso": "2026-01-22T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-01-22",
+      "display_date": "Thu, Jan 22",
+      "days_until": 2
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-01-22T12:00:00",
+      "end_iso": "2026-01-22T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-01-22",
+      "display_date": "Thu, Jan 22",
+      "days_until": 2
+    },
+    {
+      "id": "56ice4to0bqje25eikc1",
+      "title": "Hold for 2+ private clients",
+      "start_time": "2 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-01-22T14:00:00",
+      "end_iso": "2026-01-22T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 60.0,
+      "height_percent": 20.0,
+      "date": "2026-01-22",
+      "display_date": "Thu, Jan 22",
+      "days_until": 2
+    },
+    {
+      "id": "6cgapskruo8m45p87jfj",
+      "title": "ASD COE in TUCSON",
+      "start_time": "3 PM",
+      "end_time": "7 PM",
+      "start_iso": "2026-01-22T15:00:00",
+      "end_iso": "2026-01-22T19:00:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 66.7,
+      "height_percent": 26.7,
+      "date": "2026-01-22",
+      "display_date": "Thu, Jan 22",
       "days_until": 2
     }
   ]
