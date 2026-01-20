@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-01-20T18:24:02.903048",
+    "generated_at": "2026-01-20T11:35:47.571823-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-19",
     "range_end": "2026-02-19",
@@ -11,19 +11,6 @@
     "date": "2026-01-20",
     "display_date": "Tuesday, January 20",
     "events": [
-      {
-        "id": "7intoqimulsffrp9fmcd",
-        "title": "EPS 308 with James",
-        "start_time": "1:30 AM",
-        "end_time": "2:15 AM",
-        "start_iso": "2026-01-20T01:30:00",
-        "end_iso": "2026-01-20T02:15:00",
-        "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
-        "top_percent": 0,
-        "height_percent": 4
-      },
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
@@ -122,6 +109,19 @@
           "color": "var(--text-muted)",
           "top_percent": 73.3,
           "height_percent": 16.7
+        },
+        {
+          "id": "7intoqimulsffrp9fmcd",
+          "title": "EPS 308 with James",
+          "start_time": "6:30 PM",
+          "end_time": "7:15 PM",
+          "start_iso": "2026-01-19T18:30:00",
+          "end_iso": "2026-01-19T19:15:00",
+          "location": null,
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 90.0,
+          "height_percent": 5.0
         }
       ]
     },
@@ -130,19 +130,6 @@
       "display_date": "Jan 20",
       "is_today": true,
       "events": [
-        {
-          "id": "7intoqimulsffrp9fmcd",
-          "title": "EPS 308 with James",
-          "start_time": "1:30 AM",
-          "end_time": "2:15 AM",
-          "start_iso": "2026-01-20T01:30:00",
-          "end_iso": "2026-01-20T02:15:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 0,
-          "height_percent": 4
-        },
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
@@ -216,6 +203,19 @@
           "height_percent": 10.0
         },
         {
+          "id": "cpij2e1n6go38b9kc4s6",
+          "title": "Presenting in History and Systems Today",
+          "start_time": "8 AM",
+          "end_time": "9 AM",
+          "start_iso": "2026-01-21T08:00:00",
+          "end_iso": "2026-01-21T09:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 20.0,
+          "height_percent": 6.7
+        },
+        {
           "id": "54nnsab6bbcus3bbporn",
           "title": "EPS 609 - COE - RM # 124",
           "start_time": "9 AM",
@@ -231,27 +231,14 @@
         {
           "id": "040000008200E00074C5",
           "title": "PROF Grant Sync UP meeting",
-          "start_time": "12 PM",
-          "end_time": "1 PM",
-          "start_iso": "2026-01-21T12:00:00",
-          "end_iso": "2026-01-21T13:00:00",
+          "start_time": "11 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-01-21T11:00:00",
+          "end_iso": "2026-01-21T12:00:00",
           "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
           "category": "meeting",
           "color": "var(--accent-gold)",
-          "top_percent": 46.7,
-          "height_percent": 6.7
-        },
-        {
-          "id": "cpij2e1n6go38b9kc4s6",
-          "title": "Presenting in History and Systems Today",
-          "start_time": "3 PM",
-          "end_time": "4 PM",
-          "start_iso": "2026-01-21T15:00:00",
-          "end_iso": "2026-01-21T16:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 66.7,
+          "top_percent": 40.0,
           "height_percent": 6.7
         },
         {
@@ -266,6 +253,19 @@
           "color": "var(--text-muted)",
           "top_percent": 73.3,
           "height_percent": 16.7
+        },
+        {
+          "id": "62nv8rmad05ctglgibj1",
+          "title": "Drive to Tucson",
+          "start_time": "6:30 PM",
+          "end_time": "11 PM",
+          "start_iso": "2026-01-21T18:30:00",
+          "end_iso": "2026-01-21T23:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 90.0,
+          "height_percent": 10.0
         }
       ]
     },
@@ -274,19 +274,6 @@
       "display_date": "Jan 22",
       "is_today": false,
       "events": [
-        {
-          "id": "62nv8rmad05ctglgibj1",
-          "title": "Drive to Tucson",
-          "start_time": "1:30 AM",
-          "end_time": "6 AM",
-          "start_iso": "2026-01-22T01:30:00",
-          "end_iso": "2026-01-22T06:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 0,
-          "height_percent": 6.7
-        },
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
@@ -299,6 +286,19 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "6cgapskruo8m45p87jfj",
+          "title": "ASD COE in TUCSON",
+          "start_time": "8 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-01-22T08:00:00",
+          "end_iso": "2026-01-22T12:00:00",
+          "location": null,
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 20.0,
+          "height_percent": 26.7
         },
         {
           "id": "040000008200E00074C5",
@@ -314,6 +314,19 @@
           "height_percent": 6.7
         },
         {
+          "id": "5o5hkjnistotk5fivjvr",
+          "title": "Clinic Attendance -Down Syndrome @ Children\u2019s Clinics - Tucson",
+          "start_time": "1 PM",
+          "end_time": "5 PM",
+          "start_iso": "2026-01-22T13:00:00",
+          "end_iso": "2026-01-22T17:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 53.3,
+          "height_percent": 26.7
+        },
+        {
           "id": "56ice4to0bqje25eikc1",
           "title": "Hold for 2+ private clients",
           "start_time": "2 PM",
@@ -327,19 +340,6 @@
           "height_percent": 20.0
         },
         {
-          "id": "6cgapskruo8m45p87jfj",
-          "title": "ASD COE in TUCSON",
-          "start_time": "3 PM",
-          "end_time": "7 PM",
-          "start_iso": "2026-01-22T15:00:00",
-          "end_iso": "2026-01-22T19:00:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 66.7,
-          "height_percent": 26.7
-        },
-        {
           "id": "23acdhij25ckuq3ov810",
           "title": "EPS 740 (PART 2) - COE - RM # TBD",
           "start_time": "6 PM",
@@ -351,19 +351,6 @@
           "color": "var(--text-muted)",
           "top_percent": 86.7,
           "height_percent": 13.3
-        },
-        {
-          "id": "5o5hkjnistotk5fivjvr",
-          "title": "Clinic Attendance -Down Syndrome @ Children\u2019s Clinics - Tucson",
-          "start_time": "8 PM",
-          "end_time": "12 AM",
-          "start_iso": "2026-01-22T20:00:00",
-          "end_iso": "2026-01-23T00:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 100.0,
-          "height_percent": 4
         }
       ]
     },
@@ -386,17 +373,17 @@
           "height_percent": 10.0
         },
         {
-          "id": "38fgqtuht6ae3devmhq4",
-          "title": "Update AZLend Hours",
-          "start_time": "1 PM",
-          "end_time": "1:15 PM",
-          "start_iso": "2026-01-23T13:00:00",
-          "end_iso": "2026-01-23T13:15:00",
+          "id": "2dgeo1ct6s9aukn4j5mh",
+          "title": "Neonatal Clinic in Tucson",
+          "start_time": "10 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-01-23T10:00:00",
+          "end_iso": "2026-01-23T12:00:00",
           "location": null,
-          "category": "fellowship",
-          "color": "var(--accent-purple)",
-          "top_percent": 53.3,
-          "height_percent": 4
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 13.3
         },
         {
           "id": "1b7o1rog5qjt07hen9sc",
@@ -412,17 +399,17 @@
           "height_percent": 20.0
         },
         {
-          "id": "2dgeo1ct6s9aukn4j5mh",
-          "title": "Neonatal Clinic in Tucson",
-          "start_time": "5 PM",
-          "end_time": "7 PM",
-          "start_iso": "2026-01-23T17:00:00",
-          "end_iso": "2026-01-23T19:00:00",
+          "id": "38fgqtuht6ae3devmhq4",
+          "title": "Update AZLend Hours",
+          "start_time": "1 PM",
+          "end_time": "1:15 PM",
+          "start_iso": "2026-01-23T13:00:00",
+          "end_iso": "2026-01-23T13:15:00",
           "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 80.0,
-          "height_percent": 13.3
+          "category": "fellowship",
+          "color": "var(--accent-purple)",
+          "top_percent": 53.3,
+          "height_percent": 4
         }
       ]
     },
@@ -434,15 +421,15 @@
         {
           "id": "69n2fd4hnhsbbrvg5qn3",
           "title": "ArizonaLEND Mandatory Clinic Attendance in TUCSON",
-          "start_time": "3 PM",
-          "end_time": "11 PM",
-          "start_iso": "2026-01-24T15:00:00",
-          "end_iso": "2026-01-24T23:00:00",
+          "start_time": "8 AM",
+          "end_time": "4 PM",
+          "start_iso": "2026-01-24T08:00:00",
+          "end_iso": "2026-01-24T16:00:00",
           "location": null,
           "category": "fellowship",
           "color": "var(--accent-purple)",
-          "top_percent": 66.7,
-          "height_percent": 33.3
+          "top_percent": 20.0,
+          "height_percent": 53.3
         }
       ]
     },
@@ -471,6 +458,22 @@
       "days_until": 1
     },
     {
+      "id": "cpij2e1n6go38b9kc4s6",
+      "title": "Presenting in History and Systems Today",
+      "start_time": "8 AM",
+      "end_time": "9 AM",
+      "start_iso": "2026-01-21T08:00:00",
+      "end_iso": "2026-01-21T09:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 20.0,
+      "height_percent": 6.7,
+      "date": "2026-01-21",
+      "display_date": "Wed, Jan 21",
+      "days_until": 1
+    },
+    {
       "id": "54nnsab6bbcus3bbporn",
       "title": "EPS 609 - COE - RM # 124",
       "start_time": "9 AM",
@@ -489,30 +492,14 @@
     {
       "id": "040000008200E00074C5",
       "title": "PROF Grant Sync UP meeting",
-      "start_time": "12 PM",
-      "end_time": "1 PM",
-      "start_iso": "2026-01-21T12:00:00",
-      "end_iso": "2026-01-21T13:00:00",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-01-21T11:00:00",
+      "end_iso": "2026-01-21T12:00:00",
       "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
       "category": "meeting",
       "color": "var(--accent-gold)",
-      "top_percent": 46.7,
-      "height_percent": 6.7,
-      "date": "2026-01-21",
-      "display_date": "Wed, Jan 21",
-      "days_until": 1
-    },
-    {
-      "id": "cpij2e1n6go38b9kc4s6",
-      "title": "Presenting in History and Systems Today",
-      "start_time": "3 PM",
-      "end_time": "4 PM",
-      "start_iso": "2026-01-21T15:00:00",
-      "end_iso": "2026-01-21T16:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 66.7,
+      "top_percent": 40.0,
       "height_percent": 6.7,
       "date": "2026-01-21",
       "display_date": "Wed, Jan 21",
@@ -537,18 +524,18 @@
     {
       "id": "62nv8rmad05ctglgibj1",
       "title": "Drive to Tucson",
-      "start_time": "1:30 AM",
-      "end_time": "6 AM",
-      "start_iso": "2026-01-22T01:30:00",
-      "end_iso": "2026-01-22T06:00:00",
+      "start_time": "6:30 PM",
+      "end_time": "11 PM",
+      "start_iso": "2026-01-21T18:30:00",
+      "end_iso": "2026-01-21T23:00:00",
       "location": null,
       "category": "default",
       "color": "var(--text-secondary)",
-      "top_percent": 0,
-      "height_percent": 6.7,
-      "date": "2026-01-22",
-      "display_date": "Thu, Jan 22",
-      "days_until": 2
+      "top_percent": 90.0,
+      "height_percent": 10.0,
+      "date": "2026-01-21",
+      "display_date": "Wed, Jan 21",
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -562,6 +549,22 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
+      "date": "2026-01-22",
+      "display_date": "Thu, Jan 22",
+      "days_until": 2
+    },
+    {
+      "id": "6cgapskruo8m45p87jfj",
+      "title": "ASD COE in TUCSON",
+      "start_time": "8 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-01-22T08:00:00",
+      "end_iso": "2026-01-22T12:00:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 20.0,
+      "height_percent": 26.7,
       "date": "2026-01-22",
       "display_date": "Thu, Jan 22",
       "days_until": 2
@@ -583,32 +586,16 @@
       "days_until": 2
     },
     {
-      "id": "56ice4to0bqje25eikc1",
-      "title": "Hold for 2+ private clients",
-      "start_time": "2 PM",
+      "id": "5o5hkjnistotk5fivjvr",
+      "title": "Clinic Attendance -Down Syndrome @ Children\u2019s Clinics - Tucson",
+      "start_time": "1 PM",
       "end_time": "5 PM",
-      "start_iso": "2026-01-22T14:00:00",
+      "start_iso": "2026-01-22T13:00:00",
       "end_iso": "2026-01-22T17:00:00",
       "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 60.0,
-      "height_percent": 20.0,
-      "date": "2026-01-22",
-      "display_date": "Thu, Jan 22",
-      "days_until": 2
-    },
-    {
-      "id": "6cgapskruo8m45p87jfj",
-      "title": "ASD COE in TUCSON",
-      "start_time": "3 PM",
-      "end_time": "7 PM",
-      "start_iso": "2026-01-22T15:00:00",
-      "end_iso": "2026-01-22T19:00:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 66.7,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 53.3,
       "height_percent": 26.7,
       "date": "2026-01-22",
       "display_date": "Thu, Jan 22",
