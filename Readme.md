@@ -25,14 +25,18 @@ Personal academic dashboard for managing doctoral program coursework, clinical h
 ### Git Workflow
 
 ```bash
-source ~/.bashrc
 git pull
 git add -A
 git commit -m "Description"
-git push https://$GIT_USER:$GIT_TOKEN@github.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD.git
+git push
 ```
 
-Credentials stored in `~/.bashrc` as `$GIT_USER` and `$GIT_TOKEN`.
+Remote URL includes credentials, so `git push` works directly. Downloads from Claude go to `~/HTML_ORGANIZATION_DASHBOARD/`.
+
+**If push fails with auth error**, re-run:
+```bash
+git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD.git
+```
 
 ---
 
