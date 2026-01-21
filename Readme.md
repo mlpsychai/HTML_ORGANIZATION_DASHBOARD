@@ -24,19 +24,29 @@ Personal academic dashboard for managing doctoral program coursework, clinical h
 
 ### Git Workflow
 
+**Standard push:**
 ```bash
-git pull
+source ~/.bashrc
 git add -A
 git commit -m "Description"
+git push https://$GIT_USER:$GIT_TOKEN@github.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD.git
+```
+
+**If push is rejected (remote has changes):**
+```bash
+git pull --rebase origin main
 git push
 ```
 
-Remote URL includes credentials, so `git push` works directly. Downloads from Claude go to `~/HTML_ORGANIZATION_DASHBOARD/`.
+**If rebase has conflicts:**
+1. Fix conflicts in affected files
+2. `git add <fixed-file>`
+3. `git rebase --continue`
+4. `git push`
 
-**If push fails with auth error**, re-run:
-```bash
-git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD.git
-```
+To abort a conflicted rebase: `git rebase --abort`
+
+Credentials stored in `~/.bashrc` as `$GIT_USER` and `$GIT_TOKEN`.
 
 ---
 
@@ -48,6 +58,7 @@ git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/mlpsychai/HTML
 | calendar_data.json | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/calendar_data.json` |
 | fitbit-latest.json | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/fitbit-latest.json` |
 | hours_data.json | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/hours_data.json` |
+| eps737.json | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/data/courses/eps737.json` |
 
 ### JavaScript Modules
 | File | URL |
@@ -58,6 +69,7 @@ git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/mlpsychai/HTML
 | calendar.js | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/js/calendar.js` |
 | hours.js | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/js/hours.js` |
 | bandwidth.js | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/js/bandwidth.js` |
+| eps737.js | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/js/eps737.js` |
 
 ### CSS
 | File | URL |
@@ -69,6 +81,7 @@ git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/mlpsychai/HTML
 | calendar.css | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/css/calendar.css` |
 | hours.css | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/css/hours.css` |
 | bandwidth.css | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/css/bandwidth.css` |
+| eps737.css | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/css/eps737.css` |
 
 ### HTML
 | File | URL |
@@ -79,6 +92,7 @@ git remote set-url origin https://$GIT_USER:$GIT_TOKEN@github.com/mlpsychai/HTML
 | calendar.html | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/panels/calendar.html` |
 | semester.html | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/panels/semester.html` |
 | deadlines.html | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/panels/deadlines.html` |
+| eps737.html | `https://raw.githubusercontent.com/mlpsychai/HTML_ORGANIZATION_DASHBOARD/main/panels/eps737.html` |
 
 ### Scripts & Workflows
 | File | URL |
@@ -101,24 +115,33 @@ HTML_ORGANIZATION_DASHBOARD/
 │   ├── components.css      # Shared components (cards, buttons)
 │   ├── calendar.css        # Calendar/timeline styles
 │   ├── hours.css           # Hours tracking styles
-│   └── bandwidth.css       # Bandwidth panel + overview components
+│   ├── bandwidth.css       # Bandwidth panel + overview components
+│   └── eps737.css          # EPS 737 course panel styles
 ├── js/
 │   ├── app.js              # Entry point - initializes all modules
 │   ├── config.js           # Data URLs, timezone, constants
 │   ├── navigation.js       # Panel switching + lazy loading
 │   ├── calendar.js         # Google Calendar integration
 │   ├── hours.js            # Time2Track data rendering
-│   └── bandwidth.js        # Fitbit data + bandwidth calculations
+│   ├── bandwidth.js        # Fitbit data + bandwidth calculations
+│   └── eps737.js           # EPS 737 course panel module
 ├── panels/
 │   ├── bandwidth.html      # Full bandwidth/self-care panel
 │   ├── hours.html          # Detailed hours breakdown
 │   ├── calendar.html       # Weekly calendar view
 │   ├── semester.html       # Full semester calendar
-│   └── deadlines.html      # Assignment deadlines
+│   ├── deadlines.html      # Assignment deadlines
+│   └── eps737.html         # EPS 737 course panel
 ├── data/
 │   ├── fitbit-latest.json  # Auto-updated Fitbit data
 │   ├── calendar_data.json  # Google Calendar events
-│   └── hours_data.json     # Time2Track hours
+│   ├── hours_data.json     # Time2Track hours
+│   └── courses/            # Course-specific data
+│       ├── eps737.json     # EPS 737 assignments & status
+│       ├── EPS_607/        # (placeholder)
+│       ├── EPS_608/        # (placeholder)
+│       ├── EPS_706/        # (placeholder)
+│       └── EPS_740/        # (placeholder)
 ├── scripts/
 │   └── fetch_calendar_data.py  # Calendar sync script (America/Phoenix timezone)
 └── .github/workflows/
@@ -195,6 +218,24 @@ Manual CSV upload or direct edit.
 ### Calendar (`data/calendar_data.json`)
 Synced via `scripts/fetch_calendar_data.py` every 6 hours. Handles timezone conversion from UTC to America/Phoenix.
 
+### Course Data (`data/courses/eps737.json`)
+Assignment statuses and project info for EPS 737. Manual edit to update progress.
+
+```json
+{
+  "currentWeek": 2,
+  "assignments": {
+    "interview_mse": { "status": "not_started", "progress": 0 },
+    "mmpi3_partner": { "status": "in_progress", "progress": 25 }
+  },
+  "project": {
+    "partner": "Ashley",
+    "partnerCharacter": "The Grinch",
+    "yourCharacter": "TBD"
+  }
+}
+```
+
 ---
 
 ## Modules
@@ -224,6 +265,13 @@ Synced via `scripts/fetch_calendar_data.py` every 6 hours. Handles timezone conv
 - Renders today's events on timeline (5AM-8PM)
 - Current time indicator
 
+### eps737.js
+- Fetches `data/courses/eps737.json`
+- Updates assignment status bars and labels
+- Highlights current week in schedule table
+- Updates semester progress bar
+- Auto-detects due-soon/overdue based on dates
+
 ---
 
 ## Views
@@ -236,6 +284,7 @@ Synced via `scripts/fetch_calendar_data.py` every 6 hours. Handles timezone conv
 | **Full Semester** | Jan 12 – May 8 semester calendar |
 | **Deadlines** | Upcoming assignments table |
 | **Bandwidth** | Full Fitbit data - sleep, heart, activity, readiness |
+| **EPS 737** | Psychological Assessment course panel (planned) |
 
 ---
 
@@ -248,9 +297,10 @@ Panels are loaded via `fetch()` and inserted via `innerHTML`. **Scripts in loade
 Panel elements use prefixed IDs to avoid conflicts:
 - Overview: `directHoursValue`, `totalHoursValue`
 - Bandwidth panel: `bandwidth-sleep-score`, `bandwidth-resting-hr`
+- EPS 737: `data-assignment="mmpi3_partner"`, `data-week="2"`
 
 ### MutationObserver
-`bandwidth.js` uses MutationObserver to detect when the panel becomes active and re-renders data.
+`bandwidth.js` and `eps737.js` use MutationObserver to detect when panels become active and re-render data.
 
 ### Timezone Handling
 `fetch_calendar_data.py` converts all calendar times to America/Phoenix:
