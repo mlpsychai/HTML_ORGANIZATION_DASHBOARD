@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring 2026 Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/hours.css">
+  <link rel="stylesheet" href="css/bandwidth.css">
+  <link rel="stylesheet" href="css/weekly-calendar.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- GLOBAL NAV (always visible) -->
+    <div class="global-nav">
+      <nav class="nav-container">
+        <button class="hamburger-btn" id="menuBtn">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <button class="dropdown-item active" data-view="overview">Overview</button>
+          <button class="dropdown-item" data-view="hours">T2T Log</button>
+          <button class="dropdown-item" data-view="calendar">This Week</button>
+          <button class="dropdown-item" data-view="semester">Full Semester</button>
+          <button class="dropdown-item" data-view="deadlines">Deadlines</button>
+          <button class="dropdown-item" data-view="bandwidth">Bandwidth</button>
+        </div>
+      </nav>
+      <div class="header-title">Spring Semester 2026</div>
+      <div class="quick-links-container">
+        <button class="quick-links-btn" id="quickLinksBtn">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+        </button>
+        <div class="quick-links-dropdown" id="quickLinksDropdown">
+          <a href="https://app.time2track.com/" target="_blank" class="quick-link-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Time2Track
+          </a>
+          <a href="https://valt.ac.nau.edu/login" target="_blank" class="quick-link-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+            Valt
+          </a>
+          <a href="https://in.nau.edu/lms/" target="_blank" class="quick-link-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            Canvas
+          </a>
+          <a href="https://calendar.google.com/calendar/u/0/r" target="_blank" class="quick-link-item">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Calendar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OVERVIEW PANEL -->
+    <div id="overview" class="view-panel active">
+      <div class="overview-grid">
+
+        <!-- ROW 1: Labels -->
+        <div class="grid-priorities-label">
+          <div class="priorities-label">True Priorities</div>
+        </div>
+
+        <div class="grid-hours-label">
+          <div class="priorities-label">Semester Hours</div>
+        </div>
+
+        <!-- ROW 2: True Priorities Cards (3 cards) -->
+        <div class="grid-priorities-cards">
+          <!-- Card 1: Bandwidth (donut) -->
+          <div class="stat-card">
+            <div class="stat-label">Bandwidth</div>
+            <div class="stat-content">
+              <div class="bandwidth-donut" id="bandwidthDonut">
+                <svg viewBox="0 0 36 36">
+                  <circle class="donut-bg" cx="18" cy="18" r="15"></circle>
+                  <circle class="donut-fill" id="bandwidthRing" cx="18" cy="18" r="15" stroke-dasharray="75, 100"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="stat-sublabel" id="bandwidthStatus">Thriving</div>
+          </div>
+
+          <!-- Card 2: Cup Status -->
+          <div class="stat-card">
+            <div class="stat-label">Cup Status</div>
+            <div class="stat-content">
+              <div class="cup-container">
+                <div class="cup-graphic">
+                  <div class="cup-fill medium" id="cupFill"></div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-sublabel" id="cupStatus">Half Full</div>
+          </div>
+
+          <!-- Card 3: Sanity Check -->
+          <div class="stat-card">
+            <div class="stat-label">Sanity Check</div>
+            <div class="stat-content">
+              <div class="sanity-visual" id="sanityVisual">
+                <svg viewBox="0 0 60 30" class="sanity-wave">
+                  <path class="wave-line" d="M0,15 Q15,5 30,15 T60,15" fill="none" stroke="var(--accent-sage)" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="stat-sublabel" id="sanityStatus">Manageable</div>
+          </div>
+        </div>
+
+        <!-- ROW 2: Semester Hours Cards (3 cards) -->
+        <div class="grid-hours-cards">
+          <div class="stat-card">
+            <div class="stat-label">Direct Hours</div>
+            <div class="stat-value" id="directHoursValue">--/100</div>
+            <div class="stat-sublabel" id="directHoursPercent">--% Complete</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Total Hours</div>
+            <div class="stat-value" id="totalHoursValue">--/500</div>
+            <div class="stat-sublabel" id="totalHoursPercent">--% Complete</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-label">Master's Supervision</div>
+            <div class="stat-value" id="supervisionValue">--/40</div>
+            <div class="stat-sublabel" id="supervisionPercent">--% Complete</div>
+          </div>
+        </div>
+
+        <!-- CALENDAR spans rows 2-5 -->
+        <div class="grid-today-schedule">
+          <div class="section today-schedule">
+            <div class="schedule-header">
+              <span class="section-title">Calendar</span>
+              <span class="current-date" id="currentDateLabel">Date: --/--</span>
+            </div>
+            <div class="timeline" id="calendarTimeline">
+              <!-- Time slots -->
+              <div class="time-slot" style="top: 0%"><span class="time-label">5 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 6.67%"><span class="time-label">6 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 13.33%"><span class="time-label">7 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 20%"><span class="time-label">8 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 26.67%"><span class="time-label">9 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 33.33%"><span class="time-label">10 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 40%"><span class="time-label">11 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 46.67%"><span class="time-label">12 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 53.33%"><span class="time-label">1 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 60%"><span class="time-label">2 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 66.67%"><span class="time-label">3 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 73.33%"><span class="time-label">4 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 80%"><span class="time-label">5 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 86.67%"><span class="time-label">6 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 93.33%"><span class="time-label">7 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 100%"><span class="time-label">8 PM</span><span class="time-tick"></span></div>
+
+              <!-- Current time indicator -->
+              <div class="current-time-indicator" id="currentTimeIndicator">
+                <div class="time-dot"></div>
+                <div class="time-line"></div>
+              </div>
+
+              <!-- Events container (populated by JS) -->
+              <div class="schedule-events" id="calendarEvents"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 3: Priorities Section Label -->
+        <div class="grid-priorities-section-label">
+          <div class="priorities-section-label">Priorities</div>
+        </div>
+
+        <!-- ROW 3-4: Upcoming Assignments -->
+        <div class="grid-upcoming">
+          <div class="section upcoming-assignments">
+            <div class="section-header">
+              <span class="section-title">Upcoming Assignments</span>
+            </div>
+            <table class="assignments-table">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Assignment</th>
+                  <th>Due</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>EPS 706</td>
+                  <td>Presentation #1</td>
+                  <td>Jan 21</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>EPS 607</td>
+                  <td>Weekly Reflection</td>
+                  <td>Jan 24</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>EPS 609</td>
+                  <td>Reading Response</td>
+                  <td>Jan 27</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>EPS 737</td>
+                  <td>Practice Assessment</td>
+                  <td>Jan 28</td>
+                  <td>25</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ROW 4: Today's Priorities -->
+        <div class="grid-today-priorities">
+          <div class="section today-priorities">
+            <div class="section-header">
+              <span class="section-title">Today's Priorities</span>
+            </div>
+            <div class="priorities-list">
+              <div class="priority-item">
+                <input type="checkbox" id="p1" class="priority-checkbox">
+                <label for="p1">Review EPS 609 readings before class</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="p2" class="priority-checkbox">
+                <label for="p2">Finalize History & Systems presentation slides</label>
+              </div>
+              <div class="priority-item completed">
+                <input type="checkbox" id="p3" class="priority-checkbox" checked>
+                <label for="p3">Morning routine + breakfast</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="p4" class="priority-checkbox">
+                <label for="p4">Log T2T hours from Monday</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 5: Weekly Priorities -->
+        <div class="grid-weekly">
+          <div class="section weekly-priorities">
+            <div class="section-header">
+              <span class="section-title">Weekly Priorities</span>
+            </div>
+            <div class="priorities-list">
+              <div class="priority-item">
+                <input type="checkbox" id="w1" class="priority-checkbox">
+                <label for="w1">Complete all EPS 706 presentation prep</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w2" class="priority-checkbox">
+                <label for="w2">LEND Tucson clinic - review ADOS materials</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w3" class="priority-checkbox">
+                <label for="w3">Schedule GAship observation with James</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w4" class="priority-checkbox">
+                <label for="w4">Maintain sleep schedule (7+ hrs)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- OTHER PANELS (lazy-loaded) -->
+    <div id="hours-panel" class="view-panel"></div>
+    <div id="calendar-panel" class="view-panel"></div>
+    <div id="semester-panel" class="view-panel"></div>
+    <div id="deadlines-panel" class="view-panel"></div>
+    <div id="bandwidth-panel" class="view-panel"></div>
+
+  </div>
+
+  <!-- Modular JavaScript -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
