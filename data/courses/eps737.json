@@ -1,0 +1,102 @@
+{
+  "courseCode": "EPS 737",
+  "courseName": "Psychological Assessment",
+  "currentWeek": 2,
+  "semesterWeeks": 16,
+  "assignments": {
+    "interview_mse": {
+      "name": "Clinical Interview/MSE Video",
+      "points": 50,
+      "dueDate": "2026-02-03",
+      "status": "not_started",
+      "progress": 0
+    },
+    "intake_report": {
+      "name": "Intake Report",
+      "points": 50,
+      "dueDate": "2026-02-03",
+      "status": "not_started",
+      "progress": 0
+    },
+    "mmpi3_partner": {
+      "name": "MMPI-3 Interpretation (partner)",
+      "points": 50,
+      "dueDate": "2026-03-17",
+      "status": "not_started",
+      "progress": 0
+    },
+    "pai_partner": {
+      "name": "PAI Interpretation (partner)",
+      "points": 50,
+      "dueDate": "2026-03-17",
+      "status": "not_started",
+      "progress": 0
+    },
+    "mcmi4_partner": {
+      "name": "MCMI-IV Interpretation (partner)",
+      "points": 50,
+      "dueDate": "2026-03-31",
+      "status": "not_started",
+      "progress": 0
+    },
+    "comp_report": {
+      "name": "Comprehensive Report",
+      "points": 50,
+      "dueDate": "2026-04-21",
+      "status": "not_started",
+      "progress": 0
+    },
+    "feedback_video": {
+      "name": "Oral Feedback Video",
+      "points": 25,
+      "dueDate": "2026-04-21",
+      "status": "not_started",
+      "progress": 0
+    },
+    "case_presentation": {
+      "name": "Case Presentation",
+      "points": 75,
+      "dueDate": "2026-04-28",
+      "dueDateRange": "Apr 7-28",
+      "status": "not_started",
+      "progress": 0
+    },
+    "mmpi3_self": {
+      "name": "MMPI-3 Self-Report",
+      "points": 25,
+      "dueDate": "2026-03-17",
+      "status": "not_started",
+      "progress": 0
+    },
+    "pai_self": {
+      "name": "PAI Self-Report",
+      "points": 25,
+      "dueDate": "2026-03-17",
+      "status": "not_started",
+      "progress": 0
+    },
+    "mcmi4_self": {
+      "name": "MCMI-IV Self-Report",
+      "points": 25,
+      "dueDate": "2026-03-31",
+      "status": "not_started",
+      "progress": 0
+    },
+    "combination_self": {
+      "name": "Combination Self-Report",
+      "points": 25,
+      "dueDate": "2026-04-14",
+      "status": "not_started",
+      "progress": 0
+    }
+  },
+  "project": {
+    "partner": "Ashley",
+    "partnerCharacter": "The Grinch",
+    "yourCharacter": "TBD (psych research figure)",
+    "todos": [
+      "Schedule EPS Clinic time for interview recording"
+    ]
+  },
+  "lastUpdated": "2026-01-20T00:00:00Z"
+}

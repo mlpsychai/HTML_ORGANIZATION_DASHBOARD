@@ -20,7 +20,7 @@ body {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 24px 40px;
+  padding: 16px 40px;
   min-height: 100vh;
   position: relative;
 }
@@ -39,8 +39,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--border-color);
 }
 

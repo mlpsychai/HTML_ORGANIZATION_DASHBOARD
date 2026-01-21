@@ -1,0 +1,451 @@
+/* ========================================
+   EPS 737 - Psychological Assessment
+   Course Panel Styles
+   ======================================== */
+
+/* Panel Grid Layout */
+.eps737-panel {
+  width: 100%;
+}
+
+.eps737-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-xl, 2rem);
+}
+
+@media (max-width: 1000px) {
+  .eps737-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Course Header */
+.eps737-header {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border-radius: var(--radius-lg, 14px);
+  padding: var(--space-xl, 2rem);
+  margin-bottom: var(--space-xl, 2rem);
+  border-left: 4px solid var(--accent-purple, #9d8ccc);
+}
+
+.eps737-header .course-code {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.875rem;
+  color: var(--accent-purple, #9d8ccc);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs, 0.25rem);
+}
+
+.eps737-header .course-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary, #e8e6e3);
+  margin-bottom: var(--space-sm, 0.5rem);
+}
+
+.eps737-header .course-subtitle {
+  color: var(--text-secondary, #b8b5b0);
+  font-size: 1rem;
+  margin-bottom: var(--space-lg, 1.5rem);
+}
+
+.eps737-header .course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg, 1.5rem);
+}
+
+.eps737-header .meta-item {
+  color: var(--text-secondary, #b8b5b0);
+  font-size: 0.9rem;
+}
+
+/* Assignment Group Titles */
+.eps737-panel .assignment-group-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary, #b8b5b0);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md, 1rem);
+  margin-top: var(--space-lg, 1.5rem);
+}
+
+.eps737-panel .assignment-group-title:first-of-type {
+  margin-top: 0;
+}
+
+/* Assignment Cards */
+.eps737-panel .assignment-card {
+  background: var(--bg-tertiary, #2a2a32);
+  border-radius: var(--radius-sm, 6px);
+  padding: var(--space-md, 1rem);
+  margin-bottom: var(--space-sm, 0.5rem);
+  transition: background 0.2s ease;
+}
+
+.eps737-panel .assignment-card:hover {
+  background: var(--bg-elevated, #32323c);
+}
+
+.eps737-panel .assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-xs, 0.25rem);
+}
+
+.eps737-panel .assignment-name {
+  font-weight: 600;
+  color: var(--text-primary, #e8e6e3);
+}
+
+.eps737-panel .assignment-points {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.8rem;
+  color: var(--accent-gold, #d4a574);
+  background: rgba(212, 165, 116, 0.15);
+  padding: var(--space-xs, 0.25rem) var(--space-sm, 0.5rem);
+  border-radius: var(--radius-sm, 6px);
+  white-space: nowrap;
+}
+
+.eps737-panel .assignment-due {
+  font-size: 0.85rem;
+  color: var(--text-muted, #888580);
+  margin-bottom: var(--space-sm, 0.5rem);
+}
+
+/* Status Bars */
+.eps737-panel .status-bar-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm, 0.5rem);
+}
+
+.eps737-panel .status-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-elevated, #32323c);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.eps737-panel .status-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+  background: var(--text-muted, #888580);
+}
+
+.eps737-panel .status-bar-fill.in-progress {
+  background: linear-gradient(90deg, var(--accent-teal, #5aa9a9), var(--accent-sage, #81b29a));
+}
+
+.eps737-panel .status-bar-fill.complete {
+  background: var(--accent-sage, #81b29a);
+}
+
+.eps737-panel .status-bar-fill.due-soon {
+  background: var(--accent-gold, #d4a574);
+}
+
+.eps737-panel .status-bar-fill.overdue {
+  background: var(--accent-coral, #e07a5f);
+}
+
+.eps737-panel .status-label {
+  font-size: 0.75rem;
+  color: var(--text-muted, #888580);
+  white-space: nowrap;
+  min-width: 80px;
+  text-align: right;
+}
+
+/* Schedule Table */
+.eps737-panel .schedule-table-wrapper {
+  overflow-x: auto;
+}
+
+.eps737-panel .schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 700px;
+}
+
+.eps737-panel .schedule-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary, #b8b5b0);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--space-sm, 0.5rem) var(--space-md, 1rem);
+  border-bottom: 2px solid var(--bg-elevated, #32323c);
+  background: var(--bg-tertiary, #2a2a32);
+}
+
+.eps737-panel .schedule-table td {
+  padding: var(--space-sm, 0.5rem) var(--space-md, 1rem);
+  border-bottom: 1px solid var(--bg-tertiary, #2a2a32);
+  vertical-align: top;
+}
+
+.eps737-panel .schedule-table tr:hover td {
+  background: var(--bg-tertiary, #2a2a32);
+}
+
+.eps737-panel .schedule-table tr.current-week td {
+  background: rgba(90, 169, 169, 0.1);
+}
+
+.eps737-panel .schedule-table tr.current-week td:first-child {
+  border-left: 3px solid var(--accent-teal, #5aa9a9);
+}
+
+.eps737-panel .schedule-table tr.spring-break td {
+  background: rgba(129, 178, 154, 0.1);
+  color: var(--accent-sage, #81b29a);
+  font-style: italic;
+}
+
+.eps737-panel .week-num {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.8rem;
+  color: var(--accent-teal, #5aa9a9);
+}
+
+.eps737-panel .week-date {
+  color: var(--text-muted, #888580);
+  font-size: 0.85rem;
+}
+
+.eps737-panel .week-topic {
+  color: var(--text-primary, #e8e6e3);
+}
+
+.eps737-panel .week-reading {
+  color: var(--text-secondary, #b8b5b0);
+  font-size: 0.85rem;
+}
+
+.eps737-panel .week-due {
+  color: var(--accent-coral, #e07a5f);
+  font-size: 0.85rem;
+}
+
+.eps737-panel .week-due-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs, 0.25rem);
+  margin-bottom: var(--space-xs, 0.25rem);
+}
+
+.eps737-panel .week-due-item:last-child {
+  margin-bottom: 0;
+}
+
+.eps737-panel .due-indicator {
+  width: 8px;
+  height: 8px;
+  background: var(--accent-coral, #e07a5f);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Sidebar */
+.eps737-sidebar .sidebar-section {
+  background: var(--bg-secondary, #222228);
+  border-radius: var(--radius-md, 10px);
+  padding: var(--space-lg, 1.5rem);
+  margin-bottom: var(--space-lg, 1.5rem);
+}
+
+.eps737-sidebar .sidebar-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary, #e8e6e3);
+  margin-bottom: var(--space-md, 1rem);
+  padding-bottom: var(--space-sm, 0.5rem);
+  border-bottom: 1px solid var(--bg-tertiary, #2a2a32);
+}
+
+/* Instructor Card */
+.eps737-sidebar .instructor-card {
+  background: var(--bg-tertiary, #2a2a32);
+  border-radius: var(--radius-sm, 6px);
+  padding: var(--space-md, 1rem);
+}
+
+.eps737-sidebar .instructor-name {
+  font-weight: 700;
+  color: var(--text-primary, #e8e6e3);
+  margin-bottom: var(--space-sm, 0.5rem);
+}
+
+.eps737-sidebar .instructor-detail {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #b8b5b0);
+  margin-bottom: var(--space-xs, 0.25rem);
+}
+
+.eps737-sidebar .instructor-detail:last-child {
+  margin-bottom: 0;
+}
+
+/* Progress Section */
+.eps737-sidebar .progress-section {
+  margin-top: var(--space-lg, 1.5rem);
+}
+
+.eps737-sidebar .progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm, 0.5rem);
+}
+
+.eps737-sidebar .progress-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #b8b5b0);
+}
+
+.eps737-sidebar .progress-value {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.8rem;
+  color: var(--accent-teal, #5aa9a9);
+}
+
+.eps737-sidebar .progress-bar {
+  height: 6px;
+  background: var(--bg-elevated, #32323c);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.eps737-sidebar .progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-teal, #5aa9a9), var(--accent-sage, #81b29a));
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Note Cards */
+.eps737-sidebar .note-card {
+  background: var(--bg-tertiary, #2a2a32);
+  border-radius: var(--radius-sm, 6px);
+  padding: var(--space-md, 1rem);
+  margin-bottom: var(--space-sm, 0.5rem);
+}
+
+.eps737-sidebar .note-card:last-child {
+  margin-bottom: 0;
+}
+
+.eps737-sidebar .note-label {
+  font-size: 0.7rem;
+  color: var(--accent-purple, #9d8ccc);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs, 0.25rem);
+}
+
+.eps737-sidebar .note-content {
+  font-size: 0.9rem;
+  color: var(--text-primary, #e8e6e3);
+}
+
+.eps737-sidebar .note-card.todo {
+  background: rgba(224, 122, 95, 0.1);
+  border: 1px solid rgba(224, 122, 95, 0.2);
+}
+
+.eps737-sidebar .note-card.todo .note-label {
+  color: var(--accent-coral, #e07a5f);
+}
+
+/* Grade List */
+.eps737-sidebar .grade-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.eps737-sidebar .grade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm, 0.5rem) 0;
+  border-bottom: 1px solid var(--bg-tertiary, #2a2a32);
+}
+
+.eps737-sidebar .grade-item:last-child {
+  border-bottom: none;
+}
+
+.eps737-sidebar .grade-item.total {
+  font-weight: 700;
+  padding-top: var(--space-md, 1rem);
+  margin-top: var(--space-sm, 0.5rem);
+  border-top: 2px solid var(--bg-elevated, #32323c);
+  border-bottom: none;
+}
+
+.eps737-sidebar .grade-name {
+  font-size: 0.85rem;
+  color: var(--text-secondary, #b8b5b0);
+}
+
+.eps737-sidebar .grade-item.total .grade-name {
+  color: var(--text-primary, #e8e6e3);
+}
+
+.eps737-sidebar .grade-points {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.8rem;
+  color: var(--accent-gold, #d4a574);
+}
+
+/* Text Items */
+.eps737-sidebar .text-item {
+  padding-left: var(--space-md, 1rem);
+  border-left: 2px solid var(--bg-elevated, #32323c);
+  margin-bottom: var(--space-md, 1rem);
+}
+
+.eps737-sidebar .text-item:last-child {
+  margin-bottom: 0;
+}
+
+.eps737-sidebar .text-title {
+  font-size: 0.9rem;
+  color: var(--text-primary, #e8e6e3);
+  font-weight: 500;
+  margin-bottom: var(--space-xs, 0.25rem);
+}
+
+.eps737-sidebar .text-author {
+  font-size: 0.8rem;
+  color: var(--text-muted, #888580);
+}
+
+/* Policy Items */
+.eps737-sidebar .policy-item {
+  margin-bottom: var(--space-md, 1rem);
+}
+
+.eps737-sidebar .policy-item:last-child {
+  margin-bottom: 0;
+}
+
+.eps737-sidebar .policy-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary, #e8e6e3);
+  margin-bottom: var(--space-xs, 0.25rem);
+}
+
+.eps737-sidebar .policy-detail {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #b8b5b0);
+}
