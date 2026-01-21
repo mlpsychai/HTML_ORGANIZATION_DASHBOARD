@@ -1,0 +1,148 @@
+/* ==============================================
+   OVERVIEW GRID LAYOUT - 12-Column System
+   
+   ⚠️  SCOPED TO #overview ONLY
+   These styles only affect the Overview panel.
+   Other panels can safely use their own layouts.
+   
+   LAYOUT:
+   ┌─────────────────┬─────────────────┬─────────────────┐
+   │ Row 1:          │ Row 1:          │ Row 1:          │
+   │ Priorities Lbl  │ Hours Label     │ (empty)         │
+   │ (cols 1-4)      │ (cols 5-8)      │                 │
+   ├─────────────────┼─────────────────┼─────────────────┤
+   │ Row 2:          │ Row 2:          │ Calendar        │
+   │ 3 Priority Crds │ 3 Hours Cards   │ (cols 9-12)     │
+   │ (cols 1-4)      │ (cols 5-8)      │ rows 2-5        │
+   ├─────────────────┼─────────────────┤                 │
+   │ Row 3:          │ Row 3-4:        │                 │
+   │ PRIORITIES Lbl  │ Upcoming        │                 │
+   ├─────────────────┤ Assignments     │                 │
+   │ Row 4:          │ (cols 5-8)      │                 │
+   │ Today's Prior.  │                 │                 │
+   ├─────────────────┼─────────────────┼─────────────────┤
+   │ Row 5:          │                 │                 │
+   │ Weekly Prior.   │                 │                 │
+   └─────────────────┴─────────────────┴─────────────────┘
+
+   ⚠️  REQUIRED HTML CLASSES (must match index.html)
+   ───────────────────────────────────────────────────────
+   Class Name                     │ Grid Position
+   ───────────────────────────────────────────────────────
+   .grid-priorities-label         │ Row 1, cols 1-4
+   .grid-hours-label              │ Row 1, cols 5-8
+   .grid-priorities-cards         │ Row 2, cols 1-4  (3 cards)
+   .grid-hours-cards              │ Row 2, cols 5-8  (3 cards)
+   .grid-today-schedule           │ Rows 2-5, cols 9-12
+   .grid-priorities-section-label │ Row 3, cols 1-4
+   .grid-upcoming                 │ Rows 3-4, cols 5-8
+   .grid-today-priorities         │ Row 4, cols 1-4
+   .grid-weekly                   │ Row 5, cols 1-4
+   ───────────────────────────────────────────────────────
+   
+   ⚠️  If editing class names, update BOTH:
+       - This file (css/grid.css)
+       - index.html (the #overview section)
+   ============================================== */
+
+
+/* ==============================================
+   MAIN GRID CONTAINER
+   ============================================== */
+
+#overview .overview-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto auto;
+  gap: 12px;
+  row-gap: 16px;
+}
+
+
+/* ==============================================
+   ROW 1: Section Labels
+   ============================================== */
+
+#overview .grid-priorities-label { 
+  grid-column: 1 / 5; 
+  grid-row: 1; 
+  align-self: center; 
+}
+
+#overview .grid-hours-label { 
+  grid-column: 5 / 9; 
+  grid-row: 1; 
+  align-self: center; 
+}
+
+
+/* ==============================================
+   ROW 2: Stat Cards (3 cards each)
+   ============================================== */
+
+#overview .grid-priorities-cards { 
+  grid-column: 1 / 5; 
+  grid-row: 2; 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 12px; 
+}
+
+#overview .grid-hours-cards { 
+  grid-column: 5 / 9; 
+  grid-row: 2; 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 12px; 
+}
+
+
+/* ==============================================
+   CALENDAR: Spans rows 2-5, right column
+   ============================================== */
+
+#overview .grid-today-schedule { 
+  grid-column: 9 / 13; 
+  grid-row: 2 / 6;
+}
+
+
+/* ==============================================
+   ROW 3: Priorities Section Label
+   ============================================== */
+
+#overview .grid-priorities-section-label { 
+  grid-column: 1 / 5; 
+  grid-row: 3; 
+  align-self: center; 
+}
+
+
+/* ==============================================
+   ROWS 3-4: Upcoming Assignments
+   ============================================== */
+
+#overview .grid-upcoming { 
+  grid-column: 5 / 9; 
+  grid-row: 3 / 5; 
+}
+
+
+/* ==============================================
+   ROW 4: Today's Priorities
+   ============================================== */
+
+#overview .grid-today-priorities { 
+  grid-column: 1 / 5; 
+  grid-row: 4; 
+}
+
+
+/* ==============================================
+   ROW 5: Weekly Priorities
+   ============================================== */
+
+#overview .grid-weekly { 
+  grid-column: 1 / 5; 
+  grid-row: 5; 
+}
