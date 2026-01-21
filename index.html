@@ -70,10 +70,16 @@
     <div id="overview" class="view-panel active">
       <div class="overview-grid">
 
+        <!-- ROW 1: Labels -->
         <div class="grid-priorities-label">
           <div class="priorities-label">True Priorities</div>
         </div>
 
+        <div class="grid-hours-label">
+          <div class="priorities-label">Semester Hours</div>
+        </div>
+
+        <!-- ROW 2: Cards -->
         <div class="grid-priorities-cards">
           <div class="stat-card">
             <div class="stat-label">Bandwidth</div>
@@ -107,11 +113,7 @@
           </div>
         </div>
 
-        <div class="grid-semester-hours-label">
-          <div class="semester-hours-label">Semester Hours</div>
-        </div>
-
-        <div class="grid-semester-hours-cards">
+        <div class="grid-hours-cards">
           <div class="stat-card">
             <div class="stat-label">Direct Hours</div>
             <div class="stat-value" id="directHoursValue">--/100</div>
@@ -131,57 +133,51 @@
           </div>
         </div>
 
-        <div class="grid-priorities">
-          <div class="section today-priorities">
-            <div class="section-header">
-              <span class="section-title">Today's Priorities</span>
+        <!-- CALENDAR spans rows 2-5 -->
+        <div class="grid-today-schedule">
+          <div class="section today-schedule">
+            <div class="schedule-header">
+              <span class="section-title">Calendar</span>
+              <span class="current-date" id="currentDateLabel">Date: --/--</span>
             </div>
-            <div class="priorities-list">
-              <div class="priority-item">
-                <input type="checkbox" id="p1" class="priority-checkbox">
-                <label for="p1">Review EPS 609 readings before class</label>
-              </div>
-              <div class="priority-item">
-                <input type="checkbox" id="p2" class="priority-checkbox">
-                <label for="p2">Finalize History & Systems presentation slides</label>
-              </div>
-              <div class="priority-item completed">
-                <input type="checkbox" id="p3" class="priority-checkbox" checked>
-                <label for="p3">Morning routine + breakfast</label>
-              </div>
-              <div class="priority-item">
-                <input type="checkbox" id="p4" class="priority-checkbox">
-                <label for="p4">Log T2T hours from Monday</label>
-              </div>
-            </div>
-          </div>
+            <div class="timeline" id="calendarTimeline">
+              <!-- Time slots -->
+              <div class="time-slot" style="top: 0%"><span class="time-label">5 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 6.67%"><span class="time-label">6 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 13.33%"><span class="time-label">7 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 20%"><span class="time-label">8 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 26.67%"><span class="time-label">9 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 33.33%"><span class="time-label">10 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 40%"><span class="time-label">11 AM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 46.67%"><span class="time-label">12 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 53.33%"><span class="time-label">1 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 60%"><span class="time-label">2 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 66.67%"><span class="time-label">3 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 73.33%"><span class="time-label">4 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 80%"><span class="time-label">5 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 86.67%"><span class="time-label">6 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 93.33%"><span class="time-label">7 PM</span><span class="time-tick"></span></div>
+              <div class="time-slot" style="top: 100%"><span class="time-label">8 PM</span><span class="time-tick"></span></div>
 
-          <div class="section weekly-priorities">
-            <div class="section-header">
-              <span class="section-title">Weekly Priorities</span>
-            </div>
-            <div class="priorities-list">
-              <div class="priority-item">
-                <input type="checkbox" id="w1" class="priority-checkbox">
-                <label for="w1">Complete all EPS 706 presentation prep</label>
+              <!-- Current time indicator -->
+              <div class="current-time-indicator" id="currentTimeIndicator">
+                <div class="time-dot"></div>
+                <div class="time-line"></div>
               </div>
-              <div class="priority-item">
-                <input type="checkbox" id="w2" class="priority-checkbox">
-                <label for="w2">LEND Tucson clinic - review ADOS materials</label>
-              </div>
-              <div class="priority-item">
-                <input type="checkbox" id="w3" class="priority-checkbox">
-                <label for="w3">Schedule GAship observation with James</label>
-              </div>
-              <div class="priority-item">
-                <input type="checkbox" id="w4" class="priority-checkbox">
-                <label for="w4">Maintain sleep schedule (7+ hrs)</label>
-              </div>
+
+              <!-- Events container (populated by JS) -->
+              <div class="schedule-events" id="calendarEvents"></div>
             </div>
           </div>
         </div>
 
-        <div class="grid-assignments">
+        <!-- ROW 3: Priorities Section Label -->
+        <div class="grid-priorities-section-label">
+          <div class="priorities-section-label">Priorities</div>
+        </div>
+
+        <!-- ROW 3-4: Upcoming Assignments -->
+        <div class="grid-upcoming">
           <div class="section upcoming-assignments">
             <div class="section-header">
               <span class="section-title">Upcoming Assignments</span>
@@ -225,39 +221,56 @@
           </div>
         </div>
 
-        <div class="grid-calendar">
-          <div class="section today-schedule">
-            <div class="schedule-header">
-              <span class="section-title">Calendar</span>
-              <span class="current-date" id="currentDateLabel">Date: --/--</span>
+        <!-- ROW 4: Today's Priorities -->
+        <div class="grid-today-priorities">
+          <div class="section today-priorities">
+            <div class="section-header">
+              <span class="section-title">Today's Priorities</span>
             </div>
-            <div class="timeline" id="calendarTimeline">
-              <!-- Time slots -->
-              <div class="time-slot" style="top: 0%"><span class="time-label">5 AM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 6.67%"><span class="time-label">6 AM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 13.33%"><span class="time-label">7 AM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 20%"><span class="time-label">8 AM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 26.67%"><span class="time-label">9 AM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 33.33%"><span class="time-label">10 AM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 40%"><span class="time-label">11 AM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 46.67%"><span class="time-label">12 PM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 53.33%"><span class="time-label">1 PM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 60%"><span class="time-label">2 PM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 66.67%"><span class="time-label">3 PM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 73.33%"><span class="time-label">4 PM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 80%"><span class="time-label">5 PM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 86.67%"><span class="time-label">6 PM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 93.33%"><span class="time-label">7 PM</span><span class="time-tick"></span></div>
-              <div class="time-slot" style="top: 100%"><span class="time-label">8 PM</span><span class="time-tick"></span></div>
-
-              <!-- Current time indicator -->
-              <div class="current-time-indicator" id="currentTimeIndicator">
-                <div class="time-dot"></div>
-                <div class="time-line"></div>
+            <div class="priorities-list">
+              <div class="priority-item">
+                <input type="checkbox" id="p1" class="priority-checkbox">
+                <label for="p1">Review EPS 609 readings before class</label>
               </div>
+              <div class="priority-item">
+                <input type="checkbox" id="p2" class="priority-checkbox">
+                <label for="p2">Finalize History & Systems presentation slides</label>
+              </div>
+              <div class="priority-item completed">
+                <input type="checkbox" id="p3" class="priority-checkbox" checked>
+                <label for="p3">Morning routine + breakfast</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="p4" class="priority-checkbox">
+                <label for="p4">Log T2T hours from Monday</label>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <!-- Events container (populated by JS) -->
-              <div class="schedule-events" id="calendarEvents"></div>
+        <!-- ROW 5: Weekly Priorities -->
+        <div class="grid-weekly">
+          <div class="section weekly-priorities">
+            <div class="section-header">
+              <span class="section-title">Weekly Priorities</span>
+            </div>
+            <div class="priorities-list">
+              <div class="priority-item">
+                <input type="checkbox" id="w1" class="priority-checkbox">
+                <label for="w1">Complete all EPS 706 presentation prep</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w2" class="priority-checkbox">
+                <label for="w2">LEND Tucson clinic - review ADOS materials</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w3" class="priority-checkbox">
+                <label for="w3">Schedule GAship observation with James</label>
+              </div>
+              <div class="priority-item">
+                <input type="checkbox" id="w4" class="priority-checkbox">
+                <label for="w4">Maintain sleep schedule (7+ hrs)</label>
+              </div>
             </div>
           </div>
         </div>
