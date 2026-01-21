@@ -7,9 +7,7 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   padding: 16px;
-  padding-left: 50px;
   height: fit-content;
-  overflow: visible;
 }
 
 .schedule-header {
@@ -22,7 +20,6 @@
   margin-bottom: 12px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--border-color);
-  margin-left: -34px;
 }
 
 .schedule-header .section-title {
@@ -40,21 +37,31 @@
   color: var(--text-secondary);
 }
 
-/* Timeline */
+/* Timeline - Labels INSIDE container */
 .timeline {
   position: relative;
   height: 450px;
-  border-left: 2px solid var(--border-color);
+  padding-left: 50px;
   margin-left: 0;
-  overflow: visible;
+}
+
+/* Vertical line using pseudo-element */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border-color);
 }
 
 .time-slot {
   position: absolute;
-  left: -45px;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: flex-start;
-  width: calc(100% + 45px);
 }
 
 .time-label {
@@ -63,8 +70,9 @@
   color: var(--text-muted);
   width: 40px;
   text-align: right;
-  padding-right: 8px;
+  padding-right: 6px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .time-tick {
@@ -72,18 +80,22 @@
   height: 1px;
   background: var(--border-color);
   margin-top: 5px;
-}
-
-.time-slot.major .time-tick {
-  width: 12px;
-  background: var(--text-muted);
+  flex-shrink: 0;
 }
 
 /* Events */
+.schedule-events {
+  position: absolute;
+  left: 55px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .schedule-event {
   position: absolute;
-  left: 16px;
-  right: 8px;
+  left: 0;
+  right: 0;
   background: var(--bg-tertiary);
   border-left: 3px solid var(--text-muted);
   border-radius: var(--radius-sm);
@@ -104,8 +116,6 @@
   font-family: var(--font-mono);
   font-size: 9px;
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
   color: var(--text-muted);
   margin-bottom: 2px;
 }
@@ -123,7 +133,7 @@
 /* Current Time Indicator */
 .current-time-indicator {
   position: absolute;
-  left: -6px;
+  left: 42px;
   right: 0;
   z-index: 10;
   display: flex;
@@ -277,17 +287,8 @@
 .event-chip.deadline { border-left: 3px solid var(--accent-coral); background: rgba(201, 155, 140, 0.15); font-weight: 700; }
 .event-chip.break { border-left: 3px solid var(--accent-sage); background: rgba(140, 184, 140, 0.2); font-weight: 700; }
 
-/* Responsive */
 @media (max-width: 768px) {
   .schedule-week {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-/* Force overflow visible on calendar containers */
-.grid-today-schedule,
-.grid-today-schedule .section,
-.grid-today-schedule .today-schedule,
-.grid-today-schedule .timeline {
-  overflow: visible !important;
 }
