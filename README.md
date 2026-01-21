@@ -93,7 +93,7 @@ HTML_ORGANIZATION_DASHBOARD/
 ├── css/
 │   ├── variables.css       # Design tokens (colors, fonts, spacing)
 │   ├── base.css            # Reset, body styles
-│   ├── grid.css            # Overview grid layout
+│   ├── grid.css            # Overview grid layout (SCOPED to #overview)
 │   ├── components.css      # Shared components (cards, buttons)
 │   ├── calendar.css        # Calendar/timeline styles
 │   ├── hours.css           # Hours tracking styles
@@ -121,6 +121,35 @@ HTML_ORGANIZATION_DASHBOARD/
     ├── fitbit-sync.yml     # Fitbit sync every 6 hours
     └── calendar-sync.yml   # Calendar sync every 6 hours
 ```
+
+---
+
+## CSS Architecture
+
+### Scope & Isolation
+
+To prevent new panels from breaking the Overview layout, CSS is organized as:
+
+| File | Scope | Purpose |
+|------|-------|---------|
+| `variables.css` | Global | Design tokens (colors, fonts, spacing) |
+| `base.css` | Global | Reset, body, container, `.view-panel` |
+| `components.css` | Global | Reusable components (`.stat-card`, `.section`, etc.) |
+| `grid.css` | **#overview only** | Overview 12-column grid layout |
+| `calendar.css` | Mixed | Overview timeline + calendar panel |
+| `hours.css` | #hours-panel | Hours panel specific |
+| `bandwidth.css` | Mixed | Overview bandwidth + bandwidth panel |
+
+### Adding New Panels
+
+When creating a new panel:
+
+1. **Create panel HTML** in `panels/` folder
+2. **Create panel CSS** scoped to the panel ID (e.g., `#newpanel-panel .class`)
+3. **Add navigation** in `index.html` dropdown
+4. **Add lazy-load container** in `index.html` (e.g., `<div id="newpanel-panel" class="view-panel"></div>`)
+
+This ensures new panels won't affect the Overview layout.
 
 ---
 
@@ -253,6 +282,26 @@ Panel elements use prefixed IDs to avoid conflicts:
 - UTC times (ending in `Z`) are converted
 - TZID parameters are respected
 - GitHub Actions runs in UTC but script uses Phoenix time for "today"
+
+### Overview Grid Class Names (CRITICAL)
+
+⚠️ **The overview grid requires specific CSS class names in `index.html` to match `grid.css` selectors.** Mismatched class names will break the layout.
+
+All grid selectors are scoped to `#overview` to prevent conflicts with other panels.
+
+| Required HTML Class | Grid Position | Purpose |
+|---------------------|---------------|---------|
+| `.grid-priorities-label` | Row 1, cols 1-4 | "True Priorities" label |
+| `.grid-hours-label` | Row 1, cols 5-8 | "Semester Hours" label |
+| `.grid-priorities-cards` | Row 2, cols 1-4 | Bandwidth, Cup Status, Sanity (3 cards) |
+| `.grid-hours-cards` | Row 2, cols 5-8 | Direct, Total, Supervision (3 cards) |
+| `.grid-today-schedule` | Rows 2-5, cols 9-12 | Calendar timeline |
+| `.grid-priorities-section-label` | Row 3, cols 1-4 | "Priorities" section label |
+| `.grid-upcoming` | Rows 3-4, cols 5-8 | Upcoming assignments table |
+| `.grid-today-priorities` | Row 4, cols 1-4 | Today's priorities list |
+| `.grid-weekly` | Row 5, cols 1-4 | Weekly priorities list |
+
+**When editing:** Always update BOTH `index.html` AND `css/grid.css` if changing class names.
 
 ---
 
