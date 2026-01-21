@@ -79,27 +79,37 @@
           <div class="priorities-label">Semester Hours</div>
         </div>
 
-        <!-- ROW 2: Cards -->
+        <!-- ROW 2: True Priorities Cards (3 cards) -->
         <div class="grid-priorities-cards">
+          <!-- Card 1: Bandwidth (donut) -->
           <div class="stat-card">
             <div class="stat-label">Bandwidth</div>
             <div class="stat-content">
-              <div class="bandwidth-donut">
+              <div class="bandwidth-donut" id="bandwidthDonut">
                 <svg viewBox="0 0 36 36">
                   <circle class="donut-bg" cx="18" cy="18" r="15"></circle>
-                  <circle class="donut-fill low" cx="18" cy="18" r="15" stroke-dasharray="25, 100"></circle>
-                  <line class="donut-tick-yellow" x1="18" y1="1" x2="18" y2="5" transform="rotate(0, 18, 18)"></line>
-                  <line class="donut-tick-red" x1="18" y1="1" x2="18" y2="5" transform="rotate(54, 18, 18)"></line>
+                  <circle class="donut-fill" id="bandwidthRing" cx="18" cy="18" r="15" stroke-dasharray="75, 100"></circle>
                 </svg>
-                <div class="donut-center" id="bandwidthCenter">
-                  <span class="cup-icon">🥤</span>
-                  <span class="cup-status">HALF FULL</span>
-                </div>
               </div>
             </div>
-            <div class="stat-sublabel">Cup Status</div>
+            <div class="stat-sublabel" id="bandwidthStatus">Thriving</div>
           </div>
 
+          <!-- Card 2: Cup Status -->
+          <div class="stat-card">
+            <div class="stat-label">Cup Status</div>
+            <div class="stat-content">
+              <div class="cup-visual" id="cupVisual">
+                <svg viewBox="0 0 40 50" class="cup-icon-svg">
+                  <rect x="5" y="10" width="30" height="35" rx="3" fill="none" stroke="var(--text-muted)" stroke-width="2"/>
+                  <rect id="cupFill" x="7" y="27" width="26" height="16" rx="2" fill="var(--accent-sage)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="stat-sublabel" id="cupStatus">Half Full</div>
+          </div>
+
+          <!-- Card 3: Sanity Check -->
           <div class="stat-card">
             <div class="stat-label">Sanity Check</div>
             <div class="stat-content">
@@ -113,6 +123,7 @@
           </div>
         </div>
 
+        <!-- ROW 2: Semester Hours Cards (3 cards) -->
         <div class="grid-hours-cards">
           <div class="stat-card">
             <div class="stat-label">Direct Hours</div>
