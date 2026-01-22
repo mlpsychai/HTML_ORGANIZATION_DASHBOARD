@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-01-22T05:29:54.370546-07:00",
+    "generated_at": "2026-01-22T11:20:04.054935-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-19",
     "range_end": "2026-02-21",
-    "total_events": 609,
+    "total_events": 606,
     "calendars_synced": 2
   },
   "today": {
@@ -62,19 +62,6 @@
         "color": "var(--text-secondary)",
         "top_percent": 53.3,
         "height_percent": 26.7
-      },
-      {
-        "id": "56ice4to0bqje25eikc1",
-        "title": "Hold for 2+ private clients",
-        "start_time": "2 PM",
-        "end_time": "5 PM",
-        "start_iso": "2026-01-22T14:00:00",
-        "end_iso": "2026-01-22T17:00:00",
-        "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 60.0,
-        "height_percent": 20.0
       },
       {
         "id": "23acdhij25ckuq3ov810",
@@ -366,19 +353,6 @@
           "height_percent": 26.7
         },
         {
-          "id": "56ice4to0bqje25eikc1",
-          "title": "Hold for 2+ private clients",
-          "start_time": "2 PM",
-          "end_time": "5 PM",
-          "start_iso": "2026-01-22T14:00:00",
-          "end_iso": "2026-01-22T17:00:00",
-          "location": null,
-          "category": "clinical",
-          "color": "var(--accent-teal)",
-          "top_percent": 60.0,
-          "height_percent": 20.0
-        },
-        {
           "id": "23acdhij25ckuq3ov810",
           "title": "EPS 740 (PART 2) - COE - RM # TBD",
           "start_time": "6 PM",
@@ -609,6 +583,22 @@
       "days_until": 4
     },
     {
+      "id": "c4r3gc9p6dh6cb9k6cpj",
+      "title": "Weekly Supervision: Sean and Kayla @ prac clinic",
+      "start_time": "3 PM",
+      "end_time": "4 PM",
+      "start_iso": "2026-01-26T15:00:00",
+      "end_iso": "2026-01-26T16:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 66.7,
+      "height_percent": 6.7,
+      "date": "2026-01-26",
+      "display_date": "Mon, Jan 26",
+      "days_until": 4
+    },
+    {
       "id": "171qf8kdau9qaj1s05iu",
       "title": "EPS 607 - COE - RM #124",
       "start_time": "4 PM",
@@ -623,22 +613,6 @@
       "date": "2026-01-26",
       "display_date": "Mon, Jan 26",
       "days_until": 4
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-01-27T05:30:00",
-      "end_iso": "2026-01-27T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-01-27",
-      "display_date": "Tue, Jan 27",
-      "days_until": 5
     }
   ]
 }
