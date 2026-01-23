@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-01-22T11:20:04.054935-07:00",
+    "generated_at": "2026-01-22T18:05:07.894160-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-19",
     "range_end": "2026-02-21",
-    "total_events": 606,
+    "total_events": 609,
     "calendars_synced": 2
   },
   "today": {
@@ -75,6 +75,19 @@
         "color": "var(--text-muted)",
         "top_percent": 86.7,
         "height_percent": 13.3
+      },
+      {
+        "id": "6sp64o9lc4s64bb471i3",
+        "title": "Basc + randomization + scheduling for observations",
+        "start_time": "9 PM",
+        "end_time": "10 PM",
+        "start_iso": "2026-01-22T21:00:00",
+        "end_iso": "2026-01-22T22:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 100,
+        "height_percent": 4
       }
     ]
   },
@@ -364,6 +377,19 @@
           "color": "var(--text-muted)",
           "top_percent": 86.7,
           "height_percent": 13.3
+        },
+        {
+          "id": "6sp64o9lc4s64bb471i3",
+          "title": "Basc + randomization + scheduling for observations",
+          "start_time": "9 PM",
+          "end_time": "10 PM",
+          "start_iso": "2026-01-22T21:00:00",
+          "end_iso": "2026-01-22T22:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 100,
+          "height_percent": 4
         }
       ]
     },
@@ -450,7 +476,21 @@
       "date": "2026-01-25",
       "display_date": "Jan 25",
       "is_today": false,
-      "events": []
+      "events": [
+        {
+          "id": "68r34ohmc5hj2b9k70sm",
+          "title": "Order Tim's bday/xmas",
+          "start_time": "4 PM",
+          "end_time": "5 PM",
+          "start_iso": "2026-01-25T16:00:00",
+          "end_iso": "2026-01-25T17:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 73.3,
+          "height_percent": 6.7
+        }
+      ]
     }
   },
   "upcoming": [
@@ -535,6 +575,22 @@
       "days_until": 2
     },
     {
+      "id": "68r34ohmc5hj2b9k70sm",
+      "title": "Order Tim's bday/xmas",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-01-25T16:00:00",
+      "end_iso": "2026-01-25T17:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-01-25",
+      "display_date": "Sun, Jan 25",
+      "days_until": 3
+    },
+    {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
@@ -567,8 +623,8 @@
       "days_until": 4
     },
     {
-      "id": "ckp36c1l70om2b9j6lim",
-      "title": "GAship Observation with James",
+      "id": "6hj62cplc9hjib9ncgoj",
+      "title": "Observation with James",
       "start_time": "12:25 PM",
       "end_time": "1:25 PM",
       "start_iso": "2026-01-26T12:25:00",
@@ -594,22 +650,6 @@
       "color": "var(--accent-gold)",
       "top_percent": 66.7,
       "height_percent": 6.7,
-      "date": "2026-01-26",
-      "display_date": "Mon, Jan 26",
-      "days_until": 4
-    },
-    {
-      "id": "171qf8kdau9qaj1s05iu",
-      "title": "EPS 607 - COE - RM #124",
-      "start_time": "4 PM",
-      "end_time": "6:30 PM",
-      "start_iso": "2026-01-26T16:00:00",
-      "end_iso": "2026-01-26T18:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 73.3,
-      "height_percent": 16.7,
       "date": "2026-01-26",
       "display_date": "Mon, Jan 26",
       "days_until": 4
