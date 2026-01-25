@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generated_at": "2026-01-24T23:20:16.451090-07:00",
+    "generated_at": "2026-01-25T05:25:54.528550-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-19",
-    "range_end": "2026-02-23",
-    "total_events": 612,
+    "range_end": "2026-02-24",
+    "total_events": 616,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-01-24",
-    "display_date": "Saturday, January 24",
+    "date": "2026-01-25",
+    "display_date": "Sunday, January 25",
     "events": [
       {
-        "id": "69n2fd4hnhsbbrvg5qn3",
-        "title": "ArizonaLEND Mandatory Clinic Attendance in TUCSON",
-        "start_time": "8 AM",
-        "end_time": "4 PM",
-        "start_iso": "2026-01-24T08:00:00",
-        "end_iso": "2026-01-24T16:00:00",
+        "id": "68r34ohmc5hj2b9k70sm",
+        "title": "Order Tim's bday/xmas",
+        "start_time": "4 PM",
+        "end_time": "5 PM",
+        "start_iso": "2026-01-25T16:00:00",
+        "end_iso": "2026-01-25T17:00:00",
         "location": null,
-        "category": "fellowship",
-        "color": "var(--accent-purple)",
-        "top_percent": 20.0,
-        "height_percent": 53.3
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 73.3,
+        "height_percent": 6.7
       }
     ]
   },
@@ -360,19 +360,6 @@
           "height_percent": 13.3
         },
         {
-          "id": "1b7o1rog5qjt07hen9sc",
-          "title": "Arizona LEND Weekly Meeting",
-          "start_time": "1 PM",
-          "end_time": "4 PM",
-          "start_iso": "2026-01-23T13:00:00",
-          "end_iso": "2026-01-23T16:00:00",
-          "location": "https://zoom.us/j/6021215414",
-          "category": "fellowship",
-          "color": "var(--accent-purple)",
-          "top_percent": 53.3,
-          "height_percent": 20.0
-        },
-        {
           "id": "38fgqtuht6ae3devmhq4",
           "title": "Update AZLend Hours",
           "start_time": "1 PM",
@@ -384,13 +371,26 @@
           "color": "var(--accent-purple)",
           "top_percent": 53.3,
           "height_percent": 4
+        },
+        {
+          "id": "1b7o1rog5qjt07hen9sc",
+          "title": "Arizona LEND Weekly Meeting",
+          "start_time": "1 PM",
+          "end_time": "4 PM",
+          "start_iso": "2026-01-23T13:00:00",
+          "end_iso": "2026-01-23T16:00:00",
+          "location": "https://zoom.us/j/6021215414",
+          "category": "fellowship",
+          "color": "var(--accent-purple)",
+          "top_percent": 53.3,
+          "height_percent": 20.0
         }
       ]
     },
     "saturday": {
       "date": "2026-01-24",
       "display_date": "Jan 24",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "69n2fd4hnhsbbrvg5qn3",
@@ -410,7 +410,7 @@
     "sunday": {
       "date": "2026-01-25",
       "display_date": "Jan 25",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "68r34ohmc5hj2b9k70sm",
@@ -430,22 +430,6 @@
   },
   "upcoming": [
     {
-      "id": "68r34ohmc5hj2b9k70sm",
-      "title": "Order Tim's bday/xmas",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-01-25T16:00:00",
-      "end_iso": "2026-01-25T17:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-01-25",
-      "display_date": "Sun, Jan 25",
-      "days_until": 1
-    },
-    {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
@@ -459,7 +443,7 @@
       "height_percent": 10.0,
       "date": "2026-01-26",
       "display_date": "Mon, Jan 26",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4mnmm438hqjr864sutoq",
@@ -475,7 +459,7 @@
       "height_percent": 33.3,
       "date": "2026-01-26",
       "display_date": "Mon, Jan 26",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "6hj62cplc9hjib9ncgoj",
@@ -491,7 +475,7 @@
       "height_percent": 6.7,
       "date": "2026-01-26",
       "display_date": "Mon, Jan 26",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "c4r3gc9p6dh6cb9k6cpj",
@@ -507,7 +491,7 @@
       "height_percent": 6.7,
       "date": "2026-01-26",
       "display_date": "Mon, Jan 26",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -523,7 +507,7 @@
       "height_percent": 16.7,
       "date": "2026-01-26",
       "display_date": "Mon, Jan 26",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -539,7 +523,7 @@
       "height_percent": 10.0,
       "date": "2026-01-27",
       "display_date": "Tue, Jan 27",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "1tpf6l71j5bh0861ervt",
@@ -555,7 +539,7 @@
       "height_percent": 30.0,
       "date": "2026-01-27",
       "display_date": "Tue, Jan 27",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -571,7 +555,7 @@
       "height_percent": 16.7,
       "date": "2026-01-27",
       "display_date": "Tue, Jan 27",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -587,6 +571,22 @@
       "height_percent": 6.7,
       "date": "2026-01-27",
       "display_date": "Tue, Jan 27",
+      "days_until": 2
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-01-28T05:30:00",
+      "end_iso": "2026-01-28T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-01-28",
+      "display_date": "Wed, Jan 28",
       "days_until": 3
     }
   ]
