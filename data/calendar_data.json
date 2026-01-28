@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-01-28T05:30:23.226170-07:00",
+    "generated_at": "2026-01-28T11:26:27.860957-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-26",
     "range_end": "2026-02-27",
-    "total_events": 610,
+    "total_events": 611,
     "calendars_synced": 2
   },
   "today": {
@@ -484,6 +484,19 @@
       "is_today": false,
       "events": [
         {
+          "id": "70q32c9l65gm2b9h64sm",
+          "title": "Take COG and AFFECT exam #1",
+          "start_time": "9:30 AM",
+          "end_time": "10:30 AM",
+          "start_iso": "2026-01-31T09:30:00",
+          "end_iso": "2026-01-31T10:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 30.0,
+          "height_percent": 6.7
+        },
+        {
           "id": "4vrmd1lfo69osuu2sjss",
           "title": "EDGAR GAME NIGHT WOOT WOOT",
           "start_time": "6 PM",
@@ -651,17 +664,17 @@
       "days_until": 2
     },
     {
-      "id": "4vrmd1lfo69osuu2sjss",
-      "title": "EDGAR GAME NIGHT WOOT WOOT",
-      "start_time": "6 PM",
-      "end_time": "9:15 PM",
-      "start_iso": "2026-01-31T18:00:00",
-      "end_iso": "2026-01-31T21:15:00",
+      "id": "70q32c9l65gm2b9h64sm",
+      "title": "Take COG and AFFECT exam #1",
+      "start_time": "9:30 AM",
+      "end_time": "10:30 AM",
+      "start_iso": "2026-01-31T09:30:00",
+      "end_iso": "2026-01-31T10:30:00",
       "location": null,
       "category": "default",
       "color": "var(--text-secondary)",
-      "top_percent": 86.7,
-      "height_percent": 13.3,
+      "top_percent": 30.0,
+      "height_percent": 6.7,
       "date": "2026-01-31",
       "display_date": "Sat, Jan 31",
       "days_until": 3
