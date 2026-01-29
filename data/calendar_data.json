@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-01-29T05:36:05.656907-07:00",
+    "generated_at": "2026-01-29T11:32:22.558459-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-26",
     "range_end": "2026-02-28",
-    "total_events": 612,
+    "total_events": 613,
     "calendars_synced": 2
   },
   "today": {
@@ -61,6 +61,19 @@
         "category": "meeting",
         "color": "var(--accent-gold)",
         "top_percent": 73.3,
+        "height_percent": 6.7
+      },
+      {
+        "id": "39gh9a4mjk9om0midkvn",
+        "title": "Read for 740",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-01-29T17:00:00",
+        "end_iso": "2026-01-29T18:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
         "height_percent": 6.7
       },
       {
@@ -376,6 +389,19 @@
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 73.3,
+          "height_percent": 6.7
+        },
+        {
+          "id": "39gh9a4mjk9om0midkvn",
+          "title": "Read for 740",
+          "start_time": "5 PM",
+          "end_time": "6 PM",
+          "start_iso": "2026-01-29T17:00:00",
+          "end_iso": "2026-01-29T18:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 80.0,
           "height_percent": 6.7
         },
         {
