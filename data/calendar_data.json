@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-01-28T11:26:27.860957-07:00",
+    "generated_at": "2026-01-28T18:14:06.932002-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-01-26",
     "range_end": "2026-02-27",
-    "total_events": 611,
+    "total_events": 612,
     "calendars_synced": 2
   },
   "today": {
@@ -440,14 +440,27 @@
         {
           "id": "68r34ohmc5hj2b9k70sm",
           "title": "Order Tim's bday/xmas",
-          "start_time": "11:15 AM",
-          "end_time": "12:15 PM",
-          "start_iso": "2026-01-30T11:15:00",
-          "end_iso": "2026-01-30T12:15:00",
+          "start_time": "9 AM",
+          "end_time": "10 AM",
+          "start_iso": "2026-01-30T09:00:00",
+          "end_iso": "2026-01-30T10:00:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
-          "top_percent": 41.7,
+          "top_percent": 26.7,
+          "height_percent": 6.7
+        },
+        {
+          "id": "ckrjeo9hc8s36b9j6gom",
+          "title": "CT: G\\; intake",
+          "start_time": "11 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-01-30T11:00:00",
+          "end_iso": "2026-01-30T12:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 40.0,
           "height_percent": 6.7
         },
         {
@@ -618,14 +631,30 @@
     {
       "id": "68r34ohmc5hj2b9k70sm",
       "title": "Order Tim's bday/xmas",
-      "start_time": "11:15 AM",
-      "end_time": "12:15 PM",
-      "start_iso": "2026-01-30T11:15:00",
-      "end_iso": "2026-01-30T12:15:00",
+      "start_time": "9 AM",
+      "end_time": "10 AM",
+      "start_iso": "2026-01-30T09:00:00",
+      "end_iso": "2026-01-30T10:00:00",
       "location": null,
       "category": "default",
       "color": "var(--text-secondary)",
-      "top_percent": 41.7,
+      "top_percent": 26.7,
+      "height_percent": 6.7,
+      "date": "2026-01-30",
+      "display_date": "Fri, Jan 30",
+      "days_until": 2
+    },
+    {
+      "id": "ckrjeo9hc8s36b9j6gom",
+      "title": "CT: G\\; intake",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-01-30T11:00:00",
+      "end_iso": "2026-01-30T12:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 40.0,
       "height_percent": 6.7,
       "date": "2026-01-30",
       "display_date": "Fri, Jan 30",
@@ -662,22 +691,6 @@
       "date": "2026-01-30",
       "display_date": "Fri, Jan 30",
       "days_until": 2
-    },
-    {
-      "id": "70q32c9l65gm2b9h64sm",
-      "title": "Take COG and AFFECT exam #1",
-      "start_time": "9:30 AM",
-      "end_time": "10:30 AM",
-      "start_iso": "2026-01-31T09:30:00",
-      "end_iso": "2026-01-31T10:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 30.0,
-      "height_percent": 6.7,
-      "date": "2026-01-31",
-      "display_date": "Sat, Jan 31",
-      "days_until": 3
     }
   ]
 }
