@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-09T18:28:09.520992-07:00",
+    "generated_at": "2026-02-09T23:55:34.380127-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-09",
     "range_end": "2026-03-11",
-    "total_events": 615,
+    "total_events": 616,
     "calendars_synced": 2
   },
   "today": {
@@ -116,6 +116,19 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "61i64p1n71ij2b9p65hj",
+          "title": "Email RCC",
+          "start_time": "9:30 AM",
+          "end_time": "10:30 AM",
+          "start_iso": "2026-02-10T09:30:00",
+          "end_iso": "2026-02-10T10:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 30.0,
+          "height_percent": 6.7
         },
         {
           "id": "75gjap1gckoj4b9m6cqj",
@@ -407,6 +420,22 @@
       "days_until": 1
     },
     {
+      "id": "61i64p1n71ij2b9p65hj",
+      "title": "Email RCC",
+      "start_time": "9:30 AM",
+      "end_time": "10:30 AM",
+      "start_iso": "2026-02-10T09:30:00",
+      "end_iso": "2026-02-10T10:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 30.0,
+      "height_percent": 6.7,
+      "date": "2026-02-10",
+      "display_date": "Tue, Feb 10",
+      "days_until": 1
+    },
+    {
       "id": "75gjap1gckoj4b9m6cqj",
       "title": "Therapy with Chris",
       "start_time": "11 AM",
@@ -533,22 +562,6 @@
       "date": "2026-02-11",
       "display_date": "Wed, Feb 11",
       "days_until": 2
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-02-12T05:30:00",
-      "end_iso": "2026-02-12T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-02-12",
-      "display_date": "Thu, Feb 12",
-      "days_until": 3
     }
   ]
 }
