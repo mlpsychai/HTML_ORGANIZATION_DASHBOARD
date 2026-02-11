@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-11T05:46:23.041993-07:00",
+    "generated_at": "2026-02-11T11:51:36.741360-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-09",
     "range_end": "2026-03-13",
-    "total_events": 621,
+    "total_events": 620,
     "calendars_synced": 2
   },
   "today": {
@@ -23,19 +23,6 @@
         "color": "var(--accent-sage)",
         "top_percent": 3.3,
         "height_percent": 10.0
-      },
-      {
-        "id": "60rj4chm61i62bb46tj3",
-        "title": "Presenting Today in 609 - Knowing",
-        "start_time": "8 AM",
-        "end_time": "9 AM",
-        "start_iso": "2026-02-11T08:00:00",
-        "end_iso": "2026-02-11T09:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 20.0,
-        "height_percent": 6.7
       },
       {
         "id": "54nnsab6bbcus3bbporn",
@@ -214,19 +201,6 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
-        },
-        {
-          "id": "60rj4chm61i62bb46tj3",
-          "title": "Presenting Today in 609 - Knowing",
-          "start_time": "8 AM",
-          "end_time": "9 AM",
-          "start_iso": "2026-02-11T08:00:00",
-          "end_iso": "2026-02-11T09:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 20.0,
-          "height_percent": 6.7
         },
         {
           "id": "54nnsab6bbcus3bbporn",
