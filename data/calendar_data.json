@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-02-12T23:48:50.963034-07:00",
+    "generated_at": "2026-02-13T05:37:37.511733-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-09",
-    "range_end": "2026-03-14",
+    "range_end": "2026-03-15",
     "total_events": 622,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-02-12",
-    "display_date": "Thursday, February 12",
+    "date": "2026-02-13",
+    "display_date": "Friday, February 13",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-02-12T05:30:00",
-        "end_iso": "2026-02-12T07:00:00",
+        "start_iso": "2026-02-13T05:30:00",
+        "end_iso": "2026-02-13T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,56 +25,30 @@
         "height_percent": 10.0
       },
       {
-        "id": "chj32db4corjcbb4c8s3",
-        "title": "Pickleball & MaeMae",
-        "start_time": "9:30 AM",
-        "end_time": "12:30 PM",
-        "start_iso": "2026-02-12T09:30:00",
-        "end_iso": "2026-02-12T12:30:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 30.0,
+        "id": "1b7o1rog5qjt07hen9sc",
+        "title": "Arizona LEND Weekly Meeting",
+        "start_time": "1 PM",
+        "end_time": "4 PM",
+        "start_iso": "2026-02-13T13:00:00",
+        "end_iso": "2026-02-13T16:00:00",
+        "location": "https://zoom.us/j/6021215414",
+        "category": "fellowship",
+        "color": "var(--accent-purple)",
+        "top_percent": 53.3,
         "height_percent": 20.0
       },
       {
-        "id": "040000008200E00074C5",
-        "title": "supervision",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-02-12T12:00:00",
-        "end_iso": "2026-02-12T13:00:00",
+        "id": "0un8su8sbck951hasle6",
+        "title": "HOLD for Night to Shine Volunteer",
+        "start_time": "4 PM",
+        "end_time": "9 PM",
+        "start_iso": "2026-02-13T16:00:00",
+        "end_iso": "2026-02-13T21:00:00",
         "location": null,
         "category": "meeting",
         "color": "var(--accent-gold)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "cgr66cj26kpj4bb66kr3",
-        "title": "Dissertation Chat with Dr. Strain",
-        "start_time": "5 PM",
-        "end_time": "6 PM",
-        "start_iso": "2026-02-12T17:00:00",
-        "end_iso": "2026-02-12T18:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 80.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "23acdhij25ckuq3ov810",
-        "title": "EPS 740 (PART 2) - COE - RM # TBD",
-        "start_time": "6 PM",
-        "end_time": "8:30 PM",
-        "start_iso": "2026-02-12T18:00:00",
-        "end_iso": "2026-02-12T20:30:00",
-        "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
-        "top_percent": 86.7,
-        "height_percent": 13.3
+        "top_percent": 73.3,
+        "height_percent": 26.7
       }
     ]
   },
@@ -259,7 +233,7 @@
     "thursday": {
       "date": "2026-02-12",
       "display_date": "Feb 12",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -331,7 +305,7 @@
     "friday": {
       "date": "2026-02-13",
       "display_date": "Feb 13",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -417,54 +391,6 @@
   },
   "upcoming": [
     {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-02-13T05:30:00",
-      "end_iso": "2026-02-13T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-02-13",
-      "display_date": "Fri, Feb 13",
-      "days_until": 1
-    },
-    {
-      "id": "1b7o1rog5qjt07hen9sc",
-      "title": "Arizona LEND Weekly Meeting",
-      "start_time": "1 PM",
-      "end_time": "4 PM",
-      "start_iso": "2026-02-13T13:00:00",
-      "end_iso": "2026-02-13T16:00:00",
-      "location": "https://zoom.us/j/6021215414",
-      "category": "fellowship",
-      "color": "var(--accent-purple)",
-      "top_percent": 53.3,
-      "height_percent": 20.0,
-      "date": "2026-02-13",
-      "display_date": "Fri, Feb 13",
-      "days_until": 1
-    },
-    {
-      "id": "0un8su8sbck951hasle6",
-      "title": "HOLD for Night to Shine Volunteer",
-      "start_time": "4 PM",
-      "end_time": "9 PM",
-      "start_iso": "2026-02-13T16:00:00",
-      "end_iso": "2026-02-13T21:00:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 73.3,
-      "height_percent": 26.7,
-      "date": "2026-02-13",
-      "display_date": "Fri, Feb 13",
-      "days_until": 1
-    },
-    {
       "id": "2f3flbivpksqetbsk3af",
       "title": "HOLD - NTS Volunteers",
       "start_time": "7 AM",
@@ -478,7 +404,7 @@
       "height_percent": 60.0,
       "date": "2026-02-14",
       "display_date": "Sat, Feb 14",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "61gjechh61h3ib9g6cr6",
@@ -494,7 +420,7 @@
       "height_percent": 60.0,
       "date": "2026-02-15",
       "display_date": "Sun, Feb 15",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -510,7 +436,7 @@
       "height_percent": 10.0,
       "date": "2026-02-16",
       "display_date": "Mon, Feb 16",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -526,7 +452,7 @@
       "height_percent": 16.7,
       "date": "2026-02-16",
       "display_date": "Mon, Feb 16",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -542,7 +468,7 @@
       "height_percent": 10.0,
       "date": "2026-02-17",
       "display_date": "Tue, Feb 17",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -558,7 +484,7 @@
       "height_percent": 16.7,
       "date": "2026-02-17",
       "display_date": "Tue, Feb 17",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -574,6 +500,54 @@
       "height_percent": 6.7,
       "date": "2026-02-17",
       "display_date": "Tue, Feb 17",
+      "days_until": 4
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-02-18T05:30:00",
+      "end_iso": "2026-02-18T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-02-18",
+      "display_date": "Wed, Feb 18",
+      "days_until": 5
+    },
+    {
+      "id": "54nnsab6bbcus3bbporn",
+      "title": "EPS 609 - COE - RM # 124",
+      "start_time": "9 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-02-18T09:00:00",
+      "end_iso": "2026-02-18T11:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 26.7,
+      "height_percent": 16.7,
+      "date": "2026-02-18",
+      "display_date": "Wed, Feb 18",
+      "days_until": 5
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "PROF Grant Sync UP meeting",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-02-18T11:00:00",
+      "end_iso": "2026-02-18T12:00:00",
+      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 40.0,
+      "height_percent": 6.7,
+      "date": "2026-02-18",
+      "display_date": "Wed, Feb 18",
       "days_until": 5
     }
   ]
