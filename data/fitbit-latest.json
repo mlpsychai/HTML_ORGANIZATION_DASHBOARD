@@ -1,6 +1,6 @@
 {
-  "date": "2026-02-14",
-  "updated_at": "2026-02-14T13:48:10Z",
+  "date": "2026-02-15",
+  "updated_at": "2026-02-15T13:48:42Z",
   "sleep": {
     "summary": {
       "duration_minutes": 0,
@@ -29,8 +29,8 @@
         "active": 0
       },
       "minutes": {
-        "sedentary": 385,
-        "lightly_active": 23,
+        "sedentary": 401,
+        "lightly_active": 7,
         "fairly_active": 0,
         "very_active": 0
       },
@@ -51,22 +51,22 @@
       "zones": [
         {
           "caloriesOut": 472.28866000000124,
-          "max": 113,
+          "max": 112,
           "min": 30,
           "minutes": 410,
           "name": "Out of Range"
         },
         {
           "caloriesOut": 0,
-          "max": 135,
-          "min": 114,
+          "max": 134,
+          "min": 113,
           "minutes": 0,
           "name": "Fat Burn"
         },
         {
           "caloriesOut": 0,
           "max": 163,
-          "min": 136,
+          "min": 135,
           "minutes": 0,
           "name": "Cardio"
         },
