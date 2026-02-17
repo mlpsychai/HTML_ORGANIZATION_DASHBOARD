@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-16T11:31:38.474510-07:00",
+    "generated_at": "2026-02-16T18:17:30.721559-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-16",
     "range_end": "2026-03-18",
-    "total_events": 619,
+    "total_events": 621,
     "calendars_synced": 2
   },
   "today": {
@@ -38,6 +38,19 @@
         "height_percent": 5.0
       },
       {
+        "id": "6ebd19fd732am8cobt39",
+        "title": "ask tessa for client\\, NEPSY-II\\, CTONI\\, PTONI\\, Vineland Protocols",
+        "start_time": "2 PM",
+        "end_time": "2:30 PM",
+        "start_iso": "2026-02-16T14:00:00",
+        "end_iso": "2026-02-16T14:30:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 60.0,
+        "height_percent": 4
+      },
+      {
         "id": "68oj2d3175i30b9o68s6",
         "title": "Sean and James Meet",
         "start_time": "2:30 PM",
@@ -62,6 +75,19 @@
         "color": "var(--text-muted)",
         "top_percent": 73.3,
         "height_percent": 16.7
+      },
+      {
+        "id": "2mrj43od6v658e5rj08k",
+        "title": "MARIO @ Mountain TOP",
+        "start_time": "8 PM",
+        "end_time": "9 PM",
+        "start_iso": "2026-02-16T20:00:00",
+        "end_iso": "2026-02-16T21:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 100.0,
+        "height_percent": 4
       }
     ]
   },
@@ -98,6 +124,19 @@
           "height_percent": 5.0
         },
         {
+          "id": "6ebd19fd732am8cobt39",
+          "title": "ask tessa for client\\, NEPSY-II\\, CTONI\\, PTONI\\, Vineland Protocols",
+          "start_time": "2 PM",
+          "end_time": "2:30 PM",
+          "start_iso": "2026-02-16T14:00:00",
+          "end_iso": "2026-02-16T14:30:00",
+          "location": null,
+          "category": "clinical",
+          "color": "var(--accent-teal)",
+          "top_percent": 60.0,
+          "height_percent": 4
+        },
+        {
           "id": "68oj2d3175i30b9o68s6",
           "title": "Sean and James Meet",
           "start_time": "2:30 PM",
@@ -122,6 +161,19 @@
           "color": "var(--text-muted)",
           "top_percent": 73.3,
           "height_percent": 16.7
+        },
+        {
+          "id": "2mrj43od6v658e5rj08k",
+          "title": "MARIO @ Mountain TOP",
+          "start_time": "8 PM",
+          "end_time": "9 PM",
+          "start_iso": "2026-02-16T20:00:00",
+          "end_iso": "2026-02-16T21:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 100.0,
+          "height_percent": 4
         }
       ]
     },
