@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-18T11:40:13.659582-07:00",
+    "generated_at": "2026-02-18T18:19:03.168935-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-16",
     "range_end": "2026-03-20",
-    "total_events": 626,
+    "total_events": 629,
     "calendars_synced": 2
   },
   "today": {
@@ -358,6 +358,19 @@
           "color": "var(--accent-purple)",
           "top_percent": 53.3,
           "height_percent": 20.0
+        },
+        {
+          "id": "6os32dr26cr36bb36hj3",
+          "title": "CLUE",
+          "start_time": "6:30 PM",
+          "end_time": "9:30 PM",
+          "start_iso": "2026-02-20T18:30:00",
+          "end_iso": "2026-02-20T21:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 90.0,
+          "height_percent": 10.0
         }
       ]
     },
@@ -500,6 +513,22 @@
       "days_until": 2
     },
     {
+      "id": "6os32dr26cr36bb36hj3",
+      "title": "CLUE",
+      "start_time": "6:30 PM",
+      "end_time": "9:30 PM",
+      "start_iso": "2026-02-20T18:30:00",
+      "end_iso": "2026-02-20T21:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 90.0,
+      "height_percent": 10.0,
+      "date": "2026-02-20",
+      "display_date": "Fri, Feb 20",
+      "days_until": 2
+    },
+    {
       "id": "3fepgapje1f7hrm46el5",
       "title": "MAEMAE and G-parent",
       "start_time": "8 AM",
@@ -543,22 +572,6 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
-      "date": "2026-02-23",
-      "display_date": "Mon, Feb 23",
-      "days_until": 5
-    },
-    {
-      "id": "1qqqq8a6adgaeriolqli",
-      "title": "NO 607 - (NASP convenntion)",
-      "start_time": "4 PM",
-      "end_time": "4:30 PM",
-      "start_iso": "2026-02-23T16:00:00",
-      "end_iso": "2026-02-23T16:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 73.3,
-      "height_percent": 4,
       "date": "2026-02-23",
       "display_date": "Mon, Feb 23",
       "days_until": 5
