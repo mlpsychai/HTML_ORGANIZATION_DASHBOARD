@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T05:41:38.902105-07:00",
+    "generated_at": "2026-02-19T11:40:27.738032-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-16",
     "range_end": "2026-03-21",
-    "total_events": 629,
+    "total_events": 631,
     "calendars_synced": 2
   },
   "today": {
@@ -35,6 +35,19 @@
         "category": "meeting",
         "color": "var(--accent-gold)",
         "top_percent": 46.7,
+        "height_percent": 6.7
+      },
+      {
+        "id": "6ksjidr5cdj6abb26gq3",
+        "title": "Can I miss wed. To complete an intake?",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-02-19T17:00:00",
+        "end_iso": "2026-02-19T18:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
         "height_percent": 6.7
       },
       {
@@ -285,6 +298,19 @@
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 46.7,
+          "height_percent": 6.7
+        },
+        {
+          "id": "6ksjidr5cdj6abb26gq3",
+          "title": "Can I miss wed. To complete an intake?",
+          "start_time": "5 PM",
+          "end_time": "6 PM",
+          "start_iso": "2026-02-19T17:00:00",
+          "end_iso": "2026-02-19T18:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 80.0,
           "height_percent": 6.7
         },
         {
