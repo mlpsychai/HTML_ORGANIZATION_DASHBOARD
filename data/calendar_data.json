@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T23:43:10.670827-07:00",
+    "generated_at": "2026-02-20T05:37:26.143799-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-16",
-    "range_end": "2026-03-21",
+    "range_end": "2026-03-22",
     "total_events": 631,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-02-19",
-    "display_date": "Thursday, February 19",
+    "date": "2026-02-20",
+    "display_date": "Friday, February 20",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-02-19T05:30:00",
-        "end_iso": "2026-02-19T07:00:00",
+        "start_iso": "2026-02-20T05:30:00",
+        "end_iso": "2026-02-20T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,43 +25,43 @@
         "height_percent": 10.0
       },
       {
-        "id": "040000008200E00074C5",
-        "title": "supervision",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-02-19T12:00:00",
-        "end_iso": "2026-02-19T13:00:00",
+        "id": "61h30oj46hi3gb9p6cp6",
+        "title": "Research Project Meeting",
+        "start_time": "7:30 AM",
+        "end_time": "8 AM",
+        "start_iso": "2026-02-20T07:30:00",
+        "end_iso": "2026-02-20T08:00:00",
         "location": null,
         "category": "meeting",
         "color": "var(--accent-gold)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
+        "top_percent": 16.7,
+        "height_percent": 4
       },
       {
-        "id": "6ksjidr5cdj6abb26gq3",
-        "title": "Can I miss wed. To complete an intake?",
-        "start_time": "5 PM",
-        "end_time": "6 PM",
-        "start_iso": "2026-02-19T17:00:00",
-        "end_iso": "2026-02-19T18:00:00",
+        "id": "1b7o1rog5qjt07hen9sc",
+        "title": "Arizona LEND Weekly Meeting",
+        "start_time": "1 PM",
+        "end_time": "4 PM",
+        "start_iso": "2026-02-20T13:00:00",
+        "end_iso": "2026-02-20T16:00:00",
+        "location": "https://zoom.us/j/6021215414",
+        "category": "fellowship",
+        "color": "var(--accent-purple)",
+        "top_percent": 53.3,
+        "height_percent": 20.0
+      },
+      {
+        "id": "6os32dr26cr36bb36hj3",
+        "title": "CLUE",
+        "start_time": "6:30 PM",
+        "end_time": "9:30 PM",
+        "start_iso": "2026-02-20T18:30:00",
+        "end_iso": "2026-02-20T21:30:00",
         "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 80.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "23acdhij25ckuq3ov810",
-        "title": "EPS 740 (PART 2) - COE - RM # TBD",
-        "start_time": "6 PM",
-        "end_time": "8:30 PM",
-        "start_iso": "2026-02-19T18:00:00",
-        "end_iso": "2026-02-19T20:30:00",
-        "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
-        "top_percent": 86.7,
-        "height_percent": 13.3
+        "top_percent": 90.0,
+        "height_percent": 10.0
       }
     ]
   },
@@ -272,7 +272,7 @@
     "thursday": {
       "date": "2026-02-19",
       "display_date": "Feb 19",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -331,7 +331,7 @@
     "friday": {
       "date": "2026-02-20",
       "display_date": "Feb 20",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -430,70 +430,6 @@
   },
   "upcoming": [
     {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-02-20T05:30:00",
-      "end_iso": "2026-02-20T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-02-20",
-      "display_date": "Fri, Feb 20",
-      "days_until": 1
-    },
-    {
-      "id": "61h30oj46hi3gb9p6cp6",
-      "title": "Research Project Meeting",
-      "start_time": "7:30 AM",
-      "end_time": "8 AM",
-      "start_iso": "2026-02-20T07:30:00",
-      "end_iso": "2026-02-20T08:00:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 16.7,
-      "height_percent": 4,
-      "date": "2026-02-20",
-      "display_date": "Fri, Feb 20",
-      "days_until": 1
-    },
-    {
-      "id": "1b7o1rog5qjt07hen9sc",
-      "title": "Arizona LEND Weekly Meeting",
-      "start_time": "1 PM",
-      "end_time": "4 PM",
-      "start_iso": "2026-02-20T13:00:00",
-      "end_iso": "2026-02-20T16:00:00",
-      "location": "https://zoom.us/j/6021215414",
-      "category": "fellowship",
-      "color": "var(--accent-purple)",
-      "top_percent": 53.3,
-      "height_percent": 20.0,
-      "date": "2026-02-20",
-      "display_date": "Fri, Feb 20",
-      "days_until": 1
-    },
-    {
-      "id": "6os32dr26cr36bb36hj3",
-      "title": "CLUE",
-      "start_time": "6:30 PM",
-      "end_time": "9:30 PM",
-      "start_iso": "2026-02-20T18:30:00",
-      "end_iso": "2026-02-20T21:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 90.0,
-      "height_percent": 10.0,
-      "date": "2026-02-20",
-      "display_date": "Fri, Feb 20",
-      "days_until": 1
-    },
-    {
       "id": "3fepgapje1f7hrm46el5",
       "title": "MAEMAE and G-parent",
       "start_time": "8 AM",
@@ -507,7 +443,7 @@
       "height_percent": 66.7,
       "date": "2026-02-21",
       "display_date": "Sat, Feb 21",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "30htnm14r6lfi3hgc341",
@@ -523,7 +459,7 @@
       "height_percent": 66.7,
       "date": "2026-02-22",
       "display_date": "Sun, Feb 22",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -539,7 +475,7 @@
       "height_percent": 10.0,
       "date": "2026-02-23",
       "display_date": "Mon, Feb 23",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "64pm6dpo61gjib9g68r3",
@@ -555,7 +491,7 @@
       "height_percent": 6.7,
       "date": "2026-02-23",
       "display_date": "Mon, Feb 23",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "1qqqq8a6adgaeriolqli",
@@ -571,7 +507,7 @@
       "height_percent": 4,
       "date": "2026-02-23",
       "display_date": "Mon, Feb 23",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -587,7 +523,71 @@
       "height_percent": 16.7,
       "date": "2026-02-23",
       "display_date": "Mon, Feb 23",
+      "days_until": 3
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-02-24T05:30:00",
+      "end_iso": "2026-02-24T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-02-24",
+      "display_date": "Tue, Feb 24",
       "days_until": 4
+    },
+    {
+      "id": "463uo7vspjvaq122625c",
+      "title": "EPS 737 - COE - RM # 205",
+      "start_time": "12:45 PM",
+      "end_time": "3:15 PM",
+      "start_iso": "2026-02-24T12:45:00",
+      "end_iso": "2026-02-24T15:15:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 51.7,
+      "height_percent": 16.7,
+      "date": "2026-02-24",
+      "display_date": "Tue, Feb 24",
+      "days_until": 4
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-02-24T16:00:00",
+      "end_iso": "2026-02-24T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-02-24",
+      "display_date": "Tue, Feb 24",
+      "days_until": 4
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-02-25T05:30:00",
+      "end_iso": "2026-02-25T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-02-25",
+      "display_date": "Wed, Feb 25",
+      "days_until": 5
     }
   ]
 }
