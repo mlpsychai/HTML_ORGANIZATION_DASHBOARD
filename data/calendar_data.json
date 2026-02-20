@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T18:14:56.872928-07:00",
+    "generated_at": "2026-02-19T23:43:10.670827-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-16",
     "range_end": "2026-03-21",
@@ -558,22 +558,6 @@
       "days_until": 4
     },
     {
-      "id": "171qf8kdau9qaj1s05iu",
-      "title": "EPS 607 - COE - RM #124",
-      "start_time": "4 PM",
-      "end_time": "6:30 PM",
-      "start_iso": "2026-02-23T16:00:00",
-      "end_iso": "2026-02-23T18:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 73.3,
-      "height_percent": 16.7,
-      "date": "2026-02-23",
-      "display_date": "Mon, Feb 23",
-      "days_until": 4
-    },
-    {
       "id": "1qqqq8a6adgaeriolqli",
       "title": "NO 607 - (NASP convenntion)",
       "start_time": "4 PM",
@@ -585,6 +569,22 @@
       "color": "var(--text-secondary)",
       "top_percent": 73.3,
       "height_percent": 4,
+      "date": "2026-02-23",
+      "display_date": "Mon, Feb 23",
+      "days_until": 4
+    },
+    {
+      "id": "171qf8kdau9qaj1s05iu",
+      "title": "EPS 607 - COE - RM #124",
+      "start_time": "4 PM",
+      "end_time": "6:30 PM",
+      "start_iso": "2026-02-23T16:00:00",
+      "end_iso": "2026-02-23T18:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 73.3,
+      "height_percent": 16.7,
       "date": "2026-02-23",
       "display_date": "Mon, Feb 23",
       "days_until": 4
