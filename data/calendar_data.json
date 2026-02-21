@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-20T11:34:26.972986-07:00",
+    "generated_at": "2026-02-20T18:12:32.439772-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-16",
     "range_end": "2026-03-22",
-    "total_events": 631,
+    "total_events": 636,
     "calendars_synced": 2
   },
   "today": {
@@ -32,6 +32,19 @@
         "start_iso": "2026-02-20T07:30:00",
         "end_iso": "2026-02-20T08:00:00",
         "location": null,
+        "category": "meeting",
+        "color": "var(--accent-gold)",
+        "top_percent": 16.7,
+        "height_percent": 4
+      },
+      {
+        "id": "50d32p6to924r8c3r21p",
+        "title": "Weekly Research Meeting: https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "start_time": "7:30 AM",
+        "end_time": "8 AM",
+        "start_iso": "2026-02-20T07:30:00",
+        "end_iso": "2026-02-20T08:00:00",
+        "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
         "category": "meeting",
         "color": "var(--accent-gold)",
         "top_percent": 16.7,
@@ -354,6 +367,19 @@
           "start_iso": "2026-02-20T07:30:00",
           "end_iso": "2026-02-20T08:00:00",
           "location": null,
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 16.7,
+          "height_percent": 4
+        },
+        {
+          "id": "50d32p6to924r8c3r21p",
+          "title": "Weekly Research Meeting: https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+          "start_time": "7:30 AM",
+          "end_time": "8 AM",
+          "start_iso": "2026-02-20T07:30:00",
+          "end_iso": "2026-02-20T08:00:00",
+          "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 16.7,
