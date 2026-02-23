@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-23T05:41:37.818729-07:00",
+    "generated_at": "2026-02-23T11:52:00.433799-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-23",
     "range_end": "2026-03-25",
-    "total_events": 633,
+    "total_events": 635,
     "calendars_synced": 2
   },
   "today": {
@@ -51,17 +51,17 @@
         "height_percent": 6.7
       },
       {
-        "id": "171qf8kdau9qaj1s05iu",
-        "title": "EPS 607 - COE - RM #124",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-02-23T16:00:00",
-        "end_iso": "2026-02-23T18:30:00",
+        "id": "68rjep9nchi62bb560s3",
+        "title": "Call New Client",
+        "start_time": "1 PM",
+        "end_time": "2 PM",
+        "start_iso": "2026-02-23T13:00:00",
+        "end_iso": "2026-02-23T14:00:00",
         "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
-        "top_percent": 73.3,
-        "height_percent": 16.7
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 53.3,
+        "height_percent": 6.7
       },
       {
         "id": "1qqqq8a6adgaeriolqli",
@@ -75,6 +75,19 @@
         "color": "var(--text-secondary)",
         "top_percent": 73.3,
         "height_percent": 4
+      },
+      {
+        "id": "171qf8kdau9qaj1s05iu",
+        "title": "EPS 607 - COE - RM #124",
+        "start_time": "4 PM",
+        "end_time": "6:30 PM",
+        "start_iso": "2026-02-23T16:00:00",
+        "end_iso": "2026-02-23T18:30:00",
+        "location": null,
+        "category": "class",
+        "color": "var(--text-muted)",
+        "top_percent": 73.3,
+        "height_percent": 16.7
       }
     ]
   },
@@ -124,17 +137,17 @@
           "height_percent": 6.7
         },
         {
-          "id": "171qf8kdau9qaj1s05iu",
-          "title": "EPS 607 - COE - RM #124",
-          "start_time": "4 PM",
-          "end_time": "6:30 PM",
-          "start_iso": "2026-02-23T16:00:00",
-          "end_iso": "2026-02-23T18:30:00",
+          "id": "68rjep9nchi62bb560s3",
+          "title": "Call New Client",
+          "start_time": "1 PM",
+          "end_time": "2 PM",
+          "start_iso": "2026-02-23T13:00:00",
+          "end_iso": "2026-02-23T14:00:00",
           "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 73.3,
-          "height_percent": 16.7
+          "category": "clinical",
+          "color": "var(--accent-teal)",
+          "top_percent": 53.3,
+          "height_percent": 6.7
         },
         {
           "id": "1qqqq8a6adgaeriolqli",
@@ -148,6 +161,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 73.3,
           "height_percent": 4
+        },
+        {
+          "id": "171qf8kdau9qaj1s05iu",
+          "title": "EPS 607 - COE - RM #124",
+          "start_time": "4 PM",
+          "end_time": "6:30 PM",
+          "start_iso": "2026-02-23T16:00:00",
+          "end_iso": "2026-02-23T18:30:00",
+          "location": null,
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 73.3,
+          "height_percent": 16.7
         }
       ]
     },
