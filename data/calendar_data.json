@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-24T05:42:21.339888-07:00",
+    "generated_at": "2026-02-24T11:49:30.046559-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-23",
     "range_end": "2026-03-26",
-    "total_events": 639,
+    "total_events": 640,
     "calendars_synced": 2
   },
   "today": {
@@ -35,6 +35,19 @@
         "category": "default",
         "color": "var(--text-secondary)",
         "top_percent": 40.0,
+        "height_percent": 6.7
+      },
+      {
+        "id": "3psobl61c5ph8k4j3gi7",
+        "title": "Get NEPSY-II",
+        "start_time": "12 PM",
+        "end_time": "1 PM",
+        "start_iso": "2026-02-24T12:00:00",
+        "end_iso": "2026-02-24T13:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 46.7,
         "height_percent": 6.7
       },
       {
@@ -180,6 +193,19 @@
           "category": "default",
           "color": "var(--text-secondary)",
           "top_percent": 40.0,
+          "height_percent": 6.7
+        },
+        {
+          "id": "3psobl61c5ph8k4j3gi7",
+          "title": "Get NEPSY-II",
+          "start_time": "12 PM",
+          "end_time": "1 PM",
+          "start_iso": "2026-02-24T12:00:00",
+          "end_iso": "2026-02-24T13:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 46.7,
           "height_percent": 6.7
         },
         {
