@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-02-26T05:42:25.343080-07:00",
+    "generated_at": "2026-02-26T11:39:55.284283-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-23",
     "range_end": "2026-03-28",
-    "total_events": 645,
+    "total_events": 646,
     "calendars_synced": 2
   },
   "today": {
@@ -124,19 +124,6 @@
           "height_percent": 6.7
         },
         {
-          "id": "1qqqq8a6adgaeriolqli",
-          "title": "NO 607 - (NASP convenntion)",
-          "start_time": "4 PM",
-          "end_time": "4:30 PM",
-          "start_iso": "2026-02-23T16:00:00",
-          "end_iso": "2026-02-23T16:30:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 73.3,
-          "height_percent": 4
-        },
-        {
           "id": "171qf8kdau9qaj1s05iu",
           "title": "EPS 607 - COE - RM #124",
           "start_time": "4 PM",
@@ -148,6 +135,19 @@
           "color": "var(--text-muted)",
           "top_percent": 73.3,
           "height_percent": 16.7
+        },
+        {
+          "id": "1qqqq8a6adgaeriolqli",
+          "title": "NO 607 - (NASP convenntion)",
+          "start_time": "4 PM",
+          "end_time": "4:30 PM",
+          "start_iso": "2026-02-23T16:00:00",
+          "end_iso": "2026-02-23T16:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 73.3,
+          "height_percent": 4
         }
       ]
     },
@@ -399,6 +399,19 @@
           "height_percent": 6.7
         },
         {
+          "id": "55nd2ol8dccl7hib17pi",
+          "title": "Jill at Wellness PSI",
+          "start_time": "10 AM",
+          "end_time": "11 AM",
+          "start_iso": "2026-02-27T10:00:00",
+          "end_iso": "2026-02-27T11:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 6.7
+        },
+        {
           "id": "1b7o1rog5qjt07hen9sc",
           "title": "Arizona LEND Weekly Meeting",
           "start_time": "1 PM",
@@ -484,6 +497,22 @@
       "category": "default",
       "color": "var(--text-secondary)",
       "top_percent": 23.3,
+      "height_percent": 6.7,
+      "date": "2026-02-27",
+      "display_date": "Fri, Feb 27",
+      "days_until": 1
+    },
+    {
+      "id": "55nd2ol8dccl7hib17pi",
+      "title": "Jill at Wellness PSI",
+      "start_time": "10 AM",
+      "end_time": "11 AM",
+      "start_iso": "2026-02-27T10:00:00",
+      "end_iso": "2026-02-27T11:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 33.3,
       "height_percent": 6.7,
       "date": "2026-02-27",
       "display_date": "Fri, Feb 27",
@@ -581,22 +610,6 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
-      "date": "2026-03-03",
-      "display_date": "Tue, Mar 03",
-      "days_until": 5
-    },
-    {
-      "id": "clhj8chj6tij4b9lcdij",
-      "title": "Chris Therapy",
-      "start_time": "11 AM",
-      "end_time": "12 PM",
-      "start_iso": "2026-03-03T11:00:00",
-      "end_iso": "2026-03-03T12:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 40.0,
-      "height_percent": 6.7,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
       "days_until": 5
