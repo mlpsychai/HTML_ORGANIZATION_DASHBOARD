@@ -1,80 +1,28 @@
 {
   "meta": {
-    "generated_at": "2026-02-27T23:26:25.567579-07:00",
+    "generated_at": "2026-02-28T05:27:20.359612-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-23",
-    "range_end": "2026-03-29",
-    "total_events": 649,
+    "range_end": "2026-03-30",
+    "total_events": 651,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-02-27",
-    "display_date": "Friday, February 27",
+    "date": "2026-02-28",
+    "display_date": "Saturday, February 28",
     "events": [
       {
-        "id": "4vv5mirtsid1h5l6dhq9",
-        "title": "MANDATORIES",
-        "start_time": "5:30 AM",
-        "end_time": "7 AM",
-        "start_iso": "2026-02-27T05:30:00",
-        "end_iso": "2026-02-27T07:00:00",
-        "location": null,
-        "category": "personal",
-        "color": "var(--accent-sage)",
-        "top_percent": 3.3,
-        "height_percent": 10.0
-      },
-      {
-        "id": "50d32p6to924r8c3r21p",
-        "title": "Weekly Research Meeting: https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-        "start_time": "7:30 AM",
-        "end_time": "8 AM",
-        "start_iso": "2026-02-27T07:30:00",
-        "end_iso": "2026-02-27T08:00:00",
-        "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 16.7,
-        "height_percent": 4
-      },
-      {
-        "id": "6ksm4chkc8s6ab9i75im",
-        "title": "Gym",
-        "start_time": "8:30 AM",
-        "end_time": "9:30 AM",
-        "start_iso": "2026-02-27T08:30:00",
-        "end_iso": "2026-02-27T09:30:00",
+        "id": "6e49oh2j4ljafdrvm814",
+        "title": "706 exam",
+        "start_time": "9 AM",
+        "end_time": "10 AM",
+        "start_iso": "2026-02-28T09:00:00",
+        "end_iso": "2026-02-28T10:00:00",
         "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 23.3,
+        "top_percent": 26.7,
         "height_percent": 6.7
-      },
-      {
-        "id": "55nd2ol8dccl7hib17pi",
-        "title": "Jill at Wellness PSI",
-        "start_time": "10 AM",
-        "end_time": "11 AM",
-        "start_iso": "2026-02-27T10:00:00",
-        "end_iso": "2026-02-27T11:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 33.3,
-        "height_percent": 6.7
-      },
-      {
-        "id": "1b7o1rog5qjt07hen9sc",
-        "title": "Arizona LEND Weekly Meeting",
-        "start_time": "1 PM",
-        "end_time": "4 PM",
-        "start_iso": "2026-02-27T13:00:00",
-        "end_iso": "2026-02-27T16:00:00",
-        "location": "https://zoom.us/j/6021215414",
-        "category": "fellowship",
-        "color": "var(--accent-purple)",
-        "top_percent": 53.3,
-        "height_percent": 20.0
       }
     ]
   },
@@ -137,19 +85,6 @@
           "height_percent": 6.7
         },
         {
-          "id": "171qf8kdau9qaj1s05iu",
-          "title": "EPS 607 - COE - RM #124",
-          "start_time": "4 PM",
-          "end_time": "6:30 PM",
-          "start_iso": "2026-02-23T16:00:00",
-          "end_iso": "2026-02-23T18:30:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 73.3,
-          "height_percent": 16.7
-        },
-        {
           "id": "1qqqq8a6adgaeriolqli",
           "title": "NO 607 - (NASP convenntion)",
           "start_time": "4 PM",
@@ -161,6 +96,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 73.3,
           "height_percent": 4
+        },
+        {
+          "id": "171qf8kdau9qaj1s05iu",
+          "title": "EPS 607 - COE - RM #124",
+          "start_time": "4 PM",
+          "end_time": "6:30 PM",
+          "start_iso": "2026-02-23T16:00:00",
+          "end_iso": "2026-02-23T18:30:00",
+          "location": null,
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 73.3,
+          "height_percent": 16.7
         }
       ]
     },
@@ -370,7 +318,7 @@
     "friday": {
       "date": "2026-02-27",
       "display_date": "Feb 27",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -442,7 +390,7 @@
     "saturday": {
       "date": "2026-02-28",
       "display_date": "Feb 28",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "6e49oh2j4ljafdrvm814",
@@ -482,22 +430,6 @@
   },
   "upcoming": [
     {
-      "id": "6e49oh2j4ljafdrvm814",
-      "title": "706 exam",
-      "start_time": "9 AM",
-      "end_time": "10 AM",
-      "start_iso": "2026-02-28T09:00:00",
-      "end_iso": "2026-02-28T10:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 26.7,
-      "height_percent": 6.7,
-      "date": "2026-02-28",
-      "display_date": "Sat, Feb 28",
-      "days_until": 1
-    },
-    {
       "id": "47h2hsrojtkh1n33ltds",
       "title": "ADOS-2 Eval Chinle TRIP - MEET at the IHD @ 1pm for departure",
       "start_time": "1 PM",
@@ -511,7 +443,7 @@
       "height_percent": 46.7,
       "date": "2026-03-01",
       "display_date": "Sun, Mar 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -527,7 +459,7 @@
       "height_percent": 10.0,
       "date": "2026-03-02",
       "display_date": "Mon, Mar 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "7en7i2u6i0vuml0sh3ck",
@@ -543,7 +475,7 @@
       "height_percent": 46.7,
       "date": "2026-03-02",
       "display_date": "Mon, Mar 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -559,7 +491,7 @@
       "height_percent": 16.7,
       "date": "2026-03-02",
       "display_date": "Mon, Mar 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -575,7 +507,7 @@
       "height_percent": 10.0,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "clhj8chj6tij4b9lcdij",
@@ -591,7 +523,7 @@
       "height_percent": 6.7,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -607,23 +539,7 @@
       "height_percent": 16.7,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 4
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-03-03T16:00:00",
-      "end_iso": "2026-03-03T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-03-03",
-      "display_date": "Tue, Mar 03",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "2c9ibqi8elbph14c3ief",
@@ -639,7 +555,39 @@
       "height_percent": 6.7,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 4
+      "days_until": 3
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-03-03T16:00:00",
+      "end_iso": "2026-03-03T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-03-03",
+      "display_date": "Tue, Mar 03",
+      "days_until": 3
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "5 PM",
+      "end_time": "6 PM",
+      "start_iso": "2026-03-03T17:00:00",
+      "end_iso": "2026-03-03T18:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 80.0,
+      "height_percent": 6.7,
+      "date": "2026-03-03",
+      "display_date": "Tue, Mar 03",
+      "days_until": 3
     }
   ]
 }
