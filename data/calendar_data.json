@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generated_at": "2026-02-28T23:35:12.880275-07:00",
+    "generated_at": "2026-03-01T05:28:55.597621-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-02-23",
-    "range_end": "2026-03-30",
-    "total_events": 651,
+    "range_end": "2026-03-31",
+    "total_events": 654,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-02-28",
-    "display_date": "Saturday, February 28",
+    "date": "2026-03-01",
+    "display_date": "Sunday, March 01",
     "events": [
       {
-        "id": "6e49oh2j4ljafdrvm814",
-        "title": "706 exam",
-        "start_time": "9 AM",
-        "end_time": "10 AM",
-        "start_iso": "2026-02-28T09:00:00",
-        "end_iso": "2026-02-28T10:00:00",
+        "id": "47h2hsrojtkh1n33ltds",
+        "title": "ADOS-2 Eval Chinle TRIP - MEET at the IHD @ 1pm for departure",
+        "start_time": "1 PM",
+        "end_time": "11 PM",
+        "start_iso": "2026-03-01T13:00:00",
+        "end_iso": "2026-03-02T23:00:00",
         "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 26.7,
-        "height_percent": 6.7
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 53.3,
+        "height_percent": 46.7
       }
     ]
   },
@@ -85,19 +85,6 @@
           "height_percent": 6.7
         },
         {
-          "id": "1qqqq8a6adgaeriolqli",
-          "title": "NO 607 - (NASP convenntion)",
-          "start_time": "4 PM",
-          "end_time": "4:30 PM",
-          "start_iso": "2026-02-23T16:00:00",
-          "end_iso": "2026-02-23T16:30:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 73.3,
-          "height_percent": 4
-        },
-        {
           "id": "171qf8kdau9qaj1s05iu",
           "title": "EPS 607 - COE - RM #124",
           "start_time": "4 PM",
@@ -109,6 +96,19 @@
           "color": "var(--text-muted)",
           "top_percent": 73.3,
           "height_percent": 16.7
+        },
+        {
+          "id": "1qqqq8a6adgaeriolqli",
+          "title": "NO 607 - (NASP convenntion)",
+          "start_time": "4 PM",
+          "end_time": "4:30 PM",
+          "start_iso": "2026-02-23T16:00:00",
+          "end_iso": "2026-02-23T16:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 73.3,
+          "height_percent": 4
         }
       ]
     },
@@ -390,7 +390,7 @@
     "saturday": {
       "date": "2026-02-28",
       "display_date": "Feb 28",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "6e49oh2j4ljafdrvm814",
@@ -410,7 +410,7 @@
     "sunday": {
       "date": "2026-03-01",
       "display_date": "Mar 01",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "47h2hsrojtkh1n33ltds",
@@ -430,22 +430,6 @@
   },
   "upcoming": [
     {
-      "id": "47h2hsrojtkh1n33ltds",
-      "title": "ADOS-2 Eval Chinle TRIP - MEET at the IHD @ 1pm for departure",
-      "start_time": "1 PM",
-      "end_time": "11 PM",
-      "start_iso": "2026-03-01T13:00:00",
-      "end_iso": "2026-03-02T23:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 53.3,
-      "height_percent": 46.7,
-      "date": "2026-03-01",
-      "display_date": "Sun, Mar 01",
-      "days_until": 1
-    },
-    {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
@@ -459,7 +443,7 @@
       "height_percent": 10.0,
       "date": "2026-03-02",
       "display_date": "Mon, Mar 02",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "7en7i2u6i0vuml0sh3ck",
@@ -475,7 +459,7 @@
       "height_percent": 46.7,
       "date": "2026-03-02",
       "display_date": "Mon, Mar 02",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -491,7 +475,7 @@
       "height_percent": 16.7,
       "date": "2026-03-02",
       "display_date": "Mon, Mar 02",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -507,7 +491,7 @@
       "height_percent": 10.0,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "clhj8chj6tij4b9lcdij",
@@ -523,7 +507,7 @@
       "height_percent": 6.7,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -539,7 +523,23 @@
       "height_percent": 16.7,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 3
+      "days_until": 2
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-03-03T16:00:00",
+      "end_iso": "2026-03-03T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-03-03",
+      "display_date": "Tue, Mar 03",
+      "days_until": 2
     },
     {
       "id": "2c9ibqi8elbph14c3ief",
@@ -555,23 +555,7 @@
       "height_percent": 6.7,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 3
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-03-03T16:00:00",
-      "end_iso": "2026-03-03T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-03-03",
-      "display_date": "Tue, Mar 03",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -587,7 +571,23 @@
       "height_percent": 6.7,
       "date": "2026-03-03",
       "display_date": "Tue, Mar 03",
-      "days_until": 3
+      "days_until": 2
+    },
+    {
+      "id": "30pj180gbak2ip3hmoml",
+      "title": "No EPS609 Tomorrow? Double Check",
+      "start_time": "6 PM",
+      "end_time": "7 PM",
+      "start_iso": "2026-03-03T18:00:00",
+      "end_iso": "2026-03-03T19:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 86.7,
+      "height_percent": 6.7,
+      "date": "2026-03-03",
+      "display_date": "Tue, Mar 03",
+      "days_until": 2
     }
   ]
 }
