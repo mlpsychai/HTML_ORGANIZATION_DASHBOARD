@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-02T05:36:41.495238-07:00",
+    "generated_at": "2026-03-02T11:34:22.546746-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-02",
     "range_end": "2026-04-01",
@@ -327,19 +327,6 @@
           "height_percent": 6.7
         },
         {
-          "id": "ckp34e1mcpj3ibb465ij",
-          "title": "1:1 on with Dr. Strain",
-          "start_time": "6 PM",
-          "end_time": "6:40 PM",
-          "start_iso": "2026-03-05T18:00:00",
-          "end_iso": "2026-03-05T18:40:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 86.7,
-          "height_percent": 4.4
-        },
-        {
           "id": "23acdhij25ckuq3ov810",
           "title": "EPS 740 (PART 2) - COE - RM # TBD",
           "start_time": "6 PM",
@@ -351,6 +338,19 @@
           "color": "var(--text-muted)",
           "top_percent": 86.7,
           "height_percent": 13.3
+        },
+        {
+          "id": "ckp34e1mcpj3ibb465ij",
+          "title": "1:1 on with Dr. Strain",
+          "start_time": "6 PM",
+          "end_time": "6:40 PM",
+          "start_iso": "2026-03-05T18:00:00",
+          "end_iso": "2026-03-05T18:40:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 86.7,
+          "height_percent": 4.4
         }
       ]
     },
