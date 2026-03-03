@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-02T18:18:20.327018-07:00",
+    "generated_at": "2026-03-02T23:39:01.274531-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-02",
     "range_end": "2026-04-01",
-    "total_events": 643,
+    "total_events": 645,
     "calendars_synced": 2
   },
   "today": {
@@ -144,19 +144,6 @@
           "height_percent": 16.7
         },
         {
-          "id": "4lm6ne5ijlfeumpbu4or",
-          "title": "CLIENT SESSION: ST",
-          "start_time": "4 PM",
-          "end_time": "5 PM",
-          "start_iso": "2026-03-03T16:00:00",
-          "end_iso": "2026-03-03T17:00:00",
-          "location": null,
-          "category": "clinical",
-          "color": "var(--accent-teal)",
-          "top_percent": 73.3,
-          "height_percent": 6.7
-        },
-        {
           "id": "2c9ibqi8elbph14c3ief",
           "title": "WELLNESS PSI - Play Therapy: Charlie Ruckman",
           "start_time": "4 PM",
@@ -166,6 +153,19 @@
           "location": "Birch District Wellness\\, 222 E Birch Ave\\, Ste 2\\, Flagstaff\\, AZ 86001",
           "category": "default",
           "color": "var(--text-secondary)",
+          "top_percent": 73.3,
+          "height_percent": 6.7
+        },
+        {
+          "id": "4lm6ne5ijlfeumpbu4or",
+          "title": "CLIENT SESSION: ST",
+          "start_time": "4 PM",
+          "end_time": "5 PM",
+          "start_iso": "2026-03-03T16:00:00",
+          "end_iso": "2026-03-03T17:00:00",
+          "location": null,
+          "category": "clinical",
+          "color": "var(--accent-teal)",
           "top_percent": 73.3,
           "height_percent": 6.7
         },
@@ -327,17 +327,30 @@
           "height_percent": 6.7
         },
         {
-          "id": "23acdhij25ckuq3ov810",
-          "title": "EPS 740 (PART 2) - COE - RM # TBD",
-          "start_time": "6 PM",
-          "end_time": "8:30 PM",
-          "start_iso": "2026-03-05T18:00:00",
-          "end_iso": "2026-03-05T20:30:00",
+          "id": "4gf87i545004olpj66uu",
+          "title": "First observation - Kensy Penman",
+          "start_time": "4 PM",
+          "end_time": "4:30 PM",
+          "start_iso": "2026-03-05T16:00:00",
+          "end_iso": "2026-03-05T16:30:00",
+          "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 73.3,
+          "height_percent": 4
+        },
+        {
+          "id": "68s36ohp64o36bb1cdij",
+          "title": "Weekly Supervision: Sean and Claudia @ prac clinic",
+          "start_time": "4:30 PM",
+          "end_time": "5:30 PM",
+          "start_iso": "2026-03-05T16:30:00",
+          "end_iso": "2026-03-05T17:30:00",
           "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 86.7,
-          "height_percent": 13.3
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 76.7,
+          "height_percent": 6.7
         },
         {
           "id": "ckp34e1mcpj3ibb465ij",
@@ -351,6 +364,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 86.7,
           "height_percent": 4.4
+        },
+        {
+          "id": "23acdhij25ckuq3ov810",
+          "title": "EPS 740 (PART 2) - COE - RM # TBD",
+          "start_time": "6 PM",
+          "end_time": "8:30 PM",
+          "start_iso": "2026-03-05T18:00:00",
+          "end_iso": "2026-03-05T20:30:00",
+          "location": null,
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 86.7,
+          "height_percent": 13.3
         }
       ]
     },
@@ -517,22 +543,6 @@
       "days_until": 1
     },
     {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-03-03T16:00:00",
-      "end_iso": "2026-03-03T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-03-03",
-      "display_date": "Tue, Mar 03",
-      "days_until": 1
-    },
-    {
       "id": "2c9ibqi8elbph14c3ief",
       "title": "WELLNESS PSI - Play Therapy: Charlie Ruckman",
       "start_time": "4 PM",
@@ -542,6 +552,22 @@
       "location": "Birch District Wellness\\, 222 E Birch Ave\\, Ste 2\\, Flagstaff\\, AZ 86001",
       "category": "default",
       "color": "var(--text-secondary)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-03-03",
+      "display_date": "Tue, Mar 03",
+      "days_until": 1
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-03-03T16:00:00",
+      "end_iso": "2026-03-03T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
       "top_percent": 73.3,
       "height_percent": 6.7,
       "date": "2026-03-03",
