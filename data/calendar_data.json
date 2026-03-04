@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-03T11:36:09.063136-07:00",
+    "generated_at": "2026-03-03T18:14:01.066856-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-02",
     "range_end": "2026-04-02",
@@ -87,19 +87,6 @@
         "category": "clinical",
         "color": "var(--accent-teal)",
         "top_percent": 80.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "30pj180gbak2ip3hmoml",
-        "title": "No EPS609 Tomorrow? Double Check",
-        "start_time": "6 PM",
-        "end_time": "7 PM",
-        "start_iso": "2026-03-03T18:00:00",
-        "end_iso": "2026-03-03T19:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 86.7,
         "height_percent": 6.7
       }
     ]
@@ -233,19 +220,6 @@
           "color": "var(--accent-teal)",
           "top_percent": 80.0,
           "height_percent": 6.7
-        },
-        {
-          "id": "30pj180gbak2ip3hmoml",
-          "title": "No EPS609 Tomorrow? Double Check",
-          "start_time": "6 PM",
-          "end_time": "7 PM",
-          "start_iso": "2026-03-03T18:00:00",
-          "end_iso": "2026-03-03T19:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 86.7,
-          "height_percent": 6.7
         }
       ]
     },
@@ -268,16 +242,16 @@
           "height_percent": 10.0
         },
         {
-          "id": "ccrj4or5ckrjcb9l6pim",
-          "title": "Presenting Today in History and Systems",
-          "start_time": "8 AM",
-          "end_time": "9 AM",
-          "start_iso": "2026-03-04T08:00:00",
-          "end_iso": "2026-03-04T09:00:00",
+          "id": "60r6cc9k74qjab9l64p3",
+          "title": "With Sherri at CHC",
+          "start_time": "8:30 AM",
+          "end_time": "9:30 AM",
+          "start_iso": "2026-03-04T08:30:00",
+          "end_iso": "2026-03-04T09:30:00",
           "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 20.0,
+          "category": "clinical",
+          "color": "var(--accent-teal)",
+          "top_percent": 23.3,
           "height_percent": 6.7
         },
         {
@@ -294,19 +268,6 @@
           "height_percent": 16.7
         },
         {
-          "id": "6gp3gp9ocos66b9m6ssm",
-          "title": "No Class Today",
-          "start_time": "9 AM",
-          "end_time": "10 AM",
-          "start_iso": "2026-03-04T09:00:00",
-          "end_iso": "2026-03-04T10:00:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 26.7,
-          "height_percent": 6.7
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "PROF Grant Sync UP meeting",
           "start_time": "11 AM",
@@ -318,6 +279,19 @@
           "color": "var(--accent-gold)",
           "top_percent": 40.0,
           "height_percent": 6.7
+        },
+        {
+          "id": "cpi34eb2cdimcb9j74oj",
+          "title": "Meet with James",
+          "start_time": "3 PM",
+          "end_time": "3:30 PM",
+          "start_iso": "2026-03-04T15:00:00",
+          "end_iso": "2026-03-04T15:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 66.7,
+          "height_percent": 4
         },
         {
           "id": "27jbh1eq2u3hnbrra5tb",
@@ -351,6 +325,19 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "65vevuh2gkrfrpjb4aeu",
+          "title": "Chat with RCC (Naomi Briones)",
+          "start_time": "10:15 AM",
+          "end_time": "11 AM",
+          "start_iso": "2026-03-05T10:15:00",
+          "end_iso": "2026-03-05T11:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 35.0,
+          "height_percent": 5.0
         },
         {
           "id": "4amqt6kr1k3vnh1s69r8",
@@ -563,16 +550,16 @@
       "days_until": 1
     },
     {
-      "id": "ccrj4or5ckrjcb9l6pim",
-      "title": "Presenting Today in History and Systems",
-      "start_time": "8 AM",
-      "end_time": "9 AM",
-      "start_iso": "2026-03-04T08:00:00",
-      "end_iso": "2026-03-04T09:00:00",
+      "id": "60r6cc9k74qjab9l64p3",
+      "title": "With Sherri at CHC",
+      "start_time": "8:30 AM",
+      "end_time": "9:30 AM",
+      "start_iso": "2026-03-04T08:30:00",
+      "end_iso": "2026-03-04T09:30:00",
       "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 20.0,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 23.3,
       "height_percent": 6.7,
       "date": "2026-03-04",
       "display_date": "Wed, Mar 04",
@@ -595,22 +582,6 @@
       "days_until": 1
     },
     {
-      "id": "6gp3gp9ocos66b9m6ssm",
-      "title": "No Class Today",
-      "start_time": "9 AM",
-      "end_time": "10 AM",
-      "start_iso": "2026-03-04T09:00:00",
-      "end_iso": "2026-03-04T10:00:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 26.7,
-      "height_percent": 6.7,
-      "date": "2026-03-04",
-      "display_date": "Wed, Mar 04",
-      "days_until": 1
-    },
-    {
       "id": "040000008200E00074C5",
       "title": "PROF Grant Sync UP meeting",
       "start_time": "11 AM",
@@ -622,6 +593,22 @@
       "color": "var(--accent-gold)",
       "top_percent": 40.0,
       "height_percent": 6.7,
+      "date": "2026-03-04",
+      "display_date": "Wed, Mar 04",
+      "days_until": 1
+    },
+    {
+      "id": "cpi34eb2cdimcb9j74oj",
+      "title": "Meet with James",
+      "start_time": "3 PM",
+      "end_time": "3:30 PM",
+      "start_iso": "2026-03-04T15:00:00",
+      "end_iso": "2026-03-04T15:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 66.7,
+      "height_percent": 4,
       "date": "2026-03-04",
       "display_date": "Wed, Mar 04",
       "days_until": 1
@@ -659,6 +646,22 @@
       "days_until": 2
     },
     {
+      "id": "65vevuh2gkrfrpjb4aeu",
+      "title": "Chat with RCC (Naomi Briones)",
+      "start_time": "10:15 AM",
+      "end_time": "11 AM",
+      "start_iso": "2026-03-05T10:15:00",
+      "end_iso": "2026-03-05T11:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 35.0,
+      "height_percent": 5.0,
+      "date": "2026-03-05",
+      "display_date": "Thu, Mar 05",
+      "days_until": 2
+    },
+    {
       "id": "4amqt6kr1k3vnh1s69r8",
       "title": "Supervision: Kayla and Sean",
       "start_time": "11 AM",
@@ -686,22 +689,6 @@
       "color": "var(--accent-gold)",
       "top_percent": 46.7,
       "height_percent": 6.7,
-      "date": "2026-03-05",
-      "display_date": "Thu, Mar 05",
-      "days_until": 2
-    },
-    {
-      "id": "4gf87i545004olpj66uu",
-      "title": "First observation - Kensy Penman",
-      "start_time": "4 PM",
-      "end_time": "4:30 PM",
-      "start_iso": "2026-03-05T16:00:00",
-      "end_iso": "2026-03-05T16:30:00",
-      "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 73.3,
-      "height_percent": 4,
       "date": "2026-03-05",
       "display_date": "Thu, Mar 05",
       "days_until": 2
