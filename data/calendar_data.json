@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-04T05:35:56.168226-07:00",
+    "generated_at": "2026-03-04T11:35:52.655645-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-02",
     "range_end": "2026-04-03",
-    "total_events": 651,
+    "total_events": 652,
     "calendars_synced": 2
   },
   "today": {
@@ -28,14 +28,14 @@
         "id": "60r6cc9k74qjab9l64p3",
         "title": "With Sherri at CHC",
         "start_time": "8:30 AM",
-        "end_time": "9:30 AM",
+        "end_time": "2 PM",
         "start_iso": "2026-03-04T08:30:00",
-        "end_iso": "2026-03-04T09:30:00",
+        "end_iso": "2026-03-04T14:00:00",
         "location": null,
         "category": "clinical",
         "color": "var(--accent-teal)",
         "top_percent": 23.3,
-        "height_percent": 6.7
+        "height_percent": 36.7
       },
       {
         "id": "54nnsab6bbcus3bbporn",
@@ -114,14 +114,14 @@
           "id": "7en7i2u6i0vuml0sh3ck",
           "title": "ADOS-2 Eval - Chinle Trip",
           "start_time": "8 AM",
-          "end_time": "3 PM",
+          "end_time": "7 PM",
           "start_iso": "2026-03-02T08:00:00",
-          "end_iso": "2026-03-02T15:00:00",
+          "end_iso": "2026-03-02T19:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
           "top_percent": 20.0,
-          "height_percent": 46.7
+          "height_percent": 73.3
         },
         {
           "id": "171qf8kdau9qaj1s05iu",
@@ -245,14 +245,14 @@
           "id": "60r6cc9k74qjab9l64p3",
           "title": "With Sherri at CHC",
           "start_time": "8:30 AM",
-          "end_time": "9:30 AM",
+          "end_time": "2 PM",
           "start_iso": "2026-03-04T08:30:00",
-          "end_iso": "2026-03-04T09:30:00",
+          "end_iso": "2026-03-04T14:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
           "top_percent": 23.3,
-          "height_percent": 6.7
+          "height_percent": 36.7
         },
         {
           "id": "54nnsab6bbcus3bbporn",
@@ -392,19 +392,6 @@
           "height_percent": 6.7
         },
         {
-          "id": "ckp34e1mcpj3ibb465ij",
-          "title": "1:1 on with Dr. Strain",
-          "start_time": "6 PM",
-          "end_time": "6:40 PM",
-          "start_iso": "2026-03-05T18:00:00",
-          "end_iso": "2026-03-05T18:40:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 86.7,
-          "height_percent": 4.4
-        },
-        {
           "id": "23acdhij25ckuq3ov810",
           "title": "EPS 740 (PART 2) - COE - RM # TBD",
           "start_time": "6 PM",
@@ -416,6 +403,19 @@
           "color": "var(--text-muted)",
           "top_percent": 86.7,
           "height_percent": 13.3
+        },
+        {
+          "id": "ckp34e1mcpj3ibb465ij",
+          "title": "1:1 on with Dr. Strain",
+          "start_time": "6 PM",
+          "end_time": "6:40 PM",
+          "start_iso": "2026-03-05T18:00:00",
+          "end_iso": "2026-03-05T18:40:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 86.7,
+          "height_percent": 4.4
         }
       ]
     },
@@ -630,22 +630,6 @@
       "days_until": 1
     },
     {
-      "id": "ckp34e1mcpj3ibb465ij",
-      "title": "1:1 on with Dr. Strain",
-      "start_time": "6 PM",
-      "end_time": "6:40 PM",
-      "start_iso": "2026-03-05T18:00:00",
-      "end_iso": "2026-03-05T18:40:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 86.7,
-      "height_percent": 4.4,
-      "date": "2026-03-05",
-      "display_date": "Thu, Mar 05",
-      "days_until": 1
-    },
-    {
       "id": "23acdhij25ckuq3ov810",
       "title": "EPS 740 (PART 2) - COE - RM # TBD",
       "start_time": "6 PM",
@@ -657,6 +641,22 @@
       "color": "var(--text-muted)",
       "top_percent": 86.7,
       "height_percent": 13.3,
+      "date": "2026-03-05",
+      "display_date": "Thu, Mar 05",
+      "days_until": 1
+    },
+    {
+      "id": "ckp34e1mcpj3ibb465ij",
+      "title": "1:1 on with Dr. Strain",
+      "start_time": "6 PM",
+      "end_time": "6:40 PM",
+      "start_iso": "2026-03-05T18:00:00",
+      "end_iso": "2026-03-05T18:40:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 86.7,
+      "height_percent": 4.4,
       "date": "2026-03-05",
       "display_date": "Thu, Mar 05",
       "days_until": 1
