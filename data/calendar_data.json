@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-04T18:16:29.902334-07:00",
+    "generated_at": "2026-03-04T23:39:35.680800-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-02",
     "range_end": "2026-04-03",
@@ -392,19 +392,6 @@
           "height_percent": 4
         },
         {
-          "id": "65vevuh2gkrfrpjb4aeu",
-          "title": "Chat with RCC (Naomi Briones)",
-          "start_time": "10:15 AM",
-          "end_time": "11 AM",
-          "start_iso": "2026-03-05T10:15:00",
-          "end_iso": "2026-03-05T11:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 35.0,
-          "height_percent": 5.0
-        },
-        {
           "id": "4amqt6kr1k3vnh1s69r8",
           "title": "Supervision: Kayla and Sean",
           "start_time": "11 AM",
@@ -441,6 +428,19 @@
           "category": "default",
           "color": "var(--text-secondary)",
           "top_percent": 60.0,
+          "height_percent": 4
+        },
+        {
+          "id": "6op3ao9k64qmcbb269hm",
+          "title": "Claudia CT sesh",
+          "start_time": "3:30 PM",
+          "end_time": "4 PM",
+          "start_iso": "2026-03-05T15:30:00",
+          "end_iso": "2026-03-05T16:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 70.0,
           "height_percent": 4
         },
         {
@@ -644,22 +644,6 @@
       "days_until": 1
     },
     {
-      "id": "65vevuh2gkrfrpjb4aeu",
-      "title": "Chat with RCC (Naomi Briones)",
-      "start_time": "10:15 AM",
-      "end_time": "11 AM",
-      "start_iso": "2026-03-05T10:15:00",
-      "end_iso": "2026-03-05T11:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 35.0,
-      "height_percent": 5.0,
-      "date": "2026-03-05",
-      "display_date": "Thu, Mar 05",
-      "days_until": 1
-    },
-    {
       "id": "4amqt6kr1k3vnh1s69r8",
       "title": "Supervision: Kayla and Sean",
       "start_time": "11 AM",
@@ -702,6 +686,22 @@
       "category": "default",
       "color": "var(--text-secondary)",
       "top_percent": 60.0,
+      "height_percent": 4,
+      "date": "2026-03-05",
+      "display_date": "Thu, Mar 05",
+      "days_until": 1
+    },
+    {
+      "id": "6op3ao9k64qmcbb269hm",
+      "title": "Claudia CT sesh",
+      "start_time": "3:30 PM",
+      "end_time": "4 PM",
+      "start_iso": "2026-03-05T15:30:00",
+      "end_iso": "2026-03-05T16:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 70.0,
       "height_percent": 4,
       "date": "2026-03-05",
       "display_date": "Thu, Mar 05",
