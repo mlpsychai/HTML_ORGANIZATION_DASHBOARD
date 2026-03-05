@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-04T11:35:52.655645-07:00",
+    "generated_at": "2026-03-04T18:16:29.902334-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-02",
     "range_end": "2026-04-03",
-    "total_events": 652,
+    "total_events": 657,
     "calendars_synced": 2
   },
   "today": {
@@ -64,6 +64,19 @@
         "height_percent": 6.7
       },
       {
+        "id": "6kpj6c9p6oo38b9m6ti3",
+        "title": "Respond to Naomi Email",
+        "start_time": "2:45 PM",
+        "end_time": "3:45 PM",
+        "start_iso": "2026-03-04T14:45:00",
+        "end_iso": "2026-03-04T15:45:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 65.0,
+        "height_percent": 6.7
+      },
+      {
         "id": "cpi34eb2cdimcb9j74oj",
         "title": "Meet with James",
         "start_time": "3 PM",
@@ -88,6 +101,19 @@
         "color": "var(--text-muted)",
         "top_percent": 73.3,
         "height_percent": 16.7
+      },
+      {
+        "id": "c8pj2p1nckpm2b9p75j3",
+        "title": "Format for dissertation summary?",
+        "start_time": "6:30 PM",
+        "end_time": "7:30 PM",
+        "start_iso": "2026-03-04T18:30:00",
+        "end_iso": "2026-03-04T19:30:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 90.0,
+        "height_percent": 6.7
       }
     ]
   },
@@ -183,19 +209,6 @@
           "height_percent": 16.7
         },
         {
-          "id": "2c9ibqi8elbph14c3ief",
-          "title": "WELLNESS PSI - Play Therapy: Charlie Ruckman",
-          "start_time": "4 PM",
-          "end_time": "5 PM",
-          "start_iso": "2026-03-03T16:00:00",
-          "end_iso": "2026-03-03T17:00:00",
-          "location": "Birch District Wellness\\, 222 E Birch Ave\\, Ste 2\\, Flagstaff\\, AZ 86001",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 73.3,
-          "height_percent": 6.7
-        },
-        {
           "id": "4lm6ne5ijlfeumpbu4or",
           "title": "CLIENT SESSION: ST",
           "start_time": "4 PM",
@@ -205,6 +218,19 @@
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
+          "top_percent": 73.3,
+          "height_percent": 6.7
+        },
+        {
+          "id": "2c9ibqi8elbph14c3ief",
+          "title": "WELLNESS PSI - Play Therapy: Charlie Ruckman",
+          "start_time": "4 PM",
+          "end_time": "5 PM",
+          "start_iso": "2026-03-03T16:00:00",
+          "end_iso": "2026-03-03T17:00:00",
+          "location": "Birch District Wellness\\, 222 E Birch Ave\\, Ste 2\\, Flagstaff\\, AZ 86001",
+          "category": "default",
+          "color": "var(--text-secondary)",
           "top_percent": 73.3,
           "height_percent": 6.7
         },
@@ -281,6 +307,19 @@
           "height_percent": 6.7
         },
         {
+          "id": "6kpj6c9p6oo38b9m6ti3",
+          "title": "Respond to Naomi Email",
+          "start_time": "2:45 PM",
+          "end_time": "3:45 PM",
+          "start_iso": "2026-03-04T14:45:00",
+          "end_iso": "2026-03-04T15:45:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 65.0,
+          "height_percent": 6.7
+        },
+        {
           "id": "cpi34eb2cdimcb9j74oj",
           "title": "Meet with James",
           "start_time": "3 PM",
@@ -305,6 +344,19 @@
           "color": "var(--text-muted)",
           "top_percent": 73.3,
           "height_percent": 16.7
+        },
+        {
+          "id": "c8pj2p1nckpm2b9p75j3",
+          "title": "Format for dissertation summary?",
+          "start_time": "6:30 PM",
+          "end_time": "7:30 PM",
+          "start_iso": "2026-03-04T18:30:00",
+          "end_iso": "2026-03-04T19:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 90.0,
+          "height_percent": 6.7
         }
       ]
     },
@@ -325,6 +377,19 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "64s68d1n6opm6bb275hj",
+          "title": "Email Sherri NIH biosketch form",
+          "start_time": "8 AM",
+          "end_time": "8:30 AM",
+          "start_iso": "2026-03-05T08:00:00",
+          "end_iso": "2026-03-05T08:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 20.0,
+          "height_percent": 4
         },
         {
           "id": "65vevuh2gkrfrpjb4aeu",
@@ -366,6 +431,19 @@
           "height_percent": 6.7
         },
         {
+          "id": "6os68dpkccq32b9p60om",
+          "title": "First Observation Discussion: Maggie and Sean:  https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+          "start_time": "2 PM",
+          "end_time": "2:30 PM",
+          "start_iso": "2026-03-05T14:00:00",
+          "end_iso": "2026-03-05T14:30:00",
+          "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 60.0,
+          "height_percent": 4
+        },
+        {
           "id": "4gf87i545004olpj66uu",
           "title": "First observation - Kensy Penman",
           "start_time": "4 PM",
@@ -392,19 +470,6 @@
           "height_percent": 6.7
         },
         {
-          "id": "23acdhij25ckuq3ov810",
-          "title": "EPS 740 (PART 2) - COE - RM # TBD",
-          "start_time": "6 PM",
-          "end_time": "8:30 PM",
-          "start_iso": "2026-03-05T18:00:00",
-          "end_iso": "2026-03-05T20:30:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 86.7,
-          "height_percent": 13.3
-        },
-        {
           "id": "ckp34e1mcpj3ibb465ij",
           "title": "1:1 on with Dr. Strain",
           "start_time": "6 PM",
@@ -416,6 +481,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 86.7,
           "height_percent": 4.4
+        },
+        {
+          "id": "23acdhij25ckuq3ov810",
+          "title": "EPS 740 (PART 2) - COE - RM # TBD",
+          "start_time": "6 PM",
+          "end_time": "8:30 PM",
+          "start_iso": "2026-03-05T18:00:00",
+          "end_iso": "2026-03-05T20:30:00",
+          "location": null,
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 86.7,
+          "height_percent": 13.3
         }
       ]
     },
@@ -550,6 +628,22 @@
       "days_until": 1
     },
     {
+      "id": "64s68d1n6opm6bb275hj",
+      "title": "Email Sherri NIH biosketch form",
+      "start_time": "8 AM",
+      "end_time": "8:30 AM",
+      "start_iso": "2026-03-05T08:00:00",
+      "end_iso": "2026-03-05T08:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 20.0,
+      "height_percent": 4,
+      "date": "2026-03-05",
+      "display_date": "Thu, Mar 05",
+      "days_until": 1
+    },
+    {
       "id": "65vevuh2gkrfrpjb4aeu",
       "title": "Chat with RCC (Naomi Briones)",
       "start_time": "10:15 AM",
@@ -598,6 +692,22 @@
       "days_until": 1
     },
     {
+      "id": "6os68dpkccq32b9p60om",
+      "title": "First Observation Discussion: Maggie and Sean:  https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "start_time": "2 PM",
+      "end_time": "2:30 PM",
+      "start_iso": "2026-03-05T14:00:00",
+      "end_iso": "2026-03-05T14:30:00",
+      "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 60.0,
+      "height_percent": 4,
+      "date": "2026-03-05",
+      "display_date": "Thu, Mar 05",
+      "days_until": 1
+    },
+    {
       "id": "4gf87i545004olpj66uu",
       "title": "First observation - Kensy Penman",
       "start_time": "4 PM",
@@ -630,22 +740,6 @@
       "days_until": 1
     },
     {
-      "id": "23acdhij25ckuq3ov810",
-      "title": "EPS 740 (PART 2) - COE - RM # TBD",
-      "start_time": "6 PM",
-      "end_time": "8:30 PM",
-      "start_iso": "2026-03-05T18:00:00",
-      "end_iso": "2026-03-05T20:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 86.7,
-      "height_percent": 13.3,
-      "date": "2026-03-05",
-      "display_date": "Thu, Mar 05",
-      "days_until": 1
-    },
-    {
       "id": "ckp34e1mcpj3ibb465ij",
       "title": "1:1 on with Dr. Strain",
       "start_time": "6 PM",
@@ -662,36 +756,20 @@
       "days_until": 1
     },
     {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-03-06T05:30:00",
-      "end_iso": "2026-03-06T07:00:00",
+      "id": "23acdhij25ckuq3ov810",
+      "title": "EPS 740 (PART 2) - COE - RM # TBD",
+      "start_time": "6 PM",
+      "end_time": "8:30 PM",
+      "start_iso": "2026-03-05T18:00:00",
+      "end_iso": "2026-03-05T20:30:00",
       "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-03-06",
-      "display_date": "Fri, Mar 06",
-      "days_until": 2
-    },
-    {
-      "id": "50d32p6to924r8c3r21p",
-      "title": "Weekly Research Meeting: https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "start_time": "7:30 AM",
-      "end_time": "8 AM",
-      "start_iso": "2026-03-06T07:30:00",
-      "end_iso": "2026-03-06T08:00:00",
-      "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 16.7,
-      "height_percent": 4,
-      "date": "2026-03-06",
-      "display_date": "Fri, Mar 06",
-      "days_until": 2
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 86.7,
+      "height_percent": 13.3,
+      "date": "2026-03-05",
+      "display_date": "Thu, Mar 05",
+      "days_until": 1
     }
   ]
 }
