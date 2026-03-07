@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-06T11:32:41.364128-07:00",
+    "generated_at": "2026-03-06T18:11:25.231933-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-02",
     "range_end": "2026-04-05",
-    "total_events": 657,
+    "total_events": 658,
     "calendars_synced": 2
   },
   "today": {
@@ -62,6 +62,19 @@
         "color": "var(--accent-purple)",
         "top_percent": 53.3,
         "height_percent": 20.0
+      },
+      {
+        "id": "4ilhbkg030emoguh129l",
+        "title": "ST counseling",
+        "start_time": "4:30 PM",
+        "end_time": "5:30 PM",
+        "start_iso": "2026-03-06T16:30:00",
+        "end_iso": "2026-03-06T17:30:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 76.7,
+        "height_percent": 6.7
       }
     ]
   },
@@ -157,19 +170,6 @@
           "height_percent": 16.7
         },
         {
-          "id": "2c9ibqi8elbph14c3ief",
-          "title": "WELLNESS PSI - Play Therapy: Charlie Ruckman",
-          "start_time": "4 PM",
-          "end_time": "5 PM",
-          "start_iso": "2026-03-03T16:00:00",
-          "end_iso": "2026-03-03T17:00:00",
-          "location": "Birch District Wellness\\, 222 E Birch Ave\\, Ste 2\\, Flagstaff\\, AZ 86001",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 73.3,
-          "height_percent": 6.7
-        },
-        {
           "id": "4lm6ne5ijlfeumpbu4or",
           "title": "CLIENT SESSION: ST",
           "start_time": "4 PM",
@@ -179,6 +179,19 @@
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
+          "top_percent": 73.3,
+          "height_percent": 6.7
+        },
+        {
+          "id": "2c9ibqi8elbph14c3ief",
+          "title": "WELLNESS PSI - Play Therapy: Charlie Ruckman",
+          "start_time": "4 PM",
+          "end_time": "5 PM",
+          "start_iso": "2026-03-03T16:00:00",
+          "end_iso": "2026-03-03T17:00:00",
+          "location": "Birch District Wellness\\, 222 E Birch Ave\\, Ste 2\\, Flagstaff\\, AZ 86001",
+          "category": "default",
+          "color": "var(--text-secondary)",
           "top_percent": 73.3,
           "height_percent": 6.7
         },
@@ -501,6 +514,19 @@
           "color": "var(--accent-purple)",
           "top_percent": 53.3,
           "height_percent": 20.0
+        },
+        {
+          "id": "4ilhbkg030emoguh129l",
+          "title": "ST counseling",
+          "start_time": "4:30 PM",
+          "end_time": "5:30 PM",
+          "start_iso": "2026-03-06T16:30:00",
+          "end_iso": "2026-03-06T17:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 76.7,
+          "height_percent": 6.7
         }
       ]
     },
