@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-03-09T23:37:09.991782-07:00",
+    "generated_at": "2026-03-10T05:38:56.412961-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-09",
-    "range_end": "2026-04-08",
-    "total_events": 652,
+    "range_end": "2026-04-09",
+    "total_events": 655,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-03-09",
-    "display_date": "Monday, March 09",
+    "date": "2026-03-10",
+    "display_date": "Tuesday, March 10",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-03-09T05:30:00",
-        "end_iso": "2026-03-09T07:00:00",
+        "start_iso": "2026-03-10T05:30:00",
+        "end_iso": "2026-03-10T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,17 +25,30 @@
         "height_percent": 10.0
       },
       {
-        "id": "171qf8kdau9qaj1s05iu",
-        "title": "EPS 607 - COE - RM #124",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-03-09T16:00:00",
-        "end_iso": "2026-03-09T18:30:00",
+        "id": "463uo7vspjvaq122625c",
+        "title": "EPS 737 - COE - RM # 205",
+        "start_time": "12:45 PM",
+        "end_time": "3:15 PM",
+        "start_iso": "2026-03-10T12:45:00",
+        "end_iso": "2026-03-10T15:15:00",
         "location": null,
         "category": "class",
         "color": "var(--text-muted)",
-        "top_percent": 73.3,
+        "top_percent": 51.7,
         "height_percent": 16.7
+      },
+      {
+        "id": "4lm6ne5ijlfeumpbu4or",
+        "title": "CLIENT SESSION: ST",
+        "start_time": "4 PM",
+        "end_time": "5 PM",
+        "start_iso": "2026-03-10T16:00:00",
+        "end_iso": "2026-03-10T17:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 73.3,
+        "height_percent": 6.7
       }
     ]
   },
@@ -43,7 +56,7 @@
     "monday": {
       "date": "2026-03-09",
       "display_date": "Mar 09",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -76,7 +89,7 @@
     "tuesday": {
       "date": "2026-03-10",
       "display_date": "Mar 10",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -328,54 +341,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-03-10T05:30:00",
-      "end_iso": "2026-03-10T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-03-10",
-      "display_date": "Tue, Mar 10",
-      "days_until": 1
-    },
-    {
-      "id": "463uo7vspjvaq122625c",
-      "title": "EPS 737 - COE - RM # 205",
-      "start_time": "12:45 PM",
-      "end_time": "3:15 PM",
-      "start_iso": "2026-03-10T12:45:00",
-      "end_iso": "2026-03-10T15:15:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 51.7,
-      "height_percent": 16.7,
-      "date": "2026-03-10",
-      "display_date": "Tue, Mar 10",
-      "days_until": 1
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-03-10T16:00:00",
-      "end_iso": "2026-03-10T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-03-10",
-      "display_date": "Tue, Mar 10",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-03-11T05:30:00",
       "end_iso": "2026-03-11T07:00:00",
       "location": null,
@@ -385,7 +350,7 @@
       "height_percent": 10.0,
       "date": "2026-03-11",
       "display_date": "Wed, Mar 11",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "70p3cd36cor6cbb169i3",
@@ -401,7 +366,7 @@
       "height_percent": 6.7,
       "date": "2026-03-11",
       "display_date": "Wed, Mar 11",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "54nnsab6bbcus3bbporn",
@@ -417,7 +382,7 @@
       "height_percent": 16.7,
       "date": "2026-03-11",
       "display_date": "Wed, Mar 11",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "c8p66e1n68qm8b9mchgm",
@@ -433,7 +398,7 @@
       "height_percent": 6.7,
       "date": "2026-03-11",
       "display_date": "Wed, Mar 11",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -449,7 +414,7 @@
       "height_percent": 6.7,
       "date": "2026-03-11",
       "display_date": "Wed, Mar 11",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "ccsm8dj66pgjgb9p64pm",
@@ -465,7 +430,7 @@
       "height_percent": 6.7,
       "date": "2026-03-11",
       "display_date": "Wed, Mar 11",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "27jbh1eq2u3hnbrra5tb",
@@ -481,6 +446,54 @@
       "height_percent": 16.7,
       "date": "2026-03-11",
       "display_date": "Wed, Mar 11",
+      "days_until": 1
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-03-12T05:30:00",
+      "end_iso": "2026-03-12T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-03-12",
+      "display_date": "Thu, Mar 12",
+      "days_until": 2
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-03-12T12:00:00",
+      "end_iso": "2026-03-12T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-03-12",
+      "display_date": "Thu, Mar 12",
+      "days_until": 2
+    },
+    {
+      "id": "23acdhij25ckuq3ov810",
+      "title": "EPS 740 (PART 2) - COE - RM # TBD",
+      "start_time": "6 PM",
+      "end_time": "8:30 PM",
+      "start_iso": "2026-03-12T18:00:00",
+      "end_iso": "2026-03-12T20:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 86.7,
+      "height_percent": 13.3,
+      "date": "2026-03-12",
+      "display_date": "Thu, Mar 12",
       "days_until": 2
     }
   ]
