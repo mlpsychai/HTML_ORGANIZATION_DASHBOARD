@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-10T05:38:56.412961-07:00",
+    "generated_at": "2026-03-10T11:36:31.921424-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-09",
     "range_end": "2026-04-09",
@@ -154,14 +154,14 @@
           "id": "70p3cd36cor6cbb169i3",
           "title": "With Sherri at CHC",
           "start_time": "8 AM",
-          "end_time": "9 AM",
+          "end_time": "2 PM",
           "start_iso": "2026-03-11T08:00:00",
-          "end_iso": "2026-03-11T09:00:00",
+          "end_iso": "2026-03-11T14:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
           "top_percent": 20.0,
-          "height_percent": 6.7
+          "height_percent": 40.0
         },
         {
           "id": "54nnsab6bbcus3bbporn",
@@ -356,14 +356,14 @@
       "id": "70p3cd36cor6cbb169i3",
       "title": "With Sherri at CHC",
       "start_time": "8 AM",
-      "end_time": "9 AM",
+      "end_time": "2 PM",
       "start_iso": "2026-03-11T08:00:00",
-      "end_iso": "2026-03-11T09:00:00",
+      "end_iso": "2026-03-11T14:00:00",
       "location": null,
       "category": "clinical",
       "color": "var(--accent-teal)",
       "top_percent": 20.0,
-      "height_percent": 6.7,
+      "height_percent": 40.0,
       "date": "2026-03-11",
       "display_date": "Wed, Mar 11",
       "days_until": 1
