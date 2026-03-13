@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-12T18:15:07.320626-07:00",
+    "generated_at": "2026-03-12T23:40:16.560104-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-09",
     "range_end": "2026-04-11",
-    "total_events": 659,
+    "total_events": 660,
     "calendars_synced": 2
   },
   "today": {
@@ -334,6 +334,19 @@
           "height_percent": 4
         },
         {
+          "id": "cko36p9nc9j3cb9gc8qm",
+          "title": "Email first",
+          "start_time": "10 AM",
+          "end_time": "11 AM",
+          "start_iso": "2026-03-13T10:00:00",
+          "end_iso": "2026-03-13T11:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 6.7
+        },
+        {
           "id": "1b7o1rog5qjt07hen9sc",
           "title": "Arizona LEND Weekly Meeting",
           "start_time": "1 PM",
@@ -390,6 +403,22 @@
       "color": "var(--accent-gold)",
       "top_percent": 16.7,
       "height_percent": 4,
+      "date": "2026-03-13",
+      "display_date": "Fri, Mar 13",
+      "days_until": 1
+    },
+    {
+      "id": "cko36p9nc9j3cb9gc8qm",
+      "title": "Email first",
+      "start_time": "10 AM",
+      "end_time": "11 AM",
+      "start_iso": "2026-03-13T10:00:00",
+      "end_iso": "2026-03-13T11:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 33.3,
+      "height_percent": 6.7,
       "date": "2026-03-13",
       "display_date": "Fri, Mar 13",
       "days_until": 1
@@ -502,22 +531,6 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
-      "date": "2026-03-18",
-      "display_date": "Wed, Mar 18",
-      "days_until": 6
-    },
-    {
-      "id": "54nnsab6bbcus3bbporn",
-      "title": "EPS 609 - COE - RM # 124",
-      "start_time": "9 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-03-18T09:00:00",
-      "end_iso": "2026-03-18T11:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 26.7,
-      "height_percent": 16.7,
       "date": "2026-03-18",
       "display_date": "Wed, Mar 18",
       "days_until": 6
