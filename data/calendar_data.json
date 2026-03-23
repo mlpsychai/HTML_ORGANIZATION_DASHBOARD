@@ -1,30 +1,70 @@
 {
   "meta": {
-    "generated_at": "2026-03-22T23:58:54.238871-07:00",
+    "generated_at": "2026-03-23T05:44:01.011323-07:00",
     "timezone": "America/Phoenix",
-    "range_start": "2026-03-16",
-    "range_end": "2026-04-21",
-    "total_events": 666,
+    "range_start": "2026-03-23",
+    "range_end": "2026-04-22",
+    "total_events": 655,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-03-22",
-    "display_date": "Sunday, March 22",
-    "events": []
+    "date": "2026-03-23",
+    "display_date": "Monday, March 23",
+    "events": [
+      {
+        "id": "4vv5mirtsid1h5l6dhq9",
+        "title": "MANDATORIES",
+        "start_time": "5:30 AM",
+        "end_time": "7 AM",
+        "start_iso": "2026-03-23T05:30:00",
+        "end_iso": "2026-03-23T07:00:00",
+        "location": null,
+        "category": "personal",
+        "color": "var(--accent-sage)",
+        "top_percent": 3.3,
+        "height_percent": 10.0
+      },
+      {
+        "id": "20260319T220437Z-882",
+        "title": "April Clinic Planning Meeting",
+        "start_time": "12 PM",
+        "end_time": "1 PM",
+        "start_iso": "2026-03-23T12:00:00",
+        "end_iso": "2026-03-23T13:00:00",
+        "location": "https://nau.zoom.us/j/88291893258?pwd=ImxoKXLxNCS92mT46gkcCOTxe9w3bU.1",
+        "category": "meeting",
+        "color": "var(--accent-gold)",
+        "top_percent": 46.7,
+        "height_percent": 6.7
+      },
+      {
+        "id": "171qf8kdau9qaj1s05iu",
+        "title": "EPS 607 - COE - RM #124",
+        "start_time": "4 PM",
+        "end_time": "6:30 PM",
+        "start_iso": "2026-03-23T16:00:00",
+        "end_iso": "2026-03-23T18:30:00",
+        "location": null,
+        "category": "class",
+        "color": "var(--text-muted)",
+        "top_percent": 73.3,
+        "height_percent": 16.7
+      }
+    ]
   },
   "week": {
     "monday": {
-      "date": "2026-03-16",
-      "display_date": "Mar 16",
-      "is_today": false,
+      "date": "2026-03-23",
+      "display_date": "Mar 23",
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-03-16T05:30:00",
-          "end_iso": "2026-03-16T07:00:00",
+          "start_iso": "2026-03-23T05:30:00",
+          "end_iso": "2026-03-23T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -32,12 +72,25 @@
           "height_percent": 10.0
         },
         {
+          "id": "20260319T220437Z-882",
+          "title": "April Clinic Planning Meeting",
+          "start_time": "12 PM",
+          "end_time": "1 PM",
+          "start_iso": "2026-03-23T12:00:00",
+          "end_iso": "2026-03-23T13:00:00",
+          "location": "https://nau.zoom.us/j/88291893258?pwd=ImxoKXLxNCS92mT46gkcCOTxe9w3bU.1",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 46.7,
+          "height_percent": 6.7
+        },
+        {
           "id": "171qf8kdau9qaj1s05iu",
           "title": "EPS 607 - COE - RM #124",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
-          "start_iso": "2026-03-16T16:00:00",
-          "end_iso": "2026-03-16T18:30:00",
+          "start_iso": "2026-03-23T16:00:00",
+          "end_iso": "2026-03-23T18:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -47,8 +100,8 @@
       ]
     },
     "tuesday": {
-      "date": "2026-03-17",
-      "display_date": "Mar 17",
+      "date": "2026-03-24",
+      "display_date": "Mar 24",
       "is_today": false,
       "events": [
         {
@@ -56,8 +109,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-03-17T05:30:00",
-          "end_iso": "2026-03-17T07:00:00",
+          "start_iso": "2026-03-24T05:30:00",
+          "end_iso": "2026-03-24T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -69,8 +122,8 @@
           "title": "EPS 737 - COE - RM # 205",
           "start_time": "12:45 PM",
           "end_time": "3:15 PM",
-          "start_iso": "2026-03-17T12:45:00",
-          "end_iso": "2026-03-17T15:15:00",
+          "start_iso": "2026-03-24T12:45:00",
+          "end_iso": "2026-03-24T15:15:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -82,8 +135,8 @@
           "title": "CLIENT SESSION: ST",
           "start_time": "4 PM",
           "end_time": "5 PM",
-          "start_iso": "2026-03-17T16:00:00",
-          "end_iso": "2026-03-17T17:00:00",
+          "start_iso": "2026-03-24T16:00:00",
+          "end_iso": "2026-03-24T17:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
@@ -93,8 +146,8 @@
       ]
     },
     "wednesday": {
-      "date": "2026-03-18",
-      "display_date": "Mar 18",
+      "date": "2026-03-25",
+      "display_date": "Mar 25",
       "is_today": false,
       "events": [
         {
@@ -102,8 +155,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-03-18T05:30:00",
-          "end_iso": "2026-03-18T07:00:00",
+          "start_iso": "2026-03-25T05:30:00",
+          "end_iso": "2026-03-25T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -115,8 +168,8 @@
           "title": "EPS 609 - COE - RM # 124",
           "start_time": "9 AM",
           "end_time": "11:30 AM",
-          "start_iso": "2026-03-18T09:00:00",
-          "end_iso": "2026-03-18T11:30:00",
+          "start_iso": "2026-03-25T09:00:00",
+          "end_iso": "2026-03-25T11:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -128,8 +181,8 @@
           "title": "PROF Grant Sync UP meeting",
           "start_time": "11 AM",
           "end_time": "12 PM",
-          "start_iso": "2026-03-18T11:00:00",
-          "end_iso": "2026-03-18T12:00:00",
+          "start_iso": "2026-03-25T11:00:00",
+          "end_iso": "2026-03-25T12:00:00",
           "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -141,8 +194,8 @@
           "title": "EPS 706 - COE - RM # 208",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
-          "start_iso": "2026-03-18T16:00:00",
-          "end_iso": "2026-03-18T18:30:00",
+          "start_iso": "2026-03-25T16:00:00",
+          "end_iso": "2026-03-25T18:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -152,8 +205,8 @@
       ]
     },
     "thursday": {
-      "date": "2026-03-19",
-      "display_date": "Mar 19",
+      "date": "2026-03-26",
+      "display_date": "Mar 26",
       "is_today": false,
       "events": [
         {
@@ -161,8 +214,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-03-19T05:30:00",
-          "end_iso": "2026-03-19T07:00:00",
+          "start_iso": "2026-03-26T05:30:00",
+          "end_iso": "2026-03-26T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -174,8 +227,8 @@
           "title": "supervision",
           "start_time": "12 PM",
           "end_time": "1 PM",
-          "start_iso": "2026-03-19T12:00:00",
-          "end_iso": "2026-03-19T13:00:00",
+          "start_iso": "2026-03-26T12:00:00",
+          "end_iso": "2026-03-26T13:00:00",
           "location": null,
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -187,8 +240,8 @@
           "title": "EPS 740 (PART 2) - COE - RM # TBD",
           "start_time": "6 PM",
           "end_time": "8:30 PM",
-          "start_iso": "2026-03-19T18:00:00",
-          "end_iso": "2026-03-19T20:30:00",
+          "start_iso": "2026-03-26T18:00:00",
+          "end_iso": "2026-03-26T20:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -198,8 +251,8 @@
       ]
     },
     "friday": {
-      "date": "2026-03-20",
-      "display_date": "Mar 20",
+      "date": "2026-03-27",
+      "display_date": "Mar 27",
       "is_today": false,
       "events": [
         {
@@ -207,8 +260,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-03-20T05:30:00",
-          "end_iso": "2026-03-20T07:00:00",
+          "start_iso": "2026-03-27T05:30:00",
+          "end_iso": "2026-03-27T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -220,8 +273,8 @@
           "title": "Weekly Research Meeting: https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
           "start_time": "7:30 AM",
           "end_time": "8 AM",
-          "start_iso": "2026-03-20T07:30:00",
-          "end_iso": "2026-03-20T08:00:00",
+          "start_iso": "2026-03-27T07:30:00",
+          "end_iso": "2026-03-27T08:00:00",
           "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -233,8 +286,8 @@
           "title": "Arizona LEND Weekly Meeting",
           "start_time": "1 PM",
           "end_time": "4 PM",
-          "start_iso": "2026-03-20T13:00:00",
-          "end_iso": "2026-03-20T16:00:00",
+          "start_iso": "2026-03-27T13:00:00",
+          "end_iso": "2026-03-27T16:00:00",
           "location": "https://zoom.us/j/6021215414",
           "category": "fellowship",
           "color": "var(--accent-purple)",
@@ -244,67 +297,19 @@
       ]
     },
     "saturday": {
-      "date": "2026-03-21",
-      "display_date": "Mar 21",
+      "date": "2026-03-28",
+      "display_date": "Mar 28",
       "is_today": false,
       "events": []
     },
     "sunday": {
-      "date": "2026-03-22",
-      "display_date": "Mar 22",
-      "is_today": true,
+      "date": "2026-03-29",
+      "display_date": "Mar 29",
+      "is_today": false,
       "events": []
     }
   },
   "upcoming": [
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-03-23T05:30:00",
-      "end_iso": "2026-03-23T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-03-23",
-      "display_date": "Mon, Mar 23",
-      "days_until": 1
-    },
-    {
-      "id": "20260319T220437Z-882",
-      "title": "April Clinic Planning Meeting",
-      "start_time": "12 PM",
-      "end_time": "1 PM",
-      "start_iso": "2026-03-23T12:00:00",
-      "end_iso": "2026-03-23T13:00:00",
-      "location": "https://nau.zoom.us/j/88291893258?pwd=ImxoKXLxNCS92mT46gkcCOTxe9w3bU.1",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 46.7,
-      "height_percent": 6.7,
-      "date": "2026-03-23",
-      "display_date": "Mon, Mar 23",
-      "days_until": 1
-    },
-    {
-      "id": "171qf8kdau9qaj1s05iu",
-      "title": "EPS 607 - COE - RM #124",
-      "start_time": "4 PM",
-      "end_time": "6:30 PM",
-      "start_iso": "2026-03-23T16:00:00",
-      "end_iso": "2026-03-23T18:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 73.3,
-      "height_percent": 16.7,
-      "date": "2026-03-23",
-      "display_date": "Mon, Mar 23",
-      "days_until": 1
-    },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
@@ -319,7 +324,7 @@
       "height_percent": 10.0,
       "date": "2026-03-24",
       "display_date": "Tue, Mar 24",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -335,7 +340,7 @@
       "height_percent": 16.7,
       "date": "2026-03-24",
       "display_date": "Tue, Mar 24",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -351,7 +356,7 @@
       "height_percent": 6.7,
       "date": "2026-03-24",
       "display_date": "Tue, Mar 24",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -367,7 +372,7 @@
       "height_percent": 10.0,
       "date": "2026-03-25",
       "display_date": "Wed, Mar 25",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "54nnsab6bbcus3bbporn",
@@ -383,7 +388,7 @@
       "height_percent": 16.7,
       "date": "2026-03-25",
       "display_date": "Wed, Mar 25",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -399,7 +404,7 @@
       "height_percent": 6.7,
       "date": "2026-03-25",
       "display_date": "Wed, Mar 25",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "27jbh1eq2u3hnbrra5tb",
@@ -415,6 +420,54 @@
       "height_percent": 16.7,
       "date": "2026-03-25",
       "display_date": "Wed, Mar 25",
+      "days_until": 2
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-03-26T05:30:00",
+      "end_iso": "2026-03-26T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-03-26",
+      "display_date": "Thu, Mar 26",
+      "days_until": 3
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-03-26T12:00:00",
+      "end_iso": "2026-03-26T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-03-26",
+      "display_date": "Thu, Mar 26",
+      "days_until": 3
+    },
+    {
+      "id": "23acdhij25ckuq3ov810",
+      "title": "EPS 740 (PART 2) - COE - RM # TBD",
+      "start_time": "6 PM",
+      "end_time": "8:30 PM",
+      "start_iso": "2026-03-26T18:00:00",
+      "end_iso": "2026-03-26T20:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 86.7,
+      "height_percent": 13.3,
+      "date": "2026-03-26",
+      "display_date": "Thu, Mar 26",
       "days_until": 3
     }
   ]
