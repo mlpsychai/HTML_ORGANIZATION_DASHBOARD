@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-25T05:45:22.009662-07:00",
+    "generated_at": "2026-03-25T11:43:58.229826-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-23",
     "range_end": "2026-04-24",
-    "total_events": 661,
+    "total_events": 662,
     "calendars_synced": 2
   },
   "today": {
@@ -48,6 +48,19 @@
         "category": "meeting",
         "color": "var(--accent-gold)",
         "top_percent": 40.0,
+        "height_percent": 6.7
+      },
+      {
+        "id": "cksmap1m75ij6b9gc8q3",
+        "title": "Charlie and Sean Play Therapy",
+        "start_time": "3 PM",
+        "end_time": "4 PM",
+        "start_iso": "2026-03-25T15:00:00",
+        "end_iso": "2026-03-25T16:00:00",
+        "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 66.7,
         "height_percent": 6.7
       },
       {
@@ -200,6 +213,19 @@
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 40.0,
+          "height_percent": 6.7
+        },
+        {
+          "id": "cksmap1m75ij6b9gc8q3",
+          "title": "Charlie and Sean Play Therapy",
+          "start_time": "3 PM",
+          "end_time": "4 PM",
+          "start_iso": "2026-03-25T15:00:00",
+          "end_iso": "2026-03-25T16:00:00",
+          "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 66.7,
           "height_percent": 6.7
         },
         {
