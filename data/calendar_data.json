@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-26T05:53:43.675395-07:00",
+    "generated_at": "2026-03-26T11:53:43.773128-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-23",
     "range_end": "2026-04-25",
-    "total_events": 665,
+    "total_events": 666,
     "calendars_synced": 2
   },
   "today": {
@@ -36,6 +36,19 @@
         "color": "var(--text-secondary)",
         "top_percent": 20.0,
         "height_percent": 6.7
+      },
+      {
+        "id": "6m1lp8s0ltognks1iimp",
+        "title": "My Meeting",
+        "start_time": "9:30 AM",
+        "end_time": "10 AM",
+        "start_iso": "2026-03-26T09:30:00",
+        "end_iso": "2026-03-26T10:00:00",
+        "location": "https://us02web.zoom.us/j/88012377428?pwd=CmbWrwRNnEd3alkaAWRcsrx8bFwjYc.1&jst=2",
+        "category": "meeting",
+        "color": "var(--accent-gold)",
+        "top_percent": 30.0,
+        "height_percent": 4
       },
       {
         "id": "040000008200E00074C5",
@@ -260,6 +273,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 20.0,
           "height_percent": 6.7
+        },
+        {
+          "id": "6m1lp8s0ltognks1iimp",
+          "title": "My Meeting",
+          "start_time": "9:30 AM",
+          "end_time": "10 AM",
+          "start_iso": "2026-03-26T09:30:00",
+          "end_iso": "2026-03-26T10:00:00",
+          "location": "https://us02web.zoom.us/j/88012377428?pwd=CmbWrwRNnEd3alkaAWRcsrx8bFwjYc.1&jst=2",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 30.0,
+          "height_percent": 4
         },
         {
           "id": "040000008200E00074C5",
