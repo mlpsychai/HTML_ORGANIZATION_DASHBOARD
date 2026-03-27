@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-03-26T23:57:40.809176-07:00",
+    "generated_at": "2026-03-27T05:42:10.247891-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-23",
-    "range_end": "2026-04-25",
+    "range_end": "2026-04-26",
     "total_events": 666,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-03-26",
-    "display_date": "Thursday, March 26",
+    "date": "2026-03-27",
+    "display_date": "Friday, March 27",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-03-26T05:30:00",
-        "end_iso": "2026-03-26T07:00:00",
+        "start_iso": "2026-03-27T05:30:00",
+        "end_iso": "2026-03-27T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,56 +25,30 @@
         "height_percent": 10.0
       },
       {
-        "id": "clijgdb1cdgj6b9kc4om",
-        "title": "607 presentation and intervention",
-        "start_time": "8 AM",
-        "end_time": "9 AM",
-        "start_iso": "2026-03-26T08:00:00",
-        "end_iso": "2026-03-26T09:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 20.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "6m1lp8s0ltognks1iimp",
-        "title": "My Meeting",
-        "start_time": "9:30 AM",
-        "end_time": "10 AM",
-        "start_iso": "2026-03-26T09:30:00",
-        "end_iso": "2026-03-26T10:00:00",
-        "location": "https://us02web.zoom.us/j/88012377428?pwd=CmbWrwRNnEd3alkaAWRcsrx8bFwjYc.1&jst=2",
+        "id": "50d32p6to924r8c3r21p",
+        "title": "Weekly Research Meeting: https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "start_time": "7:30 AM",
+        "end_time": "8 AM",
+        "start_iso": "2026-03-27T07:30:00",
+        "end_iso": "2026-03-27T08:00:00",
+        "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
         "category": "meeting",
         "color": "var(--accent-gold)",
-        "top_percent": 30.0,
+        "top_percent": 16.7,
         "height_percent": 4
       },
       {
-        "id": "040000008200E00074C5",
-        "title": "supervision",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-03-26T12:00:00",
-        "end_iso": "2026-03-26T13:00:00",
-        "location": null,
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "23acdhij25ckuq3ov810",
-        "title": "EPS 740 (PART 2) - COE - RM # TBD",
-        "start_time": "6 PM",
-        "end_time": "8:30 PM",
-        "start_iso": "2026-03-26T18:00:00",
-        "end_iso": "2026-03-26T20:30:00",
-        "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
-        "top_percent": 86.7,
-        "height_percent": 13.3
+        "id": "1b7o1rog5qjt07hen9sc",
+        "title": "Arizona LEND Weekly Meeting",
+        "start_time": "1 PM",
+        "end_time": "4 PM",
+        "start_iso": "2026-03-27T13:00:00",
+        "end_iso": "2026-03-27T16:00:00",
+        "location": "https://zoom.us/j/6021215414",
+        "category": "fellowship",
+        "color": "var(--accent-purple)",
+        "top_percent": 53.3,
+        "height_percent": 20.0
       }
     ]
   },
@@ -246,7 +220,7 @@
     "thursday": {
       "date": "2026-03-26",
       "display_date": "Mar 26",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -318,7 +292,7 @@
     "friday": {
       "date": "2026-03-27",
       "display_date": "Mar 27",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -404,54 +378,6 @@
   },
   "upcoming": [
     {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-03-27T05:30:00",
-      "end_iso": "2026-03-27T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-03-27",
-      "display_date": "Fri, Mar 27",
-      "days_until": 1
-    },
-    {
-      "id": "50d32p6to924r8c3r21p",
-      "title": "Weekly Research Meeting: https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "start_time": "7:30 AM",
-      "end_time": "8 AM",
-      "start_iso": "2026-03-27T07:30:00",
-      "end_iso": "2026-03-27T08:00:00",
-      "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 16.7,
-      "height_percent": 4,
-      "date": "2026-03-27",
-      "display_date": "Fri, Mar 27",
-      "days_until": 1
-    },
-    {
-      "id": "1b7o1rog5qjt07hen9sc",
-      "title": "Arizona LEND Weekly Meeting",
-      "start_time": "1 PM",
-      "end_time": "4 PM",
-      "start_iso": "2026-03-27T13:00:00",
-      "end_iso": "2026-03-27T16:00:00",
-      "location": "https://zoom.us/j/6021215414",
-      "category": "fellowship",
-      "color": "var(--accent-purple)",
-      "top_percent": 53.3,
-      "height_percent": 20.0,
-      "date": "2026-03-27",
-      "display_date": "Fri, Mar 27",
-      "days_until": 1
-    },
-    {
       "id": "6pi66dpkchhmcb9pccpj",
       "title": "Finances",
       "start_time": "6 AM",
@@ -465,7 +391,7 @@
       "height_percent": 6.7,
       "date": "2026-03-28",
       "display_date": "Sat, Mar 28",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "74q38c9n6dgjibb66co3",
@@ -481,7 +407,7 @@
       "height_percent": 6.7,
       "date": "2026-03-29",
       "display_date": "Sun, Mar 29",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -497,7 +423,7 @@
       "height_percent": 10.0,
       "date": "2026-03-30",
       "display_date": "Mon, Mar 30",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -513,7 +439,7 @@
       "height_percent": 16.7,
       "date": "2026-03-30",
       "display_date": "Mon, Mar 30",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -529,7 +455,7 @@
       "height_percent": 10.0,
       "date": "2026-03-31",
       "display_date": "Tue, Mar 31",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "0d07m5pkelf740t6bg0j",
@@ -545,7 +471,7 @@
       "height_percent": 60.0,
       "date": "2026-03-31",
       "display_date": "Tue, Mar 31",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -561,6 +487,54 @@
       "height_percent": 16.7,
       "date": "2026-03-31",
       "display_date": "Tue, Mar 31",
+      "days_until": 4
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-03-31T16:00:00",
+      "end_iso": "2026-03-31T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-03-31",
+      "display_date": "Tue, Mar 31",
+      "days_until": 4
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-04-01T05:30:00",
+      "end_iso": "2026-04-01T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-04-01",
+      "display_date": "Wed, Apr 01",
+      "days_until": 5
+    },
+    {
+      "id": "54nnsab6bbcus3bbporn",
+      "title": "EPS 609 - COE - RM # 124",
+      "start_time": "9 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-04-01T09:00:00",
+      "end_iso": "2026-04-01T11:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 26.7,
+      "height_percent": 16.7,
+      "date": "2026-04-01",
+      "display_date": "Wed, Apr 01",
       "days_until": 5
     }
   ]
