@@ -1,26 +1,26 @@
 {
   "meta": {
-    "generated_at": "2026-03-28T23:53:58.391739-07:00",
+    "generated_at": "2026-03-29T05:34:35.615615-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-23",
-    "range_end": "2026-04-27",
-    "total_events": 673,
+    "range_end": "2026-04-28",
+    "total_events": 677,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-03-28",
-    "display_date": "Saturday, March 28",
+    "date": "2026-03-29",
+    "display_date": "Sunday, March 29",
     "events": [
       {
-        "id": "6pi66dpkchhmcb9pccpj",
-        "title": "Finances",
+        "id": "74q38c9n6dgjibb66co3",
+        "title": "Take test #3 for eps 609",
         "start_time": "6 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-03-28T06:00:00",
-        "end_iso": "2026-03-28T07:00:00",
+        "start_iso": "2026-03-29T06:00:00",
+        "end_iso": "2026-03-29T07:00:00",
         "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
+        "category": "class",
+        "color": "var(--text-muted)",
         "top_percent": 6.7,
         "height_percent": 6.7
       }
@@ -325,7 +325,7 @@
     "saturday": {
       "date": "2026-03-28",
       "display_date": "Mar 28",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "6pi66dpkchhmcb9pccpj",
@@ -345,7 +345,7 @@
     "sunday": {
       "date": "2026-03-29",
       "display_date": "Mar 29",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "74q38c9n6dgjibb66co3",
@@ -365,22 +365,6 @@
   },
   "upcoming": [
     {
-      "id": "74q38c9n6dgjibb66co3",
-      "title": "Take test #3 for eps 609",
-      "start_time": "6 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-03-29T06:00:00",
-      "end_iso": "2026-03-29T07:00:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 6.7,
-      "height_percent": 6.7,
-      "date": "2026-03-29",
-      "display_date": "Sun, Mar 29",
-      "days_until": 1
-    },
-    {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
@@ -394,7 +378,7 @@
       "height_percent": 10.0,
       "date": "2026-03-30",
       "display_date": "Mon, Mar 30",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -410,7 +394,7 @@
       "height_percent": 16.7,
       "date": "2026-03-30",
       "display_date": "Mon, Mar 30",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -426,7 +410,7 @@
       "height_percent": 10.0,
       "date": "2026-03-31",
       "display_date": "Tue, Mar 31",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "0d07m5pkelf740t6bg0j",
@@ -442,7 +426,7 @@
       "height_percent": 60.0,
       "date": "2026-03-31",
       "display_date": "Tue, Mar 31",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -458,7 +442,7 @@
       "height_percent": 16.7,
       "date": "2026-03-31",
       "display_date": "Tue, Mar 31",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -474,7 +458,7 @@
       "height_percent": 6.7,
       "date": "2026-03-31",
       "display_date": "Tue, Mar 31",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -490,7 +474,7 @@
       "height_percent": 6.7,
       "date": "2026-03-31",
       "display_date": "Tue, Mar 31",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -506,7 +490,7 @@
       "height_percent": 10.0,
       "date": "2026-04-01",
       "display_date": "Wed, Apr 01",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "54nnsab6bbcus3bbporn",
@@ -522,7 +506,23 @@
       "height_percent": 16.7,
       "date": "2026-04-01",
       "display_date": "Wed, Apr 01",
-      "days_until": 4
+      "days_until": 3
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "PROF Grant Sync UP meeting",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-04-01T11:00:00",
+      "end_iso": "2026-04-01T12:00:00",
+      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 40.0,
+      "height_percent": 6.7,
+      "date": "2026-04-01",
+      "display_date": "Wed, Apr 01",
+      "days_until": 3
     }
   ]
 }
