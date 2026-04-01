@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-31T11:49:00.137615-07:00",
+    "generated_at": "2026-03-31T18:47:07.094314-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-30",
     "range_end": "2026-04-30",
-    "total_events": 669,
+    "total_events": 670,
     "calendars_synced": 2
   },
   "today": {
@@ -352,7 +352,21 @@
       "date": "2026-04-04",
       "display_date": "Apr 04",
       "is_today": false,
-      "events": []
+      "events": [
+        {
+          "id": "c9ijeo9m64rjibb174p3",
+          "title": "Incorporate feedback from Dr. W on comp report",
+          "start_time": "10 AM",
+          "end_time": "11 AM",
+          "start_iso": "2026-04-04T10:00:00",
+          "end_iso": "2026-04-04T11:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 6.7
+        }
+      ]
     },
     "sunday": {
       "date": "2026-04-05",
