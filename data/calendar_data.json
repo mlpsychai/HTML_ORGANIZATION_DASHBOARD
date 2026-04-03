@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-04-03T05:41:43.443811-07:00",
+    "generated_at": "2026-04-03T11:35:07.551926-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-03-30",
     "range_end": "2026-05-03",
-    "total_events": 674,
+    "total_events": 675,
     "calendars_synced": 2
   },
   "today": {
@@ -460,6 +460,22 @@
       "days_until": 4
     },
     {
+      "id": "6gs68d9lcgrj2b9g6csj",
+      "title": "Taye",
+      "start_time": "10 AM",
+      "end_time": "11 AM",
+      "start_iso": "2026-04-07T10:00:00",
+      "end_iso": "2026-04-07T11:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 33.3,
+      "height_percent": 6.7,
+      "date": "2026-04-07",
+      "display_date": "Tue, Apr 07",
+      "days_until": 4
+    },
+    {
       "id": "463uo7vspjvaq122625c",
       "title": "EPS 737 - COE - RM # 205",
       "start_time": "12:45 PM",
@@ -506,22 +522,6 @@
       "date": "2026-04-07",
       "display_date": "Tue, Apr 07",
       "days_until": 4
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-04-08T05:30:00",
-      "end_iso": "2026-04-08T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-04-08",
-      "display_date": "Wed, Apr 08",
-      "days_until": 5
     }
   ]
 }
