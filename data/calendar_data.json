@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-04-13T18:46:27.523724-07:00",
+    "generated_at": "2026-04-14T00:18:37.296884-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-13",
-    "range_end": "2026-05-13",
-    "total_events": 678,
+    "range_end": "2026-05-14",
+    "total_events": 681,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-04-13",
-    "display_date": "Monday, April 13",
+    "date": "2026-04-14",
+    "display_date": "Tuesday, April 14",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-04-13T05:30:00",
-        "end_iso": "2026-04-13T07:00:00",
+        "start_iso": "2026-04-14T05:30:00",
+        "end_iso": "2026-04-14T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,43 +25,56 @@
         "height_percent": 10.0
       },
       {
-        "id": "7p8sve4odm20bg0nbusp",
-        "title": "Angela Miller: Observation 1 Feedback Session",
-        "start_time": "12:30 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-04-13T12:30:00",
-        "end_iso": "2026-04-13T13:00:00",
-        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 50.0,
-        "height_percent": 4
-      },
-      {
-        "id": "6pj64pho68q3ibb674r6",
-        "title": "Ashley in the Clinic",
-        "start_time": "1:30 PM",
-        "end_time": "2:30 PM",
-        "start_iso": "2026-04-13T13:30:00",
-        "end_iso": "2026-04-13T14:30:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 56.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "171qf8kdau9qaj1s05iu",
-        "title": "EPS 607 - COE - RM #124",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-04-13T16:00:00",
-        "end_iso": "2026-04-13T18:30:00",
+        "id": "463uo7vspjvaq122625c",
+        "title": "EPS 737 - COE - RM # 205",
+        "start_time": "12:45 PM",
+        "end_time": "3:15 PM",
+        "start_iso": "2026-04-14T12:45:00",
+        "end_iso": "2026-04-14T15:15:00",
         "location": null,
         "category": "class",
         "color": "var(--text-muted)",
-        "top_percent": 73.3,
+        "top_percent": 51.7,
         "height_percent": 16.7
+      },
+      {
+        "id": "41ls5hdvmqkum7t7ml0h",
+        "title": "Academic Advising with Dr. K",
+        "start_time": "3:15 PM",
+        "end_time": "4 PM",
+        "start_iso": "2026-04-14T15:15:00",
+        "end_iso": "2026-04-14T16:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 68.3,
+        "height_percent": 5.0
+      },
+      {
+        "id": "4lm6ne5ijlfeumpbu4or",
+        "title": "CLIENT SESSION: ST",
+        "start_time": "4 PM",
+        "end_time": "5 PM",
+        "start_iso": "2026-04-14T16:00:00",
+        "end_iso": "2026-04-14T17:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 73.3,
+        "height_percent": 6.7
+      },
+      {
+        "id": "73hn56b9fne1i455tst3",
+        "title": "Wellness PSI: Counseling - Zoom Link Included",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-04-14T17:00:00",
+        "end_iso": "2026-04-14T18:00:00",
+        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
+        "height_percent": 6.7
       }
     ]
   },
@@ -69,7 +82,7 @@
     "monday": {
       "date": "2026-04-13",
       "display_date": "Apr 13",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -128,7 +141,7 @@
     "tuesday": {
       "date": "2026-04-14",
       "display_date": "Apr 14",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -393,86 +406,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-04-14T05:30:00",
-      "end_iso": "2026-04-14T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-04-14",
-      "display_date": "Tue, Apr 14",
-      "days_until": 1
-    },
-    {
-      "id": "463uo7vspjvaq122625c",
-      "title": "EPS 737 - COE - RM # 205",
-      "start_time": "12:45 PM",
-      "end_time": "3:15 PM",
-      "start_iso": "2026-04-14T12:45:00",
-      "end_iso": "2026-04-14T15:15:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 51.7,
-      "height_percent": 16.7,
-      "date": "2026-04-14",
-      "display_date": "Tue, Apr 14",
-      "days_until": 1
-    },
-    {
-      "id": "41ls5hdvmqkum7t7ml0h",
-      "title": "Academic Advising with Dr. K",
-      "start_time": "3:15 PM",
-      "end_time": "4 PM",
-      "start_iso": "2026-04-14T15:15:00",
-      "end_iso": "2026-04-14T16:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 68.3,
-      "height_percent": 5.0,
-      "date": "2026-04-14",
-      "display_date": "Tue, Apr 14",
-      "days_until": 1
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-04-14T16:00:00",
-      "end_iso": "2026-04-14T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-04-14",
-      "display_date": "Tue, Apr 14",
-      "days_until": 1
-    },
-    {
-      "id": "73hn56b9fne1i455tst3",
-      "title": "Wellness PSI: Counseling - Zoom Link Included",
-      "start_time": "5 PM",
-      "end_time": "6 PM",
-      "start_iso": "2026-04-14T17:00:00",
-      "end_iso": "2026-04-14T18:00:00",
-      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 80.0,
-      "height_percent": 6.7,
-      "date": "2026-04-14",
-      "display_date": "Tue, Apr 14",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-04-15T05:30:00",
       "end_iso": "2026-04-15T07:00:00",
       "location": null,
@@ -482,7 +415,7 @@
       "height_percent": 10.0,
       "date": "2026-04-15",
       "display_date": "Wed, Apr 15",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "54nnsab6bbcus3bbporn",
@@ -498,7 +431,7 @@
       "height_percent": 16.7,
       "date": "2026-04-15",
       "display_date": "Wed, Apr 15",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -514,7 +447,7 @@
       "height_percent": 6.7,
       "date": "2026-04-15",
       "display_date": "Wed, Apr 15",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "27jbh1eq2u3hnbrra5tb",
@@ -530,7 +463,7 @@
       "height_percent": 16.7,
       "date": "2026-04-15",
       "display_date": "Wed, Apr 15",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -546,6 +479,86 @@
       "height_percent": 10.0,
       "date": "2026-04-16",
       "display_date": "Thu, Apr 16",
+      "days_until": 2
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-04-16T12:00:00",
+      "end_iso": "2026-04-16T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-04-16",
+      "display_date": "Thu, Apr 16",
+      "days_until": 2
+    },
+    {
+      "id": "23acdhij25ckuq3ov810",
+      "title": "EPS 740 (PART 2) - COE - RM # TBD",
+      "start_time": "6 PM",
+      "end_time": "8:30 PM",
+      "start_iso": "2026-04-16T18:00:00",
+      "end_iso": "2026-04-16T20:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 86.7,
+      "height_percent": 13.3,
+      "date": "2026-04-16",
+      "display_date": "Thu, Apr 16",
+      "days_until": 2
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-04-17T05:30:00",
+      "end_iso": "2026-04-17T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-04-17",
+      "display_date": "Fri, Apr 17",
+      "days_until": 3
+    },
+    {
+      "id": "50d32p6to924r8c3r21p",
+      "title": "Weekly Research Meeting: https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "start_time": "7:30 AM",
+      "end_time": "8 AM",
+      "start_iso": "2026-04-17T07:30:00",
+      "end_iso": "2026-04-17T08:00:00",
+      "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 16.7,
+      "height_percent": 4,
+      "date": "2026-04-17",
+      "display_date": "Fri, Apr 17",
+      "days_until": 3
+    },
+    {
+      "id": "3tor3b7k2oek0o7jo41s",
+      "title": "Research Colloquium: ERP Presentations on April 17th",
+      "start_time": "10 AM",
+      "end_time": "11 AM",
+      "start_iso": "2026-04-17T10:00:00",
+      "end_iso": "2026-04-17T11:00:00",
+      "location": "room 174",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 33.3,
+      "height_percent": 6.7,
+      "date": "2026-04-17",
+      "display_date": "Fri, Apr 17",
       "days_until": 3
     }
   ]
