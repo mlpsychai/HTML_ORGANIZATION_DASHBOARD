@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-04-18T18:50:05.796158-07:00",
+    "generated_at": "2026-04-19T00:07:05.021968-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-13",
-    "range_end": "2026-05-18",
-    "total_events": 696,
+    "range_end": "2026-05-19",
+    "total_events": 700,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-04-18",
-    "display_date": "Saturday, April 18",
+    "date": "2026-04-19",
+    "display_date": "Sunday, April 19",
     "events": []
   },
   "week": {
@@ -337,13 +337,13 @@
     "saturday": {
       "date": "2026-04-18",
       "display_date": "Apr 18",
-      "is_today": true,
+      "is_today": false,
       "events": []
     },
     "sunday": {
       "date": "2026-04-19",
       "display_date": "Apr 19",
-      "is_today": false,
+      "is_today": true,
       "events": []
     }
   },
@@ -362,7 +362,7 @@
       "height_percent": 10.0,
       "date": "2026-04-20",
       "display_date": "Mon, Apr 20",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "68qj0d35c9i6abb2c4oj",
@@ -378,7 +378,7 @@
       "height_percent": 40.0,
       "date": "2026-04-20",
       "display_date": "Mon, Apr 20",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -394,7 +394,7 @@
       "height_percent": 16.7,
       "date": "2026-04-20",
       "display_date": "Mon, Apr 20",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -410,7 +410,7 @@
       "height_percent": 10.0,
       "date": "2026-04-21",
       "display_date": "Tue, Apr 21",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "5qv6ikts1fumro5hnv3r",
@@ -426,7 +426,7 @@
       "height_percent": 4,
       "date": "2026-04-21",
       "display_date": "Tue, Apr 21",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -442,7 +442,7 @@
       "height_percent": 16.7,
       "date": "2026-04-21",
       "display_date": "Tue, Apr 21",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "2leta2nvk88l8a6usl4p",
@@ -458,7 +458,7 @@
       "height_percent": 6.7,
       "date": "2026-04-21",
       "display_date": "Tue, Apr 21",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4a8in6v71hf4q5rdsl8v",
@@ -474,7 +474,7 @@
       "height_percent": 6.7,
       "date": "2026-04-21",
       "display_date": "Tue, Apr 21",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -490,7 +490,7 @@
       "height_percent": 6.7,
       "date": "2026-04-21",
       "display_date": "Tue, Apr 21",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -506,7 +506,7 @@
       "height_percent": 6.7,
       "date": "2026-04-21",
       "display_date": "Tue, Apr 21",
-      "days_until": 3
+      "days_until": 2
     }
   ]
 }
