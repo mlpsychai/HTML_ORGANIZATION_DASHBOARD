@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-19T00:07:05.021968-07:00",
+    "generated_at": "2026-04-19T05:39:31.007555-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-13",
     "range_end": "2026-05-19",
@@ -222,19 +222,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "040000008200E00074C5",
-          "title": "supervision",
-          "start_time": "12 PM",
-          "end_time": "1 PM",
-          "start_iso": "2026-04-16T12:00:00",
-          "end_iso": "2026-04-16T13:00:00",
-          "location": null,
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 46.7,
-          "height_percent": 6.7
-        },
-        {
           "id": "cdgm2d9iclh32b9jckrm",
           "title": "Feedback session",
           "start_time": "12 PM",
@@ -244,6 +231,19 @@
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
+          "top_percent": 46.7,
+          "height_percent": 6.7
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "supervision",
+          "start_time": "12 PM",
+          "end_time": "1 PM",
+          "start_iso": "2026-04-16T12:00:00",
+          "end_iso": "2026-04-16T13:00:00",
+          "location": null,
+          "category": "meeting",
+          "color": "var(--accent-gold)",
           "top_percent": 46.7,
           "height_percent": 6.7
         },
