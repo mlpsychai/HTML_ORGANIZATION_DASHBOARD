@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-04-21T11:58:39.819371-07:00",
+    "generated_at": "2026-04-21T18:45:56.545114-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-20",
     "range_end": "2026-05-21",
-    "total_events": 697,
+    "total_events": 701,
     "calendars_synced": 2
   },
   "today": {
@@ -515,7 +515,34 @@
       "date": "2026-04-26",
       "display_date": "Apr 26",
       "is_today": false,
-      "events": []
+      "events": [
+        {
+          "id": "64pjcd9n6cpmcbb66lij",
+          "title": "Fun church",
+          "start_time": "11 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-04-26T11:00:00",
+          "end_iso": "2026-04-26T12:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 40.0,
+          "height_percent": 6.7
+        },
+        {
+          "id": "c4q3gd9l69j3ab9j6th3",
+          "title": "High Country humane with Maemae",
+          "start_time": "2 PM",
+          "end_time": "3 PM",
+          "start_iso": "2026-04-26T14:00:00",
+          "end_iso": "2026-04-26T15:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 60.0,
+          "height_percent": 6.7
+        }
+      ]
     }
   },
   "upcoming": [
