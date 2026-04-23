@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-04-23T06:03:25.650666-07:00",
+    "generated_at": "2026-04-23T11:56:17.526618-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-20",
     "range_end": "2026-05-23",
-    "total_events": 703,
+    "total_events": 704,
     "calendars_synced": 2
   },
   "today": {
@@ -62,19 +62,6 @@
         "color": "var(--text-secondary)",
         "top_percent": 56.7,
         "height_percent": 4
-      },
-      {
-        "id": "6lh3ao9o6gq30b9kc8o3",
-        "title": "Therapy with Chris",
-        "start_time": "2:30 PM",
-        "end_time": "3:30 PM",
-        "start_iso": "2026-04-23T14:30:00",
-        "end_iso": "2026-04-23T15:30:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 63.3,
-        "height_percent": 6.7
       },
       {
         "id": "70pmcoj260ojab9kcorj",
@@ -392,19 +379,6 @@
           "height_percent": 4
         },
         {
-          "id": "6lh3ao9o6gq30b9kc8o3",
-          "title": "Therapy with Chris",
-          "start_time": "2:30 PM",
-          "end_time": "3:30 PM",
-          "start_iso": "2026-04-23T14:30:00",
-          "end_iso": "2026-04-23T15:30:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 63.3,
-          "height_percent": 6.7
-        },
-        {
           "id": "70pmcoj260ojab9kcorj",
           "title": "Observation 2 Feedback",
           "start_time": "5:15 PM",
@@ -453,15 +427,28 @@
         {
           "id": "51bnlrmk08b71i18vtka",
           "title": "Fill out 308 Study Surveys",
-          "start_time": "9:30 AM",
-          "end_time": "10:15 AM",
-          "start_iso": "2026-04-24T09:30:00",
-          "end_iso": "2026-04-24T10:15:00",
+          "start_time": "8 AM",
+          "end_time": "8:45 AM",
+          "start_iso": "2026-04-24T08:00:00",
+          "end_iso": "2026-04-24T08:45:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
-          "top_percent": 30.0,
+          "top_percent": 20.0,
           "height_percent": 5.0
+        },
+        {
+          "id": "2goj09365o6cte4mfguo",
+          "title": "Interview at RCC",
+          "start_time": "10:30 AM",
+          "end_time": "11:45 AM",
+          "start_iso": "2026-04-24T10:30:00",
+          "end_iso": "2026-04-24T11:45:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 36.7,
+          "height_percent": 8.3
         },
         {
           "id": "coom4p9hccqjeb9p68q3",
@@ -565,15 +552,31 @@
     {
       "id": "51bnlrmk08b71i18vtka",
       "title": "Fill out 308 Study Surveys",
-      "start_time": "9:30 AM",
-      "end_time": "10:15 AM",
-      "start_iso": "2026-04-24T09:30:00",
-      "end_iso": "2026-04-24T10:15:00",
+      "start_time": "8 AM",
+      "end_time": "8:45 AM",
+      "start_iso": "2026-04-24T08:00:00",
+      "end_iso": "2026-04-24T08:45:00",
       "location": null,
       "category": "default",
       "color": "var(--text-secondary)",
-      "top_percent": 30.0,
+      "top_percent": 20.0,
       "height_percent": 5.0,
+      "date": "2026-04-24",
+      "display_date": "Fri, Apr 24",
+      "days_until": 1
+    },
+    {
+      "id": "2goj09365o6cte4mfguo",
+      "title": "Interview at RCC",
+      "start_time": "10:30 AM",
+      "end_time": "11:45 AM",
+      "start_iso": "2026-04-24T10:30:00",
+      "end_iso": "2026-04-24T11:45:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 36.7,
+      "height_percent": 8.3,
       "date": "2026-04-24",
       "display_date": "Fri, Apr 24",
       "days_until": 1
@@ -689,22 +692,6 @@
       "date": "2026-04-27",
       "display_date": "Mon, Apr 27",
       "days_until": 4
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-04-28T05:30:00",
-      "end_iso": "2026-04-28T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-04-28",
-      "display_date": "Tue, Apr 28",
-      "days_until": 5
     }
   ]
 }
