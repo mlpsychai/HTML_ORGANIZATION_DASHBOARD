@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-23T11:56:17.526618-07:00",
+    "generated_at": "2026-04-23T18:49:51.026201-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-20",
     "range_end": "2026-05-23",
@@ -48,19 +48,6 @@
         "category": "default",
         "color": "var(--text-secondary)",
         "top_percent": 50.0,
-        "height_percent": 4
-      },
-      {
-        "id": "7bc6ufj3h3dkngrmoklb",
-        "title": "Observation Feedback #2: Zoom",
-        "start_time": "1:30 PM",
-        "end_time": "2 PM",
-        "start_iso": "2026-04-23T13:30:00",
-        "end_iso": "2026-04-23T14:00:00",
-        "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 56.7,
         "height_percent": 4
       },
       {
@@ -366,19 +353,6 @@
           "height_percent": 4
         },
         {
-          "id": "7bc6ufj3h3dkngrmoklb",
-          "title": "Observation Feedback #2: Zoom",
-          "start_time": "1:30 PM",
-          "end_time": "2 PM",
-          "start_iso": "2026-04-23T13:30:00",
-          "end_iso": "2026-04-23T14:00:00",
-          "location": "https://nau.zoom.us/my/seanmapolesnau?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 56.7,
-          "height_percent": 4
-        },
-        {
           "id": "70pmcoj260ojab9kcorj",
           "title": "Observation 2 Feedback",
           "start_time": "5:15 PM",
@@ -436,6 +410,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 20.0,
           "height_percent": 5.0
+        },
+        {
+          "id": "3b1g79rjer8cpvn9jufc",
+          "title": "Screener with Sarah",
+          "start_time": "9 AM",
+          "end_time": "10 AM",
+          "start_iso": "2026-04-24T09:00:00",
+          "end_iso": "2026-04-24T10:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 26.7,
+          "height_percent": 6.7
         },
         {
           "id": "2goj09365o6cte4mfguo",
@@ -566,6 +553,22 @@
       "days_until": 1
     },
     {
+      "id": "3b1g79rjer8cpvn9jufc",
+      "title": "Screener with Sarah",
+      "start_time": "9 AM",
+      "end_time": "10 AM",
+      "start_iso": "2026-04-24T09:00:00",
+      "end_iso": "2026-04-24T10:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 26.7,
+      "height_percent": 6.7,
+      "date": "2026-04-24",
+      "display_date": "Fri, Apr 24",
+      "days_until": 1
+    },
+    {
       "id": "2goj09365o6cte4mfguo",
       "title": "Interview at RCC",
       "start_time": "10:30 AM",
@@ -673,22 +676,6 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
-      "date": "2026-04-27",
-      "display_date": "Mon, Apr 27",
-      "days_until": 4
-    },
-    {
-      "id": "171qf8kdau9qaj1s05iu",
-      "title": "EPS 607 - COE - RM #124",
-      "start_time": "4 PM",
-      "end_time": "6:30 PM",
-      "start_iso": "2026-04-27T16:00:00",
-      "end_iso": "2026-04-27T18:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 73.3,
-      "height_percent": 16.7,
       "date": "2026-04-27",
       "display_date": "Mon, Apr 27",
       "days_until": 4
