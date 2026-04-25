@@ -1,93 +1,28 @@
 {
   "meta": {
-    "generated_at": "2026-04-24T18:28:31.672935-07:00",
+    "generated_at": "2026-04-25T00:03:07.603951-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-20",
-    "range_end": "2026-05-24",
-    "total_events": 704,
+    "range_end": "2026-05-25",
+    "total_events": 706,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-04-24",
-    "display_date": "Friday, April 24",
+    "date": "2026-04-25",
+    "display_date": "Saturday, April 25",
     "events": [
       {
-        "id": "4vv5mirtsid1h5l6dhq9",
-        "title": "MANDATORIES",
-        "start_time": "5:30 AM",
-        "end_time": "7 AM",
-        "start_iso": "2026-04-24T05:30:00",
-        "end_iso": "2026-04-24T07:00:00",
-        "location": null,
-        "category": "personal",
-        "color": "var(--accent-sage)",
-        "top_percent": 3.3,
-        "height_percent": 10.0
-      },
-      {
-        "id": "51bnlrmk08b71i18vtka",
-        "title": "Fill out 308 Study Surveys",
-        "start_time": "8 AM",
-        "end_time": "8:45 AM",
-        "start_iso": "2026-04-24T08:00:00",
-        "end_iso": "2026-04-24T08:45:00",
+        "id": "5f79hfq8a0vh25fsandk",
+        "title": "MAEMAE BACK",
+        "start_time": "12 AM",
+        "end_time": "12 AM",
+        "start_iso": "2026-04-25T00:00:00",
+        "end_iso": "2026-04-26T00:00:00",
         "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 20.0,
-        "height_percent": 5.0
-      },
-      {
-        "id": "3b1g79rjer8cpvn9jufc",
-        "title": "Screener with Sarah",
-        "start_time": "9 AM",
-        "end_time": "10 AM",
-        "start_iso": "2026-04-24T09:00:00",
-        "end_iso": "2026-04-24T10:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 26.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "coom4p9hccqjeb9p68q3",
-        "title": "Haircut @ wildflower",
-        "start_time": "11:45 AM",
-        "end_time": "12:45 PM",
-        "start_iso": "2026-04-24T11:45:00",
-        "end_iso": "2026-04-24T12:45:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 45.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "cgq3gc1gc8s66b9n6soj",
-        "title": "Send Katie dibbles results",
-        "start_time": "12:30 PM",
-        "end_time": "1:30 PM",
-        "start_iso": "2026-04-24T12:30:00",
-        "end_iso": "2026-04-24T13:30:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 50.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "1b7o1rog5qjt07hen9sc",
-        "title": "Arizona LEND Weekly Meeting",
-        "start_time": "1 PM",
-        "end_time": "4 PM",
-        "start_iso": "2026-04-24T13:00:00",
-        "end_iso": "2026-04-24T16:00:00",
-        "location": "https://zoom.us/j/6021215414",
-        "category": "fellowship",
-        "color": "var(--accent-purple)",
-        "top_percent": 53.3,
-        "height_percent": 20.0
+        "top_percent": 0,
+        "height_percent": 4
       }
     ]
   },
@@ -396,7 +331,7 @@
     "friday": {
       "date": "2026-04-24",
       "display_date": "Apr 24",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -481,7 +416,7 @@
     "saturday": {
       "date": "2026-04-25",
       "display_date": "Apr 25",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "5f79hfq8a0vh25fsandk",
@@ -534,22 +469,6 @@
   },
   "upcoming": [
     {
-      "id": "5f79hfq8a0vh25fsandk",
-      "title": "MAEMAE BACK",
-      "start_time": "12 AM",
-      "end_time": "12 AM",
-      "start_iso": "2026-04-25T00:00:00",
-      "end_iso": "2026-04-26T00:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 0,
-      "height_percent": 4,
-      "date": "2026-04-25",
-      "display_date": "Sat, Apr 25",
-      "days_until": 1
-    },
-    {
       "id": "64pjcd9n6cpmcbb66lij",
       "title": "Fun church",
       "start_time": "11 AM",
@@ -563,7 +482,7 @@
       "height_percent": 6.7,
       "date": "2026-04-26",
       "display_date": "Sun, Apr 26",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "c4q3gd9l69j3ab9j6th3",
@@ -579,7 +498,7 @@
       "height_percent": 6.7,
       "date": "2026-04-26",
       "display_date": "Sun, Apr 26",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -595,7 +514,7 @@
       "height_percent": 10.0,
       "date": "2026-04-27",
       "display_date": "Mon, Apr 27",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -611,7 +530,7 @@
       "height_percent": 16.7,
       "date": "2026-04-27",
       "display_date": "Mon, Apr 27",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -627,7 +546,7 @@
       "height_percent": 10.0,
       "date": "2026-04-28",
       "display_date": "Tue, Apr 28",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "463uo7vspjvaq122625c",
@@ -643,7 +562,7 @@
       "height_percent": 16.7,
       "date": "2026-04-28",
       "display_date": "Tue, Apr 28",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -659,7 +578,7 @@
       "height_percent": 6.7,
       "date": "2026-04-28",
       "display_date": "Tue, Apr 28",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -675,7 +594,7 @@
       "height_percent": 6.7,
       "date": "2026-04-28",
       "display_date": "Tue, Apr 28",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "ckqm2dj56phj6b9k6cs6",
@@ -691,6 +610,22 @@
       "height_percent": 6.7,
       "date": "2026-04-28",
       "display_date": "Tue, Apr 28",
+      "days_until": 3
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-04-29T05:30:00",
+      "end_iso": "2026-04-29T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-04-29",
+      "display_date": "Wed, Apr 29",
       "days_until": 4
     }
   ]
