@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T19:02:50.996872-07:00",
+    "generated_at": "2026-04-28T01:08:11.243546-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-27",
-    "range_end": "2026-05-27",
-    "total_events": 702,
+    "range_end": "2026-05-28",
+    "total_events": 705,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-04-27",
-    "display_date": "Monday, April 27",
+    "date": "2026-04-28",
+    "display_date": "Tuesday, April 28",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-04-27T05:30:00",
-        "end_iso": "2026-04-27T07:00:00",
+        "start_iso": "2026-04-28T05:30:00",
+        "end_iso": "2026-04-28T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,17 +25,56 @@
         "height_percent": 10.0
       },
       {
-        "id": "171qf8kdau9qaj1s05iu",
-        "title": "EPS 607 - COE - RM #124",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-04-27T16:00:00",
-        "end_iso": "2026-04-27T18:30:00",
+        "id": "463uo7vspjvaq122625c",
+        "title": "EPS 737 - COE - RM # 205",
+        "start_time": "12:45 PM",
+        "end_time": "3:15 PM",
+        "start_iso": "2026-04-28T12:45:00",
+        "end_iso": "2026-04-28T15:15:00",
         "location": null,
         "category": "class",
         "color": "var(--text-muted)",
-        "top_percent": 73.3,
+        "top_percent": 51.7,
         "height_percent": 16.7
+      },
+      {
+        "id": "4lm6ne5ijlfeumpbu4or",
+        "title": "CLIENT SESSION: ST",
+        "start_time": "4 PM",
+        "end_time": "5 PM",
+        "start_iso": "2026-04-28T16:00:00",
+        "end_iso": "2026-04-28T17:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 73.3,
+        "height_percent": 6.7
+      },
+      {
+        "id": "73hn56b9fne1i455tst3",
+        "title": "Wellness PSI: Counseling - Zoom Link Included",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-04-28T17:00:00",
+        "end_iso": "2026-04-28T18:00:00",
+        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
+        "height_percent": 6.7
+      },
+      {
+        "id": "ckqm2dj56phj6b9k6cs6",
+        "title": "Screening: The secret life of Walter Mitty",
+        "start_time": "7 PM",
+        "end_time": "8 PM",
+        "start_iso": "2026-04-28T19:00:00",
+        "end_iso": "2026-04-28T20:00:00",
+        "location": "Lounging within my abode",
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 93.3,
+        "height_percent": 6.7
       }
     ]
   },
@@ -43,7 +82,7 @@
     "monday": {
       "date": "2026-04-27",
       "display_date": "Apr 27",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -76,7 +115,7 @@
     "tuesday": {
       "date": "2026-04-28",
       "display_date": "Apr 28",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -395,86 +434,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-04-28T05:30:00",
-      "end_iso": "2026-04-28T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-04-28",
-      "display_date": "Tue, Apr 28",
-      "days_until": 1
-    },
-    {
-      "id": "463uo7vspjvaq122625c",
-      "title": "EPS 737 - COE - RM # 205",
-      "start_time": "12:45 PM",
-      "end_time": "3:15 PM",
-      "start_iso": "2026-04-28T12:45:00",
-      "end_iso": "2026-04-28T15:15:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 51.7,
-      "height_percent": 16.7,
-      "date": "2026-04-28",
-      "display_date": "Tue, Apr 28",
-      "days_until": 1
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-04-28T16:00:00",
-      "end_iso": "2026-04-28T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-04-28",
-      "display_date": "Tue, Apr 28",
-      "days_until": 1
-    },
-    {
-      "id": "73hn56b9fne1i455tst3",
-      "title": "Wellness PSI: Counseling - Zoom Link Included",
-      "start_time": "5 PM",
-      "end_time": "6 PM",
-      "start_iso": "2026-04-28T17:00:00",
-      "end_iso": "2026-04-28T18:00:00",
-      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 80.0,
-      "height_percent": 6.7,
-      "date": "2026-04-28",
-      "display_date": "Tue, Apr 28",
-      "days_until": 1
-    },
-    {
-      "id": "ckqm2dj56phj6b9k6cs6",
-      "title": "Screening: The secret life of Walter Mitty",
-      "start_time": "7 PM",
-      "end_time": "8 PM",
-      "start_iso": "2026-04-28T19:00:00",
-      "end_iso": "2026-04-28T20:00:00",
-      "location": "Lounging within my abode",
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 93.3,
-      "height_percent": 6.7,
-      "date": "2026-04-28",
-      "display_date": "Tue, Apr 28",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-04-29T05:30:00",
       "end_iso": "2026-04-29T07:00:00",
       "location": null,
@@ -484,7 +443,7 @@
       "height_percent": 10.0,
       "date": "2026-04-29",
       "display_date": "Wed, Apr 29",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "6phj0c1j60p6abb2chgj",
@@ -500,7 +459,7 @@
       "height_percent": 6.7,
       "date": "2026-04-29",
       "display_date": "Wed, Apr 29",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "54nnsab6bbcus3bbporn",
@@ -516,7 +475,7 @@
       "height_percent": 16.7,
       "date": "2026-04-29",
       "display_date": "Wed, Apr 29",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -532,7 +491,7 @@
       "height_percent": 6.7,
       "date": "2026-04-29",
       "display_date": "Wed, Apr 29",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4lj3u3tnro5r6mdciehn",
@@ -548,6 +507,86 @@
       "height_percent": 6.7,
       "date": "2026-04-29",
       "display_date": "Wed, Apr 29",
+      "days_until": 1
+    },
+    {
+      "id": "27jbh1eq2u3hnbrra5tb",
+      "title": "EPS 706 - COE - RM # 208",
+      "start_time": "4 PM",
+      "end_time": "6:30 PM",
+      "start_iso": "2026-04-29T16:00:00",
+      "end_iso": "2026-04-29T18:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 73.3,
+      "height_percent": 16.7,
+      "date": "2026-04-29",
+      "display_date": "Wed, Apr 29",
+      "days_until": 1
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-04-30T05:30:00",
+      "end_iso": "2026-04-30T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-04-30",
+      "display_date": "Thu, Apr 30",
+      "days_until": 2
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-04-30T12:00:00",
+      "end_iso": "2026-04-30T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-04-30",
+      "display_date": "Thu, Apr 30",
+      "days_until": 2
+    },
+    {
+      "id": "cgsm2p1o6sr64bb66hj3",
+      "title": "Sarah + cadence",
+      "start_time": "5 PM",
+      "end_time": "6 PM",
+      "start_iso": "2026-04-30T17:00:00",
+      "end_iso": "2026-04-30T18:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 80.0,
+      "height_percent": 6.7,
+      "date": "2026-04-30",
+      "display_date": "Thu, Apr 30",
+      "days_until": 2
+    },
+    {
+      "id": "23acdhij25ckuq3ov810",
+      "title": "EPS 740 (PART 2) - COE - RM # TBD",
+      "start_time": "6 PM",
+      "end_time": "8:30 PM",
+      "start_iso": "2026-04-30T18:00:00",
+      "end_iso": "2026-04-30T20:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 86.7,
+      "height_percent": 13.3,
+      "date": "2026-04-30",
+      "display_date": "Thu, Apr 30",
       "days_until": 2
     }
   ]
