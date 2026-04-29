@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-29T06:24:34.416270-07:00",
+    "generated_at": "2026-04-29T12:09:42.984772-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-27",
     "range_end": "2026-05-29",
@@ -61,19 +61,6 @@
         "category": "meeting",
         "color": "var(--accent-gold)",
         "top_percent": 40.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "4lj3u3tnro5r6mdciehn",
-        "title": "Sean + Isabel: Research Meeting",
-        "start_time": "11:30 AM",
-        "end_time": "12:30 PM",
-        "start_iso": "2026-04-29T11:30:00",
-        "end_iso": "2026-04-29T12:30:00",
-        "location": "Let's meet in front of James' Office",
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 43.3,
         "height_percent": 6.7
       },
       {
@@ -252,19 +239,6 @@
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 40.0,
-          "height_percent": 6.7
-        },
-        {
-          "id": "4lj3u3tnro5r6mdciehn",
-          "title": "Sean + Isabel: Research Meeting",
-          "start_time": "11:30 AM",
-          "end_time": "12:30 PM",
-          "start_iso": "2026-04-29T11:30:00",
-          "end_iso": "2026-04-29T12:30:00",
-          "location": "Let's meet in front of James' Office",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 43.3,
           "height_percent": 6.7
         },
         {
