@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-04-29T19:04:23.598996-07:00",
+    "generated_at": "2026-04-30T01:04:46.379677-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-27",
-    "range_end": "2026-05-29",
+    "range_end": "2026-05-30",
     "total_events": 708,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-04-29",
-    "display_date": "Wednesday, April 29",
+    "date": "2026-04-30",
+    "display_date": "Thursday, April 30",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-04-29T05:30:00",
-        "end_iso": "2026-04-29T07:00:00",
+        "start_iso": "2026-04-30T05:30:00",
+        "end_iso": "2026-04-30T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,56 +25,56 @@
         "height_percent": 10.0
       },
       {
-        "id": "6phj0c1j60p6abb2chgj",
-        "title": "New Client Intake",
-        "start_time": "7:30 AM",
-        "end_time": "8:30 AM",
-        "start_iso": "2026-04-29T07:30:00",
-        "end_iso": "2026-04-29T08:30:00",
-        "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 16.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "54nnsab6bbcus3bbporn",
-        "title": "EPS 609 - COE - RM # 124",
-        "start_time": "9 AM",
-        "end_time": "11:30 AM",
-        "start_iso": "2026-04-29T09:00:00",
-        "end_iso": "2026-04-29T11:30:00",
+        "id": "6os66p1icgpmcbb46kr3",
+        "title": "Register for Summer classes",
+        "start_time": "8:30 AM",
+        "end_time": "9:30 AM",
+        "start_iso": "2026-04-30T08:30:00",
+        "end_iso": "2026-04-30T09:30:00",
         "location": null,
         "category": "class",
         "color": "var(--text-muted)",
-        "top_percent": 26.7,
-        "height_percent": 16.7
+        "top_percent": 23.3,
+        "height_percent": 6.7
       },
       {
         "id": "040000008200E00074C5",
-        "title": "PROF Grant Sync UP meeting",
-        "start_time": "11 AM",
-        "end_time": "12 PM",
-        "start_iso": "2026-04-29T11:00:00",
-        "end_iso": "2026-04-29T12:00:00",
-        "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+        "title": "supervision",
+        "start_time": "12 PM",
+        "end_time": "1 PM",
+        "start_iso": "2026-04-30T12:00:00",
+        "end_iso": "2026-04-30T13:00:00",
+        "location": null,
         "category": "meeting",
         "color": "var(--accent-gold)",
-        "top_percent": 40.0,
+        "top_percent": 46.7,
         "height_percent": 6.7
       },
       {
-        "id": "27jbh1eq2u3hnbrra5tb",
-        "title": "EPS 706 - COE - RM # 208",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-04-29T16:00:00",
-        "end_iso": "2026-04-29T18:30:00",
+        "id": "cgsm2p1o6sr64bb66hj3",
+        "title": "Sarah + cadence",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-04-30T17:00:00",
+        "end_iso": "2026-04-30T18:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
+        "height_percent": 6.7
+      },
+      {
+        "id": "23acdhij25ckuq3ov810",
+        "title": "EPS 740 (PART 2) - COE - RM # TBD",
+        "start_time": "6 PM",
+        "end_time": "8:30 PM",
+        "start_iso": "2026-04-30T18:00:00",
+        "end_iso": "2026-04-30T20:30:00",
         "location": null,
         "category": "class",
         "color": "var(--text-muted)",
-        "top_percent": 73.3,
-        "height_percent": 16.7
+        "top_percent": 86.7,
+        "height_percent": 13.3
       }
     ]
   },
@@ -187,7 +187,7 @@
     "wednesday": {
       "date": "2026-04-29",
       "display_date": "Apr 29",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -259,7 +259,7 @@
     "thursday": {
       "date": "2026-04-30",
       "display_date": "Apr 30",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -434,86 +434,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-04-30T05:30:00",
-      "end_iso": "2026-04-30T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-04-30",
-      "display_date": "Thu, Apr 30",
-      "days_until": 1
-    },
-    {
-      "id": "6os66p1icgpmcbb46kr3",
-      "title": "Register for Summer classes",
-      "start_time": "8:30 AM",
-      "end_time": "9:30 AM",
-      "start_iso": "2026-04-30T08:30:00",
-      "end_iso": "2026-04-30T09:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 23.3,
-      "height_percent": 6.7,
-      "date": "2026-04-30",
-      "display_date": "Thu, Apr 30",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "supervision",
-      "start_time": "12 PM",
-      "end_time": "1 PM",
-      "start_iso": "2026-04-30T12:00:00",
-      "end_iso": "2026-04-30T13:00:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 46.7,
-      "height_percent": 6.7,
-      "date": "2026-04-30",
-      "display_date": "Thu, Apr 30",
-      "days_until": 1
-    },
-    {
-      "id": "cgsm2p1o6sr64bb66hj3",
-      "title": "Sarah + cadence",
-      "start_time": "5 PM",
-      "end_time": "6 PM",
-      "start_iso": "2026-04-30T17:00:00",
-      "end_iso": "2026-04-30T18:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 80.0,
-      "height_percent": 6.7,
-      "date": "2026-04-30",
-      "display_date": "Thu, Apr 30",
-      "days_until": 1
-    },
-    {
-      "id": "23acdhij25ckuq3ov810",
-      "title": "EPS 740 (PART 2) - COE - RM # TBD",
-      "start_time": "6 PM",
-      "end_time": "8:30 PM",
-      "start_iso": "2026-04-30T18:00:00",
-      "end_iso": "2026-04-30T20:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 86.7,
-      "height_percent": 13.3,
-      "date": "2026-04-30",
-      "display_date": "Thu, Apr 30",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-05-01T05:30:00",
       "end_iso": "2026-05-01T07:00:00",
       "location": null,
@@ -523,7 +443,7 @@
       "height_percent": 10.0,
       "date": "2026-05-01",
       "display_date": "Fri, May 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "1b7o1rog5qjt07hen9sc",
@@ -539,7 +459,7 @@
       "height_percent": 20.0,
       "date": "2026-05-01",
       "display_date": "Fri, May 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -555,7 +475,7 @@
       "height_percent": 13.3,
       "date": "2026-05-01",
       "display_date": "Fri, May 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "6crmcchj6pgj6b9g6ss3",
@@ -571,7 +491,7 @@
       "height_percent": 53.3,
       "date": "2026-05-02",
       "display_date": "Sat, May 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "c8p32pb36oqj2b9m64sm",
@@ -587,7 +507,87 @@
       "height_percent": 6.7,
       "date": "2026-05-02",
       "display_date": "Sat, May 02",
+      "days_until": 2
+    },
+    {
+      "id": "64pjcd9n6cpmcbb66lij",
+      "title": "Fun church",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-05-03T11:00:00",
+      "end_iso": "2026-05-03T12:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 40.0,
+      "height_percent": 6.7,
+      "date": "2026-05-03",
+      "display_date": "Sun, May 03",
       "days_until": 3
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-05-04T05:30:00",
+      "end_iso": "2026-05-04T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-05-04",
+      "display_date": "Mon, May 04",
+      "days_until": 4
+    },
+    {
+      "id": "53mo926tb8rkgqopf5fh",
+      "title": "ADOS-2 Evaluation @ IHD",
+      "start_time": "8 AM",
+      "end_time": "4 PM",
+      "start_iso": "2026-05-04T08:00:00",
+      "end_iso": "2026-05-04T16:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 20.0,
+      "height_percent": 53.3,
+      "date": "2026-05-04",
+      "display_date": "Mon, May 04",
+      "days_until": 4
+    },
+    {
+      "id": "171qf8kdau9qaj1s05iu",
+      "title": "EPS 607 - COE - RM #124",
+      "start_time": "4 PM",
+      "end_time": "6:30 PM",
+      "start_iso": "2026-05-04T16:00:00",
+      "end_iso": "2026-05-04T18:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 73.3,
+      "height_percent": 16.7,
+      "date": "2026-05-04",
+      "display_date": "Mon, May 04",
+      "days_until": 4
+    },
+    {
+      "id": "chh64db46hgjib9p6sp3",
+      "title": "Dr. K BBQ",
+      "start_time": "5:30 PM",
+      "end_time": "6:30 PM",
+      "start_iso": "2026-05-04T17:30:00",
+      "end_iso": "2026-05-04T18:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 83.3,
+      "height_percent": 6.7,
+      "date": "2026-05-04",
+      "display_date": "Mon, May 04",
+      "days_until": 4
     }
   ]
 }
