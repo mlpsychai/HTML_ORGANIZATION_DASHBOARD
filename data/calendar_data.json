@@ -1,54 +1,41 @@
 {
   "meta": {
-    "generated_at": "2026-05-01T18:55:21.564384-07:00",
+    "generated_at": "2026-05-02T00:19:34.512359-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-27",
-    "range_end": "2026-05-31",
-    "total_events": 707,
+    "range_end": "2026-06-01",
+    "total_events": 709,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-05-01",
-    "display_date": "Friday, May 01",
+    "date": "2026-05-02",
+    "display_date": "Saturday, May 02",
     "events": [
       {
-        "id": "4vv5mirtsid1h5l6dhq9",
-        "title": "MANDATORIES",
-        "start_time": "5:30 AM",
-        "end_time": "7 AM",
-        "start_iso": "2026-05-01T05:30:00",
-        "end_iso": "2026-05-01T07:00:00",
-        "location": null,
-        "category": "personal",
-        "color": "var(--accent-sage)",
-        "top_percent": 3.3,
-        "height_percent": 10.0
-      },
-      {
-        "id": "1b7o1rog5qjt07hen9sc",
-        "title": "Arizona LEND Weekly Meeting",
-        "start_time": "1 PM",
+        "id": "6crmcchj6pgj6b9g6ss3",
+        "title": "Tucson",
+        "start_time": "8 AM",
         "end_time": "4 PM",
-        "start_iso": "2026-05-01T13:00:00",
-        "end_iso": "2026-05-01T16:00:00",
-        "location": "https://zoom.us/j/6021215414",
-        "category": "fellowship",
-        "color": "var(--accent-purple)",
-        "top_percent": 53.3,
-        "height_percent": 20.0
-      },
-      {
-        "id": "040000008200E00074C5",
-        "title": "2026 Intern Send-off!",
-        "start_time": "5 PM",
-        "end_time": "7 PM",
-        "start_iso": "2026-05-01T17:00:00",
-        "end_iso": "2026-05-01T19:00:00",
-        "location": "1899 Bar and Grill (307 W Dupont Ave\\, Flagstaff\\, AZ 86001\\, United States)",
+        "start_iso": "2026-05-02T08:00:00",
+        "end_iso": "2026-05-02T16:00:00",
+        "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 80.0,
-        "height_percent": 13.3
+        "top_percent": 20.0,
+        "height_percent": 53.3
+      },
+      {
+        "id": "c8p32pb36oqj2b9m64sm",
+        "title": "Celebration champagne",
+        "start_time": "7 PM",
+        "end_time": "10 PM",
+        "start_iso": "2026-05-02T19:00:00",
+        "end_iso": "2026-05-02T22:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 93.3,
+        "height_percent": 6.7
       }
     ]
   },
@@ -305,7 +292,7 @@
     "friday": {
       "date": "2026-05-01",
       "display_date": "May 01",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -351,7 +338,7 @@
     "saturday": {
       "date": "2026-05-02",
       "display_date": "May 02",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "6crmcchj6pgj6b9g6ss3",
@@ -404,38 +391,6 @@
   },
   "upcoming": [
     {
-      "id": "6crmcchj6pgj6b9g6ss3",
-      "title": "Tucson",
-      "start_time": "8 AM",
-      "end_time": "4 PM",
-      "start_iso": "2026-05-02T08:00:00",
-      "end_iso": "2026-05-02T16:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 20.0,
-      "height_percent": 53.3,
-      "date": "2026-05-02",
-      "display_date": "Sat, May 02",
-      "days_until": 1
-    },
-    {
-      "id": "c8p32pb36oqj2b9m64sm",
-      "title": "Celebration champagne",
-      "start_time": "7 PM",
-      "end_time": "10 PM",
-      "start_iso": "2026-05-02T19:00:00",
-      "end_iso": "2026-05-02T22:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 93.3,
-      "height_percent": 6.7,
-      "date": "2026-05-02",
-      "display_date": "Sat, May 02",
-      "days_until": 1
-    },
-    {
       "id": "64pjcd9n6cpmcbb66lij",
       "title": "Fun church",
       "start_time": "11 AM",
@@ -449,7 +404,7 @@
       "height_percent": 6.7,
       "date": "2026-05-03",
       "display_date": "Sun, May 03",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -465,7 +420,7 @@
       "height_percent": 10.0,
       "date": "2026-05-04",
       "display_date": "Mon, May 04",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "53mo926tb8rkgqopf5fh",
@@ -481,7 +436,7 @@
       "height_percent": 53.3,
       "date": "2026-05-04",
       "display_date": "Mon, May 04",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -497,7 +452,7 @@
       "height_percent": 16.7,
       "date": "2026-05-04",
       "display_date": "Mon, May 04",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "chh64db46hgjib9p6sp3",
@@ -513,7 +468,7 @@
       "height_percent": 6.7,
       "date": "2026-05-04",
       "display_date": "Mon, May 04",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -529,7 +484,7 @@
       "height_percent": 10.0,
       "date": "2026-05-05",
       "display_date": "Tue, May 05",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "cpijid3175h3abb6chj6",
@@ -545,7 +500,7 @@
       "height_percent": 6.7,
       "date": "2026-05-05",
       "display_date": "Tue, May 05",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -561,6 +516,38 @@
       "height_percent": 6.7,
       "date": "2026-05-05",
       "display_date": "Tue, May 05",
+      "days_until": 3
+    },
+    {
+      "id": "73hn56b9fne1i455tst3",
+      "title": "Wellness PSI: Counseling - Zoom Link Included",
+      "start_time": "5 PM",
+      "end_time": "6 PM",
+      "start_iso": "2026-05-05T17:00:00",
+      "end_iso": "2026-05-05T18:00:00",
+      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 80.0,
+      "height_percent": 6.7,
+      "date": "2026-05-05",
+      "display_date": "Tue, May 05",
+      "days_until": 3
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-05-06T05:30:00",
+      "end_iso": "2026-05-06T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-05-06",
+      "display_date": "Wed, May 06",
       "days_until": 4
     }
   ]
