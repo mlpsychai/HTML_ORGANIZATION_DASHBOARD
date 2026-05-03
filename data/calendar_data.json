@@ -1,40 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-05-02T18:59:16.427493-07:00",
+    "generated_at": "2026-05-03T00:48:18.521996-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-04-27",
-    "range_end": "2026-06-01",
-    "total_events": 709,
+    "range_end": "2026-06-02",
+    "total_events": 712,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-05-02",
-    "display_date": "Saturday, May 02",
+    "date": "2026-05-03",
+    "display_date": "Sunday, May 03",
     "events": [
       {
-        "id": "6crmcchj6pgj6b9g6ss3",
-        "title": "Tucson",
-        "start_time": "8 AM",
-        "end_time": "4 PM",
-        "start_iso": "2026-05-02T08:00:00",
-        "end_iso": "2026-05-02T16:00:00",
+        "id": "64pjcd9n6cpmcbb66lij",
+        "title": "Fun church",
+        "start_time": "11 AM",
+        "end_time": "12 PM",
+        "start_iso": "2026-05-03T11:00:00",
+        "end_iso": "2026-05-03T12:00:00",
         "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 20.0,
-        "height_percent": 53.3
-      },
-      {
-        "id": "c8p32pb36oqj2b9m64sm",
-        "title": "Celebration champagne",
-        "start_time": "7 PM",
-        "end_time": "10 PM",
-        "start_iso": "2026-05-02T19:00:00",
-        "end_iso": "2026-05-02T22:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 93.3,
+        "top_percent": 40.0,
         "height_percent": 6.7
       }
     ]
@@ -338,7 +325,7 @@
     "saturday": {
       "date": "2026-05-02",
       "display_date": "May 02",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "6crmcchj6pgj6b9g6ss3",
@@ -371,7 +358,7 @@
     "sunday": {
       "date": "2026-05-03",
       "display_date": "May 03",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "64pjcd9n6cpmcbb66lij",
@@ -391,22 +378,6 @@
   },
   "upcoming": [
     {
-      "id": "64pjcd9n6cpmcbb66lij",
-      "title": "Fun church",
-      "start_time": "11 AM",
-      "end_time": "12 PM",
-      "start_iso": "2026-05-03T11:00:00",
-      "end_iso": "2026-05-03T12:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 40.0,
-      "height_percent": 6.7,
-      "date": "2026-05-03",
-      "display_date": "Sun, May 03",
-      "days_until": 1
-    },
-    {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
@@ -420,7 +391,7 @@
       "height_percent": 10.0,
       "date": "2026-05-04",
       "display_date": "Mon, May 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "53mo926tb8rkgqopf5fh",
@@ -436,7 +407,7 @@
       "height_percent": 53.3,
       "date": "2026-05-04",
       "display_date": "Mon, May 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -452,7 +423,7 @@
       "height_percent": 16.7,
       "date": "2026-05-04",
       "display_date": "Mon, May 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "chh64db46hgjib9p6sp3",
@@ -468,7 +439,7 @@
       "height_percent": 6.7,
       "date": "2026-05-04",
       "display_date": "Mon, May 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -484,7 +455,7 @@
       "height_percent": 10.0,
       "date": "2026-05-05",
       "display_date": "Tue, May 05",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "cpijid3175h3abb6chj6",
@@ -500,7 +471,7 @@
       "height_percent": 6.7,
       "date": "2026-05-05",
       "display_date": "Tue, May 05",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -516,7 +487,7 @@
       "height_percent": 6.7,
       "date": "2026-05-05",
       "display_date": "Tue, May 05",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -532,7 +503,7 @@
       "height_percent": 6.7,
       "date": "2026-05-05",
       "display_date": "Tue, May 05",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -548,7 +519,23 @@
       "height_percent": 10.0,
       "date": "2026-05-06",
       "display_date": "Wed, May 06",
-      "days_until": 4
+      "days_until": 3
+    },
+    {
+      "id": "54nnsab6bbcus3bbporn",
+      "title": "EPS 609 - COE - RM # 124",
+      "start_time": "9 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-05-06T09:00:00",
+      "end_iso": "2026-05-06T11:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 26.7,
+      "height_percent": 16.7,
+      "date": "2026-05-06",
+      "display_date": "Wed, May 06",
+      "days_until": 3
     }
   ]
 }
