@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-05-04T19:00:04.242866-07:00",
+    "generated_at": "2026-05-05T00:55:15.409962-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-05-04",
-    "range_end": "2026-06-03",
-    "total_events": 703,
+    "range_end": "2026-06-04",
+    "total_events": 706,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-05-04",
-    "display_date": "Monday, May 04",
+    "date": "2026-05-05",
+    "display_date": "Tuesday, May 05",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-05-04T05:30:00",
-        "end_iso": "2026-05-04T07:00:00",
+        "start_iso": "2026-05-05T05:30:00",
+        "end_iso": "2026-05-05T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,42 +25,42 @@
         "height_percent": 10.0
       },
       {
-        "id": "53mo926tb8rkgqopf5fh",
-        "title": "ADOS-2 Evaluation @ IHD",
-        "start_time": "8 AM",
-        "end_time": "4 PM",
-        "start_iso": "2026-05-04T08:00:00",
-        "end_iso": "2026-05-04T16:00:00",
+        "id": "cpijid3175h3abb6chj6",
+        "title": "Isabel Research Meeting",
+        "start_time": "2 PM",
+        "end_time": "3 PM",
+        "start_iso": "2026-05-05T14:00:00",
+        "end_iso": "2026-05-05T15:00:00",
+        "location": null,
+        "category": "meeting",
+        "color": "var(--accent-gold)",
+        "top_percent": 60.0,
+        "height_percent": 6.7
+      },
+      {
+        "id": "4lm6ne5ijlfeumpbu4or",
+        "title": "CLIENT SESSION: ST",
+        "start_time": "4 PM",
+        "end_time": "5 PM",
+        "start_iso": "2026-05-05T16:00:00",
+        "end_iso": "2026-05-05T17:00:00",
         "location": null,
         "category": "clinical",
         "color": "var(--accent-teal)",
-        "top_percent": 20.0,
-        "height_percent": 53.3
-      },
-      {
-        "id": "171qf8kdau9qaj1s05iu",
-        "title": "EPS 607 - COE - RM #124",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-05-04T16:00:00",
-        "end_iso": "2026-05-04T18:30:00",
-        "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
         "top_percent": 73.3,
-        "height_percent": 16.7
+        "height_percent": 6.7
       },
       {
-        "id": "chh64db46hgjib9p6sp3",
-        "title": "Dr. K BBQ",
-        "start_time": "5:30 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-05-04T17:30:00",
-        "end_iso": "2026-05-04T18:30:00",
-        "location": null,
+        "id": "73hn56b9fne1i455tst3",
+        "title": "Wellness PSI: Counseling - Zoom Link Included",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-05-05T17:00:00",
+        "end_iso": "2026-05-05T18:00:00",
+        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 83.3,
+        "top_percent": 80.0,
         "height_percent": 6.7
       }
     ]
@@ -69,7 +69,7 @@
     "monday": {
       "date": "2026-05-04",
       "display_date": "May 04",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -128,7 +128,7 @@
     "tuesday": {
       "date": "2026-05-05",
       "display_date": "May 05",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -380,70 +380,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-05-05T05:30:00",
-      "end_iso": "2026-05-05T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-05-05",
-      "display_date": "Tue, May 05",
-      "days_until": 1
-    },
-    {
-      "id": "cpijid3175h3abb6chj6",
-      "title": "Isabel Research Meeting",
-      "start_time": "2 PM",
-      "end_time": "3 PM",
-      "start_iso": "2026-05-05T14:00:00",
-      "end_iso": "2026-05-05T15:00:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 60.0,
-      "height_percent": 6.7,
-      "date": "2026-05-05",
-      "display_date": "Tue, May 05",
-      "days_until": 1
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-05-05T16:00:00",
-      "end_iso": "2026-05-05T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-05-05",
-      "display_date": "Tue, May 05",
-      "days_until": 1
-    },
-    {
-      "id": "73hn56b9fne1i455tst3",
-      "title": "Wellness PSI: Counseling - Zoom Link Included",
-      "start_time": "5 PM",
-      "end_time": "6 PM",
-      "start_iso": "2026-05-05T17:00:00",
-      "end_iso": "2026-05-05T18:00:00",
-      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 80.0,
-      "height_percent": 6.7,
-      "date": "2026-05-05",
-      "display_date": "Tue, May 05",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-05-06T05:30:00",
       "end_iso": "2026-05-06T07:00:00",
       "location": null,
@@ -453,7 +389,7 @@
       "height_percent": 10.0,
       "date": "2026-05-06",
       "display_date": "Wed, May 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "54nnsab6bbcus3bbporn",
@@ -469,7 +405,7 @@
       "height_percent": 16.7,
       "date": "2026-05-06",
       "display_date": "Wed, May 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -485,7 +421,7 @@
       "height_percent": 6.7,
       "date": "2026-05-06",
       "display_date": "Wed, May 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -501,7 +437,7 @@
       "height_percent": 33.3,
       "date": "2026-05-06",
       "display_date": "Wed, May 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "27jbh1eq2u3hnbrra5tb",
@@ -517,7 +453,7 @@
       "height_percent": 16.7,
       "date": "2026-05-06",
       "display_date": "Wed, May 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -533,6 +469,70 @@
       "height_percent": 10.0,
       "date": "2026-05-07",
       "display_date": "Thu, May 07",
+      "days_until": 2
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-05-07T12:00:00",
+      "end_iso": "2026-05-07T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-05-07",
+      "display_date": "Thu, May 07",
+      "days_until": 2
+    },
+    {
+      "id": "23acdhij25ckuq3ov810",
+      "title": "EPS 740 (PART 2) - COE - RM # TBD",
+      "start_time": "6 PM",
+      "end_time": "8:30 PM",
+      "start_iso": "2026-05-07T18:00:00",
+      "end_iso": "2026-05-07T20:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 86.7,
+      "height_percent": 13.3,
+      "date": "2026-05-07",
+      "display_date": "Thu, May 07",
+      "days_until": 2
+    },
+    {
+      "id": "ccsj4ob661ij4b9k6osj",
+      "title": "1on1 with Dr. Strain",
+      "start_time": "7:20 PM",
+      "end_time": "8:20 PM",
+      "start_iso": "2026-05-07T19:20:00",
+      "end_iso": "2026-05-07T20:20:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 95.6,
+      "height_percent": 4.4,
+      "date": "2026-05-07",
+      "display_date": "Thu, May 07",
+      "days_until": 2
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-05-08T05:30:00",
+      "end_iso": "2026-05-08T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-05-08",
+      "display_date": "Fri, May 08",
       "days_until": 3
     }
   ]
