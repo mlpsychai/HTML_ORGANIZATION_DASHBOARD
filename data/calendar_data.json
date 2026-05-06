@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-05-06T06:46:34.910797-07:00",
+    "generated_at": "2026-05-06T12:23:14.486660-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-05-04",
     "range_end": "2026-06-05",
-    "total_events": 706,
+    "total_events": 702,
     "calendars_synced": 2
   },
   "today": {
@@ -36,19 +36,6 @@
         "color": "var(--text-secondary)",
         "top_percent": 16.7,
         "height_percent": 6.7
-      },
-      {
-        "id": "54nnsab6bbcus3bbporn",
-        "title": "EPS 609 - COE - RM # 124",
-        "start_time": "9 AM",
-        "end_time": "11:30 AM",
-        "start_iso": "2026-05-06T09:00:00",
-        "end_iso": "2026-05-06T11:30:00",
-        "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
-        "top_percent": 26.7,
-        "height_percent": 16.7
       },
       {
         "id": "040000008200E00074C5",
@@ -240,19 +227,6 @@
           "color": "var(--text-secondary)",
           "top_percent": 16.7,
           "height_percent": 6.7
-        },
-        {
-          "id": "54nnsab6bbcus3bbporn",
-          "title": "EPS 609 - COE - RM # 124",
-          "start_time": "9 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-05-06T09:00:00",
-          "end_iso": "2026-05-06T11:30:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 26.7,
-          "height_percent": 16.7
         },
         {
           "id": "040000008200E00074C5",
