@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-05-07T19:08:29.106446-07:00",
+    "generated_at": "2026-05-08T00:16:46.570457-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-05-04",
-    "range_end": "2026-06-06",
+    "range_end": "2026-06-07",
     "total_events": 703,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-05-07",
-    "display_date": "Thursday, May 07",
+    "date": "2026-05-08",
+    "display_date": "Friday, May 08",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-05-07T05:30:00",
-        "end_iso": "2026-05-07T07:00:00",
+        "start_iso": "2026-05-08T05:30:00",
+        "end_iso": "2026-05-08T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,95 +25,17 @@
         "height_percent": 10.0
       },
       {
-        "id": "6di3cor4cgo66b9p74q6",
-        "title": "Call Sherri",
-        "start_time": "8:15 AM",
-        "end_time": "9 AM",
-        "start_iso": "2026-05-07T08:15:00",
-        "end_iso": "2026-05-07T09:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 21.7,
-        "height_percent": 5.0
-      },
-      {
-        "id": "70qm2ob36sr3cbb66ssm",
-        "title": "Claudia",
-        "start_time": "12 PM",
+        "id": "0oh5v1e2gf29rvkih634",
+        "title": "Maeona Graduation!!!",
+        "start_time": "7:45 AM",
         "end_time": "1 PM",
-        "start_iso": "2026-05-07T12:00:00",
-        "end_iso": "2026-05-07T13:00:00",
+        "start_iso": "2026-05-08T07:45:00",
+        "end_iso": "2026-05-08T13:00:00",
         "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "040000008200E00074C5",
-        "title": "supervision",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-05-07T12:00:00",
-        "end_iso": "2026-05-07T13:00:00",
-        "location": null,
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "64smadhmccs66b9k6kqj",
-        "title": "Doc Prac Eval Meeting: Dr. Gallagher and Dr. Strain",
-        "start_time": "1 PM",
-        "end_time": "1:30 PM",
-        "start_iso": "2026-05-07T13:00:00",
-        "end_iso": "2026-05-07T13:30:00",
-        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 53.3,
-        "height_percent": 4
-      },
-      {
-        "id": "5bv6rcn4mm2svkheos51",
-        "title": "Observation Feedback #2 with Victor",
-        "start_time": "3:30 PM",
-        "end_time": "4 PM",
-        "start_iso": "2026-05-07T15:30:00",
-        "end_iso": "2026-05-07T16:00:00",
-        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 70.0,
-        "height_percent": 4
-      },
-      {
-        "id": "23acdhij25ckuq3ov810",
-        "title": "EPS 740 (PART 2) - COE - RM # TBD",
-        "start_time": "6 PM",
-        "end_time": "8:30 PM",
-        "start_iso": "2026-05-07T18:00:00",
-        "end_iso": "2026-05-07T20:30:00",
-        "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
-        "top_percent": 86.7,
-        "height_percent": 13.3
-      },
-      {
-        "id": "ccsj4ob661ij4b9k6osj",
-        "title": "1on1 with Dr. Strain",
-        "start_time": "7:20 PM",
-        "end_time": "8:20 PM",
-        "start_iso": "2026-05-07T19:20:00",
-        "end_iso": "2026-05-07T20:20:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 95.6,
-        "height_percent": 4.4
+        "top_percent": 18.3,
+        "height_percent": 35.0
       }
     ]
   },
@@ -311,7 +233,7 @@
     "thursday": {
       "date": "2026-05-07",
       "display_date": "May 07",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -422,7 +344,7 @@
     "friday": {
       "date": "2026-05-08",
       "display_date": "May 08",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -471,38 +393,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-05-08T05:30:00",
-      "end_iso": "2026-05-08T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-05-08",
-      "display_date": "Fri, May 08",
-      "days_until": 1
-    },
-    {
-      "id": "0oh5v1e2gf29rvkih634",
-      "title": "Maeona Graduation!!!",
-      "start_time": "7:45 AM",
-      "end_time": "1 PM",
-      "start_iso": "2026-05-08T07:45:00",
-      "end_iso": "2026-05-08T13:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 18.3,
-      "height_percent": 35.0,
-      "date": "2026-05-08",
-      "display_date": "Fri, May 08",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-05-11T05:30:00",
       "end_iso": "2026-05-11T07:00:00",
       "location": null,
@@ -512,7 +402,7 @@
       "height_percent": 10.0,
       "date": "2026-05-11",
       "display_date": "Mon, May 11",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "6gq6ap1j70rjib9pc8qm",
@@ -528,7 +418,7 @@
       "height_percent": 13.3,
       "date": "2026-05-11",
       "display_date": "Mon, May 11",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -544,7 +434,7 @@
       "height_percent": 16.7,
       "date": "2026-05-11",
       "display_date": "Mon, May 11",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -560,7 +450,7 @@
       "height_percent": 10.0,
       "date": "2026-05-12",
       "display_date": "Tue, May 12",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -576,7 +466,7 @@
       "height_percent": 6.7,
       "date": "2026-05-12",
       "display_date": "Tue, May 12",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -592,7 +482,7 @@
       "height_percent": 6.7,
       "date": "2026-05-12",
       "display_date": "Tue, May 12",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -608,7 +498,7 @@
       "height_percent": 10.0,
       "date": "2026-05-13",
       "display_date": "Wed, May 13",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "040000008200E00074C5",
@@ -624,7 +514,39 @@
       "height_percent": 6.7,
       "date": "2026-05-13",
       "display_date": "Wed, May 13",
-      "days_until": 6
+      "days_until": 5
+    },
+    {
+      "id": "6gsj6d1o71hmab9i71hm",
+      "title": "RCC Interview",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-05-13T12:00:00",
+      "end_iso": "2026-05-13T13:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-05-13",
+      "display_date": "Wed, May 13",
+      "days_until": 5
+    },
+    {
+      "id": "27jbh1eq2u3hnbrra5tb",
+      "title": "EPS 706 - COE - RM # 208",
+      "start_time": "4 PM",
+      "end_time": "6:30 PM",
+      "start_iso": "2026-05-13T16:00:00",
+      "end_iso": "2026-05-13T18:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 73.3,
+      "height_percent": 16.7,
+      "date": "2026-05-13",
+      "display_date": "Wed, May 13",
+      "days_until": 5
     }
   ]
 }
