@@ -1,30 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-05-16T19:09:24.526817-07:00",
+    "generated_at": "2026-05-17T01:10:13.337262-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-05-11",
-    "range_end": "2026-06-15",
-    "total_events": 710,
+    "range_end": "2026-06-16",
+    "total_events": 713,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-05-16",
-    "display_date": "Saturday, May 16",
-    "events": [
-      {
-        "id": "c4q3gd9l69j3ab9j6th3",
-        "title": "High Country humane with Maemae",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-05-16T12:00:00",
-        "end_iso": "2026-05-16T13:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
-      }
-    ]
+    "date": "2026-05-17",
+    "display_date": "Sunday, May 17",
+    "events": []
   },
   "week": {
     "monday": {
@@ -260,7 +246,7 @@
     "saturday": {
       "date": "2026-05-16",
       "display_date": "May 16",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "c4q3gd9l69j3ab9j6th3",
@@ -280,7 +266,7 @@
     "sunday": {
       "date": "2026-05-17",
       "display_date": "May 17",
-      "is_today": false,
+      "is_today": true,
       "events": []
     }
   },
@@ -299,7 +285,7 @@
       "height_percent": 10.0,
       "date": "2026-05-18",
       "display_date": "Mon, May 18",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "2fa6nu0tjstudr6a743p",
@@ -315,7 +301,7 @@
       "height_percent": 6.7,
       "date": "2026-05-18",
       "display_date": "Mon, May 18",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -331,7 +317,7 @@
       "height_percent": 16.7,
       "date": "2026-05-18",
       "display_date": "Mon, May 18",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -347,7 +333,7 @@
       "height_percent": 10.0,
       "date": "2026-05-19",
       "display_date": "Tue, May 19",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -363,7 +349,7 @@
       "height_percent": 6.7,
       "date": "2026-05-19",
       "display_date": "Tue, May 19",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -379,7 +365,7 @@
       "height_percent": 6.7,
       "date": "2026-05-19",
       "display_date": "Tue, May 19",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "1stmri3gmg8d7blbgo54",
@@ -395,7 +381,7 @@
       "height_percent": 6.7,
       "date": "2026-05-19",
       "display_date": "Tue, May 19",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "6cojeopo71h34bb6cks6",
@@ -411,7 +397,7 @@
       "height_percent": 4,
       "date": "2026-05-20",
       "display_date": "Wed, May 20",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -427,7 +413,7 @@
       "height_percent": 10.0,
       "date": "2026-05-20",
       "display_date": "Wed, May 20",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "040000008200E00074C5",
@@ -443,7 +429,7 @@
       "height_percent": 6.7,
       "date": "2026-05-20",
       "display_date": "Wed, May 20",
-      "days_until": 4
+      "days_until": 3
     }
   ]
 }
