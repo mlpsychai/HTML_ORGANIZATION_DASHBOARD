@@ -1,30 +1,70 @@
 {
   "meta": {
-    "generated_at": "2026-05-17T19:30:19.681023-07:00",
+    "generated_at": "2026-05-18T02:40:56.259815-07:00",
     "timezone": "America/Phoenix",
-    "range_start": "2026-05-11",
-    "range_end": "2026-06-16",
-    "total_events": 713,
+    "range_start": "2026-05-18",
+    "range_end": "2026-06-17",
+    "total_events": 704,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-05-17",
-    "display_date": "Sunday, May 17",
-    "events": []
+    "date": "2026-05-18",
+    "display_date": "Monday, May 18",
+    "events": [
+      {
+        "id": "4vv5mirtsid1h5l6dhq9",
+        "title": "MANDATORIES",
+        "start_time": "5:30 AM",
+        "end_time": "7 AM",
+        "start_iso": "2026-05-18T05:30:00",
+        "end_iso": "2026-05-18T07:00:00",
+        "location": null,
+        "category": "personal",
+        "color": "var(--accent-sage)",
+        "top_percent": 3.3,
+        "height_percent": 10.0
+      },
+      {
+        "id": "2fa6nu0tjstudr6a743p",
+        "title": "Check with Tessa about Affiliation Agreement - Email FCC her answer",
+        "start_time": "9 AM",
+        "end_time": "10 AM",
+        "start_iso": "2026-05-18T09:00:00",
+        "end_iso": "2026-05-18T10:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 26.7,
+        "height_percent": 6.7
+      },
+      {
+        "id": "171qf8kdau9qaj1s05iu",
+        "title": "EPS 607 - COE - RM #124",
+        "start_time": "4 PM",
+        "end_time": "6:30 PM",
+        "start_iso": "2026-05-18T16:00:00",
+        "end_iso": "2026-05-18T18:30:00",
+        "location": null,
+        "category": "class",
+        "color": "var(--text-muted)",
+        "top_percent": 73.3,
+        "height_percent": 16.7
+      }
+    ]
   },
   "week": {
     "monday": {
-      "date": "2026-05-11",
-      "display_date": "May 11",
-      "is_today": false,
+      "date": "2026-05-18",
+      "display_date": "May 18",
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-05-11T05:30:00",
-          "end_iso": "2026-05-11T07:00:00",
+          "start_iso": "2026-05-18T05:30:00",
+          "end_iso": "2026-05-18T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -32,25 +72,25 @@
           "height_percent": 10.0
         },
         {
-          "id": "6gq6ap1j70rjib9pc8qm",
-          "title": "Botanical Blacksmith",
-          "start_time": "10 AM",
-          "end_time": "12 PM",
-          "start_iso": "2026-05-11T10:00:00",
-          "end_iso": "2026-05-11T12:00:00",
-          "location": "The Arboretum at Flagstaff\\, 4001 S Woody Mountain Rd\\, Flagstaff\\, AZ 86005\\, USA",
+          "id": "2fa6nu0tjstudr6a743p",
+          "title": "Check with Tessa about Affiliation Agreement - Email FCC her answer",
+          "start_time": "9 AM",
+          "end_time": "10 AM",
+          "start_iso": "2026-05-18T09:00:00",
+          "end_iso": "2026-05-18T10:00:00",
+          "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
-          "top_percent": 33.3,
-          "height_percent": 13.3
+          "top_percent": 26.7,
+          "height_percent": 6.7
         },
         {
           "id": "171qf8kdau9qaj1s05iu",
           "title": "EPS 607 - COE - RM #124",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
-          "start_iso": "2026-05-11T16:00:00",
-          "end_iso": "2026-05-11T18:30:00",
+          "start_iso": "2026-05-18T16:00:00",
+          "end_iso": "2026-05-18T18:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -60,8 +100,8 @@
       ]
     },
     "tuesday": {
-      "date": "2026-05-12",
-      "display_date": "May 12",
+      "date": "2026-05-19",
+      "display_date": "May 19",
       "is_today": false,
       "events": [
         {
@@ -69,8 +109,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-05-12T05:30:00",
-          "end_iso": "2026-05-12T07:00:00",
+          "start_iso": "2026-05-19T05:30:00",
+          "end_iso": "2026-05-19T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -82,8 +122,8 @@
           "title": "CLIENT SESSION: ST",
           "start_time": "4 PM",
           "end_time": "5 PM",
-          "start_iso": "2026-05-12T16:00:00",
-          "end_iso": "2026-05-12T17:00:00",
+          "start_iso": "2026-05-19T16:00:00",
+          "end_iso": "2026-05-19T17:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
@@ -95,28 +135,54 @@
           "title": "Wellness PSI: Counseling - Zoom Link Included",
           "start_time": "5 PM",
           "end_time": "6 PM",
-          "start_iso": "2026-05-12T17:00:00",
-          "end_iso": "2026-05-12T18:00:00",
+          "start_iso": "2026-05-19T17:00:00",
+          "end_iso": "2026-05-19T18:00:00",
           "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
           "category": "default",
           "color": "var(--text-secondary)",
           "top_percent": 80.0,
           "height_percent": 6.7
+        },
+        {
+          "id": "1stmri3gmg8d7blbgo54",
+          "title": "CT:CT",
+          "start_time": "6 PM",
+          "end_time": "7 PM",
+          "start_iso": "2026-05-19T18:00:00",
+          "end_iso": "2026-05-19T19:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 86.7,
+          "height_percent": 6.7
         }
       ]
     },
     "wednesday": {
-      "date": "2026-05-13",
-      "display_date": "May 13",
+      "date": "2026-05-20",
+      "display_date": "May 20",
       "is_today": false,
       "events": [
+        {
+          "id": "6cojeopo71h34bb6cks6",
+          "title": "Parents in FLG",
+          "start_time": "12 AM",
+          "end_time": "12 AM",
+          "start_iso": "2026-05-20T00:00:00",
+          "end_iso": "2026-05-24T00:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 0,
+          "height_percent": 4
+        },
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-05-13T05:30:00",
-          "end_iso": "2026-05-13T07:00:00",
+          "start_iso": "2026-05-20T05:30:00",
+          "end_iso": "2026-05-20T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -128,8 +194,8 @@
           "title": "PROF Grant Sync UP meeting",
           "start_time": "11 AM",
           "end_time": "12 PM",
-          "start_iso": "2026-05-13T11:00:00",
-          "end_iso": "2026-05-13T12:00:00",
+          "start_iso": "2026-05-20T11:00:00",
+          "end_iso": "2026-05-20T12:00:00",
           "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -137,36 +203,36 @@
           "height_percent": 6.7
         },
         {
-          "id": "6gsj6d1o71hmab9i71hm",
-          "title": "RCC Interview",
-          "start_time": "12 PM",
-          "end_time": "1 PM",
-          "start_iso": "2026-05-13T12:00:00",
-          "end_iso": "2026-05-13T13:00:00",
+          "id": "cco3ie1o6di32b9n69gm",
+          "title": "Csa pickup",
+          "start_time": "2 PM",
+          "end_time": "7 PM",
+          "start_iso": "2026-05-20T14:00:00",
+          "end_iso": "2026-05-20T19:00:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
-          "top_percent": 46.7,
-          "height_percent": 6.7
+          "top_percent": 60.0,
+          "height_percent": 33.3
         },
         {
-          "id": "02g0sfj255prrqejv582",
-          "title": "CT:ST",
-          "start_time": "4 PM",
-          "end_time": "5 PM",
-          "start_iso": "2026-05-13T16:00:00",
-          "end_iso": "2026-05-13T17:00:00",
+          "id": "chim4e9pccojibb46ks3",
+          "title": "Dinner with Mom\\, Dad\\, and friends",
+          "start_time": "5:30 PM",
+          "end_time": "8 PM",
+          "start_iso": "2026-05-20T17:30:00",
+          "end_iso": "2026-05-20T20:00:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
-          "top_percent": 73.3,
-          "height_percent": 6.7
+          "top_percent": 83.3,
+          "height_percent": 16.7
         }
       ]
     },
     "thursday": {
-      "date": "2026-05-14",
-      "display_date": "May 14",
+      "date": "2026-05-21",
+      "display_date": "May 21",
       "is_today": false,
       "events": [
         {
@@ -174,8 +240,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-05-14T05:30:00",
-          "end_iso": "2026-05-14T07:00:00",
+          "start_iso": "2026-05-21T05:30:00",
+          "end_iso": "2026-05-21T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -187,8 +253,8 @@
           "title": "supervision",
           "start_time": "12 PM",
           "end_time": "1 PM",
-          "start_iso": "2026-05-14T12:00:00",
-          "end_iso": "2026-05-14T13:00:00",
+          "start_iso": "2026-05-21T12:00:00",
+          "end_iso": "2026-05-21T13:00:00",
           "location": null,
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -200,8 +266,8 @@
           "title": "EPS 740 (PART 2) - COE - RM # TBD",
           "start_time": "6 PM",
           "end_time": "8:30 PM",
-          "start_iso": "2026-05-14T18:00:00",
-          "end_iso": "2026-05-14T20:30:00",
+          "start_iso": "2026-05-21T18:00:00",
+          "end_iso": "2026-05-21T20:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -211,8 +277,8 @@
       ]
     },
     "friday": {
-      "date": "2026-05-15",
-      "display_date": "May 15",
+      "date": "2026-05-22",
+      "display_date": "May 22",
       "is_today": false,
       "events": [
         {
@@ -220,105 +286,30 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-05-15T05:30:00",
-          "end_iso": "2026-05-15T07:00:00",
+          "start_iso": "2026-05-22T05:30:00",
+          "end_iso": "2026-05-22T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
-        },
-        {
-          "id": "1cjqnm49bvb50u2dmmve",
-          "title": "Kayla & Sean - Final Supervision",
-          "start_time": "12 PM",
-          "end_time": "1 PM",
-          "start_iso": "2026-05-15T12:00:00",
-          "end_iso": "2026-05-15T13:00:00",
-          "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 46.7,
-          "height_percent": 6.7
         }
       ]
     },
     "saturday": {
-      "date": "2026-05-16",
-      "display_date": "May 16",
+      "date": "2026-05-23",
+      "display_date": "May 23",
       "is_today": false,
-      "events": [
-        {
-          "id": "c4q3gd9l69j3ab9j6th3",
-          "title": "High Country humane with Maemae",
-          "start_time": "12 PM",
-          "end_time": "1 PM",
-          "start_iso": "2026-05-16T12:00:00",
-          "end_iso": "2026-05-16T13:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 46.7,
-          "height_percent": 6.7
-        }
-      ]
+      "events": []
     },
     "sunday": {
-      "date": "2026-05-17",
-      "display_date": "May 17",
-      "is_today": true,
+      "date": "2026-05-24",
+      "display_date": "May 24",
+      "is_today": false,
       "events": []
     }
   },
   "upcoming": [
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-05-18T05:30:00",
-      "end_iso": "2026-05-18T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-05-18",
-      "display_date": "Mon, May 18",
-      "days_until": 1
-    },
-    {
-      "id": "2fa6nu0tjstudr6a743p",
-      "title": "Check with Tessa about Affiliation Agreement - Email FCC her answer",
-      "start_time": "9 AM",
-      "end_time": "10 AM",
-      "start_iso": "2026-05-18T09:00:00",
-      "end_iso": "2026-05-18T10:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 26.7,
-      "height_percent": 6.7,
-      "date": "2026-05-18",
-      "display_date": "Mon, May 18",
-      "days_until": 1
-    },
-    {
-      "id": "171qf8kdau9qaj1s05iu",
-      "title": "EPS 607 - COE - RM #124",
-      "start_time": "4 PM",
-      "end_time": "6:30 PM",
-      "start_iso": "2026-05-18T16:00:00",
-      "end_iso": "2026-05-18T18:30:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 73.3,
-      "height_percent": 16.7,
-      "date": "2026-05-18",
-      "display_date": "Mon, May 18",
-      "days_until": 1
-    },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
@@ -333,7 +324,7 @@
       "height_percent": 10.0,
       "date": "2026-05-19",
       "display_date": "Tue, May 19",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -349,7 +340,7 @@
       "height_percent": 6.7,
       "date": "2026-05-19",
       "display_date": "Tue, May 19",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -365,7 +356,7 @@
       "height_percent": 6.7,
       "date": "2026-05-19",
       "display_date": "Tue, May 19",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "1stmri3gmg8d7blbgo54",
@@ -381,7 +372,7 @@
       "height_percent": 6.7,
       "date": "2026-05-19",
       "display_date": "Tue, May 19",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "6cojeopo71h34bb6cks6",
@@ -397,7 +388,7 @@
       "height_percent": 4,
       "date": "2026-05-20",
       "display_date": "Wed, May 20",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -413,7 +404,7 @@
       "height_percent": 10.0,
       "date": "2026-05-20",
       "display_date": "Wed, May 20",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -429,6 +420,54 @@
       "height_percent": 6.7,
       "date": "2026-05-20",
       "display_date": "Wed, May 20",
+      "days_until": 2
+    },
+    {
+      "id": "cco3ie1o6di32b9n69gm",
+      "title": "Csa pickup",
+      "start_time": "2 PM",
+      "end_time": "7 PM",
+      "start_iso": "2026-05-20T14:00:00",
+      "end_iso": "2026-05-20T19:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 60.0,
+      "height_percent": 33.3,
+      "date": "2026-05-20",
+      "display_date": "Wed, May 20",
+      "days_until": 2
+    },
+    {
+      "id": "chim4e9pccojibb46ks3",
+      "title": "Dinner with Mom\\, Dad\\, and friends",
+      "start_time": "5:30 PM",
+      "end_time": "8 PM",
+      "start_iso": "2026-05-20T17:30:00",
+      "end_iso": "2026-05-20T20:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 83.3,
+      "height_percent": 16.7,
+      "date": "2026-05-20",
+      "display_date": "Wed, May 20",
+      "days_until": 2
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-05-21T05:30:00",
+      "end_iso": "2026-05-21T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-05-21",
+      "display_date": "Thu, May 21",
       "days_until": 3
     }
   ]
