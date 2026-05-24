@@ -76,6 +76,13 @@ jobs:
           # Cardio fitness score (VO2 max)
           CARDIO=$(curl -s -X GET "https://api.fitbit.com/1/user/-/cardioscore/date/${TODAY}.json" \
             -H "Authorization: Bearer $ACCESS_TOKEN")
+
+          # Daily Readiness Score (Premium feature, undocumented endpoint)
+          READINESS=$(curl -s -X GET "https://api.fitbit.com/1/user/-/readiness/date/${TODAY}.json" \
+            -H "Authorization: Bearer $ACCESS_TOKEN")
+          echo "=== readiness raw response (diagnostic) ==="
+          echo "$READINESS"
+          echo "=== end readiness ==="
           
           # Active Zone Minutes
           AZM=$(curl -s -X GET "https://api.fitbit.com/1/user/-/activities/active-zone-minutes/date/${TODAY}/1d.json" \
@@ -159,6 +166,11 @@ jobs:
           
           # Cardio score (VO2 max)
           VO2_MAX=$(safe_jq "$CARDIO" '.cardioScore[0].value.vo2Max // 0' '0')
+
+          # Readiness (try a few likely paths — Fitbit's response shape isn't public)
+          READINESS_SCORE=$(safe_jq "$READINESS" '(.readiness[0].value.score // .readiness[0].score // .score // .value.score // 0)' '0')
+          READINESS_LEVEL=$(safe_jq_raw "$READINESS" '(.readiness[0].value.level // .readiness[0].level // .level // "")' '')
+          READINESS_DESC=$(safe_jq_raw "$READINESS" '(.readiness[0].value.description // .readiness[0].description // .description // "")' '')
           
           # Active Zone Minutes
           AZM_TOTAL=$(safe_jq "$AZM" '.["activities-active-zone-minutes"][0].value.activeZoneMinutes // 0' '0')
@@ -213,6 +225,9 @@ jobs:
             --argjson skin_temp "${SKIN_TEMP_VAL:-0}" \
             --argjson core_temp "${CORE_TEMP_VAL:-0}" \
             --argjson vo2_max "${VO2_MAX:-0}" \
+            --argjson readiness_score "${READINESS_SCORE:-0}" \
+            --arg readiness_level "$READINESS_LEVEL" \
+            --arg readiness_desc "$READINESS_DESC" \
             '{
               date: $date,
               updated_at: $updated,
@@ -291,6 +306,11 @@ jobs:
               },
               cardio_fitness: {
                 vo2_max: $vo2_max
+              },
+              readiness: {
+                score: $readiness_score,
+                level: $readiness_level,
+                description: $readiness_desc
               }
             }' > data/fitbit-latest.json
           
