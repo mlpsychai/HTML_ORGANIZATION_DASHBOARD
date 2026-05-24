@@ -1,6 +1,6 @@
 {
   "date": "2026-05-23",
-  "updated_at": "2026-05-24T03:21:19Z",
+  "updated_at": "2026-05-24T05:32:28Z",
   "sleep": {
     "summary": {
       "duration_minutes": 377,
@@ -315,12 +315,12 @@
       "floors": 9,
       "elevation": 27.432,
       "calories": {
-        "total": 1909,
-        "bmr": 1410,
+        "total": 2060,
+        "bmr": 1561,
         "active": 499
       },
       "minutes": {
-        "sedentary": 683,
+        "sedentary": 814,
         "lightly_active": 93,
         "fairly_active": 12,
         "very_active": 13
@@ -341,10 +341,10 @@
       "resting_hr": 65,
       "zones": [
         {
-          "caloriesOut": 1805.5514639999785,
+          "caloriesOut": 1956.8224039999791,
           "max": 110,
           "min": 30,
-          "minutes": 1210,
+          "minutes": 1341,
           "name": "Out of Range"
         },
         {
@@ -402,5 +402,10 @@
   },
   "cardio_fitness": {
     "vo2_max": "44-48"
+  },
+  "readiness": {
+    "score": 0,
+    "level": "",
+    "description": ""
   }
 }
