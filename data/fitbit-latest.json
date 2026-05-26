@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-25",
-  "updated_at": "2026-05-25T15:52:32Z",
+  "date": "2026-05-26",
+  "updated_at": "2026-05-26T16:43:02Z",
   "sleep": {
     "summary": {
       "duration_minutes": 0,
@@ -19,24 +19,24 @@
   },
   "activity": {
     "summary": {
-      "steps": 584,
-      "distance_miles": 0.374811,
-      "floors": 1,
-      "elevation": 3.048,
+      "steps": 233,
+      "distance_miles": 0.1715,
+      "floors": 0,
+      "elevation": 0.0,
       "calories": {
-        "total": 723,
-        "bmr": 614,
-        "active": 124
+        "total": 721,
+        "bmr": 672,
+        "active": 57
       },
       "minutes": {
-        "sedentary": 495,
-        "lightly_active": 28,
-        "fairly_active": 8,
-        "very_active": 1
+        "sedentary": 557,
+        "lightly_active": 25,
+        "fairly_active": 0,
+        "very_active": 0
       },
       "active_zone_minutes": {
-        "total": 4,
-        "fat_burn": 4,
+        "total": 0,
+        "fat_burn": 0,
         "cardio": 0,
         "peak": 0
       }
@@ -47,20 +47,20 @@
   },
   "heart": {
     "summary": {
-      "resting_hr": 67,
+      "resting_hr": 0,
       "zones": [
         {
-          "caloriesOut": 698.27127799999892,
+          "caloriesOut": 721.82797399999481,
           "max": 111,
           "min": 30,
-          "minutes": 530,
+          "minutes": 585,
           "name": "Out of Range"
         },
         {
-          "caloriesOut": 24.480488,
+          "caloriesOut": 0,
           "max": 134,
           "min": 112,
-          "minutes": 4,
+          "minutes": 0,
           "name": "Fat Burn"
         },
         {
