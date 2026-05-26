@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-05-25T19:26:03.700994-07:00",
+    "generated_at": "2026-05-26T02:36:43.174707-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-05-25",
-    "range_end": "2026-06-24",
-    "total_events": 703,
+    "range_end": "2026-06-25",
+    "total_events": 705,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-05-25",
-    "display_date": "Monday, May 25",
+    "date": "2026-05-26",
+    "display_date": "Tuesday, May 26",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-05-25T05:30:00",
-        "end_iso": "2026-05-25T07:00:00",
+        "start_iso": "2026-05-26T05:30:00",
+        "end_iso": "2026-05-26T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,17 +25,43 @@
         "height_percent": 10.0
       },
       {
-        "id": "171qf8kdau9qaj1s05iu",
-        "title": "EPS 607 - COE - RM #124",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-05-25T16:00:00",
-        "end_iso": "2026-05-25T18:30:00",
+        "id": "clgj4cr471i3eb9n6gom",
+        "title": "CT: CT",
+        "start_time": "12 PM",
+        "end_time": "1 PM",
+        "start_iso": "2026-05-26T12:00:00",
+        "end_iso": "2026-05-26T13:00:00",
         "location": null,
-        "category": "class",
-        "color": "var(--text-muted)",
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 46.7,
+        "height_percent": 6.7
+      },
+      {
+        "id": "4lm6ne5ijlfeumpbu4or",
+        "title": "CLIENT SESSION: ST",
+        "start_time": "4 PM",
+        "end_time": "5 PM",
+        "start_iso": "2026-05-26T16:00:00",
+        "end_iso": "2026-05-26T17:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
         "top_percent": 73.3,
-        "height_percent": 16.7
+        "height_percent": 6.7
+      },
+      {
+        "id": "73hn56b9fne1i455tst3",
+        "title": "Wellness PSI: Counseling - Zoom Link Included",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-05-26T17:00:00",
+        "end_iso": "2026-05-26T18:00:00",
+        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
+        "height_percent": 6.7
       }
     ]
   },
@@ -43,7 +69,7 @@
     "monday": {
       "date": "2026-05-25",
       "display_date": "May 25",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -76,7 +102,7 @@
     "tuesday": {
       "date": "2026-05-26",
       "display_date": "May 26",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -237,70 +263,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-05-26T05:30:00",
-      "end_iso": "2026-05-26T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-05-26",
-      "display_date": "Tue, May 26",
-      "days_until": 1
-    },
-    {
-      "id": "clgj4cr471i3eb9n6gom",
-      "title": "CT: CT",
-      "start_time": "12 PM",
-      "end_time": "1 PM",
-      "start_iso": "2026-05-26T12:00:00",
-      "end_iso": "2026-05-26T13:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 46.7,
-      "height_percent": 6.7,
-      "date": "2026-05-26",
-      "display_date": "Tue, May 26",
-      "days_until": 1
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-05-26T16:00:00",
-      "end_iso": "2026-05-26T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-05-26",
-      "display_date": "Tue, May 26",
-      "days_until": 1
-    },
-    {
-      "id": "73hn56b9fne1i455tst3",
-      "title": "Wellness PSI: Counseling - Zoom Link Included",
-      "start_time": "5 PM",
-      "end_time": "6 PM",
-      "start_iso": "2026-05-26T17:00:00",
-      "end_iso": "2026-05-26T18:00:00",
-      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 80.0,
-      "height_percent": 6.7,
-      "date": "2026-05-26",
-      "display_date": "Tue, May 26",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-05-27T05:30:00",
       "end_iso": "2026-05-27T07:00:00",
       "location": null,
@@ -310,7 +272,7 @@
       "height_percent": 10.0,
       "date": "2026-05-27",
       "display_date": "Wed, May 27",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -326,7 +288,7 @@
       "height_percent": 6.7,
       "date": "2026-05-27",
       "display_date": "Wed, May 27",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -342,7 +304,7 @@
       "height_percent": 10.0,
       "date": "2026-05-28",
       "display_date": "Thu, May 28",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -358,7 +320,7 @@
       "height_percent": 6.7,
       "date": "2026-05-28",
       "display_date": "Thu, May 28",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -374,7 +336,7 @@
       "height_percent": 10.0,
       "date": "2026-05-29",
       "display_date": "Fri, May 29",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -390,6 +352,70 @@
       "height_percent": 10.0,
       "date": "2026-06-01",
       "display_date": "Mon, Jun 01",
+      "days_until": 6
+    },
+    {
+      "id": "171qf8kdau9qaj1s05iu",
+      "title": "EPS 607 - COE - RM #124",
+      "start_time": "4 PM",
+      "end_time": "6:30 PM",
+      "start_iso": "2026-06-01T16:00:00",
+      "end_iso": "2026-06-01T18:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 73.3,
+      "height_percent": 16.7,
+      "date": "2026-06-01",
+      "display_date": "Mon, Jun 01",
+      "days_until": 6
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-06-02T05:30:00",
+      "end_iso": "2026-06-02T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-06-02",
+      "display_date": "Tue, Jun 02",
+      "days_until": 7
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-06-02T16:00:00",
+      "end_iso": "2026-06-02T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-06-02",
+      "display_date": "Tue, Jun 02",
+      "days_until": 7
+    },
+    {
+      "id": "73hn56b9fne1i455tst3",
+      "title": "Wellness PSI: Counseling - Zoom Link Included",
+      "start_time": "5 PM",
+      "end_time": "6 PM",
+      "start_iso": "2026-06-02T17:00:00",
+      "end_iso": "2026-06-02T18:00:00",
+      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 80.0,
+      "height_percent": 6.7,
+      "date": "2026-06-02",
+      "display_date": "Tue, Jun 02",
       "days_until": 7
     }
   ]
