@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-05-30T19:36:04.228341-07:00",
+    "generated_at": "2026-05-31T01:34:22.301263-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-05-25",
-    "range_end": "2026-06-29",
-    "total_events": 709,
+    "range_end": "2026-06-30",
+    "total_events": 712,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-05-30",
-    "display_date": "Saturday, May 30",
+    "date": "2026-05-31",
+    "display_date": "Sunday, May 31",
     "events": []
   },
   "week": {
@@ -194,13 +194,13 @@
     "saturday": {
       "date": "2026-05-30",
       "display_date": "May 30",
-      "is_today": true,
+      "is_today": false,
       "events": []
     },
     "sunday": {
       "date": "2026-05-31",
       "display_date": "May 31",
-      "is_today": false,
+      "is_today": true,
       "events": []
     }
   },
@@ -219,7 +219,7 @@
       "height_percent": 10.0,
       "date": "2026-06-01",
       "display_date": "Mon, Jun 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "171qf8kdau9qaj1s05iu",
@@ -235,7 +235,7 @@
       "height_percent": 16.7,
       "date": "2026-06-01",
       "display_date": "Mon, Jun 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -251,7 +251,7 @@
       "height_percent": 10.0,
       "date": "2026-06-02",
       "display_date": "Tue, Jun 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "6kr3idppc9i3eb9m74q3",
@@ -267,7 +267,7 @@
       "height_percent": 6.7,
       "date": "2026-06-02",
       "display_date": "Tue, Jun 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -283,7 +283,7 @@
       "height_percent": 6.7,
       "date": "2026-06-02",
       "display_date": "Tue, Jun 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -299,7 +299,7 @@
       "height_percent": 6.7,
       "date": "2026-06-02",
       "display_date": "Tue, Jun 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -315,7 +315,7 @@
       "height_percent": 10.0,
       "date": "2026-06-03",
       "display_date": "Wed, Jun 03",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "040000008200E00074C5",
@@ -331,7 +331,7 @@
       "height_percent": 6.7,
       "date": "2026-06-03",
       "display_date": "Wed, Jun 03",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -347,7 +347,7 @@
       "height_percent": 10.0,
       "date": "2026-06-04",
       "display_date": "Thu, Jun 04",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "040000008200E00074C5",
@@ -363,7 +363,7 @@
       "height_percent": 6.7,
       "date": "2026-06-04",
       "display_date": "Thu, Jun 04",
-      "days_until": 5
+      "days_until": 4
     }
   ]
 }
