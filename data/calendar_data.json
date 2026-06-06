@@ -1,43 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-06-05T19:13:06.644530-07:00",
+    "generated_at": "2026-06-06T01:24:01.103556-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-01",
-    "range_end": "2026-07-05",
-    "total_events": 708,
+    "range_end": "2026-07-06",
+    "total_events": 709,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-06-05",
-    "display_date": "Friday, June 05",
-    "events": [
-      {
-        "id": "4vv5mirtsid1h5l6dhq9",
-        "title": "MANDATORIES",
-        "start_time": "5:30 AM",
-        "end_time": "7 AM",
-        "start_iso": "2026-06-05T05:30:00",
-        "end_iso": "2026-06-05T07:00:00",
-        "location": null,
-        "category": "personal",
-        "color": "var(--accent-sage)",
-        "top_percent": 3.3,
-        "height_percent": 10.0
-      },
-      {
-        "id": "6ti34e9ncpj30b9g65ij",
-        "title": "FCC interview",
-        "start_time": "11 AM",
-        "end_time": "12 PM",
-        "start_iso": "2026-06-05T11:00:00",
-        "end_iso": "2026-06-05T12:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 40.0,
-        "height_percent": 6.7
-      }
-    ]
+    "date": "2026-06-06",
+    "display_date": "Saturday, June 06",
+    "events": []
   },
   "week": {
     "monday": {
@@ -214,7 +187,7 @@
     "friday": {
       "date": "2026-06-05",
       "display_date": "Jun 05",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -247,7 +220,7 @@
     "saturday": {
       "date": "2026-06-06",
       "display_date": "Jun 06",
-      "is_today": false,
+      "is_today": true,
       "events": []
     },
     "sunday": {
@@ -272,7 +245,7 @@
       "height_percent": 10.0,
       "date": "2026-06-08",
       "display_date": "Mon, Jun 08",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -288,7 +261,7 @@
       "height_percent": 10.0,
       "date": "2026-06-09",
       "display_date": "Tue, Jun 09",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -304,7 +277,7 @@
       "height_percent": 6.7,
       "date": "2026-06-09",
       "display_date": "Tue, Jun 09",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -320,7 +293,7 @@
       "height_percent": 6.7,
       "date": "2026-06-09",
       "display_date": "Tue, Jun 09",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -336,7 +309,7 @@
       "height_percent": 10.0,
       "date": "2026-06-10",
       "display_date": "Wed, Jun 10",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "040000008200E00074C5",
@@ -352,7 +325,7 @@
       "height_percent": 6.7,
       "date": "2026-06-10",
       "display_date": "Wed, Jun 10",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -368,7 +341,7 @@
       "height_percent": 10.0,
       "date": "2026-06-11",
       "display_date": "Thu, Jun 11",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "68omcd9k75j3cb9hcgs3",
@@ -384,7 +357,7 @@
       "height_percent": 6.7,
       "date": "2026-06-11",
       "display_date": "Thu, Jun 11",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "040000008200E00074C5",
@@ -400,7 +373,7 @@
       "height_percent": 6.7,
       "date": "2026-06-11",
       "display_date": "Thu, Jun 11",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -416,7 +389,7 @@
       "height_percent": 10.0,
       "date": "2026-06-12",
       "display_date": "Fri, Jun 12",
-      "days_until": 7
+      "days_until": 6
     }
   ]
 }
