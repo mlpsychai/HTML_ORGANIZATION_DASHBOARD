@@ -1,54 +1,28 @@
 {
   "meta": {
-    "generated_at": "2026-06-11T19:40:10.957486-07:00",
+    "generated_at": "2026-06-12T02:56:55.887314-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-08",
-    "range_end": "2026-07-11",
+    "range_end": "2026-07-12",
     "total_events": 709,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-06-11",
-    "display_date": "Thursday, June 11",
+    "date": "2026-06-12",
+    "display_date": "Friday, June 12",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-06-11T05:30:00",
-        "end_iso": "2026-06-11T07:00:00",
+        "start_iso": "2026-06-12T05:30:00",
+        "end_iso": "2026-06-12T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
         "top_percent": 3.3,
         "height_percent": 10.0
-      },
-      {
-        "id": "68omcd9k75j3cb9hcgs3",
-        "title": "Chris therapy",
-        "start_time": "10:30 AM",
-        "end_time": "11:30 AM",
-        "start_iso": "2026-06-11T10:30:00",
-        "end_iso": "2026-06-11T11:30:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 36.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "040000008200E00074C5",
-        "title": "supervision",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-06-11T12:00:00",
-        "end_iso": "2026-06-11T13:00:00",
-        "location": null,
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
       }
     ]
   },
@@ -155,7 +129,7 @@
     "thursday": {
       "date": "2026-06-11",
       "display_date": "Jun 11",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -201,7 +175,7 @@
     "friday": {
       "date": "2026-06-12",
       "display_date": "Jun 12",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -233,22 +207,6 @@
   },
   "upcoming": [
     {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-06-12T05:30:00",
-      "end_iso": "2026-06-12T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-06-12",
-      "display_date": "Fri, Jun 12",
-      "days_until": 1
-    },
-    {
       "id": "6ksmao9pcosmabb4c4s6",
       "title": "ASPEN TRIP",
       "start_time": "12 AM",
@@ -262,7 +220,7 @@
       "height_percent": 4,
       "date": "2026-06-15",
       "display_date": "Mon, Jun 15",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -278,7 +236,7 @@
       "height_percent": 10.0,
       "date": "2026-06-15",
       "display_date": "Mon, Jun 15",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -294,7 +252,7 @@
       "height_percent": 10.0,
       "date": "2026-06-16",
       "display_date": "Tue, Jun 16",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -310,7 +268,7 @@
       "height_percent": 6.7,
       "date": "2026-06-16",
       "display_date": "Tue, Jun 16",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -326,7 +284,7 @@
       "height_percent": 6.7,
       "date": "2026-06-16",
       "display_date": "Tue, Jun 16",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -342,7 +300,7 @@
       "height_percent": 10.0,
       "date": "2026-06-17",
       "display_date": "Wed, Jun 17",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "040000008200E00074C5",
@@ -358,7 +316,7 @@
       "height_percent": 6.7,
       "date": "2026-06-17",
       "display_date": "Wed, Jun 17",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -374,7 +332,7 @@
       "height_percent": 10.0,
       "date": "2026-06-18",
       "display_date": "Thu, Jun 18",
-      "days_until": 7
+      "days_until": 6
     },
     {
       "id": "040000008200E00074C5",
@@ -390,6 +348,22 @@
       "height_percent": 6.7,
       "date": "2026-06-18",
       "display_date": "Thu, Jun 18",
+      "days_until": 6
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-06-19T05:30:00",
+      "end_iso": "2026-06-19T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-06-19",
+      "display_date": "Fri, Jun 19",
       "days_until": 7
     }
   ]
