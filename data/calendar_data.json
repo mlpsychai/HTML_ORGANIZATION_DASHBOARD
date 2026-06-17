@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-06-16T19:47:22.548182-07:00",
+    "generated_at": "2026-06-17T03:26:12.996775-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-15",
-    "range_end": "2026-07-16",
-    "total_events": 709,
+    "range_end": "2026-07-17",
+    "total_events": 710,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-06-16",
-    "display_date": "Tuesday, June 16",
+    "date": "2026-06-17",
+    "display_date": "Wednesday, June 17",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-06-16T05:30:00",
-        "end_iso": "2026-06-16T07:00:00",
+        "start_iso": "2026-06-17T05:30:00",
+        "end_iso": "2026-06-17T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,29 +25,29 @@
         "height_percent": 10.0
       },
       {
-        "id": "4lm6ne5ijlfeumpbu4or",
-        "title": "CLIENT SESSION: ST",
-        "start_time": "4 PM",
-        "end_time": "5 PM",
-        "start_iso": "2026-06-16T16:00:00",
-        "end_iso": "2026-06-16T17:00:00",
+        "id": "71hj8d9p60q6ab9n75gj",
+        "title": "Mohammad",
+        "start_time": "11 AM",
+        "end_time": "12 PM",
+        "start_iso": "2026-06-17T11:00:00",
+        "end_iso": "2026-06-17T12:00:00",
         "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 73.3,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 40.0,
         "height_percent": 6.7
       },
       {
-        "id": "73hn56b9fne1i455tst3",
-        "title": "Wellness PSI: Counseling - Zoom Link Included",
-        "start_time": "5 PM",
-        "end_time": "6 PM",
-        "start_iso": "2026-06-16T17:00:00",
-        "end_iso": "2026-06-16T18:00:00",
-        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 80.0,
+        "id": "040000008200E00074C5",
+        "title": "PROF Grant Sync UP meeting",
+        "start_time": "11 AM",
+        "end_time": "12 PM",
+        "start_iso": "2026-06-17T11:00:00",
+        "end_iso": "2026-06-17T12:00:00",
+        "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+        "category": "meeting",
+        "color": "var(--accent-gold)",
+        "top_percent": 40.0,
         "height_percent": 6.7
       }
     ]
@@ -89,7 +89,7 @@
     "tuesday": {
       "date": "2026-06-16",
       "display_date": "Jun 16",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -135,7 +135,7 @@
     "wednesday": {
       "date": "2026-06-17",
       "display_date": "Jun 17",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -250,54 +250,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-06-17T05:30:00",
-      "end_iso": "2026-06-17T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-06-17",
-      "display_date": "Wed, Jun 17",
-      "days_until": 1
-    },
-    {
-      "id": "71hj8d9p60q6ab9n75gj",
-      "title": "Mohammad",
-      "start_time": "11 AM",
-      "end_time": "12 PM",
-      "start_iso": "2026-06-17T11:00:00",
-      "end_iso": "2026-06-17T12:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 40.0,
-      "height_percent": 6.7,
-      "date": "2026-06-17",
-      "display_date": "Wed, Jun 17",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "PROF Grant Sync UP meeting",
-      "start_time": "11 AM",
-      "end_time": "12 PM",
-      "start_iso": "2026-06-17T11:00:00",
-      "end_iso": "2026-06-17T12:00:00",
-      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 40.0,
-      "height_percent": 6.7,
-      "date": "2026-06-17",
-      "display_date": "Wed, Jun 17",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-06-18T05:30:00",
       "end_iso": "2026-06-18T07:00:00",
       "location": null,
@@ -307,7 +259,7 @@
       "height_percent": 10.0,
       "date": "2026-06-18",
       "display_date": "Thu, Jun 18",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -323,7 +275,7 @@
       "height_percent": 6.7,
       "date": "2026-06-18",
       "display_date": "Thu, Jun 18",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -339,7 +291,7 @@
       "height_percent": 10.0,
       "date": "2026-06-19",
       "display_date": "Fri, Jun 19",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -355,7 +307,7 @@
       "height_percent": 10.0,
       "date": "2026-06-22",
       "display_date": "Mon, Jun 22",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "60om4d1hcks32bb6c4r3",
@@ -371,7 +323,7 @@
       "height_percent": 50.0,
       "date": "2026-06-22",
       "display_date": "Mon, Jun 22",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -387,7 +339,7 @@
       "height_percent": 10.0,
       "date": "2026-06-23",
       "display_date": "Tue, Jun 23",
-      "days_until": 7
+      "days_until": 6
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -403,6 +355,54 @@
       "height_percent": 6.7,
       "date": "2026-06-23",
       "display_date": "Tue, Jun 23",
+      "days_until": 6
+    },
+    {
+      "id": "73hn56b9fne1i455tst3",
+      "title": "Wellness PSI: Counseling - Zoom Link Included",
+      "start_time": "5 PM",
+      "end_time": "6 PM",
+      "start_iso": "2026-06-23T17:00:00",
+      "end_iso": "2026-06-23T18:00:00",
+      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 80.0,
+      "height_percent": 6.7,
+      "date": "2026-06-23",
+      "display_date": "Tue, Jun 23",
+      "days_until": 6
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-06-24T05:30:00",
+      "end_iso": "2026-06-24T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-06-24",
+      "display_date": "Wed, Jun 24",
+      "days_until": 7
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "PROF Grant Sync UP meeting",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-06-24T11:00:00",
+      "end_iso": "2026-06-24T12:00:00",
+      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 40.0,
+      "height_percent": 6.7,
+      "date": "2026-06-24",
+      "display_date": "Wed, Jun 24",
       "days_until": 7
     }
   ]
