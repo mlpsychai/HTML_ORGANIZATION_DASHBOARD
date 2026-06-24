@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-06-23T12:50:01.428279-07:00",
+    "generated_at": "2026-06-23T19:27:27.363801-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-22",
     "range_end": "2026-07-23",
-    "total_events": 710,
+    "total_events": 712,
     "calendars_synced": 2
   },
   "today": {
@@ -390,16 +390,16 @@
       "days_until": 7
     },
     {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-06-30T16:00:00",
-      "end_iso": "2026-06-30T17:00:00",
+      "id": "6qsnlmafvnlq84ja7rit",
+      "title": "Virtual intake session for SP with parent/s",
+      "start_time": "1 PM",
+      "end_time": "2 PM",
+      "start_iso": "2026-06-30T13:00:00",
+      "end_iso": "2026-06-30T14:00:00",
       "location": null,
       "category": "clinical",
       "color": "var(--accent-teal)",
-      "top_percent": 73.3,
+      "top_percent": 53.3,
       "height_percent": 6.7,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
