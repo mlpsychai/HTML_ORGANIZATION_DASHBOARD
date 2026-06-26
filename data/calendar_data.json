@@ -1,54 +1,41 @@
 {
   "meta": {
-    "generated_at": "2026-06-25T19:31:19.269383-07:00",
+    "generated_at": "2026-06-26T01:50:23.593054-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-22",
-    "range_end": "2026-07-25",
+    "range_end": "2026-07-26",
     "total_events": 714,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-06-25",
-    "display_date": "Thursday, June 25",
+    "date": "2026-06-26",
+    "display_date": "Friday, June 26",
     "events": [
+      {
+        "id": "clhj4dhl6so3eb9p6ssj",
+        "title": "Brisket in Sholow",
+        "start_time": "12 AM",
+        "end_time": "12 AM",
+        "start_iso": "2026-06-26T00:00:00",
+        "end_iso": "2026-06-27T00:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 0,
+        "height_percent": 4
+      },
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-06-25T05:30:00",
-        "end_iso": "2026-06-25T07:00:00",
+        "start_iso": "2026-06-26T05:30:00",
+        "end_iso": "2026-06-26T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
         "top_percent": 3.3,
         "height_percent": 10.0
-      },
-      {
-        "id": "3n8r17gpb1eqbb81qc5f",
-        "title": "Counseling Meeting",
-        "start_time": "11 AM",
-        "end_time": "12 PM",
-        "start_iso": "2026-06-25T11:00:00",
-        "end_iso": "2026-06-25T12:00:00",
-        "location": "Pine Forest Charter School\\, 2257 E Cedar Ave\\, Flagstaff\\, AZ 86004\\, USA",
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 40.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "040000008200E00074C5",
-        "title": "supervision",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-06-25T12:00:00",
-        "end_iso": "2026-06-25T13:00:00",
-        "location": null,
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
       }
     ]
   },
@@ -168,7 +155,7 @@
     "thursday": {
       "date": "2026-06-25",
       "display_date": "Jun 25",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -214,7 +201,7 @@
     "friday": {
       "date": "2026-06-26",
       "display_date": "Jun 26",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "clhj4dhl6so3eb9p6ssj",
@@ -259,38 +246,6 @@
   },
   "upcoming": [
     {
-      "id": "clhj4dhl6so3eb9p6ssj",
-      "title": "Brisket in Sholow",
-      "start_time": "12 AM",
-      "end_time": "12 AM",
-      "start_iso": "2026-06-26T00:00:00",
-      "end_iso": "2026-06-27T00:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 0,
-      "height_percent": 4,
-      "date": "2026-06-26",
-      "display_date": "Fri, Jun 26",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-06-26T05:30:00",
-      "end_iso": "2026-06-26T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-06-26",
-      "display_date": "Fri, Jun 26",
-      "days_until": 1
-    },
-    {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
@@ -304,7 +259,7 @@
       "height_percent": 10.0,
       "date": "2026-06-29",
       "display_date": "Mon, Jun 29",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -320,7 +275,7 @@
       "height_percent": 10.0,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "70rj6e1p64o3cb9p6cs6",
@@ -336,7 +291,7 @@
       "height_percent": 8.3,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "6qsnlmafvnlq84ja7rit",
@@ -352,7 +307,7 @@
       "height_percent": 6.7,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -368,7 +323,7 @@
       "height_percent": 6.7,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -384,7 +339,7 @@
       "height_percent": 6.7,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -400,7 +355,7 @@
       "height_percent": 10.0,
       "date": "2026-07-01",
       "display_date": "Wed, Jul 01",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "040000008200E00074C5",
@@ -416,6 +371,38 @@
       "height_percent": 6.7,
       "date": "2026-07-01",
       "display_date": "Wed, Jul 01",
+      "days_until": 5
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-07-02T05:30:00",
+      "end_iso": "2026-07-02T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-07-02",
+      "display_date": "Thu, Jul 02",
+      "days_until": 6
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-07-02T12:00:00",
+      "end_iso": "2026-07-02T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-07-02",
+      "display_date": "Thu, Jul 02",
       "days_until": 6
     }
   ]
