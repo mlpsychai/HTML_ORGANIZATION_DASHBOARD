@@ -1,43 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-06-26T19:24:59.353417-07:00",
+    "generated_at": "2026-06-27T01:26:09.395666-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-22",
-    "range_end": "2026-07-26",
-    "total_events": 715,
+    "range_end": "2026-07-27",
+    "total_events": 716,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-06-26",
-    "display_date": "Friday, June 26",
-    "events": [
-      {
-        "id": "clhj4dhl6so3eb9p6ssj",
-        "title": "Brisket in Sholow",
-        "start_time": "12 AM",
-        "end_time": "12 AM",
-        "start_iso": "2026-06-26T00:00:00",
-        "end_iso": "2026-06-27T00:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 0,
-        "height_percent": 4
-      },
-      {
-        "id": "4vv5mirtsid1h5l6dhq9",
-        "title": "MANDATORIES",
-        "start_time": "5:30 AM",
-        "end_time": "7 AM",
-        "start_iso": "2026-06-26T05:30:00",
-        "end_iso": "2026-06-26T07:00:00",
-        "location": null,
-        "category": "personal",
-        "color": "var(--accent-sage)",
-        "top_percent": 3.3,
-        "height_percent": 10.0
-      }
-    ]
+    "date": "2026-06-27",
+    "display_date": "Saturday, June 27",
+    "events": []
   },
   "week": {
     "monday": {
@@ -201,7 +174,7 @@
     "friday": {
       "date": "2026-06-26",
       "display_date": "Jun 26",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "clhj4dhl6so3eb9p6ssj",
@@ -234,7 +207,7 @@
     "saturday": {
       "date": "2026-06-27",
       "display_date": "Jun 27",
-      "is_today": false,
+      "is_today": true,
       "events": []
     },
     "sunday": {
@@ -259,7 +232,7 @@
       "height_percent": 10.0,
       "date": "2026-06-29",
       "display_date": "Mon, Jun 29",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -275,7 +248,7 @@
       "height_percent": 10.0,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "70rj6e1p64o3cb9p6cs6",
@@ -291,7 +264,7 @@
       "height_percent": 8.3,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "6qsnlmafvnlq84ja7rit",
@@ -307,7 +280,7 @@
       "height_percent": 6.7,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "6sq3ic9l6cpj6b9m6hj3",
@@ -323,7 +296,7 @@
       "height_percent": 6.7,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -339,7 +312,7 @@
       "height_percent": 6.7,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -355,7 +328,7 @@
       "height_percent": 6.7,
       "date": "2026-06-30",
       "display_date": "Tue, Jun 30",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -371,7 +344,7 @@
       "height_percent": 10.0,
       "date": "2026-07-01",
       "display_date": "Wed, Jul 01",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "040000008200E00074C5",
@@ -387,7 +360,7 @@
       "height_percent": 6.7,
       "date": "2026-07-01",
       "display_date": "Wed, Jul 01",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -403,7 +376,7 @@
       "height_percent": 10.0,
       "date": "2026-07-02",
       "display_date": "Thu, Jul 02",
-      "days_until": 6
+      "days_until": 5
     }
   ]
 }
