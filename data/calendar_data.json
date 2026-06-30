@@ -1,28 +1,93 @@
 {
   "meta": {
-    "generated_at": "2026-06-29T19:31:27.258298-07:00",
+    "generated_at": "2026-06-30T01:56:39.462541-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-29",
-    "range_end": "2026-07-29",
-    "total_events": 712,
+    "range_end": "2026-07-30",
+    "total_events": 714,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-06-29",
-    "display_date": "Monday, June 29",
+    "date": "2026-06-30",
+    "display_date": "Tuesday, June 30",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-06-29T05:30:00",
-        "end_iso": "2026-06-29T07:00:00",
+        "start_iso": "2026-06-30T05:30:00",
+        "end_iso": "2026-06-30T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
         "top_percent": 3.3,
         "height_percent": 10.0
+      },
+      {
+        "id": "70rj6e1p64o3cb9p6cs6",
+        "title": "New Client intake 11 year old",
+        "start_time": "1 PM",
+        "end_time": "2:15 PM",
+        "start_iso": "2026-06-30T13:00:00",
+        "end_iso": "2026-06-30T14:15:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 53.3,
+        "height_percent": 8.3
+      },
+      {
+        "id": "6qsnlmafvnlq84ja7rit",
+        "title": "Virtual intake session for SP with parent/s",
+        "start_time": "1 PM",
+        "end_time": "2 PM",
+        "start_iso": "2026-06-30T13:00:00",
+        "end_iso": "2026-06-30T14:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 53.3,
+        "height_percent": 6.7
+      },
+      {
+        "id": "6sq3ic9l6cpj6b9m6hj3",
+        "title": "Talk with dr Strain",
+        "start_time": "2:30 PM",
+        "end_time": "3:30 PM",
+        "start_iso": "2026-06-30T14:30:00",
+        "end_iso": "2026-06-30T15:30:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 63.3,
+        "height_percent": 6.7
+      },
+      {
+        "id": "4lm6ne5ijlfeumpbu4or",
+        "title": "CLIENT SESSION: ST",
+        "start_time": "4 PM",
+        "end_time": "5 PM",
+        "start_iso": "2026-06-30T16:00:00",
+        "end_iso": "2026-06-30T17:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 73.3,
+        "height_percent": 6.7
+      },
+      {
+        "id": "73hn56b9fne1i455tst3",
+        "title": "Wellness PSI: Counseling - Zoom Link Included",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-06-30T17:00:00",
+        "end_iso": "2026-06-30T18:00:00",
+        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
+        "height_percent": 6.7
       }
     ]
   },
@@ -30,7 +95,7 @@
     "monday": {
       "date": "2026-06-29",
       "display_date": "Jun 29",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -50,7 +115,7 @@
     "tuesday": {
       "date": "2026-06-30",
       "display_date": "Jun 30",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -250,102 +315,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-06-30T05:30:00",
-      "end_iso": "2026-06-30T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-06-30",
-      "display_date": "Tue, Jun 30",
-      "days_until": 1
-    },
-    {
-      "id": "70rj6e1p64o3cb9p6cs6",
-      "title": "New Client intake 11 year old",
-      "start_time": "1 PM",
-      "end_time": "2:15 PM",
-      "start_iso": "2026-06-30T13:00:00",
-      "end_iso": "2026-06-30T14:15:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 53.3,
-      "height_percent": 8.3,
-      "date": "2026-06-30",
-      "display_date": "Tue, Jun 30",
-      "days_until": 1
-    },
-    {
-      "id": "6qsnlmafvnlq84ja7rit",
-      "title": "Virtual intake session for SP with parent/s",
-      "start_time": "1 PM",
-      "end_time": "2 PM",
-      "start_iso": "2026-06-30T13:00:00",
-      "end_iso": "2026-06-30T14:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 53.3,
-      "height_percent": 6.7,
-      "date": "2026-06-30",
-      "display_date": "Tue, Jun 30",
-      "days_until": 1
-    },
-    {
-      "id": "6sq3ic9l6cpj6b9m6hj3",
-      "title": "Talk with dr Strain",
-      "start_time": "2:30 PM",
-      "end_time": "3:30 PM",
-      "start_iso": "2026-06-30T14:30:00",
-      "end_iso": "2026-06-30T15:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 63.3,
-      "height_percent": 6.7,
-      "date": "2026-06-30",
-      "display_date": "Tue, Jun 30",
-      "days_until": 1
-    },
-    {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-06-30T16:00:00",
-      "end_iso": "2026-06-30T17:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
-      "height_percent": 6.7,
-      "date": "2026-06-30",
-      "display_date": "Tue, Jun 30",
-      "days_until": 1
-    },
-    {
-      "id": "73hn56b9fne1i455tst3",
-      "title": "Wellness PSI: Counseling - Zoom Link Included",
-      "start_time": "5 PM",
-      "end_time": "6 PM",
-      "start_iso": "2026-06-30T17:00:00",
-      "end_iso": "2026-06-30T18:00:00",
-      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 80.0,
-      "height_percent": 6.7,
-      "date": "2026-06-30",
-      "display_date": "Tue, Jun 30",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-07-01T05:30:00",
       "end_iso": "2026-07-01T07:00:00",
       "location": null,
@@ -355,7 +324,7 @@
       "height_percent": 10.0,
       "date": "2026-07-01",
       "display_date": "Wed, Jul 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -371,7 +340,7 @@
       "height_percent": 6.7,
       "date": "2026-07-01",
       "display_date": "Wed, Jul 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -387,7 +356,7 @@
       "height_percent": 10.0,
       "date": "2026-07-02",
       "display_date": "Thu, Jul 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -403,7 +372,103 @@
       "height_percent": 6.7,
       "date": "2026-07-02",
       "display_date": "Thu, Jul 02",
+      "days_until": 2
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-07-03T05:30:00",
+      "end_iso": "2026-07-03T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-07-03",
+      "display_date": "Fri, Jul 03",
       "days_until": 3
+    },
+    {
+      "id": "clgjip1j6lgj6b9pckrm",
+      "title": "Race and Recovery: Sean v. Maemae",
+      "start_time": "9 AM",
+      "end_time": "10 AM",
+      "start_iso": "2026-07-03T09:00:00",
+      "end_iso": "2026-07-03T10:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 26.7,
+      "height_percent": 6.7,
+      "date": "2026-07-03",
+      "display_date": "Fri, Jul 03",
+      "days_until": 3
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-07-06T05:30:00",
+      "end_iso": "2026-07-06T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-07-06",
+      "display_date": "Mon, Jul 06",
+      "days_until": 6
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-07-07T05:30:00",
+      "end_iso": "2026-07-07T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-07-07",
+      "display_date": "Tue, Jul 07",
+      "days_until": 7
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-07-07T16:00:00",
+      "end_iso": "2026-07-07T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-07-07",
+      "display_date": "Tue, Jul 07",
+      "days_until": 7
+    },
+    {
+      "id": "73hn56b9fne1i455tst3",
+      "title": "Wellness PSI: Counseling - Zoom Link Included",
+      "start_time": "5 PM",
+      "end_time": "6 PM",
+      "start_iso": "2026-07-07T17:00:00",
+      "end_iso": "2026-07-07T18:00:00",
+      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 80.0,
+      "height_percent": 6.7,
+      "date": "2026-07-07",
+      "display_date": "Tue, Jul 07",
+      "days_until": 7
     }
   ]
 }
