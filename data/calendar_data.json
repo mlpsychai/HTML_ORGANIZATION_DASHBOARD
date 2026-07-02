@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-07-01T19:27:13.754794-07:00",
+    "generated_at": "2026-07-02T01:41:54.581020-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-29",
-    "range_end": "2026-07-31",
+    "range_end": "2026-08-01",
     "total_events": 715,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-07-01",
-    "display_date": "Wednesday, July 01",
+    "date": "2026-07-02",
+    "display_date": "Thursday, July 02",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-07-01T05:30:00",
-        "end_iso": "2026-07-01T07:00:00",
+        "start_iso": "2026-07-02T05:30:00",
+        "end_iso": "2026-07-02T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -26,15 +26,15 @@
       },
       {
         "id": "040000008200E00074C5",
-        "title": "PROF Grant Sync UP meeting",
-        "start_time": "11 AM",
-        "end_time": "12 PM",
-        "start_iso": "2026-07-01T11:00:00",
-        "end_iso": "2026-07-01T12:00:00",
-        "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+        "title": "supervision",
+        "start_time": "12 PM",
+        "end_time": "1 PM",
+        "start_iso": "2026-07-02T12:00:00",
+        "end_iso": "2026-07-02T13:00:00",
+        "location": null,
         "category": "meeting",
         "color": "var(--accent-gold)",
-        "top_percent": 40.0,
+        "top_percent": 46.7,
         "height_percent": 6.7
       }
     ]
@@ -148,7 +148,7 @@
     "wednesday": {
       "date": "2026-07-01",
       "display_date": "Jul 01",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -181,7 +181,7 @@
     "thursday": {
       "date": "2026-07-02",
       "display_date": "Jul 02",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -263,38 +263,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-07-02T05:30:00",
-      "end_iso": "2026-07-02T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-07-02",
-      "display_date": "Thu, Jul 02",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "supervision",
-      "start_time": "12 PM",
-      "end_time": "1 PM",
-      "start_iso": "2026-07-02T12:00:00",
-      "end_iso": "2026-07-02T13:00:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 46.7,
-      "height_percent": 6.7,
-      "date": "2026-07-02",
-      "display_date": "Thu, Jul 02",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-07-03T05:30:00",
       "end_iso": "2026-07-03T07:00:00",
       "location": null,
@@ -304,7 +272,7 @@
       "height_percent": 10.0,
       "date": "2026-07-03",
       "display_date": "Fri, Jul 03",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "clgjip1j6lgj6b9pckrm",
@@ -320,7 +288,7 @@
       "height_percent": 6.7,
       "date": "2026-07-03",
       "display_date": "Fri, Jul 03",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -336,7 +304,7 @@
       "height_percent": 10.0,
       "date": "2026-07-06",
       "display_date": "Mon, Jul 06",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -352,7 +320,7 @@
       "height_percent": 10.0,
       "date": "2026-07-07",
       "display_date": "Tue, Jul 07",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -368,7 +336,7 @@
       "height_percent": 6.7,
       "date": "2026-07-07",
       "display_date": "Tue, Jul 07",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -384,7 +352,7 @@
       "height_percent": 6.7,
       "date": "2026-07-07",
       "display_date": "Tue, Jul 07",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "040000008200E00074C5",
@@ -400,7 +368,7 @@
       "height_percent": 6.7,
       "date": "2026-07-07",
       "display_date": "Tue, Jul 07",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "id": "3bjqv1i66grrj1air9ia",
@@ -416,6 +384,38 @@
       "height_percent": 6.7,
       "date": "2026-07-07",
       "display_date": "Tue, Jul 07",
+      "days_until": 5
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-07-08T05:30:00",
+      "end_iso": "2026-07-08T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-07-08",
+      "display_date": "Wed, Jul 08",
+      "days_until": 6
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "PROF Grant Sync UP meeting",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-07-08T11:00:00",
+      "end_iso": "2026-07-08T12:00:00",
+      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 40.0,
+      "height_percent": 6.7,
+      "date": "2026-07-08",
+      "display_date": "Wed, Jul 08",
       "days_until": 6
     }
   ]
