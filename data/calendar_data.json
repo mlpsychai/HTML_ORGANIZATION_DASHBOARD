@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-07-04T06:01:18.186337-07:00",
+    "generated_at": "2026-07-04T11:57:05.384860-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-06-29",
     "range_end": "2026-08-03",
-    "total_events": 716,
+    "total_events": 717,
     "calendars_synced": 2
   },
   "today": {
@@ -264,6 +264,22 @@
       "days_until": 3
     },
     {
+      "id": "ccpmcpj360rj4bb5chij",
+      "title": "New Client 11",
+      "start_time": "3 PM",
+      "end_time": "4 PM",
+      "start_iso": "2026-07-07T15:00:00",
+      "end_iso": "2026-07-07T16:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 66.7,
+      "height_percent": 6.7,
+      "date": "2026-07-07",
+      "display_date": "Tue, Jul 07",
+      "days_until": 3
+    },
+    {
       "id": "4lm6ne5ijlfeumpbu4or",
       "title": "CLIENT SESSION: ST",
       "start_time": "4 PM",
@@ -371,22 +387,6 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
-      "date": "2026-07-09",
-      "display_date": "Thu, Jul 09",
-      "days_until": 5
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "supervision",
-      "start_time": "12 PM",
-      "end_time": "1 PM",
-      "start_iso": "2026-07-09T12:00:00",
-      "end_iso": "2026-07-09T13:00:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 46.7,
-      "height_percent": 6.7,
       "date": "2026-07-09",
       "display_date": "Thu, Jul 09",
       "days_until": 5
