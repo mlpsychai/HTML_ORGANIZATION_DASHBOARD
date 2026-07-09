@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-07-09T07:34:03.906907-07:00",
+    "generated_at": "2026-07-09T12:22:33.312042-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-07-06",
     "range_end": "2026-08-08",
-    "total_events": 717,
+    "total_events": 718,
     "calendars_synced": 2
   },
   "today": {
@@ -35,6 +35,19 @@
         "category": "meeting",
         "color": "var(--accent-gold)",
         "top_percent": 46.7,
+        "height_percent": 6.7
+      },
+      {
+        "id": "cdgmapb3ccs6cb9p6tgj",
+        "title": "Dr. Strain chat",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-07-09T17:00:00",
+        "end_iso": "2026-07-09T18:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
         "height_percent": 6.7
       }
     ]
@@ -207,6 +220,19 @@
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 46.7,
+          "height_percent": 6.7
+        },
+        {
+          "id": "cdgmapb3ccs6cb9p6tgj",
+          "title": "Dr. Strain chat",
+          "start_time": "5 PM",
+          "end_time": "6 PM",
+          "start_iso": "2026-07-09T17:00:00",
+          "end_iso": "2026-07-09T18:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 80.0,
           "height_percent": 6.7
         }
       ]
