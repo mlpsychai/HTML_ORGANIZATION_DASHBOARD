@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T11:55:29.294578-07:00",
+    "generated_at": "2026-07-15T18:46:44.320771-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-07-13",
     "range_end": "2026-08-14",
-    "total_events": 722,
+    "total_events": 723,
     "calendars_synced": 2
   },
   "today": {
@@ -327,6 +327,22 @@
     },
     {
       "id": "040000008200E00074C5",
+      "title": "Sean GA Interview",
+      "start_time": "11 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-07-21T11:00:00",
+      "end_iso": "2026-07-21T11:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 40.0,
+      "height_percent": 4,
+      "date": "2026-07-21",
+      "display_date": "Tue, Jul 21",
+      "days_until": 6
+    },
+    {
+      "id": "040000008200E00074C5",
       "title": "EPS 700 Internship Preparation",
       "start_time": "12 PM",
       "end_time": "1 PM",
@@ -385,22 +401,6 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
-      "date": "2026-07-22",
-      "display_date": "Wed, Jul 22",
-      "days_until": 7
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "PROF Grant Sync UP meeting",
-      "start_time": "11 AM",
-      "end_time": "12 PM",
-      "start_iso": "2026-07-22T11:00:00",
-      "end_iso": "2026-07-22T12:00:00",
-      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 40.0,
-      "height_percent": 6.7,
       "date": "2026-07-22",
       "display_date": "Wed, Jul 22",
       "days_until": 7
