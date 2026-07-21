@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T06:17:48.404399-07:00",
+    "generated_at": "2026-07-21T12:03:56.983069-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-07-20",
     "range_end": "2026-08-20",
-    "total_events": 722,
+    "total_events": 723,
     "calendars_synced": 2
   },
   "today": {
@@ -23,6 +23,19 @@
         "color": "var(--accent-sage)",
         "top_percent": 3.3,
         "height_percent": 10.0
+      },
+      {
+        "id": "68q62cb5cdhmab9j70pj",
+        "title": "Pharmacy",
+        "start_time": "9 AM",
+        "end_time": "10 AM",
+        "start_iso": "2026-07-21T09:00:00",
+        "end_iso": "2026-07-21T10:00:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 26.7,
+        "height_percent": 6.7
       },
       {
         "id": "040000008200E00074C5",
@@ -116,6 +129,19 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "68q62cb5cdhmab9j70pj",
+          "title": "Pharmacy",
+          "start_time": "9 AM",
+          "end_time": "10 AM",
+          "start_iso": "2026-07-21T09:00:00",
+          "end_iso": "2026-07-21T10:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 26.7,
+          "height_percent": 6.7
         },
         {
           "id": "040000008200E00074C5",
