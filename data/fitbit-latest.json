@@ -1,36 +1,47 @@
 {
-  "date": "2026-07-24",
-  "updated_at": "2026-07-24T14:57:23Z",
+  "date": "2026-07-25",
+  "updated_at": "2026-07-25T14:38:03Z",
   "sleep": {
     "summary": {
-      "duration_minutes": 0,
+      "duration_minutes": 92,
       "efficiency": 0,
-      "score": 0,
-      "start_time": "",
-      "end_time": "",
+      "score": 88,
+      "start_time": "2026-07-24T22:52:00.000",
+      "end_time": "2026-07-25T00:37:00.000",
       "stages": {
         "deep": 0,
-        "light": 0,
+        "light": 92,
         "rem": 0,
-        "wake": 0
+        "wake": 13
       }
     },
-    "levels": []
+    "levels": [
+      {
+        "dateTime": "2026-07-24T22:52:00.000",
+        "level": "wake",
+        "seconds": 360
+      },
+      {
+        "dateTime": "2026-07-24T22:58:00.000",
+        "level": "light",
+        "seconds": 5940
+      }
+    ]
   },
   "activity": {
     "summary": {
-      "steps": 0,
-      "distance_miles": 0.0,
+      "steps": 14,
+      "distance_miles": 0.0102,
       "floors": 0,
       "elevation": 0.0,
       "calories": {
-        "total": 553,
-        "bmr": 551,
-        "active": 0
+        "total": 539,
+        "bmr": 529,
+        "active": 6
       },
       "minutes": {
-        "sedentary": 477,
-        "lightly_active": 0,
+        "sedentary": 359,
+        "lightly_active": 2,
         "fairly_active": 0,
         "very_active": 0
       },
@@ -47,13 +58,13 @@
   },
   "heart": {
     "summary": {
-      "resting_hr": 0,
+      "resting_hr": 60,
       "zones": [
         {
-          "caloriesOut": 552.77403799999968,
+          "caloriesOut": 538.80168400000071,
           "max": 107,
           "min": 30,
-          "minutes": 479,
+          "minutes": 460,
           "name": "Out of Range"
         },
         {
