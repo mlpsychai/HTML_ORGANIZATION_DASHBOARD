@@ -1,55 +1,81 @@
 {
   "meta": {
-    "generated_at": "2026-07-26T19:01:45.602636-07:00",
+    "generated_at": "2026-07-27T02:32:14.554595-07:00",
     "timezone": "America/Phoenix",
-    "range_start": "2026-07-20",
-    "range_end": "2026-08-25",
-    "total_events": 732,
+    "range_start": "2026-07-27",
+    "range_end": "2026-08-26",
+    "total_events": 725,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-07-26",
-    "display_date": "Sunday, July 26",
+    "date": "2026-07-27",
+    "display_date": "Monday, July 27",
     "events": [
       {
-        "id": "7i2ksp6rtoucnconrg2i",
-        "title": "APPIC essay draft due",
-        "start_time": "5 PM",
-        "end_time": "6 PM",
-        "start_iso": "2026-07-26T17:00:00",
-        "end_iso": "2026-07-26T18:00:00",
+        "id": "4vv5mirtsid1h5l6dhq9",
+        "title": "MANDATORIES",
+        "start_time": "5:30 AM",
+        "end_time": "7 AM",
+        "start_iso": "2026-07-27T05:30:00",
+        "end_iso": "2026-07-27T07:00:00",
+        "location": null,
+        "category": "personal",
+        "color": "var(--accent-sage)",
+        "top_percent": 3.3,
+        "height_percent": 10.0
+      },
+      {
+        "id": "64o38pj365h36b9m6tim",
+        "title": "No sherri",
+        "start_time": "8 AM",
+        "end_time": "9 AM",
+        "start_iso": "2026-07-27T08:00:00",
+        "end_iso": "2026-07-27T09:00:00",
         "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 80.0,
+        "top_percent": 20.0,
         "height_percent": 6.7
       }
     ]
   },
   "week": {
     "monday": {
-      "date": "2026-07-20",
-      "display_date": "Jul 20",
-      "is_today": false,
+      "date": "2026-07-27",
+      "display_date": "Jul 27",
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-20T05:30:00",
-          "end_iso": "2026-07-20T07:00:00",
+          "start_iso": "2026-07-27T05:30:00",
+          "end_iso": "2026-07-27T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "64o38pj365h36b9m6tim",
+          "title": "No sherri",
+          "start_time": "8 AM",
+          "end_time": "9 AM",
+          "start_iso": "2026-07-27T08:00:00",
+          "end_iso": "2026-07-27T09:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 20.0,
+          "height_percent": 6.7
         }
       ]
     },
     "tuesday": {
-      "date": "2026-07-21",
-      "display_date": "Jul 21",
+      "date": "2026-07-28",
+      "display_date": "Jul 28",
       "is_today": false,
       "events": [
         {
@@ -57,60 +83,21 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-21T05:30:00",
-          "end_iso": "2026-07-21T07:00:00",
+          "start_iso": "2026-07-28T05:30:00",
+          "end_iso": "2026-07-28T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
-        },
-        {
-          "id": "68q62cb5cdhmab9j70pj",
-          "title": "Pharmacy",
-          "start_time": "9 AM",
-          "end_time": "10 AM",
-          "start_iso": "2026-07-21T09:00:00",
-          "end_iso": "2026-07-21T10:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 26.7,
-          "height_percent": 6.7
-        },
-        {
-          "id": "040000008200E00074C5",
-          "title": "Sean GA Interview",
-          "start_time": "11 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-07-21T11:00:00",
-          "end_iso": "2026-07-21T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 40.0,
-          "height_percent": 4
-        },
-        {
-          "id": "040000008200E00074C5",
-          "title": "EPS 700 Internship Preparation",
-          "start_time": "12 PM",
-          "end_time": "1 PM",
-          "start_iso": "2026-07-21T12:00:00",
-          "end_iso": "2026-07-21T13:00:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 46.7,
-          "height_percent": 6.7
         },
         {
           "id": "4lm6ne5ijlfeumpbu4or",
           "title": "CLIENT SESSION: ST",
           "start_time": "4 PM",
           "end_time": "5 PM",
-          "start_iso": "2026-07-21T16:00:00",
-          "end_iso": "2026-07-21T17:00:00",
+          "start_iso": "2026-07-28T16:00:00",
+          "end_iso": "2026-07-28T17:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
@@ -122,8 +109,8 @@
           "title": "Wellness PSI: Counseling - Zoom Link Included",
           "start_time": "5 PM",
           "end_time": "6 PM",
-          "start_iso": "2026-07-21T17:00:00",
-          "end_iso": "2026-07-21T18:00:00",
+          "start_iso": "2026-07-28T17:00:00",
+          "end_iso": "2026-07-28T18:00:00",
           "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
           "category": "default",
           "color": "var(--text-secondary)",
@@ -133,17 +120,30 @@
       ]
     },
     "wednesday": {
-      "date": "2026-07-22",
-      "display_date": "Jul 22",
+      "date": "2026-07-29",
+      "display_date": "Jul 29",
       "is_today": false,
       "events": [
+        {
+          "id": "6gsj8cho6pgj2bb369i3",
+          "title": "No Sherri",
+          "start_time": "4:30 AM",
+          "end_time": "5:30 AM",
+          "start_iso": "2026-07-29T04:30:00",
+          "end_iso": "2026-07-29T05:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 0,
+          "height_percent": 4
+        },
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-22T05:30:00",
-          "end_iso": "2026-07-22T07:00:00",
+          "start_iso": "2026-07-29T05:30:00",
+          "end_iso": "2026-07-29T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -155,8 +155,8 @@
           "title": "PROF Grant Sync UP meeting",
           "start_time": "11 AM",
           "end_time": "12 PM",
-          "start_iso": "2026-07-22T11:00:00",
-          "end_iso": "2026-07-22T12:00:00",
+          "start_iso": "2026-07-29T11:00:00",
+          "end_iso": "2026-07-29T12:00:00",
           "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -164,23 +164,23 @@
           "height_percent": 6.7
         },
         {
-          "id": "cpi3ipj46hh68bb4cgo3",
-          "title": "FCC onboarding",
-          "start_time": "4 PM",
-          "end_time": "5 PM",
-          "start_iso": "2026-07-22T16:00:00",
-          "end_iso": "2026-07-22T17:00:00",
+          "id": "62ca4p672ojkshhd8e3o",
+          "title": "Group Supervision - FCC",
+          "start_time": "12 PM",
+          "end_time": "1 PM",
+          "start_iso": "2026-07-29T12:00:00",
+          "end_iso": "2026-07-29T13:00:00",
           "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 73.3,
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 46.7,
           "height_percent": 6.7
         }
       ]
     },
     "thursday": {
-      "date": "2026-07-23",
-      "display_date": "Jul 23",
+      "date": "2026-07-30",
+      "display_date": "Jul 30",
       "is_today": false,
       "events": [
         {
@@ -188,8 +188,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-23T05:30:00",
-          "end_iso": "2026-07-23T07:00:00",
+          "start_iso": "2026-07-30T05:30:00",
+          "end_iso": "2026-07-30T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -201,32 +201,19 @@
           "title": "supervision",
           "start_time": "12 PM",
           "end_time": "1 PM",
-          "start_iso": "2026-07-23T12:00:00",
-          "end_iso": "2026-07-23T13:00:00",
+          "start_iso": "2026-07-30T12:00:00",
+          "end_iso": "2026-07-30T13:00:00",
           "location": null,
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 46.7,
           "height_percent": 6.7
-        },
-        {
-          "id": "60s6ae1kc9i3abb36lhj",
-          "title": "Deidre client meeting",
-          "start_time": "3:30 PM",
-          "end_time": "4:30 PM",
-          "start_iso": "2026-07-23T15:30:00",
-          "end_iso": "2026-07-23T16:30:00",
-          "location": null,
-          "category": "clinical",
-          "color": "var(--accent-teal)",
-          "top_percent": 70.0,
-          "height_percent": 6.7
         }
       ]
     },
     "friday": {
-      "date": "2026-07-24",
-      "display_date": "Jul 24",
+      "date": "2026-07-31",
+      "display_date": "Jul 31",
       "is_today": false,
       "events": [
         {
@@ -234,8 +221,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-24T05:30:00",
-          "end_iso": "2026-07-24T07:00:00",
+          "start_iso": "2026-07-31T05:30:00",
+          "end_iso": "2026-07-31T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -245,65 +232,47 @@
       ]
     },
     "saturday": {
-      "date": "2026-07-25",
-      "display_date": "Jul 25",
+      "date": "2026-08-01",
+      "display_date": "Aug 01",
       "is_today": false,
-      "events": []
-    },
-    "sunday": {
-      "date": "2026-07-26",
-      "display_date": "Jul 26",
-      "is_today": true,
       "events": [
         {
-          "id": "7i2ksp6rtoucnconrg2i",
-          "title": "APPIC essay draft due",
-          "start_time": "5 PM",
-          "end_time": "6 PM",
-          "start_iso": "2026-07-26T17:00:00",
-          "end_iso": "2026-07-26T18:00:00",
+          "id": "61hm6dr6c5h30bb46krj",
+          "title": "TUTHILL CHC event",
+          "start_time": "12 AM",
+          "end_time": "12 AM",
+          "start_iso": "2026-08-01T00:00:00",
+          "end_iso": "2026-08-02T00:00:00",
+          "location": null,
+          "category": "clinical",
+          "color": "var(--accent-teal)",
+          "top_percent": 0,
+          "height_percent": 4
+        }
+      ]
+    },
+    "sunday": {
+      "date": "2026-08-02",
+      "display_date": "Aug 02",
+      "is_today": false,
+      "events": [
+        {
+          "id": "61im6e9h6osjgbb374q3",
+          "title": "ZION THRU HIKE",
+          "start_time": "12 AM",
+          "end_time": "12 AM",
+          "start_iso": "2026-08-02T00:00:00",
+          "end_iso": "2026-08-07T00:00:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
-          "top_percent": 80.0,
-          "height_percent": 6.7
+          "top_percent": 0,
+          "height_percent": 4
         }
       ]
     }
   },
   "upcoming": [
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-07-27T05:30:00",
-      "end_iso": "2026-07-27T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-07-27",
-      "display_date": "Mon, Jul 27",
-      "days_until": 1
-    },
-    {
-      "id": "64o38pj365h36b9m6tim",
-      "title": "No sherri",
-      "start_time": "8 AM",
-      "end_time": "9 AM",
-      "start_iso": "2026-07-27T08:00:00",
-      "end_iso": "2026-07-27T09:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 20.0,
-      "height_percent": 6.7,
-      "date": "2026-07-27",
-      "display_date": "Mon, Jul 27",
-      "days_until": 1
-    },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
@@ -318,7 +287,7 @@
       "height_percent": 10.0,
       "date": "2026-07-28",
       "display_date": "Tue, Jul 28",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -334,7 +303,7 @@
       "height_percent": 6.7,
       "date": "2026-07-28",
       "display_date": "Tue, Jul 28",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -350,7 +319,7 @@
       "height_percent": 6.7,
       "date": "2026-07-28",
       "display_date": "Tue, Jul 28",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "6gsj8cho6pgj2bb369i3",
@@ -366,7 +335,7 @@
       "height_percent": 4,
       "date": "2026-07-29",
       "display_date": "Wed, Jul 29",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -382,7 +351,7 @@
       "height_percent": 10.0,
       "date": "2026-07-29",
       "display_date": "Wed, Jul 29",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -398,7 +367,7 @@
       "height_percent": 6.7,
       "date": "2026-07-29",
       "display_date": "Wed, Jul 29",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "62ca4p672ojkshhd8e3o",
@@ -414,7 +383,7 @@
       "height_percent": 6.7,
       "date": "2026-07-29",
       "display_date": "Wed, Jul 29",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -430,6 +399,38 @@
       "height_percent": 10.0,
       "date": "2026-07-30",
       "display_date": "Thu, Jul 30",
+      "days_until": 3
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-07-30T12:00:00",
+      "end_iso": "2026-07-30T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-07-30",
+      "display_date": "Thu, Jul 30",
+      "days_until": 3
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-07-31T05:30:00",
+      "end_iso": "2026-07-31T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-07-31",
+      "display_date": "Fri, Jul 31",
       "days_until": 4
     }
   ]
