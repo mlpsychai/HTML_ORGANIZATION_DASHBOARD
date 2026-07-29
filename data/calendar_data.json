@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-07-28T12:08:24.000131-07:00",
+    "generated_at": "2026-07-28T18:45:37.056720-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-07-27",
     "range_end": "2026-08-27",
-    "total_events": 727,
+    "total_events": 728,
     "calendars_synced": 2
   },
   "today": {
@@ -211,6 +211,19 @@
         },
         {
           "id": "040000008200E00074C5",
+          "title": "dissertation meeting",
+          "start_time": "11 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-07-30T11:00:00",
+          "end_iso": "2026-07-30T12:00:00",
+          "location": "Teams",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 40.0,
+          "height_percent": 6.7
+        },
+        {
+          "id": "040000008200E00074C5",
           "title": "supervision",
           "start_time": "12 PM",
           "end_time": "1 PM",
@@ -368,6 +381,22 @@
     },
     {
       "id": "040000008200E00074C5",
+      "title": "dissertation meeting",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-07-30T11:00:00",
+      "end_iso": "2026-07-30T12:00:00",
+      "location": "Teams",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 40.0,
+      "height_percent": 6.7,
+      "date": "2026-07-30",
+      "display_date": "Thu, Jul 30",
+      "days_until": 2
+    },
+    {
+      "id": "040000008200E00074C5",
       "title": "supervision",
       "start_time": "12 PM",
       "end_time": "1 PM",
@@ -429,22 +458,6 @@
       "date": "2026-08-02",
       "display_date": "Sun, Aug 02",
       "days_until": 5
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-08-03T05:30:00",
-      "end_iso": "2026-08-03T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-08-03",
-      "display_date": "Mon, Aug 03",
-      "days_until": 6
     }
   ]
 }
