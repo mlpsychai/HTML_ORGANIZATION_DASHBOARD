@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-07-29T06:46:13.481891-07:00",
+    "generated_at": "2026-07-29T11:57:44.792061-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-07-27",
     "range_end": "2026-08-28",
-    "total_events": 729,
+    "total_events": 730,
     "calendars_synced": 2
   },
   "today": {
@@ -457,16 +457,16 @@
       "days_until": 6
     },
     {
-      "id": "4lm6ne5ijlfeumpbu4or",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "4 PM",
-      "end_time": "5 PM",
-      "start_iso": "2026-08-04T16:00:00",
-      "end_iso": "2026-08-04T17:00:00",
+      "id": "39jn3sjb90thfc8ie070",
+      "title": "CT: SH",
+      "start_time": "3 PM",
+      "end_time": "4 PM",
+      "start_iso": "2026-08-04T15:00:00",
+      "end_iso": "2026-08-04T16:00:00",
       "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 73.3,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 66.7,
       "height_percent": 6.7,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
