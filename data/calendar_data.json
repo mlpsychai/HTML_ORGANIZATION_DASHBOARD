@@ -1,54 +1,28 @@
 {
   "meta": {
-    "generated_at": "2026-07-30T18:55:41.412173-07:00",
+    "generated_at": "2026-07-31T01:34:43.626739-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-07-27",
-    "range_end": "2026-08-29",
+    "range_end": "2026-08-30",
     "total_events": 730,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-07-30",
-    "display_date": "Thursday, July 30",
+    "date": "2026-07-31",
+    "display_date": "Friday, July 31",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-07-30T05:30:00",
-        "end_iso": "2026-07-30T07:00:00",
+        "start_iso": "2026-07-31T05:30:00",
+        "end_iso": "2026-07-31T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
         "top_percent": 3.3,
         "height_percent": 10.0
-      },
-      {
-        "id": "040000008200E00074C5",
-        "title": "dissertation meeting",
-        "start_time": "11 AM",
-        "end_time": "12 PM",
-        "start_iso": "2026-07-30T11:00:00",
-        "end_iso": "2026-07-30T12:00:00",
-        "location": "Teams",
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 40.0,
-        "height_percent": 6.7
-      },
-      {
-        "id": "040000008200E00074C5",
-        "title": "supervision",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-07-30T12:00:00",
-        "end_iso": "2026-07-30T13:00:00",
-        "location": null,
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
       }
     ]
   },
@@ -194,7 +168,7 @@
     "thursday": {
       "date": "2026-07-30",
       "display_date": "Jul 30",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -240,7 +214,7 @@
     "friday": {
       "date": "2026-07-31",
       "display_date": "Jul 31",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -300,22 +274,6 @@
   },
   "upcoming": [
     {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-07-31T05:30:00",
-      "end_iso": "2026-07-31T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-07-31",
-      "display_date": "Fri, Jul 31",
-      "days_until": 1
-    },
-    {
       "id": "61hm6dr6c5h30bb46krj",
       "title": "TUTHILL CHC event",
       "start_time": "12 AM",
@@ -329,7 +287,7 @@
       "height_percent": 4,
       "date": "2026-08-01",
       "display_date": "Sat, Aug 01",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "61im6e9h6osjgbb374q3",
@@ -345,7 +303,7 @@
       "height_percent": 4,
       "date": "2026-08-02",
       "display_date": "Sun, Aug 02",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -361,7 +319,7 @@
       "height_percent": 10.0,
       "date": "2026-08-03",
       "display_date": "Mon, Aug 03",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "c9gjiohpc5j3eb9lcksj",
@@ -377,7 +335,7 @@
       "height_percent": 6.7,
       "date": "2026-08-03",
       "display_date": "Mon, Aug 03",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -393,7 +351,7 @@
       "height_percent": 10.0,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "39jn3sjb90thfc8ie070",
@@ -409,7 +367,7 @@
       "height_percent": 6.7,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -425,7 +383,7 @@
       "height_percent": 6.7,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -441,7 +399,7 @@
       "height_percent": 6.7,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -457,7 +415,23 @@
       "height_percent": 10.0,
       "date": "2026-08-05",
       "display_date": "Wed, Aug 05",
-      "days_until": 6
+      "days_until": 5
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "PROF Grant Sync UP meeting",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-08-05T11:00:00",
+      "end_iso": "2026-08-05T12:00:00",
+      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 40.0,
+      "height_percent": 6.7,
+      "date": "2026-08-05",
+      "display_date": "Wed, Aug 05",
+      "days_until": 5
     }
   ]
 }
