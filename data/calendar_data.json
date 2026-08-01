@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-07-31T12:08:25.076285-07:00",
+    "generated_at": "2026-07-31T18:56:30.650319-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-07-27",
     "range_end": "2026-08-30",
-    "total_events": 730,
+    "total_events": 731,
     "calendars_synced": 2
   },
   "today": {
@@ -268,6 +268,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 0,
           "height_percent": 4
+        },
+        {
+          "id": "clhj8p9pcoo38bb671ij",
+          "title": "Hiking with Claudia",
+          "start_time": "6:30 AM",
+          "end_time": "11 AM",
+          "start_iso": "2026-08-02T06:30:00",
+          "end_iso": "2026-08-02T11:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 10.0,
+          "height_percent": 30.0
         }
       ]
     }
@@ -301,6 +314,22 @@
       "color": "var(--text-secondary)",
       "top_percent": 0,
       "height_percent": 4,
+      "date": "2026-08-02",
+      "display_date": "Sun, Aug 02",
+      "days_until": 2
+    },
+    {
+      "id": "clhj8p9pcoo38bb671ij",
+      "title": "Hiking with Claudia",
+      "start_time": "6:30 AM",
+      "end_time": "11 AM",
+      "start_iso": "2026-08-02T06:30:00",
+      "end_iso": "2026-08-02T11:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 10.0,
+      "height_percent": 30.0,
       "date": "2026-08-02",
       "display_date": "Sun, Aug 02",
       "days_until": 2
@@ -413,22 +442,6 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
-      "date": "2026-08-05",
-      "display_date": "Wed, Aug 05",
-      "days_until": 5
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "PROF Grant Sync UP meeting",
-      "start_time": "11 AM",
-      "end_time": "12 PM",
-      "start_iso": "2026-08-05T11:00:00",
-      "end_iso": "2026-08-05T12:00:00",
-      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 40.0,
-      "height_percent": 6.7,
       "date": "2026-08-05",
       "display_date": "Wed, Aug 05",
       "days_until": 5
