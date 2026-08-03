@@ -1,57 +1,57 @@
 {
   "meta": {
-    "generated_at": "2026-08-02T18:55:31.687233-07:00",
+    "generated_at": "2026-08-03T02:22:42.632374-07:00",
     "timezone": "America/Phoenix",
-    "range_start": "2026-07-27",
-    "range_end": "2026-09-01",
-    "total_events": 735,
+    "range_start": "2026-08-03",
+    "range_end": "2026-09-02",
+    "total_events": 728,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-08-02",
-    "display_date": "Sunday, August 02",
+    "date": "2026-08-03",
+    "display_date": "Monday, August 03",
     "events": [
       {
-        "id": "61im6e9h6osjgbb374q3",
-        "title": "ZION THRU HIKE",
-        "start_time": "12 AM",
-        "end_time": "12 AM",
-        "start_iso": "2026-08-02T00:00:00",
-        "end_iso": "2026-08-07T00:00:00",
+        "id": "4vv5mirtsid1h5l6dhq9",
+        "title": "MANDATORIES",
+        "start_time": "5:30 AM",
+        "end_time": "7 AM",
+        "start_iso": "2026-08-03T05:30:00",
+        "end_iso": "2026-08-03T07:00:00",
         "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 0,
-        "height_percent": 4
+        "category": "personal",
+        "color": "var(--accent-sage)",
+        "top_percent": 3.3,
+        "height_percent": 10.0
       },
       {
-        "id": "clhj8p9pcoo38bb671ij",
-        "title": "Hiking with Claudia",
-        "start_time": "6:30 AM",
-        "end_time": "11 AM",
-        "start_iso": "2026-08-02T06:30:00",
-        "end_iso": "2026-08-02T11:00:00",
+        "id": "c9gjiohpc5j3eb9lcksj",
+        "title": "No Sherri",
+        "start_time": "8 AM",
+        "end_time": "9 AM",
+        "start_iso": "2026-08-03T08:00:00",
+        "end_iso": "2026-08-03T09:00:00",
         "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 10.0,
-        "height_percent": 30.0
+        "top_percent": 20.0,
+        "height_percent": 6.7
       }
     ]
   },
   "week": {
     "monday": {
-      "date": "2026-07-27",
-      "display_date": "Jul 27",
-      "is_today": false,
+      "date": "2026-08-03",
+      "display_date": "Aug 03",
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-27T05:30:00",
-          "end_iso": "2026-07-27T07:00:00",
+          "start_iso": "2026-08-03T05:30:00",
+          "end_iso": "2026-08-03T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -59,12 +59,12 @@
           "height_percent": 10.0
         },
         {
-          "id": "64o38pj365h36b9m6tim",
-          "title": "No sherri",
+          "id": "c9gjiohpc5j3eb9lcksj",
+          "title": "No Sherri",
           "start_time": "8 AM",
           "end_time": "9 AM",
-          "start_iso": "2026-07-27T08:00:00",
-          "end_iso": "2026-07-27T09:00:00",
+          "start_iso": "2026-08-03T08:00:00",
+          "end_iso": "2026-08-03T09:00:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
@@ -74,8 +74,8 @@
       ]
     },
     "tuesday": {
-      "date": "2026-07-28",
-      "display_date": "Jul 28",
+      "date": "2026-08-04",
+      "display_date": "Aug 04",
       "is_today": false,
       "events": [
         {
@@ -83,8 +83,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-28T05:30:00",
-          "end_iso": "2026-07-28T07:00:00",
+          "start_iso": "2026-08-04T05:30:00",
+          "end_iso": "2026-08-04T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -92,12 +92,25 @@
           "height_percent": 10.0
         },
         {
+          "id": "39jn3sjb90thfc8ie070",
+          "title": "CT: SH",
+          "start_time": "3 PM",
+          "end_time": "4 PM",
+          "start_iso": "2026-08-04T15:00:00",
+          "end_iso": "2026-08-04T16:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 66.7,
+          "height_percent": 6.7
+        },
+        {
           "id": "4lm6ne5ijlfeumpbu4or",
           "title": "CLIENT SESSION: ST",
           "start_time": "4 PM",
           "end_time": "5 PM",
-          "start_iso": "2026-07-28T16:00:00",
-          "end_iso": "2026-07-28T17:00:00",
+          "start_iso": "2026-08-04T16:00:00",
+          "end_iso": "2026-08-04T17:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
@@ -109,8 +122,8 @@
           "title": "Wellness PSI: Counseling - Zoom Link Included",
           "start_time": "5 PM",
           "end_time": "6 PM",
-          "start_iso": "2026-07-28T17:00:00",
-          "end_iso": "2026-07-28T18:00:00",
+          "start_iso": "2026-08-04T17:00:00",
+          "end_iso": "2026-08-04T18:00:00",
           "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
           "category": "default",
           "color": "var(--text-secondary)",
@@ -120,30 +133,17 @@
       ]
     },
     "wednesday": {
-      "date": "2026-07-29",
-      "display_date": "Jul 29",
+      "date": "2026-08-05",
+      "display_date": "Aug 05",
       "is_today": false,
       "events": [
-        {
-          "id": "6gsj8cho6pgj2bb369i3",
-          "title": "No Sherri",
-          "start_time": "4:30 AM",
-          "end_time": "5:30 AM",
-          "start_iso": "2026-07-29T04:30:00",
-          "end_iso": "2026-07-29T05:30:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 0,
-          "height_percent": 4
-        },
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-29T05:30:00",
-          "end_iso": "2026-07-29T07:00:00",
+          "start_iso": "2026-08-05T05:30:00",
+          "end_iso": "2026-08-05T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -155,32 +155,19 @@
           "title": "PROF Grant Sync UP meeting",
           "start_time": "11 AM",
           "end_time": "12 PM",
-          "start_iso": "2026-07-29T11:00:00",
-          "end_iso": "2026-07-29T12:00:00",
+          "start_iso": "2026-08-05T11:00:00",
+          "end_iso": "2026-08-05T12:00:00",
           "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 40.0,
           "height_percent": 6.7
-        },
-        {
-          "id": "62ca4p672ojkshhd8e3o",
-          "title": "Group Supervision - FCC",
-          "start_time": "12 PM",
-          "end_time": "1 PM",
-          "start_iso": "2026-07-29T12:00:00",
-          "end_iso": "2026-07-29T13:00:00",
-          "location": null,
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 46.7,
-          "height_percent": 6.7
         }
       ]
     },
     "thursday": {
-      "date": "2026-07-30",
-      "display_date": "Jul 30",
+      "date": "2026-08-06",
+      "display_date": "Aug 06",
       "is_today": false,
       "events": [
         {
@@ -188,8 +175,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-30T05:30:00",
-          "end_iso": "2026-07-30T07:00:00",
+          "start_iso": "2026-08-06T05:30:00",
+          "end_iso": "2026-08-06T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -198,24 +185,11 @@
         },
         {
           "id": "040000008200E00074C5",
-          "title": "dissertation meeting",
-          "start_time": "11 AM",
-          "end_time": "12 PM",
-          "start_iso": "2026-07-30T11:00:00",
-          "end_iso": "2026-07-30T12:00:00",
-          "location": "Teams",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 40.0,
-          "height_percent": 6.7
-        },
-        {
-          "id": "040000008200E00074C5",
           "title": "supervision",
           "start_time": "12 PM",
           "end_time": "1 PM",
-          "start_iso": "2026-07-30T12:00:00",
-          "end_iso": "2026-07-30T13:00:00",
+          "start_iso": "2026-08-06T12:00:00",
+          "end_iso": "2026-08-06T13:00:00",
           "location": null,
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -225,8 +199,8 @@
       ]
     },
     "friday": {
-      "date": "2026-07-31",
-      "display_date": "Jul 31",
+      "date": "2026-08-07",
+      "display_date": "Aug 07",
       "is_today": false,
       "events": [
         {
@@ -234,8 +208,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-07-31T05:30:00",
-          "end_iso": "2026-07-31T07:00:00",
+          "start_iso": "2026-08-07T05:30:00",
+          "end_iso": "2026-08-07T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -245,92 +219,19 @@
       ]
     },
     "saturday": {
-      "date": "2026-08-01",
-      "display_date": "Aug 01",
+      "date": "2026-08-08",
+      "display_date": "Aug 08",
       "is_today": false,
-      "events": [
-        {
-          "id": "61hm6dr6c5h30bb46krj",
-          "title": "TUTHILL CHC event",
-          "start_time": "12 AM",
-          "end_time": "12 AM",
-          "start_iso": "2026-08-01T00:00:00",
-          "end_iso": "2026-08-02T00:00:00",
-          "location": null,
-          "category": "clinical",
-          "color": "var(--accent-teal)",
-          "top_percent": 0,
-          "height_percent": 4
-        }
-      ]
+      "events": []
     },
     "sunday": {
-      "date": "2026-08-02",
-      "display_date": "Aug 02",
-      "is_today": true,
-      "events": [
-        {
-          "id": "61im6e9h6osjgbb374q3",
-          "title": "ZION THRU HIKE",
-          "start_time": "12 AM",
-          "end_time": "12 AM",
-          "start_iso": "2026-08-02T00:00:00",
-          "end_iso": "2026-08-07T00:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 0,
-          "height_percent": 4
-        },
-        {
-          "id": "clhj8p9pcoo38bb671ij",
-          "title": "Hiking with Claudia",
-          "start_time": "6:30 AM",
-          "end_time": "11 AM",
-          "start_iso": "2026-08-02T06:30:00",
-          "end_iso": "2026-08-02T11:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 10.0,
-          "height_percent": 30.0
-        }
-      ]
+      "date": "2026-08-09",
+      "display_date": "Aug 09",
+      "is_today": false,
+      "events": []
     }
   },
   "upcoming": [
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-08-03T05:30:00",
-      "end_iso": "2026-08-03T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-08-03",
-      "display_date": "Mon, Aug 03",
-      "days_until": 1
-    },
-    {
-      "id": "c9gjiohpc5j3eb9lcksj",
-      "title": "No Sherri",
-      "start_time": "8 AM",
-      "end_time": "9 AM",
-      "start_iso": "2026-08-03T08:00:00",
-      "end_iso": "2026-08-03T09:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 20.0,
-      "height_percent": 6.7,
-      "date": "2026-08-03",
-      "display_date": "Mon, Aug 03",
-      "days_until": 1
-    },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
@@ -345,7 +246,7 @@
       "height_percent": 10.0,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "39jn3sjb90thfc8ie070",
@@ -361,7 +262,7 @@
       "height_percent": 6.7,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -377,7 +278,7 @@
       "height_percent": 6.7,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -393,7 +294,7 @@
       "height_percent": 6.7,
       "date": "2026-08-04",
       "display_date": "Tue, Aug 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -409,7 +310,7 @@
       "height_percent": 10.0,
       "date": "2026-08-05",
       "display_date": "Wed, Aug 05",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -425,7 +326,7 @@
       "height_percent": 6.7,
       "date": "2026-08-05",
       "display_date": "Wed, Aug 05",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -441,7 +342,7 @@
       "height_percent": 10.0,
       "date": "2026-08-06",
       "display_date": "Thu, Aug 06",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "040000008200E00074C5",
@@ -457,7 +358,39 @@
       "height_percent": 6.7,
       "date": "2026-08-06",
       "display_date": "Thu, Aug 06",
+      "days_until": 3
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-08-07T05:30:00",
+      "end_iso": "2026-08-07T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-08-07",
+      "display_date": "Fri, Aug 07",
       "days_until": 4
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-08-10T05:30:00",
+      "end_iso": "2026-08-10T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-08-10",
+      "display_date": "Mon, Aug 10",
+      "days_until": 7
     }
   ]
 }
