@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-04T06:48:27.479902-07:00",
+    "generated_at": "2026-08-04T12:18:07.194073-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-08-03",
     "range_end": "2026-09-03",
@@ -51,19 +51,6 @@
         "height_percent": 6.7
       },
       {
-        "id": "73hn56b9fne1i455tst3",
-        "title": "Wellness PSI: Counseling - Zoom Link Included",
-        "start_time": "5 PM",
-        "end_time": "6 PM",
-        "start_iso": "2026-08-04T17:00:00",
-        "end_iso": "2026-08-04T18:00:00",
-        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 80.0,
-        "height_percent": 6.7
-      },
-      {
         "id": "6him6p9k6dhmcbb5chhj",
         "title": "New Client intake",
         "start_time": "5 PM",
@@ -73,6 +60,19 @@
         "location": null,
         "category": "clinical",
         "color": "var(--accent-teal)",
+        "top_percent": 80.0,
+        "height_percent": 6.7
+      },
+      {
+        "id": "73hn56b9fne1i455tst3",
+        "title": "Wellness PSI: Counseling - Zoom Link Included",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-08-04T17:00:00",
+        "end_iso": "2026-08-04T18:00:00",
+        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "category": "default",
+        "color": "var(--text-secondary)",
         "top_percent": 80.0,
         "height_percent": 6.7
       }
@@ -170,19 +170,6 @@
           "height_percent": 6.7
         },
         {
-          "id": "73hn56b9fne1i455tst3",
-          "title": "Wellness PSI: Counseling - Zoom Link Included",
-          "start_time": "5 PM",
-          "end_time": "6 PM",
-          "start_iso": "2026-08-04T17:00:00",
-          "end_iso": "2026-08-04T18:00:00",
-          "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 80.0,
-          "height_percent": 6.7
-        },
-        {
           "id": "6him6p9k6dhmcbb5chhj",
           "title": "New Client intake",
           "start_time": "5 PM",
@@ -192,6 +179,19 @@
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
+          "top_percent": 80.0,
+          "height_percent": 6.7
+        },
+        {
+          "id": "73hn56b9fne1i455tst3",
+          "title": "Wellness PSI: Counseling - Zoom Link Included",
+          "start_time": "5 PM",
+          "end_time": "6 PM",
+          "start_iso": "2026-08-04T17:00:00",
+          "end_iso": "2026-08-04T18:00:00",
+          "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+          "category": "default",
+          "color": "var(--text-secondary)",
           "top_percent": 80.0,
           "height_percent": 6.7
         }
