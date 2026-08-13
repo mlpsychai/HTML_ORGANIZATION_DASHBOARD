@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-08-12T18:08:52.066615-07:00",
+    "generated_at": "2026-08-13T00:12:49.380452-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-08-10",
-    "range_end": "2026-09-11",
+    "range_end": "2026-09-12",
     "total_events": 782,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-08-12",
-    "display_date": "Wednesday, August 12",
+    "date": "2026-08-13",
+    "display_date": "Thursday, August 13",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-08-12T05:30:00",
-        "end_iso": "2026-08-12T07:00:00",
+        "start_iso": "2026-08-13T05:30:00",
+        "end_iso": "2026-08-13T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,82 +25,56 @@
         "height_percent": 10.0
       },
       {
-        "id": "6csj0d1g6gomab9l60p6",
-        "title": "Email for hunter on letterhead",
-        "start_time": "9 AM",
-        "end_time": "10 AM",
-        "start_iso": "2026-08-12T09:00:00",
-        "end_iso": "2026-08-12T10:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 26.7,
-        "height_percent": 6.7
-      },
-      {
-        "id": "6g18687r70fr2hra9apl",
-        "title": "CHC am Clients with Sherri",
-        "start_time": "9 AM",
-        "end_time": "12 PM",
-        "start_iso": "2026-08-12T09:00:00",
-        "end_iso": "2026-08-12T12:00:00",
-        "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 26.7,
-        "height_percent": 20.0
-      },
-      {
         "id": "040000008200E00074C5",
-        "title": "PROF Grant Sync UP meeting",
-        "start_time": "11 AM",
-        "end_time": "12 PM",
-        "start_iso": "2026-08-12T11:00:00",
-        "end_iso": "2026-08-12T12:00:00",
-        "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+        "title": "supervision",
+        "start_time": "12 PM",
+        "end_time": "1 PM",
+        "start_iso": "2026-08-13T12:00:00",
+        "end_iso": "2026-08-13T13:00:00",
+        "location": null,
         "category": "meeting",
         "color": "var(--accent-gold)",
-        "top_percent": 40.0,
+        "top_percent": 46.7,
         "height_percent": 6.7
       },
       {
-        "id": "4atv4dvtjj5mfubplc4t",
-        "title": "EPS 621 - MARRIAGE\\, FAM & RELNSHP COUNS",
+        "id": "7ev633obturdbfl96u30",
+        "title": "APPIC CLASS",
         "start_time": "12:45 PM",
-        "end_time": "2:15 PM",
-        "start_iso": "2026-08-12T12:45:00",
-        "end_iso": "2026-08-12T14:15:00",
+        "end_time": "2 PM",
+        "start_iso": "2026-08-13T12:45:00",
+        "end_iso": "2026-08-13T14:00:00",
         "location": null,
         "category": "class",
         "color": "var(--text-muted)",
         "top_percent": 51.7,
-        "height_percent": 10.0
+        "height_percent": 8.3
       },
       {
-        "id": "cooj2cb2clhmcbb36hhm",
-        "title": "Soup with Stephanie",
-        "start_time": "4 PM",
-        "end_time": "5 PM",
-        "start_iso": "2026-08-12T16:00:00",
-        "end_iso": "2026-08-12T17:00:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 73.3,
-        "height_percent": 6.7
-      },
-      {
-        "id": "619rkdfbfg6idigijo2f",
-        "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
-        "start_time": "4 PM",
-        "end_time": "6:30 PM",
-        "start_iso": "2026-08-12T16:00:00",
-        "end_iso": "2026-08-12T18:30:00",
-        "location": null,
+        "id": "040000008200E00074C5",
+        "title": "EPS 700 Internship Prep Meeting",
+        "start_time": "12:45 PM",
+        "end_time": "2 PM",
+        "start_iso": "2026-08-13T12:45:00",
+        "end_iso": "2026-08-13T14:00:00",
+        "location": "Microsoft Teams Meeting",
         "category": "class",
         "color": "var(--text-muted)",
-        "top_percent": 73.3,
-        "height_percent": 16.7
+        "top_percent": 51.7,
+        "height_percent": 8.3
+      },
+      {
+        "id": "_60q30c1g60o30e1i60o",
+        "title": "EPS 700 Internship Prep Meeting",
+        "start_time": "12:45 PM",
+        "end_time": "2 PM",
+        "start_iso": "2026-08-13T12:45:00",
+        "end_iso": "2026-08-13T14:00:00",
+        "location": "Microsoft Teams Meeting",
+        "category": "class",
+        "color": "var(--text-muted)",
+        "top_percent": 51.7,
+        "height_percent": 8.3
       }
     ]
   },
@@ -239,7 +213,7 @@
     "wednesday": {
       "date": "2026-08-12",
       "display_date": "Aug 12",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -337,7 +311,7 @@
     "thursday": {
       "date": "2026-08-13",
       "display_date": "Aug 13",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -379,7 +353,7 @@
           "height_percent": 8.3
         },
         {
-          "id": "_60q30c1g60o30e1i60o",
+          "id": "040000008200E00074C5",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -392,7 +366,7 @@
           "height_percent": 8.3
         },
         {
-          "id": "040000008200E00074C5",
+          "id": "_60q30c1g60o30e1i60o",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -485,86 +459,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-08-13T05:30:00",
-      "end_iso": "2026-08-13T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-08-13",
-      "display_date": "Thu, Aug 13",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "supervision",
-      "start_time": "12 PM",
-      "end_time": "1 PM",
-      "start_iso": "2026-08-13T12:00:00",
-      "end_iso": "2026-08-13T13:00:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 46.7,
-      "height_percent": 6.7,
-      "date": "2026-08-13",
-      "display_date": "Thu, Aug 13",
-      "days_until": 1
-    },
-    {
-      "id": "7ev633obturdbfl96u30",
-      "title": "APPIC CLASS",
-      "start_time": "12:45 PM",
-      "end_time": "2 PM",
-      "start_iso": "2026-08-13T12:45:00",
-      "end_iso": "2026-08-13T14:00:00",
-      "location": null,
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 51.7,
-      "height_percent": 8.3,
-      "date": "2026-08-13",
-      "display_date": "Thu, Aug 13",
-      "days_until": 1
-    },
-    {
-      "id": "_60q30c1g60o30e1i60o",
-      "title": "EPS 700 Internship Prep Meeting",
-      "start_time": "12:45 PM",
-      "end_time": "2 PM",
-      "start_iso": "2026-08-13T12:45:00",
-      "end_iso": "2026-08-13T14:00:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 51.7,
-      "height_percent": 8.3,
-      "date": "2026-08-13",
-      "display_date": "Thu, Aug 13",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "EPS 700 Internship Prep Meeting",
-      "start_time": "12:45 PM",
-      "end_time": "2 PM",
-      "start_iso": "2026-08-13T12:45:00",
-      "end_iso": "2026-08-13T14:00:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "class",
-      "color": "var(--text-muted)",
-      "top_percent": 51.7,
-      "height_percent": 8.3,
-      "date": "2026-08-13",
-      "display_date": "Thu, Aug 13",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-08-14T05:30:00",
       "end_iso": "2026-08-14T07:00:00",
       "location": null,
@@ -574,7 +468,7 @@
       "height_percent": 10.0,
       "date": "2026-08-14",
       "display_date": "Fri, Aug 14",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4lm6ne5ijlfeumpbu4or",
@@ -590,7 +484,7 @@
       "height_percent": 6.7,
       "date": "2026-08-14",
       "display_date": "Fri, Aug 14",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "p51ir1veck9o3c983c10",
@@ -606,7 +500,7 @@
       "height_percent": 6.7,
       "date": "2026-08-14",
       "display_date": "Fri, Aug 14",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "ccqj8c36cdi38bb16cs6",
@@ -622,7 +516,7 @@
       "height_percent": 4,
       "date": "2026-08-15",
       "display_date": "Sat, Aug 15",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -638,7 +532,87 @@
       "height_percent": 10.0,
       "date": "2026-08-17",
       "display_date": "Mon, Aug 17",
+      "days_until": 4
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-08-18T05:30:00",
+      "end_iso": "2026-08-18T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-08-18",
+      "display_date": "Tue, Aug 18",
       "days_until": 5
+    },
+    {
+      "id": "7mef6tuiit6e43ifnrom",
+      "title": "CT: S-CS",
+      "start_time": "3 PM",
+      "end_time": "4 PM",
+      "start_iso": "2026-08-18T15:00:00",
+      "end_iso": "2026-08-18T16:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 66.7,
+      "height_percent": 6.7,
+      "date": "2026-08-18",
+      "display_date": "Tue, Aug 18",
+      "days_until": 5
+    },
+    {
+      "id": "4lm6ne5ijlfeumpbu4or",
+      "title": "CLIENT SESSION: ST",
+      "start_time": "4 PM",
+      "end_time": "5 PM",
+      "start_iso": "2026-08-18T16:00:00",
+      "end_iso": "2026-08-18T17:00:00",
+      "location": null,
+      "category": "clinical",
+      "color": "var(--accent-teal)",
+      "top_percent": 73.3,
+      "height_percent": 6.7,
+      "date": "2026-08-18",
+      "display_date": "Tue, Aug 18",
+      "days_until": 5
+    },
+    {
+      "id": "73hn56b9fne1i455tst3",
+      "title": "Wellness PSI: Counseling - Zoom Link Included",
+      "start_time": "5 PM",
+      "end_time": "6 PM",
+      "start_iso": "2026-08-18T17:00:00",
+      "end_iso": "2026-08-18T18:00:00",
+      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 80.0,
+      "height_percent": 6.7,
+      "date": "2026-08-18",
+      "display_date": "Tue, Aug 18",
+      "days_until": 5
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-08-19T05:30:00",
+      "end_iso": "2026-08-19T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-08-19",
+      "display_date": "Wed, Aug 19",
+      "days_until": 6
     }
   ]
 }
