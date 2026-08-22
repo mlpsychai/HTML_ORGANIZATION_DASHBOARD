@@ -1,56 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-08-21T23:22:29.636692-07:00",
+    "generated_at": "2026-08-22T05:19:41.485445-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-08-17",
-    "range_end": "2026-09-20",
-    "total_events": 799,
+    "range_end": "2026-09-21",
+    "total_events": 800,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-08-21",
-    "display_date": "Friday, August 21",
-    "events": [
-      {
-        "id": "4vv5mirtsid1h5l6dhq9",
-        "title": "MANDATORIES",
-        "start_time": "5:30 AM",
-        "end_time": "7 AM",
-        "start_iso": "2026-08-21T05:30:00",
-        "end_iso": "2026-08-21T07:00:00",
-        "location": null,
-        "category": "personal",
-        "color": "var(--accent-sage)",
-        "top_percent": 3.3,
-        "height_percent": 10.0
-      },
-      {
-        "id": "70rmcchi6tj68bb575h6",
-        "title": "School Psychology COMP",
-        "start_time": "8 AM",
-        "end_time": "12 PM",
-        "start_iso": "2026-08-21T08:00:00",
-        "end_iso": "2026-08-21T12:00:00",
-        "location": "Adel Mathematics Building\\, which is located on NAU North Campus\\, Building #26\\; Room 222",
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 20.0,
-        "height_percent": 26.7
-      },
-      {
-        "id": "p51ir1veck9o3c983c10",
-        "title": "CLIENT SESSION: ST",
-        "start_time": "2 PM",
-        "end_time": "3 PM",
-        "start_iso": "2026-08-21T14:00:00",
-        "end_iso": "2026-08-21T15:00:00",
-        "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 60.0,
-        "height_percent": 6.7
-      }
-    ]
+    "date": "2026-08-22",
+    "display_date": "Saturday, August 22",
+    "events": []
   },
   "week": {
     "monday": {
@@ -93,19 +53,6 @@
         },
         {
           "id": "040000008200E00074C5",
-          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-08-18T10:00:00",
-          "end_iso": "2026-08-18T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
-          "id": "040000008200E00074C5",
           "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
           "start_time": "10 AM",
           "end_time": "11:30 AM",
@@ -114,6 +61,19 @@
           "location": "Microsoft Teams Meeting",
           "category": "default",
           "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-08-18T10:00:00",
+          "end_iso": "2026-08-18T11:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -331,7 +291,7 @@
     "friday": {
       "date": "2026-08-21",
       "display_date": "Aug 21",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -377,7 +337,7 @@
     "saturday": {
       "date": "2026-08-22",
       "display_date": "Aug 22",
-      "is_today": false,
+      "is_today": true,
       "events": []
     },
     "sunday": {
@@ -402,7 +362,7 @@
       "height_percent": 10.0,
       "date": "2026-08-24",
       "display_date": "Mon, Aug 24",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "7li5vjvkc7oal3dgjt8l",
@@ -418,7 +378,7 @@
       "height_percent": 46.7,
       "date": "2026-08-24",
       "display_date": "Mon, Aug 24",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -434,7 +394,7 @@
       "height_percent": 10.0,
       "date": "2026-08-25",
       "display_date": "Tue, Aug 25",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "6tij0opjcphj0b9pcor6",
@@ -450,39 +410,7 @@
       "height_percent": 6.7,
       "date": "2026-08-25",
       "display_date": "Tue, Aug 25",
-      "days_until": 4
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-08-25T10:00:00",
-      "end_iso": "2026-08-25T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-08-25",
-      "display_date": "Tue, Aug 25",
-      "days_until": 4
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-08-25T10:00:00",
-      "end_iso": "2026-08-25T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-08-25",
-      "display_date": "Tue, Aug 25",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "040000008200E00074C5",
@@ -498,7 +426,39 @@
       "height_percent": 10.0,
       "date": "2026-08-25",
       "display_date": "Tue, Aug 25",
-      "days_until": 4
+      "days_until": 3
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-08-25T10:00:00",
+      "end_iso": "2026-08-25T11:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-08-25",
+      "display_date": "Tue, Aug 25",
+      "days_until": 3
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-08-25T10:00:00",
+      "end_iso": "2026-08-25T11:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-08-25",
+      "display_date": "Tue, Aug 25",
+      "days_until": 3
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -514,7 +474,7 @@
       "height_percent": 6.7,
       "date": "2026-08-25",
       "display_date": "Tue, Aug 25",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -530,7 +490,7 @@
       "height_percent": 10.0,
       "date": "2026-08-26",
       "display_date": "Wed, Aug 26",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "040000008200E00074C5",
@@ -546,7 +506,7 @@
       "height_percent": 10.0,
       "date": "2026-08-26",
       "display_date": "Wed, Aug 26",
-      "days_until": 5
+      "days_until": 4
     }
   ]
 }
