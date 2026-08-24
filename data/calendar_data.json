@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-08-24T05:27:58.635851-07:00",
+    "generated_at": "2026-08-24T11:25:50.446575-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-08-24",
     "range_end": "2026-09-23",
-    "total_events": 793,
+    "total_events": 787,
     "calendars_synced": 2
   },
   "today": {
@@ -92,32 +92,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "6tij0opjcphj0b9pcor6",
-          "title": "Chris Therapy",
-          "start_time": "10 AM",
-          "end_time": "11 AM",
-          "start_iso": "2026-08-25T10:00:00",
-          "end_iso": "2026-08-25T11:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 33.3,
-          "height_percent": 6.7
-        },
-        {
-          "id": "040000008200E00074C5",
-          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-08-25T10:00:00",
-          "end_iso": "2026-08-25T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
           "start_time": "10 AM",
@@ -142,6 +116,32 @@
           "color": "var(--accent-gold)",
           "top_percent": 33.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-08-25T10:00:00",
+          "end_iso": "2026-08-25T11:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "c9ijgc1h6tij4b9h6hgj",
+          "title": "Stephanie",
+          "start_time": "1 PM",
+          "end_time": "2 PM",
+          "start_iso": "2026-08-25T13:00:00",
+          "end_iso": "2026-08-25T14:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 53.3,
+          "height_percent": 6.7
         },
         {
           "id": "73hn56b9fne1i455tst3",
@@ -216,32 +216,6 @@
           "height_percent": 6.7
         },
         {
-          "id": "4atv4dvtjj5mfubplc4t",
-          "title": "EPS 621 - MARRIAGE\\, FAM & RELNSHP COUNS",
-          "start_time": "12:45 PM",
-          "end_time": "2:15 PM",
-          "start_iso": "2026-08-26T12:45:00",
-          "end_iso": "2026-08-26T14:15:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 51.7,
-          "height_percent": 10.0
-        },
-        {
-          "id": "4atv4dvtjj5mfubplc4t",
-          "title": "EPS 621 - MARRIAGE\\, FAM & RELNSHP COUNS",
-          "start_time": "12:45 PM",
-          "end_time": "2:15 PM",
-          "start_iso": "2026-08-26T12:45:00",
-          "end_iso": "2026-08-26T14:15:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 51.7,
-          "height_percent": 10.0
-        },
-        {
           "id": "619rkdfbfg6idigijo2f",
           "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
           "start_time": "4 PM",
@@ -275,19 +249,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "c9i66dr26ph38b9l6dhm",
-          "title": "Supervision with Stephanie",
-          "start_time": "11 AM",
-          "end_time": "12 PM",
-          "start_iso": "2026-08-27T11:00:00",
-          "end_iso": "2026-08-27T12:00:00",
-          "location": null,
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 40.0,
-          "height_percent": 6.7
-        },
-        {
           "id": "74om2cj2c9i3ab9i6srj",
           "title": "Chris therapy",
           "start_time": "11 AM",
@@ -297,6 +258,19 @@
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
+          "top_percent": 40.0,
+          "height_percent": 6.7
+        },
+        {
+          "id": "c9i66dr26ph38b9l6dhm",
+          "title": "Supervision with Stephanie",
+          "start_time": "11 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-08-27T11:00:00",
+          "end_iso": "2026-08-27T12:00:00",
+          "location": null,
+          "category": "meeting",
+          "color": "var(--accent-gold)",
           "top_percent": 40.0,
           "height_percent": 6.7
         },
@@ -314,7 +288,7 @@
           "height_percent": 6.7
         },
         {
-          "id": "_60q30c1g60o30e1i60o",
+          "id": "040000008200E00074C5",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -327,7 +301,7 @@
           "height_percent": 8.3
         },
         {
-          "id": "040000008200E00074C5",
+          "id": "_60q30c1g60o30e1i60o",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -418,38 +392,6 @@
       "days_until": 1
     },
     {
-      "id": "6tij0opjcphj0b9pcor6",
-      "title": "Chris Therapy",
-      "start_time": "10 AM",
-      "end_time": "11 AM",
-      "start_iso": "2026-08-25T10:00:00",
-      "end_iso": "2026-08-25T11:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 33.3,
-      "height_percent": 6.7,
-      "date": "2026-08-25",
-      "display_date": "Tue, Aug 25",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-08-25T10:00:00",
-      "end_iso": "2026-08-25T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-08-25",
-      "display_date": "Tue, Aug 25",
-      "days_until": 1
-    },
-    {
       "id": "040000008200E00074C5",
       "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
       "start_time": "10 AM",
@@ -477,6 +419,38 @@
       "color": "var(--accent-gold)",
       "top_percent": 33.3,
       "height_percent": 10.0,
+      "date": "2026-08-25",
+      "display_date": "Tue, Aug 25",
+      "days_until": 1
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-08-25T10:00:00",
+      "end_iso": "2026-08-25T11:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-08-25",
+      "display_date": "Tue, Aug 25",
+      "days_until": 1
+    },
+    {
+      "id": "c9ijgc1h6tij4b9h6hgj",
+      "title": "Stephanie",
+      "start_time": "1 PM",
+      "end_time": "2 PM",
+      "start_iso": "2026-08-25T13:00:00",
+      "end_iso": "2026-08-25T14:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 53.3,
+      "height_percent": 6.7,
       "date": "2026-08-25",
       "display_date": "Tue, Aug 25",
       "days_until": 1
