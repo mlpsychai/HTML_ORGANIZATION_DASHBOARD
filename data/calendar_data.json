@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-08-26T05:30:46.312386-07:00",
+    "generated_at": "2026-08-26T12:37:56.481467-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-08-24",
     "range_end": "2026-09-25",
-    "total_events": 797,
+    "total_events": 798,
     "calendars_synced": 2
   },
   "today": {
@@ -170,19 +170,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "_60q30c1g60o30e1i60o",
-          "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-08-25T10:00:00",
-          "end_iso": "2026-08-25T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
           "start_time": "10 AM",
@@ -197,6 +184,19 @@
         },
         {
           "id": "040000008200E00074C5",
+          "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-08-25T10:00:00",
+          "end_iso": "2026-08-25T11:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "_60q30c1g60o30e1i60o",
           "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
           "start_time": "10 AM",
           "end_time": "11:30 AM",
@@ -366,7 +366,7 @@
           "height_percent": 6.7
         },
         {
-          "id": "040000008200E00074C5",
+          "id": "_60q30c1g60o30e1i60o",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -379,7 +379,7 @@
           "height_percent": 8.3
         },
         {
-          "id": "_60q30c1g60o30e1i60o",
+          "id": "040000008200E00074C5",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -410,6 +410,19 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "60o3gohh74ojgbb560r3",
+          "title": "Record an intake",
+          "start_time": "12:30 PM",
+          "end_time": "1:30 PM",
+          "start_iso": "2026-08-28T12:30:00",
+          "end_iso": "2026-08-28T13:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 50.0,
+          "height_percent": 6.7
         },
         {
           "id": "p51ir1veck9o3c983c10",
@@ -502,7 +515,7 @@
       "days_until": 1
     },
     {
-      "id": "040000008200E00074C5",
+      "id": "_60q30c1g60o30e1i60o",
       "title": "EPS 700 Internship Prep Meeting",
       "start_time": "12:45 PM",
       "end_time": "2 PM",
@@ -518,7 +531,7 @@
       "days_until": 1
     },
     {
-      "id": "_60q30c1g60o30e1i60o",
+      "id": "040000008200E00074C5",
       "title": "EPS 700 Internship Prep Meeting",
       "start_time": "12:45 PM",
       "end_time": "2 PM",
@@ -545,6 +558,22 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
+      "date": "2026-08-28",
+      "display_date": "Fri, Aug 28",
+      "days_until": 2
+    },
+    {
+      "id": "60o3gohh74ojgbb560r3",
+      "title": "Record an intake",
+      "start_time": "12:30 PM",
+      "end_time": "1:30 PM",
+      "start_iso": "2026-08-28T12:30:00",
+      "end_iso": "2026-08-28T13:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 50.0,
+      "height_percent": 6.7,
       "date": "2026-08-28",
       "display_date": "Fri, Aug 28",
       "days_until": 2
@@ -596,22 +625,6 @@
       "date": "2026-08-31",
       "display_date": "Mon, Aug 31",
       "days_until": 5
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-09-01T05:30:00",
-      "end_iso": "2026-09-01T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-09-01",
-      "display_date": "Tue, Sep 01",
-      "days_until": 6
     }
   ]
 }
