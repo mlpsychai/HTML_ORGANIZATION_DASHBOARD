@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-26T12:37:56.481467-07:00",
+    "generated_at": "2026-08-26T22:51:21.951184-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-08-24",
     "range_end": "2026-09-25",
@@ -54,14 +54,14 @@
         "id": "3u9h96k3v4urkq56vr4i",
         "title": "EPS 621 - Marriage\\, Family\\, and Relationship Counseling",
         "start_time": "12:45 PM",
-        "end_time": "2 PM",
+        "end_time": "2:30 PM",
         "start_iso": "2026-08-26T12:45:00",
-        "end_iso": "2026-08-26T14:00:00",
+        "end_iso": "2026-08-26T14:30:00",
         "location": null,
         "category": "class",
         "color": "var(--text-muted)",
         "top_percent": 51.7,
-        "height_percent": 8.3
+        "height_percent": 11.7
       },
       {
         "id": "619rkdfbfg6idigijo2f",
@@ -170,6 +170,19 @@
           "height_percent": 10.0
         },
         {
+          "id": "_60q30c1g60o30e1i60o",
+          "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-08-25T10:00:00",
+          "end_iso": "2026-08-25T11:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
           "id": "040000008200E00074C5",
           "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
           "start_time": "10 AM",
@@ -184,19 +197,6 @@
         },
         {
           "id": "040000008200E00074C5",
-          "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-08-25T10:00:00",
-          "end_iso": "2026-08-25T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
-          "id": "_60q30c1g60o30e1i60o",
           "title": "Tues morning group SV with NAU interns - 10:00-11:30am - Fall 2026",
           "start_time": "10 AM",
           "end_time": "11:30 AM",
@@ -284,14 +284,14 @@
           "id": "3u9h96k3v4urkq56vr4i",
           "title": "EPS 621 - Marriage\\, Family\\, and Relationship Counseling",
           "start_time": "12:45 PM",
-          "end_time": "2 PM",
+          "end_time": "2:30 PM",
           "start_iso": "2026-08-26T12:45:00",
-          "end_iso": "2026-08-26T14:00:00",
+          "end_iso": "2026-08-26T14:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
           "top_percent": 51.7,
-          "height_percent": 8.3
+          "height_percent": 11.7
         },
         {
           "id": "619rkdfbfg6idigijo2f",
@@ -366,7 +366,7 @@
           "height_percent": 6.7
         },
         {
-          "id": "_60q30c1g60o30e1i60o",
+          "id": "040000008200E00074C5",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -379,7 +379,7 @@
           "height_percent": 8.3
         },
         {
-          "id": "040000008200E00074C5",
+          "id": "_60q30c1g60o30e1i60o",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -515,7 +515,7 @@
       "days_until": 1
     },
     {
-      "id": "_60q30c1g60o30e1i60o",
+      "id": "040000008200E00074C5",
       "title": "EPS 700 Internship Prep Meeting",
       "start_time": "12:45 PM",
       "end_time": "2 PM",
@@ -531,7 +531,7 @@
       "days_until": 1
     },
     {
-      "id": "040000008200E00074C5",
+      "id": "_60q30c1g60o30e1i60o",
       "title": "EPS 700 Internship Prep Meeting",
       "start_time": "12:45 PM",
       "end_time": "2 PM",
