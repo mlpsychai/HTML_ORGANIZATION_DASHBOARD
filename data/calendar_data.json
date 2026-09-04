@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-03T13:17:54.060510-07:00",
+    "generated_at": "2026-09-03T19:04:49.651684-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-08-31",
     "range_end": "2026-10-03",
@@ -51,7 +51,7 @@
         "height_percent": 6.7
       },
       {
-        "id": "_60q30c1g60o30e1i60o",
+        "id": "040000008200E00074C5",
         "title": "EPS 700 Internship Prep Meeting",
         "start_time": "12:45 PM",
         "end_time": "2 PM",
@@ -64,7 +64,7 @@
         "height_percent": 8.3
       },
       {
-        "id": "040000008200E00074C5",
+        "id": "_60q30c1g60o30e1i60o",
         "title": "EPS 700 Internship Prep Meeting",
         "start_time": "12:45 PM",
         "end_time": "2 PM",
@@ -340,7 +340,7 @@
           "height_percent": 6.7
         },
         {
-          "id": "_60q30c1g60o30e1i60o",
+          "id": "040000008200E00074C5",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -353,7 +353,7 @@
           "height_percent": 8.3
         },
         {
-          "id": "040000008200E00074C5",
+          "id": "_60q30c1g60o30e1i60o",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -537,22 +537,6 @@
       "days_until": 5
     },
     {
-      "id": "040000008200E00074C5",
-      "title": "alexis swim and faculty NAU meeting",
-      "start_time": "1 PM",
-      "end_time": "1:30 PM",
-      "start_iso": "2026-09-08T13:00:00",
-      "end_iso": "2026-09-08T13:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 53.3,
-      "height_percent": 4,
-      "date": "2026-09-08",
-      "display_date": "Tue, Sep 08",
-      "days_until": 5
-    },
-    {
       "id": "6kom6c1lc8sm8b9i6kqj",
       "title": "Master's student meeting: Jayden",
       "start_time": "1 PM",
@@ -564,6 +548,22 @@
       "color": "var(--accent-gold)",
       "top_percent": 53.3,
       "height_percent": 6.7,
+      "date": "2026-09-08",
+      "display_date": "Tue, Sep 08",
+      "days_until": 5
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "alexis swim and faculty NAU meeting",
+      "start_time": "1 PM",
+      "end_time": "1:30 PM",
+      "start_iso": "2026-09-08T13:00:00",
+      "end_iso": "2026-09-08T13:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 53.3,
+      "height_percent": 4,
       "date": "2026-09-08",
       "display_date": "Tue, Sep 08",
       "days_until": 5
