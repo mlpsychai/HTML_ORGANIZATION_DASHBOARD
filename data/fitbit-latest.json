@@ -1,178 +1,143 @@
 {
-  "date": "2026-09-05",
-  "updated_at": "2026-09-05T15:50:57Z",
+  "date": "2026-09-06",
+  "updated_at": "2026-09-06T16:01:04Z",
   "sleep": {
     "summary": {
-      "duration_minutes": 434,
+      "duration_minutes": 407,
       "efficiency": 0,
-      "score": 88,
-      "start_time": "2026-09-04T21:29:00.000",
-      "end_time": "2026-09-05T05:44:00.000",
+      "score": 95,
+      "start_time": "2026-09-05T21:16:00.000",
+      "end_time": "2026-09-06T04:23:00.000",
       "stages": {
-        "deep": 84,
-        "light": 271,
-        "rem": 79,
-        "wake": 60
+        "deep": 81,
+        "light": 247,
+        "rem": 78,
+        "wake": 20
       }
     },
     "levels": [
       {
-        "dateTime": "2026-09-04T21:29:00.000",
+        "dateTime": "2026-09-05T21:16:00.000",
         "level": "wake",
-        "seconds": 1470
-      },
-      {
-        "dateTime": "2026-09-04T21:53:30.000",
-        "level": "light",
         "seconds": 870
       },
       {
-        "dateTime": "2026-09-04T22:08:00.000",
-        "level": "deep",
-        "seconds": 300
-      },
-      {
-        "dateTime": "2026-09-04T22:13:00.000",
+        "dateTime": "2026-09-05T21:30:30.000",
         "level": "light",
-        "seconds": 2250
+        "seconds": 6120
       },
       {
-        "dateTime": "2026-09-04T22:50:30.000",
+        "dateTime": "2026-09-05T23:12:30.000",
         "level": "rem",
-        "seconds": 510
+        "seconds": 750
       },
       {
-        "dateTime": "2026-09-04T22:59:00.000",
+        "dateTime": "2026-09-05T23:25:00.000",
         "level": "light",
-        "seconds": 5490
+        "seconds": 960
       },
       {
-        "dateTime": "2026-09-05T00:30:30.000",
+        "dateTime": "2026-09-05T23:41:00.000",
         "level": "deep",
-        "seconds": 210
-      },
-      {
-        "dateTime": "2026-09-05T00:34:00.000",
-        "level": "light",
-        "seconds": 60
-      },
-      {
-        "dateTime": "2026-09-05T00:35:00.000",
-        "level": "wake",
-        "seconds": 270
-      },
-      {
-        "dateTime": "2026-09-05T00:39:30.000",
-        "level": "light",
-        "seconds": 1110
-      },
-      {
-        "dateTime": "2026-09-05T00:58:00.000",
-        "level": "deep",
-        "seconds": 2220
-      },
-      {
-        "dateTime": "2026-09-05T01:35:00.000",
-        "level": "light",
-        "seconds": 60
-      },
-      {
-        "dateTime": "2026-09-05T01:36:00.000",
-        "level": "wake",
         "seconds": 570
       },
       {
-        "dateTime": "2026-09-05T01:45:30.000",
+        "dateTime": "2026-09-05T23:50:30.000",
         "level": "light",
-        "seconds": 1830
+        "seconds": 510
       },
       {
-        "dateTime": "2026-09-05T02:16:00.000",
+        "dateTime": "2026-09-05T23:59:00.000",
+        "level": "deep",
+        "seconds": 570
+      },
+      {
+        "dateTime": "2026-09-06T00:08:30.000",
+        "level": "light",
+        "seconds": 360
+      },
+      {
+        "dateTime": "2026-09-06T00:14:30.000",
+        "level": "deep",
+        "seconds": 1350
+      },
+      {
+        "dateTime": "2026-09-06T00:37:00.000",
+        "level": "light",
+        "seconds": 300
+      },
+      {
+        "dateTime": "2026-09-06T00:42:00.000",
+        "level": "deep",
+        "seconds": 600
+      },
+      {
+        "dateTime": "2026-09-06T00:52:00.000",
+        "level": "light",
+        "seconds": 510
+      },
+      {
+        "dateTime": "2026-09-06T01:00:30.000",
+        "level": "rem",
+        "seconds": 1560
+      },
+      {
+        "dateTime": "2026-09-06T01:26:30.000",
+        "level": "light",
+        "seconds": 1950
+      },
+      {
+        "dateTime": "2026-09-06T01:59:00.000",
         "level": "deep",
         "seconds": 1140
       },
       {
-        "dateTime": "2026-09-05T02:35:00.000",
+        "dateTime": "2026-09-06T02:18:00.000",
         "level": "light",
-        "seconds": 420
+        "seconds": 1050
       },
       {
-        "dateTime": "2026-09-05T02:42:00.000",
-        "level": "rem",
-        "seconds": 420
-      },
-      {
-        "dateTime": "2026-09-05T02:49:00.000",
-        "level": "light",
-        "seconds": 90
-      },
-      {
-        "dateTime": "2026-09-05T02:50:30.000",
-        "level": "rem",
-        "seconds": 960
-      },
-      {
-        "dateTime": "2026-09-05T03:06:30.000",
-        "level": "light",
-        "seconds": 270
-      },
-      {
-        "dateTime": "2026-09-05T03:11:00.000",
-        "level": "rem",
-        "seconds": 1170
-      },
-      {
-        "dateTime": "2026-09-05T03:30:30.000",
-        "level": "light",
-        "seconds": 2670
-      },
-      {
-        "dateTime": "2026-09-05T04:15:00.000",
+        "dateTime": "2026-09-06T02:35:30.000",
         "level": "deep",
-        "seconds": 1200
-      },
-      {
-        "dateTime": "2026-09-05T04:35:00.000",
-        "level": "light",
-        "seconds": 600
-      },
-      {
-        "dateTime": "2026-09-05T04:45:00.000",
-        "level": "rem",
-        "seconds": 1800
-      },
-      {
-        "dateTime": "2026-09-05T05:15:00.000",
-        "level": "wake",
         "seconds": 690
       },
       {
-        "dateTime": "2026-09-05T05:26:30.000",
+        "dateTime": "2026-09-06T02:47:00.000",
         "level": "light",
-        "seconds": 1050
+        "seconds": 2790
+      },
+      {
+        "dateTime": "2026-09-06T03:33:30.000",
+        "level": "rem",
+        "seconds": 2520
+      },
+      {
+        "dateTime": "2026-09-06T04:15:30.000",
+        "level": "light",
+        "seconds": 450
       }
     ]
   },
   "activity": {
     "summary": {
-      "steps": 1383,
-      "distance_miles": 0.9036,
+      "steps": 2003,
+      "distance_miles": 1.332,
       "floors": 4,
       "elevation": 12.192,
       "calories": {
-        "total": 755,
-        "bmr": 612,
-        "active": 164
+        "total": 793,
+        "bmr": 625,
+        "active": 199
       },
       "minutes": {
-        "sedentary": 42,
-        "lightly_active": 39,
-        "fairly_active": 0,
-        "very_active": 0
+        "sedentary": 92,
+        "lightly_active": 22,
+        "fairly_active": 3,
+        "very_active": 12
       },
       "active_zone_minutes": {
-        "total": 0,
-        "fat_burn": 0,
+        "total": 5,
+        "fat_burn": 5,
         "cardio": 0,
         "peak": 0
       }
@@ -183,26 +148,26 @@
   },
   "heart": {
     "summary": {
-      "resting_hr": 66,
+      "resting_hr": 64,
       "zones": [
         {
-          "caloriesOut": 754.50711599999056,
-          "max": 111,
+          "caloriesOut": 753.81427199999007,
+          "max": 109,
           "min": 30,
-          "minutes": 532,
+          "minutes": 538,
           "name": "Out of Range"
         },
         {
-          "caloriesOut": 0,
-          "max": 134,
-          "min": 112,
-          "minutes": 0,
+          "caloriesOut": 38.799264000000008,
+          "max": 133,
+          "min": 110,
+          "minutes": 5,
           "name": "Fat Burn"
         },
         {
           "caloriesOut": 0,
           "max": 162,
-          "min": 135,
+          "min": 134,
           "minutes": 0,
           "name": "Cardio"
         },
@@ -229,7 +194,7 @@
       "spo2_avg": 0,
       "spo2_min": 0,
       "spo2_max": 0,
-      "breathing_rate": 15.6
+      "breathing_rate": 16
     },
     "intraday": {
       "spo2": {
