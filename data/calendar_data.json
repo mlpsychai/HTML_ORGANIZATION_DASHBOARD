@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-10T08:31:03.460069-07:00",
+    "generated_at": "2026-09-10T13:14:01.481332-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-09-07",
     "range_end": "2026-10-10",
@@ -170,19 +170,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "040000008200E00074C5",
-          "title": "alexis swim and faculty NAU meeting",
-          "start_time": "1 PM",
-          "end_time": "1:30 PM",
-          "start_iso": "2026-09-08T13:00:00",
-          "end_iso": "2026-09-08T13:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 53.3,
-          "height_percent": 4
-        },
-        {
           "id": "6kom6c1lc8sm8b9i6kqj",
           "title": "Master's student meeting: Jayden",
           "start_time": "1 PM",
@@ -194,6 +181,19 @@
           "color": "var(--accent-gold)",
           "top_percent": 53.3,
           "height_percent": 6.7
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "alexis swim and faculty NAU meeting",
+          "start_time": "1 PM",
+          "end_time": "1:30 PM",
+          "start_iso": "2026-09-08T13:00:00",
+          "end_iso": "2026-09-08T13:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 53.3,
+          "height_percent": 4
         },
         {
           "id": "73hn56b9fne1i455tst3",
@@ -268,7 +268,7 @@
           "height_percent": 11.7
         },
         {
-          "id": "3tug4c9s8on5tmrg72oc",
+          "id": "619rkdfbfg6idigijo2f",
           "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
@@ -281,7 +281,7 @@
           "height_percent": 16.7
         },
         {
-          "id": "619rkdfbfg6idigijo2f",
+          "id": "3tug4c9s8on5tmrg72oc",
           "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
