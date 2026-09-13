@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-09-12T19:10:22.022802-07:00",
+    "generated_at": "2026-09-13T03:48:53.183102-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-09-07",
-    "range_end": "2026-10-12",
-    "total_events": 812,
+    "range_end": "2026-10-13",
+    "total_events": 816,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-09-12",
-    "display_date": "Saturday, September 12",
+    "date": "2026-09-13",
+    "display_date": "Sunday, September 13",
     "events": []
   },
   "week": {
@@ -274,7 +274,7 @@
           "height_percent": 8.3
         },
         {
-          "id": "040000008200E00074C5",
+          "id": "_60q30c1g60o30e1i60o",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -287,7 +287,7 @@
           "height_percent": 8.3
         },
         {
-          "id": "_60q30c1g60o30e1i60o",
+          "id": "040000008200E00074C5",
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
@@ -389,13 +389,13 @@
     "saturday": {
       "date": "2026-09-12",
       "display_date": "Sep 12",
-      "is_today": true,
+      "is_today": false,
       "events": []
     },
     "sunday": {
       "date": "2026-09-13",
       "display_date": "Sep 13",
-      "is_today": false,
+      "is_today": true,
       "events": []
     }
   },
@@ -414,7 +414,7 @@
       "height_percent": 10.0,
       "date": "2026-09-14",
       "display_date": "Mon, Sep 14",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -430,7 +430,7 @@
       "height_percent": 6.7,
       "date": "2026-09-14",
       "display_date": "Mon, Sep 14",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -446,7 +446,7 @@
       "height_percent": 10.0,
       "date": "2026-09-15",
       "display_date": "Tue, Sep 15",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -462,7 +462,7 @@
       "height_percent": 10.0,
       "date": "2026-09-15",
       "display_date": "Tue, Sep 15",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "5mgncqqtko1qo6k468ms",
@@ -478,7 +478,7 @@
       "height_percent": 10.0,
       "date": "2026-09-15",
       "display_date": "Tue, Sep 15",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "2b9ekmt2eri3b67gh17p",
@@ -494,7 +494,7 @@
       "height_percent": 6.7,
       "date": "2026-09-15",
       "display_date": "Tue, Sep 15",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -510,7 +510,7 @@
       "height_percent": 6.7,
       "date": "2026-09-15",
       "display_date": "Tue, Sep 15",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -526,7 +526,7 @@
       "height_percent": 10.0,
       "date": "2026-09-16",
       "display_date": "Wed, Sep 16",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "44ggol3f5tgtepvqk819",
@@ -542,7 +542,7 @@
       "height_percent": 10.0,
       "date": "2026-09-16",
       "display_date": "Wed, Sep 16",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "6lfo8390be6nfgrliim3",
@@ -558,7 +558,7 @@
       "height_percent": 6.7,
       "date": "2026-09-16",
       "display_date": "Wed, Sep 16",
-      "days_until": 4
+      "days_until": 3
     }
   ]
 }
