@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-18T08:28:18.506165-07:00",
+    "generated_at": "2026-09-18T13:09:46.039069-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-09-14",
     "range_end": "2026-10-18",
@@ -242,7 +242,7 @@
           "height_percent": 4
         },
         {
-          "id": "3tug4c9s8on5tmrg72oc",
+          "id": "619rkdfbfg6idigijo2f",
           "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
@@ -255,7 +255,7 @@
           "height_percent": 16.7
         },
         {
-          "id": "619rkdfbfg6idigijo2f",
+          "id": "3tug4c9s8on5tmrg72oc",
           "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
@@ -288,19 +288,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "chij0p9n6cs30bb6c9h3",
-          "title": "Claudia Soup",
-          "start_time": "11 AM",
-          "end_time": "12 PM",
-          "start_iso": "2026-09-17T11:00:00",
-          "end_iso": "2026-09-17T12:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 40.0,
-          "height_percent": 6.7
-        },
-        {
           "id": "35vcs2cbsmregiibc45n",
           "title": "Initial Internship Meeting",
           "start_time": "11 AM",
@@ -310,6 +297,19 @@
           "location": null,
           "category": "meeting",
           "color": "var(--accent-gold)",
+          "top_percent": 40.0,
+          "height_percent": 6.7
+        },
+        {
+          "id": "chij0p9n6cs30bb6c9h3",
+          "title": "Claudia Soup",
+          "start_time": "11 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-09-17T11:00:00",
+          "end_iso": "2026-09-17T12:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
           "top_percent": 40.0,
           "height_percent": 6.7
         },
