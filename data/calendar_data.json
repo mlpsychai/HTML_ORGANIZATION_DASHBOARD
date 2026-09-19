@@ -1,53 +1,40 @@
 {
   "meta": {
-    "generated_at": "2026-09-18T19:19:18.441187-07:00",
+    "generated_at": "2026-09-19T02:58:23.203338-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-09-14",
-    "range_end": "2026-10-18",
-    "total_events": 828,
+    "range_end": "2026-10-19",
+    "total_events": 829,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-09-18",
-    "display_date": "Friday, September 18",
+    "date": "2026-09-19",
+    "display_date": "Saturday, September 19",
     "events": [
       {
-        "id": "4vv5mirtsid1h5l6dhq9",
-        "title": "MANDATORIES",
-        "start_time": "5:30 AM",
-        "end_time": "7 AM",
-        "start_iso": "2026-09-18T05:30:00",
-        "end_iso": "2026-09-18T07:00:00",
+        "id": "6sp64e35cos62bb4chi6",
+        "title": "Finances",
+        "start_time": "9:30 AM",
+        "end_time": "10:30 AM",
+        "start_iso": "2026-09-19T09:30:00",
+        "end_iso": "2026-09-19T10:30:00",
         "location": null,
-        "category": "personal",
-        "color": "var(--accent-sage)",
-        "top_percent": 3.3,
-        "height_percent": 10.0
-      },
-      {
-        "id": "p51ir1veck9o3c983c10",
-        "title": "CLIENT SESSION: ST",
-        "start_time": "2 PM",
-        "end_time": "3 PM",
-        "start_iso": "2026-09-18T14:00:00",
-        "end_iso": "2026-09-18T15:00:00",
-        "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 60.0,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 30.0,
         "height_percent": 6.7
       },
       {
-        "id": "60o34p3671gm2b9o6gqj",
-        "title": "Weekly Session: AG",
-        "start_time": "4 PM",
-        "end_time": "5 PM",
-        "start_iso": "2026-09-18T16:00:00",
-        "end_iso": "2026-09-18T17:00:00",
+        "id": "60ojcd1gccqm2b9p6hi6",
+        "title": "Essays",
+        "start_time": "11 AM",
+        "end_time": "12 PM",
+        "start_iso": "2026-09-19T11:00:00",
+        "end_iso": "2026-09-19T12:00:00",
         "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 73.3,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 40.0,
         "height_percent": 6.7
       }
     ]
@@ -105,19 +92,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "040000008200E00074C5",
-          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-09-15T10:00:00",
-          "end_iso": "2026-09-15T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "5mgncqqtko1qo6k468ms",
           "title": "INTERNSHIP Facilitation - TEAMS LINK",
           "start_time": "10 AM",
@@ -127,6 +101,19 @@
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-09-15T10:00:00",
+          "end_iso": "2026-09-15T11:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -301,19 +288,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "35vcs2cbsmregiibc45n",
-          "title": "Initial Internship Meeting",
-          "start_time": "11 AM",
-          "end_time": "12 PM",
-          "start_iso": "2026-09-17T11:00:00",
-          "end_iso": "2026-09-17T12:00:00",
-          "location": null,
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 40.0,
-          "height_percent": 6.7
-        },
-        {
           "id": "chij0p9n6cs30bb6c9h3",
           "title": "Claudia Soup",
           "start_time": "11 AM",
@@ -323,6 +297,19 @@
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
+          "top_percent": 40.0,
+          "height_percent": 6.7
+        },
+        {
+          "id": "35vcs2cbsmregiibc45n",
+          "title": "Initial Internship Meeting",
+          "start_time": "11 AM",
+          "end_time": "12 PM",
+          "start_iso": "2026-09-17T11:00:00",
+          "end_iso": "2026-09-17T12:00:00",
+          "location": null,
+          "category": "meeting",
+          "color": "var(--accent-gold)",
           "top_percent": 40.0,
           "height_percent": 6.7
         },
@@ -370,7 +357,7 @@
     "friday": {
       "date": "2026-09-18",
       "display_date": "Sep 18",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -416,7 +403,7 @@
     "saturday": {
       "date": "2026-09-19",
       "display_date": "Sep 19",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "6sp64e35cos62bb4chi6",
@@ -455,38 +442,6 @@
   },
   "upcoming": [
     {
-      "id": "6sp64e35cos62bb4chi6",
-      "title": "Finances",
-      "start_time": "9:30 AM",
-      "end_time": "10:30 AM",
-      "start_iso": "2026-09-19T09:30:00",
-      "end_iso": "2026-09-19T10:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 30.0,
-      "height_percent": 6.7,
-      "date": "2026-09-19",
-      "display_date": "Sat, Sep 19",
-      "days_until": 1
-    },
-    {
-      "id": "60ojcd1gccqm2b9p6hi6",
-      "title": "Essays",
-      "start_time": "11 AM",
-      "end_time": "12 PM",
-      "start_iso": "2026-09-19T11:00:00",
-      "end_iso": "2026-09-19T12:00:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 40.0,
-      "height_percent": 6.7,
-      "date": "2026-09-19",
-      "display_date": "Sat, Sep 19",
-      "days_until": 1
-    },
-    {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
@@ -500,7 +455,7 @@
       "height_percent": 10.0,
       "date": "2026-09-21",
       "display_date": "Mon, Sep 21",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -516,7 +471,7 @@
       "height_percent": 6.7,
       "date": "2026-09-21",
       "display_date": "Mon, Sep 21",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -532,23 +487,7 @@
       "height_percent": 10.0,
       "date": "2026-09-22",
       "display_date": "Tue, Sep 22",
-      "days_until": 4
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-09-22T10:00:00",
-      "end_iso": "2026-09-22T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-09-22",
-      "display_date": "Tue, Sep 22",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "5mgncqqtko1qo6k468ms",
@@ -564,7 +503,23 @@
       "height_percent": 10.0,
       "date": "2026-09-22",
       "display_date": "Tue, Sep 22",
-      "days_until": 4
+      "days_until": 3
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-09-22T10:00:00",
+      "end_iso": "2026-09-22T11:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-09-22",
+      "display_date": "Tue, Sep 22",
+      "days_until": 3
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -580,7 +535,7 @@
       "height_percent": 6.7,
       "date": "2026-09-22",
       "display_date": "Tue, Sep 22",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -596,7 +551,7 @@
       "height_percent": 10.0,
       "date": "2026-09-23",
       "display_date": "Wed, Sep 23",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "44ggol3f5tgtepvqk819",
@@ -612,7 +567,39 @@
       "height_percent": 10.0,
       "date": "2026-09-23",
       "display_date": "Wed, Sep 23",
-      "days_until": 5
+      "days_until": 4
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "PROF Grant Sync UP meeting",
+      "start_time": "11 AM",
+      "end_time": "12 PM",
+      "start_iso": "2026-09-23T11:00:00",
+      "end_iso": "2026-09-23T12:00:00",
+      "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 40.0,
+      "height_percent": 6.7,
+      "date": "2026-09-23",
+      "display_date": "Wed, Sep 23",
+      "days_until": 4
+    },
+    {
+      "id": "3u9h96k3v4urkq56vr4i",
+      "title": "EPS 621 - Marriage\\, Family\\, and Relationship Counseling",
+      "start_time": "12:45 PM",
+      "end_time": "2:30 PM",
+      "start_iso": "2026-09-23T12:45:00",
+      "end_iso": "2026-09-23T14:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 51.7,
+      "height_percent": 11.7,
+      "date": "2026-09-23",
+      "display_date": "Wed, Sep 23",
+      "days_until": 4
     }
   ]
 }
