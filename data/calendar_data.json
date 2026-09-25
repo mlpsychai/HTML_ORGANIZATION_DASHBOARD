@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-09-24T13:56:39.892068-07:00",
+    "generated_at": "2026-09-24T19:35:19.232216-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-09-21",
     "range_end": "2026-10-24",
-    "total_events": 833,
+    "total_events": 835,
     "calendars_synced": 2
   },
   "today": {
@@ -242,7 +242,7 @@
           "height_percent": 6.7
         },
         {
-          "id": "619rkdfbfg6idigijo2f",
+          "id": "3tug4c9s8on5tmrg72oc",
           "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
@@ -255,7 +255,7 @@
           "height_percent": 16.7
         },
         {
-          "id": "3tug4c9s8on5tmrg72oc",
+          "id": "619rkdfbfg6idigijo2f",
           "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
@@ -373,6 +373,32 @@
           "height_percent": 4
         },
         {
+          "id": "cgo36ohmcgr64b9l6gqm",
+          "title": "Bring vacuum",
+          "start_time": "11:30 AM",
+          "end_time": "12:30 PM",
+          "start_iso": "2026-09-25T11:30:00",
+          "end_iso": "2026-09-25T12:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 43.3,
+          "height_percent": 6.7
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "Meet with Sean",
+          "start_time": "12:45 PM",
+          "end_time": "1 PM",
+          "start_iso": "2026-09-25T12:45:00",
+          "end_iso": "2026-09-25T13:00:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 51.7,
+          "height_percent": 4
+        },
+        {
           "id": "6pij6cb26krmabb568p6",
           "title": "August meet",
           "start_time": "1 PM",
@@ -463,6 +489,38 @@
       "days_until": 1
     },
     {
+      "id": "cgo36ohmcgr64b9l6gqm",
+      "title": "Bring vacuum",
+      "start_time": "11:30 AM",
+      "end_time": "12:30 PM",
+      "start_iso": "2026-09-25T11:30:00",
+      "end_iso": "2026-09-25T12:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 43.3,
+      "height_percent": 6.7,
+      "date": "2026-09-25",
+      "display_date": "Fri, Sep 25",
+      "days_until": 1
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Meet with Sean",
+      "start_time": "12:45 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-09-25T12:45:00",
+      "end_iso": "2026-09-25T13:00:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 51.7,
+      "height_percent": 4,
+      "date": "2026-09-25",
+      "display_date": "Fri, Sep 25",
+      "days_until": 1
+    },
+    {
       "id": "6pij6cb26krmabb568p6",
       "title": "August meet",
       "start_time": "1 PM",
@@ -537,38 +595,6 @@
       "category": "personal",
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-09-29",
-      "display_date": "Tue, Sep 29",
-      "days_until": 5
-    },
-    {
-      "id": "5mgncqqtko1qo6k468ms",
-      "title": "INTERNSHIP Facilitation - TEAMS LINK",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-09-29T10:00:00",
-      "end_iso": "2026-09-29T11:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-09-29",
-      "display_date": "Tue, Sep 29",
-      "days_until": 5
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-09-29T10:00:00",
-      "end_iso": "2026-09-29T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
       "height_percent": 10.0,
       "date": "2026-09-29",
       "display_date": "Tue, Sep 29",
