@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-26T03:31:22.131236-07:00",
+    "generated_at": "2026-09-26T08:23:48.703448-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-09-21",
     "range_end": "2026-10-26",
@@ -78,19 +78,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "5mgncqqtko1qo6k468ms",
-          "title": "INTERNSHIP Facilitation - TEAMS LINK",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-09-22T10:00:00",
-          "end_iso": "2026-09-22T11:30:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
           "start_time": "10 AM",
@@ -100,6 +87,19 @@
           "location": "Microsoft Teams Meeting",
           "category": "meeting",
           "color": "var(--accent-gold)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "5mgncqqtko1qo6k468ms",
+          "title": "INTERNSHIP Facilitation - TEAMS LINK",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-09-22T10:00:00",
+          "end_iso": "2026-09-22T11:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -436,22 +436,6 @@
       "days_until": 3
     },
     {
-      "id": "5mgncqqtko1qo6k468ms",
-      "title": "INTERNSHIP Facilitation - TEAMS LINK",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-09-29T10:00:00",
-      "end_iso": "2026-09-29T11:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-09-29",
-      "display_date": "Tue, Sep 29",
-      "days_until": 3
-    },
-    {
       "id": "040000008200E00074C5",
       "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
       "start_time": "10 AM",
@@ -461,6 +445,22 @@
       "location": "Microsoft Teams Meeting",
       "category": "meeting",
       "color": "var(--accent-gold)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-09-29",
+      "display_date": "Tue, Sep 29",
+      "days_until": 3
+    },
+    {
+      "id": "5mgncqqtko1qo6k468ms",
+      "title": "INTERNSHIP Facilitation - TEAMS LINK",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-09-29T10:00:00",
+      "end_iso": "2026-09-29T11:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
       "top_percent": 33.3,
       "height_percent": 10.0,
       "date": "2026-09-29",
