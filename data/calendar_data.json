@@ -1,30 +1,57 @@
 {
   "meta": {
-    "generated_at": "2026-10-04T20:07:03.136294-07:00",
+    "generated_at": "2026-10-05T06:04:10.739291-07:00",
     "timezone": "America/Phoenix",
-    "range_start": "2026-09-28",
-    "range_end": "2026-11-03",
-    "total_events": 847,
+    "range_start": "2026-10-05",
+    "range_end": "2026-11-04",
+    "total_events": 836,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-10-04",
-    "display_date": "Sunday, October 04",
-    "events": []
+    "date": "2026-10-05",
+    "display_date": "Monday, October 05",
+    "events": [
+      {
+        "id": "4vv5mirtsid1h5l6dhq9",
+        "title": "MANDATORIES",
+        "start_time": "5:30 AM",
+        "end_time": "7 AM",
+        "start_iso": "2026-10-05T05:30:00",
+        "end_iso": "2026-10-05T07:00:00",
+        "location": null,
+        "category": "personal",
+        "color": "var(--accent-sage)",
+        "top_percent": 3.3,
+        "height_percent": 10.0
+      },
+      {
+        "id": "7li5vjvkc7oal3dgjt8l",
+        "title": "CHC w/ Sherri",
+        "start_time": "8 AM",
+        "end_time": "3 PM",
+        "start_iso": "2026-10-05T08:00:00",
+        "end_iso": "2026-10-05T15:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 20.0,
+        "height_percent": 46.7
+      }
+    ]
   },
   "week": {
     "monday": {
-      "date": "2026-09-28",
-      "display_date": "Sep 28",
-      "is_today": false,
+      "date": "2026-10-05",
+      "display_date": "Oct 05",
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-09-28T05:30:00",
-          "end_iso": "2026-09-28T07:00:00",
+          "start_iso": "2026-10-05T05:30:00",
+          "end_iso": "2026-10-05T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -36,8 +63,8 @@
           "title": "CHC w/ Sherri",
           "start_time": "8 AM",
           "end_time": "3 PM",
-          "start_iso": "2026-09-28T08:00:00",
-          "end_iso": "2026-09-28T15:00:00",
+          "start_iso": "2026-10-05T08:00:00",
+          "end_iso": "2026-10-05T15:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
@@ -47,8 +74,8 @@
       ]
     },
     "tuesday": {
-      "date": "2026-09-29",
-      "display_date": "Sep 29",
+      "date": "2026-10-06",
+      "display_date": "Oct 06",
       "is_today": false,
       "events": [
         {
@@ -56,8 +83,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-09-29T05:30:00",
-          "end_iso": "2026-09-29T07:00:00",
+          "start_iso": "2026-10-06T05:30:00",
+          "end_iso": "2026-10-06T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -69,8 +96,8 @@
           "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
           "start_time": "10 AM",
           "end_time": "11:30 AM",
-          "start_iso": "2026-09-29T10:00:00",
-          "end_iso": "2026-09-29T11:30:00",
+          "start_iso": "2026-10-06T10:00:00",
+          "end_iso": "2026-10-06T11:30:00",
           "location": "Microsoft Teams Meeting",
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -82,8 +109,8 @@
           "title": "INTERNSHIP Facilitation - TEAMS LINK",
           "start_time": "10 AM",
           "end_time": "11:30 AM",
-          "start_iso": "2026-09-29T10:00:00",
-          "end_iso": "2026-09-29T11:30:00",
+          "start_iso": "2026-10-06T10:00:00",
+          "end_iso": "2026-10-06T11:30:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
@@ -91,12 +118,25 @@
           "height_percent": 10.0
         },
         {
+          "id": "6lj3ae9pchi36bb3coqm",
+          "title": "Chris Therapy",
+          "start_time": "2 PM",
+          "end_time": "3 PM",
+          "start_iso": "2026-10-06T14:00:00",
+          "end_iso": "2026-10-06T15:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 60.0,
+          "height_percent": 6.7
+        },
+        {
           "id": "73hn56b9fne1i455tst3",
           "title": "Wellness PSI: Counseling - Zoom Link Included",
           "start_time": "5 PM",
           "end_time": "6 PM",
-          "start_iso": "2026-09-29T17:00:00",
-          "end_iso": "2026-09-29T18:00:00",
+          "start_iso": "2026-10-06T17:00:00",
+          "end_iso": "2026-10-06T18:00:00",
           "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
           "category": "default",
           "color": "var(--text-secondary)",
@@ -106,8 +146,8 @@
       ]
     },
     "wednesday": {
-      "date": "2026-09-30",
-      "display_date": "Sep 30",
+      "date": "2026-10-07",
+      "display_date": "Oct 07",
       "is_today": false,
       "events": [
         {
@@ -115,8 +155,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-09-30T05:30:00",
-          "end_iso": "2026-09-30T07:00:00",
+          "start_iso": "2026-10-07T05:30:00",
+          "end_iso": "2026-10-07T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -128,8 +168,8 @@
           "title": "INTERNSHIP Facilitation - TEAMS LINK",
           "start_time": "8:30 AM",
           "end_time": "10 AM",
-          "start_iso": "2026-09-30T08:30:00",
-          "end_iso": "2026-09-30T10:00:00",
+          "start_iso": "2026-10-07T08:30:00",
+          "end_iso": "2026-10-07T10:00:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
@@ -141,8 +181,8 @@
           "title": "PROF Grant Sync UP meeting",
           "start_time": "11 AM",
           "end_time": "12 PM",
-          "start_iso": "2026-09-30T11:00:00",
-          "end_iso": "2026-09-30T12:00:00",
+          "start_iso": "2026-10-07T11:00:00",
+          "end_iso": "2026-10-07T12:00:00",
           "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -154,8 +194,8 @@
           "title": "EPS 621 - Marriage\\, Family\\, and Relationship Counseling",
           "start_time": "12:45 PM",
           "end_time": "2:30 PM",
-          "start_iso": "2026-09-30T12:45:00",
-          "end_iso": "2026-09-30T14:30:00",
+          "start_iso": "2026-10-07T12:45:00",
+          "end_iso": "2026-10-07T14:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -167,8 +207,8 @@
           "title": "CT: H",
           "start_time": "1:30 PM",
           "end_time": "2:30 PM",
-          "start_iso": "2026-09-30T13:30:00",
-          "end_iso": "2026-09-30T14:30:00",
+          "start_iso": "2026-10-07T13:30:00",
+          "end_iso": "2026-10-07T14:30:00",
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
@@ -180,8 +220,8 @@
           "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
           "start_time": "4 PM",
           "end_time": "6:30 PM",
-          "start_iso": "2026-09-30T16:00:00",
-          "end_iso": "2026-09-30T18:30:00",
+          "start_iso": "2026-10-07T16:00:00",
+          "end_iso": "2026-10-07T18:30:00",
           "location": null,
           "category": "class",
           "color": "var(--text-muted)",
@@ -191,8 +231,8 @@
       ]
     },
     "thursday": {
-      "date": "2026-10-01",
-      "display_date": "Oct 01",
+      "date": "2026-10-08",
+      "display_date": "Oct 08",
       "is_today": false,
       "events": [
         {
@@ -200,8 +240,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-10-01T05:30:00",
-          "end_iso": "2026-10-01T07:00:00",
+          "start_iso": "2026-10-08T05:30:00",
+          "end_iso": "2026-10-08T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -209,16 +249,16 @@
           "height_percent": 10.0
         },
         {
-          "id": "qrhf7s166ursr29ca4bc",
-          "title": "Initial Internship Meeting",
-          "start_time": "11 AM",
-          "end_time": "12 PM",
-          "start_iso": "2026-10-01T11:00:00",
-          "end_iso": "2026-10-01T12:00:00",
+          "id": "6krjgo9gclhj2b9l64oj",
+          "title": "Supervision with Stephanie",
+          "start_time": "10 AM",
+          "end_time": "11 AM",
+          "start_iso": "2026-10-08T10:00:00",
+          "end_iso": "2026-10-08T11:00:00",
           "location": null,
           "category": "meeting",
           "color": "var(--accent-gold)",
-          "top_percent": 40.0,
+          "top_percent": 33.3,
           "height_percent": 6.7
         },
         {
@@ -226,8 +266,8 @@
           "title": "supervision",
           "start_time": "12 PM",
           "end_time": "1 PM",
-          "start_iso": "2026-10-01T12:00:00",
-          "end_iso": "2026-10-01T13:00:00",
+          "start_iso": "2026-10-08T12:00:00",
+          "end_iso": "2026-10-08T13:00:00",
           "location": null,
           "category": "meeting",
           "color": "var(--accent-gold)",
@@ -239,32 +279,19 @@
           "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
-          "start_iso": "2026-10-01T12:45:00",
-          "end_iso": "2026-10-01T14:00:00",
+          "start_iso": "2026-10-08T12:45:00",
+          "end_iso": "2026-10-08T14:00:00",
           "location": "Microsoft Teams Meeting",
           "category": "class",
           "color": "var(--text-muted)",
           "top_percent": 51.7,
           "height_percent": 8.3
-        },
-        {
-          "id": "3qre761hcqmvn7iosgu3",
-          "title": "Virtual Internship Site Visit",
-          "start_time": "2:30 PM",
-          "end_time": "3 PM",
-          "start_iso": "2026-10-01T14:30:00",
-          "end_iso": "2026-10-01T15:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 63.3,
-          "height_percent": 4
         }
       ]
     },
     "friday": {
-      "date": "2026-10-02",
-      "display_date": "Oct 02",
+      "date": "2026-10-09",
+      "display_date": "Oct 09",
       "is_today": false,
       "events": [
         {
@@ -272,8 +299,8 @@
           "title": "MANDATORIES",
           "start_time": "5:30 AM",
           "end_time": "7 AM",
-          "start_iso": "2026-10-02T05:30:00",
-          "end_iso": "2026-10-02T07:00:00",
+          "start_iso": "2026-10-09T05:30:00",
+          "end_iso": "2026-10-09T07:00:00",
           "location": null,
           "category": "personal",
           "color": "var(--accent-sage)",
@@ -281,16 +308,16 @@
           "height_percent": 10.0
         },
         {
-          "id": "c8s36p1j68s62b9pcks6",
-          "title": "Jamie Soup @ kickstand",
-          "start_time": "9 AM",
-          "end_time": "10 AM",
-          "start_iso": "2026-10-02T09:00:00",
-          "end_iso": "2026-10-02T10:00:00",
+          "id": "cop36c3160pjeb9n6ko6",
+          "title": "Breakfast with Michael @ Sosta",
+          "start_time": "8 AM",
+          "end_time": "9 AM",
+          "start_iso": "2026-10-09T08:00:00",
+          "end_iso": "2026-10-09T09:00:00",
           "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 26.7,
+          "category": "personal",
+          "color": "var(--accent-sage)",
+          "top_percent": 20.0,
           "height_percent": 6.7
         },
         {
@@ -298,8 +325,8 @@
           "title": "CLIENT SESSION: ST",
           "start_time": "2 PM",
           "end_time": "3 PM",
-          "start_iso": "2026-10-02T14:00:00",
-          "end_iso": "2026-10-02T15:00:00",
+          "start_iso": "2026-10-09T14:00:00",
+          "end_iso": "2026-10-09T15:00:00",
           "location": null,
           "category": "clinical",
           "color": "var(--accent-teal)",
@@ -309,65 +336,19 @@
       ]
     },
     "saturday": {
-      "date": "2026-10-03",
-      "display_date": "Oct 03",
+      "date": "2026-10-10",
+      "display_date": "Oct 10",
       "is_today": false,
-      "events": [
-        {
-          "id": "chimce9pc5ijcbb4cgpj",
-          "title": "Send Jamie an email about AG",
-          "start_time": "8 AM",
-          "end_time": "9 AM",
-          "start_iso": "2026-10-03T08:00:00",
-          "end_iso": "2026-10-03T09:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 20.0,
-          "height_percent": 6.7
-        }
-      ]
+      "events": []
     },
     "sunday": {
-      "date": "2026-10-04",
-      "display_date": "Oct 04",
-      "is_today": true,
+      "date": "2026-10-11",
+      "display_date": "Oct 11",
+      "is_today": false,
       "events": []
     }
   },
   "upcoming": [
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
-      "start_iso": "2026-10-05T05:30:00",
-      "end_iso": "2026-10-05T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-10-05",
-      "display_date": "Mon, Oct 05",
-      "days_until": 1
-    },
-    {
-      "id": "7li5vjvkc7oal3dgjt8l",
-      "title": "CHC w/ Sherri",
-      "start_time": "8 AM",
-      "end_time": "3 PM",
-      "start_iso": "2026-10-05T08:00:00",
-      "end_iso": "2026-10-05T15:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 20.0,
-      "height_percent": 46.7,
-      "date": "2026-10-05",
-      "display_date": "Mon, Oct 05",
-      "days_until": 1
-    },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
       "title": "MANDATORIES",
@@ -382,7 +363,7 @@
       "height_percent": 10.0,
       "date": "2026-10-06",
       "display_date": "Tue, Oct 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -398,7 +379,7 @@
       "height_percent": 10.0,
       "date": "2026-10-06",
       "display_date": "Tue, Oct 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "5mgncqqtko1qo6k468ms",
@@ -414,7 +395,7 @@
       "height_percent": 10.0,
       "date": "2026-10-06",
       "display_date": "Tue, Oct 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "6lj3ae9pchi36bb3coqm",
@@ -430,7 +411,7 @@
       "height_percent": 6.7,
       "date": "2026-10-06",
       "display_date": "Tue, Oct 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -446,7 +427,7 @@
       "height_percent": 6.7,
       "date": "2026-10-06",
       "display_date": "Tue, Oct 06",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -462,7 +443,7 @@
       "height_percent": 10.0,
       "date": "2026-10-07",
       "display_date": "Wed, Oct 07",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "44ggol3f5tgtepvqk819",
@@ -478,7 +459,7 @@
       "height_percent": 10.0,
       "date": "2026-10-07",
       "display_date": "Wed, Oct 07",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -494,7 +475,39 @@
       "height_percent": 6.7,
       "date": "2026-10-07",
       "display_date": "Wed, Oct 07",
-      "days_until": 3
+      "days_until": 2
+    },
+    {
+      "id": "3u9h96k3v4urkq56vr4i",
+      "title": "EPS 621 - Marriage\\, Family\\, and Relationship Counseling",
+      "start_time": "12:45 PM",
+      "end_time": "2:30 PM",
+      "start_iso": "2026-10-07T12:45:00",
+      "end_iso": "2026-10-07T14:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 51.7,
+      "height_percent": 11.7,
+      "date": "2026-10-07",
+      "display_date": "Wed, Oct 07",
+      "days_until": 2
+    },
+    {
+      "id": "7has3h5qeea81hpj4u5i",
+      "title": "CT: H",
+      "start_time": "1:30 PM",
+      "end_time": "2:30 PM",
+      "start_iso": "2026-10-07T13:30:00",
+      "end_iso": "2026-10-07T14:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 56.7,
+      "height_percent": 6.7,
+      "date": "2026-10-07",
+      "display_date": "Wed, Oct 07",
+      "days_until": 2
     }
   ]
 }
