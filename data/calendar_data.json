@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-10-08T20:44:11.743602-07:00",
+    "generated_at": "2026-10-09T05:18:09.152892-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-10-05",
-    "range_end": "2026-11-07",
+    "range_end": "2026-11-08",
     "total_events": 843,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-10-08",
-    "display_date": "Thursday, October 08",
+    "date": "2026-10-09",
+    "display_date": "Friday, October 09",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-10-08T05:30:00",
-        "end_iso": "2026-10-08T07:00:00",
+        "start_iso": "2026-10-09T05:30:00",
+        "end_iso": "2026-10-09T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,43 +25,43 @@
         "height_percent": 10.0
       },
       {
-        "id": "6krjgo9gclhj2b9l64oj",
-        "title": "Supervision with Stephanie",
-        "start_time": "10 AM",
-        "end_time": "11 AM",
-        "start_iso": "2026-10-08T10:00:00",
-        "end_iso": "2026-10-08T11:00:00",
+        "id": "040000008200E00074C5",
+        "title": "Site Visit",
+        "start_time": "11 AM",
+        "end_time": "11:30 AM",
+        "start_iso": "2026-10-09T11:00:00",
+        "end_iso": "2026-10-09T11:30:00",
         "location": null,
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 33.3,
-        "height_percent": 6.7
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 40.0,
+        "height_percent": 4
       },
       {
         "id": "040000008200E00074C5",
-        "title": "supervision",
-        "start_time": "12 PM",
-        "end_time": "1 PM",
-        "start_iso": "2026-10-08T12:00:00",
-        "end_iso": "2026-10-08T13:00:00",
-        "location": null,
+        "title": "Comprehensive Exam Results Meeting",
+        "start_time": "1 PM",
+        "end_time": "1:40 PM",
+        "start_iso": "2026-10-09T13:00:00",
+        "end_iso": "2026-10-09T13:40:00",
+        "location": "Microsoft Teams Meeting",
         "category": "meeting",
         "color": "var(--accent-gold)",
-        "top_percent": 46.7,
-        "height_percent": 6.7
+        "top_percent": 53.3,
+        "height_percent": 4.4
       },
       {
-        "id": "_60q30c1g60o30e1i60o",
-        "title": "EPS 700 Internship Prep Meeting",
-        "start_time": "12:45 PM",
-        "end_time": "2 PM",
-        "start_iso": "2026-10-08T12:45:00",
-        "end_iso": "2026-10-08T14:00:00",
-        "location": "Microsoft Teams Meeting",
-        "category": "class",
-        "color": "var(--text-muted)",
-        "top_percent": 51.7,
-        "height_percent": 8.3
+        "id": "p51ir1veck9o3c983c10",
+        "title": "CLIENT SESSION: ST",
+        "start_time": "2 PM",
+        "end_time": "3 PM",
+        "start_iso": "2026-10-09T14:00:00",
+        "end_iso": "2026-10-09T15:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 60.0,
+        "height_percent": 6.7
       }
     ]
   },
@@ -118,19 +118,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "040000008200E00074C5",
-          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-10-06T10:00:00",
-          "end_iso": "2026-10-06T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "5mgncqqtko1qo6k468ms",
           "title": "INTERNSHIP Facilitation - TEAMS LINK",
           "start_time": "10 AM",
@@ -140,6 +127,19 @@
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-10-06T10:00:00",
+          "end_iso": "2026-10-06T11:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -259,7 +259,7 @@
     "thursday": {
       "date": "2026-10-08",
       "display_date": "Oct 08",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -318,7 +318,7 @@
     "friday": {
       "date": "2026-10-09",
       "display_date": "Oct 09",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -393,70 +393,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-10-09T05:30:00",
-      "end_iso": "2026-10-09T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-10-09",
-      "display_date": "Fri, Oct 09",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Site Visit",
-      "start_time": "11 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-10-09T11:00:00",
-      "end_iso": "2026-10-09T11:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 40.0,
-      "height_percent": 4,
-      "date": "2026-10-09",
-      "display_date": "Fri, Oct 09",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Comprehensive Exam Results Meeting",
-      "start_time": "1 PM",
-      "end_time": "1:40 PM",
-      "start_iso": "2026-10-09T13:00:00",
-      "end_iso": "2026-10-09T13:40:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 53.3,
-      "height_percent": 4.4,
-      "date": "2026-10-09",
-      "display_date": "Fri, Oct 09",
-      "days_until": 1
-    },
-    {
-      "id": "p51ir1veck9o3c983c10",
-      "title": "CLIENT SESSION: ST",
-      "start_time": "2 PM",
-      "end_time": "3 PM",
-      "start_iso": "2026-10-09T14:00:00",
-      "end_iso": "2026-10-09T15:00:00",
-      "location": null,
-      "category": "clinical",
-      "color": "var(--accent-teal)",
-      "top_percent": 60.0,
-      "height_percent": 6.7,
-      "date": "2026-10-09",
-      "display_date": "Fri, Oct 09",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-10-12T05:30:00",
       "end_iso": "2026-10-12T07:00:00",
       "location": null,
@@ -466,7 +402,7 @@
       "height_percent": 10.0,
       "date": "2026-10-12",
       "display_date": "Mon, Oct 12",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "7li5vjvkc7oal3dgjt8l",
@@ -482,7 +418,7 @@
       "height_percent": 46.7,
       "date": "2026-10-12",
       "display_date": "Mon, Oct 12",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "040000008200E00074C5",
@@ -498,7 +434,7 @@
       "height_percent": 6.7,
       "date": "2026-10-12",
       "display_date": "Mon, Oct 12",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -514,23 +450,7 @@
       "height_percent": 10.0,
       "date": "2026-10-13",
       "display_date": "Tue, Oct 13",
-      "days_until": 5
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-10-13T10:00:00",
-      "end_iso": "2026-10-13T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-10-13",
-      "display_date": "Tue, Oct 13",
-      "days_until": 5
+      "days_until": 4
     },
     {
       "id": "5mgncqqtko1qo6k468ms",
@@ -546,6 +466,86 @@
       "height_percent": 10.0,
       "date": "2026-10-13",
       "display_date": "Tue, Oct 13",
+      "days_until": 4
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-10-13T10:00:00",
+      "end_iso": "2026-10-13T11:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-10-13",
+      "display_date": "Tue, Oct 13",
+      "days_until": 4
+    },
+    {
+      "id": "64o6cc35c8qj0b9h61h3",
+      "title": "Chris",
+      "start_time": "1 PM",
+      "end_time": "2 PM",
+      "start_iso": "2026-10-13T13:00:00",
+      "end_iso": "2026-10-13T14:00:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 53.3,
+      "height_percent": 6.7,
+      "date": "2026-10-13",
+      "display_date": "Tue, Oct 13",
+      "days_until": 4
+    },
+    {
+      "id": "73hn56b9fne1i455tst3",
+      "title": "Wellness PSI: Counseling - Zoom Link Included",
+      "start_time": "5 PM",
+      "end_time": "6 PM",
+      "start_iso": "2026-10-13T17:00:00",
+      "end_iso": "2026-10-13T18:00:00",
+      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 80.0,
+      "height_percent": 6.7,
+      "date": "2026-10-13",
+      "display_date": "Tue, Oct 13",
+      "days_until": 4
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-10-14T05:30:00",
+      "end_iso": "2026-10-14T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-10-14",
+      "display_date": "Wed, Oct 14",
+      "days_until": 5
+    },
+    {
+      "id": "h2hilie8vugfg7cbcu44",
+      "title": "CT: H",
+      "start_time": "7:30 AM",
+      "end_time": "8:30 AM",
+      "start_iso": "2026-10-14T07:30:00",
+      "end_iso": "2026-10-14T08:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 16.7,
+      "height_percent": 6.7,
+      "date": "2026-10-14",
+      "display_date": "Wed, Oct 14",
       "days_until": 5
     }
   ]
