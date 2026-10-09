@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-10-08T15:39:39.896337-07:00",
+    "generated_at": "2026-10-08T20:44:11.743602-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-10-05",
     "range_end": "2026-11-07",
-    "total_events": 844,
+    "total_events": 843,
     "calendars_synced": 2
   },
   "today": {
@@ -334,19 +334,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "cop36c3160pjeb9n6ko6",
-          "title": "Breakfast with Michael @ Sosta",
-          "start_time": "8 AM",
-          "end_time": "9 AM",
-          "start_iso": "2026-10-09T08:00:00",
-          "end_iso": "2026-10-09T09:00:00",
-          "location": null,
-          "category": "personal",
-          "color": "var(--accent-sage)",
-          "top_percent": 20.0,
-          "height_percent": 6.7
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "Site Visit",
           "start_time": "11 AM",
@@ -413,22 +400,6 @@
       "color": "var(--accent-sage)",
       "top_percent": 3.3,
       "height_percent": 10.0,
-      "date": "2026-10-09",
-      "display_date": "Fri, Oct 09",
-      "days_until": 1
-    },
-    {
-      "id": "cop36c3160pjeb9n6ko6",
-      "title": "Breakfast with Michael @ Sosta",
-      "start_time": "8 AM",
-      "end_time": "9 AM",
-      "start_iso": "2026-10-09T08:00:00",
-      "end_iso": "2026-10-09T09:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 20.0,
-      "height_percent": 6.7,
       "date": "2026-10-09",
       "display_date": "Fri, Oct 09",
       "days_until": 1
@@ -555,6 +526,22 @@
       "location": "Microsoft Teams Meeting",
       "category": "meeting",
       "color": "var(--accent-gold)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-10-13",
+      "display_date": "Tue, Oct 13",
+      "days_until": 5
+    },
+    {
+      "id": "5mgncqqtko1qo6k468ms",
+      "title": "INTERNSHIP Facilitation - TEAMS LINK",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-10-13T10:00:00",
+      "end_iso": "2026-10-13T11:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
       "top_percent": 33.3,
       "height_percent": 10.0,
       "date": "2026-10-13",
