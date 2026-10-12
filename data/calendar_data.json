@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-10-12T06:55:44.846701-07:00",
+    "generated_at": "2026-10-12T16:57:37.699244-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-10-12",
     "range_end": "2026-11-11",
-    "total_events": 838,
+    "total_events": 837,
     "calendars_synced": 2
   },
   "today": {
@@ -36,19 +36,6 @@
         "color": "var(--accent-teal)",
         "top_percent": 20.0,
         "height_percent": 46.7
-      },
-      {
-        "id": "040000008200E00074C5",
-        "title": "NIMH Grant - Group Meeting",
-        "start_time": "3 PM",
-        "end_time": "4 PM",
-        "start_iso": "2026-10-12T15:00:00",
-        "end_iso": "2026-10-12T16:00:00",
-        "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
-        "category": "meeting",
-        "color": "var(--accent-gold)",
-        "top_percent": 66.7,
-        "height_percent": 6.7
       }
     ]
   },
@@ -83,19 +70,6 @@
           "color": "var(--accent-teal)",
           "top_percent": 20.0,
           "height_percent": 46.7
-        },
-        {
-          "id": "040000008200E00074C5",
-          "title": "NIMH Grant - Group Meeting",
-          "start_time": "3 PM",
-          "end_time": "4 PM",
-          "start_iso": "2026-10-12T15:00:00",
-          "end_iso": "2026-10-12T16:00:00",
-          "location": "My Zoom Room: https://udenver.zoom.us/j/8985855947",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 66.7,
-          "height_percent": 6.7
         }
       ]
     },
@@ -118,19 +92,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "040000008200E00074C5",
-          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-10-13T10:00:00",
-          "end_iso": "2026-10-13T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "5mgncqqtko1qo6k468ms",
           "title": "INTERNSHIP Facilitation - TEAMS LINK",
           "start_time": "10 AM",
@@ -140,6 +101,19 @@
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-10-13T10:00:00",
+          "end_iso": "2026-10-13T11:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -379,22 +353,6 @@
       "days_until": 1
     },
     {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-10-13T10:00:00",
-      "end_iso": "2026-10-13T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-10-13",
-      "display_date": "Tue, Oct 13",
-      "days_until": 1
-    },
-    {
       "id": "5mgncqqtko1qo6k468ms",
       "title": "INTERNSHIP Facilitation - TEAMS LINK",
       "start_time": "10 AM",
@@ -404,6 +362,22 @@
       "location": null,
       "category": "default",
       "color": "var(--text-secondary)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-10-13",
+      "display_date": "Tue, Oct 13",
+      "days_until": 1
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-10-13T10:00:00",
+      "end_iso": "2026-10-13T11:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
       "top_percent": 33.3,
       "height_percent": 10.0,
       "date": "2026-10-13",
