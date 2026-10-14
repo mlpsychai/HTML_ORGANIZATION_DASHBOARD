@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-10-14T03:51:55.387712-07:00",
+    "generated_at": "2026-10-14T09:11:17.991116-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-10-12",
     "range_end": "2026-11-13",
-    "total_events": 843,
+    "total_events": 838,
     "calendars_synced": 2
   },
   "today": {
@@ -23,19 +23,6 @@
         "color": "var(--accent-sage)",
         "top_percent": 3.3,
         "height_percent": 10.0
-      },
-      {
-        "id": "h2hilie8vugfg7cbcu44",
-        "title": "CT: H",
-        "start_time": "7:30 AM",
-        "end_time": "8:30 AM",
-        "start_iso": "2026-10-14T07:30:00",
-        "end_iso": "2026-10-14T08:30:00",
-        "location": null,
-        "category": "default",
-        "color": "var(--text-secondary)",
-        "top_percent": 16.7,
-        "height_percent": 6.7
       },
       {
         "id": "44ggol3f5tgtepvqk819",
@@ -214,19 +201,6 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
-        },
-        {
-          "id": "h2hilie8vugfg7cbcu44",
-          "title": "CT: H",
-          "start_time": "7:30 AM",
-          "end_time": "8:30 AM",
-          "start_iso": "2026-10-14T07:30:00",
-          "end_iso": "2026-10-14T08:30:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 16.7,
-          "height_percent": 6.7
         },
         {
           "id": "44ggol3f5tgtepvqk819",
