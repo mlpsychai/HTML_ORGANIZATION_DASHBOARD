@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-19T15:02:01.405128-07:00",
+    "generated_at": "2026-10-19T19:41:15.227810-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-10-19",
     "range_end": "2026-11-18",
@@ -25,19 +25,6 @@
         "height_percent": 10.0
       },
       {
-        "id": "7li5vjvkc7oal3dgjt8l",
-        "title": "CHC w/ Sherri",
-        "start_time": "8 AM",
-        "end_time": "3 PM",
-        "start_iso": "2026-10-19T08:00:00",
-        "end_iso": "2026-10-19T15:00:00",
-        "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 20.0,
-        "height_percent": 46.7
-      },
-      {
         "id": "3n2lnit2til2r6ee4fhk",
         "title": "Presenting in Dr. Strain's Class Today",
         "start_time": "8 AM",
@@ -49,6 +36,19 @@
         "color": "var(--text-muted)",
         "top_percent": 20.0,
         "height_percent": 6.7
+      },
+      {
+        "id": "7li5vjvkc7oal3dgjt8l",
+        "title": "CHC w/ Sherri",
+        "start_time": "8 AM",
+        "end_time": "3 PM",
+        "start_iso": "2026-10-19T08:00:00",
+        "end_iso": "2026-10-19T15:00:00",
+        "location": null,
+        "category": "clinical",
+        "color": "var(--accent-teal)",
+        "top_percent": 20.0,
+        "height_percent": 46.7
       }
     ]
   },
@@ -72,19 +72,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "7li5vjvkc7oal3dgjt8l",
-          "title": "CHC w/ Sherri",
-          "start_time": "8 AM",
-          "end_time": "3 PM",
-          "start_iso": "2026-10-19T08:00:00",
-          "end_iso": "2026-10-19T15:00:00",
-          "location": null,
-          "category": "clinical",
-          "color": "var(--accent-teal)",
-          "top_percent": 20.0,
-          "height_percent": 46.7
-        },
-        {
           "id": "3n2lnit2til2r6ee4fhk",
           "title": "Presenting in Dr. Strain's Class Today",
           "start_time": "8 AM",
@@ -96,6 +83,19 @@
           "color": "var(--text-muted)",
           "top_percent": 20.0,
           "height_percent": 6.7
+        },
+        {
+          "id": "7li5vjvkc7oal3dgjt8l",
+          "title": "CHC w/ Sherri",
+          "start_time": "8 AM",
+          "end_time": "3 PM",
+          "start_iso": "2026-10-19T08:00:00",
+          "end_iso": "2026-10-19T15:00:00",
+          "location": null,
+          "category": "clinical",
+          "color": "var(--accent-teal)",
+          "top_percent": 20.0,
+          "height_percent": 46.7
         }
       ]
     },
@@ -334,19 +334,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "040000008200E00074C5",
-          "title": "dissertation meeting\\, Mapoles",
-          "start_time": "11:30 AM",
-          "end_time": "12:30 PM",
-          "start_iso": "2026-10-23T11:30:00",
-          "end_iso": "2026-10-23T12:30:00",
-          "location": "Eastburn 112 (Sara's office)",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 43.3,
-          "height_percent": 6.7
-        },
-        {
           "id": "4lprnahrn6iuaiiopdt3",
           "title": "Dissertation Meeting with Abercrombie and Strain",
           "start_time": "11:30 AM",
@@ -354,6 +341,19 @@
           "start_iso": "2026-10-23T11:30:00",
           "end_iso": "2026-10-23T12:30:00",
           "location": null,
+          "category": "meeting",
+          "color": "var(--accent-gold)",
+          "top_percent": 43.3,
+          "height_percent": 6.7
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "dissertation meeting\\, Mapoles",
+          "start_time": "11:30 AM",
+          "end_time": "12:30 PM",
+          "start_iso": "2026-10-23T11:30:00",
+          "end_iso": "2026-10-23T12:30:00",
+          "location": "Eastburn 112 (Sara's office)",
           "category": "meeting",
           "color": "var(--accent-gold)",
           "top_percent": 43.3,
