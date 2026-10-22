@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-10-22T09:18:36.702184-07:00",
+    "generated_at": "2026-10-22T13:59:03.206495-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-10-19",
     "range_end": "2026-11-21",
-    "total_events": 842,
+    "total_events": 862,
     "calendars_synced": 2
   },
   "today": {
@@ -62,6 +62,19 @@
         "color": "var(--text-muted)",
         "top_percent": 51.7,
         "height_percent": 8.3
+      },
+      {
+        "id": "209a0cc17q0c191306f7",
+        "title": "FCC",
+        "start_time": "2:45 PM",
+        "end_time": "6:15 PM",
+        "start_iso": "2026-10-22T14:45:00",
+        "end_iso": "2026-10-22T18:15:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 65.0,
+        "height_percent": 23.3
       }
     ]
   },
@@ -85,19 +98,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "3n2lnit2til2r6ee4fhk",
-          "title": "Presenting in Dr. Strain's Class Today",
-          "start_time": "8 AM",
-          "end_time": "9 AM",
-          "start_iso": "2026-10-19T08:00:00",
-          "end_iso": "2026-10-19T09:00:00",
-          "location": null,
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 20.0,
-          "height_percent": 6.7
-        },
-        {
           "id": "7li5vjvkc7oal3dgjt8l",
           "title": "CHC w/ Sherri",
           "start_time": "8 AM",
@@ -109,6 +109,19 @@
           "color": "var(--accent-teal)",
           "top_percent": 20.0,
           "height_percent": 46.7
+        },
+        {
+          "id": "3n2lnit2til2r6ee4fhk",
+          "title": "Presenting in Dr. Strain's Class Today",
+          "start_time": "8 AM",
+          "end_time": "9 AM",
+          "start_iso": "2026-10-19T08:00:00",
+          "end_iso": "2026-10-19T09:00:00",
+          "location": null,
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 20.0,
+          "height_percent": 6.7
         }
       ]
     },
@@ -131,19 +144,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "5mgncqqtko1qo6k468ms",
-          "title": "INTERNSHIP Facilitation - TEAMS LINK",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-10-20T10:00:00",
-          "end_iso": "2026-10-20T11:30:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
           "start_time": "10 AM",
@@ -153,6 +153,19 @@
           "location": "Microsoft Teams Meeting",
           "category": "meeting",
           "color": "var(--accent-gold)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "5mgncqqtko1qo6k468ms",
+          "title": "INTERNSHIP Facilitation - TEAMS LINK",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-10-20T10:00:00",
+          "end_iso": "2026-10-20T11:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -168,6 +181,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 46.7,
           "height_percent": 6.7
+        },
+        {
+          "id": "3ep2oshnbsoupuvhdtjl",
+          "title": "FCC",
+          "start_time": "2:45 PM",
+          "end_time": "6:15 PM",
+          "start_iso": "2026-10-20T14:45:00",
+          "end_iso": "2026-10-20T18:15:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 65.0,
+          "height_percent": 23.3
         },
         {
           "id": "73hn56b9fne1i455tst3",
@@ -201,6 +227,19 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
+        },
+        {
+          "id": "039n05qo839m5lavdkfc",
+          "title": "CT H",
+          "start_time": "7:30 AM",
+          "end_time": "8:30 AM",
+          "start_iso": "2026-10-21T07:30:00",
+          "end_iso": "2026-10-21T08:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 16.7,
+          "height_percent": 6.7
         },
         {
           "id": "44ggol3f5tgtepvqk819",
@@ -312,6 +351,19 @@
           "color": "var(--text-muted)",
           "top_percent": 51.7,
           "height_percent": 8.3
+        },
+        {
+          "id": "209a0cc17q0c191306f7",
+          "title": "FCC",
+          "start_time": "2:45 PM",
+          "end_time": "6:15 PM",
+          "start_iso": "2026-10-22T14:45:00",
+          "end_iso": "2026-10-22T18:15:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 65.0,
+          "height_percent": 23.3
         }
       ]
     },
@@ -334,19 +386,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "4lprnahrn6iuaiiopdt3",
-          "title": "Dissertation Meeting with Abercrombie and Strain",
-          "start_time": "11:30 AM",
-          "end_time": "12:30 PM",
-          "start_iso": "2026-10-23T11:30:00",
-          "end_iso": "2026-10-23T12:30:00",
-          "location": null,
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 43.3,
-          "height_percent": 6.7
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "dissertation meeting\\, Mapoles",
           "start_time": "11:30 AM",
@@ -358,6 +397,19 @@
           "color": "var(--accent-gold)",
           "top_percent": 43.3,
           "height_percent": 6.7
+        },
+        {
+          "id": "46lrou042l6mti14fjgn",
+          "title": "FCC",
+          "start_time": "1:45 PM",
+          "end_time": "5:15 PM",
+          "start_iso": "2026-10-23T13:45:00",
+          "end_iso": "2026-10-23T17:15:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 58.3,
+          "height_percent": 23.3
         },
         {
           "id": "p51ir1veck9o3c983c10",
@@ -405,22 +457,6 @@
       "days_until": 1
     },
     {
-      "id": "4lprnahrn6iuaiiopdt3",
-      "title": "Dissertation Meeting with Abercrombie and Strain",
-      "start_time": "11:30 AM",
-      "end_time": "12:30 PM",
-      "start_iso": "2026-10-23T11:30:00",
-      "end_iso": "2026-10-23T12:30:00",
-      "location": null,
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 43.3,
-      "height_percent": 6.7,
-      "date": "2026-10-23",
-      "display_date": "Fri, Oct 23",
-      "days_until": 1
-    },
-    {
       "id": "040000008200E00074C5",
       "title": "dissertation meeting\\, Mapoles",
       "start_time": "11:30 AM",
@@ -432,6 +468,22 @@
       "color": "var(--accent-gold)",
       "top_percent": 43.3,
       "height_percent": 6.7,
+      "date": "2026-10-23",
+      "display_date": "Fri, Oct 23",
+      "days_until": 1
+    },
+    {
+      "id": "46lrou042l6mti14fjgn",
+      "title": "FCC",
+      "start_time": "1:45 PM",
+      "end_time": "5:15 PM",
+      "start_iso": "2026-10-23T13:45:00",
+      "end_iso": "2026-10-23T17:15:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 58.3,
+      "height_percent": 23.3,
       "date": "2026-10-23",
       "display_date": "Fri, Oct 23",
       "days_until": 1
@@ -501,22 +553,6 @@
       "days_until": 5
     },
     {
-      "id": "5mgncqqtko1qo6k468ms",
-      "title": "INTERNSHIP Facilitation - TEAMS LINK",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-10-27T10:00:00",
-      "end_iso": "2026-10-27T11:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-10-27",
-      "display_date": "Tue, Oct 27",
-      "days_until": 5
-    },
-    {
       "id": "040000008200E00074C5",
       "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
       "start_time": "10 AM",
@@ -526,6 +562,22 @@
       "location": "Microsoft Teams Meeting",
       "category": "meeting",
       "color": "var(--accent-gold)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-10-27",
+      "display_date": "Tue, Oct 27",
+      "days_until": 5
+    },
+    {
+      "id": "5mgncqqtko1qo6k468ms",
+      "title": "INTERNSHIP Facilitation - TEAMS LINK",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-10-27T10:00:00",
+      "end_iso": "2026-10-27T11:30:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
       "top_percent": 33.3,
       "height_percent": 10.0,
       "date": "2026-10-27",
