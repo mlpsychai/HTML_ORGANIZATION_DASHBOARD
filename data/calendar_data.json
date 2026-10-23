@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-10-22T13:59:03.206495-07:00",
+    "generated_at": "2026-10-22T19:37:00.364945-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-10-19",
     "range_end": "2026-11-21",
-    "total_events": 862,
+    "total_events": 863,
     "calendars_synced": 2
   },
   "today": {
@@ -75,6 +75,19 @@
         "color": "var(--text-secondary)",
         "top_percent": 65.0,
         "height_percent": 23.3
+      },
+      {
+        "id": "209a0cc17q0c191306f7",
+        "title": "FCC",
+        "start_time": "3:45 PM",
+        "end_time": "6:15 PM",
+        "start_iso": "2026-10-22T15:45:00",
+        "end_iso": "2026-10-22T18:15:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 71.7,
+        "height_percent": 16.7
       }
     ]
   },
@@ -98,19 +111,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "7li5vjvkc7oal3dgjt8l",
-          "title": "CHC w/ Sherri",
-          "start_time": "8 AM",
-          "end_time": "3 PM",
-          "start_iso": "2026-10-19T08:00:00",
-          "end_iso": "2026-10-19T15:00:00",
-          "location": null,
-          "category": "clinical",
-          "color": "var(--accent-teal)",
-          "top_percent": 20.0,
-          "height_percent": 46.7
-        },
-        {
           "id": "3n2lnit2til2r6ee4fhk",
           "title": "Presenting in Dr. Strain's Class Today",
           "start_time": "8 AM",
@@ -122,6 +122,19 @@
           "color": "var(--text-muted)",
           "top_percent": 20.0,
           "height_percent": 6.7
+        },
+        {
+          "id": "7li5vjvkc7oal3dgjt8l",
+          "title": "CHC w/ Sherri",
+          "start_time": "8 AM",
+          "end_time": "3 PM",
+          "start_iso": "2026-10-19T08:00:00",
+          "end_iso": "2026-10-19T15:00:00",
+          "location": null,
+          "category": "clinical",
+          "color": "var(--accent-teal)",
+          "top_percent": 20.0,
+          "height_percent": 46.7
         }
       ]
     },
@@ -144,19 +157,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "040000008200E00074C5",
-          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-10-20T10:00:00",
-          "end_iso": "2026-10-20T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "5mgncqqtko1qo6k468ms",
           "title": "INTERNSHIP Facilitation - TEAMS LINK",
           "start_time": "10 AM",
@@ -166,6 +166,19 @@
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "040000008200E00074C5",
+          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-10-20T10:00:00",
+          "end_iso": "2026-10-20T11:30:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "meeting",
+          "color": "var(--accent-gold)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -364,6 +377,19 @@
           "color": "var(--text-secondary)",
           "top_percent": 65.0,
           "height_percent": 23.3
+        },
+        {
+          "id": "209a0cc17q0c191306f7",
+          "title": "FCC",
+          "start_time": "3:45 PM",
+          "end_time": "6:15 PM",
+          "start_iso": "2026-10-22T15:45:00",
+          "end_iso": "2026-10-22T18:15:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 71.7,
+          "height_percent": 16.7
         }
       ]
     },
@@ -553,22 +579,6 @@
       "days_until": 5
     },
     {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-10-27T10:00:00",
-      "end_iso": "2026-10-27T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-10-27",
-      "display_date": "Tue, Oct 27",
-      "days_until": 5
-    },
-    {
       "id": "5mgncqqtko1qo6k468ms",
       "title": "INTERNSHIP Facilitation - TEAMS LINK",
       "start_time": "10 AM",
@@ -578,6 +588,22 @@
       "location": null,
       "category": "default",
       "color": "var(--text-secondary)",
+      "top_percent": 33.3,
+      "height_percent": 10.0,
+      "date": "2026-10-27",
+      "display_date": "Tue, Oct 27",
+      "days_until": 5
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+      "start_time": "10 AM",
+      "end_time": "11:30 AM",
+      "start_iso": "2026-10-27T10:00:00",
+      "end_iso": "2026-10-27T11:30:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "meeting",
+      "color": "var(--accent-gold)",
       "top_percent": 33.3,
       "height_percent": 10.0,
       "date": "2026-10-27",
