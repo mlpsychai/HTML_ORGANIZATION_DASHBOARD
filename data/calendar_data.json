@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-25T13:09:17.015537-07:00",
+    "generated_at": "2026-10-25T19:22:43.242374-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-10-19",
     "range_end": "2026-11-24",
@@ -32,19 +32,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "7li5vjvkc7oal3dgjt8l",
-          "title": "CHC w/ Sherri",
-          "start_time": "8 AM",
-          "end_time": "3 PM",
-          "start_iso": "2026-10-19T08:00:00",
-          "end_iso": "2026-10-19T15:00:00",
-          "location": null,
-          "category": "clinical",
-          "color": "var(--accent-teal)",
-          "top_percent": 20.0,
-          "height_percent": 46.7
-        },
-        {
           "id": "3n2lnit2til2r6ee4fhk",
           "title": "Presenting in Dr. Strain's Class Today",
           "start_time": "8 AM",
@@ -56,6 +43,19 @@
           "color": "var(--text-muted)",
           "top_percent": 20.0,
           "height_percent": 6.7
+        },
+        {
+          "id": "7li5vjvkc7oal3dgjt8l",
+          "title": "CHC w/ Sherri",
+          "start_time": "8 AM",
+          "end_time": "3 PM",
+          "start_iso": "2026-10-19T08:00:00",
+          "end_iso": "2026-10-19T15:00:00",
+          "location": null,
+          "category": "clinical",
+          "color": "var(--accent-teal)",
+          "top_percent": 20.0,
+          "height_percent": 46.7
         }
       ]
     },
