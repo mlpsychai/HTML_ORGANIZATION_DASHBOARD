@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generated_at": "2026-11-02T17:12:11.945084-07:00",
+    "generated_at": "2026-11-03T06:16:22.903118-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-11-02",
-    "range_end": "2026-12-02",
-    "total_events": 855,
+    "range_end": "2026-12-03",
+    "total_events": 858,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-11-02",
-    "display_date": "Monday, November 02",
+    "date": "2026-11-03",
+    "display_date": "Tuesday, November 03",
     "events": [
       {
         "id": "4vv5mirtsid1h5l6dhq9",
         "title": "MANDATORIES",
         "start_time": "5:30 AM",
         "end_time": "7 AM",
-        "start_iso": "2026-11-02T05:30:00",
-        "end_iso": "2026-11-02T07:00:00",
+        "start_iso": "2026-11-03T05:30:00",
+        "end_iso": "2026-11-03T07:00:00",
         "location": null,
         "category": "personal",
         "color": "var(--accent-sage)",
@@ -25,17 +25,56 @@
         "height_percent": 10.0
       },
       {
-        "id": "7li5vjvkc7oal3dgjt8l",
-        "title": "CHC w/ Sherri",
-        "start_time": "8 AM",
-        "end_time": "3 PM",
-        "start_iso": "2026-11-02T08:00:00",
-        "end_iso": "2026-11-02T15:00:00",
+        "id": "040000008200E00074C5",
+        "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
+        "start_time": "10 AM",
+        "end_time": "11:30 AM",
+        "start_iso": "2026-11-03T10:00:00",
+        "end_iso": "2026-11-03T11:30:00",
+        "location": "Microsoft Teams Meeting",
+        "category": "meeting",
+        "color": "var(--accent-gold)",
+        "top_percent": 33.3,
+        "height_percent": 10.0
+      },
+      {
+        "id": "5mgncqqtko1qo6k468ms",
+        "title": "INTERNSHIP Facilitation - TEAMS LINK",
+        "start_time": "10 AM",
+        "end_time": "11:30 AM",
+        "start_iso": "2026-11-03T10:00:00",
+        "end_iso": "2026-11-03T11:30:00",
         "location": null,
-        "category": "clinical",
-        "color": "var(--accent-teal)",
-        "top_percent": 20.0,
-        "height_percent": 46.7
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 33.3,
+        "height_percent": 10.0
+      },
+      {
+        "id": "3ep2oshnbsoupuvhdtjl",
+        "title": "FCC",
+        "start_time": "2:45 PM",
+        "end_time": "6:15 PM",
+        "start_iso": "2026-11-03T14:45:00",
+        "end_iso": "2026-11-03T18:15:00",
+        "location": null,
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 65.0,
+        "height_percent": 23.3
+      },
+      {
+        "id": "73hn56b9fne1i455tst3",
+        "title": "Wellness PSI: Counseling - Zoom Link Included",
+        "start_time": "5 PM",
+        "end_time": "6 PM",
+        "start_iso": "2026-11-03T17:00:00",
+        "end_iso": "2026-11-03T18:00:00",
+        "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
+        "category": "default",
+        "color": "var(--text-secondary)",
+        "top_percent": 80.0,
+        "height_percent": 6.7
       }
     ]
   },
@@ -43,7 +82,7 @@
     "monday": {
       "date": "2026-11-02",
       "display_date": "Nov 02",
-      "is_today": true,
+      "is_today": false,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -76,7 +115,7 @@
     "tuesday": {
       "date": "2026-11-03",
       "display_date": "Nov 03",
-      "is_today": false,
+      "is_today": true,
       "events": [
         {
           "id": "4vv5mirtsid1h5l6dhq9",
@@ -92,19 +131,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "5mgncqqtko1qo6k468ms",
-          "title": "INTERNSHIP Facilitation - TEAMS LINK",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-11-03T10:00:00",
-          "end_iso": "2026-11-03T11:30:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
           "start_time": "10 AM",
@@ -114,6 +140,19 @@
           "location": "Microsoft Teams Meeting",
           "category": "meeting",
           "color": "var(--accent-gold)",
+          "top_percent": 33.3,
+          "height_percent": 10.0
+        },
+        {
+          "id": "5mgncqqtko1qo6k468ms",
+          "title": "INTERNSHIP Facilitation - TEAMS LINK",
+          "start_time": "10 AM",
+          "end_time": "11:30 AM",
+          "start_iso": "2026-11-03T10:00:00",
+          "end_iso": "2026-11-03T11:30:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -367,86 +406,6 @@
       "title": "MANDATORIES",
       "start_time": "5:30 AM",
       "end_time": "7 AM",
-      "start_iso": "2026-11-03T05:30:00",
-      "end_iso": "2026-11-03T07:00:00",
-      "location": null,
-      "category": "personal",
-      "color": "var(--accent-sage)",
-      "top_percent": 3.3,
-      "height_percent": 10.0,
-      "date": "2026-11-03",
-      "display_date": "Tue, Nov 03",
-      "days_until": 1
-    },
-    {
-      "id": "5mgncqqtko1qo6k468ms",
-      "title": "INTERNSHIP Facilitation - TEAMS LINK",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-11-03T10:00:00",
-      "end_iso": "2026-11-03T11:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-11-03",
-      "display_date": "Tue, Nov 03",
-      "days_until": 1
-    },
-    {
-      "id": "040000008200E00074C5",
-      "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-11-03T10:00:00",
-      "end_iso": "2026-11-03T11:30:00",
-      "location": "Microsoft Teams Meeting",
-      "category": "meeting",
-      "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-11-03",
-      "display_date": "Tue, Nov 03",
-      "days_until": 1
-    },
-    {
-      "id": "3ep2oshnbsoupuvhdtjl",
-      "title": "FCC",
-      "start_time": "2:45 PM",
-      "end_time": "6:15 PM",
-      "start_iso": "2026-11-03T14:45:00",
-      "end_iso": "2026-11-03T18:15:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 65.0,
-      "height_percent": 23.3,
-      "date": "2026-11-03",
-      "display_date": "Tue, Nov 03",
-      "days_until": 1
-    },
-    {
-      "id": "73hn56b9fne1i455tst3",
-      "title": "Wellness PSI: Counseling - Zoom Link Included",
-      "start_time": "5 PM",
-      "end_time": "6 PM",
-      "start_iso": "2026-11-03T17:00:00",
-      "end_iso": "2026-11-03T18:00:00",
-      "location": "https://us02web.zoom.us/j/9876058380?pwd=ZTJQTjI3QWo4UVhsMm5QYUtTL0Rydz09",
-      "category": "default",
-      "color": "var(--text-secondary)",
-      "top_percent": 80.0,
-      "height_percent": 6.7,
-      "date": "2026-11-03",
-      "display_date": "Tue, Nov 03",
-      "days_until": 1
-    },
-    {
-      "id": "4vv5mirtsid1h5l6dhq9",
-      "title": "MANDATORIES",
-      "start_time": "5:30 AM",
-      "end_time": "7 AM",
       "start_iso": "2026-11-04T05:30:00",
       "end_iso": "2026-11-04T07:00:00",
       "location": null,
@@ -456,7 +415,7 @@
       "height_percent": 10.0,
       "date": "2026-11-04",
       "display_date": "Wed, Nov 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "039n05qo839m5lavdkfc",
@@ -472,7 +431,7 @@
       "height_percent": 6.7,
       "date": "2026-11-04",
       "display_date": "Wed, Nov 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "44ggol3f5tgtepvqk819",
@@ -488,7 +447,7 @@
       "height_percent": 10.0,
       "date": "2026-11-04",
       "display_date": "Wed, Nov 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "040000008200E00074C5",
@@ -504,7 +463,7 @@
       "height_percent": 6.7,
       "date": "2026-11-04",
       "display_date": "Wed, Nov 04",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "3u9h96k3v4urkq56vr4i",
@@ -520,6 +479,86 @@
       "height_percent": 11.7,
       "date": "2026-11-04",
       "display_date": "Wed, Nov 04",
+      "days_until": 1
+    },
+    {
+      "id": "3tug4c9s8on5tmrg72oc",
+      "title": "EPS 699 - EPS 669 - CRISIS TRAUMA & DISASTER COUNSELING",
+      "start_time": "4 PM",
+      "end_time": "6:30 PM",
+      "start_iso": "2026-11-04T16:00:00",
+      "end_iso": "2026-11-04T18:30:00",
+      "location": null,
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 73.3,
+      "height_percent": 16.7,
+      "date": "2026-11-04",
+      "display_date": "Wed, Nov 04",
+      "days_until": 1
+    },
+    {
+      "id": "4vv5mirtsid1h5l6dhq9",
+      "title": "MANDATORIES",
+      "start_time": "5:30 AM",
+      "end_time": "7 AM",
+      "start_iso": "2026-11-05T05:30:00",
+      "end_iso": "2026-11-05T07:00:00",
+      "location": null,
+      "category": "personal",
+      "color": "var(--accent-sage)",
+      "top_percent": 3.3,
+      "height_percent": 10.0,
+      "date": "2026-11-05",
+      "display_date": "Thu, Nov 05",
+      "days_until": 2
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "supervision",
+      "start_time": "12 PM",
+      "end_time": "1 PM",
+      "start_iso": "2026-11-05T12:00:00",
+      "end_iso": "2026-11-05T13:00:00",
+      "location": null,
+      "category": "meeting",
+      "color": "var(--accent-gold)",
+      "top_percent": 46.7,
+      "height_percent": 6.7,
+      "date": "2026-11-05",
+      "display_date": "Thu, Nov 05",
+      "days_until": 2
+    },
+    {
+      "id": "_60q30c1g60o30e1i60o",
+      "title": "EPS 700 Internship Prep Meeting",
+      "start_time": "12:45 PM",
+      "end_time": "2 PM",
+      "start_iso": "2026-11-05T12:45:00",
+      "end_iso": "2026-11-05T14:00:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 51.7,
+      "height_percent": 8.3,
+      "date": "2026-11-05",
+      "display_date": "Thu, Nov 05",
+      "days_until": 2
+    },
+    {
+      "id": "209a0cc17q0c191306f7",
+      "title": "FCC",
+      "start_time": "2:45 PM",
+      "end_time": "6:15 PM",
+      "start_iso": "2026-11-05T14:45:00",
+      "end_iso": "2026-11-05T18:15:00",
+      "location": null,
+      "category": "default",
+      "color": "var(--text-secondary)",
+      "top_percent": 65.0,
+      "height_percent": 23.3,
+      "date": "2026-11-05",
+      "display_date": "Thu, Nov 05",
       "days_until": 2
     }
   ]
