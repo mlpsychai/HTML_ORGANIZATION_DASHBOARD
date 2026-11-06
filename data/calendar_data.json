@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-11-05T16:01:36.861516-07:00",
+    "generated_at": "2026-11-05T21:17:53.474311-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-11-02",
     "range_end": "2026-12-05",
-    "total_events": 865,
+    "total_events": 866,
     "calendars_synced": 2
   },
   "today": {
@@ -386,6 +386,19 @@
           "height_percent": 4
         },
         {
+          "id": "040000008200E00074C5",
+          "title": "Next Steps Case #453",
+          "start_time": "10 AM",
+          "end_time": "10:15 AM",
+          "start_iso": "2026-11-06T10:00:00",
+          "end_iso": "2026-11-06T10:15:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 33.3,
+          "height_percent": 4
+        },
+        {
           "id": "46lrou042l6mti14fjgn",
           "title": "FCC",
           "start_time": "1:45 PM",
@@ -470,6 +483,22 @@
       "category": "meeting",
       "color": "var(--accent-gold)",
       "top_percent": 26.7,
+      "height_percent": 4,
+      "date": "2026-11-06",
+      "display_date": "Fri, Nov 06",
+      "days_until": 1
+    },
+    {
+      "id": "040000008200E00074C5",
+      "title": "Next Steps Case #453",
+      "start_time": "10 AM",
+      "end_time": "10:15 AM",
+      "start_iso": "2026-11-06T10:00:00",
+      "end_iso": "2026-11-06T10:15:00",
+      "location": "Microsoft Teams Meeting",
+      "category": "class",
+      "color": "var(--text-muted)",
+      "top_percent": 33.3,
       "height_percent": 4,
       "date": "2026-11-06",
       "display_date": "Fri, Nov 06",
@@ -565,22 +594,6 @@
       "location": "Microsoft Teams Meeting",
       "category": "meeting",
       "color": "var(--accent-gold)",
-      "top_percent": 33.3,
-      "height_percent": 10.0,
-      "date": "2026-11-10",
-      "display_date": "Tue, Nov 10",
-      "days_until": 5
-    },
-    {
-      "id": "5mgncqqtko1qo6k468ms",
-      "title": "INTERNSHIP Facilitation - TEAMS LINK",
-      "start_time": "10 AM",
-      "end_time": "11:30 AM",
-      "start_iso": "2026-11-10T10:00:00",
-      "end_iso": "2026-11-10T11:30:00",
-      "location": null,
-      "category": "default",
-      "color": "var(--text-secondary)",
       "top_percent": 33.3,
       "height_percent": 10.0,
       "date": "2026-11-10",
