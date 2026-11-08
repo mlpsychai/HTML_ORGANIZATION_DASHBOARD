@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-11-07T20:28:47.318064-07:00",
+    "generated_at": "2026-11-08T05:28:12.287677-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-11-02",
-    "range_end": "2026-12-07",
-    "total_events": 868,
+    "range_end": "2026-12-08",
+    "total_events": 873,
     "calendars_synced": 2
   },
   "today": {
-    "date": "2026-11-07",
-    "display_date": "Saturday, November 07",
+    "date": "2026-11-08",
+    "display_date": "Sunday, November 08",
     "events": []
   },
   "week": {
@@ -294,19 +294,6 @@
           "height_percent": 10.0
         },
         {
-          "id": "c4p3ic9h6gr3eb9o6os6",
-          "title": "Jamie",
-          "start_time": "9 AM",
-          "end_time": "10 AM",
-          "start_iso": "2026-11-06T09:00:00",
-          "end_iso": "2026-11-06T10:00:00",
-          "location": null,
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 26.7,
-          "height_percent": 6.7
-        },
-        {
           "id": "040000008200E00074C5",
           "title": "Genesys Pineda Intern Meeting",
           "start_time": "9 AM",
@@ -318,6 +305,19 @@
           "color": "var(--accent-gold)",
           "top_percent": 26.7,
           "height_percent": 4
+        },
+        {
+          "id": "c4p3ic9h6gr3eb9o6os6",
+          "title": "Jamie",
+          "start_time": "9 AM",
+          "end_time": "10 AM",
+          "start_iso": "2026-11-06T09:00:00",
+          "end_iso": "2026-11-06T10:00:00",
+          "location": null,
+          "category": "default",
+          "color": "var(--text-secondary)",
+          "top_percent": 26.7,
+          "height_percent": 6.7
         },
         {
           "id": "040000008200E00074C5",
@@ -363,13 +363,13 @@
     "saturday": {
       "date": "2026-11-07",
       "display_date": "Nov 07",
-      "is_today": true,
+      "is_today": false,
       "events": []
     },
     "sunday": {
       "date": "2026-11-08",
       "display_date": "Nov 08",
-      "is_today": false,
+      "is_today": true,
       "events": []
     }
   },
@@ -388,7 +388,7 @@
       "height_percent": 10.0,
       "date": "2026-11-09",
       "display_date": "Mon, Nov 09",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "7li5vjvkc7oal3dgjt8l",
@@ -404,7 +404,7 @@
       "height_percent": 46.7,
       "date": "2026-11-09",
       "display_date": "Mon, Nov 09",
-      "days_until": 2
+      "days_until": 1
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -420,7 +420,7 @@
       "height_percent": 10.0,
       "date": "2026-11-10",
       "display_date": "Tue, Nov 10",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "040000008200E00074C5",
@@ -436,7 +436,7 @@
       "height_percent": 10.0,
       "date": "2026-11-10",
       "display_date": "Tue, Nov 10",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "5mgncqqtko1qo6k468ms",
@@ -452,7 +452,7 @@
       "height_percent": 10.0,
       "date": "2026-11-10",
       "display_date": "Tue, Nov 10",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "3ep2oshnbsoupuvhdtjl",
@@ -468,7 +468,7 @@
       "height_percent": 23.3,
       "date": "2026-11-10",
       "display_date": "Tue, Nov 10",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "73hn56b9fne1i455tst3",
@@ -484,7 +484,7 @@
       "height_percent": 6.7,
       "date": "2026-11-10",
       "display_date": "Tue, Nov 10",
-      "days_until": 3
+      "days_until": 2
     },
     {
       "id": "4vv5mirtsid1h5l6dhq9",
@@ -500,7 +500,7 @@
       "height_percent": 10.0,
       "date": "2026-11-11",
       "display_date": "Wed, Nov 11",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "039n05qo839m5lavdkfc",
@@ -516,7 +516,7 @@
       "height_percent": 6.7,
       "date": "2026-11-11",
       "display_date": "Wed, Nov 11",
-      "days_until": 4
+      "days_until": 3
     },
     {
       "id": "44ggol3f5tgtepvqk819",
@@ -532,7 +532,7 @@
       "height_percent": 10.0,
       "date": "2026-11-11",
       "display_date": "Wed, Nov 11",
-      "days_until": 4
+      "days_until": 3
     }
   ]
 }
