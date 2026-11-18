@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-11-17T08:11:45.107528-07:00",
+    "generated_at": "2026-11-17T17:14:17.889331-07:00",
     "timezone": "America/Phoenix",
     "range_start": "2026-11-16",
     "range_end": "2026-12-17",
-    "total_events": 863,
+    "total_events": 857,
     "calendars_synced": 2
   },
   "today": {
@@ -34,19 +34,6 @@
         "location": null,
         "category": "default",
         "color": "var(--text-secondary)",
-        "top_percent": 33.3,
-        "height_percent": 10.0
-      },
-      {
-        "id": "040000008200E00074C5",
-        "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-        "start_time": "10 AM",
-        "end_time": "11:30 AM",
-        "start_iso": "2026-11-17T10:00:00",
-        "end_iso": "2026-11-17T11:30:00",
-        "location": "Microsoft Teams Meeting",
-        "category": "meeting",
-        "color": "var(--accent-gold)",
         "top_percent": 33.3,
         "height_percent": 10.0
       },
@@ -140,19 +127,6 @@
           "location": null,
           "category": "default",
           "color": "var(--text-secondary)",
-          "top_percent": 33.3,
-          "height_percent": 10.0
-        },
-        {
-          "id": "040000008200E00074C5",
-          "title": "Tues 10-11:30 Group Supervision\\, Fall 2026",
-          "start_time": "10 AM",
-          "end_time": "11:30 AM",
-          "start_iso": "2026-11-17T10:00:00",
-          "end_iso": "2026-11-17T11:30:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "meeting",
-          "color": "var(--accent-gold)",
           "top_percent": 33.3,
           "height_percent": 10.0
         },
@@ -316,6 +290,19 @@
         {
           "id": "_60q30c1g60o30e1i60o",
           "title": "EPS 700 Internship Prep Meeting",
+          "start_time": "12:30 PM",
+          "end_time": "2 PM",
+          "start_iso": "2026-11-19T12:30:00",
+          "end_iso": "2026-11-19T14:00:00",
+          "location": "Microsoft Teams Meeting",
+          "category": "class",
+          "color": "var(--text-muted)",
+          "top_percent": 50.0,
+          "height_percent": 10.0
+        },
+        {
+          "id": "_60q30c1g60o30e1i60o",
+          "title": "EPS 700 Internship Prep Meeting",
           "start_time": "12:45 PM",
           "end_time": "2 PM",
           "start_iso": "2026-11-19T12:45:00",
@@ -325,19 +312,6 @@
           "color": "var(--text-muted)",
           "top_percent": 51.7,
           "height_percent": 8.3
-        },
-        {
-          "id": "_60q30c1g60o30e1i60o",
-          "title": "EPS 700 Internship Prep Meeting",
-          "start_time": "12:45 PM",
-          "end_time": "2:15 PM",
-          "start_iso": "2026-11-19T12:45:00",
-          "end_iso": "2026-11-19T14:15:00",
-          "location": "Microsoft Teams Meeting",
-          "category": "class",
-          "color": "var(--text-muted)",
-          "top_percent": 51.7,
-          "height_percent": 10.0
         },
         {
           "id": "209a0cc17q0c191306f7",
@@ -371,32 +345,6 @@
           "color": "var(--accent-sage)",
           "top_percent": 3.3,
           "height_percent": 10.0
-        },
-        {
-          "id": "040000008200E00074C5",
-          "title": "Fall 2026 Colloquium: ERP Presentations [In-person]",
-          "start_time": "9:30 AM",
-          "end_time": "12 PM",
-          "start_iso": "2026-11-20T09:30:00",
-          "end_iso": "2026-11-20T12:00:00",
-          "location": "College of Education\\, Room 190",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 30.0,
-          "height_percent": 16.7
-        },
-        {
-          "id": "040000008200E00074C5",
-          "title": "DSO Fall Potluck!",
-          "start_time": "12 PM",
-          "end_time": "1 PM",
-          "start_iso": "2026-11-20T12:00:00",
-          "end_iso": "2026-11-20T13:00:00",
-          "location": "College of Education\\, Room 190",
-          "category": "default",
-          "color": "var(--text-secondary)",
-          "top_percent": 46.7,
-          "height_percent": 6.7
         },
         {
           "id": "46lrou042l6mti14fjgn",
@@ -587,15 +535,15 @@
     {
       "id": "_60q30c1g60o30e1i60o",
       "title": "EPS 700 Internship Prep Meeting",
-      "start_time": "12:45 PM",
+      "start_time": "12:30 PM",
       "end_time": "2 PM",
-      "start_iso": "2026-11-19T12:45:00",
+      "start_iso": "2026-11-19T12:30:00",
       "end_iso": "2026-11-19T14:00:00",
       "location": "Microsoft Teams Meeting",
       "category": "class",
       "color": "var(--text-muted)",
-      "top_percent": 51.7,
-      "height_percent": 8.3,
+      "top_percent": 50.0,
+      "height_percent": 10.0,
       "date": "2026-11-19",
       "display_date": "Thu, Nov 19",
       "days_until": 2
